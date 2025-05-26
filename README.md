@@ -1,2 +1,2 @@
 # bank-of-eng-risk-monitoring
-Risk monitoring tool for Global Systemically Important Banks delivered through Cambridge University's Bank of England Data Science Partnership
+Risk monitoring tool for Global Systemically Important Banks developed for the Bank of England as part of Cambridge University's Data Science Career Accelerator
