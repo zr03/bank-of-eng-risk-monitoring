@@ -153,7 +153,7 @@ USELESS_PHRASES = [
     "thanks", "thank you", "you're welcome", "sure", "okay", "yes", "no",
     "good morning", "good afternoon", "appreciate that", "great, thank you",
     "hi everyone", "hi", "hello", "bye", "have a good day", "Yeah.", 
-    "All right.", "Hey.", "Yeah, sure.", "We get it.", "Enjoy the day."
+    "All right.", "Hey.", "Yeah, sure.", "We get it.", "Enjoy the day.","How are you?"
 ]
 
 def is_useless_sentence(sentence):
