@@ -1,0 +1,13 @@
+page_number,metric_name,metric_value,unit,confidence,context,pattern_used
+5,eps,4,,0.5,ll year 2023 results snapshot Revenues Net Income EPS 4Q23 $17.4B (3)% YoY 4Q23 $(1.8)B NM YoY 4Q23 $(1.1,"(?:earnings\s+per\s+share|eps)[:\s]+[\$£€]?([\d,\.]+)"
+12,shareholders_equity,13.0,,0.7,"T1 Ratio Walk 13.3% End of Period Liabilities and Equity 13.0% $2,417 $2,368 $2,405 YoY - Trading-Related 442 4","(?:shareholders?\s+|stockholders?\s+)?equity[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+13,net_income,776,,0.7," EBT 1,260 (37)% (33)% 7,076 6% RoTCE(3) of 13.4% Net Income 776 (42)% (43)% 4,605 (6)% FY RoTCE(3) of 20.0% Key Me","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+13,revenue,555,,0.7," 2,869 1% 13% 11,027 25% devaluation Non-Interest Revenue 555 (14)% (20)% 2,625 (11)% TTS continues to win new c","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+14,total_assets,"1,028",,0.7,"5,817 4,838 4,792 3,410 (19)% 18,857 (6)% Average Total Assets 1,028 1% 5% 1,018 3% Average Loans 115 6% 4% 110 (1)% Av","total\s+assets[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+15,revenue,412,,0.7,"Interest Income 537 (1)% 2% 2,094 2% Non-Interest Revenue 412 (49)% 65% 2,474 (26)% Note: Banking includes reven","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+16,net_income,5,million,0.7999999999999999,"rtially offset by an ACL release of $(27) million Net Income $5 million, reflecting lower revenues and higher expenses Ro","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+16,revenue,627,,0.7," Income 1,044 (12)% (10)% 4,460 (6)% Non-Interest Revenue 627 (7)% 13% 2,631 (3)% Note: Totals may not sum due t","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+17,net_income,201,million,0.7999999999999999,"pre-Covid levels and an ACL build of $0.5 billion Net Income $201 million, driven by higher revenues and lower expenses, pa","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+18,revenue,446,,0.7,"st Income 1,586 (12)% (29)% 7,733 1% Non-Interest Revenue 446 8% NM 1,630 23% Note: Wind-down Sale Other include","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+20,revenue,4,,0.5,"-81B TTS: Client wins and deepening with existing Revenue 4% $77.1 relationships ex- $74.5 Divestitures(1,2) ","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+35,revenue,"13,837",,0.7999999999999999,"her Total Citi $ in millions Previously disclosed revenue $13,837 $14,700 $3,781 $5,444 $14,177 $6,992 $2,091 $61,02","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"

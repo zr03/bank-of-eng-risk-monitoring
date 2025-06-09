@@ -1,0 +1,10 @@
+page_number,metric_name,metric_value,unit,confidence,context,pattern_used
+2,eps,3,,0.5,hird Quarter Results Snapshot Revenues Net Income EPS 3Q23 $20.1 billion 3Q23 $3.5 billion 3Q23 $1.63 $1.,"(?:earnings\s+per\s+share|eps)[:\s]+[\$£€]?([\d,\.]+)"
+4,eps,"1.63,",,0.7999999999999999,"ome Up 2% YoY Credit Costs 1,840 1% 35% 5,639 66% EPS $1.63, $1.52 ex-divesture-related impacts(4) EBT 4,788 1","(?:earnings\s+per\s+share|eps)[:\s]+[\$£€]?([\d,\.]+)"
+4,net_income,"3,546",,0.7,"come Taxes 1,203 10% 37% 3,824 27% YTD RoTCE 8.3% Net Income 3,546 22% 2% 11,067 (10)% Revenues by Segment and Corp O","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+4,revenue,"6,311",,0.7,"from the closed exits and wind-downs Non-Interest Revenue 6,311 14% 6% 19,946 (9)% Expenses Up 6% YoY (6% ex-dives","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+4,roe,6.7,,0.7,ps) 67% (270) (180) 66% (60) 6.4 6.8 PBWM 6.2 10% ROE 6.7% 7.3% RoTCE(2) 7.7% 8.3% 10.4 10.6 ICG 9.5 12% CET,"(?:return\s+on\s+equity|roe)[:\s]+([\d,\.]+)%?"
+8,shareholders_equity,6,,0.7,G Deposits (2)% Other Liabilities(7) (16)% LTD 9% Equity 6% Note: Totals may not sum due to rounding. LTD: L,"(?:shareholders?\s+|stockholders?\s+)?equity[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+12,net_income,803,,0.5,"credit costs and higher expenses EBT 1,020 67% 2% Net Income 803 63% 1% RoTCEof 8.8% Key Drivers Statistics ($ in B","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+12,revenue,422,,0.5,to lower partner payments and higher Non-Interest Revenue 422 (2)% 20% investment product revenues in Wealth Tot,"(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+20,eps,2,,0.7,Timeline and Next Steps 2H23 4Q23 Earnings Announce organizational and lead,"(?:earnings\s+per\s+share|eps)[:\s]+[\$£€]?([\d,\.]+)"

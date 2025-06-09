@@ -1,0 +1,13 @@
+page_number,metric_name,metric_value,unit,confidence,context,pattern_used
+4,eps,3,,0.5,quarter 2024 results snapshot Revenues Net Income EPS 3Q24 $20.3 billion 3Q24 $3.2 billion 3Q24 $1.51 3Q2,"(?:earnings\s+per\s+share|eps)[:\s]+[\$£€]?([\d,\.]+)"
+11,net_income,1.7,billion,0.7999999999999999,"illion, driven by a net ACL build of $113 million Net Income $1.7 billion, up 23% YoY RoTCE(3) of 26.4%; Year-to-date RoTCE","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+11,revenue,"1,593",,0.7,"reliminary AUC AUA ($T)(8) 26 9% 22% Non-Interest Revenue 1,593 9% 33% ( T E C E N $ in M M ) N e t In t e r e s t","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+12,net_income,1.1,billion,0.7999999999999999,"arily related to portfolio mix in Spread Products Net Income $1.1 billion, up 2% YoY RoTCE(3) of 7.9%; Year-to-date RoTCE(3","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+12,total_assets,"1,082",,0.7,"Average Trading Account Assets 462 8% 18% Average Total Assets 1,082 2% 5% Average Loans 119 - 10% Average VaR(4) ($ in","total\s+assets[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+13,net_income,238,million,0.7999999999999999," million, primarily from changes in portfolio mix Net Income $238 million, up 53% YoY RoTCE(4) of 4.3%; Year-to-date RoTCE(","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+13,revenue,"1,070",,0.7,"n MM) Net Interest Income 527 - (5)% Non-Interest Revenue 1,070 (3)% 31% ( T E C E N $ in M M In v e s t m C o r p","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+14,net_income,283,million,0.7999999999999999,"argely driven by net credit losses of $27 million Net Income $283 million, up 114% YoY RoTCE(3) of 8.5%; Year-to-date RoTCE","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+14,revenue,769,,0.7,"MM) Net Interest Income 1,233 18% 6% Non-Interest Revenue 769 - 15% ( T E C E N $ in M M ) P r iv a t e B a n k ","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+15,net_income,522,million,0.7999999999999999,"ion and an ACL build of approximately $45 million Net Income $522 million, down 31% YoY RoTCE(3) of 8.2%; Year-to-date RoTC","net\s+income[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+16,revenue,356,,0.7,"Net Interest Income 1,469 (5)% (18)% Non-Interest Revenue 356 (17)% (19)% ( T E C E N $ in M M L e g a c y C o r","(?:total\s+)?revenue[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"
+31,shareholders_equity,31,,0.5,M: Held to Maturity RoE: Return on Average Common Equity 31,"(?:shareholders?\s+|stockholders?\s+)?equity[:\s]+[\$£€]?([\d,\.]+)\s*(million|billion|m|b|k)?"

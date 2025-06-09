@@ -1,0 +1,3163 @@
+page_number,content_type,raw_text,word_count,char_count,extraction_method,cleaned_text,sentence_count,has_financial_terms
+1,main_text,"July 12, 2024
+Earnings Results Presentation
+Second Quarter 2024",9,63,pdfplumber_comprehensive,"July 12, 2024 Earnings Results Presentation Second Quarter 2024",1,True
+2,main_text,"Our strategy and path forward remains unchanged
+Our Vision
+Be the preeminent banking partner for institutions with cross-border needs, a global leader in wealth
+management and a valued personal bank in our home market
+Delivering on our Investor Day priorities
+Transformation Invest for Growth Simplification Culture and Talent
+#1 priority Maximize unique global Focus on five core Build winning culture
+network interconnected businesses
+Relentless execution
+Invest in talent
+Grow Commercial Banking
+Exit 14 international
+Regulatory remediation
+client sector
+consumer markets(1) Deliver One Citi
+Modernize infrastructure Scale Wealth
+Simplify the organization
+Data enhancements Target share gains in
+and management structure
+Banking, Markets and U.S.
+Personal Banking
+Elements of our Strategy
+2
+Note: All footnotes are presented starting on Slide 33.",119,849,pdfplumber_comprehensive,"Our strategy and path forward remains unchanged Our Vision Be the preeminent banking partner for institutions with cross-border needs, a global leader in wealth management and a valued personal bank in our home market Delivering on our Investor Day priorities Transformation Invest for Growth Simplification Culture and Talent 1 priority Maximize unique global Focus on five core Build winning culture network interconnected businesses Relentless execution Invest in talent Grow Commercial Banking Exit 14 international Regulatory remediation client sector consumer markets(1) Deliver One Citi Modernize infrastructure Scale Wealth Simplify the organization Data enhancements Target share gains in and management structure Banking, Markets and U.S. Personal Banking Elements of our Strategy 2 Note: All footnotes are presented starting on Slide 33.",4,True
+3,main_text,"The Fed and OCC announcement on Wednesday, July 10, 2024
+(1)
+• The Federal Reserve Board (FRB) has issued a civil money penalty
+to Citigroup Inc. (Citigroup) in the amount of $60.6 million. It has
+deemed that Citi is delayed in completing milestones included in A• Citigroup (Parent) will have no restrictions to pay common dividends to
+its approved plan related to its data quality management program shareholders and have no restrictions to repurchase common stock from
+and has inadequate measures for managing and controlling its shareholders
+data quality risks. These milestones are related to the FRB 2020 •B While the Resource Review Plan is being finalized, CBNA, which is an operating
+Consent Order entity of Citigroup, will need to ensure OCC does not object to CBNA paying an
+intercompany dividend ultimately to Citigroup beyond a certain threshold
+• The Office of the Comptroller of the Currency (OCC) has issued a C• There are no restrictions on intercompany dividends paid to Citigroup by other
+civil money penalty to Citibank, N.A. (CBNA) in the amount of operating entities
+$75.0 million, as it has deemed that CBNA is behind on its data
+A
+Citigroup Inc.
+quality management on regulatory reporting specifically related to FRB oversees
+(Bank Holding Company) Parent
+•
+Consent Order, requiring: Citicorp LLC
+(Intermediate Holding Company)
+‒ Citi to formalize a process to determine whether sufficient
+resources are being appropriately allocated towards
+B C C
+achieving timely and sustainable compliance with the 2020
+Citibank, N.A. Citigroup Global Banco Nacional
+Consent Order, including any requirements on which CBNA
+OCC oversees
+(CBNA) (CBNA Markets Japan de Mexico, S. A.
+is not making sufficient and sustainable progress. This is bank
+H.O.)(2) Inc. (CGMJ) (Banamex)
+C
+‒ While the Resource Review Plan is being finalized, CBNA will Citigroup Global Markets
+Holdings Inc. (CGMHI)
+need to ensure the OCC has no objection to payment of
+intercompany dividends from CBNA ultimately to Citigroup BHC
+Certain intermediate
+above amounts necessary for Citigroup debt service, IHC Holding Companies are Citigroup Global Citigroup Global
+preferred dividends, and other non-discretionary not included in the chart Markets Inc. Markets Ltd.
+obligations Operating MLE(3) (CGMI) (CGML)
+3
+Note: All footnotes are presented starting on Slide 33.",364,2346,pdfplumber_comprehensive,"The Fed and OCC announcement on Wednesday, July 10, 2024 (1) The Federal Reserve Board (FRB) has issued a civil money penalty to Citigroup Inc. (Citigroup) in the amount of $60.6 million. It has deemed that Citi is delayed in completing milestones included in A Citigroup (Parent) will have no restrictions to pay common dividends to its approved plan related to its data quality management program shareholders and have no restrictions to repurchase common stock from and has inadequate measures for managing and controlling its shareholders data quality risks. These milestones are related to the FRB 2020 B While the Resource Review Plan is being finalized, CBNA, which is an operating Consent Order entity of Citigroup, will need to ensure OCC does not object to CBNA paying an intercompany dividend ultimately to Citigroup beyond a certain threshold The Office of the Comptroller of the Currency (OCC) has issued a C There are no restrictions on intercompany dividends paid to Citigroup by other civil money penalty to Citibank, N.A. (CBNA) in the amount of operating entities $75.0 million, as it has deemed that CBNA is behind on its data A Citigroup Inc. quality management on regulatory reporting specifically related to FRB oversees (Bank Holding Company) Parent Consent Order, requiring: Citicorp LLC (Intermediate Holding Company) Citi to formalize a process to determine whether sufficient resources are being appropriately allocated towards B C C achieving timely and sustainable compliance with the 2020 Citibank, N.A. Citigroup Global Banco Nacional Consent Order, including any requirements on which CBNA OCC oversees (CBNA) (CBNA Markets Japan de Mexico, S. A. is not making sufficient and sustainable progress. This is bank H.O.)(2) Inc. (CGMJ) (Banamex) C While the Resource Review Plan is being finalized, CBNA will Citigroup Global Markets Holdings Inc. (CGMHI) need to ensure the OCC has no objection to payment of intercompany dividends from CBNA ultimately to Citigroup BHC Certain intermediate above amounts necessary for Citigroup debt service, IHC Holding Companies are Citigroup Global Citigroup Global preferred dividends, and other non-discretionary not included in the chart Markets Inc. Markets Ltd. obligations Operating MLE(3) (CGMI) (CGML) 3 Note: All footnotes are presented starting on Slide 33.",21,False
+3,table,"Citico
+(Intermediate H | rp LLC
+olding Company)",8,47,pdfplumber_comprehensive,Citico (Intermediate H | rp LLC olding Company),1,False
+4,main_text,"Progress against our priorities in second quarter 2024
+Transformation Strategic Execution Organization, Culture and Talent
+• Continued to simplify our technology infrastructure, Strategy: • Vis Raghavan joined to lead our unified Banking
+retiring almost 300 applications YTD and over 1,000 organization
+• Continued Services momentum driven by client activity and
+since 2022
+new wins particularly in Payments and Issuer Services as • Tim Ryan joined as the new Head of Technology and
+• Continued the rollout of our strategic loan servicing well as CCB clients. Citi named the Best Trade Finance Bank Business Enablement
+platform by Global Trade Review(1)
+•
+• Strong Markets performance despite lower macro volatility,
+• Consolidated our two forecasting platforms into a increasing the length of paid leave available to all new
+reflecting diverse business mix and outperformance in
+single system, allowing us to accelerate the cycle parents. To be rolled out globally over time
+Equity Derivatives and Spread Products
+time for our quarterly forecasting process
+• Additionally, introduced new Caregiver Leave which
+• In Banking, gained wallet share YTD(2) in almost every
+• Built automated capabilities, systematic reporting, provides U.S. employees up to two-weeks paid leave
+subproduct. Launched the CCB in Japan
+and enhanced controls to increase the frequency of to care for an immediate family member with a
+• Wealth saw an acceleration in investment revenue growth
+anomalous trade monitoring to daily serious health condition
+and positive operating leverage from sharpened focus and
+• Launched a Generative AI production pilot to structural changes
+simplify access to our policy landscape for our
+• Continued revenue momentum and product innovation in
+employees
+USPB, including launch of new Citi Strata Premier Card
+• Successfully implemented market mandatory targeting the mass affluent/affluent space
+transition to T+1 Settlement Cycle in select markets, Progress on divestitures:
+reducing risk and improving liquidity usage for trades
+• Sale and migration of all China portfolios completed in early
+across Services, Markets and Wealth
+• Upgraded all 2,100 North America ATMs to next-gen China
+software for better customer security and
+• Wind-downs ahead of plan in Korea and Russia
+monitoring, enabling card-tap for easier transactions
+Executing with Excellence Across All Priorities To Unlock the Value of Citi
+Improve Returns
+Drive Revenue Disciplined Expense Maintain Robust
+Over the
+Growth Management Capital and Liquidity
+Medium-Term
+4
+Note: All footnotes are presented starting on Slide 33.",389,2601,pdfplumber_comprehensive,"Progress against our priorities in second quarter 2024 Transformation Strategic Execution Organization, Culture and Talent Continued to simplify our technology infrastructure, Strategy: Vis Raghavan joined to lead our unified Banking retiring almost 300 applications YTD and over 1,000 organization Continued Services momentum driven by client activity and since 2022 new wins particularly in Payments and Issuer Services as Tim Ryan joined as the new Head of Technology and Continued the rollout of our strategic loan servicing well as CCB clients. Citi named the Best Trade Finance Bank Business Enablement platform by Global Trade Review(1) Strong Markets performance despite lower macro volatility, Consolidated our two forecasting platforms into a increasing the length of paid leave available to all new reflecting diverse business mix and outperformance in single system, allowing us to accelerate the cycle parents. To be rolled out globally over time Equity Derivatives and Spread Products time for our quarterly forecasting process Additionally, introduced new Caregiver Leave which In Banking, gained wallet share YTD(2) in almost every Built automated capabilities, systematic reporting, provides U.S. employees up to two-weeks paid leave subproduct. Launched the CCB in Japan and enhanced controls to increase the frequency of to care for an immediate family member with a Wealth saw an acceleration in investment revenue growth anomalous trade monitoring to daily serious health condition and positive operating leverage from sharpened focus and Launched a Generative AI production pilot to structural changes simplify access to our policy landscape for our Continued revenue momentum and product innovation in employees USPB, including launch of new Citi Strata Premier Card Successfully implemented market mandatory targeting the mass affluent affluent space transition to T+1 Settlement Cycle in select markets, Progress on divestitures: reducing risk and improving liquidity usage for trades Sale and migration of all China portfolios completed in early across Services, Markets and Wealth Upgraded all 2,100 North America ATMs to next-gen China software for better customer security and Wind-downs ahead of plan in Korea and Russia monitoring, enabling card-tap for easier transactions Executing with Excellence Across All Priorities To Unlock the Value of Citi Improve Returns Drive Revenue Disciplined Expense Maintain Robust Over the Growth Management Capital and Liquidity Medium-Term 4 Note: All footnotes are presented starting on Slide 33.",7,True
+4,table,"Transformation | Strategic Execution | Organization, Culture and Talent
+• Continued to simplify our technology infrastructure,
+retiring almost 300 applications YTD and over 1,000
+since 2022
+• Continued the rollout of our strategic loan servicing
+platform
+• Consolidated our two forecasting platforms into a
+single system, allowing us to accelerate the cycle
+time for our quarterly forecasting process
+• Built automated capabilities, systematic reporting,
+and enhanced controls to increase the frequency of
+anomalous trade monitoring to daily
+• Launched a Generative AI production pilot to
+simplify access to our policy landscape for our
+employees
+• Successfully implemented market mandatory
+transition to T+1 Settlement Cycle in select markets,
+reducing risk and improving liquidity usage for trades
+across Services, Markets and Wealth
+• Upgraded all 2,100 North America ATMs to next-gen
+software for better customer security and
+monitoring, enabling card-tap for easier transactions
+Executing | Strategy:
+• Continued Services momentum driven by client activity and
+new wins particularly in Payments and Issuer Services as
+well as CCB clients. Citi named the Best Trade Finance Bank
+by Global Trade Review(1)
+• Strong Markets performance despite lower macro volatility,
+reflecting diverse business mix and outperformance in
+Equity Derivatives and Spread Products
+• In Banking, gained wallet share YTD(2) in almost every
+subproduct. Launched the CCB in Japan
+• Wealth saw an acceleration in investment revenue growth
+and positive operating leverage from sharpened focus and
+structural changes
+• Continued revenue momentum and product innovation in
+USPB, including launch of new Citi Strata Premier Card
+targeting the mass affluent/affluent space
+Progress on divestitures:
+• Sale and migration of all China portfolios completed in early
+China
+• Wind-downs ahead of plan in Korea and Russia | • Vis Raghavan joined to lead our unified Banking
+organization
+• Tim Ryan joined as the new Head of Technology and
+Business Enablement
+•
+increasing the length of paid leave available to all new
+parents. To be rolled out globally over time
+• Additionally, introduced new Caregiver Leave which
+provides U.S. employees up to two-weeks paid leave
+to care for an immediate family member with a
+serious health condition
+ue of Citi
+ | with Excellence Across All Priorities To Unlock the Val | ",362,2376,pdfplumber_comprehensive,"Transformation | Strategic Execution | Organization, Culture and Talent Continued to simplify our technology infrastructure, retiring almost 300 applications YTD and over 1,000 since 2022 Continued the rollout of our strategic loan servicing platform Consolidated our two forecasting platforms into a single system, allowing us to accelerate the cycle time for our quarterly forecasting process Built automated capabilities, systematic reporting, and enhanced controls to increase the frequency of anomalous trade monitoring to daily Launched a Generative AI production pilot to simplify access to our policy landscape for our employees Successfully implemented market mandatory transition to T+1 Settlement Cycle in select markets, reducing risk and improving liquidity usage for trades across Services, Markets and Wealth Upgraded all 2,100 North America ATMs to next-gen software for better customer security and monitoring, enabling card-tap for easier transactions Executing | Strategy: Continued Services momentum driven by client activity and new wins particularly in Payments and Issuer Services as well as CCB clients. Citi named the Best Trade Finance Bank by Global Trade Review(1) Strong Markets performance despite lower macro volatility, reflecting diverse business mix and outperformance in Equity Derivatives and Spread Products In Banking, gained wallet share YTD(2) in almost every subproduct. Launched the CCB in Japan Wealth saw an acceleration in investment revenue growth and positive operating leverage from sharpened focus and structural changes Continued revenue momentum and product innovation in USPB, including launch of new Citi Strata Premier Card targeting the mass affluent affluent space Progress on divestitures: Sale and migration of all China portfolios completed in early China Wind-downs ahead of plan in Korea and Russia | Vis Raghavan joined to lead our unified Banking organization Tim Ryan joined as the new Head of Technology and Business Enablement increasing the length of paid leave available to all new parents. To be rolled out globally over time Additionally, introduced new Caregiver Leave which provides U.S. employees up to two-weeks paid leave to care for an immediate family member with a serious health condition ue of Citi | with Excellence Across All Priorities To Unlock the Val |",6,True
+5,main_text,"Second quarter 2024 results snapshot
+Revenues Net Income EPS
+2Q24 $20.1 billion 2Q24 $3.2 billion 2Q24 $1.52
+∆ 2Q23 4% ∆ 2Q23 10% ∆ 2Q23 14%
+RoTCE(1) CET1 Capital Ratio(2) Tangible Book Value Per Share(3)
+2Q24 7.2% 2Q24 13.6% 2Q24 $87.53
+2Q23 6.4% 2Q23 13.4% ∆ 2Q23 3%
+Second Quarter Key Highlights
+Services Markets Banking Wealth USPB
+Continued momentum Positive operating leverage Positive operating leverage Positive operating leverage Positive operating leverage
+• TTS: Increased market
+Strong performance in Continued share gains of a NIR up 13% YoY on Revenue growth of 6% YoY
+share to 10.3%(4)
+Spread Products recovering IB wallet(8) investment asset growth with lower expense
+• Cross border transaction and market performance
+• Spread Products and • DCM Fees up 90% YoY, led • Interest-earning balances
+value up 6% YoY(5)
+Other Fixed Income up by gains in Investment • Client investment assets(9) up 9% YoY in Branded
+• Securities Services: Gained 20% YoY Grade issuance up 15% YoY Cards and up 8% YoY in
+~130bps of market share Retail Services
+Strength in Equity • Advisory Fees up 72% YoY • Client balances(10) up 9%
+in 1Q24 compared to
+Derivatives and continued YoY • Branded Cards and Retail
+FY2023 (6)
+Services revenues up 8%
+growth in Prime
+YoY and 6% YoY,
+• Prime balances(7) up ~18%
+respectively
+YoY
+Returned ~$1.0 billion in capital to common shareholders through dividends
+5
+Note: All footnotes are presented starting on Slide 33.",239,1448,pdfplumber_comprehensive,"Second quarter 2024 results snapshot Revenues Net Income EPS 2Q24 $20.1 billion 2Q24 $3.2 billion 2Q24 $1.52 2Q23 4% 2Q23 10% 2Q23 14% RoTCE(1) CET1 Capital Ratio(2) Tangible Book Value Per Share(3) 2Q24 7.2% 2Q24 13.6% 2Q24 $87.53 2Q23 6.4% 2Q23 13.4% 2Q23 3% Second Quarter Key Highlights Services Markets Banking Wealth USPB Continued momentum Positive operating leverage Positive operating leverage Positive operating leverage Positive operating leverage TTS: Increased market Strong performance in Continued share gains of a NIR up 13% YoY on Revenue growth of 6% YoY share to 10.3%(4) Spread Products recovering IB wallet(8) investment asset growth with lower expense Cross border transaction and market performance Spread Products and DCM Fees up 90% YoY, led Interest-earning balances value up 6% YoY(5) Other Fixed Income up by gains in Investment Client investment assets(9) up 9% YoY in Branded Securities Services: Gained 20% YoY Grade issuance up 15% YoY Cards and up 8% YoY in 130bps of market share Retail Services Strength in Equity Advisory Fees up 72% YoY Client balances(10) up 9% in 1Q24 compared to Derivatives and continued YoY Branded Cards and Retail FY2023 (6) Services revenues up 8% growth in Prime YoY and 6% YoY, Prime balances(7) up 18% respectively YoY Returned $1.0 billion in capital to common shareholders through dividends 5 Note: All footnotes are presented starting on Slide 33.",12,True
+5,table,"Revenues | 
+2Q24 | $20.1 billion
+∆ 2Q23 | 4%
+Ro | TCE(1)
+2Q24 | 7.2%
+2Q23 | 6.4%",19,80,pdfplumber_comprehensive,Revenues | 2Q24 | $20.1 billion 2Q23 | 4% Ro | TCE(1) 2Q24 | 7.2% 2Q23 | 6.4%,4,True
+5,table,"Net Income | 
+2Q24 | $3.2 billion
+∆ 2Q23 | 10%
+CET1 Capital Ratio(2) | 
+2Q24 | 13.6%
+2Q23 | 13.4%",21,97,pdfplumber_comprehensive,Net Income | 2Q24 | $3.2 billion 2Q23 | 10% CET1 Capital Ratio(2) | 2Q24 | 13.6% 2Q23 | 13.4%,4,True
+5,table,"EPS | 
+2Q24 | $1.52
+∆ 2Q23 | 14%
+Tangible Book Value Per Share(3) | 
+2Q24 | $87.53
+∆ 2Q23 | 3%",22,94,pdfplumber_comprehensive,EPS | 2Q24 | $1.52 2Q23 | 14% Tangible Book Value Per Share(3) | 2Q24 | $87.53 2Q23 | 3%,3,False
+6,main_text,"Financial results overview
+Financial Results 2Q24 Financial Overview Highlights
+($ in MM, except EPS) 2Q24 % Δ QoQ % Δ YoY YTD '24 % Δ YoY
+• Revenues Increased 4% YoY, driven by growth across all businesses, as well as
+an approximate $400 million gain related to the Visa B exchange completed in
+Net Interest Income 13,493 - (3)% 27,000 (1)%
+2Q24. Excluding divestiture-related impacts, revenues were up 3%(4)
+Non-Interest Revenue 6,646 (13)% 20% 14,243 4%
+• Expenses Down (2)
+Total Revenues 20,139 (5)% 4% 41,243 1% organizational simplification, stranded cost reductions and lower repositioning
+costs, partially offset by continued investments in transformation and civil
+Expenses 13,353 (6)% (2)% 27,548 3%
+money penalties imposed by the FRB and the OCC(5). Excluding divestiture-
+NCLs 2,283 (1)% 52% 4,586 63% related impacts, expenses were also down (2)%(6)
+ACL Build and Other(1) 193 NM (40)% 255 (74)% • Credit Costs $2.5 billion, driven by NCLs of $2.3 billion and an ACL build of
+$0.2 billion, primarily driven by card loan growth
+Credit Costs 2,476 5% 36% 4,841 27%
+‒ At the end of the quarter, Citi had nearly $22 billion in total reserves
+EBT 4,310 (5)% 7% 8,854 (13)%
+with a reserve-to-funded loans ratio of approximately 2.7%
+Income Taxes 1,047 (8)% (4)% 2,183 (17)%
+• Net Income - $3.2 billion, as higher revenues and lower expenses more than
+Net Income 3,217 (5)% 10% 6,588 (12)% offset higher cost of credit
+Net Income to Common
+2,962 (3)% 14% 6,024 (13)%
+(for diluted EPS purposes)
+Diluted EPS $1.52 (4)% 14% $3.10 (12)%
+Efficiency Ratio (Δ in bps) 66% ( 100) ( 350) 67% 1 10
+ROE 6.3% 6.5%
+RoTCE(2) 7.2% 7.4%
+CET1 Capital Ratio(3) 13.6%
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 6",297,1748,pdfplumber_comprehensive,"Financial results overview Financial Results 2Q24 Financial Overview Highlights ($ in MM, except EPS) 2Q24 % Δ QoQ % Δ YoY YTD 24 % Δ YoY Revenues Increased 4% YoY, driven by growth across all businesses, as well as an approximate $400 million gain related to the Visa B exchange completed in Net Interest Income 13,493 - (3)% 27,000 (1)% 2Q24. Excluding divestiture-related impacts, revenues were up 3%(4) Non-Interest Revenue 6,646 (13)% 20% 14,243 4% Expenses Down (2) Total Revenues 20,139 (5)% 4% 41,243 1% organizational simplification, stranded cost reductions and lower repositioning costs, partially offset by continued investments in transformation and civil Expenses 13,353 (6)% (2)% 27,548 3% money penalties imposed by the FRB and the OCC(5). Excluding divestiture- NCLs 2,283 (1)% 52% 4,586 63% related impacts, expenses were also down (2)%(6) ACL Build and Other(1) 193 NM (40)% 255 (74)% Credit Costs $2.5 billion, driven by NCLs of $2.3 billion and an ACL build of $0.2 billion, primarily driven by card loan growth Credit Costs 2,476 5% 36% 4,841 27% At the end of the quarter, Citi had nearly $22 billion in total reserves EBT 4,310 (5)% 7% 8,854 (13)% with a reserve-to-funded loans ratio of approximately 2.7% Income Taxes 1,047 (8)% (4)% 2,183 (17)% Net Income - $3.2 billion, as higher revenues and lower expenses more than Net Income 3,217 (5)% 10% 6,588 (12)% offset higher cost of credit Net Income to Common 2,962 (3)% 14% 6,024 (13)% (for diluted EPS purposes) Diluted EPS $1.52 (4)% 14% $3.10 (12)% Efficiency Ratio (Δ in bps) 66% ( 100) ( 350) 67% 1 10 ROE 6.3% 6.5% RoTCE(2) 7.2% 7.4% CET1 Capital Ratio(3) 13.6% Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 6",17,True
+7,main_text,"$
+2
+1 3
+Q
+.5
+2 3
+B $
+3
+1 3
+Q
+.4
+2
+B
+3
+$
+4
+1 4
+Q
+.2
+2
+B
+3
+$
+1
+1
+Q
+3 .8
+2 4
+B $
+2
+1 3
+Q
+.2
+2 4
+B
+Quarterly expense trend and 2024 outlook
+Expense Trend Recent Expense Drivers
+($ in B)
+Reported
+$13.6B $13.5B $16.0B $14.2B $13.4B
+Expenses
+Transformation
+infrastructure, automate manual processes and
+Investments
+Expenses ex- enhance data and analytics Divestitures &
+FDIC special
+assessment (1,2)
+Business-led Investments in product innovation, front office talent,
+Investments technology and platforms to drive revenue growth
+Growth driven by marketing, transaction-related
+Volume-related expenses and incentive compensation tied to revenue
+growth across certain businesses
+Includes:
+Growth driven by risk and control enhancements,
+Restructuring - - ~$0.8B ~$0.2B ~$0.0B
+Structural/ Other investments in technology, including cyber and cloud,
+Repositioning ~$0.2B ~$0.2B ~$0.1B ~$0.3B ~$0.0B and macro factors such as inflation
+Civil Money
+- - - - ~$0.1B
+Penalties(3)
+Citi expects FY24 expenses to be in line with $53.5B-53.8B ex-FDIC special assessment
+and Civil Money Penalties(4) albeit likely at the higher end
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 7",201,1205,pdfplumber_comprehensive,"$ 2 1 3 Q .5 2 3 B $ 3 1 3 Q .4 2 B 3 $ 4 1 4 Q .2 2 B 3 $ 1 1 Q 3 .8 2 4 B $ 2 1 3 Q .2 2 4 B Quarterly expense trend and 2024 outlook Expense Trend Recent Expense Drivers ($ in B) Reported $13.6B $13.5B $16.0B $14.2B $13.4B Expenses Transformation infrastructure, automate manual processes and Investments Expenses ex- enhance data and analytics Divestitures FDIC special assessment (1,2) Business-led Investments in product innovation, front office talent, Investments technology and platforms to drive revenue growth Growth driven by marketing, transaction-related Volume-related expenses and incentive compensation tied to revenue growth across certain businesses Includes: Growth driven by risk and control enhancements, Restructuring - - $0.8B $0.2B $0.0B Structural Other investments in technology, including cyber and cloud, Repositioning $0.2B $0.2B $0.1B $0.3B $0.0B and macro factors such as inflation Civil Money - - - - $0.1B Penalties(3) Citi expects FY24 expenses to be in line with $53.5B-53.8B ex-FDIC special assessment and Civil Money Penalties(4) albeit likely at the higher end Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 7",24,True
+7,table,"Restructuring - - ~$0.8B ~$0.2B ~$0.0B |  |  |  |  | 
+Repositioning | ~$0.2B | ~$0.2B | ~$0.1B | ~$0.3B | ~$0.0B
+Civil Money
+- - - - ~$0.1B
+Penalties(3) |  |  |  |  | ",35,167,pdfplumber_comprehensive,Restructuring - - $0.8B $0.2B $0.0B | | | | | Repositioning | $0.2B | $0.2B | $0.1B | $0.3B | $0.0B Civil Money - - - - $0.1B Penalties(3) | | | | |,10,False
+8,main_text,"Our Transformation is setting the stage for future success
+Transformation of this magnitude is always a multi-year journey and never linear. We are actively addressing areas of focus
+Examples of progress to date Near-term areas of focus
+• Built greater efficiency and scale in the risk management of our
+Global Spread Products business with 99% of risk
+• Intensifying efforts to automate certain
+Improved Risk computations now on cloud-based infrastructure
+Management • Implemented automated controls representing 80%+ of regulatory processes and address data
+transaction volumes across Markets to reduce manual trade
+quality management related to
+entry errors
+regulatory reporting and data
+• Retired 4% of our applications in 1H24 governance
+• Consolidating 20 cash equities platforms to one single modern
+Simplification platform • Further strengthening our CCAR and
+• As of 2Q24, reduced the time to book new or amended loans in DFAST and Resolution and Recovery
+North America by over 50%
+capabilities and processes
+• Improved resiliency and reduced downtime by simplifying • Committed to making the necessary
+system restoration to a single click for ~30% of our critical
+investments in our risk and control
+Resiliency applications, as of 2Q24(1)
+environment
+• Optimizing virtual workloads to reduce data center footprint
+and lower operational costs
+Transformation will unlock value as we continue to eliminate manual processes and modernize our platforms
+Note: All footnotes are presented starting on Slide 33. 8",230,1515,pdfplumber_comprehensive,"Our Transformation is setting the stage for future success Transformation of this magnitude is always a multi-year journey and never linear. We are actively addressing areas of focus Examples of progress to date Near-term areas of focus Built greater efficiency and scale in the risk management of our Global Spread Products business with 99% of risk Intensifying efforts to automate certain Improved Risk computations now on cloud-based infrastructure Management Implemented automated controls representing 80%+ of regulatory processes and address data transaction volumes across Markets to reduce manual trade quality management related to entry errors regulatory reporting and data Retired 4% of our applications in 1H24 governance Consolidating 20 cash equities platforms to one single modern Simplification platform Further strengthening our CCAR and As of 2Q24, reduced the time to book new or amended loans in DFAST and Resolution and Recovery North America by over 50% capabilities and processes Improved resiliency and reduced downtime by simplifying Committed to making the necessary system restoration to a single click for 30% of our critical investments in our risk and control Resiliency applications, as of 2Q24(1) environment Optimizing virtual workloads to reduce data center footprint and lower operational costs Transformation will unlock value as we continue to eliminate manual processes and modernize our platforms Note: All footnotes are presented starting on Slide 33. 8",3,True
+9,main_text,"$1,338 $1,315 $1,320 $1,326 $1,310
+424 415 412 416 409
+838 821 827 833 830
+76 79 81 77 71
+2Q23 3Q23 4Q23 1Q24 2Q24
+$
+2
+6
+3
+2
+Q
+6
+8
+5
+8
+6
+2
+4
+3
+$
+3
+2 .4 8 %
+$ 1 3 .9 0
+2 . 0 0
+1 1 . 9 0
+2 Q 2 3
+6 6 2
+3 7 6
+2 8 7
+Q 2 3
+$ 6
+3 8
+2 9
+4 Q
+7
+0
+4
+2
+5
+3
+$
+3
+2
+1 Q
+2 .4 9 %
+$ 1 3 .8 3
+1 .7 0
+1 2 .1 3
+3 Q 2 3
+6 7 9
+8 2
+9 7
+2 4
+$ 6
+3 8
+2 9
+2 Q
+8
+3
+6
+2
+0
+4
+2
+$
+4
+.4 6 %
+1 3 .8 2
+1 .9 9
+1 1 .8 3
+Q 2 3
+2
+$
+1
+1
+.4 2 %
+1 3 . 5 1
+1 .7 1
+1 .8 0
+Q 2 4
+2 .4 1 %
+$ 1 3 .4 9
+2 .0 4
+1 1 .4 6
+2 Q 2 4
+Net interest income, average loans and deposits
+($ in B)
+Net Interest Income
+QoQ YoY
+Citigroup NIM
+$(0.01) $(0.41)
+Markets NII $0.33 $0.04
+NII $(0.34) $(0.44)
+ex-Markets(1)
+Average Loans Average Deposits
+QoQ YoY QoQ YoY
+0% 4% (1)% (2)%
+Consumer
+(2)% (4)%
+Consumer
+0% 4%
+Corporate
+0% (1)%
+Corporate
+0% 3%
+All Other
+(8)% (7)%
+Gross Loan Yield(2) Cost of Interest-Bearing Deposits(3)
+8.63% 9.02% 9.12% 9.22% 9.17% 3.09% 3.41% 3.61% 3.70% 3.71%
+Note: Totals may not sum due to rounding. Excludes discontinued operations. NIM (Net Interest Margin) (%) includes the taxable equivalent adjustment (based on the U.S. federal statutory tax rate of 21% in all periods). Consumer loans 9
+includes USPB, Wealth and Legacy excluding Mexico SBMM. Consumer deposits includes USPB and Wealth. Corporate loans includes Services, Markets, Banking and Mexico SBMM. All footnotes are presented starting on Slide 33.",338,1373,pdfplumber_comprehensive,"$1,338 $1,315 $1,320 $1,326 $1,310 424 415 412 416 409 838 821 827 833 830 76 79 81 77 71 2Q23 3Q23 4Q23 1Q24 2Q24 $ 2 6 3 2 Q 6 8 5 8 6 2 4 3 $ 3 2 .4 8 % $ 1 3 .9 0 2 . 0 0 1 1 . 9 0 2 Q 2 3 6 6 2 3 7 6 2 8 7 Q 2 3 $ 6 3 8 2 9 4 Q 7 0 4 2 5 3 $ 3 2 1 Q 2 .4 9 % $ 1 3 .8 3 1 .7 0 1 2 .1 3 3 Q 2 3 6 7 9 8 2 9 7 2 4 $ 6 3 8 2 9 2 Q 8 3 6 2 0 4 2 $ 4 .4 6 % 1 3 .8 2 1 .9 9 1 1 .8 3 Q 2 3 2 $ 1 1 .4 2 % 1 3 . 5 1 1 .7 1 1 .8 0 Q 2 4 2 .4 1 % $ 1 3 .4 9 2 .0 4 1 1 .4 6 2 Q 2 4 Net interest income, average loans and deposits ($ in B) Net Interest Income QoQ YoY Citigroup NIM $(0.01) $(0.41) Markets NII $0.33 $0.04 NII $(0.34) $(0.44) ex-Markets(1) Average Loans Average Deposits QoQ YoY QoQ YoY 0% 4% (1)% (2)% Consumer (2)% (4)% Consumer 0% 4% Corporate 0% (1)% Corporate 0% 3% All Other (8)% (7)% Gross Loan Yield(2) Cost of Interest-Bearing Deposits(3) 8.63% 9.02% 9.12% 9.22% 9.17% 3.09% 3.41% 3.61% 3.70% 3.71% Note: Totals may not sum due to rounding. Excludes discontinued operations. NIM (Net Interest Margin) (%) includes the taxable equivalent adjustment (based on the U.S. federal statutory tax rate of 21% in all periods). Consumer loans 9 includes USPB, Wealth and Legacy excluding Mexico SBMM. Consumer deposits includes USPB and Wealth. Corporate loans includes Services, Markets, Banking and Mexico SBMM. All footnotes are presented starting on Slide 33.",46,True
+9,table,8.63% | 9.02% | 9.12% | 9.22% | 9.17%,9,37,pdfplumber_comprehensive,8.63% | 9.02% | 9.12% | 9.22% | 9.17%,6,False
+9,table,3.09% | 3.41% | 3.61% | 3.70% | 3.71%,9,37,pdfplumber_comprehensive,3.09% | 3.41% | 3.61% | 3.70% | 3.71%,6,False
+10,main_text,"83% 83% 82%
+17% 17% 18%
+2Q23 1Q24 2Q24
+6 7
+3 3
+2 Q
+%
+%
+2 3
+6
+3
+1 Q
+8
+2
+%
+%
+2 4
+6
+3
+2
+8
+2
+Q
+%
+%
+2 4
+8 7
+1 3
+2 Q
+%
+%
+2 3
+8 5
+1 5
+1 Q
+%
+%
+2 4
+8 6
+1 4
+2 Q
+%
+%
+2 4
+U.S. cards and corporate credit overview
+($ in B)
+U.S. Cards Loans Corporate Lending Exposure
+EOP Loans by Segment EOP Loans by FICO Score(1) By Region By Grade Rating
+International
+Exposure
+Branded
+Cards ≥ 660 IG
+Retail
+Services Non-
+<660
+IG
+Total EOP Consumer Loans: $386 Total Exposure: $719
+Key U.S. Cards Loan Metrics Key Corporate Lending Exposure Metrics
+2Q23 1Q24 2Q24 2Q23 1Q24 2Q24
+EOP Card Loans $153 $159 $164 EOP Corporate Loans $286 $293 $302
+NCLs $1.2 $1.8 $1.9 NCLs $0.1 $0.2 $0.1
+% of Avg Loans 3.1% 4.5% 4.7% % of Avg Loans 0.1% 0.2% 0.1%
+90+ Days Past Due (DPD) 1.1% 1.6% 1.5% NALs $1.3 $1.5 $1.0
+% of Loans 0.4% 0.5% 0.3%
+ACLL / EOP Loans 7.9% 8.2% 8.1%
+ACLL / EOP Loans(2) 0.9% 1.0% 0.8%
+Note: Totals may not sum due to rounding. All information for 2Q24 is preliminary. All footnotes are presented starting on Slide 33. 10
+s u
+O
+IGb
+s
+th e
+/ M
+id ia
+r, 10 %
+N C s o
+rie s , 9
+r
+0 %
+International
+43%
+U.S.
+57%",252,1089,pdfplumber_comprehensive,"83% 83% 82% 17% 17% 18% 2Q23 1Q24 2Q24 6 7 3 3 2 Q % % 2 3 6 3 1 Q 8 2 % % 2 4 6 3 2 8 2 Q % % 2 4 8 7 1 3 2 Q % % 2 3 8 5 1 5 1 Q % % 2 4 8 6 1 4 2 Q % % 2 4 U.S. cards and corporate credit overview ($ in B) U.S. Cards Loans Corporate Lending Exposure EOP Loans by Segment EOP Loans by FICO Score(1) By Region By Grade Rating International Exposure Branded Cards 660 IG Retail Services Non- 660 IG Total EOP Consumer Loans: $386 Total Exposure: $719 Key U.S. Cards Loan Metrics Key Corporate Lending Exposure Metrics 2Q23 1Q24 2Q24 2Q23 1Q24 2Q24 EOP Card Loans $153 $159 $164 EOP Corporate Loans $286 $293 $302 NCLs $1.2 $1.8 $1.9 NCLs $0.1 $0.2 $0.1 % of Avg Loans 3.1% 4.5% 4.7% % of Avg Loans 0.1% 0.2% 0.1% 90+ Days Past Due (DPD) 1.1% 1.6% 1.5% NALs $1.3 $1.5 $1.0 % of Loans 0.4% 0.5% 0.3% ACLL EOP Loans 7.9% 8.2% 8.1% ACLL EOP Loans(2) 0.9% 1.0% 0.8% Note: Totals may not sum due to rounding. All information for 2Q24 is preliminary. All footnotes are presented starting on Slide 33. 10 s u O IGb s th e M id ia r, 10 % N C s o rie s , 9 r 0 % International 43% U.S. 57%",39,False
+10,table,NCLs | $1.2 | $1.8 | $1.9,7,25,pdfplumber_comprehensive,NCLs | $1.2 | $1.8 | $1.9,4,False
+10,table,NCLs | $0.1 | $0.2 | $0.1,7,25,pdfplumber_comprehensive,NCLs | $0.1 | $0.2 | $0.1,4,False
+10,table,% of Loans | 0.4% | 0.5% | 0.3%,9,31,pdfplumber_comprehensive,% of Loans | 0.4% | 0.5% | 0.3%,4,False
+10,table,ACLL / EOP Loans(2) | 0.9% | 1.0% | 0.8%,10,40,pdfplumber_comprehensive,ACLL EOP Loans(2) | 0.9% | 1.0% | 0.8%,4,False
+11,main_text,"$2,424 $2,433 $2,406
+297 273 246
+507 515 508
+821 837 829
+643 656 670
+155 151 153
+2Q23 1Q24 2Q24
+2Q23 1Q24 2Q24
+Liquidity Coverage Ratio 119% 117% 117%
+Average HQLA 584 552 542
+$2,424 $2,433 $2,406 Total Available Liquidity Resources(3) 993 965 899
+500 529 530
+2Q23 1Q24 2Q24
+AFS Securities (Duration: ~2 Years) $237 $255 $249
+HTM Securities (Duration: ~3 Years) 2 62 2 52 2 51 1,320 1,307 1,278
+Tangible Book Value Per Share(4) 8 5.34 8 6.67 8 7.53
+Corporate Deposits (EOP) 8 20 8 12 8 07
+120 103 108
+Consumer Deposits (EOP) 421 4 20 4 04 275 285 280
+All Other Deposits (EOP) 8 0 7 6 6 7 209 207 209
+2Q23 1Q24 2Q24
+C
+S
+C
+A
+C
+S
+E
+t
+E
+d
+E
+u
+T
+a
+T
+v
+T
+p
+1
+n
+1
+a
+1
+p
+C
+d a
+C
+n c
+C
+l e
+a p
+r d
+a p
+e
+a p
+m
+i t a
+i z e
+i t a
+d R
+i t a
+e n
+l
+d R
+l R a
+W A
+l R a
+t a r y
+W
+t
+t
+L
+A
+i o
+i o
+e
+-
+-
+v e
+S
+A
+r a
+t a
+d
+g
+n d
+v a n
+e R
+a
+c
+a
+r d
+e
+t i
+d
+o
+i z e
+(2 )
+d
+2 Q 2
+1 5
+1 , 1 5
+1 3 . 4
+1 , 2 5
+1 2 . 3
+2 Q 2
+6 . 0
+3
+4
+3
+%
+1
+%
+3
+%
+1 Q 2
+1 5
+1 , 1 3
+1 3 . 5
+1 , 2 8
+1 2 . 0
+1 Q 2
+5 . 8
+4
+3
+9
+%
+1
+%
+4
+%
+2 Q
+1
+1 , 1
+1 3 .
+1 , 2
+1 2 .
+2 Q
+5 .
+2
+5
+3
+6
+6
+2
+2
+9
+4
+4
+6
+%
+9
+%
+4
+%
+Capital and balance sheet overview
+($ in B, except per share data)
+Risk-based Capital Metrics(1) End of Period Assets
+QoQ YoY
+(1)% (1)%
+Cash (10)% (17)%
+(1)% 0% Investments,
+net(5)
+Trading-Related (1)% 1%
+Assets(6)
+Leverage-based Capital Metrics
+Loans, net(7) 2% 4%
+Other Assets(8) 1% (1)%
+Liquidity Metrics
+End of Period Liabilities and Equity
+QoQ YoY
+(1)% (1)%
+Trading-Related
+Balance Sheet Liabilities(9) 0% 6%
+Deposits (2)% (3)%
+Other Liabilities(10) 5% (10)%
+Long Term Debt (2)% 2%
+Equity
+1% (0)%
+Note: Totals may not sum due to rounding. All information for 2Q24 is preliminary. Consumer deposits includes USPB and Wealth. Corporate deposits includes Services, Markets 11
+are included in All Other Deposits which comprises of Corporate/Other and Legacy Franchises. All footnotes are presented starting on Slide 33.",472,1884,pdfplumber_comprehensive,"$2,424 $2,433 $2,406 297 273 246 507 515 508 821 837 829 643 656 670 155 151 153 2Q23 1Q24 2Q24 2Q23 1Q24 2Q24 Liquidity Coverage Ratio 119% 117% 117% Average HQLA 584 552 542 $2,424 $2,433 $2,406 Total Available Liquidity Resources(3) 993 965 899 500 529 530 2Q23 1Q24 2Q24 AFS Securities (Duration: 2 Years) $237 $255 $249 HTM Securities (Duration: 3 Years) 2 62 2 52 2 51 1,320 1,307 1,278 Tangible Book Value Per Share(4) 8 5.34 8 6.67 8 7.53 Corporate Deposits (EOP) 8 20 8 12 8 07 120 103 108 Consumer Deposits (EOP) 421 4 20 4 04 275 285 280 All Other Deposits (EOP) 8 0 7 6 6 7 209 207 209 2Q23 1Q24 2Q24 C S C A C S E t E d E u T a T v T p 1 n 1 a 1 p C d a C n c C l e a p r d a p e a p m i t a i z e i t a d R i t a e n l d R l R a W A l R a t a r y W t t L A i o i o e - - v e S A r a t a d g n d v a n e R a c a r d e t i d o i z e (2 ) d 2 Q 2 1 5 1 , 1 5 1 3 . 4 1 , 2 5 1 2 . 3 2 Q 2 6 . 0 3 4 3 % 1 % 3 % 1 Q 2 1 5 1 , 1 3 1 3 . 5 1 , 2 8 1 2 . 0 1 Q 2 5 . 8 4 3 9 % 1 % 4 % 2 Q 1 1 , 1 1 3 . 1 , 2 1 2 . 2 Q 5 . 2 5 3 6 6 2 2 9 4 4 6 % 9 % 4 % Capital and balance sheet overview ($ in B, except per share data) Risk-based Capital Metrics(1) End of Period Assets QoQ YoY (1)% (1)% Cash (10)% (17)% (1)% 0% Investments, net(5) Trading-Related (1)% 1% Assets(6) Leverage-based Capital Metrics Loans, net(7) 2% 4% Other Assets(8) 1% (1)% Liquidity Metrics End of Period Liabilities and Equity QoQ YoY (1)% (1)% Trading-Related Balance Sheet Liabilities(9) 0% 6% Deposits (2)% (3)% Other Liabilities(10) 5% (10)% Long Term Debt (2)% 2% Equity 1% (0)% Note: Totals may not sum due to rounding. All information for 2Q24 is preliminary. Consumer deposits includes USPB and Wealth. Corporate deposits includes Services, Markets 11 are included in All Other Deposits which comprises of Corporate Other and Legacy Franchises. All footnotes are presented starting on Slide 33.",18,True
+12,main_text,"Standardized CET1 Capital ratio overview
+2Q24 QoQ Standardized CET1 Capital Ratio Walk CET1 Standardized Regulatory Requirement
+Key drivers resulting in CET1 Capital ratio of 13.6%(1) • Well capitalized today with a CET1 Capital ratio of 13.6%, which is
+• Strength in earnings
+includes a 100bps management buffer
+• Reduction in RWA
+• Decreased regulatory requirement:
+• Partially offset by:
+ꟷ In October 2024, regulatory capital requirement is expected to
+ꟷ Capital distribution in the form of common dividends decrease to 12.1%, driven by the indicative Stress Capital Buffer
+decrease from 4.3% to 4.1%
+ꟷ FX impact from USD appreciation
+13.4% 13.6%
+13.5% 26 bps 13.6% 1.4% 1.3% 12.3% 12.1%
+(3) bps
+(9) bps
+4.0% 4.3% 4.3% 4.1%
+Management
+Buffer and
+Excess
+Stress Capital
+3.5% 3.5% 3.5% 3.5% Buffer
+GSIB
+Surcharge
+4.5% 4.5% 4.5% 4.5% Regulatory
+Minimum
+1Q24 Net Income Capital DTA, RWA & Other(2) 2Q24(1) 2Q23 2Q24 (1) Current As of October 1
+to Common Distribution Requirement (preliminary)
+Actual Effective Regulatory Requirement
+Note: Totals may not sum due to rounding. All information for 2Q24 is preliminary. All footnotes are presented starting on Slide 33. 12",185,1166,pdfplumber_comprehensive,"Standardized CET1 Capital ratio overview 2Q24 QoQ Standardized CET1 Capital Ratio Walk CET1 Standardized Regulatory Requirement Key drivers resulting in CET1 Capital ratio of 13.6%(1) Well capitalized today with a CET1 Capital ratio of 13.6%, which is Strength in earnings includes a 100bps management buffer Reduction in RWA Decreased regulatory requirement: Partially offset by: ꟷ In October 2024, regulatory capital requirement is expected to ꟷ Capital distribution in the form of common dividends decrease to 12.1%, driven by the indicative Stress Capital Buffer decrease from 4.3% to 4.1% ꟷ FX impact from USD appreciation 13.4% 13.6% 13.5% 26 bps 13.6% 1.4% 1.3% 12.3% 12.1% (3) bps (9) bps 4.0% 4.3% 4.3% 4.1% Management Buffer and Excess Stress Capital 3.5% 3.5% 3.5% 3.5% Buffer GSIB Surcharge 4.5% 4.5% 4.5% 4.5% Regulatory Minimum 1Q24 Net Income Capital DTA, RWA Other(2) 2Q24(1) 2Q23 2Q24 (1) Current As of October 1 to Common Distribution Requirement (preliminary) Actual Effective Regulatory Requirement Note: Totals may not sum due to rounding. All information for 2Q24 is preliminary. All footnotes are presented starting on Slide 33. 12",29,True
+13,main_text,"($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY
+Allocated Average TCE(2) 25 - 8% Treasury and Trade Solutions
+RoTCE(3) 23.8% Average Loans 81 0% 3%
+Efficiency Ratio (Δ in bps) 58% 2 00 3 00 Average Deposits 677 (1)% (2)%
+Average Loans 82 - 3% Cross Border Transaction Value(4) 93 2% 6%
+EOP Loans 89 10% 6% US Dollar Clearing Volume (#MM)(5) 42 5% 7%
+Average Deposits 804 - (1)% Commercial Card Spend Volume(6) 18 7% 4%
+EOP Deposits 783 (1)% (2)% Securities Services
+Memo: ($ in MM) Average Deposits 127 2% 2%
+Net Interest Income 3,225 (3)% (1)% Preliminary AUC/AUA ($T)(7) 24 1% 9%
+Non-Interest Revenue 1,455 - 11%
+(
+T
+E
+C
+E
+N
+$ in M M )
+N e t In t e r e s t In c
+N o n - In t e r e s t R
+T r e a s u r y a n d T r a
+N e t In t e r e s t In c
+N o n - In t e r e s t R
+S e c u r it ie s S e r v ic
+o t a l R e v e n u e s
+x p e n s e s
+N C L s
+A C L B u ild (R e le a
+r e d it C o s t s
+B T
+e t In c o m e
+o
+e
+d
+o
+e
+e
+s
+m e
+v e n
+e S
+m e
+v e n
+s
+e ) a
+u
+o
+u
+n
+e
+lu
+e
+d
+t
+O
+io
+t
+n
+h
+s
+e r (1)
+4
+2 Q 2 4
+2 ,6 2 9
+8 0 2
+3 ,4 3 1
+5 9 6
+6 5 3
+1 ,2 4 9
+,6 8 0
+2 ,7 3 4
+0
+(2 7
+( 2 7
+1 ,9 7 3
+1 ,4 7 1
+)
+)
+% Δ
+(1
+Q o Q
+(3 )%
+1 %
+(2 )%
+-
+-
+-
+( 2 ) %
+3 %
+0 0 )%
+N M
+N M
+( 3 ) %
+( 1 ) %
+% Δ
+(1 0
+Y o Y
+(3 )%
+1 4 %
+-
+1 4 %
+7 %
+1 0 %
+3 %
+9 %
+0 )%
+N M
+N M
+8 %
+2 1 %
+Services results, key metrics and statistics
+Financial Results Highlights
+• Revenues Up 3% YoY, primarily reflecting strength in Securities Services, as
+well as the impact of continued underlying momentum in TTS
+‒ NII decreased (1)%, largely driven by lower revenue from the net
+investment in Argentina, partially offset by the benefit of higher interest
+rates
+‒ NIR increased 11% on continued strength across underlying fee drivers,
+as well as a smaller impact from currency devaluation in Argentina
+• Expenses Up 9% YoY, largely driven by an Argentina-related transaction tax
+expense, a legal settlement expense and continued investments in product
+innovation and technology
+• Credit Costs Benefit of $(27) million, largely driven by an ACL release in the
+quarter, primarily due to an improved macroeconomic outlook
+• Net Income $1.5 billion, up 21% YoY
+• RoTCE(3) of 23.8%; Year-to-date RoTCE(3) of 23.9%
+Key Metrics and Statistics Key Metrics and Statistics Detail by Business
+Note: Services includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking Corporate Lending for Investment Banking, Markets and Services products sold to Corporate Lending clients. Totals 13
+may not sum due to rounding. Preliminary AUC/AUA reflects prior-period revisions for certain AUC North America accounts. All footnotes are presented starting on Slide 33.",637,2695,pdfplumber_comprehensive,"($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY Allocated Average TCE(2) 25 - 8% Treasury and Trade Solutions RoTCE(3) 23.8% Average Loans 81 0% 3% Efficiency Ratio (Δ in bps) 58% 2 00 3 00 Average Deposits 677 (1)% (2)% Average Loans 82 - 3% Cross Border Transaction Value(4) 93 2% 6% EOP Loans 89 10% 6% US Dollar Clearing Volume ( MM)(5) 42 5% 7% Average Deposits 804 - (1)% Commercial Card Spend Volume(6) 18 7% 4% EOP Deposits 783 (1)% (2)% Securities Services Memo: ($ in MM) Average Deposits 127 2% 2% Net Interest Income 3,225 (3)% (1)% Preliminary AUC AUA ($T)(7) 24 1% 9% Non-Interest Revenue 1,455 - 11% ( T E C E N $ in M M ) N e t In t e r e s t In c N o n - In t e r e s t R T r e a s u r y a n d T r a N e t In t e r e s t In c N o n - In t e r e s t R S e c u r it ie s S e r v ic o t a l R e v e n u e s x p e n s e s N C L s A C L B u ild (R e le a r e d it C o s t s B T e t In c o m e o e d o e e s m e v e n e S m e v e n s e ) a u o u n e lu e d t O io t n h s e r (1) 4 2 Q 2 4 2 ,6 2 9 8 0 2 3 ,4 3 1 5 9 6 6 5 3 1 ,2 4 9 ,6 8 0 2 ,7 3 4 0 (2 7 ( 2 7 1 ,9 7 3 1 ,4 7 1 ) ) % Δ (1 Q o Q (3 )% 1 % (2 )% - - - ( 2 ) % 3 % 0 0 )% N M N M ( 3 ) % ( 1 ) % % Δ (1 0 Y o Y (3 )% 1 4 % - 1 4 % 7 % 1 0 % 3 % 9 % 0 )% N M N M 8 % 2 1 % Services results, key metrics and statistics Financial Results Highlights Revenues Up 3% YoY, primarily reflecting strength in Securities Services, as well as the impact of continued underlying momentum in TTS NII decreased (1)%, largely driven by lower revenue from the net investment in Argentina, partially offset by the benefit of higher interest rates NIR increased 11% on continued strength across underlying fee drivers, as well as a smaller impact from currency devaluation in Argentina Expenses Up 9% YoY, largely driven by an Argentina-related transaction tax expense, a legal settlement expense and continued investments in product innovation and technology Credit Costs Benefit of $(27) million, largely driven by an ACL release in the quarter, primarily due to an improved macroeconomic outlook Net Income $1.5 billion, up 21% YoY RoTCE(3) of 23.8%; Year-to-date RoTCE(3) of 23.9% Key Metrics and Statistics Key Metrics and Statistics Detail by Business Note: Services includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking Corporate Lending for Investment Banking, Markets and Services products sold to Corporate Lending clients. Totals 13 may not sum due to rounding. Preliminary AUC AUA reflects prior-period revisions for certain AUC North America accounts. All footnotes are presented starting on Slide 33.",9,True
+14,main_text,"($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY ($ in MM) 2Q22 2Q23 3Q23 4Q23 1Q24 2Q24 % Δ QoQ % Δ YoY
+Allocated Average TCE(2) 54 - 2% Markets Revenues
+RoTCE(3) 10.7%
+Fixed Income markets 4,271 3,670 3,806 2,547 4,130 3,564 (14)% (3)%
+Efficiency Ratio (Δ in bps) 65% 2 00 ( 500)
+Equity markets 1,220 1,109 942 819 1,227 1,522 24% 37%
+Average Trading Account Assets 426 4% 12%
+Total Markets Revenues 5,491 4,779 4,748 3,366 5,357 5,086 (5)% 6%
+Average Total Assets 1,064 2% 2%
+Average Loans 119 (1)% 11%
+Average VaR(4) ($ in MM)(99% confidence level) 113 (27)% (16)%
+(
+T
+E
+C
+E
+N
+$ in M M )
+R a t e s a n d c u r r e n c ie
+S p r e a d p r o d u c t s / o
+F ix e d In c o m e m a r k e t
+E q u it y m a r k e t s
+o t a l R e v e n u e s
+x p e n s e s
+N C L s
+A C L B u ild (R e le a s e ) a
+r e d it C o s t s
+B T
+e t In c o m e
+s
+t
+s
+n
+h
+d
+e r
+O
+f
+t
+ix
+h
+e
+e
+d in
+(1) r
+c o m e
+2 Q
+2 ,4
+1 ,0
+3 ,5
+1 ,5
+5 ,0
+3 ,3
+1 ,7
+1 ,4
+2 4
+6 6
+9 8
+6 4
+2 2
+8 6
+0 5
+6 6
+(7 7
+( 1 1
+9 2
+4 3
+)
+)
+% Δ Q o Q
+(1 2 )%
+(1 7 )%
+(1 4 )%
+2 4 %
+( 5 ) %
+(2 )%
+(1 5 )%
+N M
+N M
+1 %
+3 %
+% Δ Y o Y
+(1 1 )%
+2 0 %
+(3 )%
+3 7 %
+6 %
+(1 )%
+N M
+N M
+3 5 %
+2 4 %
+2 9 %
+Markets results, key metrics and statistics
+Financial Results Highlights
+• Revenues Up 6% YoY, driven by Equity markets (up 37%), partially offset by a
+(3)% decline in Fixed Income markets
+‒ The decline in Fixed Income markets was driven by rates and currencies,
+down (11)% on lower volatility and tighter spreads, partially offset by
+strength in spread products and other fixed income
+‒ Equity markets benefited from growth across equity derivatives, which
+included a gain related to the Visa B exchange completed in 2Q24.
+Equities also benefitted from strong growth in prime balances, up
+approximately 18% YoY
+• Expenses Down (1)% YoY, driven by productivity savings, partially offset by
+higher volume-related expenses
+• Credit Costs Benefit of $(11) million, as an ACL release, primarily driven by
+changes in portfolio composition combined with an improved macroeconomic
+outlook, was partially offset by net credit losses
+• Net Income $1.4 billion, up 29% YoY
+• RoTCE(3) of 10.7%; Year-to-date RoTCE(3) of 10.6%
+Key Metrics and Statistics Revenue Detail by Business
+Note: Markets includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking Corporate Lending for Investment Banking, Markets and Services products sold to Corporate Lending clients. Totals 14
+may not sum due to rounding. All footnotes are presented starting on Slide 33.",582,2513,pdfplumber_comprehensive,"($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY ($ in MM) 2Q22 2Q23 3Q23 4Q23 1Q24 2Q24 % Δ QoQ % Δ YoY Allocated Average TCE(2) 54 - 2% Markets Revenues RoTCE(3) 10.7% Fixed Income markets 4,271 3,670 3,806 2,547 4,130 3,564 (14)% (3)% Efficiency Ratio (Δ in bps) 65% 2 00 ( 500) Equity markets 1,220 1,109 942 819 1,227 1,522 24% 37% Average Trading Account Assets 426 4% 12% Total Markets Revenues 5,491 4,779 4,748 3,366 5,357 5,086 (5)% 6% Average Total Assets 1,064 2% 2% Average Loans 119 (1)% 11% Average VaR(4) ($ in MM)(99% confidence level) 113 (27)% (16)% ( T E C E N $ in M M ) R a t e s a n d c u r r e n c ie S p r e a d p r o d u c t s o F ix e d In c o m e m a r k e t E q u it y m a r k e t s o t a l R e v e n u e s x p e n s e s N C L s A C L B u ild (R e le a s e ) a r e d it C o s t s B T e t In c o m e s t s n h d e r O f t ix h e e d in (1) r c o m e 2 Q 2 ,4 1 ,0 3 ,5 1 ,5 5 ,0 3 ,3 1 ,7 1 ,4 2 4 6 6 9 8 6 4 2 2 8 6 0 5 6 6 (7 7 ( 1 1 9 2 4 3 ) ) % Δ Q o Q (1 2 )% (1 7 )% (1 4 )% 2 4 % ( 5 ) % (2 )% (1 5 )% N M N M 1 % 3 % % Δ Y o Y (1 1 )% 2 0 % (3 )% 3 7 % 6 % (1 )% N M N M 3 5 % 2 4 % 2 9 % Markets results, key metrics and statistics Financial Results Highlights Revenues Up 6% YoY, driven by Equity markets (up 37%), partially offset by a (3)% decline in Fixed Income markets The decline in Fixed Income markets was driven by rates and currencies, down (11)% on lower volatility and tighter spreads, partially offset by strength in spread products and other fixed income Equity markets benefited from growth across equity derivatives, which included a gain related to the Visa B exchange completed in 2Q24. Equities also benefitted from strong growth in prime balances, up approximately 18% YoY Expenses Down (1)% YoY, driven by productivity savings, partially offset by higher volume-related expenses Credit Costs Benefit of $(11) million, as an ACL release, primarily driven by changes in portfolio composition combined with an improved macroeconomic outlook, was partially offset by net credit losses Net Income $1.4 billion, up 29% YoY RoTCE(3) of 10.7%; Year-to-date RoTCE(3) of 10.6% Key Metrics and Statistics Revenue Detail by Business Note: Markets includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking Corporate Lending for Investment Banking, Markets and Services products sold to Corporate Lending clients. Totals 14 may not sum due to rounding. All footnotes are presented starting on Slide 33.",9,True
+15,main_text,"( $ in
+In v e
+A d
+E q
+D e
+In v e
+M M
+s t m
+v is o
+u it y
+b t U
+s t m
+)
+e n
+r y
+U n
+n d
+e n
+t B a
+d e r
+e r w
+t B a
+n
+w
+r
+n
+k
+r
+it
+k
+in g
+it in
+in g
+in g
+g
+f e e s
+2 Q 2
+3 4
+1 8
+3 1
+8 4
+2
+5
+1
+8
+4
+2 Q
+1
+1
+2
+5
+2
+5
+5
+5
+7
+3
+6
+8
+9
+3
+3 Q
+2
+1
+2
+6
+2
+9
+2
+7
+9
+3
+9
+3
+2
+4
+4 Q 2
+2 8
+1 1
+3 1
+7 0
+3
+6
+0
+0
+6
+1 Q
+2
+2 4
+3 0
+1 7 1
+5 7 1
+9 7 2
+2 Q
+2
+1
+4
+9
+2
+6
+7
+9
+3
+4
+8
+4
+3
+5
+% Δ Q o Q
+1 7 %
+2 %
+(1 4 )%
+( 4 ) %
+% Δ Y
+7
+1
+9
+6
+o
+2
+0
+0
+3
+Y
+%
+%
+%
+%
+($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY
+Allocated Average TCE(3) 22 - 2%
+RoTCE(4) 7.5%
+Efficiency Ratio (Δ in bps) 70% 2 00 NM
+Average Loans 89 - (4)%
+EOP Loans 87 (1)% (3)%
+NCL Rate (Δ in bps) 0.18% ( 12) ( 7)
+Memo: ($ in MM)
+Net Interest Income 527 (9)% (3)%
+Non-Interest Revenue 1,100 (5)% 73%
+(
+T
+E
+C
+E
+N
+$ in M M
+In v e s t m
+C o r p o
+G a in /
+C o r p o r
+o t a l R e
+x p e n s e
+N C L s
+A C L B u
+r e d it C
+B T
+e t In c o
+)
+e n t B a n
+r a t e L e n
+(lo s s ) o n
+a t e L e n d
+v e n u e s
+s
+ild (R e le
+o s t s
+m e
+k in
+d in
+lo a
+in g
+a s e
+g
+g (e x - g
+n h e d g
+(in c l. g
+) a n d O
+a
+e
+a
+t
+in
+s
+in
+h e
+/
+/
+r
+(lo
+(lo
+(2 )
+s
+s
+s
+s
+(1) ))
+))
+2 Q 2 4
+8 5 3
+7 6 5
+9
+7 7 4
+1 ,6 2 7
+1 ,1 3 1
+4 0
+(7 2
+( 3 2
+5 2 8
+4 0 6
+)
+)
+% Δ Q o Q
+(8 )%
+(1 6 )%
+N M
+(5 )%
+( 6 ) %
+(4 )%
+(3 9 )%
+6 3 %
+7 5 %
+( 2 3 ) %
+( 2 3 ) %
+% Δ Y o Y
+6 0 %
+7 %
+N M
+2 0 %
+3 8 %
+(1 0 )%
+(3 0 )%
+6 5 %
+7 8 %
+N M
+N M
+Banking results, key metrics and statistics
+Financial Results Highlights
+• Revenues Up 38% YoY, driven by growth in Investment Banking and
+Corporate Lending
+‒ Investment Banking revenues increased 60%, driven by strength
+across DCM, ECM and Advisory
+‒ Corporate Lending (ex-gain/loss on loan hedges(1)) up 7%, largely driven
+by higher revenue share
+• Expenses Down (10)% YoY, primarily driven by benefits from prior
+repositioning and other actions taken to right-size the expense base
+• Credit Costs Benefit of $(32) million, as the ACL release, primarily driven by
+an improved macroeconomic outlook, was partially offset by net credit losses
+• Net Income $406 million
+• RoTCE(4) of 7.5%; Year-to-date RoTCE(4) of 8.6%
+Key Metrics and Statistics Investment Banking Fees Detail by Business
+Note: Banking includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking Corporate Lending for Investment Banking, Markets and Services products sold to Corporate Lending clients. Totals 15
+may not sum due to rounding. All footnotes are presented starting on Slide 33.",711,2426,pdfplumber_comprehensive,"( $ in In v e A d E q D e In v e M M s t m v is o u it y b t U s t m ) e n r y U n n d e n t B a d e r e r w t B a n w r n k r it k in g it in in g in g g f e e s 2 Q 2 3 4 1 8 3 1 8 4 2 5 1 8 4 2 Q 1 1 2 5 2 5 5 5 7 3 6 8 9 3 3 Q 2 1 2 6 2 9 2 7 9 3 9 3 2 4 4 Q 2 2 8 1 1 3 1 7 0 3 6 0 0 6 1 Q 2 2 4 3 0 1 7 1 5 7 1 9 7 2 2 Q 2 1 4 9 2 6 7 9 3 4 8 4 3 5 % Δ Q o Q 1 7 % 2 % (1 4 )% ( 4 ) % % Δ Y 7 1 9 6 o 2 0 0 3 Y % % % % ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY Allocated Average TCE(3) 22 - 2% RoTCE(4) 7.5% Efficiency Ratio (Δ in bps) 70% 2 00 NM Average Loans 89 - (4)% EOP Loans 87 (1)% (3)% NCL Rate (Δ in bps) 0.18% ( 12) ( 7) Memo: ($ in MM) Net Interest Income 527 (9)% (3)% Non-Interest Revenue 1,100 (5)% 73% ( T E C E N $ in M M In v e s t m C o r p o G a in C o r p o r o t a l R e x p e n s e N C L s A C L B u r e d it C B T e t In c o ) e n t B a n r a t e L e n (lo s s ) o n a t e L e n d v e n u e s s ild (R e le o s t s m e k in d in lo a in g a s e g g (e x - g n h e d g (in c l. g ) a n d O a e a t in s in h e r (lo (lo (2 ) s s s s (1) )) )) 2 Q 2 4 8 5 3 7 6 5 9 7 7 4 1 ,6 2 7 1 ,1 3 1 4 0 (7 2 ( 3 2 5 2 8 4 0 6 ) ) % Δ Q o Q (8 )% (1 6 )% N M (5 )% ( 6 ) % (4 )% (3 9 )% 6 3 % 7 5 % ( 2 3 ) % ( 2 3 ) % % Δ Y o Y 6 0 % 7 % N M 2 0 % 3 8 % (1 0 )% (3 0 )% 6 5 % 7 8 % N M N M Banking results, key metrics and statistics Financial Results Highlights Revenues Up 38% YoY, driven by growth in Investment Banking and Corporate Lending Investment Banking revenues increased 60%, driven by strength across DCM, ECM and Advisory Corporate Lending (ex-gain loss on loan hedges(1)) up 7%, largely driven by higher revenue share Expenses Down (10)% YoY, primarily driven by benefits from prior repositioning and other actions taken to right-size the expense base Credit Costs Benefit of $(32) million, as the ACL release, primarily driven by an improved macroeconomic outlook, was partially offset by net credit losses Net Income $406 million RoTCE(4) of 7.5%; Year-to-date RoTCE(4) of 8.6% Key Metrics and Statistics Investment Banking Fees Detail by Business Note: Banking includes revenues earned by Citigroup that are subject to a revenue sharing arrangement with Banking Corporate Lending for Investment Banking, Markets and Services products sold to Corporate Lending clients. Totals 15 may not sum due to rounding. All footnotes are presented starting on Slide 33.",9,True
+16,main_text,"(
+W
+T
+$
+P
+W
+C
+o
+in M M )
+e a lt h
+r iv a t e B
+e a lt h a
+it ig o ld
+t a l W e a
+a n
+t W
+lt h
+k
+o
+R
+r
+e
+k
+v e n u e s
+2
+1
+Q
+7 5
+1 7
+9 6
+,8
+2
+8
+0
+8
+9
+2
+6
+2 Q 2 3
+6 0 5
+2 2 4
+9 4 7
+1 ,7 7 6
+3 Q
+6 1
+2 3
+9 8
+1 ,8
+2
+7
+4
+0
+3
+3
+1
+4
+1
+Q
+5
+2
+9
+,6
+2
+4 2
+1 1
+1 1
+6
+3
+4
+1 Q
+5
+1
+9
+1 ,6
+2 4
+7 1
+8 1
+4 1
+9 3
+2 Q
+6
+1 9
+1 ,0
+1 ,8
+2 4
+1 1
+5
+0 8
+1 4
+% Δ
+7
+8
+7
+7
+Q
+%
+%
+%
+%
+o Q % Δ
+1
+(1 3
+6
+2
+Y
+%
+)%
+%
+%
+o Y ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY
+Allocated Average TCE(2) 13 - (1)%
+RoTCE(3) 6.4%
+Efficiency Ratio (Δ in bps) 85% ( 1,200) ( 600)
+Average Loans 150 0% 0%
+EOP Loans 150 1% (1)%
+Average Deposits(4) 316 0% 2%
+EOP Deposits(4) 318 (1)% 3%
+Client Investment Assets(5) 540 5% 15%
+Client Balances(6) 1,008 3% 9%
+Estimated NNA (excludes USPB transfers)(7) (4) NM NM
+Memo: ($ in MM)
+Net Interest Income 1,047 7% (4)%
+Non-Interest Revenue 767 8% 13%
+(
+T
+E
+C
+E
+N
+$ in M M )
+P r iv a t e B a n k
+W e a lt h a t W
+C it ig o ld
+o t a l R e v e n u
+x p e n s e s
+N C L s
+A C L B u ild (R
+r e d it C o s t s
+B T
+e t In c o m e
+o
+e
+e
+r k
+s
+le a s e ) a n d O t h e r (1)
+2 Q 2 4
+6 1 1
+1 9 5
+1 ,0 0 8
+1 ,8 1 4
+1 ,5 4 2
+3 5
+(4 4
+( 9
+2 8 1
+2 1 0
+)
+)
+% Δ Q o Q
+7 %
+8 %
+7 %
+7 %
+(6 )%
+2 1 %
+7 8 %
+9 5 %
+2 7 %
+2 0 %
+% Δ Y o Y
+1 %
+(1 3 )%
+6 %
+2 %
+(4 )%
+5 2 %
+N M
+N M
+N M
+N M
+Wealth results, key metrics and statistics
+Financial Results Highlights
+• Revenues Up 2% YoY, driven by an 13% increase in NIR from higher
+investment fee revenues, partially offset by a 4% decrease in NII from higher
+mortgage funding costs
+• Expenses Down (4)% YoY, driven by benefits from prior repositioning and
+restructuring actions as Wealth continued to right-size its expense base,
+resulting in positive operating leverage
+• Credit Costs Benefit of $(9) million, as net credit losses were more than
+offset by an ACL release reflecting an improved macroeconomic outlook
+• Net Income $210 million
+• RoTCE(3) of 6.4%; Year-to-date RoTCE(3) of 5.9%
+Key Metrics and Statistics Revenue Detail by Business
+Note: Totals may not sum due to rounding. Net new assets are estimated as of 2Q24. All footnotes are presented starting on Slide 33. 16",599,2097,pdfplumber_comprehensive,"( W T $ P W C o in M M ) e a lt h r iv a t e B e a lt h a it ig o ld t a l W e a a n t W lt h k o R r e k v e n u e s 2 1 Q 7 5 1 7 9 6 ,8 2 8 0 8 9 2 6 2 Q 2 3 6 0 5 2 2 4 9 4 7 1 ,7 7 6 3 Q 6 1 2 3 9 8 1 ,8 2 7 4 0 3 3 1 4 1 Q 5 2 9 ,6 2 4 2 1 1 1 1 6 3 4 1 Q 5 1 9 1 ,6 2 4 7 1 8 1 4 1 9 3 2 Q 6 1 9 1 ,0 1 ,8 2 4 1 1 5 0 8 1 4 % Δ 7 8 7 7 Q % % % % o Q % Δ 1 (1 3 6 2 Y % )% % % o Y ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY Allocated Average TCE(2) 13 - (1)% RoTCE(3) 6.4% Efficiency Ratio (Δ in bps) 85% ( 1,200) ( 600) Average Loans 150 0% 0% EOP Loans 150 1% (1)% Average Deposits(4) 316 0% 2% EOP Deposits(4) 318 (1)% 3% Client Investment Assets(5) 540 5% 15% Client Balances(6) 1,008 3% 9% Estimated NNA (excludes USPB transfers)(7) (4) NM NM Memo: ($ in MM) Net Interest Income 1,047 7% (4)% Non-Interest Revenue 767 8% 13% ( T E C E N $ in M M ) P r iv a t e B a n k W e a lt h a t W C it ig o ld o t a l R e v e n u x p e n s e s N C L s A C L B u ild (R r e d it C o s t s B T e t In c o m e o e e r k s le a s e ) a n d O t h e r (1) 2 Q 2 4 6 1 1 1 9 5 1 ,0 0 8 1 ,8 1 4 1 ,5 4 2 3 5 (4 4 ( 9 2 8 1 2 1 0 ) ) % Δ Q o Q 7 % 8 % 7 % 7 % (6 )% 2 1 % 7 8 % 9 5 % 2 7 % 2 0 % % Δ Y o Y 1 % (1 3 )% 6 % 2 % (4 )% 5 2 % N M N M N M N M Wealth results, key metrics and statistics Financial Results Highlights Revenues Up 2% YoY, driven by an 13% increase in NIR from higher investment fee revenues, partially offset by a 4% decrease in NII from higher mortgage funding costs Expenses Down (4)% YoY, driven by benefits from prior repositioning and restructuring actions as Wealth continued to right-size its expense base, resulting in positive operating leverage Credit Costs Benefit of $(9) million, as net credit losses were more than offset by an ACL release reflecting an improved macroeconomic outlook Net Income $210 million RoTCE(3) of 6.4%; Year-to-date RoTCE(3) of 5.9% Key Metrics and Statistics Revenue Detail by Business Note: Totals may not sum due to rounding. Net new assets are estimated as of 2Q24. All footnotes are presented starting on Slide 33. 16",7,True
+17,main_text,"($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY
+Allocated Average TCE(2) 25 - 15% Branded Cards
+RoTCE(3) 1.9% Credit Card Spend Volume 131 8% 3%
+Efficiency Ratio (Δ in bps) 50% 1 00 ( 400) Average Loans 109 2% 10%
+Average Loans 206 1% 9% NCL Rate (Δ in bps) 3.82% 1 7 1 35
+EOP Loans 210 3% 8% 90+ day Delinquency Rate (Δ in bps) 1.09% ( 10) 2 8
+Average Deposits(4) 93 (7)% (18)% Retail Services
+EOP Deposits(4) 86 (14)% (23)% Credit Card Spend Volume 24 19% (4)%
+Active Mobile Users (MM)(5) 19 2% 10% Average Loans 51 (1)% 4%
+Active Digital Users (MM)(6) 26 1% 6% NCL Rate (Δ in bps) 6.45% 1 3 1 99
+90+ day Delinquency Rate (Δ in bps) 2.36% ( 17) 5 9
+NCL Rate (Δ in bps) 3.77% 1 0 1 18
+Average Installment Loans(7) 6 2% 14% Retail Banking
+EOP Digital Deposits(8) 28 (1)% (2)%
+Memo: ($ in MM)
+USPB Branches 641 (1)% (2)%
+Net Interest Income 5,103 (2)% 5%
+Mortgage Originations 4 39% (4)%
+Non-Interest Revenue (184) NM 30%
+Average Mortgage Loans 41 2% 14%
+(
+T
+E
+C
+E
+N
+$ in M M )
+B r a n d e d C a r d
+R e t a il S e r v ic e
+R e t a il B a n k in
+o t a l R e v e n u e
+x p e n s e s
+N C L s
+A C L B u ild (R e
+r e d it C o s t s
+B T
+e t In c o m e
+s
+s
+g
+s
+le a s e ) a n d O t h e r (1)
+2 Q 2 4
+2 ,5 3 7
+1 ,7 4 6
+6 3 6
+4 ,9 1 9
+2 ,4 4 2
+1 ,9 3 1
+3 8 4
+2 ,3 1 5
+1 6 2
+1 2 1
+% Δ
+(
+(
+Q o Q
+(4 )%
+(8 )%
+-
+( 5 ) %
+(3 )%
+4 %
+1 3 %
+5 %
+6 4 ) %
+6 5 ) %
+% Δ Y o Y
+8 %
+6 %
+3 %
+6 %
+(2 )%
+5 9 %
+2 5 %
+5 2 %
+( 7 3 ) %
+( 7 4 ) %
+U.S. Personal Banking results, key metrics and statistics
+Financial Results Highlights
+• Revenues Up 6% YoY, driven by NII growth of 5% due to loan growth in
+cards, and higher non-interest revenue due to lower partner payments
+• Expenses Down (2)% YoY, reflecting lower technology and compensation
+costs, partially offset by higher volume-related expenses
+• Credit Costs Cost of $2.3 billion, largely driven by NCLs of $1.9 billion as
+multiple cards loan vintages that were originated over the last few years are
+now maturing, as well as persistent inflation and higher interest rates
+impacting a subset of consumers. There was also an ACL build of
+approximately $400 million reflecting volume growth in the quarter
+• Net Income $121 million
+• RoTCE(3) of 1.9%; Year-to-date RoTCE(3) of 3.7%
+Key Metrics and Statistics Key Metrics and Statistics Detail by Business
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 17",576,2432,pdfplumber_comprehensive,"($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY Allocated Average TCE(2) 25 - 15% Branded Cards RoTCE(3) 1.9% Credit Card Spend Volume 131 8% 3% Efficiency Ratio (Δ in bps) 50% 1 00 ( 400) Average Loans 109 2% 10% Average Loans 206 1% 9% NCL Rate (Δ in bps) 3.82% 1 7 1 35 EOP Loans 210 3% 8% 90+ day Delinquency Rate (Δ in bps) 1.09% ( 10) 2 8 Average Deposits(4) 93 (7)% (18)% Retail Services EOP Deposits(4) 86 (14)% (23)% Credit Card Spend Volume 24 19% (4)% Active Mobile Users (MM)(5) 19 2% 10% Average Loans 51 (1)% 4% Active Digital Users (MM)(6) 26 1% 6% NCL Rate (Δ in bps) 6.45% 1 3 1 99 90+ day Delinquency Rate (Δ in bps) 2.36% ( 17) 5 9 NCL Rate (Δ in bps) 3.77% 1 0 1 18 Average Installment Loans(7) 6 2% 14% Retail Banking EOP Digital Deposits(8) 28 (1)% (2)% Memo: ($ in MM) USPB Branches 641 (1)% (2)% Net Interest Income 5,103 (2)% 5% Mortgage Originations 4 39% (4)% Non-Interest Revenue (184) NM 30% Average Mortgage Loans 41 2% 14% ( T E C E N $ in M M ) B r a n d e d C a r d R e t a il S e r v ic e R e t a il B a n k in o t a l R e v e n u e x p e n s e s N C L s A C L B u ild (R e r e d it C o s t s B T e t In c o m e s s g s le a s e ) a n d O t h e r (1) 2 Q 2 4 2 ,5 3 7 1 ,7 4 6 6 3 6 4 ,9 1 9 2 ,4 4 2 1 ,9 3 1 3 8 4 2 ,3 1 5 1 6 2 1 2 1 % Δ ( ( Q o Q (4 )% (8 )% - ( 5 ) % (3 )% 4 % 1 3 % 5 % 6 4 ) % 6 5 ) % % Δ Y o Y 8 % 6 % 3 % 6 % (2 )% 5 9 % 2 5 % 5 2 % ( 7 3 ) % ( 7 4 ) % U.S. Personal Banking results, key metrics and statistics Financial Results Highlights Revenues Up 6% YoY, driven by NII growth of 5% due to loan growth in cards, and higher non-interest revenue due to lower partner payments Expenses Down (2)% YoY, reflecting lower technology and compensation costs, partially offset by higher volume-related expenses Credit Costs Cost of $2.3 billion, largely driven by NCLs of $1.9 billion as multiple cards loan vintages that were originated over the last few years are now maturing, as well as persistent inflation and higher interest rates impacting a subset of consumers. There was also an ACL build of approximately $400 million reflecting volume growth in the quarter Net Income $121 million RoTCE(3) of 1.9%; Year-to-date RoTCE(3) of 3.7% Key Metrics and Statistics Key Metrics and Statistics Detail by Business Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 17",16,True
+18,main_text,"S
+C
+M
+W
+L
+D
+L
+d
+t a t u s
+lo s e d E
+e x ic o C
+in d - D o
+e g a c y F
+iv e s t it u
+e g a c y F
+iv e s t it u
+x it M a r k e t s
+o n s u m e r / S B M M
+w n s / S a le / O t h e
+r a n c h is e s
+r e - r e la t e d I m p a c
+r a n c h is e s e x -
+(5 ) r e s
+r
+t s
+R e v e
+$
+n
+2
+4
+0
+8
+0
+7
+2 0
+u e
+.9
+.7
+.9
+.5
+.9
+.6
+2 2
+E
+(5 )
+x p e n
+$
+s e s
+2 .1
+3 .4
+2 .3
+7 .8
+0 .7
+7 .1
+R e v e
+$
+2 0
+n u e
+2 .3
+5 .7
+0 .7
+8 .7
+1 .3
+7 .3
+2 3
+E
+(5 )
+x p e n
+$
+s e s
+1 .5
+4 .2
+1 .4
+7 .1
+0 .4
+6 .8
+R e v e
+2 Q
+n u e
+$ 0 .1
+1 .6
+0 .0
+1 .8
+0 .0
+1 .7
+2 4
+E
+(5 )
+x p e n
+$
+s e s
+0 .2
+1 .1
+0 .4
+1 .6
+0 .1
+1 .6
+($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY
+Legacy Franchises Average Allocated TCE(3) 6 - (38)%
+Corporate / Other Average Allocated TCE(3) 21 7% (2)%
+Allocated Average TCE(3) 27 5% (14)%
+Efficiency Ratio (Δ in bps) 107% ( 600) 1 ,700
+Legacy Franchises Revenues (in $MM) 1,727 (6)% (10)%
+Legacy Franchises Expenses (in $MM) 1,558 (4)% (10)%
+Corporate / Other Revenues (in $MM) 253 (55)% (58)%
+Corporate / Other Expenses (in $MM) 556 (49)% 2%
+Memo: ($ in MM)
+Net Interest Income 1,553 (8)% (27)%
+Non-Interest Revenue 427 (38)% 8%
+(
+T
+E
+C
+E
+N
+$ in M M
+L e g a c y
+C o r p o r
+o t a l R e
+x p e n s e
+N C L s
+A C L B u
+r e d it C
+B T
+e t In c o
+)
+F r a n
+a t e /
+v e n u
+s
+ild (R
+o s t s
+m e
+c h is e s (m
+O t h e r
+e s
+e le a s e ) a
+a
+n
+n
+d
+a
+O
+g e d
+t h
+b
+e r
+a
+(2
+s
+)
+is )
+1
+2 Q 2 4
+1 ,7 2 7
+2 5 3
+,9 8 0
+2 ,1 1 4
+2 1 4
+2 9
+2 4 3
+( 3 7 7
+(4 0 2
+)
+)
+% Δ Q o Q
+(6 )%
+(5 5 )%
+( 1 7 ) %
+(2 2 )%
+(1 4 )%
+N M
+3 1 %
+2 4 %
+1 6 %
+% Δ Y o Y
+(1 0 )%
+(5 8 )%
+( 2 2 ) %
+(7 )%
+8 %
+N M
+2 2 %
+N M
+N M
+All Other (Managed Basis(1)) results, key metrics and statistics
+Financial Results Highlights
+• Revenues Down (22)% YoY, primarily driven by the closed exits and wind-
+downs and higher funding costs, partially offset by growth in Mexico as well
+as the impact from the Visa B exchange
+• Expenses Down (7)% YoY, primarily driven by lower expenses from the
+closed exits and wind-downs, partially offset by the civil money penalties
+imposed by the FRB and the OCC(4)
+• Credit Costs Cost of $243 million, primarily comprised of net credit losses
+Key Metrics and Statistics Legacy Franchise Exits Contribution
+($ in B)
+Note: Wind-down / Sale / Other includes consumer businesses in Poland, China and Korea, as well as Russia, UK and Legacy Assets. Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 18",714,2412,pdfplumber_comprehensive,"S C M W L D L d t a t u s lo s e d E e x ic o C in d - D o e g a c y F iv e s t it u e g a c y F iv e s t it u x it M a r k e t s o n s u m e r S B M M w n s S a le O t h e r a n c h is e s r e - r e la t e d I m p a c r a n c h is e s e x - (5 ) r e s r t s R e v e $ n 2 4 0 8 0 7 2 0 u e .9 .7 .9 .5 .9 .6 2 2 E (5 ) x p e n $ s e s 2 .1 3 .4 2 .3 7 .8 0 .7 7 .1 R e v e $ 2 0 n u e 2 .3 5 .7 0 .7 8 .7 1 .3 7 .3 2 3 E (5 ) x p e n $ s e s 1 .5 4 .2 1 .4 7 .1 0 .4 6 .8 R e v e 2 Q n u e $ 0 .1 1 .6 0 .0 1 .8 0 .0 1 .7 2 4 E (5 ) x p e n $ s e s 0 .2 1 .1 0 .4 1 .6 0 .1 1 .6 ($ in B, unless otherwise noted) 2Q24 % Δ QoQ % Δ YoY Legacy Franchises Average Allocated TCE(3) 6 - (38)% Corporate Other Average Allocated TCE(3) 21 7% (2)% Allocated Average TCE(3) 27 5% (14)% Efficiency Ratio (Δ in bps) 107% ( 600) 1 ,700 Legacy Franchises Revenues (in $MM) 1,727 (6)% (10)% Legacy Franchises Expenses (in $MM) 1,558 (4)% (10)% Corporate Other Revenues (in $MM) 253 (55)% (58)% Corporate Other Expenses (in $MM) 556 (49)% 2% Memo: ($ in MM) Net Interest Income 1,553 (8)% (27)% Non-Interest Revenue 427 (38)% 8% ( T E C E N $ in M M L e g a c y C o r p o r o t a l R e x p e n s e N C L s A C L B u r e d it C B T e t In c o ) F r a n a t e v e n u s ild (R o s t s m e c h is e s (m O t h e r e s e le a s e ) a a n n d a O g e d t h b e r a (2 s ) is ) 1 2 Q 2 4 1 ,7 2 7 2 5 3 ,9 8 0 2 ,1 1 4 2 1 4 2 9 2 4 3 ( 3 7 7 (4 0 2 ) ) % Δ Q o Q (6 )% (5 5 )% ( 1 7 ) % (2 2 )% (1 4 )% N M 3 1 % 2 4 % 1 6 % % Δ Y o Y (1 0 )% (5 8 )% ( 2 2 ) % (7 )% 8 % N M 2 2 % N M N M All Other (Managed Basis(1)) results, key metrics and statistics Financial Results Highlights Revenues Down (22)% YoY, primarily driven by the closed exits and wind- downs and higher funding costs, partially offset by growth in Mexico as well as the impact from the Visa B exchange Expenses Down (7)% YoY, primarily driven by lower expenses from the closed exits and wind-downs, partially offset by the civil money penalties imposed by the FRB and the OCC(4) Credit Costs Cost of $243 million, primarily comprised of net credit losses Key Metrics and Statistics Legacy Franchise Exits Contribution ($ in B) Note: Wind-down Sale Other includes consumer businesses in Poland, China and Korea, as well as Russia, UK and Legacy Assets. Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 18",40,True
+19,main_text,"Full year 2024 guidance and medium-term(1) targets
+Full Year 2024 Guidance Underlying Drivers of Medium-Term(1) Targets
+• Full year revenues: ~$80-81 billion
+• NIR driven by • 4-5% revenue CAGR as we continue to execute in Services,
+‒ Fee growth in Services, driven by client wins and deepening of Markets and USPB
+Revenue existing relationships • Capitalize on expected rebound in Banking wallet
+‒ Rebound in Investment Banking and improvement in Wealth • Refocus our strategy in Wealth to drive growth in investment
+‒ Lower partner payments in Retail Services revenue
+• NII ex-Markets down modestly YoY(2)
+• <60% efficiency ratio; $51-53 billion, revenue dependent
+• Full year expenses: Expect to be in line with full year guidance, • Reduce expenses through benefits from organizational
+Expenses ~$53.5-53.8 billion ex. FDIC special assessment and Civil Money simplification, market exits and stranded cost
+Penalties(3)(4), albeit likely at the higher end
+• Efficiencies and benefits from investments in transformation and
+technology
+• Full year Branded Cards average NCL rate: 3.50-4.00%
+• Full year Retail Services average NCL rate: 5.75-6.25% (likely at
+Cost of
+the higher-end) • CoC driven by growth and mix, as well as macro environment
+Credit
+• Expect seasonality to create some variability in the quarterly
+NCL rate
+• Continue to evaluate share buybacks on a quarterly basis(5) • Expect continued capital benefit from exits and simplification as
+Capital
+‒ Plan to repurchase ~$1B of common stock this quarter well as the execution of our strategy over time
+Committed to 11-12% RoTCE Medium-term Target(6)
+Note: All footnotes are presented starting on Slide 33 . 19",264,1674,pdfplumber_comprehensive,"Full year 2024 guidance and medium-term(1) targets Full Year 2024 Guidance Underlying Drivers of Medium-Term(1) Targets Full year revenues: $80-81 billion NIR driven by 4-5% revenue CAGR as we continue to execute in Services, Fee growth in Services, driven by client wins and deepening of Markets and USPB Revenue existing relationships Capitalize on expected rebound in Banking wallet Rebound in Investment Banking and improvement in Wealth Refocus our strategy in Wealth to drive growth in investment Lower partner payments in Retail Services revenue NII ex-Markets down modestly YoY(2) 60% efficiency ratio; $51-53 billion, revenue dependent Full year expenses: Expect to be in line with full year guidance, Reduce expenses through benefits from organizational Expenses $53.5-53.8 billion ex. FDIC special assessment and Civil Money simplification, market exits and stranded cost Penalties(3)(4), albeit likely at the higher end Efficiencies and benefits from investments in transformation and technology Full year Branded Cards average NCL rate: 3.50-4.00% Full year Retail Services average NCL rate: 5.75-6.25% (likely at Cost of the higher-end) CoC driven by growth and mix, as well as macro environment Credit Expect seasonality to create some variability in the quarterly NCL rate Continue to evaluate share buybacks on a quarterly basis(5) Expect continued capital benefit from exits and simplification as Capital Plan to repurchase $1B of common stock this quarter well as the execution of our strategy over time Committed to 11-12% RoTCE Medium-term Target(6) Note: All footnotes are presented starting on Slide 33 . 19",9,True
+20,main_text,"-
+Securities Litigation Reform Act of 1995. These statements are based on management's current
+expectations and are subject to uncertainty and changes in circumstances. These statements are not
+guarantees of future results or occurrences. Actual results and capital and other financial condition may
+differ materially from those included in these statements due to a variety of factors. These factors include,
+among others: macroeconomic, geopolitical and other challenges and uncertainties, including those related
+simplification and other strategic and other initiatives, including those related to its investment, expense
+and capital-related actions; the potential outcomes of the extensive legal and regulatory proceedings,
+examinations, investigations, consent orders and related compliance efforts and other inquiries to which
+Citi is or may be subject; ongoing regulatory and legislative uncertainties and changes, including changes in
+regulatory capital rules, requirements or interpretations; and the precautionary statements included in this
+presentation. These factors also consist of those contained in Citigroup's filings with the U.S. Securities and
+-
+K. Any forward-looking statements made by or on behalf of Citigroup speak only as to the date they are
+made, and Citi does not undertake to update forward-looking statements to reflect the impact of
+circumstances or events that arise after the date the forward-looking statements were made.
+20",206,1459,pdfplumber_comprehensive,"- Securities Litigation Reform Act of 1995. These statements are based on management s current expectations and are subject to uncertainty and changes in circumstances. These statements are not guarantees of future results or occurrences. Actual results and capital and other financial condition may differ materially from those included in these statements due to a variety of factors. These factors include, among others: macroeconomic, geopolitical and other challenges and uncertainties, including those related simplification and other strategic and other initiatives, including those related to its investment, expense and capital-related actions; the potential outcomes of the extensive legal and regulatory proceedings, examinations, investigations, consent orders and related compliance efforts and other inquiries to which Citi is or may be subject; ongoing regulatory and legislative uncertainties and changes, including changes in regulatory capital rules, requirements or interpretations; and the precautionary statements included in this presentation. These factors also consist of those contained in Citigroup s filings with the U.S. Securities and - K. Any forward-looking statements made by or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made. 20",10,True
+22,main_text,"ACLL Balance ACLL / EOP Loans ACLL Balance ACLL / EOP Loans
+11.9% 11.9%
+11.1% 11.2% 11.0% 11.1%
+6.3% 6.2% 6.2% 6.6% 6.3% 6.3% 6.0% 6.4% 6.4% 9.8% 10.1% 10.3%
+$5.8 $5.9 $6.2 $6.4 $6.4 $6.6 $6.7 $6.9 $7.1 $5.2 $5.4 $5.6 $5.6 $6.0 $6.1 $6.2
+$4.5 $4.7
+2Q22 3Q22 4Q22 1Q23 2Q23 3Q23 4Q23 1Q24 2Q24 2Q22 3Q22 4Q22 1Q23 2Q23 3Q23 4Q23 1Q24 2Q24
+1 . 5
+0
+2
+0
+.
+Q
+4
+9
+%
+6
+2
+0
+%
+2
++ D P
+1 .
+0
+3
+D
+5 0 %
+. 5 1 %
+Q 2 2
+N
+1 . 6
+0 .
+4 Q
+C
+8
+6
+2
+L
+%
+3
+2
+%
+2 . 1 8
+0 . 7
+1 Q 2
+%
+8
+3
+%
+2
+2
+. 4
+0
+Q
+.
+7
+8
+2
+%
+1
+3
+%
+2
+3
+. 7
+0 .
+Q
+2
+9
+2
+%
+2
+3
+%
+3
+1
+4
+. 0
+. 0
+Q
+6
+7
+2
+%
+%
+3
+3 . 6
+1 .
+1 Q
+5
+1 9
+2
+%
+%
+4
+3 . 8
+1 . 0
+2 Q
+2
+9
+2
+%
+%
+4
+2
+1
+2
+. 6
+. 1
+Q
+9
+0
+6
+2
+0
+%
+%
+2
++ D P D
+2
+1 . 3
+3 Q
+. 7
+5
+2
+1
+%
+2
+%
+N C
+3 . 3
+1 . 5
+4 Q
+L
+0
+6
+2
+%
+%
+2
+4 . 0
+1 . 7
+1 Q
+8
+6
+2
+%
+%
+3
+4
+1
+2
+. 4
+. 7
+Q
+6
+7
+2
+%
+%
+3
+4
+2
+3
+. 5
+. 1
+Q
+3
+2
+2
+%
+%
+3
+5
+2
+4
+. 4
+. 3
+Q
+4
+6
+2
+%
+%
+3
+6
+2
+. 3
+. 5
+1 Q
+2
+3
+2
+%
+%
+4
+6
+2
+2
+. 4
+. 3
+Q
+5
+6
+2
+%
+%
+4
+Credit Trends for Branded Cards and Retail Services
+($ in B)
+Branded Cards Retail Services
+EOP 2Q23 1Q24 2Q24 EOP 2Q23 1Q24 2Q24
+Loans $103.0 $108.0 $111.8 Loans $50.0 $50.8 $51.7
+ACLL Balance and ACLL / EOP Loans ACLL Balance and ACLL / EOP Loans
+22",382,1128,pdfplumber_comprehensive,ACLL Balance ACLL EOP Loans ACLL Balance ACLL EOP Loans 11.9% 11.9% 11.1% 11.2% 11.0% 11.1% 6.3% 6.2% 6.2% 6.6% 6.3% 6.3% 6.0% 6.4% 6.4% 9.8% 10.1% 10.3% $5.8 $5.9 $6.2 $6.4 $6.4 $6.6 $6.7 $6.9 $7.1 $5.2 $5.4 $5.6 $5.6 $6.0 $6.1 $6.2 $4.5 $4.7 2Q22 3Q22 4Q22 1Q23 2Q23 3Q23 4Q23 1Q24 2Q24 2Q22 3Q22 4Q22 1Q23 2Q23 3Q23 4Q23 1Q24 2Q24 1 . 5 0 2 0 . Q 4 9 % 6 2 0 % 2 + D P 1 . 0 3 D 5 0 % . 5 1 % Q 2 2 N 1 . 6 0 . 4 Q C 8 6 2 L % 3 2 % 2 . 1 8 0 . 7 1 Q 2 % 8 3 % 2 2 . 4 0 Q . 7 8 2 % 1 3 % 2 3 . 7 0 . Q 2 9 2 % 2 3 % 3 1 4 . 0 . 0 Q 6 7 2 % % 3 3 . 6 1 . 1 Q 5 1 9 2 % % 4 3 . 8 1 . 0 2 Q 2 9 2 % % 4 2 1 2 . 6 . 1 Q 9 0 6 2 0 % % 2 + D P D 2 1 . 3 3 Q . 7 5 2 1 % 2 % N C 3 . 3 1 . 5 4 Q L 0 6 2 % % 2 4 . 0 1 . 7 1 Q 8 6 2 % % 3 4 1 2 . 4 . 7 Q 6 7 2 % % 3 4 2 3 . 5 . 1 Q 3 2 2 % % 3 5 2 4 . 4 . 3 Q 4 6 2 % % 3 6 2 . 3 . 5 1 Q 2 3 2 % % 4 6 2 2 . 4 . 3 Q 5 6 2 % % 4 Credit Trends for Branded Cards and Retail Services ($ in B) Branded Cards Retail Services EOP 2Q23 1Q24 2Q24 EOP 2Q23 1Q24 2Q24 Loans $103.0 $108.0 $111.8 Loans $50.0 $50.8 $51.7 ACLL Balance and ACLL EOP Loans ACLL Balance and ACLL EOP Loans 22,79,False
+22,table," | EOP
+Loans |  | 2Q23 |  | 1Q24 |  | 2Q24 | 
+ |  |  | $103.0 |  | $108.0 |  | $111.8 | ",24,88,pdfplumber_comprehensive,| EOP Loans | | 2Q23 | | 1Q24 | | 2Q24 | | | | $103.0 | | $108.0 | | $111.8 |,4,False
+22,table," | EOP
+Loans |  | 2Q23 |  | 1Q24 |  | 2Q24 | 
+ |  |  | $50.0 |  | $50.8 |  | $51.7 | ",24,85,pdfplumber_comprehensive,| EOP Loans | | 2Q23 | | 1Q24 | | 2Q24 | | | | $50.0 | | $50.8 | | $51.7 |,4,False
+23,main_text,"• Citi has operated in Argentina for over 100 years and currently serves approximately 1,300 clients, including 700 multinational clients
+• The primary activities we engage in with clients in Argentina are liquidity management, payments and custody within Services
+• On April 30, 2024, the Central Bank of Argentina (BCRA) issued regulations that allow local entities, including banks, to subscribe to BCRA USD-denominated
+bonds, called Bonds for the Reconstruction for a Free Argentina (BOPREAL)
+• The bonds, which trade at a discount and come with an upfront transaction tax at the time of the auction, can then be sold in the secondary market, with the
+discounted proceeds being used to pay dividends in USD to a parent entity outside of Argentina
+• During 2Q24, Citibank Argentina returned approximately $0.2 billion of excess capital through dividends to its parent entity, thereby reducing future FX devaluation
+risk
+Net Investment Change in Argentina Since 2Q23 2Q24 Argentina Financial Impacts(1)
+($ in B)
+• net investment decreased to $1.4 billion, primarily driven by capital
+$1.9
+repatriation exceeding income from operations, including NII earned on
+net investments at a lower current policy rate than in the prior quarter, as
+$0.5 $1.6 $0.1
+the BCRA has continued to cut local benchmark interest rates during 2024
+$1.4
+(from 100% as of December 2023 to 40% as of June 2024)
+($0.2)
+• As of June 30, 2024, ~$0.8 billion of Citi's net investment is denominated
+$1.0
+in local currency (down from ~$0.9 billion in 1Q24), which as of the end of
+the quarter was substantially unhedged and is subject to further peso
+devaluation, with the remainder denominated in USD
+• In 2024, while less significant than in 2023, we expect further peso
+devaluation impacting non-interest revenue with offsets from Other Net
+Income
+2Q23 Net 4Q23 Net Net Income 1Q24 Net Net Income Capital 2Q24 Net
+Investment Investment Investment repatriation Investment
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 23",329,2039,pdfplumber_comprehensive,"Citi has operated in Argentina for over 100 years and currently serves approximately 1,300 clients, including 700 multinational clients The primary activities we engage in with clients in Argentina are liquidity management, payments and custody within Services On April 30, 2024, the Central Bank of Argentina (BCRA) issued regulations that allow local entities, including banks, to subscribe to BCRA USD-denominated bonds, called Bonds for the Reconstruction for a Free Argentina (BOPREAL) The bonds, which trade at a discount and come with an upfront transaction tax at the time of the auction, can then be sold in the secondary market, with the discounted proceeds being used to pay dividends in USD to a parent entity outside of Argentina During 2Q24, Citibank Argentina returned approximately $0.2 billion of excess capital through dividends to its parent entity, thereby reducing future FX devaluation risk Net Investment Change in Argentina Since 2Q23 2Q24 Argentina Financial Impacts(1) ($ in B) net investment decreased to $1.4 billion, primarily driven by capital $1.9 repatriation exceeding income from operations, including NII earned on net investments at a lower current policy rate than in the prior quarter, as $0.5 $1.6 $0.1 the BCRA has continued to cut local benchmark interest rates during 2024 $1.4 (from 100% as of December 2023 to 40% as of June 2024) ($0.2) As of June 30, 2024, $0.8 billion of Citi s net investment is denominated $1.0 in local currency (down from $0.9 billion in 1Q24), which as of the end of the quarter was substantially unhedged and is subject to further peso devaluation, with the remainder denominated in USD In 2024, while less significant than in 2023, we expect further peso devaluation impacting non-interest revenue with offsets from Other Net Income 2Q23 Net 4Q23 Net Net Income 1Q24 Net Net Income Capital 2Q24 Net Investment Investment Investment repatriation Investment Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 23",14,True
+24,main_text,"Update on Russia exposure and net investment
+Overview
+• Ended nearly all of the institutional banking services offered in Russia as of March 31, 2023
+• Remaining services are only those necessary to fulfill our remaining legal and regulatory obligations
+• Continue to wind down the consumer and local commercial banking businesses
+• Russia exposure increased by approximately $1.2 billion from the previous quarter due to net increases in Russia unremittable corporate dividends and ruble appreciation
+• Of the $8.2 billion exposure as of June 30, 2024, ~$6.3 billion or 77% was unremittable corporate dividends
+• Net investment in the Russian entity declined by $0.1 billion during 2Q24 to $0.1 billion, largely driven by additional transfer risk reserve in the quarter
+• Citi has a cumulative translation adjustment (CTA) loss balance of approximately $1.6 billion(1)
+earnings upon either the substantial liquidation or a loss of control of the entity (capital neutral)
+• Additionally, if a loss of control of the entity were to occur, then Citi would also recognize a loss of $0.7 billion on intercompany liabilities currently owed by its Russian
+entity
+Trend in Russia Exposure Since 4Q21 Trend in Russia net investment Since 4Q21
+($ in B) ($ in B)
+Includes impact of
+(~16%)
+($1.2B) transfer risk
+$9.8 reserve and ($0.2B) in FX
+devaluation during 2023
+$0.5 $8.2 $1.2
+$0.9
+$7.5 $0.4 $1.0
+$7.0 ($0.2)
+$6.6
+~77% of
+remaining
+exposure is a
+result of
+unremittable
+corporate $0.2 $0.2 ($0.1)
+$0.1
+dividends
+4Q21 4Q22 4Q23 Unremittable 1Q24 Unremittable Ruble Other 2Q24 4Q21 4Q22 4Q23 1Q24 Transfer Risk 2Q24
+Corporate Corporate Appreciation
+Reserve
+Dividends Dividends
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 24",282,1762,pdfplumber_comprehensive,"Update on Russia exposure and net investment Overview Ended nearly all of the institutional banking services offered in Russia as of March 31, 2023 Remaining services are only those necessary to fulfill our remaining legal and regulatory obligations Continue to wind down the consumer and local commercial banking businesses Russia exposure increased by approximately $1.2 billion from the previous quarter due to net increases in Russia unremittable corporate dividends and ruble appreciation Of the $8.2 billion exposure as of June 30, 2024, $6.3 billion or 77% was unremittable corporate dividends Net investment in the Russian entity declined by $0.1 billion during 2Q24 to $0.1 billion, largely driven by additional transfer risk reserve in the quarter Citi has a cumulative translation adjustment (CTA) loss balance of approximately $1.6 billion(1) earnings upon either the substantial liquidation or a loss of control of the entity (capital neutral) Additionally, if a loss of control of the entity were to occur, then Citi would also recognize a loss of $0.7 billion on intercompany liabilities currently owed by its Russian entity Trend in Russia Exposure Since 4Q21 Trend in Russia net investment Since 4Q21 ($ in B) ($ in B) Includes impact of ( 16%) ($1.2B) transfer risk $9.8 reserve and ($0.2B) in FX devaluation during 2023 $0.5 $8.2 $1.2 $0.9 $7.5 $0.4 $1.0 $7.0 ($0.2) $6.6 77% of remaining exposure is a result of unremittable corporate $0.2 $0.2 ($0.1) $0.1 dividends 4Q21 4Q22 4Q23 Unremittable 1Q24 Unremittable Ruble Other 2Q24 4Q21 4Q22 4Q23 1Q24 Transfer Risk 2Q24 Corporate Corporate Appreciation Reserve Dividends Dividends Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 24",27,True
+25,main_text,"A v a i lR a
+e
+b
+$ 1
+$ 2
+$ 3
+$ 1
+l e
+s o
+3 2
+3 9
+5 2
+7 6
+L
+u r
+i qc
+e
+u
+s
+i d i t y
+2Q24 Liquidity and investment portfolio metrics
+($ in B)
+Average LCR and Historical Trajectory (30-Day Stress) EOP Available Liquidity Resources(1)
+LCR 2Q23 2Q24
+Ratio 119% 117%
+$542
+$899
+$464
+Comprised of unencumbered
+Other Liquidity
+securities and unused borrowing
+Resources = $371
+capacity
+2Q24 LCR
+117%
+Comprised of cash, U.S. Treasuries
++$78 cushion
+and foreign sovereign securities
+HQLA = $528
+EOP HQLA
+HQLA Net Cash Outflow Available Cash $176
+US Sovereign $257
+US Agency/ Agency MBS $30
+Commentary
+Foreign Government Debt $65
+• Available liquidity resources of about $899 billion are comprised of HQLA and (1)
+Total HQLA $528
+other unencumbered securities and unused borrowing capacity
+• The average HQLA of $542 billion that we hold exceeds Net Cash Outflow of Select Investment Portfolio Metrics
+$464 billion by ~17% or about ~$78 billion
+2Q23 1Q24 2Q24
+• The level of available liquidity resources means Citi has approximately $435
+billion(2) of liquidity above and beyond the stressed outflow assumptions AFS Securities (Duration: ~2 Years) $237 $255 $249
+under the LCR requirement HTM Securities (Duration: ~3 Years) 2 62 2 52 2 51
+Note: All footnotes are presented starting on Slide 33. 25",231,1287,pdfplumber_comprehensive,"A v a i lR a e b $ 1 $ 2 $ 3 $ 1 l e s o 3 2 3 9 5 2 7 6 L u r i qc e u s i d i t y 2Q24 Liquidity and investment portfolio metrics ($ in B) Average LCR and Historical Trajectory (30-Day Stress) EOP Available Liquidity Resources(1) LCR 2Q23 2Q24 Ratio 119% 117% $542 $899 $464 Comprised of unencumbered Other Liquidity securities and unused borrowing Resources = $371 capacity 2Q24 LCR 117% Comprised of cash, U.S. Treasuries +$78 cushion and foreign sovereign securities HQLA = $528 EOP HQLA HQLA Net Cash Outflow Available Cash $176 US Sovereign $257 US Agency Agency MBS $30 Commentary Foreign Government Debt $65 Available liquidity resources of about $899 billion are comprised of HQLA and (1) Total HQLA $528 other unencumbered securities and unused borrowing capacity The average HQLA of $542 billion that we hold exceeds Net Cash Outflow of Select Investment Portfolio Metrics $464 billion by 17% or about $78 billion 2Q23 1Q24 2Q24 The level of available liquidity resources means Citi has approximately $435 billion(2) of liquidity above and beyond the stressed outflow assumptions AFS Securities (Duration: 2 Years) $237 $255 $249 under the LCR requirement HTM Securities (Duration: 3 Years) 2 62 2 52 2 51 Note: All footnotes are presented starting on Slide 33. 25",4,True
+25,table," | LCR
+Ratio |  |  | 2Q23 |  | 2Q24
+ |  |  |  | 119% |  | 117%",18,62,pdfplumber_comprehensive,| LCR Ratio | | | 2Q23 | | 2Q24 | | | | 119% | | 117%,1,False
+25,table,"2Q24 LCR
+117%
++$78 cushion",5,26,pdfplumber_comprehensive,2Q24 LCR 117% +$78 cushion,1,False
+25,table,"EOP HQLA | 
+Available Cash | $176
+US Sovereign | $257
+US Agency/ Agency MBS | $30
+Foreign Government Debt | $65
+Total HQLA | $528",26,129,pdfplumber_comprehensive,EOP HQLA | Available Cash | $176 US Sovereign | $257 US Agency Agency MBS | $30 Foreign Government Debt | $65 Total HQLA | $528,1,False
+26,main_text,"Historical average deposit growth
+($ in B)
+Total CAGR:
+4.8%
+Services
+CAGR: 5.7%
+1,370 1,361 1,363
+1,305 1,304 1,321 1,343 1,334 1,323 1,316 1,338 1,315 1,320 1,326 1,310
+1,234 1,268 123 116 110 90 88 101 112 106 100 103 105 102 97
+129 128
+1,066 1,090 1,115 122 125 104 108 113 114 114 118 116 115 111 111 113 110 105 100 93
+1,006 1,017 1,040 95 100
+986 986 124
+120
+All other 121 115 117 121 124 1 8 2 2 3 83 88 247 260 275 282 290 303 315 320 310 304 312 316 311 305 307 316 316
+81
+78 80
+USPB 79 78
+235 237
+226
+221
+214 220
+Wealth 209 208
+770 783 797 786 795 810 831 806 809 796 826 830 814 797 803 808 804
+Services578 585 598 598 614 636 652 666
+2Q18 3Q18 4Q18 1Q19 2Q19 3Q19 4Q19 1Q20 2Q20 3Q20 4Q20 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23 2Q23 3Q23 4Q23 1Q24 2Q24
+Note: Totals may not sum due to rounding. All other includes Banking, Markets, Legacy Franchises and Corp/Other. 26",188,886,pdfplumber_comprehensive,"Historical average deposit growth ($ in B) Total CAGR: 4.8% Services CAGR: 5.7% 1,370 1,361 1,363 1,305 1,304 1,321 1,343 1,334 1,323 1,316 1,338 1,315 1,320 1,326 1,310 1,234 1,268 123 116 110 90 88 101 112 106 100 103 105 102 97 129 128 1,066 1,090 1,115 122 125 104 108 113 114 114 118 116 115 111 111 113 110 105 100 93 1,006 1,017 1,040 95 100 986 986 124 120 All other 121 115 117 121 124 1 8 2 2 3 83 88 247 260 275 282 290 303 315 320 310 304 312 316 311 305 307 316 316 81 78 80 USPB 79 78 235 237 226 221 214 220 Wealth 209 208 770 783 797 786 795 810 831 806 809 796 826 830 814 797 803 808 804 Services578 585 598 598 614 636 652 666 2Q18 3Q18 4Q18 1Q19 2Q19 3Q19 4Q19 1Q20 2Q20 3Q20 4Q20 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23 2Q23 3Q23 4Q23 1Q24 2Q24 Note: Totals may not sum due to rounding. All other includes Banking, Markets, Legacy Franchises and Corp Other. 26",5,True
+27,main_text,"A
+T
+P
+T
+v e r a g e T a n
+S e r v ic e s
+M a r k e t s
+B a n k in g
+W e a lt h
+U S P B
+A ll O t h e r
+o t a l C it ig r o
+lu s :
+A v e r a g e G
+A v e r a g e In
+A v e r a g e G
+t h a n M S R
+o t a l C it ig r o
+g ib
+u p
+o o d
+t a n
+o o d
+s ) R
+u p
+le C o m m o n E q u it y ( T C E )
+A v e r a g e T C E
+w ill
+g ib le A s s e t s (o t h e r t h a n M S R s )
+w ill a n d Id e n t if ia b le In t a n g ib le
+e la t e d t o A s s e t s H e ld - f o r - S a le
+A v e r a g e C o m m o n S t o c k h o ld e r
+A s
+s ' E
+s
+q
+e t
+u
+s (o
+it y
+t h e r
+$
+$
+2 Q 2 4
+$ 2 4 .9
+5 4 .0
+2 1 .8
+1 3 .2
+2 5 .2
+2 7 .0
+1 6 6 .1
+1 9 .5
+3 .6
+-
+1 8 9 .2
+$
+$
+1 Q 2 4
+$ 2 4 .9
+5 4 .0
+2 1 .8
+1 3 .2
+2 5 .2
+2 5 .6
+1 6 4 .7
+1 9 .6
+3 .7
+-
+1 8 8 .0
+$
+$
+2 Q 2 3
+$ 2 3 .0
+5 3 .1
+2 1 .4
+1 3 .4
+2 1 .9
+3 1 .3
+1 6 4 .1
+2 0 .0
+3 .9
+0 .2
+1 8 8 .2
+C
+L
+P
+N
+A
+A
+R
+itig ro u p N e t In c o m e
+e s s :
+re fe rre d S to c k D iv id e n d s
+e t In c o m e A v a ila b le to C
+v e ra g e C o m m o n E q u ity
+L e s s : A v e ra g e G o o d w ill a
+v e ra g e T C E
+o T C E
+o
+n
+m
+d
+m
+In
+o n
+ta n
+S
+g
+h
+ib
+a re
+le s
+h o ld e rs
+$
+2 Q 2 4
+$ 3 ,2 1 7
+2 4 2
+2 ,9 7 5
+1 8 9 ,2 1 1
+(2 3 ,0 6 3 )
+1 6 6 ,1 4 8
+7 .2 %
+$
+$
+1 8
+(2
+1 6
+2 Q 2 3
+2 ,9 1 5
+2 8 8
+2 ,6 2 7
+8 ,2 1 4
+4 ,0 7 2 )
+4 ,1 4 2
+6 .4 %
+$ 1
+1
+Y T D '2 4
+$ 6 ,5 8 8
+5 2 1
+6 ,0 6 7
+8 8 ,6 0 6
+(2 3 ,16 6 )
+6 5 ,4 4 0
+7 .4 %
+RoTCE by Segment
+Net Income Average
+2Q24 to Common(1) Allocated TCE(2) RoTCE(3)
+Services $1.5 $25 23.8%
+Markets 1.4 54 10.7%
+Banking 0.4 22 7.5%
+Wealth 0.2 13 6.4%
+USPB 0.1 25 1.9%
+All Other (Managed Basis)(1) (0.6) 27 NM
+Reconciling Items(4) (0.0) - NM
+Citigroup(1) 3.0 166 7.2%
+Net Income Average
+YTD '24 to Common(1) Allocated TCE(2) RoTCE(3)
+Services $3.0 $25 23.9%
+Markets 2.8 54 10.6%
+Banking 0.9 22 8.6%
+Wealth 0.4 13 5.9%
+USPB 0.5 25 3.7%
+All Other (Managed Basis)(1) (1.4) 26 NM
+Reconciling Items(4) (0.1) - NM
+Citigroup(1) 6.1 165 7.4%
+C o m m o n S to c k h o ld e rs ' E q u ity
+L e s s :
+G o o d w ill
+In ta n g ib le A s s e ts (o th e r th a n M o rtg a g e S
+G o o d w ill a n d Id e n tifia b le In ta n g ib le A s s
+R e la te d to A s s e ts H e ld - fo r- S a le
+T a n g ib le C o m m o n E q u ity (T C E )
+C o m m o n S h a re s O u ts ta n d in g (C S O )
+T a n g ib le B o o k V a lu e P e r S h a re (T C E / C S
+e rv ic
+e ts (o
+O )
+in
+th
+g
+e
+R ig
+r th
+h
+a
+ts )
+n M S R s )
+$
+$
+1
+1
+2 Q 2 4
+9 0 ,2 1 0
+19 ,7 0 4
+3 ,5 17
+-
+6 6 ,9 8 9
+1 ,9 0 7 .8
+$ 8 7 .5 3
+$
+$
+1
+1
+8 8
+2 0
+3
+6 5
+1 ,9
+$ 8
+1 Q 2 4
+,9 8 5
+,0 4 2
+,6 3 6
+-
+,3 0 7
+0 7 .4
+6 .6 7
+$
+$
+1 8 8
+19
+3
+1 6 4
+1 ,9
+$ 8
+2 Q 2 3
+,4 7 4
+,9 9 8
+,8 9 5
+2 4 6
+,3 3 5
+2 5 .7
+5 .3 4
+Tangible common equity reconciliation and Citigroup returns
+($ in MM, except per share amounts)
+Tangible Common Equity and Tangible Book Value Per Share Return on Tangible Common Equity (RoTCE)
+Tangible Common Equity by Segment
+($ in B) ($ in B)
+Note: Totals may not sum due to rounding. T than mortgage servicing rights (MSRs)). Tangible book value 27
+per share is defined as TCE divided by common shares outstanding. All footnotes are presented starting on Slide 33.",1089,3053,pdfplumber_comprehensive,"A T P T v e r a g e T a n S e r v ic e s M a r k e t s B a n k in g W e a lt h U S P B A ll O t h e r o t a l C it ig r o lu s : A v e r a g e G A v e r a g e In A v e r a g e G t h a n M S R o t a l C it ig r o g ib u p o o d t a n o o d s ) R u p le C o m m o n E q u it y ( T C E ) A v e r a g e T C E w ill g ib le A s s e t s (o t h e r t h a n M S R s ) w ill a n d Id e n t if ia b le In t a n g ib le e la t e d t o A s s e t s H e ld - f o r - S a le A v e r a g e C o m m o n S t o c k h o ld e r A s s E s q e t u s (o it y t h e r $ $ 2 Q 2 4 $ 2 4 .9 5 4 .0 2 1 .8 1 3 .2 2 5 .2 2 7 .0 1 6 6 .1 1 9 .5 3 .6 - 1 8 9 .2 $ $ 1 Q 2 4 $ 2 4 .9 5 4 .0 2 1 .8 1 3 .2 2 5 .2 2 5 .6 1 6 4 .7 1 9 .6 3 .7 - 1 8 8 .0 $ $ 2 Q 2 3 $ 2 3 .0 5 3 .1 2 1 .4 1 3 .4 2 1 .9 3 1 .3 1 6 4 .1 2 0 .0 3 .9 0 .2 1 8 8 .2 C L P N A A R itig ro u p N e t In c o m e e s s : re fe rre d S to c k D iv id e n d s e t In c o m e A v a ila b le to C v e ra g e C o m m o n E q u ity L e s s : A v e ra g e G o o d w ill a v e ra g e T C E o T C E o n m d m In o n ta n S g h ib a re le s h o ld e rs $ 2 Q 2 4 $ 3 ,2 1 7 2 4 2 2 ,9 7 5 1 8 9 ,2 1 1 (2 3 ,0 6 3 ) 1 6 6 ,1 4 8 7 .2 % $ $ 1 8 (2 1 6 2 Q 2 3 2 ,9 1 5 2 8 8 2 ,6 2 7 8 ,2 1 4 4 ,0 7 2 ) 4 ,1 4 2 6 .4 % $ 1 1 Y T D 2 4 $ 6 ,5 8 8 5 2 1 6 ,0 6 7 8 8 ,6 0 6 (2 3 ,16 6 ) 6 5 ,4 4 0 7 .4 % RoTCE by Segment Net Income Average 2Q24 to Common(1) Allocated TCE(2) RoTCE(3) Services $1.5 $25 23.8% Markets 1.4 54 10.7% Banking 0.4 22 7.5% Wealth 0.2 13 6.4% USPB 0.1 25 1.9% All Other (Managed Basis)(1) (0.6) 27 NM Reconciling Items(4) (0.0) - NM Citigroup(1) 3.0 166 7.2% Net Income Average YTD 24 to Common(1) Allocated TCE(2) RoTCE(3) Services $3.0 $25 23.9% Markets 2.8 54 10.6% Banking 0.9 22 8.6% Wealth 0.4 13 5.9% USPB 0.5 25 3.7% All Other (Managed Basis)(1) (1.4) 26 NM Reconciling Items(4) (0.1) - NM Citigroup(1) 6.1 165 7.4% C o m m o n S to c k h o ld e rs E q u ity L e s s : G o o d w ill In ta n g ib le A s s e ts (o th e r th a n M o rtg a g e S G o o d w ill a n d Id e n tifia b le In ta n g ib le A s s R e la te d to A s s e ts H e ld - fo r- S a le T a n g ib le C o m m o n E q u ity (T C E ) C o m m o n S h a re s O u ts ta n d in g (C S O ) T a n g ib le B o o k V a lu e P e r S h a re (T C E C S e rv ic e ts (o O ) in th g e R ig r th h a ts ) n M S R s ) $ $ 1 1 2 Q 2 4 9 0 ,2 1 0 19 ,7 0 4 3 ,5 17 - 6 6 ,9 8 9 1 ,9 0 7 .8 $ 8 7 .5 3 $ $ 1 1 8 8 2 0 3 6 5 1 ,9 $ 8 1 Q 2 4 ,9 8 5 ,0 4 2 ,6 3 6 - ,3 0 7 0 7 .4 6 .6 7 $ $ 1 8 8 19 3 1 6 4 1 ,9 $ 8 2 Q 2 3 ,4 7 4 ,9 9 8 ,8 9 5 2 4 6 ,3 3 5 2 5 .7 5 .3 4 Tangible common equity reconciliation and Citigroup returns ($ in MM, except per share amounts) Tangible Common Equity and Tangible Book Value Per Share Return on Tangible Common Equity (RoTCE) Tangible Common Equity by Segment ($ in B) ($ in B) Note: Totals may not sum due to rounding. T than mortgage servicing rights (MSRs)). Tangible book value 27 per share is defined as TCE divided by common shares outstanding. All footnotes are presented starting on Slide 33.",73,True
+28,main_text,"F o re
+M e x
+Im
+M e x
+M e x
+Im
+M e x
+ig
+ic
+p
+ic
+ic
+p
+ic
+n
+o
+a
+o
+o
+a
+o
+c u rre n
+R e v e n
+c t o f F X
+R e v e n
+E x p e n
+c t o f F X
+E x p e n
+c y (F X ) tra
+u e s - a s re
+tra n s la tio
+u e s - E x - F
+s e s - a s re
+tra n s la tio
+s e s - E x - F
+n
+p
+n
+X
+p
+n
+X
+s
+o
+o
+la tio
+rte d
+rte d
+n im p a c t (1) 2 Q
+1 ,6 4
+1 ,6 4
+1 ,1 2
+1 ,1 2
+2
+0
+0
+4
+4
+4
+-
+-
+1 Q 2 4
+1 ,5 7 1
+(3 8 )
+1 ,5 3 3
+1 ,1 9 3
+(3 2 )
+1 ,1 6 1
+2 Q 2 3
+1 ,4 1 2
+1 1
+1 ,4 2 3
+1 ,0 3 5
+7
+1 ,0 4 2
+Q
+(6
+(3
+o Q
+4 %
+7 %
+)%
+)%
+Y o
+1 6
+1 5
+9
+8
+Y
+%
+%
+%
+%
+FX impact
+($ in MM)
+Total Citigroup Legacy Franchises
+Foreign currency (FX) translation impact(1) 2Q24 1Q24 2Q23 QoQ YoY
+Total Revenues - as Reported 20,139 21,104 19,436 (5)% 4%
+Impact of FX translation - (178) (572)
+Total revenues - Ex-FX 20,139 20,926 18,864 (4)% 7%
+Total operating expenses - as reported 13,353 14,195 13,570 (6)% (2)%
+Impact of FX translation - (89) (116)
+Total operating expenses - Ex-FX 13,353 14,106 13,454 (5)% (1)%
+Total provisions for credit losses & PBC - as reported 2,476 2,365 1,824 5% 36%
+Impact of FX translation - 0 (7)
+Total provisions for credit losses & PBC - Ex-FX 2,476 2,365 1,817 5% 36%
+Total EBT - as reported 4,310 4,544 4,042 (5)% 7%
+Impact of FX translation - (89) (449)
+Total EBT - Ex-FX 4,310 4,455 3,593 (3)% 20%
+Total EOP Loans - as reported ($ in B) 688 675 661 2% 4%
+Impact of FX translation - (4) (5)
+Total EOP Loans - Ex-FX ($ in B) 688 671 656 3% 5%
+Total EOP Deposits - as reported ($ in B) 1,278 1,307 1,320 (2)% (3)%
+Impact of FX translation - (9) (13)
+Total EOP Deposits - Ex-FX ($ in B) 1,278 1,298 1,307 (2)% (2)%
+Total Average Loans - as reported ($ in B) 680 679 654 0% 4%
+Impact of FX translation - (2) (2)
+Total Average Loans - Ex-FX ($ in B) 680 677 652 0% 4%
+Total Average Deposits - as reported ($ in B) 1,310 1,326 1,338 (1)% (2)%
+Impact of FX translation - (5) (9)
+Total Average Deposits - Ex-FX ($ in B) 1,310 1,321 1,329 (1)% (1)%
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 28",519,2012,pdfplumber_comprehensive,"F o re M e x Im M e x M e x Im M e x ig ic p ic ic p ic n o a o o a o c u rre n R e v e n c t o f F X R e v e n E x p e n c t o f F X E x p e n c y (F X ) tra u e s - a s re tra n s la tio u e s - E x - F s e s - a s re tra n s la tio s e s - E x - F n p n X p n X s o o la tio rte d rte d n im p a c t (1) 2 Q 1 ,6 4 1 ,6 4 1 ,1 2 1 ,1 2 2 0 0 4 4 4 - - 1 Q 2 4 1 ,5 7 1 (3 8 ) 1 ,5 3 3 1 ,1 9 3 (3 2 ) 1 ,1 6 1 2 Q 2 3 1 ,4 1 2 1 1 1 ,4 2 3 1 ,0 3 5 7 1 ,0 4 2 Q (6 (3 o Q 4 % 7 % )% )% Y o 1 6 1 5 9 8 Y % % % % FX impact ($ in MM) Total Citigroup Legacy Franchises Foreign currency (FX) translation impact(1) 2Q24 1Q24 2Q23 QoQ YoY Total Revenues - as Reported 20,139 21,104 19,436 (5)% 4% Impact of FX translation - (178) (572) Total revenues - Ex-FX 20,139 20,926 18,864 (4)% 7% Total operating expenses - as reported 13,353 14,195 13,570 (6)% (2)% Impact of FX translation - (89) (116) Total operating expenses - Ex-FX 13,353 14,106 13,454 (5)% (1)% Total provisions for credit losses PBC - as reported 2,476 2,365 1,824 5% 36% Impact of FX translation - 0 (7) Total provisions for credit losses PBC - Ex-FX 2,476 2,365 1,817 5% 36% Total EBT - as reported 4,310 4,544 4,042 (5)% 7% Impact of FX translation - (89) (449) Total EBT - Ex-FX 4,310 4,455 3,593 (3)% 20% Total EOP Loans - as reported ($ in B) 688 675 661 2% 4% Impact of FX translation - (4) (5) Total EOP Loans - Ex-FX ($ in B) 688 671 656 3% 5% Total EOP Deposits - as reported ($ in B) 1,278 1,307 1,320 (2)% (3)% Impact of FX translation - (9) (13) Total EOP Deposits - Ex-FX ($ in B) 1,278 1,298 1,307 (2)% (2)% Total Average Loans - as reported ($ in B) 680 679 654 0% 4% Impact of FX translation - (2) (2) Total Average Loans - Ex-FX ($ in B) 680 677 652 0% 4% Total Average Deposits - as reported ($ in B) 1,310 1,326 1,338 (1)% (2)% Impact of FX translation - (5) (9) Total Average Deposits - Ex-FX ($ in B) 1,310 1,321 1,329 (1)% (1)% Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 28",3,True
+29,main_text,"Reconciliation of adjusted results
+($ in MM)
+Total Citigroup Revenues, Net Interest Income and Expenses
+Corporate Lending Revenues
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 29
+T
+L
+T
+T
+L
+T
+T
+o
+e
+o
+o
+e
+o
+o
+t
+s
+T
+t
+t
+s
+F
+t
+T
+t
+a
+s
+o
+a
+a
+s
+D
+a
+o
+a
+l C
+:
+t a
+l C
+T o
+L e
+T o
+l C
+:
+IC
+l C
+t a
+l C
+it ig r o u p R e v e n u e s - A s R e p o r t e d
+(1) l D iv e s t it u r e - R e la t e d Im p a c t s o n R e v e n u e s
+it ig r o u p R e v e n u e s - E x c lu d in g D iv e s t it u r e - R e la t e d Im p a c t s
+t a l C it ig r o u p N e t In t e r e s t In c o m e (N II) - A s R e p o r t e d
+s s :
+M a r k e t s N II
+(2 ) t a l C it ig r o u p N II E x - M a r k e t s
+it ig r o u p O p e r a t in g E x p e n s e s - A s R e p o r t e d
+(3 ) S p e c ia l A s s e s s m e n t Im p a c t o n O p e r a t in g E x p e n s e s
+it ig r o u p O p e r a t in g E x p e n s e s , E x c lu d in g F D IC S p e c ia l A s s e s s m
+(1) l D iv e s t it u r e - R e la t e d Im p a c t s o n O p e r a t in g E x p e n s e s
+it ig r o u p O p e r a t in g E x p e n s e s , E x c lu d in g D iv e s t it u r e Im p a c t s &
+e
+F
+n
+D
+t
+IC S p e c ia l A s s e s s m e n t
+2 Q
+$ 2 0 ,1
+$ 2 0 ,1
+$ 1 3 ,4
+2 ,0
+$ 1 1 ,4
+$ 1 3 ,3
+$ 1 3 ,3
+$ 1 3 ,2
+2 4
+3 9
+3 3
+0 6
+9 3
+3 8
+5 5
+5 3
+3 4
+1 9
+8 5
+3 4
+1 Q 2 4
+$ 2 1 ,1 0 4
+(1 2 )
+$ 2 1 ,1 1 6
+$ 1 3 ,5 0 7
+1 ,7 0 6
+$ 1 1 ,8 0 1
+$ 1 4 ,1 9 5
+2 5 1
+$ 1 3 ,9 4 4
+1 1 0
+$ 1 3 ,8 3 4
+4 Q 2 3
+$ 1 7 ,4 4 0
+(6 2 )
+$ 1 7 ,5 0 2
+$ 1 3 ,8 2 4
+1 ,9 8 7
+$ 1 1 ,8 3 7
+$ 1 5 ,9 9 6
+1 ,7 0 6
+$ 1 4 ,2 9 0
+1 0 6
+$ 1 4 ,1 8 4
+3 Q 2 3
+$ 2 0 ,1 3 9
+3 9 6
+$ 1 9 ,7 4 3
+$ 1 3 ,8 2 8
+1 ,6 9 5
+$ 1 2 ,1 3 3
+$ 1 3 ,5 1 1
+-
+$ 1 3 ,5 1 1
+1 1 4
+$ 1 3 ,3 9 7
+2 Q 2 3
+$ 1 9 ,4 3 6
+(6 )
+$ 1 9 ,4 4 2
+$ 1 3 ,9 0 0
+1 ,9 9 9
+$ 1 1 ,9 0 1
+$ 1 3 ,5 7 0
+-
+$ 1 3 ,5 7 0
+7 9
+$ 1 3 ,4 9 1
+% Δ
+2 Q
+Q o Q
+(5 )%
+(5 )%
+-
+1 9 %
+(3 )%
+(6 )%
+(4 )%
+(4 )%
+2 4
+% Δ Y o Y
+4 %
+3 %
+(3 )%
+2 %
+(4 )%
+(2 )%
+(2 )%
+(2 )%
+2Q24
+2Q24 1Q24 2Q23 % Δ QoQ % Δ YoY
+Banking Corporate Lending Revenues - As Reported $774 $811 $646 (5)% 20%
+Less:
+Gain/(loss) on loan hedges(4) 9 (104) (66)
+Banking Corporate Lending Revenues - Excluding Gain/(loss) on loan hedges $765 $915 $712 (16)% 7%",877,2201,pdfplumber_comprehensive,"Reconciliation of adjusted results ($ in MM) Total Citigroup Revenues, Net Interest Income and Expenses Corporate Lending Revenues Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 29 T L T T L T T o e o o e o o t s T t t s F t T t a s o a a s D a o a l C : t a l C T o L e T o l C : IC l C t a l C it ig r o u p R e v e n u e s - A s R e p o r t e d (1) l D iv e s t it u r e - R e la t e d Im p a c t s o n R e v e n u e s it ig r o u p R e v e n u e s - E x c lu d in g D iv e s t it u r e - R e la t e d Im p a c t s t a l C it ig r o u p N e t In t e r e s t In c o m e (N II) - A s R e p o r t e d s s : M a r k e t s N II (2 ) t a l C it ig r o u p N II E x - M a r k e t s it ig r o u p O p e r a t in g E x p e n s e s - A s R e p o r t e d (3 ) S p e c ia l A s s e s s m e n t Im p a c t o n O p e r a t in g E x p e n s e s it ig r o u p O p e r a t in g E x p e n s e s , E x c lu d in g F D IC S p e c ia l A s s e s s m (1) l D iv e s t it u r e - R e la t e d Im p a c t s o n O p e r a t in g E x p e n s e s it ig r o u p O p e r a t in g E x p e n s e s , E x c lu d in g D iv e s t it u r e Im p a c t s e F n D t IC S p e c ia l A s s e s s m e n t 2 Q $ 2 0 ,1 $ 2 0 ,1 $ 1 3 ,4 2 ,0 $ 1 1 ,4 $ 1 3 ,3 $ 1 3 ,3 $ 1 3 ,2 2 4 3 9 3 3 0 6 9 3 3 8 5 5 5 3 3 4 1 9 8 5 3 4 1 Q 2 4 $ 2 1 ,1 0 4 (1 2 ) $ 2 1 ,1 1 6 $ 1 3 ,5 0 7 1 ,7 0 6 $ 1 1 ,8 0 1 $ 1 4 ,1 9 5 2 5 1 $ 1 3 ,9 4 4 1 1 0 $ 1 3 ,8 3 4 4 Q 2 3 $ 1 7 ,4 4 0 (6 2 ) $ 1 7 ,5 0 2 $ 1 3 ,8 2 4 1 ,9 8 7 $ 1 1 ,8 3 7 $ 1 5 ,9 9 6 1 ,7 0 6 $ 1 4 ,2 9 0 1 0 6 $ 1 4 ,1 8 4 3 Q 2 3 $ 2 0 ,1 3 9 3 9 6 $ 1 9 ,7 4 3 $ 1 3 ,8 2 8 1 ,6 9 5 $ 1 2 ,1 3 3 $ 1 3 ,5 1 1 - $ 1 3 ,5 1 1 1 1 4 $ 1 3 ,3 9 7 2 Q 2 3 $ 1 9 ,4 3 6 (6 ) $ 1 9 ,4 4 2 $ 1 3 ,9 0 0 1 ,9 9 9 $ 1 1 ,9 0 1 $ 1 3 ,5 7 0 - $ 1 3 ,5 7 0 7 9 $ 1 3 ,4 9 1 % Δ 2 Q Q o Q (5 )% (5 )% - 1 9 % (3 )% (6 )% (4 )% (4 )% 2 4 % Δ Y o Y 4 % 3 % (3 )% 2 % (4 )% (2 )% (2 )% (2 )% 2Q24 2Q24 1Q24 2Q23 % Δ QoQ % Δ YoY Banking Corporate Lending Revenues - As Reported $774 $811 $646 (5)% 20% Less: Gain (loss) on loan hedges(4) 9 (104) (66) Banking Corporate Lending Revenues - Excluding Gain (loss) on loan hedges $765 $915 $712 (16)% 7%",3,True
+30,main_text,"All Other (Managed Basis(1)) Trend
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 30
+A
+(
+T
+T
+T
+N
+l l O t h e r ( M a n a g e d B a
+$ i n m i l l i o n s , e x c e p t a
+L e g a c y F r a n c h is e s ( M
+C o r p o r a t e / O t h e r
+o t a l r e v e n u e s
+o t a l o p e r a t i n g e x p e n
+N e t c r e d it lo s s e s
+N e t A C L b u ild / ( r e le a
+O t h e r p r o v is io n s
+o t a l c o s t o f c r e d i t
+E B T
+e t i n c o m e ( l o s s )
+s
+s
+a
+s
+s
+i s )
+o t
+n a
+e s
+e )
+h
+g
+e
+e
+r
+d
+w
+B
+i s
+a
+e n
+s is )
+o t e d )
+$
+2 Q 2 4
+1 ,7 2 7
+2 5 3
+1 ,9 8 0
+2 ,1 1 4
+2 1 4
+( 4
+3 3
+2 4 3
+( 3 7 7
+( 4 0 2
+)
+)
+)
+1 Q 2
+1 ,8 2
+5 5
+2 ,3 8
+2 ,6 9
+2 4
+( 9
+3
+1 8
+( 4 9
+$ ( 4 7
+4
+9
+7
+6
+5
+9
+8
+5
+6
+5
+7
+)
+)
+)
+2
+2
+2 Q 2 3
+1 ,9 2 5
+6 0 9
+,5 3 4
+,2 6 9
+1 9 9
+6 7
+( 6 6
+2 0 0
+6 5
+$ 7 8
+)
+Q o Q %
+( 6 ) %
+( 5 5 ) %
+( 1 7 ) %
+( 2 2 ) %
+( 1 4 ) %
+9 6 %
+( 6 ) %
+3 1 %
+2 4 %
+1 6 %
+Y o Y %
+( 1 0 ) %
+( 5 8 ) %
+( 2 2 ) %
+( 7 ) %
+8 %
+N M
+N M
+2 2 %
+N M
+N M",436,975,pdfplumber_comprehensive,"All Other (Managed Basis(1)) Trend Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 30 A ( T T T N l l O t h e r ( M a n a g e d B a $ i n m i l l i o n s , e x c e p t a L e g a c y F r a n c h is e s ( M C o r p o r a t e O t h e r o t a l r e v e n u e s o t a l o p e r a t i n g e x p e n N e t c r e d it lo s s e s N e t A C L b u ild ( r e le a O t h e r p r o v is io n s o t a l c o s t o f c r e d i t E B T e t i n c o m e ( l o s s ) s s a s s i s ) o t n a e s e ) h g e e r d w B i s a e n s is ) o t e d ) $ 2 Q 2 4 1 ,7 2 7 2 5 3 1 ,9 8 0 2 ,1 1 4 2 1 4 ( 4 3 3 2 4 3 ( 3 7 7 ( 4 0 2 ) ) ) 1 Q 2 1 ,8 2 5 5 2 ,3 8 2 ,6 9 2 4 ( 9 3 1 8 ( 4 9 $ ( 4 7 4 9 7 6 5 9 8 5 6 5 7 ) ) ) 2 2 2 Q 2 3 1 ,9 2 5 6 0 9 ,5 3 4 ,2 6 9 1 9 9 6 7 ( 6 6 2 0 0 6 5 $ 7 8 ) Q o Q % ( 6 ) % ( 5 5 ) % ( 1 7 ) % ( 2 2 ) % ( 1 4 ) % 9 6 % ( 6 ) % 3 1 % 2 4 % 1 6 % Y o Y % ( 1 0 ) % ( 5 8 ) % ( 2 2 ) % ( 7 ) % 8 % N M N M 2 2 % N M N M",3,False
+31,main_text,"Reconciliation of adjusted results (cont.)
+($ in MM)
+All Other(1)
+2Q24 1Q24 2Q23 % Δ QoQ % Δ YoY
+All Other Revenues, Managed Basis $1,980 $2,386 $2,534 (17)% (22)%
+Add:
+All Other Divestiture-related Impact on Revenue(2) $33 $(12) $(6) NM NM
+All Other Revenues, (U.S. GAAP) $2,013 $2,374 $2,528 (15)% (20)%
+All Other Operating Expenses, Managed Basis $2,114 $2,695 $2,269 (22)% (7)%
+Add:
+All Other Divestiture-related Impact on Operating Expenses(3) $85 $110 $79 (23)% 8%
+All Other Operating Expenses, (U.S. GAAP) $2,199 $2,805 $2,348 (22)% (6)%
+All Other Cost of Credit, Managed Basis $243 $186 $200 31% 22%
+Add:
+All Other Divestiture-related Net credit losses ( 3) 11 (8)
+All Other Divestiture-related Net ACL build / (release)(4) - - (4)
+All Other Divestiture-related Other provisions(5) - - -
+All Other Cost of Credit, (U.S. GAAP) $240 $197 $188 22% 28%
+All Other EBT, Managed Basis $(377) $(495) $65 24% NM
+Add:
+All Other Divestiture-related Impact on Revenue(2) 33 (12) (6)
+All Other Divestiture-related Impact on Operating Expenses(3) ( 85) (110) (79)
+All Other Impact on Cost of Credit 3 (11) 12
+All Other EBT, (U.S. GAAP) $(426) $(628) $(8) 32% NM
+All Other Net Income (Loss), Managed Basis $(402) $(477) $78 16% NM
+Add:
+All Other Divestiture-related Impact on Revenue(2) 33 (12) (6)
+All Other Divestiture-related Impact on Operating Expenses(3) ( 85) (110) (79)
+All Other Divestiture-related Impact on Cost of Credit 3 (11) 12
+All Other Divestiture-related Impact on Taxes(3) 17 39 (19)
+All Other Net Income (Loss), (U.S. GAAP) $(434) $(571) $(14) 24% NM
+Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 31",273,1658,pdfplumber_comprehensive,"Reconciliation of adjusted results (cont.) ($ in MM) All Other(1) 2Q24 1Q24 2Q23 % Δ QoQ % Δ YoY All Other Revenues, Managed Basis $1,980 $2,386 $2,534 (17)% (22)% Add: All Other Divestiture-related Impact on Revenue(2) $33 $(12) $(6) NM NM All Other Revenues, (U.S. GAAP) $2,013 $2,374 $2,528 (15)% (20)% All Other Operating Expenses, Managed Basis $2,114 $2,695 $2,269 (22)% (7)% Add: All Other Divestiture-related Impact on Operating Expenses(3) $85 $110 $79 (23)% 8% All Other Operating Expenses, (U.S. GAAP) $2,199 $2,805 $2,348 (22)% (6)% All Other Cost of Credit, Managed Basis $243 $186 $200 31% 22% Add: All Other Divestiture-related Net credit losses ( 3) 11 (8) All Other Divestiture-related Net ACL build (release)(4) - - (4) All Other Divestiture-related Other provisions(5) - - - All Other Cost of Credit, (U.S. GAAP) $240 $197 $188 22% 28% All Other EBT, Managed Basis $(377) $(495) $65 24% NM Add: All Other Divestiture-related Impact on Revenue(2) 33 (12) (6) All Other Divestiture-related Impact on Operating Expenses(3) ( 85) (110) (79) All Other Impact on Cost of Credit 3 (11) 12 All Other EBT, (U.S. GAAP) $(426) $(628) $(8) 32% NM All Other Net Income (Loss), Managed Basis $(402) $(477) $78 16% NM Add: All Other Divestiture-related Impact on Revenue(2) 33 (12) (6) All Other Divestiture-related Impact on Operating Expenses(3) ( 85) (110) (79) All Other Divestiture-related Impact on Cost of Credit 3 (11) 12 All Other Divestiture-related Impact on Taxes(3) 17 39 (19) All Other Net Income (Loss), (U.S. GAAP) $(434) $(571) $(14) 24% NM Note: Totals may not sum due to rounding. All footnotes are presented starting on Slide 33. 31",14,True
+31,table,"
+$2,013 $2,374 $2,528",3,21,pdfplumber_comprehensive,"$2,013 $2,374 $2,528",1,False
+32,main_text,"Glossary
+ACL: Allowance for Credit Losses CET1: Common Equity Tier 1 GSIB: Global Systemically Important NM: Not Meaningful
+Banks
+ACLL: Allowance for Credit Losses on CoC: Cost of Credit NNA: Net New Assets
+Loans HQLA: High Quality Liquid Assets
+CSO: Common Shares Outstanding OCC: Office of the Comptroller of the
+AFS: Available for Sale HTM: Held to Maturity Currency
+CTA: Cumulative Translation
+AI: Artificial Intelligence Adjustment IB: Investment Banking PBC: Provision for Benefits and Claims
+AOCI: Accumulated Other DCM: Debt Capital Markets IG: Investment Grade QoQ: Quarter-Over-Quarter
+Comprehensive Income
+DFAST: Dodd-Frank Act Stress Test IHC: Intermediate Holding Company RWA: Risk-Weighted Assets
+ATM: Automated Teller Machine
+DIA: Deposit Insurance Agency LCR: Liquidity Coverage Ratio SBMM: Small Business and Middle
+AUA: Assets Under Administration Market
+DPD: Days Past Due LTD: Long-term Debt
+AUC: Assets Under Custody RoE: Return on Average Common Equity
+DTA: Deferred Tax Assets M&A: Mergers & Acquisitions
+B: Billions RoTCE: Return on Average Tangible
+EBT: Earnings before Tax MBS: Mortgage-Backed Security
+Common Equity
+BCRA: Central Bank of Argentina
+ECM: Equity Capital Markets MLE: Material Legal Entity
+SEC: U.S. Securities & Exchange
+BHC: Bank Holding Company
+EOP: End of Period MM: Millions Commission
+BOPREAL: Bonds for the
+EPS: Earnings per Share MNC: Multi-National Corporation T: Trillions
+Reconstruction for a Free Argentina
+FDIC: Federal Deposit Insurance MSR: Mortgage Servicing Right TCE: Tangible Common Equity
+bps: Basis Points
+Corporation
+MTM: Mark-to-Market TTS: Treasury and Trade Solutions
+CAGR: Compound Annual Growth Rate
+FI: Fixed Income
+NAL: Non-Accrual Loans USD: U.S. Dollar
+CBNA: Citibank N.A.
+FICO: Fair Isaacson Company
+NCC: National Clearing Counterparty USPB: U.S. Personal Banking
+CCAR: Comprehensive Capital Analysis
+FRB: Federal Reserve Board
+and Review NCL: Net Credit Losses VaR: Value at Risk
+FX: Foreign Exchange
+CCB: Citi Commercial Bank NII: Net Interest Income YoY: Year-Over-Year
+GAAP: Generally Accepted Accounting
+CECL: Current Expected Credit Losses NIM: Net Interest Margin YTD: Year-to-date
+Principles
+NIR: Non-Interest Revenue
+32",314,2200,pdfplumber_comprehensive,Glossary ACL: Allowance for Credit Losses CET1: Common Equity Tier 1 GSIB: Global Systemically Important NM: Not Meaningful Banks ACLL: Allowance for Credit Losses on CoC: Cost of Credit NNA: Net New Assets Loans HQLA: High Quality Liquid Assets CSO: Common Shares Outstanding OCC: Office of the Comptroller of the AFS: Available for Sale HTM: Held to Maturity Currency CTA: Cumulative Translation AI: Artificial Intelligence Adjustment IB: Investment Banking PBC: Provision for Benefits and Claims AOCI: Accumulated Other DCM: Debt Capital Markets IG: Investment Grade QoQ: Quarter-Over-Quarter Comprehensive Income DFAST: Dodd-Frank Act Stress Test IHC: Intermediate Holding Company RWA: Risk-Weighted Assets ATM: Automated Teller Machine DIA: Deposit Insurance Agency LCR: Liquidity Coverage Ratio SBMM: Small Business and Middle AUA: Assets Under Administration Market DPD: Days Past Due LTD: Long-term Debt AUC: Assets Under Custody RoE: Return on Average Common Equity DTA: Deferred Tax Assets M A: Mergers Acquisitions B: Billions RoTCE: Return on Average Tangible EBT: Earnings before Tax MBS: Mortgage-Backed Security Common Equity BCRA: Central Bank of Argentina ECM: Equity Capital Markets MLE: Material Legal Entity SEC: U.S. Securities Exchange BHC: Bank Holding Company EOP: End of Period MM: Millions Commission BOPREAL: Bonds for the EPS: Earnings per Share MNC: Multi-National Corporation T: Trillions Reconstruction for a Free Argentina FDIC: Federal Deposit Insurance MSR: Mortgage Servicing Right TCE: Tangible Common Equity bps: Basis Points Corporation MTM: Mark-to-Market TTS: Treasury and Trade Solutions CAGR: Compound Annual Growth Rate FI: Fixed Income NAL: Non-Accrual Loans USD: U.S. Dollar CBNA: Citibank N.A. FICO: Fair Isaacson Company NCC: National Clearing Counterparty USPB: U.S. Personal Banking CCAR: Comprehensive Capital Analysis FRB: Federal Reserve Board and Review NCL: Net Credit Losses VaR: Value at Risk FX: Foreign Exchange CCB: Citi Commercial Bank NII: Net Interest Income YoY: Year-Over-Year GAAP: Generally Accepted Accounting CECL: Current Expected Credit Losses NIM: Net Interest Margin YTD: Year-to-date Principles NIR: Non-Interest Revenue 32,9,True
+33,main_text,"Footnotes
+Slide 2
+1) Represents consumer banking businesses across 14 markets in Asia, Europe, the Middle East and Mexico as part of its strategic refresh.
+Slide 3
+1) Service material legal entities (MLEs) are excluded from this illustration.
+2) The U.S.-
+3) Represents MLEs as defined by the 165(d) Rule under the Dodd-Frank Act, which specifies that an MLE is an entity, including a subsidiary or foreign office, that is significant to the activities of a core
+business line or critical operation. MLEs reported under the Dodd-Frank Act may differ from the significant legal entity subsidi
+Slide 4
+1) Global Trade Review as of May 1, 2024.
+2) Wallet share based on Dealogic data as of June 28, 2024; wallet share for Debt Capital Markets includes Leveraged Finance and Securitization.
+Slide 5
+1) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a
+reconciliation to reported results, please refer to Slide 27.
+2) r t
+-K filed with the SEC on July 12, 2024.
+3) Tangible Book Value per Share is a non-GAAP financial measure. For a reconciliation of this measure to reported results, please refer to Slide 27.
+4) iti
+Market share is calculated using Citi- I Client Segment.
+5) Cross Border Transaction Value is defined as the total value of cross- rldlink and Cross Border Funds Transfer platforms, including
+payments from Consumer, Corporate, Financial Institution and Public Sector clients.
+6) my and internal revenues. Market share is calculated using Citi-
+7)
+8) Wallet share based on Dealogic data as of June 28, 2024; wallet share for Debt Capital Markets includes Leveraged Finance and Securitization.
+9) Client Investment Assets includes Assets Under Management, trust and custody assets. 2Q24 is preliminary.
+10) Client Balances includes EOP Deposits, Loans, and Client Investment Assets.
+33",311,1931,pdfplumber_comprehensive,"Footnotes Slide 2 1) Represents consumer banking businesses across 14 markets in Asia, Europe, the Middle East and Mexico as part of its strategic refresh. Slide 3 1) Service material legal entities (MLEs) are excluded from this illustration. 2) The U.S.- 3) Represents MLEs as defined by the 165(d) Rule under the Dodd-Frank Act, which specifies that an MLE is an entity, including a subsidiary or foreign office, that is significant to the activities of a core business line or critical operation. MLEs reported under the Dodd-Frank Act may differ from the significant legal entity subsidi Slide 4 1) Global Trade Review as of May 1, 2024. 2) Wallet share based on Dealogic data as of June 28, 2024; wallet share for Debt Capital Markets includes Leveraged Finance and Securitization. Slide 5 1) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation to reported results, please refer to Slide 27. 2) r t -K filed with the SEC on July 12, 2024. 3) Tangible Book Value per Share is a non-GAAP financial measure. For a reconciliation of this measure to reported results, please refer to Slide 27. 4) iti Market share is calculated using Citi- I Client Segment. 5) Cross Border Transaction Value is defined as the total value of cross- rldlink and Cross Border Funds Transfer platforms, including payments from Consumer, Corporate, Financial Institution and Public Sector clients. 6) my and internal revenues. Market share is calculated using Citi- 7) 8) Wallet share based on Dealogic data as of June 28, 2024; wallet share for Debt Capital Markets includes Leveraged Finance and Securitization. 9) Client Investment Assets includes Assets Under Management, trust and custody assets. 2Q24 is preliminary. 10) Client Balances includes EOP Deposits, Loans, and Client Investment Assets. 33",21,True
+34,main_text,"Footnotes (cont.)
+Slide 6
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL build of approximately $68 million related to loans and unfunded lending commitments as well as other
+provisions of approximately $125 million relating to held-to-maturity (HTM) debt securities and other assets and policyholder benefits and claims.
+2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a
+reconciliation to reported results, please refer to Slide 27.
+3) th
+-K filed with the SEC on July 12, 2024.
+4) Results of revenue excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29.
+5) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent
+on Form 8-K filed with the U.S. Securities and Exchange Commission on
+July 10, 2024.
+6) Results of expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29.
+immaterial incremental FDIC special assessment of approximately $34 million.
+Slide 7
+1) Results of expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29.
+2) 2Q24 includes an incremental $34 million pre-tax charge to operating expenses related to the FDIC special assessment. This is in addition to the $1,706 million pre-tax charge to operating expenses
+for the FDIC special assessment in the fourth quarter of 2023 and $251 million pre-tax charge to operating expenses for the FDIC special assessment in the first quarter of 2024. Results excluding
+FDIC special assessment-related items are non-GAAP financial measures. For reconciliation of these results, please refer Slide 29.
+3) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent
+on Form 8-K filed with the U.S. Securities and Exchange Commission on
+July 10, 2024.
+4) Full year 2024 expense estimates excludes the incremental FDIC special assessment and Civil Money Penalties related impacts are forward-looking non-GAAP financial measures. 1H24 expenses of
+$27.5 billion included an incremental $285 million pre-tax charge related to the FDIC special assessment and $136 million civil money penalties imposed by the FRB and OCC. From time to time,
+management may discuss forward-looking non-GAAP financial measures, such as forward-looking estimates or targets for revenue, expenses and RoTCE. We are unable to provide a reconciliation of
+forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate
+calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may
+occur. Such unavailable information could be significant to future results.
+Slide 8
+1) t intolerable harm to clients, financial markets or Citi.
+34",519,3416,pdfplumber_comprehensive,"Footnotes (cont.) Slide 6 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL build of approximately $68 million related to loans and unfunded lending commitments as well as other provisions of approximately $125 million relating to held-to-maturity (HTM) debt securities and other assets and policyholder benefits and claims. 2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation to reported results, please refer to Slide 27. 3) th -K filed with the SEC on July 12, 2024. 4) Results of revenue excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29. 5) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent on Form 8-K filed with the U.S. Securities and Exchange Commission on July 10, 2024. 6) Results of expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29. immaterial incremental FDIC special assessment of approximately $34 million. Slide 7 1) Results of expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29. 2) 2Q24 includes an incremental $34 million pre-tax charge to operating expenses related to the FDIC special assessment. This is in addition to the $1,706 million pre-tax charge to operating expenses for the FDIC special assessment in the fourth quarter of 2023 and $251 million pre-tax charge to operating expenses for the FDIC special assessment in the first quarter of 2024. Results excluding FDIC special assessment-related items are non-GAAP financial measures. For reconciliation of these results, please refer Slide 29. 3) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent on Form 8-K filed with the U.S. Securities and Exchange Commission on July 10, 2024. 4) Full year 2024 expense estimates excludes the incremental FDIC special assessment and Civil Money Penalties related impacts are forward-looking non-GAAP financial measures. 1H24 expenses of $27.5 billion included an incremental $285 million pre-tax charge related to the FDIC special assessment and $136 million civil money penalties imposed by the FRB and OCC. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward-looking estimates or targets for revenue, expenses and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant to future results. Slide 8 1) t intolerable harm to clients, financial markets or Citi. 34",33,True
+35,main_text,"Footnotes (cont.)
+Slide 9
+1) NII excluding Markets is a non-GAAP financial measure.
+2) Gross Loan Yield is defined as gross interest revenue earned on loans divided by average loans.
+3) Cost of Interest- -bearing deposits.
+Slide 10
+1) FICO scores are updated as they become available. Citi adjusted its disclosures for U.S. credit card FICO score distribution in 1Q24 to align with industry reporting practices using a threshold of 660
+versus the 680 threshold used previously.
+2) Excludes loans that are carried at fair value of $5.8 billion, $8.9 billion and $8.5 billion at June 30, 2023, March 31, 2024, and June 30, 2024, respectively.
+Slide 11
+1) th
+-K filed with the SEC on July 12, 2024. Certain prior period amounts and ratios have been revised to
+conform with enhancements made in the current period.
+2) 2Q24 is preliminary. For the composition of Citigroup's Supplementary Leverage ratio, please see Appendix E of the 2Q24 earnings press release included as Exhibit 99.1 to Citigroup's Current Report
+on Form 8-K filed with the SEC on July 12 2024.
+3) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities within
+serve Bank discount window.
+4) Tangible Book Value per Share is a non-GAAP financial measure. For a reconciliation of this measure to reported results, please refer to Slide 27.
+5) Investments, net, include available-for-sale debt securities, held-to-maturity debt securities, net of allowance, and equity securities.
+6) Trading-related assets include securities borrowed or purchased under agreements to resell net of allowance and trading account assets and brokerage receivables net of allowance.
+7) Loans, net, include ACLL. EOP gross loans, which does not include ACLL, for 2Q24, 1Q24, and 2Q23 are $688 billion, $675 billion, and $661 billion, respectively.
+8) Other Assets include goodwill, intangible assets, deferred tax assets, allowance for credit losses on loans and all other assets net of allowance.
+9) Trading-related liabilities include securities loaned or sold under agreements to repurchase and trading account liabilities and brokerage payables.
+10) Other Liabilities include short-term borrowings and other liabilities.
+Slide 12
+1) com
+-K filed with the SEC on July 12, 2024.
+2) DTA represents deferred tax excludable from Basel III CET1 Capital, which includes net DTAs arising from net operating loss, foreign tax credit and general business credit tax carry-forwards and DTA
+arising from timing difference (future deductions) that are deducted from CET1 capital exceeding the 10% limitation. RWA and Other include changes in goodwill and intangible assets and changes in
+Other Comprehensive Income. Citi's regulatory capital ratios and components reflect certain deferrals based on the modified regulatory capital transition provision related to the Current Expected
+Credit Losses (CECL) standard. For additional information, see ""Capital Resources - Regulatory Capital Treatment-Modified Transition of the Current Expected Credit Losses Methodology"" in
+Citigroup's 2023 Annual Report on Form 10-K.
+35",481,3187,pdfplumber_comprehensive,"Footnotes (cont.) Slide 9 1) NII excluding Markets is a non-GAAP financial measure. 2) Gross Loan Yield is defined as gross interest revenue earned on loans divided by average loans. 3) Cost of Interest- -bearing deposits. Slide 10 1) FICO scores are updated as they become available. Citi adjusted its disclosures for U.S. credit card FICO score distribution in 1Q24 to align with industry reporting practices using a threshold of 660 versus the 680 threshold used previously. 2) Excludes loans that are carried at fair value of $5.8 billion, $8.9 billion and $8.5 billion at June 30, 2023, March 31, 2024, and June 30, 2024, respectively. Slide 11 1) th -K filed with the SEC on July 12, 2024. Certain prior period amounts and ratios have been revised to conform with enhancements made in the current period. 2) 2Q24 is preliminary. For the composition of Citigroup s Supplementary Leverage ratio, please see Appendix E of the 2Q24 earnings press release included as Exhibit 99.1 to Citigroup s Current Report on Form 8-K filed with the SEC on July 12 2024. 3) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities within serve Bank discount window. 4) Tangible Book Value per Share is a non-GAAP financial measure. For a reconciliation of this measure to reported results, please refer to Slide 27. 5) Investments, net, include available-for-sale debt securities, held-to-maturity debt securities, net of allowance, and equity securities. 6) Trading-related assets include securities borrowed or purchased under agreements to resell net of allowance and trading account assets and brokerage receivables net of allowance. 7) Loans, net, include ACLL. EOP gross loans, which does not include ACLL, for 2Q24, 1Q24, and 2Q23 are $688 billion, $675 billion, and $661 billion, respectively. 8) Other Assets include goodwill, intangible assets, deferred tax assets, allowance for credit losses on loans and all other assets net of allowance. 9) Trading-related liabilities include securities loaned or sold under agreements to repurchase and trading account liabilities and brokerage payables. 10) Other Liabilities include short-term borrowings and other liabilities. Slide 12 1) com -K filed with the SEC on July 12, 2024. 2) DTA represents deferred tax excludable from Basel III CET1 Capital, which includes net DTAs arising from net operating loss, foreign tax credit and general business credit tax carry-forwards and DTA arising from timing difference (future deductions) that are deducted from CET1 capital exceeding the 10% limitation. RWA and Other include changes in goodwill and intangible assets and changes in Other Comprehensive Income. Citi s regulatory capital ratios and components reflect certain deferrals based on the modified regulatory capital transition provision related to the Current Expected Credit Losses (CECL) standard. For additional information, see Capital Resources - Regulatory Capital Treatment-Modified Transition of the Current Expected Credit Losses Methodology in Citigroup s 2023 Annual Report on Form 10-K. 35",33,True
+36,main_text,"Footnotes (cont.)
+Slide 13
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(98) million related to loans and unfunded lending commitments as well as other
+provisions of approximately $71 million relating to held-to-maturity (HTM) debt securities and other assets.
+2) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation
+stockholders' equity, please refer to Slide 27.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the
+components of the calculation, please refer to Slide 27.
+4) Cross Border Transaction Value is defined as the total value of cross- rldlink and Cross Border Funds Transfer platforms, including
+payments from Consumer, Corporate, Financial Institution and Public Sector clients.
+5) U.S. Dollar Clearing Volume is defined as the number of USD Clearing Payment instructions processed by Citi on behalf of U.S. and foreign-domiciled entities (primarily Financial Institutions).
+Amounts in the table are stated in millions of payment instructions processed.
+6) Commercial Card Spend Volume is defined as total global spend volumes using Citi issued commercial cards net of refunds and returns.
+7) Reflects prior-period revisions for certain AUC North America accounts.
+Slide 14
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(109) million related to loans and unfunded lending commitments as well as
+other provisions of approximately $32 million relating to held-to-maturity (HTM) debt securities and other assets.
+2) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation
+stockholders' equity, please refer to Slide 27.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the
+components of the calculation, please refer to Slide 27.
+4) VaR estimates, at a 99% confidence level, the potential decline in the value of a position or a portfolio under normal market conditions assuming a one-day holding period. VaR statistics, which are
+based on historical data, can be materially different across firms due to differences in portfolio composition, VaR methodologies and model parameters.
+36",480,3231,pdfplumber_comprehensive,"Footnotes (cont.) Slide 13 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(98) million related to loans and unfunded lending commitments as well as other provisions of approximately $71 million relating to held-to-maturity (HTM) debt securities and other assets. 2) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation stockholders equity, please refer to Slide 27. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the components of the calculation, please refer to Slide 27. 4) Cross Border Transaction Value is defined as the total value of cross- rldlink and Cross Border Funds Transfer platforms, including payments from Consumer, Corporate, Financial Institution and Public Sector clients. 5) U.S. Dollar Clearing Volume is defined as the number of USD Clearing Payment instructions processed by Citi on behalf of U.S. and foreign-domiciled entities (primarily Financial Institutions). Amounts in the table are stated in millions of payment instructions processed. 6) Commercial Card Spend Volume is defined as total global spend volumes using Citi issued commercial cards net of refunds and returns. 7) Reflects prior-period revisions for certain AUC North America accounts. Slide 14 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(109) million related to loans and unfunded lending commitments as well as other provisions of approximately $32 million relating to held-to-maturity (HTM) debt securities and other assets. 2) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation stockholders equity, please refer to Slide 27. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the components of the calculation, please refer to Slide 27. 4) VaR estimates, at a 99% confidence level, the potential decline in the value of a position or a portfolio under normal market conditions assuming a one-day holding period. VaR statistics, which are based on historical data, can be materially different across firms due to differences in portfolio composition, VaR methodologies and model parameters. 36",29,True
+37,main_text,"Footnotes (cont.)
+Slide 15
+1) Credit derivatives are used to economically hedge a portion of the Corporate Lending portfolio that includes both accrual loans and loans at fair value. Gain / (loss) on loan hedges includes the mark-
+to-market on the credit derivatives and the mark-to-market on the loans in the portfolio that are at fair value. In the second quarter 2024, gain / (loss) on loan hedges included $9 million related to
+Corporate Lending, compared to $(66) million in the prior-year period. The fixed premium costs of these hedges are netted against the Corporate Lending revenues to reflect the cost of credit
+-GAAP financial measures. For additional information on this measure, please refer to Slide 29.
+2) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(60) million related to loans and unfunded lending commitments as well as other
+provisions of approximately $(12) million relating to other assets.
+3) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation
+stockholders' equity, please refer to Slide 27.
+4) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the
+components of the calculation, please refer to Slide 27.
+Slide 16
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(43) million related to loans and unfunded lending commitments as well as other
+provisions of approximately $(1) million relating to benefits and claims, and other assets.
+2) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation
+stockholders' equity, please refer to Slide 27.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the
+components of the calculation, please refer to Slide 27.
+4) The period-over-period variances reflect the impact of the net deposit balance transfers from USPB to Wealth of approximately $13 billion over the quarter, and approximately $27 billion over the last
+12 months. These amounts represent the balances at the time relationships are transferred and include estimated amounts for the net transfers in June 2024.
+5) Client Investment Assets includes Assets Under Management, trust and custody assets. 2Q24 is preliminary.
+6) Client Balances includes EOP Deposits, Loans, and Client Investment Assets.
+7) Estimated Net New Assets represent estimated asset inflows, including dividends, interest and distributions, less asset outflows. Excluded from the calculation are the impact of fees and
+commissions, market movement, internal transfers within Citi specific to systematic upgrades/downgrades with USPB, and any impact from strategic decisions by Citi to exit certain markets or
+services. Also excluded from the calculation are potential Net New Asset amounts, expected to be immaterial, associated with markets in which the data was not available for current period
+reporting.
+37",594,3932,pdfplumber_comprehensive,"Footnotes (cont.) Slide 15 1) Credit derivatives are used to economically hedge a portion of the Corporate Lending portfolio that includes both accrual loans and loans at fair value. Gain (loss) on loan hedges includes the mark- to-market on the credit derivatives and the mark-to-market on the loans in the portfolio that are at fair value. In the second quarter 2024, gain (loss) on loan hedges included $9 million related to Corporate Lending, compared to $(66) million in the prior-year period. The fixed premium costs of these hedges are netted against the Corporate Lending revenues to reflect the cost of credit -GAAP financial measures. For additional information on this measure, please refer to Slide 29. 2) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(60) million related to loans and unfunded lending commitments as well as other provisions of approximately $(12) million relating to other assets. 3) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation stockholders equity, please refer to Slide 27. 4) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the components of the calculation, please refer to Slide 27. Slide 16 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(43) million related to loans and unfunded lending commitments as well as other provisions of approximately $(1) million relating to benefits and claims, and other assets. 2) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation stockholders equity, please refer to Slide 27. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the components of the calculation, please refer to Slide 27. 4) The period-over-period variances reflect the impact of the net deposit balance transfers from USPB to Wealth of approximately $13 billion over the quarter, and approximately $27 billion over the last 12 months. These amounts represent the balances at the time relationships are transferred and include estimated amounts for the net transfers in June 2024. 5) Client Investment Assets includes Assets Under Management, trust and custody assets. 2Q24 is preliminary. 6) Client Balances includes EOP Deposits, Loans, and Client Investment Assets. 7) Estimated Net New Assets represent estimated asset inflows, including dividends, interest and distributions, less asset outflows. Excluded from the calculation are the impact of fees and commissions, market movement, internal transfers within Citi specific to systematic upgrades downgrades with USPB, and any impact from strategic decisions by Citi to exit certain markets or services. Also excluded from the calculation are potential Net New Asset amounts, expected to be immaterial, associated with markets in which the data was not available for current period reporting. 37",31,True
+38,main_text,"Footnotes (cont.)
+Slide 17
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL build of approximately $382 million related to loans and unfunded lending commitments as well as other
+provisions of approximately $2 million relating to benefits and claims, and other assets.
+2) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation
+stockholders' equity, please refer to Slide 27.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the
+components of the calculation, please refer to Slide 27.
+4) The period-over-period variances reflect the impact of the net deposit balance transfers from USPB to Wealth of approximately $13 billion over the quarter, and approximately $27 billion over the last
+12 months. These amounts represent the balances at the time relationships are transferred and include estimated amounts for the net transfers in June 2024.
+5) Active Mobile Users represents customers of all mobile services (mobile apps or via mobile browser) within the last 90 days through May 2024. Excludes Citi mortgage and Retail Services reported in
+U.S. Personal Banking and includes U.S. Citigold reported in Wealth.
+6) Active Digital Users represents customers of all online and/or mobile services within the last 90 days through May 2024. Excludes Citi mortgage and Retail Services reported in U.S. Personal Banking
+and includes U.S. Citigold reported in Wealth.
+7) Average Installment Loans is the total of U.S. Personal Loans, Merchant Installment Lending, and Flex (Loan/Pay/Point-of-Sale) products.
+8) Digital Deposits includes U.S. Citigold deposits reported under Wealth.
+38",325,2165,pdfplumber_comprehensive,"Footnotes (cont.) Slide 17 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL build of approximately $382 million related to loans and unfunded lending commitments as well as other provisions of approximately $2 million relating to benefits and claims, and other assets. 2) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation stockholders equity, please refer to Slide 27. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the components of the calculation, please refer to Slide 27. 4) The period-over-period variances reflect the impact of the net deposit balance transfers from USPB to Wealth of approximately $13 billion over the quarter, and approximately $27 billion over the last 12 months. These amounts represent the balances at the time relationships are transferred and include estimated amounts for the net transfers in June 2024. 5) Active Mobile Users represents customers of all mobile services (mobile apps or via mobile browser) within the last 90 days through May 2024. Excludes Citi mortgage and Retail Services reported in U.S. Personal Banking and includes U.S. Citigold reported in Wealth. 6) Active Digital Users represents customers of all online and or mobile services within the last 90 days through May 2024. Excludes Citi mortgage and Retail Services reported in U.S. Personal Banking and includes U.S. Citigold reported in Wealth. 7) Average Installment Loans is the total of U.S. Personal Loans, Merchant Installment Lending, and Flex (Loan Pay Point-of-Sale) products. 8) Digital Deposits includes U.S. Citigold deposits reported under Wealth. 38",30,True
+39,main_text,"Footnotes (cont.)
+Slide 18
+1) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for all periods, related to Citi's divestitures of its Asia consumer banking businesses and the
+planned divestiture of Mexico consumer banking and small business and middle market banking within Legacy Franchises. For additional information and a reconciliation of All Other-Legacy
+Franchises on a managed basis, please refer to Slides 30 and 31.
+2) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(4) million related to loans and unfunded lending commitments as well as other
+provisions of approximately $33 million relating to held-to-maturity (HTM) debt securities and other assets.
+3) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation
+of the summation of the segment 's and component's average allocated TCE to Citi's total average TCE and Citi's total average stockholders' equity, please refer to Slide 27.
+4) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent
+on Form 8-K filed with the U.S. Securities and Exchange Commission on
+July 10, 2024.
+5) Legacy Franchises revenues and expenses ex-divestitures are non-GAAP measures. 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily
+related to separation costs in Mexico and severance costs in the Asia exit markets. Divestiture-related impacts in 2023 includes: (i) an approximate $1.059 billion gain on sale recorded in revenue
+(approximately $727 million after-tax) related to the India consumer banking business sale; (ii) an approximate $403 million gain on sale recorded in revenue (approximately $284 million after-tax)
+related to the Taiwan consumer banking business sale; and (iii) approximately $372 million (approximately $263 million after-tax) in operating expenses primarily related to separation costs in
+Mexico and severance costs in the Asia exit markets. Divestiture-related impacts in 2022 includes: (i) an approximate $535 million (approximately $489 million after-tax) goodwill write-down due to
+resegmentation and the timing of Asia consumer banking business divestitures; (ii) an approximate $616 million gain on sale recorded in revenue (approximately $290 million after-tax) related to the
+Philippines consumer banking business sale; and (iii) an approximate $209 million gain on sale recorded in revenue (approximately $115 million after-tax) related to the Thailand consumer banking
+business sale.
+39",452,3096,pdfplumber_comprehensive,"Footnotes (cont.) Slide 18 1) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for all periods, related to Citi s divestitures of its Asia consumer banking businesses and the planned divestiture of Mexico consumer banking and small business and middle market banking within Legacy Franchises. For additional information and a reconciliation of All Other-Legacy Franchises on a managed basis, please refer to Slides 30 and 31. 2) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(4) million related to loans and unfunded lending commitments as well as other provisions of approximately $33 million relating to held-to-maturity (HTM) debt securities and other assets. 3) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. For additional information on this measure and a reconciliation of the summation of the segment s and component s average allocated TCE to Citi s total average TCE and Citi s total average stockholders equity, please refer to Slide 27. 4) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent on Form 8-K filed with the U.S. Securities and Exchange Commission on July 10, 2024. 5) Legacy Franchises revenues and expenses ex-divestitures are non-GAAP measures. 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. Divestiture-related impacts in 2023 includes: (i) an approximate $1.059 billion gain on sale recorded in revenue (approximately $727 million after-tax) related to the India consumer banking business sale; (ii) an approximate $403 million gain on sale recorded in revenue (approximately $284 million after-tax) related to the Taiwan consumer banking business sale; and (iii) approximately $372 million (approximately $263 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets. Divestiture-related impacts in 2022 includes: (i) an approximate $535 million (approximately $489 million after-tax) goodwill write-down due to resegmentation and the timing of Asia consumer banking business divestitures; (ii) an approximate $616 million gain on sale recorded in revenue (approximately $290 million after-tax) related to the Philippines consumer banking business sale; and (iii) an approximate $209 million gain on sale recorded in revenue (approximately $115 million after-tax) related to the Thailand consumer banking business sale. 39",18,True
+40,main_text,"Footnotes (cont.)
+Slide 19
+1) Defined as 2026.
+2) Full year 2024 NII ex-Markets is a forward-looking non-GAAP financial measure. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward-
+looking estimates or targets for revenue, expenses and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP
+financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to
+the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant to future results.
+3) Full year 2024 expense estimates excludes the incremental FDIC special assessment and Civil Money Penalties related impacts are forward-looking non-GAAP financial measures. 1H24 expenses of
+$27.5 billion included an incremental $285 million pre-tax charge related to the FDIC special assessment and $136 million civil money penalties imposed by the FRB and OCC. From time to time,
+management may discuss forward-looking non-GAAP financial measures, such as forward-looking estimates or targets for revenue, expenses, and RoTCE. We are unable to provide a reconciliation
+of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate
+calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may
+occur. Such unavailable information could be significant to future results.
+4) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent
+on Form 8-K filed with the U.S. Securities and Exchange Commission on
+July 10, 2024.
+5) Subject to Citigroup Board of Directors' approval.
+6) RoTCE over the medium-term is a forward-looking non-GAAP financial measure. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward-
+looking estimates or targets for revenue, expenses and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP
+financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to
+the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant for future results.
+Slide 23
+1) Financial impacts from Argentina are included in results for Services, Markets and Banking.
+Slide 24
+1) The loss is already reflected in AOCI in Equity and therefore will not have an impact on capital.
+Slide 25
+1) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities within
+serve Bank discount window.
+2) Calculated as Total Available Liquidity Resources of $899 billion minus $464 billion of Net Cash Outflow as June 30, 2024.
+40",516,3498,pdfplumber_comprehensive,"Footnotes (cont.) Slide 19 1) Defined as 2026. 2) Full year 2024 NII ex-Markets is a forward-looking non-GAAP financial measure. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward- looking estimates or targets for revenue, expenses and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant to future results. 3) Full year 2024 expense estimates excludes the incremental FDIC special assessment and Civil Money Penalties related impacts are forward-looking non-GAAP financial measures. 1H24 expenses of $27.5 billion included an incremental $285 million pre-tax charge related to the FDIC special assessment and $136 million civil money penalties imposed by the FRB and OCC. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward-looking estimates or targets for revenue, expenses, and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant to future results. 4) On July 10, 2024, the FRB entered into a Civil Money Penalty Consent Order with Citigroup in the amount of approximately $60.6 million, and the OCC entered into a Civil Money Penalty Consent on Form 8-K filed with the U.S. Securities and Exchange Commission on July 10, 2024. 5) Subject to Citigroup Board of Directors approval. 6) RoTCE over the medium-term is a forward-looking non-GAAP financial measure. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward- looking estimates or targets for revenue, expenses and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant for future results. Slide 23 1) Financial impacts from Argentina are included in results for Services, Markets and Banking. Slide 24 1) The loss is already reflected in AOCI in Equity and therefore will not have an impact on capital. Slide 25 1) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities within serve Bank discount window. 2) Calculated as Total Available Liquidity Resources of $899 billion minus $464 billion of Net Cash Outflow as June 30, 2024. 40",26,True
+41,main_text,"Footnotes (cont.)
+Slide 27
+1) Net income to common for All Other (Managed Basis) is reduced by preferred dividends of $242 million in 2Q24.
+2) ardized risk-weighted assets, the global systemically important banks
+(GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate
+TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE.
+4) Results of Net Income excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 31.
+Slide 28
+1) Reflects the impact of foreign currency (FX) translation into U.S. dollars applying the second quarter 2024 average exchange rates for all periods presented, with the exception of EOP loans and
+ion are non-GAAP financial measures.
+Slide 29
+1) Divestiture-related impacts in 2024:
+1Q24 includes approximately $110 million in operating expenses (approximately $77 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets.
+2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets.
+Divestiture-related impacts during the last three quarters of 2023:
+2Q23 includes approximately $79 million in expenses (approximately $57 million after-tax), primarily related to separation costs in Mexico and severance costs in Asia exit markets. For additional
+information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2023.
+3Q23 includes an approximate $403 million gain on sale recorded in revenue (approximately $284 million after various taxes) related to Citi's sale of the Taiwan consumer banking business. For
+additional information, see Citi's Quarterly Report on Form 10-Q for the quarterly period ended September 30, 2023.
+4Q23 includes approximately $106 million in expenses (approximately $75 million after-tax), primarily related to separation costs in Mexico and severance costs in Asia exit markets. For additional
+information, see Citi's Annual Report on Form 10-K for the year ended December 31, 2023.
+2) NII excluding Markets is a non-GAAP financial measure.
+3) Fourth quarter 2023 expenses include an FDIC special assessment of approximately $1,706 million. First quarter 2024 expenses include an incremental FDIC special assessment of approximately
+$251 million. Second quarter 2024 expenses include an incremental FDIC special assessment of approximately $34 million.
+4) Credit derivatives are used to economically hedge a portion of the Corporate Lending portfolio that includes both accrual loans and loans at fair value. Gain / (loss) on loan hedges includes the mark-
+to-market on the credit derivatives and the mark-to-market on the loans in the portfolio that are at fair value. In the second quarter 2024, gain / (loss) on loan hedges included $9 million related to
+Corporate Lending, compared to $(66) million in the prior-year period. The fixed premium costs of these hedges are netted against the Corporate Lending revenues to reflect the cost of credit
+-GAAP financial measures.
+41",525,3516,pdfplumber_comprehensive,"Footnotes (cont.) Slide 27 1) Net income to common for All Other (Managed Basis) is reduced by preferred dividends of $242 million in 2Q24. 2) ardized risk-weighted assets, the global systemically important banks (GSIB) surcharge, a simulation of TCE in severe stress environments, as well as a leverage component. The allocation methodology, including underlying assumptions and judgments used to allocate TCE, are periodically reassessed and as a result the TCE allocated to the segments may change. TCE is a non-GAAP financial measure. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. 4) Results of Net Income excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 31. Slide 28 1) Reflects the impact of foreign currency (FX) translation into U.S. dollars applying the second quarter 2024 average exchange rates for all periods presented, with the exception of EOP loans and ion are non-GAAP financial measures. Slide 29 1) Divestiture-related impacts in 2024: 1Q24 includes approximately $110 million in operating expenses (approximately $77 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. 2Q24 includes approximately $85 million in operating expenses (approximately $58 million after-tax), primarily related to separation costs in Mexico and severance costs in the Asia exit markets. Divestiture-related impacts during the last three quarters of 2023: 2Q23 includes approximately $79 million in expenses (approximately $57 million after-tax), primarily related to separation costs in Mexico and severance costs in Asia exit markets. For additional information, see Citi s Quarterly Report on Form 10-Q for the quarterly period ended June 30, 2023. 3Q23 includes an approximate $403 million gain on sale recorded in revenue (approximately $284 million after various taxes) related to Citi s sale of the Taiwan consumer banking business. For additional information, see Citi s Quarterly Report on Form 10-Q for the quarterly period ended September 30, 2023. 4Q23 includes approximately $106 million in expenses (approximately $75 million after-tax), primarily related to separation costs in Mexico and severance costs in Asia exit markets. For additional information, see Citi s Annual Report on Form 10-K for the year ended December 31, 2023. 2) NII excluding Markets is a non-GAAP financial measure. 3) Fourth quarter 2023 expenses include an FDIC special assessment of approximately $1,706 million. First quarter 2024 expenses include an incremental FDIC special assessment of approximately $251 million. Second quarter 2024 expenses include an incremental FDIC special assessment of approximately $34 million. 4) Credit derivatives are used to economically hedge a portion of the Corporate Lending portfolio that includes both accrual loans and loans at fair value. Gain (loss) on loan hedges includes the mark- to-market on the credit derivatives and the mark-to-market on the loans in the portfolio that are at fair value. In the second quarter 2024, gain (loss) on loan hedges included $9 million related to Corporate Lending, compared to $(66) million in the prior-year period. The fixed premium costs of these hedges are netted against the Corporate Lending revenues to reflect the cost of credit -GAAP financial measures. 41",29,True
+42,main_text,"Footnotes (cont.)
+Slide 30
+1) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for all periods, related to Citi's divestitures of its Asia consumer banking businesses and
+the planned divestiture of Mexico consumer banking and small business and middle market banking within Legacy Franchises. For additional information and a reconciliation of All Other Legacy
+Franchises on a managed basis, please refer to Slide 31.
+Slide 31
+1) Reconciling Items consist of the divestiture-related impacts excluded from the results of All Other, as well as All Other Legacy Franchises on a managed basis.
+2) Results of revenues excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29.
+3) Results of expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29.
+4) Includes credit reserve build / (release) for loans and provision for credit losses on unfunded lending commitments.
+5) Includes provisions for policyholder benefits and claims and other assets.
+42",172,1166,pdfplumber_comprehensive,"Footnotes (cont.) Slide 30 1) All Other (managed basis) reflects results on a managed basis, which excludes divestiture-related impacts, for all periods, related to Citi s divestitures of its Asia consumer banking businesses and the planned divestiture of Mexico consumer banking and small business and middle market banking within Legacy Franchises. For additional information and a reconciliation of All Other Legacy Franchises on a managed basis, please refer to Slide 31. Slide 31 1) Reconciling Items consist of the divestiture-related impacts excluded from the results of All Other, as well as All Other Legacy Franchises on a managed basis. 2) Results of revenues excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29. 3) Results of expenses excluding divestiture-related impacts are non-GAAP financial measures. For a reconciliation of these results, please refer to Slide 29. 4) Includes credit reserve build (release) for loans and provision for credit losses on unfunded lending commitments. 5) Includes provisions for policyholder benefits and claims and other assets. 42",11,True

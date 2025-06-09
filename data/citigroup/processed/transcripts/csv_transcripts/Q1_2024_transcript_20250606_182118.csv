@@ -1,0 +1,700 @@
+bank,quarter,speaker,role,paragraph,word_count,page_number,sequence,confidence,topic_category
+Citigroup,First,"PRESENTATION
+OPERATOR",MODERATOR,"Hello and welcome to Citi's First Quarter 2024 Earnings Call. Today's call will be hosted by Jenn
+Landis, Head of Citi Investor Relations. We ask that you please hold all questions until the completion of
+the formal remarks at which time you will be given instructions for the question-and-answer session. Also,
+as a reminder, this conference is being recorded today. If you have any objections, please disconnect at this
+time.
+Ms. Landis, you may begin.",75,1,1,0.6,opening_remarks
+Citigroup,First,JENNIFER LANDIS,OTHER,"Thank you, operator. Good morning and thank you all for joining our first quarter 2024
+earnings call. I am joined today by our Chief Executive Officer, Jane Fraser, and our Chief Financial Officer,
+Mark Mason.
+I'd like to remind you that today's presentation, which is available for download on our website,
+citigroup.com, may contain forward-looking statements which are based on management's current
+expectations and are subject to uncertainty and changes in circumstances. Actual results may differ
+materially from these statements due to a variety of factors, including those described in our earnings
+materials as well as in our SEC filings.
+And with that, I'll turn it over to Jane.",109,1,2,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"Thank you, Jenn, and good morning to everyone. Today I am going to touch on the
+macroeco
+quarter.
+While global economic performance was surprisingly desynchronized last year, the overall story has been
+consistent of late: one of economic resiliency supported by tight labor markets and the consumer. Growth
+this year looks poised to slow in many markets. And conditions are generally disinflationary - you are
+already seeing some central banks in the emerging markets starting to cut rates.
+In the U.S., a soft landing is viewed as increasingly likely. But we continue to see a tale of two Europes with
+Germany hurt by the weak demand for goods while southern European countries such as Spain and Greece
+benefit from stronger demand in services.
+In Asia,
+although its property market remains a concern.
+Amidst all these dynamics, we continue to focus on executing against our strategy and delivering the best
+of Citi to all our stakeholders. I said 2024 will be a pivotal year for us as we put our business and
+organizational simplification largely behind us and we focus on two main priorities: the Transformation and
+the performance of our businesses and the firm.
+Copyright © 2024 Citigroup Inc. 1",200,1,3,0.6,opening_remarks
+Citigroup,First,Unknown Speaker,Unknown,"T R A N S C R I P T
+Citi First Quarter 2024 Earnings Call
+April 12, 2024
+Last month marked the end to the organizational simplification we announced in September. The result is
+a cleaner, simpler management structure that fully aligns to and facilitates our strategy. We are now more
+client-centric
+clear lines of accountability, starting with my management team, fewer layers, increased spans of control,
+and frankly much less bureaucracy and needless complexity.
+This will all help us run the company more efficiently, it will enhance our client experience, and improve
+more roles were ultimately impacted than the 5,000 we discussed in January.
+We also took a number of other steps to sharpen our business focus and improve returns by right placing
+strategy; and right sizing the workforce in Wealth.
+As a result of all these combined steps, which include the simplification, we are eliminating approximately
+7,000 positions which will generate $1.5 billion of annualized run-rate expense saves. The combination of
+these actions and the measures we are taking to eliminate our remaining stranded costs will drive $2 to
+$2.5 billion in cumulative annualized run-rate saves in the medium term.
+We are keeping a close eye on the execution of these efforts and overall resourcing to ensure we safeguard
+our commitment to the Transformation. As you know, given its magnitude and scale, the Transformation
+is a multi-year effort to address issues that have spanned over two decades.
+We have made steady progress as we retire multiple legacy platforms, streamline end-to-end processes,
+and strengthen our risk and control environment. All of which are necessary, not only to meet the
+expectations of our regulators, but also to serve our clients more effectively.
+A transformation of this magnitude is never linear. So while we have made good progress in many areas,
+there are a few where we are intensifying our efforts, such as automating certain regulatory processes and
+the data related to regulatory reporting. We are committed to getting these right and will look to self-fund
+the necessary investments to do so.
+Turning to the quarter, we had a good start to a pivotal year. We reported net income of approximately $3.4
+billion, EPS of $1.58 and an RoTCE of 7.6% on over $21 billion of revenues. Our revenues were up over 3%
+year-over-year, excluding divestitures, which was primarily the billion-dollar gain from the India consumer
+sale last year. Our expenses were slightly down quarter-over-quarter, excluding the FDIC special
+assessments.
+Services continues to perform well and generate very attractive returns. Revenue was up 8% for the quarter
+as both businesses won new mandates and deepened relationships with existing clients.
+Fees were up a pleasing 10% for Services year over year, driven by the investments we have made across
+our product offering, platforms and client experience. In Securities Services, we took share again this
+quarter. And in TTS, cross-border activity continued to outpace global GDP growth, and commercial card
+spend remained robust. We look forward to diving deeper into these two businesses at our Investor
+Presentation on Services in June.
+impacted Rates and Currencies, that was off a very strong first quarter last year. We saw good client activity
+in Equities and in Spread Products, where both new issuance and securitization activity were particularly
+robust. We fully integrated our Financing and Securitization capabilities within our Markets business and
+we started to see the benefits of having a unified spread product offering for our clients.
+Copyright © 2024 Citigroup Inc. 2",579,2,4,0.3,financial_results
+Citigroup,First,MARK MASON,OTHER,"Thanks, Jane and good morning, everyone. I am going to start with the firmwide financial
+results, focusing on year-over-year comparisons for the first quarter unless I indicate otherwise, and then
+spend a little more time on the businesses.
+Copyright © 2024 Citigroup Inc. 3",44,3,5,0.6,opening_remarks
+Citigroup,First,Unknown Speaker,Unknown,"T R A N S C R I P T
+Citi First Quarter 2024 Earnings Call
+April 12, 2024
+On slide 6, we show financial results for the full firm. In the first quarter, we reported net income of
+approximately $3.4 billion, EPS of $1.58 and an RoTCE of 7.6% on $21.1 billion of revenues. Total revenues
+were down 2% on a reported basis. Excluding divestiture-related impacts, largely consisting of the $1 billion
+gain from the sale of the India consumer business in the prior year, revenues were up more than 3%, driven
+by growth across Banking, USPB and Services, partially offset by declines in Markets and Wealth. Expenses
+were $14.2 billion, up 7%, on a reported basis. Excluding divestiture-related impacts and the incremental
+FDIC special assessment, expenses were up 5%. Cost of credit was approximately $2.4 billion, primarily
+driven by higher Card net credit losses, which were partially offset by ACL releases in Wealth, Banking and
+Legacy Franchises. At the end of the quarter, we had nearly $22 billion in total reserves with a reserve-to-
+funded loans ratio of approximately 2.8%.
+On slide 7, we show the expense trend over the past five quarters. We reported expenses of $14.2 billion,
+which included the incremental FDIC special assessment of roughly $250 million. Also included in this
+number are $225 million of restructuring charges largely related to the organizational simplification. In total,
+actions, we expect approximately $1.5 billion of annualized run-rate saves over the medium term related to
+a headcount reduction of approximately 7,000. In addition to the restructuring, we took approximately $260
+million of repositioning costs largely related to our efficiency efforts across the firm, including the reduction
+of stranded costs associated with the consumer divestitures. The expected savings from these actions will
+allow us to continue to fund additional investments in the Transformation this year. And relative to the prior
+year, the remainder of the expense growth was largely driven by inflation and volume-related expenses,
+partially offset by productivity savings. In the remainder of the year, we expect a more normalized level of
+repositioning, which is already embedded in our guidance. Therefore, you can expect our quarterly expense
+trend to go down from here in line with our $53.5-$53.8 billion ex-FDIC expense guidance.
+On slide 8, we show net interest income, deposits, and loans, sequential variances. In the
+first quarter, net interest income decreased by $317 million, largely driven by Markets, which resulted in a 4
+basis point decrease in net interest margin. Excluding Markets, net interest income was relatively flat.
+Average loans were up $4 billion, primarily driven by Loans in Spread Products in Markets, as well as Card
+and Mortgage loans in US Personal Banking, partially offset by declines in Services. And average deposits
+were up nearly $7 billion, primarily driven by Services, as we continue to grow high-quality operating
+deposits.
+On slide 9, we show key consumer and corporate credit metrics. This quarter, we adjusted our FICO
+distribution to be more aligned with industry reporting practices and now show our FICO mix using a 660
+threshold. Across Branded Cards and Retail Services, approximately 85% of our card loans are to consumers
+with FICO scores of 660 or higher. And we remain well reserved with a reserve-to-funded loan ratio of 8.2%
+for our total card portfolio. In our Corporate portfolio, the majority of our exposure is investment grade,
+which is reflected in our low level of non-accrual loans at 0.5% of total corporate loans. As a reminder, our
+loan loss reserves incorporate a scenario-weighted average unemployment rate of approximately 5%, which
+includes a downside scenario unemployment rate of close to 7%. As such, we feel very comfortable with the
+nearly $22 billion of reserves we have in the current environment.
+highlight the strength of our balance sheet, capital and
+liquidity. We maintain a very strong $2.4 trillion high-quality balance sheet, which increased 1% sequentially.
+Despite this increase, we were able to decrease our risk-weighted assets reflecting our continued
+optimization efforts and focus on capital efficiency. Our balance sheet is a reflection of our risk appetite,
+strategy and diversified business model. The foundation of our funding is a $1.3 trillion deposit base, which
+is well diversified across regions, industries, customers and account types. The majority of our deposits,
+$812 billion, are corporate and span 90 countries. Most of our corporate deposits reside in operating
+accounts that are crucial to how our clients fund their daily operations around the world. In most cases, we
+integrated services payments & collections, liquidity management and working capital solutions. All of
+which greatly increase the stickiness of these deposits. The majority of our remaining deposits, about $423
+Copyright © 2024 Citigroup Inc. 4",780,4,6,0.3,financial_results
+Citigroup,First,Unknown Speaker,Unknown,"T R A N S C R I P T
+Citi First Quarter 2024 Earnings Call
+April 12, 2024
+billion, are well diversified across the Private Bank, Citigold, Retail and Wealth at Work, as well as across
+regions and products. Now turning to the asset side, over the last several years, we have maintained a strong
+risk appetite framework and have been very deliberate about how we deploy our deposits and other liabilities
+into high-quality assets. This starts with our $675 billion loan portfolio which is well diversified across
+consumer and corporate loans. And the duration of the total portfolio is approximately 1.2 years. About one-
+third of our balance sheet is held in cash and high-quality, short-duration investment securities that
+contribute to our nearly $1 trillion of available liquidity resources. And for the quarter, we had an LCR of 117%.
+So to wrap it up, we are active and deliberate in the management of our balance sheet, which is reflected in
+our high-quality assets and strong capital and liquidity position.
+On slide 11, we show the sequential CET1 walk to provide more detail on the drivers this quarter. First, we
+generated $3.1 billion of net income to common shareholders, which added 27 basis points. Second, we
+returned $1.5 billion in the form of common dividends and share repurchases, which drove a reduction of
+about 13 basis points. Third, we saw an increase in our disallowed DTA, which resulted in a 10 basis point
+decrease. And finally, the remaining 6 basis point benefit was largely driven by a reduction in RWA. We ended
+the quarter with a preliminary 13.5% CET1 capital ratio, approximately 120 basis points, or over $13 billion,
+above our regulatory capital requirement of 12.3%. That said, our capital requirement does not yet reflect our
+simplification efforts, the benefits of our Transformation or the full execution of our strategy, all of which we
+expect to bring down capital requirements over time.
+So now turning to slide 12. Before I get into the businesses, let me remind you that in the fourth quarter, we
+implemented a revenue sharing arrangement within Banking, and between Banking, Services and Markets
+to reflect the benefit the businesses get from our relationship-based lending. The impact of revenue sharing
+is in In Services, revenues were
+up 8% this quarter, driven by continued momentum across both TTS and Securities Services. Net interest
+income increased 6%, driven by higher deposit and trade loan spreads. Non-interest revenue increased 14%,
+largely driven by continued strength across underlying fee drivers. In TTS, cross-border volumes increased
+9%, USD clearing volumes increased 3% and commercial card spend volumes increased 5%, all of which was
+driven by strong corporate client activity. In Securities Services, our preliminary assets under custody and
+administration increased 11%, benefiting from higher market valuations, as well as new client onboarding.
+The growth in both businesses is a direct result of our continued investments in product innovation, the
+client experience and platform modernization to gain share across all client segments. TTS continues to
+maintain its number one position with Large Corporate and FI clients and see good momentum in the
+commercial client segment. And we continue to gain share in Securities Services. Expenses increased 11%,
+largely driven by continued investments in technology and product innovation. Cost of credit was $64
+million as net credit losses remain low. Net income was approximately $1.5 billion. Average loans were up
+4%, primarily driven by strong demand for working capital loans in TTS. Average deposits were down 3% as
+the impact of quantitative tightening more than offset new client acquisitions and deepening with existing
+clients. However, it is worth noting that we continue to see good operating deposit inflow. And Services
+continues to deliver a high RoTCE of 24.1% for the quarter.
+On slide 13, we show the results for Markets for the first quarter. Markets revenues were down 7% as lower
+Fixed Income revenues more than offset growth in Equities. Fixed Income revenues decreased 10%, driven
+by Rates and Currencies, which were down 21%, on the back of lower volatility and a strong quarter in the
+prior year. This was partially offset by strength in Spread Products and Other Fixed Income, which was up
+26% driven by an increase in client activity, particularly in asset-backed lending. And we continued to see
+good underlying momentum in Equities, with revenues up 5%, driven by growth across cash trading and
+equity derivatives. And we continued to make progress in prime with balances up more than 10%. Expenses
+increased 7%, largely driven by the absence of a legal reserve release last year. Cost of credit was $200
+million, primarily driven by macroeconomic assumptions related to loans in Spread Products that impacted
+reserves. Net income was approximately $1.4 billion. Average loans increased 8%, primarily driven by asset-
+backed lending in Spread Products due to an improvement in market activity. Average trading assets
+increased 4% sequentially, largely driven by seasonally stronger activity in the first quarter. Markets
+delivered an RoTCE of 10.4% for the quarter.
+Copyright © 2024 Citigroup Inc. 5",842,5,7,0.3,financial_results
+Citigroup,First,Unknown Speaker,Unknown,"T R A N S C R I P T
+Citi First Quarter 2024 Earnings Call
+April 12, 2024
+On slide 14, we show the results for Banking for the first quarter. Banking revenues increased 49%, driven by
+growth in Investment banking and Corporate Lending and lower losses on loan hedges. As I previously
+mentioned, Corporate Lending results include the impact of revenue sharing from Investment Banking,
+Services and Markets. Investment Banking revenues increased 35%, driven by DCM and ECM as improved
+market sentiment led to an increase in issuance activity, particularly Investment Grade, which is running at
+near-record levels. Advisory revenues declined given the low level of announced merger activity last year.
+However, in the quarter we participated in the pickup in announced M&A across sectors, including those
+Corporate Lending revenues, excluding
+mark-to-market on loan hedges, increased 34%, largely driven by higher revenue share. We generated
+positive operating leverage this quarter as expenses decreased 4%, driven by actions taken to right size the
+expense base. Cost of credit was a benefit of $129 million, primarily driven by changes in portfolio
+composition. The NCL rate was 0.3% of average loans, and we ended the quarter with a reserve-to-funded
+loan ratio of 1.5%. Net income was approximately $536 million. Average loans decreased 6% as we
+maintained strict discipline around capital efficiency, as we optimize Corporate loan balances. RoTCE was
+9.9% for the quarter, reflecting a rebound in activity, reserve releases and continued expense discipline.
+On slide 15, we show the results for Wealth for the first quarter. Wealth revenues decreased 4%, driven by a
+13% decrease in NII from lower deposit spreads and higher mortgage funding costs, partially offset by higher
+investment fee revenues. omentum in non-interest revenue, which was up 11%, as we
+benefited from higher investment assets across regions, driven by increased client activity as well as market
+valuations. Expenses were up 3%, driven by technology investments focused on risk and controls, as well as
+platform enhancements, partially offset by the initial benefits of expense reductions as we continue to right
+size the workforce. Cost of credit was a benefit of $170 million, driven by a reserve release of approximately
+$200 million primarily related to a change in estimate as we enhanced our data related to margin lending
+collateral. Net income was $150 million. End-of-period client balances increased 6%, driven by higher client
+investment assets. Average loans were flat, as we continued to optimize capital usage. Average deposits
+decreased 1%, largely reflecting lower deposits in the Private Bank and Wealth at Work and the continued
+shift of deposits to higher-
+relationships and the associated deposits from USPB. Client investment assets were up 12%, driven by net
+new investment asset flows and the benefit of higher market valuations. RoTCE was 4.6% for the quarter.
+foundational priorities. As Jane mentioned, this will take time but over the medium to longer-term, we view
+this as a greater- than-20% return business.
+On slide 16, we show the results for US Personal Banking for the first quarter. US Personal Banking revenues
+increased 10%, driven by NII growth of 8% and lower partner payments. Branded Cards revenues increased
+7%, driven by interest-earning balance growth of 10% as payment rates continue to moderate. And we
+continue to see healthy growth in spend volumes up 4%, primarily driven by our more affluent customers.
+Retail Services revenues increased 18%, primarily driven by lower partner payments due to higher net credit
+losses, as well as interest-earning balance growth of 9%. Retail Banking revenues increased 1%, driven by
+higher deposit spreads, loan growth and improved mortgage margins. Expenses were roughly flat due to
+lower compensation costs, including repositioning, offset by higher volume-related expenses. Cost of credit
+of approximately $2.2 billion increased 34%, largely driven by higher NCLs of $1.9 billion as card loan
+vintages that were originated over the last few years were delayed in their maturation due to the
+unprecedented levels of government stimulus during the pandemic and are now maturing. In Branded
+Cards, the NCL rate came in at 3.65%, in line with our expectations. In Retail Services, the NCL rate of 6.32%
+was slightly above the high end of our guidance range for the full year and will likely remain above the range
+in the second quarter, reflecting historical seasonality patterns. However, given the persistent inflation,
+higher interest rates and continued sales pressure at our partners, we now expect to be closer to the high
+end of the full year NCL guidance range for Retail Services. This expectation, along with the continued mix
+shift from transactors to revolvers across both portfolios, led to an ACL build of approximately $340 million.
+Net income decreased to $347 million. Average deposits decreased 10%, as the transfer of relationships and
+the associated deposits to our Wealth business more than offset the underlying growth. RoTCE for the
+Copyright © 2024 Citigroup Inc. 6",811,6,8,0.3,financial_results
+Citigroup,First,"QUESTION AND ANSWER
+OPERATOR",MODERATOR,"Our first question will come from Mike Mayo with Wells Fargo. Your line is open. Please go
+ahead.",18,7,9,0.6,qa_session
+Citigroup,First,MIKE MAYO,OTHER,"Hi. Well, you just finished your seventh month of your org simplification and you said 7,000
+positions go away, with $1.5 billion of expense savings. So that's very concrete, but more generally, after 20,
+30, 40 years of matrix structure down to five lines of business, you're reporting these differently, you're
+talking about them differently, but the question that I think a lot of people have is, are you simply reporting
+these lines of business differently, or are you actually running them differently? Thanks.",84,7,10,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"Thank you, Mike, for the question. The simplification that we've just gone through, it is what
+we said it is. It is the most consequential set of changes, not only to the organization model that we have but
+how we run the bank. It's aligned the structure with the strategy. It's simplified the bank. It's eliminated
+needless complexity. It's created greater transparency into the five businesses and their performance as you
+can see. It's increased accountability. And very simply, it's just easier for our people to focus on our clients,
+but also getting things done and the execution that we have ahead of us.
+So maybe if I try and bring this a bit more alive, the first thing we did was we elevated the five businesses and
+that eliminated the ICG and PBWM layer, and we brought all the elements that the businesses needed to run
+end-to-end under the direct management of those five business heads, an example being operations. It's
+enabled transparency, greater accountability, and this end-to-end and total P&L focus, so focus on the
+bottom line and the returns driving growth, expense discipline, etcetera.
+We also right-placed businesses to align with the strategy, so Banking all being under one umbrella, the
+Investment Bank, the Corporate Bank, Commercial Bank, really helping us drive synergies there. Putting F&S
+and Securitization into Markets, so that we have a unified spread product there, also beginning to see the
+benefits of that this quarter.
+So that's an example in the businesses, but I do want to highlight a couple of other areas around this change.
+Copyright © 2024 Citigroup Inc. 7",269,7,11,0.6,opening_remarks
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Glenn Schorr at Evercore. Your line is open. Please go ahead.,16,8,12,0.6,qa_session
+Citigroup,First,GLENN SCHORR,OTHER,"Thanks very much. So I think it shows how much you've helped us see the simpler
+organization. I think people have totally bought into the expense story, so a lot of credit to you guys. I think
+where I, personally, and others still have questions on is on the revenue side and getting to those 4% to 5%
+medium-term targets.
+So, could you take us just conceptually where we're going to where you think you'll drive that growth from,
+from this baseline where we're at now? And if you want, you can totally use my second question in there and
+tell us what good things you're doing inside the Investment Banking line.",112,8,13,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"You snuck that one in, Glenn. So I'll kick off with some of this, pass it to Mark and then I'll
+come back to Banking. So look, we are laser-focused on the growth and improving the returns of these
+businesses to where they should and will be in the medium term, and it's not just the growth story, but let
+me anchor it in those medium-term return targets.
+In Services, we want to continue around the mid-20s in RoTCE. Banking should be getting to around 15%.
+Markets 10% to 13%, so we'd like to see it at the higher end of that range. USPB getting that back to the mid-
+teens and then moving on to the high-teens in the medium term. And then lastly, as Andy and Mark have
+talked about, getting Wealth to a 15% to 20% return in the medium term, but the goal is to the mid-20s in
+Copyright © 2024 Citigroup Inc. 8",158,8,14,0.6,general_discussion
+Citigroup,First,MARK MASON,OTHER,"Sure. And good morning, Glenn, and we appreciate the acknowledgment around the
+expenses. As you know, we've been quite focused on that and working hard to ensure that we deliver on what
+we say we're going to do there.
+I'd point on the revenue line, I'd first point to, if you look back, since Investor Day, we've in fact been able to
+deliver on the guidance that we've given for the medium term, so that 4% to 5% top line growth. And, yes, it
+was a different rate environment, but that growth that we delivered over the past couple of years has been a
+mix of both revenue and underlying business strength.
+As you think about the guidance we talked about for this year, we talked about the NII ex-Markets being
+down modestly. And so what that means is that the momentum and the growth that we expect is going to
+come from the non-interest revenue. And I think this quarter is a good example of where and how that's likely
+to play through, so the revenue top line being up 3-plus percent, but when you look through each of the
+businesses, and if you look on each of the pages where we disclose the revenue, you can see the underlying
+NIR growth in the bottom left hand corner of each of those pages, that's coming through as well. So Services
+up 14% with growth in both TTS, between cross-border, clearing, commercial cards, but also and Securities
+Services, right, with the growth that we're seeing from continued momentum in assets under custody. We
+expect that trend to continue with existing clients and new clients as well as how we do more with our
+commercial market commercial middle market business, excuse me. So NIR growth there.
+The Investment Banking piece is the other driver of fees. We're seeing that wallet start to rebound. We're part
+of that rebound. The announced transactions, we're part of those in sectors that we've been investing in.
+We're bringing in new talent to help us realize and experience that.
+And even in Wealth, where we're not pleased with the top line performance this quarter of down 4%. When
+you look through that, we do have good underlying NIR1 growth in the quarter in Wealth and that's up 11%
+year-over-year and it's in the area that Andy and the team is leaning in on which is investments and not just
+in one region, but across all the regions.
+And then finally, the USPB piece which is showing good NIR1 growth as well, so the long and short of it is that
+the 4% growth that's implied in $80 billion to $81 billion is going to be continued momentum, largely in fees,
+helping us to deliver for our clients and make continued progress towards that medium-term target.",469,9,15,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"So let me pick up, I'm sure Jenn Landis will give us the evil eye for sneaking in a second
+question there, Glenn, but let me pick up on Banking and what's going on there. So we have a very clear
+strategy that we've been executing over the last couple of years, really to lay the foundation for growth in
+Banking.
+North America is our key priority. It's the biggest contributor to the global IB wallet. Tech, healthcare and
+industrials are likely to constitute over 50% of the fee wallet going forward. So we have better aligned our
+resources to position the franchise for this. Defending areas of traditional strength in industrials and the like,
+energy, whilst investing in high-growth sectors such as healthcare and technology with some strong talent.
+Copyright © 2024 Citigroup Inc. 9",136,9,16,0.6,qa_session
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Betsy Graseck at Morgan Stanley. Your line is open. Please go ahead.,17,10,17,0.6,qa_session
+Citigroup,First,BETSY GRASECK,OTHER,"Hi. Good morning or yes, we're almost pinging into the afternoon here.",12,10,18,0.6,opening_remarks
+Citigroup,First,BETSY GRASECK,OTHER,"I guess a couple of questions. Well, so I know we talked through the Institutional
+Securities business already on moving that expense ratio a little bit. Could we dig in a little bit on the Wealth
+side, because the expense ratio there is running a little higher, and so, it'd be useful just to understand the
+pace or speed or timeframe when we should expect to see that start to inflect.",71,10,19,0.6,guidance
+Citigroup,First,JANE FRASER,OTHER,"Yes, absolutely. And some of it, just as a reminder, the actions that we've been taking on org
+simplification and that Andy has also been taking in the Wealth business. We will work through notice
+periods in the coming weeks. And so, you'll start you'll see the impact coming through in our head count
+numbers, and in Wealth, in the expense base next quarter. Look, as Mark said in his opening and Andy has
+been talking about, this should be a sort of up to a 30% pre-tax margin business.
+Andy is focused on rationalizing the expense base. He's also, as Mark said, turning on the growth engine. He's
+enhancing our platforms and capabilities to elevate the client experience. The heart of the opportunity for us
+lies with our existing clients. They are an extraordinary client base, but they're underpenetrated. So, a lot of
+the operating efficiency is frankly going to be is going to come on the revenue side here. That said, Andy's
+taken a number of pretty decisive moves this quarter on the expense side.
+Mark, let me toss it over to you.",185,10,20,0.6,financial_results
+Citigroup,First,MARK MASON,OTHER,"Yes. I mean, look, I think that the quarter expenses that you see of growth of 3% is not yet
+reflective of the work that Andy has been steadfast at. There is still some investment in there in technology
+Copyright © 2024 Citigroup Inc. 10",45,10,21,0.6,general_discussion
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Jim Mitchell at Seaport Global. Your line is open. Please go ahead.,17,11,22,0.6,qa_session
+Citigroup,First,JIM MITCHELL,OTHER,"Okay. Good morning. Jane and Mark, I very much appreciate the comments on your growth
+opportunities and driving growth. But revenues are often dictated by the macro that is a little bit out of your
+control. So, can you talk a little bit about the flexibility on the expenses? You have a range in 2026 of $51
+billion to $53 billion. So, if revenues are coming in below the targets, is it, I guess, A, fair to assume you'd be
+at the very low-end of that range or is and I think there is some revenue growth built in there. So, is there
+some flexibility to the downside to try to get to your targets in a tougher revenue environment? Thanks.",121,11,23,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Yeah. Look, the top line growth, as you've heard us say, is a CAGR of 4% to 5%. We've put
+that target out there of $51 billion to $53 billion as a range of what we're working towards. We've given you a
+good sense of how we expect to get there with the $2 billion to $2.5 billion reduction by then. We've already
+signaled $1.5 billion that's in front of us.
+The reality is that if there's softness in revenues, that's why we have a range, obviously, the volume-related
+expenses would come down with any softness in revenue. And depending on the drivers of why that revenue
+is softening, we'd look at the investments that we're making across the business and make sure that those
+are appropriately calibrated for where we are in the cycle and what we're seeing on the top line.
+With that said, we've got to continue to invest in the Transformation. We're not going to compromise that.
+That's going to be something that we have to spend on to ensure we continue to get right. But that's kind of
+how the dynamic works. There's a top we've got a mix of businesses that I think we've demonstrated
+resiliency around if you think about the past couple of years, and we expect for those to continue to drive
+some top line momentum. But we've got levers in case they don't.",233,11,24,0.6,financial_results
+Citigroup,First,OPERATOR,MODERATOR,"Our next question is from Ebrahim Poonawala at Bank of America. Your line is open. Please go
+ahead.",18,11,25,0.6,qa_session
+Citigroup,First,EBRAHIM POONAWALA,OTHER,"Thank you. I guess just one question, Mark, around capital. So, you talked about
+$13 billion over the reg minimum. Like you could easily be doing 2x the buyback you did in one quarter, if not
+more. I know you don't like to talk about out-quarters, but give us a sense of the case this quarter. Should
+we expect the pace of buybacks to increase? And if you could provide additional color as we think about the
+rest of the year would be greatly appreciated. Thank you.",87,11,26,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Sure. Look, you know and I've said it repeatedly, Jane has said it repeatedly, given where we
+trade, we think buying back is smart and we'd like to do as much as we possibly can and as much as makes
+Copyright © 2024 Citigroup Inc. 11",46,11,27,0.6,general_discussion
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Erika Najarian at UBS. Please unmute your line and ask your question.,17,12,28,0.6,qa_session
+Citigroup,First,ERIKA NAJARIAN,OTHER,"Hi. Good afternoon. So, clearly, the theme of this that's emerging on the Q&A is a healthy
+skepticism about the revenue targets in line with the in light of the expense declines, which is not really us
+analysts, we're sort of a little bit parroting what we're hearing from long-only investors that haven't yet
+jumped into the stock. So, to that end, I guess I'm going to ask Ebrahim's question differently, and then ask
+a question about card late fees.
+How are you balancing clearly, your valuation would demand that the buybacks be ramped up from $500
+million. But growing revenues at a 4% to 5% CAGR would mean potentially some capital plowed back into
+the business. I guess how are you balancing that, especially given that the demand for buyback is louder at
+Citi than any other money center peer? And could you give us a sense of what card late fees are and how that
+would impact the $80 billion to $81 billion for the year if we do get an earlier implementation than October?",177,12,29,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Yeah. Thank you, Erika. On the first part of the question, I'd just remind you and everyone
+else that we're playing for the long-term here, right. So, we have set some medium-term targets. Obviously,
+Jane has recasted the vision and the strategy. I think we're making very good progress against that, but we're
+playing for the long-term. And what that means is that we have to continue to invest in the franchise.
+It's why I've given you a range around the expenses, at least in part. It's why I've continued to stress the
+importance of protecting the Transformation and risk and control spend. And it's why I started the answer
+to Ebrahim's question by saying that we want to be sure that we can match the client demand out there,
+where the returns to do so makes sense. And so, we are having to balance kind of the use of capital and other
+resources against that longer term strategic objective and utilize it where it makes sense and generates good
+returns against the idea of returning that to shareholders.
+And so, we'll continue to do that. It's an everyday assessment. It's an everyday discussion with the teams.
+Frankly, it's why things like the revenue sharing has been put in place to intensify the discussion around the
+clients that we're using balance sheet with and ensuring that we're driving broader revenues across the
+platform. And so, that's kind of how we're operating in terms of making that trade-off on a regular basis, in
+addition to obviously the broader regulatory environment that we're in.
+In terms of the second part of your question around late fees, we haven't disclosed kind of the dollar amount
+of the late fees. What I would say is that we did and have factored that into the $80 billion to $81 billion. And
+the only thing I'd add to that is it did kind of it's being implemented a bit earlier than what we had assumed.
+But again, it's inside of the range of the guidance that I've given you for top line revenue for the year.",350,12,30,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"s a reminder, 85% of our two card portfolios are prime, and in CRS, where you
+tend to see some of the lower income households, we do have that the economics of the fee change will be
+shared with our partners in CRS. So, we want our customers to pay on time. We have a number of
+Copyright © 2024 Citigroup Inc. 12",63,12,31,0.6,financial_results
+Citigroup,First,OPERATOR,MODERATOR,"Our next question is from John McDonald at Autonomous Research. Your line is open. Please go
+ahead.",17,13,32,0.6,qa_session
+Citigroup,First,JOHN MCDONALD,OTHER,"Thanks. Mark, I was hoping you'd give a little more color on how you're feeling about the
+credit card charge-offs. You maintained the outlook for the year. You mentioned the higher end on Retail
+Services. Do you still feel like you'll see a peak this year? And what kind of metrics are you looking at in terms
+of delinquency formation and seasoning to inform that view that you might see the peak in card charge-offs
+this year?",77,13,33,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Yeah. Thanks, John. We have obviously continued to manage this portfolio very actively.
+We've seen continued top line growth. We've seen continued average interest-earning balance growth. We've
+talked about how we expect for the cost of credit to normalize, and we've seen that continue to happen. The
+range that we've given on Branded Cards, we're inside of that range. When you look at the spend across the
+portfolios, the spend is really happening with the affluent customers more so than anything else. And so,
+we're watching the lower income customer profile or customers that we have. But again, as Jane
+mentioned, we tend to skew to the higher end to begin with.
+Where we're really seeing the pressure is where I mentioned in terms of Retail Services. And so, there, the
+current NCLs are higher than the high-end of the full year range that I've given. But if you look back, that is
+not inconsistent with seasonality that we've seen in the past in that portfolio, where the first two quarters
+are higher than the back half of the year, in part because of coming out of the holiday season and how losses
+tend to mature or materialize through that process.
+And so, I'd expect to not only see them be higher than the average range in Q1, but also in Q2 before coming
+down. And then, I still expect that in 2025, you tend to see them further normalize and come down a bit off
+of these ranges. But look, the reality is that we continue to watch it, and the factors that are out there that
+are important include how unemployment evolves, what happens with inflation, what happens with interest
+rates, and those will be important factors as to how the loss rates continue to evolve over time.
+I think the final point I'd make and I mentioned it in the prepared remarks is that we have to remember that
+the loss rates in both portfolios reflect kind of multiple vintages maturing at the same time. And you'll recall,
+and this is an industry dynamic, through the COVID pandemic period, losses were at an all-time low,
+payment rates at all-time highs, supported by government stimulus.
+And now coming out of that, we're seeing the COVID vintages mature, albeit at a lagged pace from what
+would be normal, and we're seeing the incremental acquisitions that we've done start to mature at their
+normal pace. And so, these loss rates are exacerbated by that impact and that's an important factor we can't
+lose sight of. But the bottom line is that we're watching it. The macro factors matter. We feel good about the
+quality mix that we have, and we'll kind of see how things evolve from here.",458,13,34,0.6,opening_remarks
+Citigroup,First,JOHN MCDONALD,OTHER,"Okay and on the Branded side, you still expect kind of the peak-ish? Are you still inside
+of the range for the full year and expect 2025, you could move lower on the Branded charge-offs?",35,13,35,0.6,guidance
+Citigroup,First,MARK MASON,OTHER,"Yes, I still kind of expect that trend line of peaking and then kind of moving a bit lower in
+Branded.",21,13,36,0.6,guidance
+Citigroup,First,OPERATOR,MODERATOR,"Our next question is from Ken Usdin at Jefferies. Your line is open. Please go ahead.
+Copyright © 2024 Citigroup Inc. 13",22,13,37,0.6,qa_session
+Citigroup,First,KEN USDIN,OTHER,"Great. Thanks. Can I follow up on the card line of thinking and just ask you, Mark, to talk a little
+bit about just cost of credit? We did still see some card related build this quarter even with the comments
+you just made and seasonal softer loan growth So, just from a bigger picture perspective, how do you think,
+continue to think about reserve builds from here and how that informs your outlook for cost of credit?",78,14,38,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Yeah, sure. Look, I think that when I think about the reserve builds, I think it's the same
+factors that come into play. So, obviously, the view on the macro is important. And right now, if you think
+about some of the key macro factors that impact the cards portfolio, the unemployment assumptions
+weighted is about 5%, the downside is about 7% kind of weighted over the period. And so, how that evolves
+will be an important factor. How HPI evolves would be an important consideration here for this portfolio, but
+also what happens with volumes becomes a factor on reserve builds and how important or how much they
+increase or decrease.
+And then the final piece is mix, and it's kind of related to that revolver point. As we see the mix evolve from
+transactors to revolvers, that's going to play into how much of a reserve from a lifetime point of view we have
+to continue to build. And so, it's why I mentioned on John's question the importance of looking at the interest
+rates, looking at what's happening with inflation, watching the lower income customer base, because all of
+those things combined with how we think about the scenarios and the weighting will be a factor on the
+reserves.
+But I will say, Ken, as I sit here and think about what we have in the quarter, I feel very good about the reserve
+levels. The 8.2% for combined kind of",244,14,39,0.6,financial_results
+Citigroup,First,ACL,OTHER,"Okay. And a separate question on TTS. That NII related to TTS has been remarkable with rising
+rates. This quarter, granted there was a lesser day and there could be currency stuff in there, the first quarter
+that it stepped back, I'm just wondering like where is that in its asset liability sensitivity, the TTS NII, and
+what are your thoughts about that piece of the NII puzzle going forward? Thanks.",71,14,40,0.8,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Sure, yeah. I mean, I think I'd say a couple things. We do have kind of some Argentina playing
+through the NII line. I will say that the best way to think about it is kind of the underlying beta activity. And
+we have seen, this is the corporate client, it is an institutional client. We have seen betas, particularly in the
+US, at kind of normalized or terminal levels and playing a bit through that. We are seeing betas outside of the
+US continue to increase as it relates to the TTS client base.
+But all of that again is inside of the range that we've talked about. I don't expect to see kind of year-over-year
+growth on the NII line anywhere close to kind of what we've seen in prior years, prior quarters, just in light of
+kind of how the rate environments evolved, and in light of kind of quantitative tightening and the impact on
+deposit levels. The last point I'd make on this is, we will continue to drive and see growth as it relates to the
+operating deposits, and that will be an important tailwind that kind of plays through.",195,14,41,0.6,guidance
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Vivek Juneja at JPMorgan. Your line is open. Please go ahead.,16,14,42,0.6,qa_session
+Citigroup,First,VIVEK JUNEJA,OTHER,"Hi. Thank you. Jane, Mark, just a question maybe on Argentina, you've shown $100 million in
+NII. Total net income benefit of $500 million after-tax, so probably implying about $500 million, $600
+million of non-interest income benefit. Which line item sorry, which segment did that come through, and
+is that sustainable?",51,14,43,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Yeah, look, there's a mix obviously of things that are driving that net income, including a tax
+impact on the heels of last year Argentina devaluation activity that's in that line. But the short answer is that
+if you think about the nature of the business that we do in Argentina, it is a big part of our institutional client
+Copyright © 2024 Citigroup Inc. 14",66,14,44,0.6,financial_results
+Citigroup,First,TTS,MODERATOR,Our next question is from Scott Siefers at Piper Sandler. Your line is open. Please go ahead.,17,15,45,0.8,qa_session
+Citigroup,First,SCOTT SIEFERS,OTHER,"Hey, everyone. Thanks for taking the question. Mark, I think you touched on at least a
+component of this a couple questions ago, but maybe just broadly an update on your rate positioning. I guess
+I only ask, because it looks like we might be starting to diverge in terms of global rate trajectories, if we
+potentially go lower in Europe, but higher here for a while. In the aggregate, do these kind of complicate your
+management or make you feel better or worse about the overall NII momentum for the company?",92,15,46,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Yeah, let me try and take it in, in two pieces, I guess. So one is, if I think about how the rate
+implieds have evolved from the 3 to 6 to now something a little bit north of 1 in the context of what I expect
+for our performance, it doesn't have a material impact on the guidance that I've given of $80 billion to $81
+billion.
+And in part, that's because as I think about the timing for the planned cuts, which was generally back-loaded,
+as well as some of the other factors that play through. So, you know, Argentina just announced a policy rate
+reduction yesterday or a couple of days ago. If rates are a bit higher for longer, we'll watch how the betas
+continue to evolve. I mentioned earlier, the late fees for the cards business happened a bit sooner. Late fees
+are actually booked in our NII line. And so, those factors put me in a place where I feel like there will certainly
+be puts and takes around how that rate curve evolves, and therefore I'm very comfortable kind of leaving the
+guidance where it is.
+To answer your broader question, in terms of kind of how we are positioned, I'd point you to the 10-K that we
+have that's out. And in that 10-K, we offer as we have before a number of IRE scenarios for plus or minus 100
+basis points and what it means for our business. And if you look at it, you'll see that for the aggregate firm,
+for Citi, US dollar and non-US dollar, that we're asset-sensitive. So, as rates increase, we should see an
+increase in our NII performance.
+But if you look at the breakdown and that's about I think it was about $1.4 billion or something in terms of
+the impact of that move. But if you look at the breakdown, what the breakdown will show is that for US dollar,
+at this point we're neutral. So, if rates were to go up, rates were to go down, no material impact as it relates
+to our revenue.
+For the non-US dollar, we're still quite asset-sensitive, right? And so, that should give you some sense for
+and we recognize the limitations with IRE, it assumes 100 basis point parallel shift across the curve to a static
+balance sheet, etcetera, but that should give you some sense for the implications of the rate curve moves as
+it relates to our book of business.",417,15,47,0.6,financial_results
+Citigroup,First,OPERATOR,MODERATOR,"Our next question is from Gerard Cassidy at RBC Capital Markets. Your line is open. Please go
+ahead.",18,15,48,0.6,qa_session
+Citigroup,First,GERARD CASSIDY,OTHER,"Hi, Mark. Hi, Jane. Mark, can you share with us, there's been obviously a lot of
+conversation around the credit card charge-offs and the credit quality there. If we could shift over to the
+corporate side, which obviously is very strong, we have seen spreads narrow in the markets on high-yield
+corporate debt, leverage debt, etcetera. It's very robust out there, but around the global geopolitical risk, do
+you think the spreads would be widening? Can you guys share with us what you're seeing on the corporate
+side in terms of competition? Are underwriting standards getting a little bit weaker now as people are trying
+to grow their books, what are you seeing on that front?
+Copyright © 2024 Citigroup Inc. 15",122,15,49,0.6,risk_discussion
+Citigroup,First,MARK MASON,OTHER,"So, look, we're still seeing good demand for corporate credit. And what I'd say is that we've
+been very disciplined about where we want to play on the risk profile here. We've been very disciplined in
+terms of the investment-grade large multinationals that we serve. And that hasn't shifted from an
+underwriting point of view. We have seen spaces like private credit pick up quite a bit, and that I think will
+continue to evolve.
+I think importantly, as we think about our Corporate Lending activity, you'll note that actually we've been
+very disciplined about how we want to deploy balance sheet. And part of that again is a by-product of the
+revenue sharing that we've implemented, where there's been healthy debate and discussion around the
+names that we want to continue to serve, and whether they're positioned to take advantage of the broader
+platform that we have.
+And so, I think the space will continue to evolve. I think there's been good, healthy demand, despite
+continued strong balance sheets and part of that demand has been because of where rates are likely to go
+and continue to evolve. And I think we're well-positioned to be thoughtful about that, but Jane, you may
+want to add a couple points to it.",211,16,50,0.6,financial_results
+Citigroup,First,JANE FRASER,OTHER,"Yeah, look, around the world, the corporate client base and our Commercial Banking mid-
+market client base have very healthy balance sheets and we're also seeing market access gradually opening
+up as well, which is also helpful for to the quality issuers across all asset classes. We're seeing both the
+issuers taking advantage as well as the investors. The deals are well over-subscribed. So, that's also been
+beneficial as corporates think about their financing needs.
+The other piece I just pop out there as well is the recent large M&A announcements in multiple industries
+is a sign of rising confidence from CEOs and boards and active discussions are increasing, as supportive
+capital markets create confidence, as people think about larger strategic transactions. This is going to feed
+acquisition finance, bridge financing and some of the higher-margin capital markets and lending activity as
+well.
+So, as we look forward, I think it's recognizing the shift in some of the drivers from company just investing,
+refinancing, looking at where they can diversify their capital raising in different quarters. But I'd just close by
+saying I couldn't agree with you more about geopolitical risks and fragility. I think the market's too benign in
+its risk pricing on some of these factors.",208,16,51,0.6,risk_discussion
+Citigroup,First,OPERATOR,MODERATOR,"Our next question is from Matt O'Connor at Deutsche Bank. Your line is open. Please go ahead.
+: Hi. In your prepared remarks, you talked about intensifying certain efforts regarding
+regulatory processes and data on slide 4 here and was just wondering if you could elaborate on I guess what
+you're doing or trying to do differently on that front and if there's any meaningful financial impact. Thank you.",69,16,52,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"Yeah, look. I think, Matt, as we've talked about many times, the Transformation is our top
+priority, it will be for the next few years. It is foundational for our future success, both in terms of delivering
+the strategy and the medium-term financial path and we've been making significant investments behind it,
+as well as not only on the consent order, but also making sure we've got this modern efficient infrastructure.
+And we're currently deep into a very large body of work, upgrading our data architecture, automating manual
+controls and processes, consolidating fragmented tech platforms, and all of these help enhance our
+business performance more broadly, not just the risk and control in the medium term.
+And as I've said though, there are a few areas where we are intensifying our efforts, such as the automation
+of certain regulatory processes and data remediation, particularly related to regulatory reporting. We're
+Copyright © 2024 Citigroup Inc. 16",155,16,53,0.6,risk_discussion
+Citigroup,First,MARK MASON,OTHER,"Yeah, I mean I think that's exactly right, but you'd also expect that in this type of
+environment, and on the heels of the regional bank stress last year that we're looking at stress scenarios,
+we're enhancing our CCAR processes, we're enhancing our resolution to recovery processes. All of those
+things just to kind of make sure that we're shoring up capabilities and you'd expect that across the industry
+quite frankly.",71,17,54,0.6,guidance
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Saul Martinez at HSBC. Your line is open. Please go ahead.,16,17,55,0.6,qa_session
+Citigroup,First,SAUL MARTINEZ,OTHER,"Hi. Good afternoon. I'll change tacks a little bit here, but I'm curious if there's any update
+on the Mexican IPO and more specifically, I'm kind of curious how set in stone the IPO process is. You will
+have a new administration and even if it's a candidate from the same party, she may have a less
+confrontational view of the private sector, perhaps be more allowing of a local bank to extract value from
+buying a bank. I guess if the facts on the ground were to change, would you be open to a sale potentially being
+back on the table, because it does seem like this is a situation where a private market valuation could be
+higher and even materially higher than the public market valuation.",128,17,56,0.6,opening_remarks
+Citigroup,First,JANE FRASER,OTHER,"The guiding principle that we have and we've had all along is making sure that we make a
+decision here that is in the best interest of our shareholders and makes the most sense for them. We are we
+never say never, but we are very focused on the IPO path here. We believe it is the right one for our
+shareholders. We're well on track in the path in Mexico. We're very pleased to bring Ignacio Deschamps in as
+the Banamex Chairman to help guide the IPO process. We announced the management teams for the two
+banks earlier this quarter. We're far down the path of the technological separation of both banks, and then
+the full legal separation in the second half of the year.
+Obviously, the election Is coming up fairly shortly, but we're not anticipating that we would be deviating from
+the IPO path. That is the path that we are on at the moment. I'll never say never but we do believe that this is
+the right one, but we'll keep an eye on what's happening in Mexico as we always do.",186,17,57,0.6,general_discussion
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Chris Kotowski at Oppenheimer. Please go ahead.,12,17,58,0.6,qa_session
+Citigroup,First,CHRIS KOTOWSKI,OTHER,"Good afternoon, thanks. Just a quick one for Mark. Previously, you had talked about
+""bending the cost curve"" between the third and the fourth quarter of this year, and on this call I thought I
+heard you say it's basically bent, that second quarter should be down and we should be sequentially lower
+from here, so did it just happen six months earlier or is there still some other bending that comes late this
+year?",75,17,59,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,I'll take it. I'll take that.,6,17,60,0.6,general_discussion
+Citigroup,First,MARK MASON,OTHER,"No. I mean I'll take the win. A downward trajectory from here through the end of the year, in-
+line with the guidance of $53.5 billion to $53.8 billion and so yes.",32,17,61,0.6,guidance
+Citigroup,First,OPERATOR,MODERATOR,"Our next question is from Steven Chubak at Wolfe Research. Your line is open. Please go ahead.
+Copyright © 2024 Citigroup Inc. 17",23,17,62,0.6,qa_session
+Citigroup,First,STEVEN CHUBAK,OTHER,"Hey, Jane. Hey, Mark. Did want to ask on DFAST and SCB just recognizing this will be the
+last opportunity before the results come out. The macro scenario, Fed assumptions look quite similar to last
+year but just given the significant transformation that's underway, repositioning actions, which admittedly
+depressed earnings last year, want to get a sense as to whether there are any idio-factors that could result
+in greater SCB volatility in the coming exam and just broader thoughts on longer-term trajectory for the SCB,
+just given the org simplification efforts that are underway.",94,18,63,0.6,financial_results
+Citigroup,First,MARK MASON,OTHER,"Yeah, Steven the first part of your question is just impossible to answer to be candid with
+you, right. I mean it's we obviously have an internal based scenario we've run. We have a severely adverse
+scenario that we've run. We've provided a balance sheet as part of the submission, but ultimately, the
+regulators have to run through their models, the information that we've provided and that informs what
+happens with the stress capital buffer, and we don't have as much transparency to that as we'd like and so
+really hard to call at this stage.
+The second part of your question I think is spot-on and I kind of alluded to in my prepared remarks in that
+we have the medium-term targets that we've set and we're still in the midst of kind of the execution of our
+strategy, the evolution of the business mix and the business model. The mix towards more consistent,
+predictable and repeatable revenue streams that would impact PPNR, the simplification which obviously
+plays through an expense base that'll be lower when we get to that medium-term period.
+So all of those things, the divestitures and kind of what that means and how that might impact the G-SIB
+score and the like and the freeing up of capital which we've already freed up $6 billion or so, and so all of
+those things have kind of yet to have been factored in and we believe will be beneficial to the SCB over the
+medium-term.",249,18,64,0.6,financial_results
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Mike Mayo at Wells Fargo. Your line is open. Please go ahead.,17,18,65,0.6,qa_session
+Citigroup,First,MIKE MAYO,OTHER,"Hi. A follow-up, Mark, you said TTS, you said we will have growth in operational deposits, and
+I was just wondering what gives you such confidence that you will, or is that accelerating or the same pace
+or what?",39,18,66,0.6,general_discussion
+Citigroup,First,MARK MASON,OTHER,"We have seen growth in the quarter, in operating deposits. The confidence comes from the
+focus that we've had with our existing clients as well as the growth we've seen with new clients, doing more
+with existing in more countries, more deeply penetrating the commercial middle-market space, and so we've
+been very thoughtfully focused on deposits that obviously give us the most value and also, provide the most
+stickiness as it relates to that relationship and so yes, the confidence is rooted in what we're seeing in the
+way of underlying operating deposit growth including inside this quarter.",98,18,67,0.6,general_discussion
+Citigroup,First,JANE FRASER,OTHER,"It's also a lot of the investments that we've been making, fuel a lot of the growth we've got.
+We have a market- leading product innovations and those continue to drive good returns, good growth. If it's
+Citi Token Services, Citi Payment Express, 24/7 Clearing, all of these different elements really mean that this
+business is utterly invaluable and indispensable to our clients and the stickiness of the deposits, the
+operating deposits comes with that, so we feel good about that growth. And you'll hear more about this as
+well, Mike, in the Investor Day in mid-June which will be I think we hope will be very helpful to everyone so
+you really get your arms around how this business operates, makes money, and see why we call it a crown
+jewel.",132,18,68,0.6,general_discussion
+Citigroup,First,OPERATOR,MODERATOR,Our next question is from Vivek Juneja at JPMorgan. Your line is open. Please go ahead.,16,18,69,0.6,qa_session
+Citigroup,First,VIVEK JUNEJA,OTHER,"Hi. Mark, completely different topic, because I think I understood your answer to be just
+from my previous question to be the tax benefits so we'll leave it at that. If it's different then I need to go down
+Copyright © 2024 Citigroup Inc. 18",45,18,70,0.6,qa_session
+Citigroup,First,MARK MASON,OTHER,"Yeah, I don't we haven't broken down the transactor versus revolver mix, and so I'm not
+going to get into that. I will say that the revolver levels are at least back to where they were pre-pandemic
+and leave it at that, but we are seeing kind of continued revolver activity which you'd expect kind of given the
+way the cycle has evolved and given payment rates have started to moderate and the stimulus has kind of
+unwound, and so all of that is kind of consistent with expectations but obviously, is a factor in reserve levels
+as I mentioned earlier.",101,19,71,0.6,guidance
+Citigroup,First,OPERATOR,MODERATOR,Our final question is from Betsy Graseck at Morgan Stanley. Your line is open. Please go ahead.,17,19,72,0.6,qa_session
+Citigroup,First,BETSY GRASECK,OTHER,"Oh, hi, thanks so much. I just wanted to make sure of one thing on the expenses. I know
+in the past you've talked about the fact that 1Q will be a little elevated with the restructuring. And you showed
+that was the $225 million in the quarter, and then when we look to 2Q, we should should we still be
+expecting a step-down in 2Q? And is that step-down just the elimination of the $225 million or is there some
+restructuring that we're likely to see in 2Q as well? In other words, should I just fade sequentially 2Q, 3Q, 4Q
+to hit your annual number or is there a bigger step-down in 2Q that I should still be expecting here? Thanks.",123,19,73,0.6,opening_remarks
+Citigroup,First,MARK MASON,OTHER,"Sure. I think you should just fade it, to answer your question very directly, but I'd also point
+out that in Q1, if you really look through to it, it has the $250 million of FDIC charge in it, and so when you
+back that out, we effectively are coming in lower than what we had guided right. Despite that I'm telling you
+the same I'm making the same point, which is you can expect a downward trend from here through to the
+end of the year and while there won't be additional restructuring charge, there will be the normal BAU activity
+around repositioning that plays through, so hopefully that answers your question, Betsy. The guidance still
+holds, and the downward trend is what we are managing towards, as we kind of play out the balance of the
+year.",139,19,74,0.6,guidance
+Citigroup,First,OPERATOR,MODERATOR,There are no further questions. I will turn the call over to Jenn Landis for closing remarks.,17,19,75,0.6,qa_session
+Citigroup,First,JENNIFER LANDIS,OTHER,"Thank you, all, for joining us. If you have any follow-up questions, please call us and we
+look forward to talking to you. Thank you very much.",27,19,76,0.6,opening_remarks
+Citigroup,First,OPERATOR,MODERATOR,"This concludes Citi's First Quarter 2024 Earnings Call. You may now disconnect.
+Copyright © 2024 Citigroup Inc. 19",18,19,77,0.6,financial_results
+Citigroup,First,Unknown Speaker,Unknown,"T R A N S C R I P T
+Citi First Quarter 2024 Earnings Call
+April 12, 2024
+Footnote
+1 -interest revenue)
+Certain statements in this transcript -
+expectations and are subject to uncertainty and changes in circumstances. These statements are not
+guarantees of future results or occurrences. Actual results and capital and other financial condition may
+differ materially from those included in these statements due to a variety of factors. These factors include,
+tion,
+strategic and other initiatives, which include management and operating model changes and other actions,
+-market operations in Mexico, which
+involves significant execution uncertainty and complexity and may result in higher than expected expenses,
+certain losses or other negative financial or strategic impacts; a potential U.S. federal government
+shutdown and the resulting impacts; continued elevated interest rates and the impacts on macroeconomic
+interest rates and the resulting impacts on net interest income; potential recessions in the U.S., Europe and
+other regions or countries; revisions to the U.S. Basel III rules, including the recently issued notice of
+proposed rulemaking, known as the Basel III Endgame, related to the U.S. regulatory capital framework, and
+other proposed changes in regulatory capital rules; continued elevated levels of inflation and its impacts;
+potential increased regulatory requirements and costs; the various uncertainties and impacts related to or
+tential
+additional currency devaluations in Argentina; and the precautionary statements included in this
+transcript
+Exchange Commission, including without l 3 Form 10-
+K. Any forward-looking statements made by or on behalf of Citigroup speak only as to the date they are
+made, and Citi does not undertake to update forward-looking statements to reflect the impact of
+circumstances or events that arise after the date the forward-looking statements were made.
+This transcript does not constitute an offer to sell, nor a solicitation of an offer to buy, any securities, which
+will be made only by a prospectus.
+Copyright © 2024 Citigroup Inc. 20",318,20,78,0.3,financial_results

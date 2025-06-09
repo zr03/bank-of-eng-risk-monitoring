@@ -1,0 +1,3017 @@
+page_number,content_type,raw_text,word_count,char_count,extraction_method,cleaned_text,sentence_count,has_financial_terms
+1,main_text,"Earnings Results Presentation
+First Quarter 2023
+April 14, 2023",9,63,pdfplumber_comprehensive,"Earnings Results Presentation First Quarter 2023 April 14, 2023",1,True
+2,main_text,"First Quarter Results Snapshot
+Revenues Net Income EPS
+1Q23 $21.4 billion 1Q23 $4.6 billion 1Q23 $2.19 / $1.86 ex-div.(1)
+vs. 1Q22 12% / 6% ex-div.(1) vs. 1Q22 7% / (19)% ex-div.(1) vs. 1Q22 8%
+RoTCE(2) CET1 Capital Ratio(3) Tangible Book Value Per Share(4)
+1Q23 10.9% / 9.3% ex-div.(1) 1Q23 13.4% 1Q23 $84.21
+1Q22 10.5% 1Q22 11.4% vs. 1Q22 7%
+First Quarter Key Highlights
+• Continued strong client engagement and significant client
+• Cards revenues up 20% YoY, with double-digit growth in
+wins across ICG
+interest-earning balances
+• TTS revenues up 31% YoY, driven by both NII and NIR
+• Wealth continues to see strong underlying business drivers
+• Securities Services revenues up 23% YoY, benefiting from
+with Citigold clients up 5% YoY, and new clients in Private
+higher rates. Continue to onboard new assets under custody
+Bank and Wealth at Work up 62% and 81%, respectively
+• Fixed Income revenues up 4%, driven by 13% growth in rates • Returned ~$1.0 billion in capital to shareholders in the form of
+and currencies as we continue to see strong corporate client common dividends
+flows • Built capital through continued earnings growth
+Note: ICG: Institutional Clients Group. TTS: Treasury and Trade Solutions. EPS: Earnings per Share. NII: Net Interest Income. NIR: Non-Interest Revenue.
+All footnotes are presented on Slide 34. Confidential 2",220,1348,pdfplumber_comprehensive,"First Quarter Results Snapshot Revenues Net Income EPS 1Q23 $21.4 billion 1Q23 $4.6 billion 1Q23 $2.19 $1.86 ex-div.(1) vs. 1Q22 12% 6% ex-div.(1) vs. 1Q22 7% (19)% ex-div.(1) vs. 1Q22 8% RoTCE(2) CET1 Capital Ratio(3) Tangible Book Value Per Share(4) 1Q23 10.9% 9.3% ex-div.(1) 1Q23 13.4% 1Q23 $84.21 1Q22 10.5% 1Q22 11.4% vs. 1Q22 7% First Quarter Key Highlights Continued strong client engagement and significant client Cards revenues up 20% YoY, with double-digit growth in wins across ICG interest-earning balances TTS revenues up 31% YoY, driven by both NII and NIR Wealth continues to see strong underlying business drivers Securities Services revenues up 23% YoY, benefiting from with Citigold clients up 5% YoY, and new clients in Private higher rates. Continue to onboard new assets under custody Bank and Wealth at Work up 62% and 81%, respectively Fixed Income revenues up 4%, driven by 13% growth in rates Returned $1.0 billion in capital to shareholders in the form of and currencies as we continue to see strong corporate client common dividends flows Built capital through continued earnings growth Note: ICG: Institutional Clients Group. TTS: Treasury and Trade Solutions. EPS: Earnings per Share. NII: Net Interest Income. NIR: Non-Interest Revenue. All footnotes are presented on Slide 34. Confidential 2",27,True
+2,table,"Revenues | 
+1Q23 | $21.4 billion
+vs. 1Q22 | 12% / 6% ex-div.(1)",13,63,pdfplumber_comprehensive,Revenues | 1Q23 | $21.4 billion vs. 1Q22 | 12% 6% ex-div.(1),4,True
+2,table,"Net Income | 
+1Q23 | $4.6 billion
+vs. 1Q22 | 7% / (19)% ex-div.(1)",14,66,pdfplumber_comprehensive,Net Income | 1Q23 | $4.6 billion vs. 1Q22 | 7% (19)% ex-div.(1),4,True
+2,table,"EPS | 
+1Q23 | $2.19 / $1.86 ex-div.(1)
+vs. 1Q22 | 8%",12,52,pdfplumber_comprehensive,EPS | 1Q23 | $2.19 $1.86 ex-div.(1) vs. 1Q22 | 8%,5,False
+2,table,"RoTCE(2) | 
+1Q23 | 10.9% / 9.3% ex-div.(1)
+1Q22 | 10.5%",11,55,pdfplumber_comprehensive,RoTCE(2) | 1Q23 | 10.9% 9.3% ex-div.(1) 1Q22 | 10.5%,5,False
+2,table,"CET1 Capital Ratio(3) | 
+1Q23 | 13.4%
+1Q22 | 11.4%",10,50,pdfplumber_comprehensive,CET1 Capital Ratio(3) | 1Q23 | 13.4% 1Q22 | 11.4%,3,False
+2,table,"Tangible Book Value Per Share(4) | 
+1Q23 | $84.21
+vs. 1Q22 | 7%",13,63,pdfplumber_comprehensive,Tangible Book Value Per Share(4) | 1Q23 | $84.21 vs. 1Q22 | 7%,3,False
+3,main_text,"Progress Against Our Priorities in 1Q23
+Transformation Strategic Execution Culture and Talent
+✓ Anand Selva named COO and will lead all ✓ Strong TTS performance, up 31%, reflecting ✓ Announced Andy Sieg as new Head of Global
+enterprise-wide Transformation programs continued execution and investment in our Wealth Management
+strategy
+✓ Continuing to execute on Transformation
+‒ Named the Best Global Bank for Cash ✓ Elected Casper von Koskull to the Citigroup
+plans
+Management in 2023 by Global Finance Board, who brings deep expertise in financial
+✓ Examples of progress against risk reduction Magazine services, Europe as well as transformation
+and data governance deliverables (See Page 6): ✓ Continued momentum in USPB with 4
+✓ Expanded the use of Performance Share Units
+consecutive quarters of YoY revenue growth
+‒ Streamlining loan servicing processes and as part of compensation for members of the
+migrated to a single platform ✓ Client advisors up 3% and client acquisition up Global Operating Committee to be more aligned
+‒ Leveraging cloud-based solution to connect 62% in the Private Bank and 81% in Wealth at with shareholders
+front office systems to general ledger Work
+✓ Aligned all employees to the four-pillar
+‒ Retiring legacy platforms and increasing ✓ Continued to make strong progress on Revenue
+framework leadership, risk and control, client
+scale in Equities / RWA in Markets
+and franchise, and financial performance
+‒ Continued data enhancements to achieve Progress on divestitures:
+greater consistency, accuracy, timeliness and ✓ Highly diverse new managing director class,
+✓ Completed the sale of the India and Vietnam
+completeness of data with one-third comprised of women
+consumer businesses.
+‒ Closed 7 out of the 9 signed exit markets
+✓ Significant progress on the Russia wind-down
+✓ Korea wind-down progressing ahead of plan
+✓ Continue to pursue a dual path with Mexico
+Executing with Excellence Across All Priorities To Unlock the Value of Citi
+Improve Returns
+Drive Revenue Disciplined Expense Maintain Robust
+Over the
+Growth Management Capital & Liquidity
+Medium-Term
+Note: TTS: Treasury and Trade Solution. RWA: Risk-weighted assets. USPB: US Personal Banking.
+Confidential 3",342,2210,pdfplumber_comprehensive,"Progress Against Our Priorities in 1Q23 Transformation Strategic Execution Culture and Talent Anand Selva named COO and will lead all Strong TTS performance, up 31%, reflecting Announced Andy Sieg as new Head of Global enterprise-wide Transformation programs continued execution and investment in our Wealth Management strategy Continuing to execute on Transformation Named the Best Global Bank for Cash Elected Casper von Koskull to the Citigroup plans Management in 2023 by Global Finance Board, who brings deep expertise in financial Examples of progress against risk reduction Magazine services, Europe as well as transformation and data governance deliverables (See Page 6): Continued momentum in USPB with 4 Expanded the use of Performance Share Units consecutive quarters of YoY revenue growth Streamlining loan servicing processes and as part of compensation for members of the migrated to a single platform Client advisors up 3% and client acquisition up Global Operating Committee to be more aligned Leveraging cloud-based solution to connect 62% in the Private Bank and 81% in Wealth at with shareholders front office systems to general ledger Work Aligned all employees to the four-pillar Retiring legacy platforms and increasing Continued to make strong progress on Revenue framework leadership, risk and control, client scale in Equities RWA in Markets and franchise, and financial performance Continued data enhancements to achieve Progress on divestitures: greater consistency, accuracy, timeliness and Highly diverse new managing director class, Completed the sale of the India and Vietnam completeness of data with one-third comprised of women consumer businesses. Closed 7 out of the 9 signed exit markets Significant progress on the Russia wind-down Korea wind-down progressing ahead of plan Continue to pursue a dual path with Mexico Executing with Excellence Across All Priorities To Unlock the Value of Citi Improve Returns Drive Revenue Disciplined Expense Maintain Robust Over the Growth Management Capital Liquidity Medium-Term Note: TTS: Treasury and Trade Solution. RWA: Risk-weighted assets. USPB: US Personal Banking. Confidential 3",5,True
+3,table,"Transformation | Strategic Execution | Culture and Talent
+✓ Anand Selva named COO and will lead all
+enterprise-wide Transformation programs
+✓ Continuing to execute on Transformation
+plans
+✓ Examples of progress against risk reduction
+and data governance deliverables (See Page 6):
+‒ Streamlining loan servicing processes and
+migrated to a single platform
+‒ Leveraging cloud-based solution to connect
+front office systems to general ledger
+‒ Retiring legacy platforms and increasing
+scale in Equities
+‒ Continued data enhancements to achieve
+greater consistency, accuracy, timeliness and
+completeness of data | ✓ Strong TTS performance, up 31%, reflecting
+continued execution and investment in our
+strategy
+‒ Named the Best Global Bank for Cash
+Management in 2023 by Global Finance
+Magazine
+✓ Continued momentum in USPB with 4
+consecutive quarters of YoY revenue growth
+✓ Client advisors up 3% and client acquisition up
+62% in the Private Bank and 81% in Wealth at
+Work
+✓ Continued to make strong progress on Revenue
+/ RWA in Markets
+Progress on divestitures:
+✓ Completed the sale of the India and Vietnam
+consumer businesses.
+‒ Closed 7 out of the 9 signed exit markets
+✓ Significant progress on the Russia wind-down
+✓ Korea wind-down progressing ahead of plan
+✓ Continue to pursue a dual path with Mexico | ✓ Announced Andy Sieg as new Head of Global
+Wealth Management
+✓ Elected Casper von Koskull to the Citigroup
+Board, who brings deep expertise in financial
+services, Europe as well as transformation
+✓ Expanded the use of Performance Share Units
+as part of compensation for members of the
+Global Operating Committee to be more aligned
+with shareholders
+✓ Aligned all employees to the four-pillar
+framework leadership, risk and control, client
+and franchise, and financial performance
+✓ Highly diverse new managing director class,
+with one-third comprised of women",297,1868,pdfplumber_comprehensive,"Transformation | Strategic Execution | Culture and Talent Anand Selva named COO and will lead all enterprise-wide Transformation programs Continuing to execute on Transformation plans Examples of progress against risk reduction and data governance deliverables (See Page 6): Streamlining loan servicing processes and migrated to a single platform Leveraging cloud-based solution to connect front office systems to general ledger Retiring legacy platforms and increasing scale in Equities Continued data enhancements to achieve greater consistency, accuracy, timeliness and completeness of data | Strong TTS performance, up 31%, reflecting continued execution and investment in our strategy Named the Best Global Bank for Cash Management in 2023 by Global Finance Magazine Continued momentum in USPB with 4 consecutive quarters of YoY revenue growth Client advisors up 3% and client acquisition up 62% in the Private Bank and 81% in Wealth at Work Continued to make strong progress on Revenue RWA in Markets Progress on divestitures: Completed the sale of the India and Vietnam consumer businesses. Closed 7 out of the 9 signed exit markets Significant progress on the Russia wind-down Korea wind-down progressing ahead of plan Continue to pursue a dual path with Mexico | Announced Andy Sieg as new Head of Global Wealth Management Elected Casper von Koskull to the Citigroup Board, who brings deep expertise in financial services, Europe as well as transformation Expanded the use of Performance Share Units as part of compensation for members of the Global Operating Committee to be more aligned with shareholders Aligned all employees to the four-pillar framework leadership, risk and control, client and franchise, and financial performance Highly diverse new managing director class, with one-third comprised of women",2,True
+4,main_text,"Financial Results Overview
+Financial Results 1Q 2023 Financial Overview Highlights
+• Revenues Up 12% YoY, up 6% ex-divestiture-related impacts(4) as
+($ in MM, except EPS) 1Q23 % Δ QoQ % Δ YoY
+strength across Services, Fixed Income and USPB was partially offset by
+Net Interest Income $13,348 1% 23%
+Banking, Equity Markets and Wealth as well as reductions from the exits
+and wind-downs
+Non-Interest Revenue 8,099 71% (3)%
+• Expenses Up 1% YoY, up 5% ex-divestiture-related impacts(4), largely
+Total Revenues 21,447 19% 12% driven by investments in transformation, other risk & controls and
+inflation, partially offset by productivity savings and expense reductions
+Expenses 13,289 2% 1%
+from the exits and wind-downs
+NCLs 1,302 10% 49% • Credit Costs Cost of $2.0 billion, primarily driven by the continued
+normalization in Card NCLs and an ACL build primarily due to
+ACL Build and Other(1) 673 1% NM macroeconomic assumptions and card revolving balance growth
+• Net Income Up 7% YoY, down 19% ex-divestiture-related impacts(4),
+Credit Costs 1,975 7% NM
+largely driven by the ACL build versus a release in the prior-year
+EBT 6,183 95% 17% • EPS $2.19, $1.86 ex-divesture-related impacts(4)
+• RoTCE 10.9%, 9.3% ex-divestiture-related impacts(4)
+Income Taxes 1,531 NM 63%
+Revenues by Segment and Corp / Other
+Net Income 4,606 83% 7%
+($ in B) $21.4 YoY
+Net Income to Common(2) 4,329 90% 7% $19.2 12%
+$18.0
+6.4 9%
+Diluted EPS $2.19 89% 8% 5.9
+PBWM
+6.1
+Efficiency Ratio (Δ in bps) 62% (1,010) (660)
+ROE 9.5% 11.2 1%
+ICG 11.2 9.2
+RoTCE(2) 10.9% Legacy
+Franchises 2.9 48%
+2.1
+CET1 Capital Ratio(3) 13.4% Corp / Other 1.9 0.2 0.7 0.9 NM
+] ] ]
+1Q22 4Q22 1Q23
+Note: Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. ICG: Institutional Clients Group. PBWM: PersonalBanking & Wealth Management. USPB: U.S. Personal Banking.
+All footnotes are presented on Slide34. Confidential 4",318,1930,pdfplumber_comprehensive,"Financial Results Overview Financial Results 1Q 2023 Financial Overview Highlights Revenues Up 12% YoY, up 6% ex-divestiture-related impacts(4) as ($ in MM, except EPS) 1Q23 % Δ QoQ % Δ YoY strength across Services, Fixed Income and USPB was partially offset by Net Interest Income $13,348 1% 23% Banking, Equity Markets and Wealth as well as reductions from the exits and wind-downs Non-Interest Revenue 8,099 71% (3)% Expenses Up 1% YoY, up 5% ex-divestiture-related impacts(4), largely Total Revenues 21,447 19% 12% driven by investments in transformation, other risk controls and inflation, partially offset by productivity savings and expense reductions Expenses 13,289 2% 1% from the exits and wind-downs NCLs 1,302 10% 49% Credit Costs Cost of $2.0 billion, primarily driven by the continued normalization in Card NCLs and an ACL build primarily due to ACL Build and Other(1) 673 1% NM macroeconomic assumptions and card revolving balance growth Net Income Up 7% YoY, down 19% ex-divestiture-related impacts(4), Credit Costs 1,975 7% NM largely driven by the ACL build versus a release in the prior-year EBT 6,183 95% 17% EPS $2.19, $1.86 ex-divesture-related impacts(4) RoTCE 10.9%, 9.3% ex-divestiture-related impacts(4) Income Taxes 1,531 NM 63% Revenues by Segment and Corp Other Net Income 4,606 83% 7% ($ in B) $21.4 YoY Net Income to Common(2) 4,329 90% 7% $19.2 12% $18.0 6.4 9% Diluted EPS $2.19 89% 8% 5.9 PBWM 6.1 Efficiency Ratio (Δ in bps) 62% (1,010) (660) ROE 9.5% 11.2 1% ICG 11.2 9.2 RoTCE(2) 10.9% Legacy Franchises 2.9 48% 2.1 CET1 Capital Ratio(3) 13.4% Corp Other 1.9 0.2 0.7 0.9 NM 1Q22 4Q22 1Q23 Note: Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. ICG: Institutional Clients Group. PBWM: PersonalBanking Wealth Management. USPB: U.S. Personal Banking. All footnotes are presented on Slide34. Confidential 4",35,True
+5,main_text,"1Q23 YoY Expense Walk
+($ in B)
+Up ~1% Total Reported
+Up ~5% Ex-Divestiture Impacts (1)
+$13.3
+$13.2 ~4%
+0.1
+~1% ~(1)%
+~0%
+0.6
+• Improving Risk & • Client experience, • PBWM advertising & • Other risk & control 1.7
+Control environment product and platform marketing initiatives(2)and
+development in enterprise-led
+1.7 • Data Governance & Services & • Offset by investments
+Remediation transactional costs in
+Commercial Banking
+• Inflation
+Services and PBWM
+• Risk reduction • Hiring of client
+• Severance
+technology solutions advisors in Wealth as
+• Benefits from
+implementation well as Commercial
+productivity savings
+and Investment
+• ~12k staff dedicated and FX translation
+Bankers
+to transformation
+• Reduction from exit
+markets 11.5
+10.9
+1Q22 Transformation Business-led Volume-Related Structural / Other 1Q23
+Investments(3) Investments
+Divestiture Impacts
+Added ~8k people in Technology; total technology-related spend up 12% YoY Legacy Franchises
+ICG + PBWM + Corp / Other
+Note: Totals may not sum due to rounding. FX: Foreign Exchange. ICG: Institutional Clients Group. PBWM: Personal Banking & Wealth Management. All footnotes are presented on Slide34.
+Confidential 5",177,1173,pdfplumber_comprehensive,"1Q23 YoY Expense Walk ($ in B) Up 1% Total Reported Up 5% Ex-Divestiture Impacts (1) $13.3 $13.2 4% 0.1 1% (1)% 0% 0.6 Improving Risk Client experience, PBWM advertising Other risk control 1.7 Control environment product and platform marketing initiatives(2)and development in enterprise-led 1.7 Data Governance Services Offset by investments Remediation transactional costs in Commercial Banking Inflation Services and PBWM Risk reduction Hiring of client Severance technology solutions advisors in Wealth as Benefits from implementation well as Commercial productivity savings and Investment 12k staff dedicated and FX translation Bankers to transformation Reduction from exit markets 11.5 10.9 1Q22 Transformation Business-led Volume-Related Structural Other 1Q23 Investments(3) Investments Divestiture Impacts Added 8k people in Technology; total technology-related spend up 12% YoY Legacy Franchises ICG + PBWM + Corp Other Note: Totals may not sum due to rounding. FX: Foreign Exchange. ICG: Institutional Clients Group. PBWM: Personal Banking Wealth Management. All footnotes are presented on Slide34. Confidential 5",14,True
+6,main_text,"By enhancing and modernizing our infrastructure, we are creating new products, improving our existing
+capabilities and risk & controls, while generating efficiencies that will self-fund future investments
+Platform & Process Simplification Security & Infrastructure Modernization
+Reducing complexity & risk through strategic platforms Increasing security, efficiency & scalability
+• Sanctions: Consolidated 11 platforms to one global sanctions- • Cyber: Enhancing cyber security through the use of AI and
+screening platform, reducing false alerts improving the security of our infrastructure and devices
+• Trading / Cash Equities: Retired 20 legacy platforms and • Cloud: Building secure capabilities so businesses can use the
+deployed new, modern platform with increased scale public cloud for faster market risk calculations, data sharing, and
+instant payments
+• Loan Servicing: Moving capabilities from 39 applications to a
+single, strategic platform • Ledger: Leveraging cloud-based solution to streamline end to end
+connectivity between front office systems andthe general ledger
+Client Experience Enhancements Data Improvements
+Driving growth through enhanced offerings & expanded access Better decision making & risk management
+• CitiDirect Commercial Banking:Deploying CitiDirect to • Data Environment: Continued data enhancements to achieve
+Commercial Bank clients so they can access products and services greater consistency, accuracy, timeliness and completeness of
+the same way Large Corporate clients do data
+• Instant Payments: Launched next-generation, cloud-based Capital Optimization: RWA reduction, without client or P&L
+platform for TTS eCommerce clients impact, through improved daily trade-level RWA data
+• Wealth: Enhanced and digitized the onboarding process for
+Wealth at Work and HNW clients
+Note: TTS: Treasury and Trade Services. HNW: High-Net Worth. RWA: Risk-weighted assets.
+Confidential 6",263,1918,pdfplumber_comprehensive,"By enhancing and modernizing our infrastructure, we are creating new products, improving our existing capabilities and risk controls, while generating efficiencies that will self-fund future investments Platform Process Simplification Security Infrastructure Modernization Reducing complexity risk through strategic platforms Increasing security, efficiency scalability Sanctions: Consolidated 11 platforms to one global sanctions- Cyber: Enhancing cyber security through the use of AI and screening platform, reducing false alerts improving the security of our infrastructure and devices Trading Cash Equities: Retired 20 legacy platforms and Cloud: Building secure capabilities so businesses can use the deployed new, modern platform with increased scale public cloud for faster market risk calculations, data sharing, and instant payments Loan Servicing: Moving capabilities from 39 applications to a single, strategic platform Ledger: Leveraging cloud-based solution to streamline end to end connectivity between front office systems andthe general ledger Client Experience Enhancements Data Improvements Driving growth through enhanced offerings expanded access Better decision making risk management CitiDirect Commercial Banking:Deploying CitiDirect to Data Environment: Continued data enhancements to achieve Commercial Bank clients so they can access products and services greater consistency, accuracy, timeliness and completeness of the same way Large Corporate clients do data Instant Payments: Launched next-generation, cloud-based Capital Optimization: RWA reduction, without client or P L platform for TTS eCommerce clients impact, through improved daily trade-level RWA data Wealth: Enhanced and digitized the onboarding process for Wealth at Work and HNW clients Note: TTS: Treasury and Trade Services. HNW: High-Net Worth. RWA: Risk-weighted assets. Confidential 6",4,True
+6,table,"Platform & Process Simplification
+Reducing complexity & risk through strategic platforms
+• Sanctions: Consolidated 11 platforms to one global sanctions-
+screening platform, reducing false alerts
+• Trading / Cash Equities: Retired 20 legacy platforms and
+deployed new, modern platform with increased scale
+• Loan Servicing: Moving capabilities from 39 applications to a
+single, strategic platform",55,395,pdfplumber_comprehensive,"Platform Process Simplification Reducing complexity risk through strategic platforms Sanctions: Consolidated 11 platforms to one global sanctions- screening platform, reducing false alerts Trading Cash Equities: Retired 20 legacy platforms and deployed new, modern platform with increased scale Loan Servicing: Moving capabilities from 39 applications to a single, strategic platform",1,False
+6,table,"Security & Infrastructure Modernization
+Increasing security, efficiency & scalability
+• Cyber: Enhancing cyber security through the use of AI and
+improving the security of our infrastructure and devices
+• Cloud: Building secure capabilities so businesses can use the
+public cloud for faster market risk calculations, data sharing, and
+instant payments
+• Ledger: Leveraging cloud-based solution to streamline end to end
+connectivity between front office systems andthe general ledger",68,482,pdfplumber_comprehensive,"Security Infrastructure Modernization Increasing security, efficiency scalability Cyber: Enhancing cyber security through the use of AI and improving the security of our infrastructure and devices Cloud: Building secure capabilities so businesses can use the public cloud for faster market risk calculations, data sharing, and instant payments Ledger: Leveraging cloud-based solution to streamline end to end connectivity between front office systems andthe general ledger",1,False
+6,table,"Client Experience Enhancements
+Driving growth through enhanced offerings & expanded access
+• CitiDirect Commercial Banking:Deploying CitiDirect to
+Commercial Bank clients so they can access products and services
+the same way Large Corporate clients do
+• Instant Payments: Launched next-generation, cloud-based
+platform for TTS eCommerce clients
+• Wealth: Enhanced and digitized the onboarding process for
+Wealth at Work and HNW clients",60,435,pdfplumber_comprehensive,"Client Experience Enhancements Driving growth through enhanced offerings expanded access CitiDirect Commercial Banking:Deploying CitiDirect to Commercial Bank clients so they can access products and services the same way Large Corporate clients do Instant Payments: Launched next-generation, cloud-based platform for TTS eCommerce clients Wealth: Enhanced and digitized the onboarding process for Wealth at Work and HNW clients",1,True
+6,table,"Data Improvements
+Better decision making & risk management
+• Data Environment: Continued data enhancements to achieve
+greater consistency, accuracy, timeliness and completeness of
+data
+Capital Optimization: RWA reduction, without client or P&L
+impact, through improved daily trade-level RWA data",39,295,pdfplumber_comprehensive,"Data Improvements Better decision making risk management Data Environment: Continued data enhancements to achieve greater consistency, accuracy, timeliness and completeness of data Capital Optimization: RWA reduction, without client or P L impact, through improved daily trade-level RWA data",1,False
+7,main_text,"Net Interest Income, Average Loans and Deposits
+($ in B)
+Net Interest Income
+2.39% 2.41% 1Q23 1Q23
+2.31%
+2.24%
+QoQ D YoY D
+2.05%
+Citigroup NIM
+$0.08 $2.48
+$13.27 $13.35
+$12.56
+$11.96
+$10.87 1.49 1.47 $(0.02) $0.38
+1.23
+1.36
+Markets(1) 1.09
+Ex-Markets 9.78 10.61 11.33 11.78 11.88 $0.10 $2.10
+1Q22 2Q22 3Q22 4Q22 1Q23
+Average Loans Average Deposits
+YoY YoY
+$649 $657 $655 $653 $654 1% $1,334 $1,323 $1,316 $1,361 $1,363 2%
+PBWM 312 317 325 330 333 7% PBWM 447 435 428 431 434 (3)%
+ICG 826 830 817 848 853 3%
+ICG 289 297 291 285 283 (2)%
+Legacy (9)%
+Legacy 48 43 39 38 38 (21)% Franchises 55 6 51 7 50 21 50 32 50 26 NM
+Franchises ] ] ] ] ]
+Corp / Other
+1Q22 2Q22 3Q22 4Q22 1Q23 1Q22 2Q22 3Q22 4Q22 1Q23
+Gross Loan Yield(2) Cost of Interest-Bearing Deposits(3)
+5.46% 5.81% 6.55% 7.46% 8.26% 0.33% 0.53% 1.21% 2.10% 2.72%
+Note: Totals maynot sum due to rounding. Excludes discontinued operations. 1%in allperiods).
+ICG: Institutional Clients Group. PBWM: Personal Banking & Wealth Management. All footnotes are preseCnotnefidde onnti aSllide 34. 7",187,1044,pdfplumber_comprehensive,"Net Interest Income, Average Loans and Deposits ($ in B) Net Interest Income 2.39% 2.41% 1Q23 1Q23 2.31% 2.24% QoQ D YoY D 2.05% Citigroup NIM $0.08 $2.48 $13.27 $13.35 $12.56 $11.96 $10.87 1.49 1.47 $(0.02) $0.38 1.23 1.36 Markets(1) 1.09 Ex-Markets 9.78 10.61 11.33 11.78 11.88 $0.10 $2.10 1Q22 2Q22 3Q22 4Q22 1Q23 Average Loans Average Deposits YoY YoY $649 $657 $655 $653 $654 1% $1,334 $1,323 $1,316 $1,361 $1,363 2% PBWM 312 317 325 330 333 7% PBWM 447 435 428 431 434 (3)% ICG 826 830 817 848 853 3% ICG 289 297 291 285 283 (2)% Legacy (9)% Legacy 48 43 39 38 38 (21)% Franchises 55 6 51 7 50 21 50 32 50 26 NM Franchises Corp Other 1Q22 2Q22 3Q22 4Q22 1Q23 1Q22 2Q22 3Q22 4Q22 1Q23 Gross Loan Yield(2) Cost of Interest-Bearing Deposits(3) 5.46% 5.81% 6.55% 7.46% 8.26% 0.33% 0.53% 1.21% 2.10% 2.72% Note: Totals maynot sum due to rounding. Excludes discontinued operations. 1%in allperiods). ICG: Institutional Clients Group. PBWM: Personal Banking Wealth Management. All footnotes are preseCnotnefidde onnti aSllide 34. 7",43,True
+7,table,Net Interest Income |  |  |  | ,7,31,pdfplumber_comprehensive,Net Interest Income | | | |,1,True
+7,table,5.46% | 5.81% | 6.55% | 7.46% | 8.26%,9,37,pdfplumber_comprehensive,5.46% | 5.81% | 6.55% | 7.46% | 8.26%,6,False
+7,table,0.33% | 0.53% | 1.21% | 2.10% | 2.72%,9,37,pdfplumber_comprehensive,0.33% | 0.53% | 1.21% | 2.10% | 2.72%,6,False
+8,main_text,"Confidential 8
+N o~ n1
+5
+- I% G
+~
+I8 G5
+%
+Consumer & Corporate Loan, Exposure and Credit Metrics
+We maintain nearly $20B of reserves and a reserve-to-funded loans ratio of approximately 2.7%
+($ in B)
+US Cards Loans Corporate Lending Exposure
+EOP Loans by Segment EOP Loans by FICO Score(1) By Region By Grade Rating
+In our ICG portfolio, of
+our total exposure, ~85%
+Retail < 680 is investment grade. Of
+Services In our US Cards 21% the international
+33% portfolio, nearly exposure, approximately
+Branded 80% is Prime 90% is investment grade
+≥680 (≥680)
+Cards or exposure to 79%
+67% multinational clients or
+their subsidiaries.
+Total Card Loans: $146 Total EOP Loans: $288
+Total PBWM Loans: $335 Total Exposure: $682
+(CRE: $11)(2) (CRE: $55)(2,3)
+CREDIT COMPARISON CECL DAY 1(4) 1Q23 CREDIT COMPARISON CECL DAY 1(4) 1Q23
+US Cards Corporate
+NCLs(5) $1.4. $1.0. NCLs(5) $0.1. $0.0.
+% of Avg Loans 0.1% NM.
+% of Avg Loans 3.8% 2.8%
+NALs $2.0. $1.2.
+90+ DPD 1.3% 1.1%
+% of Loans 0.7% 0.4%
+ACLL / Funded Loans 7.5% 8.1%
+ACLL / Funded Loans 0.6% 1.0%
+Note:Totals may not sum due to rounding. DPD: Days Past Due. EOP: End of Period. IG: Investment Grade. NCL: Net Credit Losses. NAL: Non-Accrual Loans. ACLL: Allowance for Credit Losses on Loans. ICG: Institutional Clients Group.
+PBWM: Personal Banking & Wealth Management. CRE: Commercial Real Estate. CECL: Current Expected Credit Losses. Allinformation for 1Q23 is preliminary. All footnotes are presented on Slide 35.
+L a t in A m
+7 %
+A P
+1 2
+E M
+2 5
+e
+A%
+E%
+r ic
+C
+A
+a
+A
+Nm5 oe6 r t h
+r ic
+%
+a",281,1541,pdfplumber_comprehensive,"Confidential 8 N o n1 5 - I% G I8 G5 % Consumer Corporate Loan, Exposure and Credit Metrics We maintain nearly $20B of reserves and a reserve-to-funded loans ratio of approximately 2.7% ($ in B) US Cards Loans Corporate Lending Exposure EOP Loans by Segment EOP Loans by FICO Score(1) By Region By Grade Rating In our ICG portfolio, of our total exposure, 85% Retail 680 is investment grade. Of Services In our US Cards 21% the international 33% portfolio, nearly exposure, approximately Branded 80% is Prime 90% is investment grade 680 ( 680) Cards or exposure to 79% 67% multinational clients or their subsidiaries. Total Card Loans: $146 Total EOP Loans: $288 Total PBWM Loans: $335 Total Exposure: $682 (CRE: $11)(2) (CRE: $55)(2,3) CREDIT COMPARISON CECL DAY 1(4) 1Q23 CREDIT COMPARISON CECL DAY 1(4) 1Q23 US Cards Corporate NCLs(5) $1.4. $1.0. NCLs(5) $0.1. $0.0. % of Avg Loans 0.1% NM. % of Avg Loans 3.8% 2.8% NALs $2.0. $1.2. 90+ DPD 1.3% 1.1% % of Loans 0.7% 0.4% ACLL Funded Loans 7.5% 8.1% ACLL Funded Loans 0.6% 1.0% Note:Totals may not sum due to rounding. DPD: Days Past Due. EOP: End of Period. IG: Investment Grade. NCL: Net Credit Losses. NAL: Non-Accrual Loans. ACLL: Allowance for Credit Losses on Loans. ICG: Institutional Clients Group. PBWM: Personal Banking Wealth Management. CRE: Commercial Real Estate. CECL: Current Expected Credit Losses. Allinformation for 1Q23 is preliminary. All footnotes are presented on Slide 35. L a t in A m 7 % A P 1 2 E M 2 5 e A% E% r ic C A a A Nm5 oe6 r t h r ic % a",41,True
+8,table,"US Cards Loans | 
+EOP Loans by Segment | EOP Loans by FICO Score(1)",14,67,pdfplumber_comprehensive,US Cards Loans | EOP Loans by Segment | EOP Loans by FICO Score(1),1,False
+8,table,"Corporate Lending Exposure | 
+By Region | By Grade Rating",10,57,pdfplumber_comprehensive,Corporate Lending Exposure | By Region | By Grade Rating,1,False
+8,table,US Cards |  | ,4,14,pdfplumber_comprehensive,US Cards | |,1,False
+8,table,Corporate |  | ,3,15,pdfplumber_comprehensive,Corporate | |,1,False
+9,main_text,"1Q22 4Q22 1Q23
+CET1 Capital $144 $149 $154
+Standardized RWAs 1,257 1,143 1,145
+CET1 Capital Ratio - Standardized 11.4% 13.0% 13.4%
+Advanced RWAs 1,260 1,222 1,250
+CET1 Capital Ratio - Advanced 11.4% 12.2% 12.3%
+1Q22 4Q22 1Q23
+Supplementary Leverage Ratio(2) 5.6% 5.8% 5.9%
+1Q22 4Q22 1Q23
+Liquidity Coverage Ratio 116% 118% 120%
+Average HQLA (Duration: ~1 Year) 540 575 584 $2,394 $2,417 $2,455
+Total Available Liquidity Resources(3) 965 1,045 1,033
+Total Loss Absorbing Capacity(4) 323 334 334 484 442 519
+57 83 74
+Net Stable Funding Ratio(5) >100% >100% >100%
+452 438 437
+1Q22 4Q22 1Q23 826 845 819
+AFS Securities (Duration: ~2 Years) $265 $250 $240
+124 135 117
+HTM Securities (Duration: ~4 Years) 2 43 2 69 2 64 254 272 280
+Tangible Book Value Per Share(6) 7 9.03 8 1.65 8 4.21 198 202 209
+1Q22 4Q22 1Q23
+Confidential 9
+$ 2
+2
+5
+7
+6
+1
+1 Q
+, 3 9
+7 2
+1 5
+9 3
+6 0
+5 5
+2 2
+4 $ 2 , 4
+3 4
+5 2
+7 5
+6 5
+1 3
+4 Q
+1 7
+2
+7
+4
+7
+7
+2 2
+$ 2
+3
+5
+8
+6
+1
+1 Q
+,4 5
+2 9
+1 3
+2 4
+5 2
+3 8
+2 3
+5
+Capital and Balance Sheet Overview
+($ in B, except per share data)
+Risk-based Capital Metrics(1) End of Period Assets
+YoY
+3%
+Cash 21%
+Investments, net (0)%
+Trading-Related 4%
+Assets(7)
+Leverage-based Capital Metrics
+Loans, net (1)%
+Other Assets(7) (11)%
+Liquidity Metrics
+End of Period Liabilities and Equity
+YoY
+3%
+Trading-Related
+Liabilities(8) 7%
+Other Deposits 30%
+(3)%
+PBWM Deposits
+Balance Sheet
+ICG Deposits (1)%
+Other Liabilities(8) (6)%
+LTD 10%
+Equity 5%
+Note: Totals may not sum due to rounding. LTD: Long-term debt. HQLA: High quality liquid assets. RWA: Risk-Weighted Assets. ICG: Institutional Clients Group. PBWM: Personal Banking & Wealth Management.
+AFS: Available for Sale. HTM: Held to Maturity. Other deposits includes Legacy Franchises and Corp/Other deposits. Allinformation for 1Q23 is preliminary. All footnotes are presented on Slide 35.",343,1832,pdfplumber_comprehensive,"1Q22 4Q22 1Q23 CET1 Capital $144 $149 $154 Standardized RWAs 1,257 1,143 1,145 CET1 Capital Ratio - Standardized 11.4% 13.0% 13.4% Advanced RWAs 1,260 1,222 1,250 CET1 Capital Ratio - Advanced 11.4% 12.2% 12.3% 1Q22 4Q22 1Q23 Supplementary Leverage Ratio(2) 5.6% 5.8% 5.9% 1Q22 4Q22 1Q23 Liquidity Coverage Ratio 116% 118% 120% Average HQLA (Duration: 1 Year) 540 575 584 $2,394 $2,417 $2,455 Total Available Liquidity Resources(3) 965 1,045 1,033 Total Loss Absorbing Capacity(4) 323 334 334 484 442 519 57 83 74 Net Stable Funding Ratio(5) 100% 100% 100% 452 438 437 1Q22 4Q22 1Q23 826 845 819 AFS Securities (Duration: 2 Years) $265 $250 $240 124 135 117 HTM Securities (Duration: 4 Years) 2 43 2 69 2 64 254 272 280 Tangible Book Value Per Share(6) 7 9.03 8 1.65 8 4.21 198 202 209 1Q22 4Q22 1Q23 Confidential 9 $ 2 2 5 7 6 1 1 Q , 3 9 7 2 1 5 9 3 6 0 5 5 2 2 4 $ 2 , 4 3 4 5 2 7 5 6 5 1 3 4 Q 1 7 2 7 4 7 7 2 2 $ 2 3 5 8 6 1 1 Q ,4 5 2 9 1 3 2 4 5 2 3 8 2 3 5 Capital and Balance Sheet Overview ($ in B, except per share data) Risk-based Capital Metrics(1) End of Period Assets YoY 3% Cash 21% Investments, net (0)% Trading-Related 4% Assets(7) Leverage-based Capital Metrics Loans, net (1)% Other Assets(7) (11)% Liquidity Metrics End of Period Liabilities and Equity YoY 3% Trading-Related Liabilities(8) 7% Other Deposits 30% (3)% PBWM Deposits Balance Sheet ICG Deposits (1)% Other Liabilities(8) (6)% LTD 10% Equity 5% Note: Totals may not sum due to rounding. LTD: Long-term debt. HQLA: High quality liquid assets. RWA: Risk-Weighted Assets. ICG: Institutional Clients Group. PBWM: Personal Banking Wealth Management. AFS: Available for Sale. HTM: Held to Maturity. Other deposits includes Legacy Franchises and Corp Other deposits. Allinformation for 1Q23 is preliminary. All footnotes are presented on Slide 35.",24,True
+9,table,AFS Securities (Duration: ~2 Years) | $265 $250 $240,9,52,pdfplumber_comprehensive,AFS Securities (Duration: 2 Years) | $265 $250 $240,1,False
+9,table,Tangible Book Value Per Share(6) | 7 9.03 8 1.65 8 4.21,12,55,pdfplumber_comprehensive,Tangible Book Value Per Share(6) | 7 9.03 8 1.65 8 4.21,4,False
+10,main_text,"Standardized CET1 Ratio Overview
+1Q23 QoQ Standardized CET1 Ratio Walk CET1 Standardized Regulatory Requirement and Target
+Key drivers resulting in CET1 Capital ratio of 13.4%(1), above the regulatory • Well capitalized today with a CET1 Capital ratio of 13.4%, 140bps
+requirement as of January 1, 2023 above the 1Q23 regulatory requirement
+• Strength in earnings • Increased regulatory requirements:
+• Capital distribution in the form of dividends ꟷ In October 2022, regulatory requirement increased to 11.5%
+driven by Stress Capital Buffer increasing from 3.0% to 4.0%
+• Unrealized AFS gains
+ꟷ In January 2023, regulatory requirement increased to 12% as a
+• Closing of consumer business sales
+result of an increase in our G-SIB surcharge
+13.0% 38bps 7bps 4bps 13.4% 13.0%
+(9)bps 12.0% 1.0%
+11.5% 11.5-12.0%
+4.0% 4.0%
+4.0%
+Includes 13 bps of 3.0% 3.5% 3.5%
+Management
+divestiture-related Buffer
+impacts Stress Capital
+Buffer
+G-SIB Surcharge
+4.5% 4.5% 4.5%
+Regulatory Stated
+Requirement
+(1) (3)
+4Q22 Net Income Capital Unrealized RWA, DTA (2) 1Q23 4Q22 1Q23 Current Medium-term
+to Common Distribution AFS Gains Impact, Other (3 - 5 Years)
+Effective Regulatory Requirement Target
+Note: Totals may not sum due to rounding. AFS: Available For Sale. DTA: Deferred Tax Assets. G-SIB: Global Systemically Important Banks. RWA: Risk-Weighted Assets. Allinformation for 1Q23 is preliminary.
+All footnotes are presented on Slide36. Confidential 10",218,1438,pdfplumber_comprehensive,"Standardized CET1 Ratio Overview 1Q23 QoQ Standardized CET1 Ratio Walk CET1 Standardized Regulatory Requirement and Target Key drivers resulting in CET1 Capital ratio of 13.4%(1), above the regulatory Well capitalized today with a CET1 Capital ratio of 13.4%, 140bps requirement as of January 1, 2023 above the 1Q23 regulatory requirement Strength in earnings Increased regulatory requirements: Capital distribution in the form of dividends ꟷ In October 2022, regulatory requirement increased to 11.5% driven by Stress Capital Buffer increasing from 3.0% to 4.0% Unrealized AFS gains ꟷ In January 2023, regulatory requirement increased to 12% as a Closing of consumer business sales result of an increase in our G-SIB surcharge 13.0% 38bps 7bps 4bps 13.4% 13.0% (9)bps 12.0% 1.0% 11.5% 11.5-12.0% 4.0% 4.0% 4.0% Includes 13 bps of 3.0% 3.5% 3.5% Management divestiture-related Buffer impacts Stress Capital Buffer G-SIB Surcharge 4.5% 4.5% 4.5% Regulatory Stated Requirement (1) (3) 4Q22 Net Income Capital Unrealized RWA, DTA (2) 1Q23 4Q22 1Q23 Current Medium-term to Common Distribution AFS Gains Impact, Other (3 - 5 Years) Effective Regulatory Requirement Target Note: Totals may not sum due to rounding. AFS: Available For Sale. DTA: Deferred Tax Assets. G-SIB: Global Systemically Important Banks. RWA: Risk-Weighted Assets. Allinformation for 1Q23 is preliminary. All footnotes are presented on Slide36. Confidential 10",30,True
+11,main_text,"Institutional Clients Group Results
+Institutional Clients Group Results Institutional Clients Group Highlights
+($ in MM) 1Q23 % Δ QoQ % Δ YoY • Revenues Up 1% YoY, reflecting continued strong business momentum
+Net Interest Income $5,028 - 33% in Services and strong corporate client activity in Fixed Income, partially
+offset by macro headwinds in Banking and Equity Markets
+Non-Interest Revenue 6,205 51% (16)%
+Total Revenues 11,233 23% 1% • Expenses Up 4% YoY, driven by transformation, other risk and control
+Expenses 6,973 6% 4% investments and volume-related expenses, partially offset by FX
+translation and productivity savings
+NCLs 22 (79)% (27)%
+ACL Build (Release) and Other(1) (94) NM NM • Credit Costs Benefitof $(72) million, driven by an ACL release, which
+Credit Costs (72) NM NM more than offset net credit losses of $22 million
+EBT 4,332 73% 25% • Net Income Up 23% YoY, largely driven by the lower cost of credit and
+Net Income 3,258 72% 23% the higher revenue, partially offset by the higher expenses
+• RoTCEof 13.8%
+Key Drivers / Statistics ($ in B)
+Allocated Average TCE(2) $96 Revenues by Reporting Unit
+RoTCE(3) 13.8% YoY
+($ in B) $11.2 $11.2
+Efficiency Ratio (Δ in bps) 62% (1,000) 200 1%
+1.2
+Average Loans 283 (1)% (2)% Banking(4) 1.9 $9.2 (38)%
+Average Deposits 853 1% 3%
+0.9
+EOP Loans 281 (1)% (7)%
+5.6
+EOP Deposits 819 (3)% (1)% (4)%
+Markets 5.8 3.9
+Key Indicators
+Corporate Clients 4,930 1% 6%
+Financial Institution & Investor Clients 4,823 (1)% 1%
+Commercial Clients 14,093 0% 4% 4.3 4.5 29%
+3.5
+Services
+Total ICG Clients 23,846 0% 4%
+1Q22 4Q22 1Q23
+Note: Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. FX: Foreign Exchange. TTS: Treasury and Trade Solutions. NII: Net Interest Income. NIR: Non-Interest Revenue.
+All footnotes are presented on Slide 36. Confidential 11",311,1866,pdfplumber_comprehensive,"Institutional Clients Group Results Institutional Clients Group Results Institutional Clients Group Highlights ($ in MM) 1Q23 % Δ QoQ % Δ YoY Revenues Up 1% YoY, reflecting continued strong business momentum Net Interest Income $5,028 - 33% in Services and strong corporate client activity in Fixed Income, partially offset by macro headwinds in Banking and Equity Markets Non-Interest Revenue 6,205 51% (16)% Total Revenues 11,233 23% 1% Expenses Up 4% YoY, driven by transformation, other risk and control Expenses 6,973 6% 4% investments and volume-related expenses, partially offset by FX translation and productivity savings NCLs 22 (79)% (27)% ACL Build (Release) and Other(1) (94) NM NM Credit Costs Benefitof $(72) million, driven by an ACL release, which Credit Costs (72) NM NM more than offset net credit losses of $22 million EBT 4,332 73% 25% Net Income Up 23% YoY, largely driven by the lower cost of credit and Net Income 3,258 72% 23% the higher revenue, partially offset by the higher expenses RoTCEof 13.8% Key Drivers Statistics ($ in B) Allocated Average TCE(2) $96 Revenues by Reporting Unit RoTCE(3) 13.8% YoY ($ in B) $11.2 $11.2 Efficiency Ratio (Δ in bps) 62% (1,000) 200 1% 1.2 Average Loans 283 (1)% (2)% Banking(4) 1.9 $9.2 (38)% Average Deposits 853 1% 3% 0.9 EOP Loans 281 (1)% (7)% 5.6 EOP Deposits 819 (3)% (1)% (4)% Markets 5.8 3.9 Key Indicators Corporate Clients 4,930 1% 6% Financial Institution Investor Clients 4,823 (1)% 1% Commercial Clients 14,093 0% 4% 4.3 4.5 29% 3.5 Services Total ICG Clients 23,846 0% 4% 1Q22 4Q22 1Q23 Note: Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. FX: Foreign Exchange. TTS: Treasury and Trade Solutions. NII: Net Interest Income. NIR: Non-Interest Revenue. All footnotes are presented on Slide 36. Confidential 11",24,True
+12,main_text,"($ in B, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY
+Treasury and Trade Solutions
+Average Loans $78 2% (2)%
+Average Deposits 704 1% 5%
+Cross Border Transaction Value(2) 83 2% 10%
+US Dollar Clearing Volume (#MM)(3) 38 - 6%
+Commercial Card Spend Volume(4) 16 4% 40%
+Securities Services
+AUC/AUA ($T)(5) 23 4% -
+Average Deposits 125 (3)% (7)%
+Banking
+Average Loans 191 (2)% (2)%
+Confidential 12
+(
+T
+T
+T
+$ in M M )
+N e t In t e r e s t In c o m e
+N o n - in t e r e s t R e v e n u e
+T r e a s u r y a n d T r a d e S o lu
+N e t In t e r e s t In c o m e
+N o n - in t e r e s t R e v e n u e
+S e c u r it ie s S e r v ic e s R e v e
+o t a l S e r v ic e s R e v e n u e s
+F ix e d In c o m e M a r k e t s
+E q u it y M a r k e t s
+o t a l M a r k e t s R e v e n u e s
+A d v is o r y
+E q u it y U n d e r w r it in g
+D e b t U n d e r w r it in g
+In v e s t m e n t B a n k in g(1)
+C o r p o r a t e L e n d in g
+o t a l B a n k in g R e v e n u e s
+t io
+n u
+(1)
+n
+e
+s
+s
+R e v e n u e s
+$
+1 Q 2 3
+2 ,3 5 8
+1 ,0 5 3
+3 ,4 1 1
+4 8 1
+5 7 5
+1 ,0 5 6
+4 ,4 6 7
+4 ,4 5 4
+1 ,1 4 7
+5 ,6 0 1
+2 8 9
+1 0 9
+3 7 6
+7 7 4
+5 9 0
+1 ,3 6 4
+% Δ Q o Q
+1 %
+1 1 %
+4 %
+-
+3 %
+2 %
+3 %
+3 9 %
+5 6 %
+4 2 %
+7 %
+(2 7 )%
+6 6 %
+2 0 %
+8 %
+1 5 %
+% Δ Y o Y
+4 1 %
+1 3 %
+3 1 %
+9 4 %
+(6 )%
+2 3 %
+2 9 %
+4 %
+(2 5 )%
+( 4 ) %
+(1 7 )%
+(4 1 )%
+(2 4 )%
+(2 5 )%
+(1 4 )%
+( 2 1 ) %
+ICG Revenue Items and Selected Business Drivers and Statistics
+Revenues 1Q23 Highlights
+Services
+• Treasury and Trade Solutions revenues were up 31% YoY, driven by 41%
+growth in net interest income and 13% growth in non-interest revenues,
+with growth across all client segments
+• Securities Services revenues up 23% YoY, driven by higher interest rates
+across currencies, partially offset by lower non-interest revenues due to
+the impact of market valuations
+Markets
+• Fixed Income revenues up 4% YoY, driven by strength in rates and
+currencies, partially offset by a decline in spread products
+• Equity Markets revenues down 25% YoY, reflecting reduced client
+activity in cash and equity derivatives relative to a very strong quarter
+last year
+Banking
+Key Drivers and Statistics
+• Investment Banking revenues down 25% YoY, as continued geopolitical
+uncertainty, heightened macroeconomic uncertainty and volatility
+continued to impact client activity
+• Corporate Lending(1)revenues down 14% YoY, driven by lower volume
+and higher credit default swap premiums
+Note: Totals may not sum due to rounding. AUC: Assets Under Custody. AUA: Assets Under Administration.
+All footnotes are presented on Slide 36.",691,2530,pdfplumber_comprehensive,"($ in B, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY Treasury and Trade Solutions Average Loans $78 2% (2)% Average Deposits 704 1% 5% Cross Border Transaction Value(2) 83 2% 10% US Dollar Clearing Volume ( MM)(3) 38 - 6% Commercial Card Spend Volume(4) 16 4% 40% Securities Services AUC AUA ($T)(5) 23 4% - Average Deposits 125 (3)% (7)% Banking Average Loans 191 (2)% (2)% Confidential 12 ( T T T $ in M M ) N e t In t e r e s t In c o m e N o n - in t e r e s t R e v e n u e T r e a s u r y a n d T r a d e S o lu N e t In t e r e s t In c o m e N o n - in t e r e s t R e v e n u e S e c u r it ie s S e r v ic e s R e v e o t a l S e r v ic e s R e v e n u e s F ix e d In c o m e M a r k e t s E q u it y M a r k e t s o t a l M a r k e t s R e v e n u e s A d v is o r y E q u it y U n d e r w r it in g D e b t U n d e r w r it in g In v e s t m e n t B a n k in g(1) C o r p o r a t e L e n d in g o t a l B a n k in g R e v e n u e s t io n u (1) n e s s R e v e n u e s $ 1 Q 2 3 2 ,3 5 8 1 ,0 5 3 3 ,4 1 1 4 8 1 5 7 5 1 ,0 5 6 4 ,4 6 7 4 ,4 5 4 1 ,1 4 7 5 ,6 0 1 2 8 9 1 0 9 3 7 6 7 7 4 5 9 0 1 ,3 6 4 % Δ Q o Q 1 % 1 1 % 4 % - 3 % 2 % 3 % 3 9 % 5 6 % 4 2 % 7 % (2 7 )% 6 6 % 2 0 % 8 % 1 5 % % Δ Y o Y 4 1 % 1 3 % 3 1 % 9 4 % (6 )% 2 3 % 2 9 % 4 % (2 5 )% ( 4 ) % (1 7 )% (4 1 )% (2 4 )% (2 5 )% (1 4 )% ( 2 1 ) % ICG Revenue Items and Selected Business Drivers and Statistics Revenues 1Q23 Highlights Services Treasury and Trade Solutions revenues were up 31% YoY, driven by 41% growth in net interest income and 13% growth in non-interest revenues, with growth across all client segments Securities Services revenues up 23% YoY, driven by higher interest rates across currencies, partially offset by lower non-interest revenues due to the impact of market valuations Markets Fixed Income revenues up 4% YoY, driven by strength in rates and currencies, partially offset by a decline in spread products Equity Markets revenues down 25% YoY, reflecting reduced client activity in cash and equity derivatives relative to a very strong quarter last year Banking Key Drivers and Statistics Investment Banking revenues down 25% YoY, as continued geopolitical uncertainty, heightened macroeconomic uncertainty and volatility continued to impact client activity Corporate Lending(1)revenues down 14% YoY, driven by lower volume and higher credit default swap premiums Note: Totals may not sum due to rounding. AUC: Assets Under Custody. AUA: Assets Under Administration. All footnotes are presented on Slide 36.",5,True
+13,main_text,"Personal Banking & Wealth Management Results
+Personal Banking & Wealth Management Results Personal Banking & Wealth Management Highlights
+($ in MM) 1Q23 % Δ QoQ % Δ YoY
+• Revenues Up 9% YoY, as growth in NII was partially offset by a decline in
+Net Interest Income $5,934 1% 10% NIR, driven by lower investment product revenues in Wealth
+Non-Interest Revenue 514 NM (1)%
+• Expenses Up 9% YoY, predominantly driven by transformation and
+Total Revenues 6,448 6% 9%
+other risk and control investments
+Expenses 4,254 (1)% 9%
+• Credit Costs Cost of $1.6 billion, driven by continued normalization in
+NCLs 1,094 20% 58%
+NCLs, and an ACL build of $0.5 billion, driven by deterioration in
+ACL Build (Release) and Other(1) 497 (34)% NM
+macroeconomic assumptions and card revolving balance growth
+Credit Costs 1,591 (5)% NM
+EBT 603 NM (75)% • Net Income Down 74% YoY, largely driven by the higher credit costs
+Net Income 489 NM (74)%
+• RoTCE of 5.5%, largely driven by the higher credit costs
+Key Drivers / Statistics ($ in B)
+Allocated Average TCE(2) $36 Revenues by Reporting Unit
+RoTCE(3) 5.5%
+($ in B) YoY
+$6.4
+Efficiency Ratio (Δ in bps) 66% (500) -
+$6.1 9%
+$5.9
+Average Loans 333 1% 7%
+1.8 (9)%
+Average Deposits 434 1% (3)% 1.7
+Global Wealth
+1.9
+EOP Loans 335 (1)% 7% Management
+EOP Deposits 437 - (3)%
+NCL Rate (Δ in bps) 1.33% 24 43
+Key Indicators US Personal
+4.7 18%
+4.4
+Banking 4.0
+US Personal Banking Branches 653 - (1)%
+US Installment Lending ($B)(4) 5 7% 64%
+Active Digital Users (MM)(5) 25 1% 7%
+Active Mobile Users (MM)(6) 18 1% 11%
+1Q22 4Q22 1Q23
+Note:Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. NII: Net Interest Income. NIR: Non-Interest Revenue. Credit Card spend
+volume was previously referred to as purchase sales. All footnotes are presented on Slide 37. Confidential 13",323,1852,pdfplumber_comprehensive,"Personal Banking Wealth Management Results Personal Banking Wealth Management Results Personal Banking Wealth Management Highlights ($ in MM) 1Q23 % Δ QoQ % Δ YoY Revenues Up 9% YoY, as growth in NII was partially offset by a decline in Net Interest Income $5,934 1% 10% NIR, driven by lower investment product revenues in Wealth Non-Interest Revenue 514 NM (1)% Expenses Up 9% YoY, predominantly driven by transformation and Total Revenues 6,448 6% 9% other risk and control investments Expenses 4,254 (1)% 9% Credit Costs Cost of $1.6 billion, driven by continued normalization in NCLs 1,094 20% 58% NCLs, and an ACL build of $0.5 billion, driven by deterioration in ACL Build (Release) and Other(1) 497 (34)% NM macroeconomic assumptions and card revolving balance growth Credit Costs 1,591 (5)% NM EBT 603 NM (75)% Net Income Down 74% YoY, largely driven by the higher credit costs Net Income 489 NM (74)% RoTCE of 5.5%, largely driven by the higher credit costs Key Drivers Statistics ($ in B) Allocated Average TCE(2) $36 Revenues by Reporting Unit RoTCE(3) 5.5% ($ in B) YoY $6.4 Efficiency Ratio (Δ in bps) 66% (500) - $6.1 9% $5.9 Average Loans 333 1% 7% 1.8 (9)% Average Deposits 434 1% (3)% 1.7 Global Wealth 1.9 EOP Loans 335 (1)% 7% Management EOP Deposits 437 - (3)% NCL Rate (Δ in bps) 1.33% 24 43 Key Indicators US Personal 4.7 18% 4.4 Banking 4.0 US Personal Banking Branches 653 - (1)% US Installment Lending ($B)(4) 5 7% 64% Active Digital Users (MM)(5) 25 1% 7% Active Mobile Users (MM)(6) 18 1% 11% 1Q22 4Q22 1Q23 Note:Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. NII: Net Interest Income. NIR: Non-Interest Revenue. Credit Card spend volume was previously referred to as purchase sales. All footnotes are presented on Slide 37. Confidential 13",23,True
+14,main_text,"PBWM Revenues Items and Selected Business Drivers and Statistics
+Revenues 1Q23Highlights
+($ in MM) 1Q23 % Δ QoQ % Δ YoY • Branded Cards revenues up 18% YoY, driven by higher net interest income,
+Branded Cards $2,466 4% 18% with interest-earning balances up 18%
+Retail Services 1,613 14% 24%
+Retail Banking 613 1% 3% ꟷ We continue to see strong underlying drivers with new account
+US Personal Banking Revenues 4,692 7% 18% acquisitions up 17%, card spend volumes up 9%, and average loans
+up 15%
+Private Bank 567 (4)% (27)%
+Wealth at Work 193 (1)% 5%
+• Retail Services revenues are up 24% YoY, primarily driven by higher net
+Citigold 996 10% 4%
+interest income, with 11% growth in interest-earning balances
+Global Wealth Management Revenues 1,756 4% (9)%
+Key Drivers and Statistics • Retail Banking revenues were up 3% YoY, primarily driven by higher
+mortgage revenue and strong growth in installment lending, partially
+($ in B, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY
+offset by the impact of the transfer of relationships and associated
+Branded Cards
+deposits to our Wealth business
+New Account Acquisitions (in 000s) 1,164 14% 17%
+Credit Card Spend Volume 116 (8)% 9% • Global Wealth Management revenues down 9% YoY, largely driven by
+Average Loans 97 1% 15% investment product revenueheadwinds and lower net interest income in
+Retail Services the Private Bank
+New Account Acquisitions (in 000s) 1,976 (30)% (9)%
+Credit Card Spend Volume 21 (23)% (3)%
+Average Loans 49 2% 10%
+Retail Banking
+Average Loans 38 4% 14%
+Average Deposits 111 0% (6)%
+EOP Digital Deposits(1) 28 15% 37%
+Global Wealth Management
+Client Advisors(2) 2,875 0% 3%
+Client Assets(3) 759 2% (4)%
+Average Loans 150 0% (1)%
+Average Deposits 323 1% (2)%
+Note: Totals may not sum due to rounding. NM: Not meaningful. Credit card spend volume was previously referred to as purchase sales.EOP: End of period
+All footnotes are presented on Slide 37. Confidential 14",324,1931,pdfplumber_comprehensive,"PBWM Revenues Items and Selected Business Drivers and Statistics Revenues 1Q23Highlights ($ in MM) 1Q23 % Δ QoQ % Δ YoY Branded Cards revenues up 18% YoY, driven by higher net interest income, Branded Cards $2,466 4% 18% with interest-earning balances up 18% Retail Services 1,613 14% 24% Retail Banking 613 1% 3% ꟷ We continue to see strong underlying drivers with new account US Personal Banking Revenues 4,692 7% 18% acquisitions up 17%, card spend volumes up 9%, and average loans up 15% Private Bank 567 (4)% (27)% Wealth at Work 193 (1)% 5% Retail Services revenues are up 24% YoY, primarily driven by higher net Citigold 996 10% 4% interest income, with 11% growth in interest-earning balances Global Wealth Management Revenues 1,756 4% (9)% Key Drivers and Statistics Retail Banking revenues were up 3% YoY, primarily driven by higher mortgage revenue and strong growth in installment lending, partially ($ in B, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY offset by the impact of the transfer of relationships and associated Branded Cards deposits to our Wealth business New Account Acquisitions (in 000s) 1,164 14% 17% Credit Card Spend Volume 116 (8)% 9% Global Wealth Management revenues down 9% YoY, largely driven by Average Loans 97 1% 15% investment product revenueheadwinds and lower net interest income in Retail Services the Private Bank New Account Acquisitions (in 000s) 1,976 (30)% (9)% Credit Card Spend Volume 21 (23)% (3)% Average Loans 49 2% 10% Retail Banking Average Loans 38 4% 14% Average Deposits 111 0% (6)% EOP Digital Deposits(1) 28 15% 37% Global Wealth Management Client Advisors(2) 2,875 0% 3% Client Assets(3) 759 2% (4)% Average Loans 150 0% (1)% Average Deposits 323 1% (2)% Note: Totals may not sum due to rounding. NM: Not meaningful. Credit card spend volume was previously referred to as purchase sales.EOP: End of period All footnotes are presented on Slide 37. Confidential 14",5,True
+14,table,"Revenues |  | 
+($ in MM) 1Q23 % Δ QoQ % Δ YoY
+Branded Cards $2,466 4% 18%
+Retail Services 1,613 14% 24%
+Retail Banking 613 1% 3%
+US Personal Banking Revenues 4,692 7% 18%
+Private Bank 567 (4)% (27)%
+Wealth at Work 193 (1)% 5%
+Citigold 996 10% 4%
+Global Wealth Management Revenues 1,756 4% (9)% |  | 
+Key Drivers and Statistics |  | 
+($ in B, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY |  | 
+Branded Cards |  | 
+New Account Acquisitions (in 000s) | 1,164 14% | 17%
+Credit Card Spend Volume 116 (8)% |  | 9%
+Average Loans | 97 1% | 15%
+Retail Services |  | 
+New Account Acquisitions (in 000s) | 1,976 (30)% (9)% | 
+Credit Card Spend Volume 21 (23)% (3)% |  | 
+Average Loans | 49 2% 10% | 
+Retail Banking |  | 
+Average Loans | 38 4% 14% | 
+Average Deposits 111 0% (6)% |  | 
+EOP Digital Deposits(1) | 28 15% 37% | 
+Global Wealth Management |  | 
+Client Advisors(2) | 2,875 0% 3% | 
+Client Assets(3) 759 2% (4)% |  | 
+Average Loans | 150 0% (1)% | 
+Average Deposits 323 1% (2)% |  | ",199,981,pdfplumber_comprehensive,"Revenues | | ($ in MM) 1Q23 % Δ QoQ % Δ YoY Branded Cards $2,466 4% 18% Retail Services 1,613 14% 24% Retail Banking 613 1% 3% US Personal Banking Revenues 4,692 7% 18% Private Bank 567 (4)% (27)% Wealth at Work 193 (1)% 5% Citigold 996 10% 4% Global Wealth Management Revenues 1,756 4% (9)% | | Key Drivers and Statistics | | ($ in B, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY | | Branded Cards | | New Account Acquisitions (in 000s) | 1,164 14% | 17% Credit Card Spend Volume 116 (8)% | | 9% Average Loans | 97 1% | 15% Retail Services | | New Account Acquisitions (in 000s) | 1,976 (30)% (9)% | Credit Card Spend Volume 21 (23)% (3)% | | Average Loans | 49 2% 10% | Retail Banking | | Average Loans | 38 4% 14% | Average Deposits 111 0% (6)% | | EOP Digital Deposits(1) | 28 15% 37% | Global Wealth Management | | Client Advisors(2) | 2,875 0% 3% | Client Assets(3) 759 2% (4)% | | Average Loans | 150 0% (1)% | Average Deposits 323 1% (2)% | |",1,True
+15,main_text,"Legacy Franchises Results
+Legacy Franchises Results Legacy Franchises Highlights
+($ in MM) 1Q23 % Δ QoQ % Δ YoY • Revenues Up 48% YoY (down 7% ex-divestiture-related impacts(3)),
+primarily driven by a gain on sale of the consumer business in India,
+Net Interest Income $1,290 (3)% (14)%
+partially offset by the absence of closed exit markets and wind-downs
+Non-Interest Revenue 1,562 NM NM
+• Expenses Down 24% YoY (down 3% ex-divestiture-related impacts(3)),
+Total Revenues 2,852 39% 48%
+primarily driven by the absence of the goodwill impairment in 1Q22 and
+Expenses 1,752 (4)% (24)% the impact of closed exit markets and wind-downs
+NCLs 186 11% 23% • Credit Costs Cost of $345 million
+ACL Build (Release) and Other(1) 159 NM NM
+• Completed sales of the India and Vietnam consumer banking businesses
+Credit Costs 345 NM NM
+• Loans and deposits decreased YoY due to continued wind-down of
+EBT 755 NM NM
+Korea and Russia consumer businesses
+Net Income (Loss) 604 NM NM
+Revenues by Reporting Unit
+($ in B) YoY
+Key Drivers / Statistics ($ in B) $2.9
+48%
+Allocated Average TCE(2) $13 NM
+Efficiency Ratio 61% NM NM $2.1
+$1.9 1.3 16%
+Legacy
+Average Loans 38 - (21)%
+Holdings Assets
+Average Deposits 50 - (9)%
+Mexico(4) 1.1 1.3
+1.5 92%
+Asia
+Consumer(5) 0.8 0.8
+1Q22 4Q22 1Q23
+Note: Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses.
+All footnotes are presented on Slide 37. Confidential 15",247,1445,pdfplumber_comprehensive,"Legacy Franchises Results Legacy Franchises Results Legacy Franchises Highlights ($ in MM) 1Q23 % Δ QoQ % Δ YoY Revenues Up 48% YoY (down 7% ex-divestiture-related impacts(3)), primarily driven by a gain on sale of the consumer business in India, Net Interest Income $1,290 (3)% (14)% partially offset by the absence of closed exit markets and wind-downs Non-Interest Revenue 1,562 NM NM Expenses Down 24% YoY (down 3% ex-divestiture-related impacts(3)), Total Revenues 2,852 39% 48% primarily driven by the absence of the goodwill impairment in 1Q22 and Expenses 1,752 (4)% (24)% the impact of closed exit markets and wind-downs NCLs 186 11% 23% Credit Costs Cost of $345 million ACL Build (Release) and Other(1) 159 NM NM Completed sales of the India and Vietnam consumer banking businesses Credit Costs 345 NM NM Loans and deposits decreased YoY due to continued wind-down of EBT 755 NM NM Korea and Russia consumer businesses Net Income (Loss) 604 NM NM Revenues by Reporting Unit ($ in B) YoY Key Drivers Statistics ($ in B) $2.9 48% Allocated Average TCE(2) $13 NM Efficiency Ratio 61% NM NM $2.1 $1.9 1.3 16% Legacy Average Loans 38 - (21)% Holdings Assets Average Deposits 50 - (9)% Mexico(4) 1.1 1.3 1.5 92% Asia Consumer(5) 0.8 0.8 1Q22 4Q22 1Q23 Note: Totals may not sum due to rounding. NM: Not meaningful. NCL: Net Credit Losses. ACL: Allowance for Credit Losses. All footnotes are presented on Slide 37. Confidential 15",15,True
+16,main_text,"Corporate / Other Results
+Corporate / Other Results Corporate / Other Highlights
+($ in MM, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY • Revenues Higher revenue YoY, largely driven by higher net revenue from
+the investment portfolio
+Net Interest Income $1,096 5% NM
+Non-Interest Revenue (182) 47% NM • Expenses Up 19% YoY, driven by transformation and other risk and
+control investments, partially offset by a reduction in consulting fees
+Total Revenues 914 31% NM
+Expenses 310 26% 19% • Credit Costs Cost of Credit, driven by reserve build
+Credit Costs 111 NM NM
+EBT 493 9% NM
+Net Income 255 (41)% 35%
+Allocated Average TCE ($ in B)(1) $16
+Note: Totals may not sum due to rounding. NM: Not meaningful.
+All footnotes are presented on Slide 38. Confidential 16",133,760,pdfplumber_comprehensive,"Corporate Other Results Corporate Other Results Corporate Other Highlights ($ in MM, unless otherwise noted) 1Q23 % Δ QoQ % Δ YoY Revenues Higher revenue YoY, largely driven by higher net revenue from the investment portfolio Net Interest Income $1,096 5% NM Non-Interest Revenue (182) 47% NM Expenses Up 19% YoY, driven by transformation and other risk and control investments, partially offset by a reduction in consulting fees Total Revenues 914 31% NM Expenses 310 26% 19% Credit Costs Cost of Credit, driven by reserve build Credit Costs 111 NM NM EBT 493 9% NM Net Income 255 (41)% 35% Allocated Average TCE ($ in B)(1) $16 Note: Totals may not sum due to rounding. NM: Not meaningful. All footnotes are presented on Slide 38. Confidential 16",4,True
+17,main_text,"Full Year 2023 Outlook Unchanged
+• Full year 2023 Revenues: $78 - $79 billion, excluding 2023 divestiture-related impacts(1,2,3)
+Revenue
+• Full year 2023 Net Interest Income, excluding Markets: ~$45 billion(2)
+Expenses • Full year 2023 Expenses: ~$54 billion, excluding 2023 divestiture-related impacts(1,2,3)
+Cost of
+• Continued normalization of net credit losses
+Credit
+• Full year effective tax rate: ~23-24%, excluding discrete items and divestiture-related
+Tax Rate
+impacts(1,2,3)
+Note: Footnote 1 is presented on Slide 38.
+(2) This is a forward-looking Non-GAAP Financial Measure. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward-looking estimates or targets for revenue, expenses, and RoTCE. We
+are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate
+calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be
+significant to future results.
+(3) 2023 does not include any one-time financial impacts related to signed deals to be closed in 2023 or Cdoenaflidse innt ipalrocess such as Mexico. 17",203,1409,pdfplumber_comprehensive,"Full Year 2023 Outlook Unchanged Full year 2023 Revenues: $78 - $79 billion, excluding 2023 divestiture-related impacts(1,2,3) Revenue Full year 2023 Net Interest Income, excluding Markets: $45 billion(2) Expenses Full year 2023 Expenses: $54 billion, excluding 2023 divestiture-related impacts(1,2,3) Cost of Continued normalization of net credit losses Credit Full year effective tax rate: 23-24%, excluding discrete items and divestiture-related Tax Rate impacts(1,2,3) Note: Footnote 1 is presented on Slide 38. (2) This is a forward-looking Non-GAAP Financial Measure. From time to time, management may discuss forward-looking non-GAAP financial measures, such as forward-looking estimates or targets for revenue, expenses, and RoTCE. We are unable to provide a reconciliation of forward-looking non-GAAP financial measures to their most directly comparable GAAP financial measures because we are unable to provide, without unreasonable effort, a meaningful or accurate calculation or estimation of amounts that would be necessary for the reconciliation due to the complexity and inherent difficulty in forecasting and quantifying future amounts or when they may occur. Such unavailable information could be significant to future results. (3) 2023 does not include any one-time financial impacts related to signed deals to be closed in 2023 or Cdoenaflidse innt ipalrocess such as Mexico. 17",7,True
+17,table,"Revenue | • Full year 2023 Revenues: $78 - $79 billion, excluding 2023 divestiture-related impacts(1,2,3)
+• Full year 2023 Net Interest Income, excluding Markets: ~$45 billion(2)",26,178,pdfplumber_comprehensive,"Revenue | Full year 2023 Revenues: $78 - $79 billion, excluding 2023 divestiture-related impacts(1,2,3) Full year 2023 Net Interest Income, excluding Markets: $45 billion(2)",1,True
+17,table,"Expenses | • Full year 2023 Expenses: ~$54 billion, excluding 2023 divestiture-related impacts(1,2,3)",13,101,pdfplumber_comprehensive,"Expenses | Full year 2023 Expenses: $54 billion, excluding 2023 divestiture-related impacts(1,2,3)",1,False
+17,table,"Cost of
+Credit | • Continued normalization of net credit losses",11,63,pdfplumber_comprehensive,Cost of Credit | Continued normalization of net credit losses,1,False
+17,table,"Tax Rate | • Full year effective tax rate: ~23-24%, excluding discrete items and divestiture-related
+impacts(1,2,3)",16,115,pdfplumber_comprehensive,"Tax Rate | Full year effective tax rate: 23-24%, excluding discrete items and divestiture-related impacts(1,2,3)",1,False
+18,main_text,"-
+uncertainty and changes in circumstances. These statements are not guarantees of future results or occurrences.
+Actual results and capital and other financial condition may differ materially from those included in these statements
+due to a variety of factors. These factors include, among others: continued elevated levels of inflation and its impacts;
+transformation and other strategic initiatives, including consummation of its remaining exits and wind-downs and any
+loss on sale and temporary capital impacts related to currency translation adjustment (CTA) losses and other impacts;
+the impacts related to or resulting from recent bank failures and other volatility, including potential increased
+regulatory requirements and costs and potential impacts to macroeconomic conditions; the impacts related to or
+-K. Any forward-looking statements made by
+or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward-
+looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking
+statements were made.",163,1107,pdfplumber_comprehensive,"- uncertainty and changes in circumstances. These statements are not guarantees of future results or occurrences. Actual results and capital and other financial condition may differ materially from those included in these statements due to a variety of factors. These factors include, among others: continued elevated levels of inflation and its impacts; transformation and other strategic initiatives, including consummation of its remaining exits and wind-downs and any loss on sale and temporary capital impacts related to currency translation adjustment (CTA) losses and other impacts; the impacts related to or resulting from recent bank failures and other volatility, including potential increased regulatory requirements and costs and potential impacts to macroeconomic conditions; the impacts related to or -K. Any forward-looking statements made by or on behalf of Citigroup speak only as to the date they are made, and Citi does not undertake to update forward- looking statements to reflect the impact of circumstances or events that arise after the date the forward-looking statements were made.",6,False
+20,main_text,"Confidential 20
+1 Q 2
+$ in
+N I
+N I
+R e v
+E x p
+C r e
+E B T
+N e t
+A v g
+A v g
+A llo
+R o T
+C E T
+3
+b illio n s
+I
+R
+e n u e s
+e n s e s
+d it C o s t s
+I n c o m e t o
+L o a n s
+D e p o s it s
+c a t e d A v e
+(2 ) C E
+1 C a p it a l R
+c
+r a
+a
+o m
+g e
+t io
+m
+T
+(3
+C
+)
+o n
+E (1 )
+I C
+$
+$ 5 .0
+6 .2
+1 1 .2
+7 .0
+( 0 .1 )
+4 .3
+3 .3
+$ 2 8 3
+8 5 3
+$ 9 6
+1 3 .8 %
+G
+Y o Y Δ ( %
+3 3 %
+( 1 6 ) %
+1 %
+4 %
+N M
+2 5 %
+2 3 %
+( 2 ) %
+3 %
+)
+$
+$
+3
+4
+$
+5
+P B
+$
+5 .9
+0 .5
+6 .4
+4 .3
+1 .6
+0 .6
+0 .5
+3 3
+3 4
+3 6
+.5 %
+W M
+Y o Y Δ ( %
+1 0 %
+( 1 ) %
+9 %
+9 %
+N M
+( 7 5 ) %
+( 7 4 ) %
+7 %
+( 3 ) %
+)
+C
+( 0
+o r p . /
+$
+$ 1 .1
+( 0 .2 )
+0 .9
+0 .3
+0 .1
+0 .5
+( 0 .0 )
+-
+2 6
+$ 1 6
+.6 ) %
+O t h
+Y
+e
+o
+r
+Y Δ ( %
+N
+N
+N
+1 9
+N
+N
+N
+N
+N
+M
+M
+M
+%
+M
+M
+M
+M
+M
+)
+L e
+1
+g
+9
+a c y
+$
+$ 1 .3
+1 .6
+2 .9
+1 .8
+0 .3
+0 .8
+0 .6
+$ 3 8
+5 0
+$ 1 3
+.0 %
+F r a n
+Y
+c
+o
+h
+Y
+is e s
+Δ ( %
+( 1 4 ) %
+N M
+4 8 %
+( 2 4 ) %
+N M
+N M
+N M
+( 2 1 ) %
+( 9 ) %
+)
+$ 1
+2
+1
+$ 6
+1 ,3
+$
+1 0
+1 3
+T
+$
+3 .3
+8 .1
+1 .4
+3 .3
+2 .0
+6 .2
+4 .3
+5 4
+6 3
+1 6 1
+.9 %
+.4 %
+o t a l
+Y o Y Δ ( %
+2 3 %
+( 3 ) %
+1 2 %
+1 %
+N M
+1 7 %
+7 %
+1 %
+2 %
+)
+1Q23 Financial Summary of Businesses
+($ in B)
+(4)
+Note: Totals may not sum due to rounding. ICG: Institutional Clients Group. PBWM: Personal Banking & Wealth Management. NIR: Non-Interest Revenue. NII: Net Interest Income. EOP: End of Period. NM: Not Meaningful.
+All footnotes are presented on Slide38.",531,1339,pdfplumber_comprehensive,"Confidential 20 1 Q 2 $ in N I N I R e v E x p C r e E B T N e t A v g A v g A llo R o T C E T 3 b illio n s I R e n u e s e n s e s d it C o s t s I n c o m e t o L o a n s D e p o s it s c a t e d A v e (2 ) C E 1 C a p it a l R c r a a o m g e t io m T (3 C ) o n E (1 ) I C $ $ 5 .0 6 .2 1 1 .2 7 .0 ( 0 .1 ) 4 .3 3 .3 $ 2 8 3 8 5 3 $ 9 6 1 3 .8 % G Y o Y Δ ( % 3 3 % ( 1 6 ) % 1 % 4 % N M 2 5 % 2 3 % ( 2 ) % 3 % ) $ $ 3 4 $ 5 P B $ 5 .9 0 .5 6 .4 4 .3 1 .6 0 .6 0 .5 3 3 3 4 3 6 .5 % W M Y o Y Δ ( % 1 0 % ( 1 ) % 9 % 9 % N M ( 7 5 ) % ( 7 4 ) % 7 % ( 3 ) % ) C ( 0 o r p . $ $ 1 .1 ( 0 .2 ) 0 .9 0 .3 0 .1 0 .5 ( 0 .0 ) - 2 6 $ 1 6 .6 ) % O t h Y e o r Y Δ ( % N N N 1 9 N N N N N M M M % M M M M M ) L e 1 g 9 a c y $ $ 1 .3 1 .6 2 .9 1 .8 0 .3 0 .8 0 .6 $ 3 8 5 0 $ 1 3 .0 % F r a n Y c o h Y is e s Δ ( % ( 1 4 ) % N M 4 8 % ( 2 4 ) % N M N M N M ( 2 1 ) % ( 9 ) % ) $ 1 2 1 $ 6 1 ,3 $ 1 0 1 3 T $ 3 .3 8 .1 1 .4 3 .3 2 .0 6 .2 4 .3 5 4 6 3 1 6 1 .9 % .4 % o t a l Y o Y Δ ( % 2 3 % ( 3 ) % 1 2 % 1 % N M 1 7 % 7 % 1 % 2 % ) 1Q23 Financial Summary of Businesses ($ in B) (4) Note: Totals may not sum due to rounding. ICG: Institutional Clients Group. PBWM: Personal Banking Wealth Management. NIR: Non-Interest Revenue. NII: Net Interest Income. EOP: End of Period. NM: Not Meaningful. All footnotes are presented on Slide38.",51,True
+21,main_text,"Estimated Timelines for Signed Exit Markets & Contribution
+($ in B)
+Exit Markets Contribution to P&L
+Estimated Timeline & Status
+Buyer Country Signed Closed In Process
+NAB Australia 3Q 2021 2Q 2022 ▪ Mexico Sale or IPO
+UnionBank Philippines 4Q 2021 3Q 2022
+d AUB Bahrain 1Q 2022 4Q 2022
+e
+s
+o
+l C Thailand 1Q 2022 44QQ 2 2002222 Wind-Down / On Hold
+UOB
+Malaysia 1Q 2022 4Q 2022
+▪ China
+Vietnam 11QQ 22002222 1Q 2023
+▪ Korea
+Axis Bank India 1Q 2022 1Q 2023
+▪ Poland
+d DBS Taiwan 1Q 2022 2H 2023
+e ▪ Russia (Consumer)(2)
+n
+g
+i UOB Indonesia 1Q 2022 2H 2023
+S
+Note: Closing timelines represent estimated closing dates based on expected satisfaction of all closing conditions, reflecting latest available information, including with respect to migration approach (e.g., certain markets will require
+transitional services agreements after closing while others will not, which will impact closing timeline). TCotoanlfsid menatiayl not sumdue to rounding. All footnotes are presented on Slide 38. 21
+S
+C
+S
+I
+W
+L
+D
+L
+t a t u s
+lo s e d
+ig n e d
+n P r o c e s
+in d - D o
+e g a c y F
+iv e s t it u
+e g a c y F
+s
+w
+r a
+r e
+r a
+n
+n
+-
+n
+s / O
+c h is
+r e la t
+c h is
+n
+e
+e
+e
+H
+s
+d I
+s e
+o
+m
+x
+ld
+p
+-
+/ O
+a c
+d iv
+t
+e
+t h e r
+(1) s
+s t it u r e s
+R e v e n
+$ 1 .2
+0 .7
+4 .7
+1 .7
+8 .3
+( 0 .7
+8 .9
+u
+)
+e
+2 0 2 1 (1)
+E x p e n
+$ 1 .5
+0 .6
+3 .2
+3 .0
+8 .3
+1 .2
+7 .1
+s e s R e v
+$
+0
+4
+0
+8
+0
+7
+e n
+2 .3
+.6
+.8
+.8
+.5
+.9
+.6
+u e
+2 0 2 2 (1)
+E x p e n
+$ 1 .4
+0 .7
+3 .5
+2 .2
+7 .8
+0 .7
+7 .1
+s e s R e v e n
+$ 0 .4
+0 .2
+1 .1
+0 .3
+1 .9
+( 0 .0
+2 .0
+u
+)
+e
+1 Q 2 2 (1 )
+E x p e n
+$ 0 .4
+0 .2
+0 .8
+1 .0
+2 .3
+0 .6
+1 .7
+s e s R e v
+$
+0
+1
+0
+2
+1
+1
+e n
+1 .2
+.2
+.3
+.2
+.9
+.0
+.8
+u e
+1 Q 2 3 (1 )
+E x p e n
+$ 0 .3
+0 .2
+1 .0
+0 .3
+1 .8
+0 .1
+1 .7
+s e s",487,1705,pdfplumber_comprehensive,"Estimated Timelines for Signed Exit Markets Contribution ($ in B) Exit Markets Contribution to P L Estimated Timeline Status Buyer Country Signed Closed In Process NAB Australia 3Q 2021 2Q 2022 Mexico Sale or IPO UnionBank Philippines 4Q 2021 3Q 2022 d AUB Bahrain 1Q 2022 4Q 2022 e s o l C Thailand 1Q 2022 44QQ 2 2002222 Wind-Down On Hold UOB Malaysia 1Q 2022 4Q 2022 China Vietnam 11QQ 22002222 1Q 2023 Korea Axis Bank India 1Q 2022 1Q 2023 Poland d DBS Taiwan 1Q 2022 2H 2023 e Russia (Consumer)(2) n g i UOB Indonesia 1Q 2022 2H 2023 S Note: Closing timelines represent estimated closing dates based on expected satisfaction of all closing conditions, reflecting latest available information, including with respect to migration approach (e.g., certain markets will require transitional services agreements after closing while others will not, which will impact closing timeline). TCotoanlfsid menatiayl not sumdue to rounding. All footnotes are presented on Slide 38. 21 S C S I W L D L t a t u s lo s e d ig n e d n P r o c e s in d - D o e g a c y F iv e s t it u e g a c y F s w r a r e r a n n - n s O c h is r e la t c h is n e e e H s d I s e o m x ld p - O a c d iv t e t h e r (1) s s t it u r e s R e v e n $ 1 .2 0 .7 4 .7 1 .7 8 .3 ( 0 .7 8 .9 u ) e 2 0 2 1 (1) E x p e n $ 1 .5 0 .6 3 .2 3 .0 8 .3 1 .2 7 .1 s e s R e v $ 0 4 0 8 0 7 e n 2 .3 .6 .8 .8 .5 .9 .6 u e 2 0 2 2 (1) E x p e n $ 1 .4 0 .7 3 .5 2 .2 7 .8 0 .7 7 .1 s e s R e v e n $ 0 .4 0 .2 1 .1 0 .3 1 .9 ( 0 .0 2 .0 u ) e 1 Q 2 2 (1 ) E x p e n $ 0 .4 0 .2 0 .8 1 .0 2 .3 0 .6 1 .7 s e s R e v $ 0 1 0 2 1 1 e n 1 .2 .2 .3 .2 .9 .0 .8 u e 1 Q 2 3 (1 ) E x p e n $ 0 .3 0 .2 1 .0 0 .3 1 .8 0 .1 1 .7 s e s",62,False
+21,table,"Buyer | Country | Signed |  | Closed | 
+NAB | Australia | 3Q 2021 |  | 2Q 2022 | 
+UnionBank | Philippines | 4Q 2021 |  | 3Q 2022 | 
+AUB | Bahrain | 1Q 2022 |  | 4Q 2022 | 
+ |  |  | 1Q 2022 |  | 4Q 2022
+UOB | Thailand |  | 1Q 2022 |  | 44QQ 2 2002222
+ | Malaysia |  | 1Q 2022 | 4Q 2022 | 4Q 2022
+ | Vietnam |  | 11QQ 22002222 | 1Q 2023 | 
+Axis Bank | India |  | 1Q 2022 | 1Q 2023 | 
+DBS | Taiwan |  | 1Q 2022 | 2H 2023 | 
+UOB | Indonesia | 1Q 2022 | 1Q 2022 | 2H 2023 | ",121,469,pdfplumber_comprehensive,Buyer | Country | Signed | | Closed | NAB | Australia | 3Q 2021 | | 2Q 2022 | UnionBank | Philippines | 4Q 2021 | | 3Q 2022 | AUB | Bahrain | 1Q 2022 | | 4Q 2022 | | | | 1Q 2022 | | 4Q 2022 UOB | Thailand | | 1Q 2022 | | 44QQ 2 2002222 | Malaysia | | 1Q 2022 | 4Q 2022 | 4Q 2022 | Vietnam | | 11QQ 22002222 | 1Q 2023 | Axis Bank | India | | 1Q 2022 | 1Q 2023 | DBS | Taiwan | | 1Q 2022 | 2H 2023 | UOB | Indonesia | 1Q 2022 | 1Q 2022 | 2H 2023 |,1,False
+21,table,"In Process
+▪ Mexico Sale or IPO",7,31,pdfplumber_comprehensive,In Process Mexico Sale or IPO,1,False
+21,table,"d
+e
+s
+o
+l
+C
+d
+e
+n
+g
+i
+S",12,23,pdfplumber_comprehensive,d e s o l C d e n g i S,1,False
+21,table,"Wind-Down / On Hold
+▪ China
+▪ Korea
+▪ Poland
+▪ Russia (Consumer)(2)",13,67,pdfplumber_comprehensive,Wind-Down On Hold China Korea Poland Russia (Consumer)(2),1,False
+22,main_text,"1Q23 Credit Portfolio by Segment and Geography
+(1Q23 EOP $ in B)
+ICG PBWM Legacy Franchises
+Signed Exit Markets EOP Loans(1): ~$8B
+n
+o
+i
+t u
+b
+i
+r t
+s
+i
+D
+n
+a
+o
+L
+c
+i h
+p
+a
+r
+g
+o
+e
+G
+DM: $188 DM: $294
+EM: $93 EM: $41
+$281 $281
+Banking 13% Other
+n Services 5% Energy &
+o
+i t Markets 16% Commodities
+i s Banks
+o 67%
+p 7% Power, Chemicals,
+m Metals, & Mining
+o 18%
+C Real Estate
+n
+a 12% Consumer Retail
+o
+L
+10% TMT
+29%
+Transportation and
+20%
+Industrials
+5%
+Total LoanTsotal LoanTsotal Loans
+Note: Totals may not sum due to rounding.EOP: End of Period. DM: Developed Markets. EM: Emerging Markets. ICG: Institutional Client Group. PBWM: Personal Banking & Wealth Management. TMT:Technology, Media and
+Telecommunications. All footnotes are presented on Slide 38. Confidential 22
+E M3
+H
+E%
+o
+A
+n g6 K% o n g S in g6 a p% o r e
+A
+Nm8 o r t h
+e r ic
+5 %
+a
+C h3 in
+%
+E
+a
+mE eM4 r gE% in
+A
+g
+A
+M
+N o r t h
+m e r ic
+8 %
+e x ic o
+6 5 %
+a
+K2 o0 r e% a
+Hong Kong Brazil Singapore
+3% 5% 3%
+Mexico
+3%
+Developed China
+EMEA 2%
+19%
+Other EM
+16%
+North
+America
+45%
+Developed
+Asia
+4%
+DM: $3
+EM: $34
+$335 $37
+Private Bank(2)
+30%
+Mortgages 51%
+Personal,
+Small Business, 22% Personal,
+Middle Market
+Small Business
+4% & Other & Other
+Mortgages
+26%
+Cards
+Cards
+45%
+23%
+Total Loans Total Loans",278,1265,pdfplumber_comprehensive,"1Q23 Credit Portfolio by Segment and Geography (1Q23 EOP $ in B) ICG PBWM Legacy Franchises Signed Exit Markets EOP Loans(1): $8B n o i t u b i r t s i D n a o L c i h p a r g o e G DM: $188 DM: $294 EM: $93 EM: $41 $281 $281 Banking 13% Other n Services 5% Energy o i t Markets 16% Commodities i s Banks o 67% p 7% Power, Chemicals, m Metals, Mining o 18% C Real Estate n a 12% Consumer Retail o L 10% TMT 29% Transportation and 20% Industrials 5% Total LoanTsotal LoanTsotal Loans Note: Totals may not sum due to rounding.EOP: End of Period. DM: Developed Markets. EM: Emerging Markets. ICG: Institutional Client Group. PBWM: Personal Banking Wealth Management. TMT:Technology, Media and Telecommunications. All footnotes are presented on Slide 38. Confidential 22 E M3 H E% o A n g6 K% o n g S in g6 a p% o r e A Nm8 o r t h e r ic 5 % a C h3 in % E a mE eM4 r gE% in A g A M N o r t h m e r ic 8 % e x ic o 6 5 % a K2 o0 r e% a Hong Kong Brazil Singapore 3% 5% 3% Mexico 3% Developed China EMEA 2% 19% Other EM 16% North America 45% Developed Asia 4% DM: $3 EM: $34 $335 $37 Private Bank(2) 30% Mortgages 51% Personal, Small Business, 22% Personal, Middle Market Small Business 4% Other Other Mortgages 26% Cards Cards 45% 23% Total Loans Total Loans",9,False
+22,table,"Signed Exit Markets
+EOP Loans(1): ~$8B",6,38,pdfplumber_comprehensive,Signed Exit Markets EOP Loans(1): $8B,1,False
+23,main_text,"Confidential 23
+2 .8
+0
+1
+4
+.7
+Q
+%
+5
+2 1
+%
+2 .3
+0 .5
+2 Q
+6
+6
+2
+%
+%
+1
+1 .7 3
+0 .4
+3 Q
+9
+%
+4
+2
+0
+%
+1
++ D P
+1 .3
+0 .
+4 Q
+D
+3
+4
+2
+%
+4
+1
+%
+N
+1 . 4
+0
+1 Q
+C
+6
+. 4
+2
+L
+%
+7
+2
+%
+1 .5
+0
+2 Q
+0
+.4
+2
+%
+6
+2
+%
+1 .5
+0 .
+3 Q
+0 %
+5 1 %
+2 2
+1 .6
+0
+4 Q
+8
+.6
+2
+%
+3
+2
+%
+2
+0
+1
+.1
+.7
+Q
+8
+8
+2
+%
+%
+3
+3
+1
+.4
+.3
+1 Q
+5
+9
+2
+%
+%
+1
+3
+1 . 0
+2 Q
+.0
+8
+2
+9
+%
+1
+%
+2
+0
+3
+.2
+. 9
+Q
+9
+3
+9
+2
+0
+%
+%
+1
++ D P
+2 .1
+1 .0
+4 Q
+D
+0
+5
+2
+%
+%
+1
+N
+2 .3
+1 .1
+1 Q
+C
+1
+5
+2
+L
+%
+%
+2
+2
+1
+2
+.6
+. 1
+Q
+0
+6
+2
+%
+%
+2
+2 . 7
+1 .3
+3 Q
+1
+5
+2
+%
+%
+2
+3 .3
+1 .5
+4 Q
+0
+6
+2
+%
+%
+2
+4 .0
+1 .7
+1 Q
+8
+6
+2
+%
+%
+3
+Credit Trends for Branded Cards and Retail Services
+($ in B)
+Branded Cards Retail Services
+Normalized Normalized
+EOP 1Q22 4Q22 1Q23 EOP 1Q22 4Q22 1Q23
+NCL Rate: NCL Rate:
+Loans $85.9 $100.2 $97.1 Loans $44.1 $50.5 $48.4
+3.00-3.25% 5.00 5.5%
+ACLL Balance and ACLL / EOP Loans ACLL Balance and ACLL / EOP Loans
+ACLL Balance ACLL / EOP Loans ACLL Balance ACLL / EOP Loans
+9.8% 13.4%
+12.7%
+8.6% 8.3% 11.5% 11.1%
+7.1% 10.0% 9.5% 9.8% 10.1% 10.3%
+6.6% 6.6%
+6.3% 6.2% 6.2%
+$7.7
+$7.1 $6.8
+$6.2 $5.7 $5.8 $5.9 $6.2 $6.4 $5.7 $5.4 $4.9 $4.6 $4.5 $4.7 $5.2 $5.4
+$4.2
+1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23
+Note: ACLL: Allowancefor credit losses on loans. DPD: Days Past Due. EOP: End of Period. NCL: Net Credit Losses. ACLL: Allowance for Credit Losseson Loans.",389,1329,pdfplumber_comprehensive,Confidential 23 2 .8 0 1 4 .7 Q % 5 2 1 % 2 .3 0 .5 2 Q 6 6 2 % % 1 1 .7 3 0 .4 3 Q 9 % 4 2 0 % 1 + D P 1 .3 0 . 4 Q D 3 4 2 % 4 1 % N 1 . 4 0 1 Q C 6 . 4 2 L % 7 2 % 1 .5 0 2 Q 0 .4 2 % 6 2 % 1 .5 0 . 3 Q 0 % 5 1 % 2 2 1 .6 0 4 Q 8 .6 2 % 3 2 % 2 0 1 .1 .7 Q 8 8 2 % % 3 3 1 .4 .3 1 Q 5 9 2 % % 1 3 1 . 0 2 Q .0 8 2 9 % 1 % 2 0 3 .2 . 9 Q 9 3 9 2 0 % % 1 + D P 2 .1 1 .0 4 Q D 0 5 2 % % 1 N 2 .3 1 .1 1 Q C 1 5 2 L % % 2 2 1 2 .6 . 1 Q 0 6 2 % % 2 2 . 7 1 .3 3 Q 1 5 2 % % 2 3 .3 1 .5 4 Q 0 6 2 % % 2 4 .0 1 .7 1 Q 8 6 2 % % 3 Credit Trends for Branded Cards and Retail Services ($ in B) Branded Cards Retail Services Normalized Normalized EOP 1Q22 4Q22 1Q23 EOP 1Q22 4Q22 1Q23 NCL Rate: NCL Rate: Loans $85.9 $100.2 $97.1 Loans $44.1 $50.5 $48.4 3.00-3.25% 5.00 5.5% ACLL Balance and ACLL EOP Loans ACLL Balance and ACLL EOP Loans ACLL Balance ACLL EOP Loans ACLL Balance ACLL EOP Loans 9.8% 13.4% 12.7% 8.6% 8.3% 11.5% 11.1% 7.1% 10.0% 9.5% 9.8% 10.1% 10.3% 6.6% 6.6% 6.3% 6.2% 6.2% $7.7 $7.1 $6.8 $6.2 $5.7 $5.8 $5.9 $6.2 $6.4 $5.7 $5.4 $4.9 $4.6 $4.5 $4.7 $5.2 $5.4 $4.2 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23 Note: ACLL: Allowancefor credit losses on loans. DPD: Days Past Due. EOP: End of Period. NCL: Net Credit Losses. ACLL: Allowance for Credit Losseson Loans.,88,False
+23,table,"Branded Cards
+Normalized
+NCL Rate:
+3.00-3.25%",6,45,pdfplumber_comprehensive,Branded Cards Normalized NCL Rate: 3.00-3.25%,3,False
+23,table,"Retail Services
+Normalized
+NCL Rate:
+5.00 5.5%",7,46,pdfplumber_comprehensive,Retail Services Normalized NCL Rate: 5.00 5.5%,3,False
+23,table," | EOP
+Loans |  | 1Q22 |  | 4Q22 |  | 1Q23 | 
+ |  |  | $85.9 |  | $100.2 |  | $97.1 | ",24,86,pdfplumber_comprehensive,| EOP Loans | | 1Q22 | | 4Q22 | | 1Q23 | | | | $85.9 | | $100.2 | | $97.1 |,4,False
+23,table," | EOP
+Loans |  | 1Q22 |  | 4Q22 |  | 1Q23 | 
+ |  |  | $44.1 |  | $50.5 |  | $48.4 | ",24,85,pdfplumber_comprehensive,| EOP Loans | | 1Q22 | | 4Q22 | | 1Q23 | | | | $44.1 | | $50.5 | | $48.4 |,4,False
+24,main_text,"Update on Russia Exposure
+Overview Timeline
+• Russia exposure decreased by approximately $1.4B from last quarter: Intention to exit Consumer business
+ꟷ Exposure decrease of $0.5B driven by the depreciation of the ruble
+1
+Expand the scope of exit process to include other lines of
+ꟷ Exposure decrease of $1.9B in local currency terms, primarily driven by
+2
+business and stop soliciting new business or clients.
+client deposit outflows and loan repayments and sales
+3ꟷ Exposure increase of $1.0B in local currency terms, driven by net
+Wind down Consumer and Local Commercial Banking
+increases in trapped dividends held in the National Settlements
+Businesses
+Depository (NSD)
+• Continued to see a shift in the mix of the exposure as proceeds from loan
+Announced discontinuation of nearly all the institutional
+repayments and sales were deposited with the Central Bank
+banking services in Russia by the end of March 2023
+• Released $0.1B of credit reserves for direct Russia-related exposures, driven
+by continued reduction of higher risk wholesale credit exposure via client
+Completed sale of Consumer PIL portfolio
+paydowns
+• Net investment in the Russian entity remained relatively flat at $1.2B
+Today: Continue to wind down operations and continue to manage our
+compared to 4Q22, as the depreciation of the Ruble was offset by increases
+existing regulatory commitments and obligation to depositors
+in retained earnings
+($ in B) Trend in Russia Exposure Since 4Q21
+$9.8
+$7.9 $8.4 $7.9 1 3
+$7.5 2 $3.6B of cash on deposit
+$1.0 $6.1 with Central Bank of Russia
+($0.5)
++ dividends held in the NSD
+($1.9)
+4Q21 1Q22 2Q22 3Q22 4Q22 Ruble Impact Exposure Exposure 1Q23
+Decrease in Increase in
+Local Currency Local Currency
+Note: All information for 1Q23 is preliminary. Citi has a currency translation adjustment (CTA) loss balance of approximately $1.4 bil
+the substantial liquidation or a loss of control of the subsidiary. PIL: Personal Installment Loan. Confidential 24",314,1965,pdfplumber_comprehensive,"Update on Russia Exposure Overview Timeline Russia exposure decreased by approximately $1.4B from last quarter: Intention to exit Consumer business ꟷ Exposure decrease of $0.5B driven by the depreciation of the ruble 1 Expand the scope of exit process to include other lines of ꟷ Exposure decrease of $1.9B in local currency terms, primarily driven by 2 business and stop soliciting new business or clients. client deposit outflows and loan repayments and sales 3ꟷ Exposure increase of $1.0B in local currency terms, driven by net Wind down Consumer and Local Commercial Banking increases in trapped dividends held in the National Settlements Businesses Depository (NSD) Continued to see a shift in the mix of the exposure as proceeds from loan Announced discontinuation of nearly all the institutional repayments and sales were deposited with the Central Bank banking services in Russia by the end of March 2023 Released $0.1B of credit reserves for direct Russia-related exposures, driven by continued reduction of higher risk wholesale credit exposure via client Completed sale of Consumer PIL portfolio paydowns Net investment in the Russian entity remained relatively flat at $1.2B Today: Continue to wind down operations and continue to manage our compared to 4Q22, as the depreciation of the Ruble was offset by increases existing regulatory commitments and obligation to depositors in retained earnings ($ in B) Trend in Russia Exposure Since 4Q21 $9.8 $7.9 $8.4 $7.9 1 3 $7.5 2 $3.6B of cash on deposit $1.0 $6.1 with Central Bank of Russia ($0.5) + dividends held in the NSD ($1.9) 4Q21 1Q22 2Q22 3Q22 4Q22 Ruble Impact Exposure Exposure 1Q23 Decrease in Increase in Local Currency Local Currency Note: All information for 1Q23 is preliminary. Citi has a currency translation adjustment (CTA) loss balance of approximately $1.4 bil the substantial liquidation or a loss of control of the subsidiary. PIL: Personal Installment Loan. Confidential 24",22,True
+25,main_text,"Deposits,
+$1,330
+Long-Term Debt,
+$280
+Repos, $258
+Trading Liabilities(1),
+Asia 21%
+$262
+Latin
+Other Liabilities(1), $117 North
+America 5%
+America 48%
+Equity, $209
+EMEA 25%
+1Q23 Liabilities & Equity
+Confidential 25
+U S P B , $
+S S , $
+1 1 5
+1 2 4
+G$ W3 M2
+2
+,
+T T S ,
+L e g a c
+$ 5 3
+$ 6 7 1
+y ,
+O t h$ e4 r6 (3 ),
+1Q23 Deposit Diversification & Stability
+High-quality deposit base largely consisting of stickier deposits within our TTS Business
+(1Q23 EOP $ in B)
+Deposits by Business Treasury & Trade Solutions (TTS)
+$2,455
+• Deposits are a byproduct of the operational products & services we provide
+for clients
+• Deposits across ~90 countries
+• 80% are from clients that use all three of our integrated services payments
+& collections, liquidity management and working capital solutions
+• Nearly 80% of our deposits are from clients that have a greater than 15-year
+relationship with us
+Securities Services (SS)
+• Deposits across ~70 countries
+• ~85% of our deposits come from clientsthat have a greater than 15-year
+relationship with us
+• Deposits grow as we onboard AUC/AUA
+Global Wealth Management (GWM)
+Deposits by Region
+• Diversified across Citigold, Wealth at Work and Private Bank
+LCR: 120%
+NSFR(2): >100% • 75 % of US Citigold clients have been with Citi for more than 10 years(4)
+• Approximately 50% of Private Bank Ultra-High-Net-Worth clients have
+been with Citi for more than 10 years
+US Personal Banking (USPB)
+• Deposits across six core urban centers(5)
+• Highest deposits/branch ratio in the country
+Note: Totals may not sumdue to rounding. EOP: End of Period. LCR: Liquidity Coverage Ratio. NSFR: Net Stable Funding Ratio. All footnotes are presented on Slide 39.",298,1682,pdfplumber_comprehensive,"Deposits, $1,330 Long-Term Debt, $280 Repos, $258 Trading Liabilities(1), Asia 21% $262 Latin Other Liabilities(1), $117 North America 5% America 48% Equity, $209 EMEA 25% 1Q23 Liabilities Equity Confidential 25 U S P B , $ S S , $ 1 1 5 1 2 4 G$ W3 M2 2 , T T S , L e g a c $ 5 3 $ 6 7 1 y , O t h$ e4 r6 (3 ), 1Q23 Deposit Diversification Stability High-quality deposit base largely consisting of stickier deposits within our TTS Business (1Q23 EOP $ in B) Deposits by Business Treasury Trade Solutions (TTS) $2,455 Deposits are a byproduct of the operational products services we provide for clients Deposits across 90 countries 80% are from clients that use all three of our integrated services payments collections, liquidity management and working capital solutions Nearly 80% of our deposits are from clients that have a greater than 15-year relationship with us Securities Services (SS) Deposits across 70 countries 85% of our deposits come from clientsthat have a greater than 15-year relationship with us Deposits grow as we onboard AUC AUA Global Wealth Management (GWM) Deposits by Region Diversified across Citigold, Wealth at Work and Private Bank LCR: 120% NSFR(2): 100% 75 % of US Citigold clients have been with Citi for more than 10 years(4) Approximately 50% of Private Bank Ultra-High-Net-Worth clients have been with Citi for more than 10 years US Personal Banking (USPB) Deposits across six core urban centers(5) Highest deposits branch ratio in the country Note: Totals may not sumdue to rounding. EOP: End of Period. LCR: Liquidity Coverage Ratio. NSFR: Net Stable Funding Ratio. All footnotes are presented on Slide 39.",6,True
+26,main_text,"Steady Average Deposit Growth as we Win New Clients & Deepen with Existing Ones
+TTS encompasses majority of total Citi deposits and grew at a faster 5-year CAGR than total Citi deposits
+Total CAGR:
+6.8%
+TTS CAGR:
+8.2%
+1,370 1,361 1,363
+1,305 1,304 1,321 1,343 1,334 1,323 1,316
+1,234 1,268 110 104 82 79 93 107 100
+117
+123 122
+118
+1,115 116
+1,090
+1,066
+Total 982 986 986 1,006 1,017 1, 1 0 1 4 8 0 117 114 117 253 267 281 289 297 310 323 329 319 313 320 323
+111 115
+Other 116 114 110
+227 231 241 244 95 100 104 108 113 114 114 118 116 115 111 111
+220 226
+Wealth 218 215 214 88 106 109 116 128 137 135 140 135 137 131 129 125
+83
+82
+81
+USPB 80 79 78 77 79 97 99
+99
+SS 93 96 93 91 90 96
+665 674 681 657 657 674 689 670 672 664 694 704
+TTS 475 482 491 507 507 518 537 555 567
+1Q18 2Q18 3Q18 4Q18 1Q19 2Q19 3Q19 4Q19 1Q20 2Q20 3Q20 4Q20 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23
+Note: CAGR: Compound Annual Growth Rate. TTS: Treasury and Trade Solutions. USPB: U.S. Personal Banking. SS: Securities Services. Other includes Banking, Markets, Legacy Franchises, and Corp/Other.
+Confidential 26",224,1090,pdfplumber_comprehensive,"Steady Average Deposit Growth as we Win New Clients Deepen with Existing Ones TTS encompasses majority of total Citi deposits and grew at a faster 5-year CAGR than total Citi deposits Total CAGR: 6.8% TTS CAGR: 8.2% 1,370 1,361 1,363 1,305 1,304 1,321 1,343 1,334 1,323 1,316 1,234 1,268 110 104 82 79 93 107 100 117 123 122 118 1,115 116 1,090 1,066 Total 982 986 986 1,006 1,017 1, 1 0 1 4 8 0 117 114 117 253 267 281 289 297 310 323 329 319 313 320 323 111 115 Other 116 114 110 227 231 241 244 95 100 104 108 113 114 114 118 116 115 111 111 220 226 Wealth 218 215 214 88 106 109 116 128 137 135 140 135 137 131 129 125 83 82 81 USPB 80 79 78 77 79 97 99 99 SS 93 96 93 91 90 96 665 674 681 657 657 674 689 670 672 664 694 704 TTS 475 482 491 507 507 518 537 555 567 1Q18 2Q18 3Q18 4Q18 1Q19 2Q19 3Q19 4Q19 1Q20 2Q20 3Q20 4Q20 1Q21 2Q21 3Q21 4Q21 1Q22 2Q22 3Q22 4Q22 1Q23 Note: CAGR: Compound Annual Growth Rate. TTS: Treasury and Trade Solutions. USPB: U.S. Personal Banking. SS: Securities Services. Other includes Banking, Markets, Legacy Franchises, and Corp Other. Confidential 26",10,True
+27,main_text,"1Q23 Liquidity Coverage Ratio
+($ in B)
+Average LCR & Historical Trajectory (30-Day Stress) EOP Available Liquidity Resources(1)
+LCR 4Q20 4Q21 4Q22
+Ratio 118% 115% 118%
+$1,033
+$193
+Comprised of
+Other Liquidity unencumbered securities
+LCR Resources = $445
+and unused borrowing
+120% $252 capacity
++$96 cushion
+Commentary $332 Comprised of cash, U.S.
+Treasuries and foreign
+HQLA = $588
+• Our available liquidity resources of over $1 trillion are comprised of HQLA
+sovereign securities
+and other unencumbered securities and unused borrowing capacity
+• The average HQLA of $584 billion that we hold exceeds Net Cash Outflow
+of $488 billion by ~20% or about ~$96 billion
+$256
+• Our available liquidity resources means we have approximately $545
+billion(2)of liquidity above and beyond the stressed outflow assumptions
+under the LCR requirement
+Available Liquidity Resources
+Confidential 27
+$
+H
+5 8
+Q
+4
+L
+B
+A N e t C
+$
+a
+4
+s
+8
+h
+8
+O
+B
+u t f l o w
+C a s h H Q L A E lig ib ile
+G l o
+U
+b
+n
+a
+e
+l
+n
+L
+c
+i
+u
+$
+$
+$
+$
+q u
+m
+1 8 5
+2 4 9
+3 2 7
+2 6 5
+i d i t y
+b e r e d
+R
+S e
+e
+c
+s
+s
+e
+.
+r v e
+U n u s e d B o r r o w in g C a p a c it y
+$584
+$488
+EOP HQLA
+Available Cash $256
+US Sovereign $192
+US Agency/ Agency MBS $57
+Foreign Government Debt $79
+(1)
+Other Investment Grade $4
+Note: LCR: Liquidity Coverage Ratio. HQLA: High-Quality Liquid Assets. EOP: End of Period. All footnotes are presented on Slide 39.",293,1394,pdfplumber_comprehensive,"1Q23 Liquidity Coverage Ratio ($ in B) Average LCR Historical Trajectory (30-Day Stress) EOP Available Liquidity Resources(1) LCR 4Q20 4Q21 4Q22 Ratio 118% 115% 118% $1,033 $193 Comprised of Other Liquidity unencumbered securities LCR Resources = $445 and unused borrowing 120% $252 capacity +$96 cushion Commentary $332 Comprised of cash, U.S. Treasuries and foreign HQLA = $588 Our available liquidity resources of over $1 trillion are comprised of HQLA sovereign securities and other unencumbered securities and unused borrowing capacity The average HQLA of $584 billion that we hold exceeds Net Cash Outflow of $488 billion by 20% or about $96 billion $256 Our available liquidity resources means we have approximately $545 billion(2)of liquidity above and beyond the stressed outflow assumptions under the LCR requirement Available Liquidity Resources Confidential 27 $ H 5 8 Q 4 L B A N e t C $ a 4 s 8 h 8 O B u t f l o w C a s h H Q L A E lig ib ile G l o U b n a e l n L c i u $ $ $ $ q u m 1 8 5 2 4 9 3 2 7 2 6 5 i d i t y b e r e d R S e e c s s e . r v e U n u s e d B o r r o w in g C a p a c it y $584 $488 EOP HQLA Available Cash $256 US Sovereign $192 US Agency Agency MBS $57 Foreign Government Debt $79 (1) Other Investment Grade $4 Note: LCR: Liquidity Coverage Ratio. HQLA: High-Quality Liquid Assets. EOP: End of Period. All footnotes are presented on Slide 39.",8,True
+27,table,"Average LCR & Historical Trajectory (30-Day Stress) |  |  |  |  |  |  |  | 
+ |  | LCR
+Ratio |  | 4Q20 |  | 4Q21 |  | 4Q22
+ |  |  |  | 118% |  | 115% |  | 118%",39,158,pdfplumber_comprehensive,Average LCR Historical Trajectory (30-Day Stress) | | | | | | | | | | LCR Ratio | | 4Q20 | | 4Q21 | | 4Q22 | | | | 118% | | 115% | | 118%,1,False
+27,table,"LCR
+120%
++$96 cushion",4,21,pdfplumber_comprehensive,LCR 120% +$96 cushion,1,False
+27,table,"EOP HQLA | 
+Available Cash | $256
+US Sovereign | $192
+US Agency/ Agency MBS | $57
+Foreign Government Debt | $79
+Other Investment Grade | $4",27,139,pdfplumber_comprehensive,EOP HQLA | Available Cash | $256 US Sovereign | $192 US Agency Agency MBS | $57 Foreign Government Debt | $79 Other Investment Grade | $4,1,True
+28,main_text,"Equity & CET1 Capital Drivers (QoQ and YoY)
+($ in B, except basis points (bps))
+Note: Totals may not sumdue to rounding. All information for 1Q23 is preliminary. All footnotes are presented on Slide 39.
+Confidential 28
+Q
+4
+1
+Y
+1
+1
+o Q
+Q 2
+Im
+N
+P
+C
+D
+U
+F
+C
+O
+C
+Q 2
+o Y
+Q 2
+Im
+N
+P
+C
+D
+U
+F
+C
+O
+C
+Q 2
+2
+p a c t o f :
+e t In c o m e
+r e f e r r e d S t o c k D iv id
+o m m o n S h a r e D iv id
+e f e r r e d T a x A d ju s t m
+n r e a liz e d A F S G a in s
+(4 ) X T r a n s la t io n
+E C L T r a n s it io n P r o v
+(6 ) t h e r
+h a n g e in R W A B a la n
+3
+2
+p a c t o f :
+e t In c o m e
+r e f e r r e d S t o c k D iv id
+o m m o n S h a r e D iv id
+e f e r r e d T a x A d ju s t m
+n r e a liz e d A F S G a in s
+(5 ) X T r a n s la t io n
+E C L T r a n s it io n P r o v
+(6 ) t h e r
+h a n g e in R W A B a la n
+3
+e n d s
+e n d s
+e n t d u e
+/ (L o s s e
+(5 ) is io n
+c e
+e n d s
+e n d s & R
+e n t d u e
+/ (L o s s e
+(3 ) is io n
+c e
+t
+s
+e
+t
+s
+o
+)
+p
+o
+)
+C
+u
+C
+a p it
+r c h a
+a p it
+a
+s
+a
+l E
+e s
+l E
+x
+x
+c
+c
+lu
+lu
+s
+s
+io
+io
+n
+n
+(3
+(4
+)
+)
+C
+C
+o
+o
+m
+m
+m
+m
+o
+o
+n
+n
+E
+E
+q
+q
+u
+u
+it
+$
+$
+it
+$
+$
+y
+1 8 2 .2
+4 .6
+(0 .3 )
+(1 .0 )
+N / A
+0 .8
+0 .8
+N / A
+1 .0
+N / A
+1 8 8 .1
+y
+1 7 8 .7
+1 5 .1
+(1 .0 )
+(4 .3 )
+N / A
+(0 .3 )
+(1 .6 )
+N / A
+1 .5
+N / A
+1 8 8 .1
+T
+T
+a
+a
+n
+n
+g
+g
+ib
+ib
+le
+le
+C
+C
+o
+o
+m
+m
+m
+m
+o
+o
+n
+n
+E
+E
+q
+$
+$
+q
+$
+$
+u
+1
+1
+u
+1
+1
+(1) it y
+5 8 .2
+4 .6
+(0 .3 )
+(1 .0 )
+N / A
+0 .8
+0 .6
+N / A
+1 .0
+N / A
+6 3 .9
+(1) it y
+5 3 .5
+1 5 .1
+(1 .0 )
+(4 .3 )
+N / A
+(0 .3 )
+(1 .7 )
+N / A
+2 .6
+N / A
+6 3 .9
+(2 ) C E T 1 C a p it a l
+$ 1 4 8 .9
+4 .6
+(0 .3 )
+(1 .0 )
+(0 .2 )
+0 .8
+0 .6
+(0 .8 )
+1 .1
+N / A
+$ 1 5 3 .7
+(2 ) C E T 1 C a p it a l
+$ 1 4 3 .7
+1 5 .1
+(1 .0 )
+(4 .3 )
+0 .3
+(0 .3 )
+(1 .7 )
+(0 .8 )
+2 .7
+N / A
+$ 1 5 3 .7
+(2 ) C E T 1 C a p it a l R a t io (b p s
+1 3 .0 %
+4 0
+(2
+(9
+(2
+7
+0
+(7
+1 0
+3
+1 3 .4 %
+(2 ) C E T 1 C a p it a l R a t io (b p s
+1 1 .4 %
+1 2 0
+(8
+(3 4
+2
+(2
+0
+(7
+2 2
+1 0 7
+1 3 .4 %
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)",799,1903,pdfplumber_comprehensive,"Equity CET1 Capital Drivers (QoQ and YoY) ($ in B, except basis points (bps)) Note: Totals may not sumdue to rounding. All information for 1Q23 is preliminary. All footnotes are presented on Slide 39. Confidential 28 Q 4 1 Y 1 1 o Q Q 2 Im N P C D U F C O C Q 2 o Y Q 2 Im N P C D U F C O C Q 2 2 p a c t o f : e t In c o m e r e f e r r e d S t o c k D iv id o m m o n S h a r e D iv id e f e r r e d T a x A d ju s t m n r e a liz e d A F S G a in s (4 ) X T r a n s la t io n E C L T r a n s it io n P r o v (6 ) t h e r h a n g e in R W A B a la n 3 2 p a c t o f : e t In c o m e r e f e r r e d S t o c k D iv id o m m o n S h a r e D iv id e f e r r e d T a x A d ju s t m n r e a liz e d A F S G a in s (5 ) X T r a n s la t io n E C L T r a n s it io n P r o v (6 ) t h e r h a n g e in R W A B a la n 3 e n d s e n d s e n t d u e (L o s s e (5 ) is io n c e e n d s e n d s R e n t d u e (L o s s e (3 ) is io n c e t s e t s o ) p o ) C u C a p it r c h a a p it a s a l E e s l E x x c c lu lu s s io io n n (3 (4 ) ) C C o o m m m m o o n n E E q q u u it $ $ it $ $ y 1 8 2 .2 4 .6 (0 .3 ) (1 .0 ) N A 0 .8 0 .8 N A 1 .0 N A 1 8 8 .1 y 1 7 8 .7 1 5 .1 (1 .0 ) (4 .3 ) N A (0 .3 ) (1 .6 ) N A 1 .5 N A 1 8 8 .1 T T a a n n g g ib ib le le C C o o m m m m o o n n E E q $ $ q $ $ u 1 1 u 1 1 (1) it y 5 8 .2 4 .6 (0 .3 ) (1 .0 ) N A 0 .8 0 .6 N A 1 .0 N A 6 3 .9 (1) it y 5 3 .5 1 5 .1 (1 .0 ) (4 .3 ) N A (0 .3 ) (1 .7 ) N A 2 .6 N A 6 3 .9 (2 ) C E T 1 C a p it a l $ 1 4 8 .9 4 .6 (0 .3 ) (1 .0 ) (0 .2 ) 0 .8 0 .6 (0 .8 ) 1 .1 N A $ 1 5 3 .7 (2 ) C E T 1 C a p it a l $ 1 4 3 .7 1 5 .1 (1 .0 ) (4 .3 ) 0 .3 (0 .3 ) (1 .7 ) (0 .8 ) 2 .7 N A $ 1 5 3 .7 (2 ) C E T 1 C a p it a l R a t io (b p s 1 3 .0 % 4 0 (2 (9 (2 7 0 (7 1 0 3 1 3 .4 % (2 ) C E T 1 C a p it a l R a t io (b p s 1 1 .4 % 1 2 0 (8 (3 4 2 (2 0 (7 2 2 1 0 7 1 3 .4 % ) ) ) ) ) ) ) ) ) )",60,True
+29,main_text,"Tangible Common Equity Reconciliation and Citigroup Returns
+($ in MM, except per share amounts)
+Tangible Common Equity and Tangible Book Value Per Share Return on Tangible Common Equity (RoTCE)
+RoTCE by Segment
+Note: r than mortgage servicing rights(MSRs)). Tangible book value per share is defined as TCE divided by
+common shares outstanding. ICG: Institutional Clients Group. PBWM: Personal Banking & Wealth ManCaognefidmenetniatl. All footnotesare presented on Slide 39. 29
+C
+L
+T
+C
+T
+o
+e
+a
+o
+a
+m m
+s s :
+G o
+In t
+G o
+M o
+S
+n g ib
+m m
+n g ib
+o n S t o c k h o ld e r s ' E q u it y
+o d w ill
+a n g ib le A s s e t s (o t h e r t h a n M
+o d w ill a n d Id e n t if ia b le In t a n
+r t g a g e
+e r v ic in g R ig h t s ) R e la t e d t o A
+le C o m m o n E q u it y ( T C E )
+o n S h a r e s O u t s t a n d in g ( C S
+le B o o k V a lu e P e r S h a r e ( T C
+og
+s
+O
+E
+r t g a g e S e
+ib le A s s e
+s e t s H e ld
+)
+/ C S O )
+r v ic
+t s (o
+- f o r
+int
+h
+- S
+ge
+a
+R ig
+r t h
+le
+ha tn s )
+$
+$
+1
+1
+5
+$
+1 Q 2 2
+7 8 ,7 1 4
+1 9 ,8 6 5
+4 ,0 0 2
+1 ,3 8 4
+3 ,4 6 3
+1 ,9 4 2
+7 9 .0 3
+$
+$
+4 Q 2 2
+1 8 2 ,1 9 4
+1 9 ,6 9 1
+3 ,7 6 3
+5 8 9
+1 5 8 ,1 5 1
+1 ,9 3 7
+$ 8 1 .6 5
+$
+$
+1 Q 2 3
+1 8 8 ,0 5 0
+1 9 ,8 8 2
+3 ,9 7 4
+2 4 6
+1 6 3 ,9 4 8
+1 ,9 4 7
+$ 8 4 .2 1
+C it ig r o u p N e t In c o m
+L e s s :
+P r e fe r r e d S t o
+N e t In c o m e A v a ila
+A v e r a g e T C E
+R o T C E
+1 Q 2 3
+IC G
+P B W M
+L e g a c y F r a n c h is e s
+(1) C o r p . / O t h e r
+(1) C it ig r o u p
+e
+c
+b
+k D
+le t
+iv id e n
+o C o m
+d
+m
+s
+o n S h a r e h o
+t
+ld e
+N e
+o C
+r s
+t In
+o m
+cm o m e
+(1) o n
+$ 3 .3
+0 .5
+0 .6
+(0 .0 )
+4 .3
+A llo c a t
+Ae vd e
+T
+r a g e
+(2 ) C E
+$ 9 6
+$ 3 6
+$ 1 3
+$ 1 6
+$ 1 6 1
+1 Q 2 3
+$ 4 ,6 0 6
+2 7 7
+4 ,3 2 9
+1 6 1 ,0 5 0
+1 0 .9 %
+(3 R o T C E
+1 3 .8 %
+5 .5 %
+1 9 .0 %
+(0 .6 )%
+1 0 .9 %
+)
+($ in B)",672,1789,pdfplumber_comprehensive,"Tangible Common Equity Reconciliation and Citigroup Returns ($ in MM, except per share amounts) Tangible Common Equity and Tangible Book Value Per Share Return on Tangible Common Equity (RoTCE) RoTCE by Segment Note: r than mortgage servicing rights(MSRs)). Tangible book value per share is defined as TCE divided by common shares outstanding. ICG: Institutional Clients Group. PBWM: Personal Banking Wealth ManCaognefidmenetniatl. All footnotesare presented on Slide 39. 29 C L T C T o e a o a m m s s : G o In t G o M o S n g ib m m n g ib o n S t o c k h o ld e r s E q u it y o d w ill a n g ib le A s s e t s (o t h e r t h a n M o d w ill a n d Id e n t if ia b le In t a n r t g a g e e r v ic in g R ig h t s ) R e la t e d t o A le C o m m o n E q u it y ( T C E ) o n S h a r e s O u t s t a n d in g ( C S le B o o k V a lu e P e r S h a r e ( T C og s O E r t g a g e S e ib le A s s e s e t s H e ld ) C S O ) r v ic t s (o - f o r int h - S ge a R ig r t h le ha tn s ) $ $ 1 1 5 $ 1 Q 2 2 7 8 ,7 1 4 1 9 ,8 6 5 4 ,0 0 2 1 ,3 8 4 3 ,4 6 3 1 ,9 4 2 7 9 .0 3 $ $ 4 Q 2 2 1 8 2 ,1 9 4 1 9 ,6 9 1 3 ,7 6 3 5 8 9 1 5 8 ,1 5 1 1 ,9 3 7 $ 8 1 .6 5 $ $ 1 Q 2 3 1 8 8 ,0 5 0 1 9 ,8 8 2 3 ,9 7 4 2 4 6 1 6 3 ,9 4 8 1 ,9 4 7 $ 8 4 .2 1 C it ig r o u p N e t In c o m L e s s : P r e fe r r e d S t o N e t In c o m e A v a ila A v e r a g e T C E R o T C E 1 Q 2 3 IC G P B W M L e g a c y F r a n c h is e s (1) C o r p . O t h e r (1) C it ig r o u p e c b k D le t iv id e n o C o m d m s o n S h a r e h o t ld e N e o C r s t In o m cm o m e (1) o n $ 3 .3 0 .5 0 .6 (0 .0 ) 4 .3 A llo c a t Ae vd e T r a g e (2 ) C E $ 9 6 $ 3 6 $ 1 3 $ 1 6 $ 1 6 1 1 Q 2 3 $ 4 ,6 0 6 2 7 7 4 ,3 2 9 1 6 1 ,0 5 0 1 0 .9 % (3 R o T C E 1 3 .8 % 5 .5 % 1 9 .0 % (0 .6 )% 1 0 .9 % ) ($ in B)",21,True
+30,main_text,"FX Impact
+($ in MM)
+Total Citigroup ICG
+Foreign currency (FX) translation impact(1) 1Q23 4Q22 1Q22 QoQ YoY
+Total Revenue- as Reported 21,447 18,006 19,186 19% 12%
+Impact of FX translation - 133 (194)
+Total revenues - Ex-FX 21,447 18,139 18,992 18% 13%
+Total operating expenses - as reported 13,289 12,985 13,165 2% 1%
+Impact of FX translation - 227 (125)
+Total operating expenses - Ex-FX 13,289 13,212 13,040 1% 2%
+PBWM
+Total provisions for credit losses & PBC - as reported 1,975 1,845 755 7% 162%
+Impact of FX translation - 28 9
+Total provisions for credit losses & PBC - Ex-FX 1,975 1,873 764 5% 159%
+Total EBT - as reported 6,183 3,176 5,266 95% 17%
+Impact of FX translation - (122) (78)
+Total EBT - Ex-FX 6,183 3,054 5,187 102% 19%
+Legacy Franchises
+Total EOP Loans - as reported 652 657 660 (1)% (1)%
+Impact of FX translation - 3 (5)
+Total EOP Loans - Ex-FX 652 660 655 (1)% (0)%
+Total EOP Deposits - as reported 1,330 1,366 1,334 (3)% (0)%
+Impact of FX translation - 6 (14)
+Total EOP Deposits - Ex-FX 1,330 1,372 1,320 (3)% 1%
+Note: Totals may not sum due to rounding. FX: Foreign Exchange. ICG: Institutional Clients Group. PBWM: Personal Banking & Wealth Management.
+All footnotes are presented on Slide 40. Confidential 30
+F
+T
+T
+T
+T
+F
+T
+T
+T
+T
+o re ig n c
+o ta l A v e
+Im p a
+o ta l A v e
+o ta l A v e
+Im p a
+o ta l A v e
+o re ig n c
+o ta l A v e
+Im p a
+o ta l A v e
+o ta l A v e
+Im p a
+o ta l A v e
+u rre n c y (F X ) tra n s la tio n im
+ra g e L o a n s - a s re p o rte d
+c t o f F X tra n s la tio n
+ra g e L o a n s - E x - F X
+ra g e D e p o s its - a s re p o rte
+c t o f F X tra n s la tio n
+ra g e D e p o s its - E x - F X
+u rre n c y (F X ) tra n s la tio n im
+ra g e L o a n s - a s re p o rte d
+c t o f F X tra n s la tio n
+ra g e L o a n s - E x - F X
+ra g e D e p o s its - a s re p o rte
+c t o f F X tra n s la tio n
+ra g e D e p o s its - E x - F X
+d
+d
+p
+p
+a
+a
+c
+c
+t
+t
+(1)
+(1)
+1 Q
+2 8
+2 8
+8 5
+8 5
+1 Q
+3 3
+3 3
+4 3
+4 3
+2 3
+3
+-
+3
+3
+-
+3
+2 3
+3
+-
+3
+4
+-
+4
+4 Q 2 2
+2 8 5
+3
+2 8 8
+8 4 8
+9
+8 5 7
+4 Q 2 2
+3 3 0
+1
+3 3 1
+4 3 1
+2
+4 3 3
+1 Q 2 2
+2 8 9
+(5 )
+2 8 5
+8 2 6
+(16 )
+8 1 1
+1 Q 2 2
+3 1 2
+(1)
+3 1 1
+4 4 7
+(2 )
+4 4 5
+Q o Q
+(1 )%
+(2 ) %
+1 %
+(0 )%
+Q o Q
+1 %
+1 %
+1 %
+0 %
+Y o Y
+(2 ) %
+(1 )%
+3 %
+5 %
+Y o Y
+7 %
+7 %
+(3 )%
+(2 ) %
+Foreign currency (FX) translation impact(1) 1Q23 4Q22 1Q22 QoQ YoY
+Total Average Loans - as reported 38 38 48 - (21)%
+Impact of FX translation - 2 (0)
+Total Average Loans - Ex-FX 38 39 47 (4)% (21)%
+Total Average Deposits - as reported 50 50 55 - (9)%
+Impact of FX translation - 2 2
+Total Average Deposits - Ex-FX 50 52 56 (4)% (11)%",738,2569,pdfplumber_comprehensive,"FX Impact ($ in MM) Total Citigroup ICG Foreign currency (FX) translation impact(1) 1Q23 4Q22 1Q22 QoQ YoY Total Revenue- as Reported 21,447 18,006 19,186 19% 12% Impact of FX translation - 133 (194) Total revenues - Ex-FX 21,447 18,139 18,992 18% 13% Total operating expenses - as reported 13,289 12,985 13,165 2% 1% Impact of FX translation - 227 (125) Total operating expenses - Ex-FX 13,289 13,212 13,040 1% 2% PBWM Total provisions for credit losses PBC - as reported 1,975 1,845 755 7% 162% Impact of FX translation - 28 9 Total provisions for credit losses PBC - Ex-FX 1,975 1,873 764 5% 159% Total EBT - as reported 6,183 3,176 5,266 95% 17% Impact of FX translation - (122) (78) Total EBT - Ex-FX 6,183 3,054 5,187 102% 19% Legacy Franchises Total EOP Loans - as reported 652 657 660 (1)% (1)% Impact of FX translation - 3 (5) Total EOP Loans - Ex-FX 652 660 655 (1)% (0)% Total EOP Deposits - as reported 1,330 1,366 1,334 (3)% (0)% Impact of FX translation - 6 (14) Total EOP Deposits - Ex-FX 1,330 1,372 1,320 (3)% 1% Note: Totals may not sum due to rounding. FX: Foreign Exchange. ICG: Institutional Clients Group. PBWM: Personal Banking Wealth Management. All footnotes are presented on Slide 40. Confidential 30 F T T T T F T T T T o re ig n c o ta l A v e Im p a o ta l A v e o ta l A v e Im p a o ta l A v e o re ig n c o ta l A v e Im p a o ta l A v e o ta l A v e Im p a o ta l A v e u rre n c y (F X ) tra n s la tio n im ra g e L o a n s - a s re p o rte d c t o f F X tra n s la tio n ra g e L o a n s - E x - F X ra g e D e p o s its - a s re p o rte c t o f F X tra n s la tio n ra g e D e p o s its - E x - F X u rre n c y (F X ) tra n s la tio n im ra g e L o a n s - a s re p o rte d c t o f F X tra n s la tio n ra g e L o a n s - E x - F X ra g e D e p o s its - a s re p o rte c t o f F X tra n s la tio n ra g e D e p o s its - E x - F X d d p p a a c c t t (1) (1) 1 Q 2 8 2 8 8 5 8 5 1 Q 3 3 3 3 4 3 4 3 2 3 3 - 3 3 - 3 2 3 3 - 3 4 - 4 4 Q 2 2 2 8 5 3 2 8 8 8 4 8 9 8 5 7 4 Q 2 2 3 3 0 1 3 3 1 4 3 1 2 4 3 3 1 Q 2 2 2 8 9 (5 ) 2 8 5 8 2 6 (16 ) 8 1 1 1 Q 2 2 3 1 2 (1) 3 1 1 4 4 7 (2 ) 4 4 5 Q o Q (1 )% (2 ) % 1 % (0 )% Q o Q 1 % 1 % 1 % 0 % Y o Y (2 ) % (1 )% 3 % 5 % Y o Y 7 % 7 % (3 )% (2 ) % Foreign currency (FX) translation impact(1) 1Q23 4Q22 1Q22 QoQ YoY Total Average Loans - as reported 38 38 48 - (21)% Impact of FX translation - 2 (0) Total Average Loans - Ex-FX 38 39 47 (4)% (21)% Total Average Deposits - as reported 50 50 55 - (9)% Impact of FX translation - 2 2 Total Average Deposits - Ex-FX 50 52 56 (4)% (11)%",6,True
+31,main_text,"Reconciliation of Adjusted Results
+Total Citigroup
+($ in MM) 1Q23 1Q22 % Δ YoY
+Total Citigroup Revenues - As Reported $21,447 $19,186 12%
+Less:
+Total Divestiture Impact on Revenues(1) 1,018 (47)
+Total Citigroup Revenues, Excluding Divestiture Impacts $20,429 $19,233 6%
+($ in MM) 1Q23 1Q22 % Δ YoY
+Total Citigroup Operating Expenses - As Reported $13,289 $13,165 1%
+Less:
+Total Divestiture Impact on Operating Expenses(1) 73 559
+Total Citigroup Operating Expenses, Excluding Divestiture Impacts $13,216 $12,606 5%
+($ in MM) 1Q23 1Q22 % Δ YoY
+Total Citigroup Cost of Credit - As Reported $1,975 $755 NM
+Less:
+Total Divestiture Impact on Cost of Credit(1) (8) 71
+Total Citigroup Cost of Credit, Excluding Divestiture Impacts $1,983 $684 NM
+Note: Totals may not sum due to rounding. All footnotes are presented on Slide 40.
+Confidential 31
+(
+T
+T
+$
+o
+L
+o
+in M M )
+t a l C it ig
+e s s :
+T o t a l D
+t a l C it ig
+r o
+iv e
+r o
+u
+s
+u
+p
+t
+p
+N
+it u
+N
+e
+r
+e
+t
+e
+t
+I
+I
+I
+n
+m
+n
+c o
+p
+c o
+m
+a
+m
+c
+e
+t
+e
+- A
+( a f t
+, E x
+s
+e
+c
+R
+r -
+lu
+e
+t
+d
+p o
+a x
+in
+r t e
+) o n
+g D
+d
+N
+iv e
+e t I n
+s t it
+c
+u
+o
+r
+m
+e I
+e
+m
+(1)
+p a c t s
+$
+$
+4
+3
+1 Q
+,6
+6
+,9
+2
+0
+4
+5
+3
+6
+8
+8
+$
+$
+4
+4
+1 Q
+,3
+( 5
+,8
+2
+0
+8
+9
+2
+6
+8
+4
+)
+% Δ Y
+( 1 9
+o Y
+7 %
+) %",313,1211,pdfplumber_comprehensive,"Reconciliation of Adjusted Results Total Citigroup ($ in MM) 1Q23 1Q22 % Δ YoY Total Citigroup Revenues - As Reported $21,447 $19,186 12% Less: Total Divestiture Impact on Revenues(1) 1,018 (47) Total Citigroup Revenues, Excluding Divestiture Impacts $20,429 $19,233 6% ($ in MM) 1Q23 1Q22 % Δ YoY Total Citigroup Operating Expenses - As Reported $13,289 $13,165 1% Less: Total Divestiture Impact on Operating Expenses(1) 73 559 Total Citigroup Operating Expenses, Excluding Divestiture Impacts $13,216 $12,606 5% ($ in MM) 1Q23 1Q22 % Δ YoY Total Citigroup Cost of Credit - As Reported $1,975 $755 NM Less: Total Divestiture Impact on Cost of Credit(1) (8) 71 Total Citigroup Cost of Credit, Excluding Divestiture Impacts $1,983 $684 NM Note: Totals may not sum due to rounding. All footnotes are presented on Slide 40. Confidential 31 ( T T $ o L o in M M ) t a l C it ig e s s : T o t a l D t a l C it ig r o iv e r o u s u p t p N it u N e r e t e t I I I n m n c o p c o m a m c e t e - A ( a f t , E x s e c R r - lu e t d p o a x in r t e ) o n g D d N iv e e t I n s t it c u o r m e I e m (1) p a c t s $ $ 4 3 1 Q ,6 6 ,9 2 0 4 5 3 6 8 8 $ $ 4 4 1 Q ,3 ( 5 ,8 2 0 8 9 2 6 8 4 ) % Δ Y ( 1 9 o Y 7 % ) %",3,True
+32,main_text,"Reconciliation of Adjusted Results (cont.)
+Total Citigroup
+1Q23
+Citigroup Diluted EPS - As Reported $2.19
+Less:
+Total Divestiture Impact on Citigroup Diluted EPS(1) $0.33
+Citigroup Diluted EPS, Excluding Divestiture Impact $1.86
+1Q23
+Citigroup RoTCE - As Reported 10.9%
+Less:
+Total Divestiture Impact on Citigroup RoTCE(1,2) 1.6%
+Citigroup RoTCE, Excluding Divestiture Impacts 9.3%
+Note: Totals may not sum due to rounding. All footnotes are presented on Slide 40.
+Confidential 32",69,480,pdfplumber_comprehensive,"Reconciliation of Adjusted Results (cont.) Total Citigroup 1Q23 Citigroup Diluted EPS - As Reported $2.19 Less: Total Divestiture Impact on Citigroup Diluted EPS(1) $0.33 Citigroup Diluted EPS, Excluding Divestiture Impact $1.86 1Q23 Citigroup RoTCE - As Reported 10.9% Less: Total Divestiture Impact on Citigroup RoTCE(1,2) 1.6% Citigroup RoTCE, Excluding Divestiture Impacts 9.3% Note: Totals may not sum due to rounding. All footnotes are presented on Slide 40. Confidential 32",10,False
+32,table,"Total Divestiture Impact on Citigroup RoTCE(1,2) 1.6%
+Citigroup RoTCE, Excluding Divestiture Impacts 9.3%",13,105,pdfplumber_comprehensive,"Total Divestiture Impact on Citigroup RoTCE(1,2) 1.6% Citigroup RoTCE, Excluding Divestiture Impacts 9.3%",3,False
+33,main_text,"Reconciliation of Adjusted Results (cont.)
+ICG
+($ in MM) 1Q23 4Q22 1Q22 % Δ QoQ % Δ YoY
+Total Banking Revenues - As Reported $1,165 $889 $1,886 31% (38)%
+Less:
+Gain/(loss) on loan hedges(1) (199) (300) 169
+Total Banking Revenues - Excluding Gain/(loss) on loan hedges $1,364 $1,189 $1,717 15% (21)%
+($ in MM) 1Q23 4Q22 1Q22 % Δ QoQ % Δ YoY
+Banking Corporate Lending Revenues - As Reported $391 $244 $858 60% (54)%
+Less:
+Gain/(loss) on loan hedges(1) (199) (300) 169
+Banking Corporate Lending Revenues - Excluding Gain/(loss) on loan hedges $590 $544 $689 8% (14)%
+Legacy Franchises
+Note: Totals may not sum due to rounding. All footnotes are presented on Slide 40.
+Confidential 33
+( $
+L e
+L
+L e
+( $
+L e
+L
+L e
+in M
+g a c
+e s s
+T o t
+g a c
+in M
+g a c
+e s s
+T o t
+g a c
+M )
+y F r a
+:
+a l D iv
+y F r a
+M )
+y F r a
+:
+a l D iv
+y F r a
+n
+e
+n
+n
+e
+n
+c
+s
+c
+c
+s
+c
+h
+t
+h
+h
+t
+h
+is
+it u
+is
+is
+it u
+is
+e
+r
+e
+e
+r
+e
+s
+e
+s
+s
+e
+s
+T o
+I m
+T o
+O p
+I m
+O p
+t a
+p
+t a
+e
+p
+e
+l R
+a c
+l R
+r a
+a c
+r a
+e v
+t o
+e v
+t in
+t o
+t in
+e
+n
+e
+g
+n
+g
+n
+R
+n
+E
+O
+E
+u
+e
+u
+x
+p
+x
+e s - A s R e p o r
+(2 ) v e n u e s
+e s , E x c lu d in g
+p e n s e s - A s R
+e r a t in g E x p e n
+p e n s e s , E x c lu
+t e
+D
+e
+s
+d
+d
+iv e s t
+p o r t e
+(2 ) e s
+in g D
+it u
+d
+iv e
+r e
+s
+I m
+t it u
+p
+r
+a
+e
+c
+I
+t
+m
+s
+p a c t s
+$
+$
+$
+$
+1 Q
+2 ,8
+1 ,0
+1 ,8
+1 Q
+1 ,7
+1 ,6
+2
+5
+1
+3
+2
+5
+7
+7
+3
+2
+8
+4
+3
+2
+3
+9
+$
+$
+$
+$
+1
+1
+1
+1
+2
+1
+Q 2
+,9 3
+( 4
+,9 7
+Q 2
+,2 9
+5 5
+,7 3
+2
+1
+7
+8
+2
+3
+9
+4
+)
+%
+%
+Δ
+Δ
+(
+Y
+4
+(
+Y
+2
+(
+o Y
+8 %
+7 %
+o Y
+4 %
+3 %
+)
+)
+)",494,1466,pdfplumber_comprehensive,"Reconciliation of Adjusted Results (cont.) ICG ($ in MM) 1Q23 4Q22 1Q22 % Δ QoQ % Δ YoY Total Banking Revenues - As Reported $1,165 $889 $1,886 31% (38)% Less: Gain (loss) on loan hedges(1) (199) (300) 169 Total Banking Revenues - Excluding Gain (loss) on loan hedges $1,364 $1,189 $1,717 15% (21)% ($ in MM) 1Q23 4Q22 1Q22 % Δ QoQ % Δ YoY Banking Corporate Lending Revenues - As Reported $391 $244 $858 60% (54)% Less: Gain (loss) on loan hedges(1) (199) (300) 169 Banking Corporate Lending Revenues - Excluding Gain (loss) on loan hedges $590 $544 $689 8% (14)% Legacy Franchises Note: Totals may not sum due to rounding. All footnotes are presented on Slide 40. Confidential 33 ( $ L e L L e ( $ L e L L e in M g a c e s s T o t g a c in M g a c e s s T o t g a c M ) y F r a : a l D iv y F r a M ) y F r a : a l D iv y F r a n e n n e n c s c c s c h t h h t h is it u is is it u is e r e e r e s e s s e s T o I m T o O p I m O p t a p t a e p e l R a c l R r a a c r a e v t o e v t in t o t in e n e g n g n R n E O E u e u x p x e s - A s R e p o r (2 ) v e n u e s e s , E x c lu d in g p e n s e s - A s R e r a t in g E x p e n p e n s e s , E x c lu t e D e s d d iv e s t p o r t e (2 ) e s in g D it u d iv e r e s I m t it u p r a e c I t m s p a c t s $ $ $ $ 1 Q 2 ,8 1 ,0 1 ,8 1 Q 1 ,7 1 ,6 2 5 1 3 2 5 7 7 3 2 8 4 3 2 3 9 $ $ $ $ 1 1 1 1 2 1 Q 2 ,9 3 ( 4 ,9 7 Q 2 ,2 9 5 5 ,7 3 2 1 7 8 2 3 9 4 ) % % Δ Δ ( Y 4 ( Y 2 ( o Y 8 % 7 % o Y 4 % 3 % ) ) )",4,True
+34,main_text,"Footnotes
+Slide 2
+1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue
+impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit
+costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and
+approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million,
+and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Results excluding
+divestiture related items are non-GAAP measures. See Slides 31 & 32 for a reconciliation to reported results.
+2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a
+reconciliation to reported results, please refer to Slide 29.
+3) th
+-K filed with the SEC on April 14, 2023.
+4) -GAAP financial measure. For a reconciliation of this measure to reported results, please refer to Slide 29.
+Slide 4
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL build of approximately $241 million related to loans and unfunded lending commitments as well as
+other provisions of approximately $432 million relating to policyholder benefits and claims, held-to-maturity (HTM) debt securities and other assets.
+2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For
+a reconciliation to reported results, please refer to Slide 29.
+3) th
+-K filed with the SEC on April 14, 2023.
+4) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue
+impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit
+costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and
+approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million,
+and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs.
+Slide 5
+1) Excludes 1Q23 divestiture related expenses of approximately $73 million and 1Q22 divestiture related expenses of approximately $559 million that were incurred in the Asia Consumer
+reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million and costs related to the KoreaVoluntary Early Retirement Program (VERP) of approximately
+$24 million. Results of operations excluding divestiture-related expenses are non-GAAP financial measures. See slide 31 for a reconciliation to reported results.
+2) Related to Consent Order.
+3) Transformation includes actions to remediate the Consent Orders issued in October 2020 and other investments to modernize Cit infrastructure.
+Slide 7
+1) Markets is defined as Fixed Income Markets and Equity Markets.
+2) Gross Loan Yield: Gross interest revenue earned on loans divided by average loans.
+3) Cost of Interest- -bearing deposits.
+Confidential 34",555,3982,pdfplumber_comprehensive,"Footnotes Slide 2 1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Results excluding divestiture related items are non-GAAP measures. See Slides 31 32 for a reconciliation to reported results. 2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation to reported results, please refer to Slide 29. 3) th -K filed with the SEC on April 14, 2023. 4) -GAAP financial measure. For a reconciliation of this measure to reported results, please refer to Slide 29. Slide 4 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL build of approximately $241 million related to loans and unfunded lending commitments as well as other provisions of approximately $432 million relating to policyholder benefits and claims, held-to-maturity (HTM) debt securities and other assets. 2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation to reported results, please refer to Slide 29. 3) th -K filed with the SEC on April 14, 2023. 4) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Slide 5 1) Excludes 1Q23 divestiture related expenses of approximately $73 million and 1Q22 divestiture related expenses of approximately $559 million that were incurred in the Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million and costs related to the KoreaVoluntary Early Retirement Program (VERP) of approximately $24 million. Results of operations excluding divestiture-related expenses are non-GAAP financial measures. See slide 31 for a reconciliation to reported results. 2) Related to Consent Order. 3) Transformation includes actions to remediate the Consent Orders issued in October 2020 and other investments to modernize Cit infrastructure. Slide 7 1) Markets is defined as Fixed Income Markets and Equity Markets. 2) Gross Loan Yield: Gross interest revenue earned on loans divided by average loans. 3) Cost of Interest- -bearing deposits. Confidential 34",26,True
+35,main_text,"Footnotes (cont.)
+Slide 8
+1) FICO scores are updated as they become available. The FICO bands are consistent with general industry peer presentations. Results include immaterial balances for Canada.
+2) Citi had approximately $8 billion of total office exposure as of March 31st, 2023 (approximately $4 billion within PBWM Loansand approximately $4 billion within Corporate Lending
+Exposure).
+3) -K filing), which includes CRE exposure of which in 1Q23 was $55 billion.
+4) At the January 1, 2020 date of adoption, based on forecasts of macroeconomic conditions and exposures at that time, the aggregate impact to Citi was an approximate $4.2 billion increase in
+the Allowance for credit losses as of 4Q19.
+5) Represents net credit losses (NCLs) for the quarterly periods of 4Q19 and 1Q23.
+Slide 9
+1) th
+-K filed with the SEC on April 14, 2023.
+2) 1Q23 is preliminary. For the composition of Citigroup's Supplementary Leverage Ratio, please see Appendix D of the 1Q23 earnings press release included as Exhibit 99.1 to Citigroup's Current
+Report on Form 8-K filed with the SEC on April 14, 2023.
+3) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities
+eral Reserve Bank discount window borrowing capacity.
+4) Total Loss Absorbing Capacity (TLAC): U.S. G-SIBs, including Citi, are required to maintain minimum levels of TLAC and eligible long-term debt (LTD), each set by reference to the G-
+consolidated risk-weighted assets (RWA) and total leverage exposure.
+5) Net Stable Funding Ratio (NSFR): As previously disclosed, the U.S. banking agencies adopted a rule to assess the availabilityof
+-term debt, while its required stable funding willbe based on the liquidity characteristics of its assets, derivatives
+and commitments. Standardized weightings are required to be applied to the various asset and liability classes. The ratio of available stable funding to required stable funding is required to be
+greater than 100%. The rule became effective beginning July 1, 2021, while public disclosure requirements to report the ratiowill occur on a semiannual basis beginning June 30, 2023.
+6) -GAAP financial measure. For a reconciliation of this measure to reported results,please refer to Slide 29.
+7) Trading-related assets include securities borrowed or purchased under agreements to resell net of allowance and trading account assets and brokerage receivables net of allowance. All other
+assets include, goodwill, intangible assets, deferred tax assets, allowance for credit losses on loans and all other assets net of allowance.
+8) Trading-related liabilities include securities loaned or sold under agreements to repurchase and trading account liabilities andbrokerage payables. All other liabilities include short-term
+borrowings and other liabilities.
+Confidential 35",438,2911,pdfplumber_comprehensive,"Footnotes (cont.) Slide 8 1) FICO scores are updated as they become available. The FICO bands are consistent with general industry peer presentations. Results include immaterial balances for Canada. 2) Citi had approximately $8 billion of total office exposure as of March 31st, 2023 (approximately $4 billion within PBWM Loansand approximately $4 billion within Corporate Lending Exposure). 3) -K filing), which includes CRE exposure of which in 1Q23 was $55 billion. 4) At the January 1, 2020 date of adoption, based on forecasts of macroeconomic conditions and exposures at that time, the aggregate impact to Citi was an approximate $4.2 billion increase in the Allowance for credit losses as of 4Q19. 5) Represents net credit losses (NCLs) for the quarterly periods of 4Q19 and 1Q23. Slide 9 1) th -K filed with the SEC on April 14, 2023. 2) 1Q23 is preliminary. For the composition of Citigroup s Supplementary Leverage Ratio, please see Appendix D of the 1Q23 earnings press release included as Exhibit 99.1 to Citigroup s Current Report on Form 8-K filed with the SEC on April 14, 2023. 3) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities eral Reserve Bank discount window borrowing capacity. 4) Total Loss Absorbing Capacity (TLAC): U.S. G-SIBs, including Citi, are required to maintain minimum levels of TLAC and eligible long-term debt (LTD), each set by reference to the G- consolidated risk-weighted assets (RWA) and total leverage exposure. 5) Net Stable Funding Ratio (NSFR): As previously disclosed, the U.S. banking agencies adopted a rule to assess the availabilityof -term debt, while its required stable funding willbe based on the liquidity characteristics of its assets, derivatives and commitments. Standardized weightings are required to be applied to the various asset and liability classes. The ratio of available stable funding to required stable funding is required to be greater than 100%. The rule became effective beginning July 1, 2021, while public disclosure requirements to report the ratiowill occur on a semiannual basis beginning June 30, 2023. 6) -GAAP financial measure. For a reconciliation of this measure to reported results,please refer to Slide 29. 7) Trading-related assets include securities borrowed or purchased under agreements to resell net of allowance and trading account assets and brokerage receivables net of allowance. All other assets include, goodwill, intangible assets, deferred tax assets, allowance for credit losses on loans and all other assets net of allowance. 8) Trading-related liabilities include securities loaned or sold under agreements to repurchase and trading account liabilities andbrokerage payables. All other liabilities include short-term borrowings and other liabilities. Confidential 35",30,True
+36,main_text,"Footnotes (cont.)
+Slide 10
+1) e i -
+K filed with the SEC on April 14, 2023.
+2) Includes changes in goodwill and intangible assets, and changes in Other Comprehensive Income (including changes in defined plans liability). Citi's regulatory capital ratios and components
+reflect certain deferrals based on the modified regulatory capital transition provision related to the Current Expected Credit Losses (CECL) standard. For additional information, see ""Capital
+Resources-Regulatory Capital Treatment-Modified Transition of the Current Expected Credit Losses Methodology"" in Citigroup's 2022 Annual Report on Form 10-K. Also includes deferred tax
+excludable from Basel III CET1 Capital, which includes net DTAs arising from net operating loss, foreign tax credit and general business credit tax carry-forwards and DTAs arising from timing
+tio(bps) also reflects changes in risk-weighted assets due to
+foreign currency movements.
+3) 3-5 years from year-end 2021.
+Slide 11
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(245) million related to loans and unfunded lending commitments as well
+as other provisions of approximately $151 million relating to held-to-maturity (HTM) debt securities and other assets.
+2) Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please refer
+to Slide 29.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For
+the components of the calculation, please refer to Slide 29.
+4) Banking includes the impact of gains / (losses) on loan hedges within Corporate Lending of approximately $(199) million in 1Q23,approximately $(300) million in 4Q22 and approximately $169
+million in 1Q22. Gains / (losses) on loan hedges includes the mark-to-market on credit derivatives and the mark-to-market on loans in the portfolio that are at fair value. The fixed premium
+costs of these hedges are netted against product revenues to reflect the cost of credit protection.
+Slide 12
+1) Corporate Lending revenues exclude the impact of gains / (losses) on loan hedges and are non-GAAP financial measures. Gains / (losses) on loan hedges include the mark-to-market on credit
+derivatives and the mark-to-market on loans in the portfolio that are at fair value. Corporate Lending excludes the impact of gains / (losses) on loan hedges of approximately $(199) million in
+1Q23, approximately $(300) million in 4Q22 and approximately $169 million in 1Q22. The fixed premium costs of these hedges are netted against product revenues to reflect the cost of credit
+-GAAP financial measures. For additional information on this measure, please refer
+to Slide 33.
+2) Worldlink and Cross Border Funds Transfer platforms. Includes
+payments from Consumer, Corporate, Financial Institution and Public Sector clients.
+3) US Dollar Clearing Volume is defined as the number of USD Clearing Payment instructions processed by Citi on behalf of US andforeign-domiciled entities (primarily Financial Institutions).
+Amounts in the table are stated in millions of payment instructions processed.
+4) Commercial Card Spend Volume is defined as total global spend volumes using Citi issued commercial cards net of refunds and returns.
+5) Securities services and issuer services managed $23.0 trillion in assets under custody and/or administration (AUC/AUA) at March 31, 2023.
+Confidential 36",540,3604,pdfplumber_comprehensive,"Footnotes (cont.) Slide 10 1) e i - K filed with the SEC on April 14, 2023. 2) Includes changes in goodwill and intangible assets, and changes in Other Comprehensive Income (including changes in defined plans liability). Citi s regulatory capital ratios and components reflect certain deferrals based on the modified regulatory capital transition provision related to the Current Expected Credit Losses (CECL) standard. For additional information, see Capital Resources-Regulatory Capital Treatment-Modified Transition of the Current Expected Credit Losses Methodology in Citigroup s 2022 Annual Report on Form 10-K. Also includes deferred tax excludable from Basel III CET1 Capital, which includes net DTAs arising from net operating loss, foreign tax credit and general business credit tax carry-forwards and DTAs arising from timing tio(bps) also reflects changes in risk-weighted assets due to foreign currency movements. 3) 3-5 years from year-end 2021. Slide 11 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(245) million related to loans and unfunded lending commitments as well as other provisions of approximately $151 million relating to held-to-maturity (HTM) debt securities and other assets. 2) Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please refer to Slide 29. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For the components of the calculation, please refer to Slide 29. 4) Banking includes the impact of gains (losses) on loan hedges within Corporate Lending of approximately $(199) million in 1Q23,approximately $(300) million in 4Q22 and approximately $169 million in 1Q22. Gains (losses) on loan hedges includes the mark-to-market on credit derivatives and the mark-to-market on loans in the portfolio that are at fair value. The fixed premium costs of these hedges are netted against product revenues to reflect the cost of credit protection. Slide 12 1) Corporate Lending revenues exclude the impact of gains (losses) on loan hedges and are non-GAAP financial measures. Gains (losses) on loan hedges include the mark-to-market on credit derivatives and the mark-to-market on loans in the portfolio that are at fair value. Corporate Lending excludes the impact of gains (losses) on loan hedges of approximately $(199) million in 1Q23, approximately $(300) million in 4Q22 and approximately $169 million in 1Q22. The fixed premium costs of these hedges are netted against product revenues to reflect the cost of credit -GAAP financial measures. For additional information on this measure, please refer to Slide 33. 2) Worldlink and Cross Border Funds Transfer platforms. Includes payments from Consumer, Corporate, Financial Institution and Public Sector clients. 3) US Dollar Clearing Volume is defined as the number of USD Clearing Payment instructions processed by Citi on behalf of US andforeign-domiciled entities (primarily Financial Institutions). Amounts in the table are stated in millions of payment instructions processed. 4) Commercial Card Spend Volume is defined as total global spend volumes using Citi issued commercial cards net of refunds and returns. 5) Securities services and issuer services managed $23.0 trillion in assets under custody and or administration (AUC AUA) at March 31, 2023. Confidential 36",30,True
+37,main_text,"Footnotes (cont.)
+Slide 13
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL build of approximately $501 million related to loans and unfunded lending commitments as well as
+other provisions of approximately $(4) million relating to policyholder benefits and claims, held-to-maturity (HTM) debt securities and other assets.
+2) Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please refer
+to Slide 29.
+3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For
+a reconciliation to reported results, please refer to Slide 29.
+4) US Installment Lending is the total of US Personal Loan and Flex (Loan / Pay / Point-of-Sale) products.
+5) Active Digital Users represents customers of all online and/or mobile services within the last 90 days through February 2023.Excludes Citi mortgage and Retail Services reported in US Personal
+Banking as well as Private Bank reported in Global Wealth Management.
+6) Active Mobile Users represents customers of all mobile services (mobile apps or via mobile browser) within the last 90 days through February 2023. Excludes Citi mortgage and Retail Services
+reported in US Personal Banking as well as Private Bank reported in Global Wealth Management.
+Slide 14
+1) Digital Deposits includes US Citigold deposits reported under Global Wealth Management.
+2) Client advisors includes bankers, financial client advisors, relationship managers and investment counselors.
+3) Client assets include assets under management (AUMs), deposits and trust and custody assets.
+Slide 15
+1) Allowance for Credit Losses (ACL) Build / (Release) and Other provisions includes a net ACL release of approximately $(15) million related to loans and unfunded lending commitments as well as
+other provisions of approximately $174 million relating to policyholder benefits and claims, held-to-maturity (HTM) debt securities and other assets.
+2) Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please
+refer to Slide 29.
+3) 1Q23 divestiture-related impacts include approximately $1,018 million of revenue primarily related to the gain on sale of the India consumer business and approximately $73 million of
+divestiture-related expenses. 1Q22 divestiture-related impacts include approximately $(47) million in revenue and approximately$559 million of divestiture-related expenses that were
+incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and expenses related to Korea Voluntary Early Retirement
+Program (VERP) of approximately $24 million. Revenues and expenses ex-divestitures are non-GAAP measures. For a reconciliation to reported results see Slide 33.
+4) Mexico includes the results of operations of consumer, small business and middle market banking for all periods presented.
+5) Asia consumer includes the results of operations of consumer activities in certain EMEA countries for all periods presented. 1Q23 revenue includes $1,018 divestiture related impact primarily
+from a gain on the sale of the India consumer business.
+Confidential 37",504,3455,pdfplumber_comprehensive,"Footnotes (cont.) Slide 13 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL build of approximately $501 million related to loans and unfunded lending commitments as well as other provisions of approximately $(4) million relating to policyholder benefits and claims, held-to-maturity (HTM) debt securities and other assets. 2) Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please refer to Slide 29. 3) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation to reported results, please refer to Slide 29. 4) US Installment Lending is the total of US Personal Loan and Flex (Loan Pay Point-of-Sale) products. 5) Active Digital Users represents customers of all online and or mobile services within the last 90 days through February 2023.Excludes Citi mortgage and Retail Services reported in US Personal Banking as well as Private Bank reported in Global Wealth Management. 6) Active Mobile Users represents customers of all mobile services (mobile apps or via mobile browser) within the last 90 days through February 2023. Excludes Citi mortgage and Retail Services reported in US Personal Banking as well as Private Bank reported in Global Wealth Management. Slide 14 1) Digital Deposits includes US Citigold deposits reported under Global Wealth Management. 2) Client advisors includes bankers, financial client advisors, relationship managers and investment counselors. 3) Client assets include assets under management (AUMs), deposits and trust and custody assets. Slide 15 1) Allowance for Credit Losses (ACL) Build (Release) and Other provisions includes a net ACL release of approximately $(15) million related to loans and unfunded lending commitments as well as other provisions of approximately $174 million relating to policyholder benefits and claims, held-to-maturity (HTM) debt securities and other assets. 2) Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please refer to Slide 29. 3) 1Q23 divestiture-related impacts include approximately $1,018 million of revenue primarily related to the gain on sale of the India consumer business and approximately $73 million of divestiture-related expenses. 1Q22 divestiture-related impacts include approximately $(47) million in revenue and approximately$559 million of divestiture-related expenses that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and expenses related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million. Revenues and expenses ex-divestitures are non-GAAP measures. For a reconciliation to reported results see Slide 33. 4) Mexico includes the results of operations of consumer, small business and middle market banking for all periods presented. 5) Asia consumer includes the results of operations of consumer activities in certain EMEA countries for all periods presented. 1Q23 revenue includes $1,018 divestiture related impact primarily from a gain on the sale of the India consumer business. Confidential 37",28,True
+38,main_text,"Footnotes (cont.)
+Slide 16
+1) Tangible common equity (TCE) is a non-GAAP financial measure. For additional information on this measure, please refer to Slide29.
+Slide 17
+1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue
+impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit
+costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and
+approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million,
+and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs.
+Slide 20
+1) ICG, PBWM, Legacy Franchises Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional
+information on this measure, please refer to Slide 29.
+2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For
+a reconciliation to reported results, please refer to Slide 29.
+3) th
+-K filed with the SEC on April 14, 2023.
+4) Net income to common for Corp./Other is reduced by preferred dividends of approximately $277 million in 1Q23.
+Slide 21
+1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue
+impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit
+costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and
+approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million,
+and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Revenues and expenses for
+2022 excluding divesture-related impacts are non-GAAP financial measures and include the following:
+2022 revenues include divestiture-related impacts of approximately $854 million, primarily comprised of pre-tax gains related tothe sale of the Philippines consumer business in 3Q22 of
+approximately $618 million and the Thailand consumer business in 4Q22 of approximately $209 million. 2021 divestiture-related impacts to revenue of approximately $(670) million
+included a pre-tax loss related to the sale of the Australia consumer business of approximately $680 million in 3Q21.
+2022 expenses included divestiture-related impacts of approximately $696 million. 2021 divestiture-related impacts to expenses included costs related to the Korea Voluntary Early
+Retirement Program (VERP) of approximately $1.1 billion and contract modification costs related to Asia divestiture markets of approximately $119 million.
+2) Does not include institutional banking services in Russia.
+Slide 22
+1) Includes approximately $8 billion of end-of-period loans reclassified to held-for- ts consumer banking businesses in Taiwan and Indonesia.
+2) Includes Private Bank mortgages.
+Confidential 38",527,3891,pdfplumber_comprehensive,"Footnotes (cont.) Slide 16 1) Tangible common equity (TCE) is a non-GAAP financial measure. For additional information on this measure, please refer to Slide29. Slide 17 1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Slide 20 1) ICG, PBWM, Legacy Franchises Tangible common equity (TCE) is allocated based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. For additional information on this measure, please refer to Slide 29. 2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation to reported results, please refer to Slide 29. 3) th -K filed with the SEC on April 14, 2023. 4) Net income to common for Corp. Other is reduced by preferred dividends of approximately $277 million in 1Q23. Slide 21 1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Revenues and expenses for 2022 excluding divesture-related impacts are non-GAAP financial measures and include the following: 2022 revenues include divestiture-related impacts of approximately $854 million, primarily comprised of pre-tax gains related tothe sale of the Philippines consumer business in 3Q22 of approximately $618 million and the Thailand consumer business in 4Q22 of approximately $209 million. 2021 divestiture-related impacts to revenue of approximately $(670) million included a pre-tax loss related to the sale of the Australia consumer business of approximately $680 million in 3Q21. 2022 expenses included divestiture-related impacts of approximately $696 million. 2021 divestiture-related impacts to expenses included costs related to the Korea Voluntary Early Retirement Program (VERP) of approximately $1.1 billion and contract modification costs related to Asia divestiture markets of approximately $119 million. 2) Does not include institutional banking services in Russia. Slide 22 1) Includes approximately $8 billion of end-of-period loans reclassified to held-for- ts consumer banking businesses in Taiwan and Indonesia. 2) Includes Private Bank mortgages. Confidential 38",25,True
+39,main_text,"Footnotes (cont.)
+Slide 25
+1) Trading-related liabilities include securities loaned or sold under agreements to repurchase and trading account liabilities andbrokerage payables. All other liabilities include short-term
+borrowings and other liabilities.
+2) Net Stable Funding Ratio (NSFR): As previously disclosed, the U.S. banking agencies adopted a rule to assess the availabilityof
+-term debt, while its required stable funding willbe based on the liquidity characteristics of its assets, derivatives
+and commitments. Standardized weightings are required to be applied to the various asset and liability classes. The ratio of available stable funding to required stable funding is required to be
+greater than 100%. The rule became effective beginning July 1, 2021, while public disclosure requirements to report the ratiowill occur on a semiannual basis beginning June 30, 2023.
+3) Includes $23.0 billion in Markets, $1.3 billion in Banking, and $21.5 billion in Corp / Other.
+4) As of year-end 2022. US Citigold tenure defined by the oldest active account in a household across deposits, lending, and investments products.
+5)
+Slide 27
+1) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities
+eral Reserve Bank discount window borrowing capacity.
+2) Calculated as Total Available Liquidity Resources of $1,033 billion minus $488 billion of Net Cash Outflow as March 31, 2023.
+Slide 28
+1) Tangible common equity (TCE) is a non-GAAP financial measure. For additional information on this measure, please refer to Slide29.
+2) e i -
+K filed with the SEC on April 14, 2023.
+3) Represents deferred tax excludable from Basel III CET1 Capital, which includes net DTAs arising from net operating loss, foreigntax credit and general business credit tax carry-forwards and
+DTAs arising from timing differences (future deductions) that are deducted from CET1 capital exceeding the 10% limitation.
+4) -weighted assets due to foreign currencymovements.
+5) the Current Expected Credit Losses (CECL) standard. For additional
+information, see ""Capital Resources-Regulatory Capital Treatment-Modified Transition of the Current Expected Credit Losses Methodology"" in Citigroup's 2022 Annual Report on Form 10-K.
+6) Includes changes in goodwill and intangible assets, and changes in Other Comprehensive Income (including changes in defined benefit plans liability).
+Slide 29
+1) Net income to common for Corp./Other is reduced by preferred dividends of approximately $277 million in 1Q23.
+2) Tangible common equity (TCE) allocated to ICG, PBWM and Legacy Franchises is based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure.
+3) RoTCE is a non-GAAP financial measure.
+Confidential 39",418,2836,pdfplumber_comprehensive,"Footnotes (cont.) Slide 25 1) Trading-related liabilities include securities loaned or sold under agreements to repurchase and trading account liabilities andbrokerage payables. All other liabilities include short-term borrowings and other liabilities. 2) Net Stable Funding Ratio (NSFR): As previously disclosed, the U.S. banking agencies adopted a rule to assess the availabilityof -term debt, while its required stable funding willbe based on the liquidity characteristics of its assets, derivatives and commitments. Standardized weightings are required to be applied to the various asset and liability classes. The ratio of available stable funding to required stable funding is required to be greater than 100%. The rule became effective beginning July 1, 2021, while public disclosure requirements to report the ratiowill occur on a semiannual basis beginning June 30, 2023. 3) Includes $23.0 billion in Markets, $1.3 billion in Banking, and $21.5 billion in Corp Other. 4) As of year-end 2022. US Citigold tenure defined by the oldest active account in a household across deposits, lending, and investments products. 5) Slide 27 1) Available Liquidity Resources is defined as end-of-period HQLA; additional unencumbered securities, including excess liquidity held at bank entities that is non-transferable to other entities eral Reserve Bank discount window borrowing capacity. 2) Calculated as Total Available Liquidity Resources of $1,033 billion minus $488 billion of Net Cash Outflow as March 31, 2023. Slide 28 1) Tangible common equity (TCE) is a non-GAAP financial measure. For additional information on this measure, please refer to Slide29. 2) e i - K filed with the SEC on April 14, 2023. 3) Represents deferred tax excludable from Basel III CET1 Capital, which includes net DTAs arising from net operating loss, foreigntax credit and general business credit tax carry-forwards and DTAs arising from timing differences (future deductions) that are deducted from CET1 capital exceeding the 10% limitation. 4) -weighted assets due to foreign currencymovements. 5) the Current Expected Credit Losses (CECL) standard. For additional information, see Capital Resources-Regulatory Capital Treatment-Modified Transition of the Current Expected Credit Losses Methodology in Citigroup s 2022 Annual Report on Form 10-K. 6) Includes changes in goodwill and intangible assets, and changes in Other Comprehensive Income (including changes in defined benefit plans liability). Slide 29 1) Net income to common for Corp. Other is reduced by preferred dividends of approximately $277 million in 1Q23. 2) Tangible common equity (TCE) allocated to ICG, PBWM and Legacy Franchises is based on estimated full year 2023 capital allocations. TCE is a non-GAAP financial measure. 3) RoTCE is a non-GAAP financial measure. Confidential 39",31,True
+40,main_text,"Footnotes (cont.)
+Slide 30
+1) Reflects the impact of foreign currency (FX) translation into U.S. dollars by applying the first quarter 2023 average exchange rates for all periods presented, with the exception of EOP loans and
+deposits which was calculated based on exchange rates as of March 31st, -GAAP financial measures.
+Slide 31
+1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue
+impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit
+costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and
+approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million,
+and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs.
+Slide 32
+1) Represents the effect on reported EPS and RoTCE from excluding the after-tax divestiture related impacts described on slide 31.
+2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For
+a reconciliation of common equity to tangible common equity, please refer to Slide 29.
+Slide 33
+1) Corporate Lending revenues exclude the impact of gains / (losses) on loan hedges and are non-GAAP financial measures. Gains / (losses) on loan hedges include the mark-to-market on credit
+derivatives and the mark-to-market on loans in the portfolio that are at fair value. Corporate Lending excludes the impact of gains / (losses) on loan hedges of approximately $(199) million in
+1Q23, approximately $(300) million in 4Q22 and approximately $169 million in 1Q22. The fixed premium costs of these hedges are netted against product revenues to reflect the cost of credit
+-GAAP financial measures.
+2) 1Q23 divestiture-related impacts include approximately $1,018 million of revenue primarily related to the gain on sale of the India consumer business and approximately $73 million of
+divestiture-related expenses. 1Q22 divestiture-related impacts include approximately $(47) million in revenue and approximately$559 million of divestiture-related expenses that were
+incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and expenses related to Korea Voluntary Early Retirement
+Program (VERP) of approximately $24 million.
+Confidential 40",407,2888,pdfplumber_comprehensive,"Footnotes (cont.) Slide 30 1) Reflects the impact of foreign currency (FX) translation into U.S. dollars by applying the first quarter 2023 average exchange rates for all periods presented, with the exception of EOP loans and deposits which was calculated based on exchange rates as of March 31st, -GAAP financial measures. Slide 31 1) Excludes 1Q23 pre-tax divestiture-related impacts of approximately $953 million (approximately $648 million after-tax), largely comprising of approximately $1,018 million pre-tax revenue impact primarily from a gain on the sale of the India consumer business, approximately $73 million divestiture-related costs, and approximately $8 million benefit of divestiture-related credit costs. Excludes 1Q22 divestiture-related impacts of approximately $(677) million (approximately $ (588) million after tax), largely comprising of approximately $(47)million in revenue, and approximately $559 million of divestiture-related costs that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and costs related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million, and approximately $71 millionof divestiture-related credit costs. Slide 32 1) Represents the effect on reported EPS and RoTCE from excluding the after-tax divestiture related impacts described on slide 31. 2) Return on Tangible Common Equity (RoTCE) is a non-GAAP financial measure. RoTCE represents annualized net income available to common shareholders as a percentage of average TCE. For a reconciliation of common equity to tangible common equity, please refer to Slide 29. Slide 33 1) Corporate Lending revenues exclude the impact of gains (losses) on loan hedges and are non-GAAP financial measures. Gains (losses) on loan hedges include the mark-to-market on credit derivatives and the mark-to-market on loans in the portfolio that are at fair value. Corporate Lending excludes the impact of gains (losses) on loan hedges of approximately $(199) million in 1Q23, approximately $(300) million in 4Q22 and approximately $169 million in 1Q22. The fixed premium costs of these hedges are netted against product revenues to reflect the cost of credit -GAAP financial measures. 2) 1Q23 divestiture-related impacts include approximately $1,018 million of revenue primarily related to the gain on sale of the India consumer business and approximately $73 million of divestiture-related expenses. 1Q22 divestiture-related impacts include approximately $(47) million in revenue and approximately$559 million of divestiture-related expenses that were incurred in Asia Consumer reporting unit of Legacy Franchises, including goodwill write-down of approximately $535 million, and expenses related to Korea Voluntary Early Retirement Program (VERP) of approximately $24 million. Confidential 40",17,True
