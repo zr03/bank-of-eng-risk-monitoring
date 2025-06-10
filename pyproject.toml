@@ -21,6 +21,7 @@ python-dotenv=">=1.1"
 pandas = "^2.3.0"
 langchain-core = "^0.3.64"
 tiktoken = "^0.9.0"
+pyarrow = "^20.0.0"
 
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.8"

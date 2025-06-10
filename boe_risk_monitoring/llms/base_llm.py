@@ -15,24 +15,30 @@ SUPPORTED_LLMS_DICT = {
         "gpt-4o": {
             "context_window": 128000,
             "max_output": 16384,
+            "pdf_input": True,
         },
         "gpt-4.1": {
             "context_window": 1047576,
             "max_output": 32768,
-        }
+            "pdf_input": True,
+        },
+
     },
     "gemini": {
         "gemini-2.0-flash": {
             "context_window": 1048576,
             "max_output": 8192,
+            "pdf_input": True,
         },
         "gemini-2.5-flash-preview-05-20": {
             "context_window": 1048576,
             "max_output": 65536,
+            "pdf_input": True,
         },
         "gemini-2.5-pro-preview-06-05": {
             "context_window": 1048576,
             "max_output": 65536,
+            "pdf_input": True,
         },
     }
 }
