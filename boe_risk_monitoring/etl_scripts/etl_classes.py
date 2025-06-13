@@ -21,6 +21,7 @@ from boe_risk_monitoring.llms.document_analyser_llm import DocumentAnalyserLLM
 import boe_risk_monitoring.config as config
 
 DATA_FOLDER = config.DATA_FOLDER
+PERMISSIBLE_DOC_TYPES = ['transcripts', 'presentations_text', 'presentations_graphs', 'presentations_tables']
 
 class TranscriptChunk(BaseModel):
 	text: str
@@ -544,73 +545,139 @@ class PresentationETL(BaseETL):
 
 		return text_df, graphs_df, tables_df
 
-	class DataAggregationETL(BaseETL):
-		"""This class provides methods to aggregate data from multiple ETL processes into single files ready for downstream analysis.
+class DataAggregationETL(BaseETL):
+	"""This class provides methods to aggregate data from multiple ETL processes into single files ready for downstream analysis.
+	"""
+	def __init__(self, data_dir_path):
+		# Check if input paths are valid
+		if not isinstance(data_dir_path, str):
+			raise TypeError("Data directory path must be a string.")
+		data_dir_path = Path(data_dir_path)
+		if not data_dir_path.exists():
+			raise FileNotFoundError(f"Data directory does not exist: {data_dir_path}")
+		self.data_dir_path = data_dir_path
+
+	def extract(self):
 		"""
-		def __init__(self, data_dir_path):
-			# Check if input paths are valid
-			if not isinstance(data_dir_path, str):
-				raise TypeError("Data directory path must be a string.")
-			data_dir_path = Path(data_dir_path)
-			if not data_dir_path.exists():
-				raise FileNotFoundError(f"Data directory does not exist: {data_dir_path}")
-			self.data_dir_path = data_dir_path
-
-		def extract(self):
-			"""
-			Extracts transcripts and presentations data from the data directory.
-			Returns a nested dictionary with banks and document type as keys and associated lists of dataframes as their values.
-			"""
-			csv_files = list(self.data_dir_path.glob("**/*.csv"))
-			parquet_files = list(self.data_dir_path.glob("**/*.parquet"))
-			all_files = {file.stem: file for file in csv_files + parquet_files}
-			return all_files
-
-		pass
-
-	class SupplementaryDataETL(BaseETL):
-		pass
-
-	class SharePriceDataETL(BaseETL):
-		"""This class provides methods to extract share price data from Yahoo Finance API for a given company
+		Extracts transcripts and presentations data from the data directory.
+		Returns a nested dictionary with banks and document type as keys and associated lists of dataframes as their values.
 		"""
+		bank_dirs = [d for d in self.data_dir_path.iterdir() if d.is_dir()]
+		all_files = defaultdict(lambda: defaultdict(list))  # Nested dictionary to hold dataframes
+		for bank_dir in bank_dirs:
+			transcripts_dir = bank_dir / "processed" / "transcripts"
+			presentations_dir = bank_dir / "processed" / "presentations"
+			# get all transcript parquet files
+			transcript_files = list(transcripts_dir.glob("[Q1-4]*.parquet"))
+			presentation_text_files = list(presentations_dir.glob("[Q1-4]_text.parquet"))
+			presentation_graph_files = list(presentations_dir.glob("[Q1-4]_graphs.parquet"))
+			presentation_table_files = list(presentations_dir.glob("[Q1-4]_tables.parquet"))
+			# Store the dataframes in the nested dictionary
+			bank_name = bank_dir.name
+			for file in transcript_files:
+				df = pd.read_parquet(file)
+				df['bank'] = bank_name  # Add bank name column
+				df['document_type'] = 'transcript'
+				all_files[bank_name]['transcripts'].append(df)
+			for file in presentation_text_files:
+				df = pd.read_parquet(file)
+				df['bank'] = bank_name
+				df['document_type'] = 'presentation'
+				all_files[bank_name]['presentations_text'].append(df)
+			for file in presentation_graph_files:
+				df = pd.read_parquet(file)
+				df['bank'] = bank_name
+				df['document_type'] = 'presentation'
+				all_files[bank_name]['presentations_graphs'].append(df)
+			for file in presentation_table_files:
+				df = pd.read_parquet(file)
+				df['bank'] = bank_name
+				df['document_type'] = 'presentation'
+				all_files[bank_name]['presentations_tables'].append(df)
+
+	def transform(self, raw_data):
+		"""
+		Transform the extracted data into a single dataframe for each document type.
+		Returns a dictionary with document types as keys and their associated dataframes as values.
+		"""
+		if not isinstance(raw_data, dict):
+			raise TypeError("Raw data must be a nested dictionary with banks and document types")
+
+		transcipts_df = pd.DataFrame()
+		presentations_text_df = pd.DataFrame()
+		presentations_graphs_df = pd.DataFrame()
+		presentations_tables_df = pd.DataFrame()
+
+		for bank in raw_data.keys():
+			for doc_type in raw_data[bank].keys():
+				if doc_type not in PERMISSIBLE_DOC_TYPES:
+					raise ValueError(f"Unsupported document type: {doc_type}. Supported types are {PERMISSIBLE_DOC_TYPES}.")
+				if not isinstance(raw_data[bank][doc_type], list):
+					raise TypeError(f"Data for {bank} - {doc_type} must be a list of dataframes.")
+				# Concatenate all dataframes for the document type
+				df = pd.concat(raw_data[bank][doc_type], ignore_index=True)
+				if doc_type == 'transcripts':
+					transcipts_df = pd.concat([transcipts_df, df], ignore_index=True)
+				elif doc_type == 'presentations_text':
+					presentations_text_df = pd.concat([presentations_text_df, df], ignore_index=True)
+				elif doc_type == 'presentations_graphs':
+					presentations_graphs_df = pd.concat([presentations_graphs_df, df], ignore_index=True)
+				elif doc_type == 'presentations_tables':
+					presentations_tables_df = pd.concat([presentations_tables_df, df], ignore_index=True)
+
+		# Now we'll create a specific dataframe which summarise all text components of the various documents
+
+
+
+	def transform(self):
 		pass
 
-	class VectorDBETL(BaseETL):
-		"""This class provides methods to extract data from NLP outputs and store embeddings in a vector DB along with associated metadata.
-		"""
+	def load(self):
 		pass
+
+class SupplementaryDataETL(BaseETL):
+	pass
+
+class SharePriceDataETL(BaseETL):
+	"""This class provides methods to extract share price data from Yahoo Finance API for a given company
+	"""
+	pass
+
+class VectorDBETL(BaseETL):
+	"""This class provides methods to extract data from NLP outputs and store embeddings in a vector DB along with associated metadata.
+	"""
+	pass
 
 
 
 
 
 if __name__ == "__main__":
-	# Instantiate the TranscriptETL class
-	input_pdf_path = os.path.join("data", "jpmorgan", "raw_docs", "transcripts", "Q3_2024.pdf")
+	# # Instantiate the TranscriptETL class
+	# input_pdf_path = os.path.join("data", "jpmorgan", "raw_docs", "transcripts", "Q3_2024.pdf")
 
-	transcript_etl = TranscriptETL(
-		input_pdf_path=input_pdf_path,
-		is_q4_transcript=False,
-	)
+	# transcript_etl = TranscriptETL(
+	# 	input_pdf_path=input_pdf_path,
+	# 	is_q4_transcript=False,
+	# )
 
-	# Run the extract method
-	extracted_text = transcript_etl.extract()
+	# # Run the extract method
+	# extracted_text = transcript_etl.extract()
 
-	# Run the transform method
-	chunks_df = transcript_etl.transform(
-	    raw_data=extracted_text,
-	    llm_backend="gemini",
-	    llm_model_name="gemini-2.5-pro-preview-06-05",
-	    # llm_model_name="gemini-2.5-flash-preview-05-20",
-	    )
+	# # Run the transform method
+	# chunks_df = transcript_etl.transform(
+	#     raw_data=extracted_text,
+	#     llm_backend="gemini",
+	#     llm_model_name="gemini-2.5-pro-preview-06-05",
+	#     # llm_model_name="gemini-2.5-flash-preview-05-20",
+	#     )
 
-	# Run the load method
-	output_dir_path = os.path.join("data", "jpmorgan", "processed", "transcripts")
-	transcript_etl.load(
-	    transformed_data=chunks_df,
-	    output_dir_path=output_dir_path,
-	    )
+	# # Run the load method
+	# output_dir_path = os.path.join("data", "jpmorgan", "processed", "transcripts")
+	# transcript_etl.load(
+	#     transformed_data=chunks_df,
+	#     output_dir_path=output_dir_path,
+	#     )
 
 	# # Instantiate the PresentationETL class
 	# input_pdf_path = os.path.join("data", "citigroup", "raw_docs", "presentations", "Q4_2024_presentation.pdf")
@@ -631,3 +698,11 @@ if __name__ == "__main__":
 	# 	transformed_data=analysis_results_dict,
 	# 	output_dir_path=output_dir_path,
 	# )
+
+	# Instatntiate the DataAggregationETL class
+	data_aggregation_etl = DataAggregationETL(
+		data_dir_path=DATA_FOLDER,
+	)
+
+	# Extract data
+	all_files = data_aggregation_etl.extract()

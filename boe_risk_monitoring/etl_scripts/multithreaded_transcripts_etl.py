@@ -49,24 +49,24 @@ if __name__ == "__main__":
 	input_pdf_paths, output_dirs = construct_input_output_file_paths(data_dir=DATA_FOLDER, input_file_type="transcripts", skip_if_output_exists=True)
 	print(f"Found {len(input_pdf_paths)} transcript files to process.")
 
-	# # Create a ThreadPoolExecutor to process files concurrently
-	# with ThreadPoolExecutor(max_workers=4) as executor:
-	# 	futures = {}
-	# 	for input_pdf_path, output_dir_path in zip(input_pdf_paths, output_dirs):
-	# 		future = executor.submit(
-	# 			process_transcript,
-	# 			input_pdf_path=input_pdf_path,
-	# 			output_dir_path=output_dir_path,
-	# 			llm_backend="gemini",
-	# 			llm_model_name="gemini-2.5-pro-preview-06-05"
-	# 		)
-	# 		futures[future] = input_pdf_path
+	# Create a ThreadPoolExecutor to process files concurrently
+	with ThreadPoolExecutor(max_workers=4) as executor:
+		futures = {}
+		for input_pdf_path, output_dir_path in zip(input_pdf_paths, output_dirs):
+			future = executor.submit(
+				process_transcript,
+				input_pdf_path=input_pdf_path,
+				output_dir_path=output_dir_path,
+				llm_backend="gemini",
+				llm_model_name="gemini-2.5-pro-preview-06-05"
+			)
+			futures[future] = input_pdf_path
 
-	# 	# Wait for all futures to complete
-	# 	for future in as_completed(futures):
-	# 		try:
-	# 			future.result()  # This will raise an exception if the processing failed
-	# 		except Exception as e:
-	# 			print(f"Error processing {futures[future]}: {e}")
+		# Wait for all futures to complete
+		for future in as_completed(futures):
+			try:
+				future.result()  # This will raise an exception if the processing failed
+			except Exception as e:
+				print(f"Error processing {futures[future]}: {e}")
 
 
