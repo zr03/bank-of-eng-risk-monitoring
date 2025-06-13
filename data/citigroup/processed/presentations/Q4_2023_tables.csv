@@ -1,0 +1,226 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Revenues,1,,Revenues of $17.4B in 4Q23 represent a (3)% decrease YoY.,17.4,,,Full year revenues of $78.5B represent a 4% increase YoY.,78.5,,Billion USD,5,Financial Results,Q4_2023,2024-01-12
+Net Income,2,,"Net Income was $(1.8)B in 4Q23, a non-meaningful (NM) change YoY.",-1.8,,,Full year Net Income of $9.2B represents a (38)% decrease YoY.,9.2,,Billion USD,5,Financial Results,Q4_2023,2024-01-12
+EPS,3,,"EPS was $(1.16) in 4Q23, a non-meaningful (NM) change YoY.",-1.16,,,Full year EPS of $4.04 represents a (42)% decrease YoY.,4.04,,USD,5,Financial Results,Q4_2023,2024-01-12
+ROTCE,4,,,-5.1,,,,4.9,,%,5,Financial Results,Q4_2023,2024-01-12
+CET1 Capital Ratio,5,,,13.3,13.6,,,,,%,5,Financial Results,Q4_2023,2024-01-12
+Tangible Book Value Per Share,6,Tangible Book Value Per Share of $86.19 in 4Q23 represents a (1)% decrease versus 3Q23.,,86.19,,,,,,USD,5,Financial Results,Q4_2023,2024-01-12
+Net Interest Income,1,,Increased by 4% YoY.,13824.0,,,Increased by 13% YoY.,54900.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Non-Interest Revenue,2,Decreased by (43)% QoQ.,Decreased by (24)% YoY.,3616.0,,,Decreased by (12)% YoY.,23562.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Total Revenues,3,Decreased by (13)% QoQ.,Decreased by (3)% YoY.,17440.0,,,Increased by 4% YoY.,78462.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Expenses,4,Increased by 18% QoQ.,Increased by 23% YoY.,15996.0,,,Increased by 10% YoY.,56366.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+NCLs,5,Increased by 22% QoQ.,Increased by 69% YoY.,1994.0,,,Increased by 70% YoY.,6437.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+ACL Build and Other,6,,Change from prior year is not meaningful (NM).,1553.0,,,Increased by 90% YoY.,2749.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Credit Costs,7,Increased by 93% QoQ.,Increased by 92% YoY.,3547.0,,,Increased by 75% YoY.,9186.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+EBT,8,,Change from prior year is not meaningful (NM).,-2103.0,,,Decreased by (31)% YoY.,12910.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Income Taxes,9,,Change from prior year is not meaningful (NM).,-296.0,,,Decreased by (3)% YoY.,3528.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Net Income,10,,Change from prior year is not meaningful (NM).,-1839.0,,,Decreased by (38)% YoY.,9228.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Net Income to Common,11,,Change from prior year is not meaningful (NM).,-2218.0,,,Decreased by (42)% YoY.,7907.0,,MM USD,7,Financial Results,Q4_2023,2024-01-12
+Diluted EPS,12,,Change from prior year is not meaningful (NM).,-1.16,,,Decreased by (42)% YoY.,4.04,,USD,7,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,13,"Increased by 2,460 bps QoQ.","Increased by 1,960 bps YoY.",92.0,,,Increased by 370 bps YoY.,72.0,,%,7,Financial Results,Q4_2023,2024-01-12
+ROE,14,,,-4.5,,,,4.3,,%,7,Financial Results,Q4_2023,2024-01-12
+ROTCE,15,,,-5.1,,,,4.9,,%,7,Financial Results,Q4_2023,2024-01-12
+CET1 Capital Ratio,16,,,13.3,,,,13.3,,%,7,Financial Results,Q4_2023,2024-01-12
+FDIC Special Assessment related to regional bank failures from March 2023,1,,,-1.7,,,,,,Billion USD Pretax,7,Financial Results,Q4_2023,2024-01-12
+Restructuring charge related to organizational simplification,2,,,-0.8,,,,,,Billion USD Pretax,7,Financial Results,Q4_2023,2024-01-12
+"Argentina Currency Devaluation impacting revenues in Services, Markets and Banking",3,,,-0.9,,,,,,Billion USD Pretax,7,Financial Results,Q4_2023,2024-01-12
+Transfer Risk related to Russia and Argentina,4,,,-1.3,,,,,,Billion USD Pretax,7,Financial Results,Q4_2023,2024-01-12
+Notable items,5,,,-4.7,,,,,,Billion USD Pretax,7,Financial Results,Q4_2023,2024-01-12
+EOP Card Loans,1,,,165.0,156.0,151.0,,,,Billion USD,11,Financial Results,Q4_2023,2024-01-12
+NCLs,2,,,1.5,1.3,0.8,,,,Billion USD,11,Financial Results,Q4_2023,2024-01-12
+% of Avg Loans,3,,,3.8,3.3,2.2,,,,%,11,Financial Results,Q4_2023,2024-01-12
+90+ DPD,4,,,1.5,1.3,0.9,,,,%,11,Financial Results,Q4_2023,2024-01-12
+ACLL / EOP Loans,5,,,7.7,7.8,7.6,,,,%,11,Financial Results,Q4_2023,2024-01-12
+EOP Corporate Loans,1,,,300.0,289.0,289.0,,,,Billion USD,11,Financial Results,Q4_2023,2024-01-12
+NCLs,2,,,0.1,0.1,0.1,,,,Billion USD,11,Financial Results,Q4_2023,2024-01-12
+% of Avg Loans,3,,,0.1,0.1,0.2,,,,%,11,Financial Results,Q4_2023,2024-01-12
+NALs,4,,,1.9,2.0,1.1,,,,Billion USD,11,Financial Results,Q4_2023,2024-01-12
+% of Loans,5,,,0.6,0.7,0.4,,,,%,11,Financial Results,Q4_2023,2024-01-12
+ACLL / EOP Loans,6,,,0.9,1.0,1.0,,,,%,11,Financial Results,Q4_2023,2024-01-12
+CET1 Capital,1,,,153.0,156.0,149.0,,,,Billion USD,12,Financial Results,Q4_2023,2024-01-12
+Standardized RWA,2,,,1153.0,1149.0,1143.0,,,,Billion USD,12,Financial Results,Q4_2023,2024-01-12
+CET1 Capital Ratio - Standardized,3,,,13.3,13.6,13.0,,,,%,12,Financial Results,Q4_2023,2024-01-12
+Advanced RWA,4,,,1273.0,1250.0,1222.0,,,,Billion USD,12,Financial Results,Q4_2023,2024-01-12
+CET1 Capital Ratio - Advanced,5,,,12.1,12.5,12.2,,,,%,12,Financial Results,Q4_2023,2024-01-12
+Supplementary Leverage Ratio,6,,,5.8,6.0,5.8,,,,%,12,Financial Results,Q4_2023,2024-01-12
+Total Loss Absorbing Capacity,7,,,331.0,337.0,334.0,,,,Billion USD,12,Financial Results,Q4_2023,2024-01-12
+Liquidity Coverage Ratio,8,,,116.0,117.0,118.0,,,,%,12,Financial Results,Q4_2023,2024-01-12
+Net Interest Income,1,Increased by 1% QoQ.,Increased by 13% YoY.,2869.0,,,Increased by 25% YoY.,11027.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Non-Interest Revenue,2,Decreased by (14)% QoQ.,Decreased by (20)% YoY.,555.0,,,Decreased by (11)% YoY.,2625.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Treasury and Trade Solutions,3,Decreased by (2)% QoQ.,Increased by 6% YoY.,3424.0,,,Increased by 16% YoY.,13652.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Net Interest Income (Securities Services),4,Decreased by (3)% QoQ.,Increased by 11% YoY.,556.0,,,Increased by 46% YoY.,2171.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Non-Interest Revenue (Securities Services),5,Decreased by (6)% QoQ.,Decreased by (4)% YoY.,520.0,,,Decreased by (5)% YoY.,2227.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Securities Services,6,Decreased by (4)% QoQ.,Increased by 3% YoY.,1076.0,,,Increased by 15% YoY.,4398.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Total Revenues,7,Decreased by (3)% QoQ.,Increased by 6% YoY.,4500.0,,,Increased by 16% YoY.,18050.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Expenses,8,Increased by 3% QoQ.,Increased by 9% YoY.,2594.0,,,Increased by 15% YoY.,10024.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+NCLs,9,,Change is not meaningful (NM) YoY.,-6.0,,,Decreased by (22)% YoY.,40.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+ACL Build (Release) and Other,10,,Change is not meaningful (NM) YoY.,652.0,,,Change is not meaningful (NM) YoY.,910.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Credit Costs,11,,Change is not meaningful (NM) YoY.,646.0,,,Change is not meaningful (NM) YoY.,950.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+EBT,12,Decreased by (37)% QoQ.,Decreased by (33)% YoY.,1260.0,,,Increased by 6% YoY.,7076.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Net Income,13,Decreased by (42)% QoQ.,Decreased by (43)% YoY.,776.0,,,Decreased by (6)% YoY.,4605.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Allocated Average TCE,1,,,23.0,,,,23.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+ROTCE,2,,,13.4,,,,20.0,,%,13,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,3,Increased by 400 bps QoQ.,Increased by 200 bps YoY.,58.0,,,,56.0,,%,13,Financial Results,Q4_2023,2024-01-12
+Average Loans,4,,Increased by 6% YoY.,83.0,,,Decreased by (1)% YoY.,81.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+EOP Loans,5,Increased by 2% QoQ.,Increased by 11% YoY.,85.0,,,Increased by 11% YoY.,85.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+Average Deposits,6,Increased by 1% QoQ.,Decreased by (3)% YoY.,802.0,,,,810.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+EOP Deposits,7,Increased by 3% QoQ.,Decreased by (5)% YoY.,779.0,,,Decreased by (5)% YoY.,779.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+Memo: Net Interest Income,8,,Increased by 13% YoY.,3425.0,,,Increased by 28% YoY.,13198.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+Memo: Non-Interest Revenue,9,Decreased by (10)% QoQ.,Decreased by (13)% YoY.,1075.0,,,Decreased by (8)% YoY.,4852.0,,MM USD,13,Financial Results,Q4_2023,2024-01-12
+TTS: Average Loans,1,Flat at 0% QoQ.,Increased by 8% YoY.,82.0,,,,80.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+TTS: Average Deposits,2,Increased by 1% QoQ.,Decreased by (2)% YoY.,680.0,,,Increased by 2% YoY.,687.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+TTS: Cross Border Transaction Value,3,Increased by 13% QoQ.,Increased by 23% YoY.,99.0,,,Increased by 15% YoY.,358.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+TTS: US Dollar Clearing Volume,4,Increased by 1% QoQ.,Increased by 5% YoY.,40.0,,,Increased by 6% YoY.,157.0,,Million Transactions,13,Financial Results,Q4_2023,2024-01-12
+TTS: Commercial Card Spend Volume,5,Decreased by (2)% QoQ.,Increased by 8% YoY.,17.0,,,Increased by 16% YoY.,67.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+Securities Services: Average Deposits,6,Increased by 2% QoQ.,Decreased by (7)% YoY.,122.0,,,Decreased by (8)% YoY.,123.0,,Billion USD,13,Financial Results,Q4_2023,2024-01-12
+Securities Services: AUC/AUA,7,Increased by 9% QoQ.,Increased by 13% YoY.,25.0,,,Increased by 13% YoY.,25.0,,Trillion USD,13,Financial Results,Q4_2023,2024-01-12
+Rates and currencies,1,Decreased by (37)% QoQ.,Decreased by (36)% YoY.,1758.0,,,Decreased by (6)% YoY.,10885.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Spread products / other fixed income,2,Decreased by (23)% QoQ.,Increased by 17% YoY.,833.0,,,Decreased by (5)% YoY.,3935.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Fixed Income Markets,3,Decreased by (33)% QoQ.,Decreased by (25)% YoY.,2591.0,,,Decreased by (6)% YoY.,14820.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Equity Markets,4,Decreased by (13)% QoQ.,Increased by 9% YoY.,819.0,,,Decreased by (9)% YoY.,4037.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Total Revenues,5,Decreased by (29)% QoQ.,Decreased by (19)% YoY.,3410.0,,,Decreased by (6)% YoY.,18857.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Expenses,6,Increased by 4% QoQ.,Increased by 8% YoY.,3434.0,,,Increased by 7% YoY.,13238.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+NCLs,7,,Change from prior year not meaningful (NM).,30.0,,,Change from prior year not meaningful (NM).,32.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+ACL Build (Release) and Other,8,Increased by 7% QoQ.,Change from prior year not meaningful (NM).,179.0,,,Change from prior year not meaningful (NM).,405.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Credit Costs,9,Increased by 28% QoQ.,Change from prior year not meaningful (NM).,209.0,,,Change from prior year not meaningful (NM).,437.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+EBT,10,,Change from prior year not meaningful (NM).,-233.0,,,Decreased by (32)% YoY.,5182.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Net Income,11,,Change from prior year not meaningful (NM).,-134.0,,,Decreased by (33)% YoY.,3953.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Allocated Average TCE,1,,,53.0,,,,53.0,,Billion USD,14,Financial Results,Q4_2023,2024-01-12
+ROTCE,2,,,-1.0,,,,7.4,,%,14,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,3,"Increased by 3,200 bps QoQ.","Increased by 2,500 bps YoY.",101.0,,,Increased by 800 bps YoY.,70.0,,%,14,Financial Results,Q4_2023,2024-01-12
+Average Trading Account Assets,4,Decreased by (1)% QoQ.,Increased by 18% YoY.,391.0,,,Increased by 13% YoY.,379.0,,Billion USD,14,Financial Results,Q4_2023,2024-01-12
+Average Total Assets,5,Increased by 1% QoQ.,Increased by 5% YoY.,1028.0,,,Increased by 3% YoY.,1018.0,,Billion USD,14,Financial Results,Q4_2023,2024-01-12
+Average Loans,6,Increased by 6% QoQ.,Increased by 4% YoY.,115.0,,,Decreased by (1)% YoY.,110.0,,Billion USD,14,Financial Results,Q4_2023,2024-01-12
+Average VaR (99% confidence level),7,Increased by 19% QoQ.,Decreased by (2)% YoY.,138.0,,,Increased by 8% YoY.,132.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Fixed Income Revenues,1,,"Decreased by (25)% from $3,439MM in 4Q22.",2591.0,3850.0,3439.0,Decreased by (6)% YoY.,14820.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Equities Revenues,2,,Increased by 9% from $748MM in 4Q22.,819.0,942.0,748.0,Decreased by (9)% YoY.,4037.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Total Markets Revenues,3,,"Decreased by (19)% from $4,187MM in 4Q22.",3410.0,4792.0,4187.0,Decreased by (6)% YoY.,18857.0,,MM USD,14,Financial Results,Q4_2023,2024-01-12
+Investment Banking,1,Decreased by (3)% QoQ.,Increased by 27% YoY.,669.0,,,Increased by 1% YoY.,2538.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Corporate Lending (ex-gain/(loss)),2,Decreased by (41)% QoQ.,Decreased by (26)% YoY.,411.0,,,Decreased by (4)% YoY.,2473.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Gain/(loss) on loan hedges,3,Change is not meaningful (NM) QoQ.,Increased by 56% YoY.,-131.0,,,Change is not meaningful (NM) YoY.,-443.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Corporate Lending incl. gain/(loss),4,Decreased by (57)% QoQ.,Increased by 11% YoY.,280.0,,,Decreased by (30)% YoY.,2030.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Total Revenues,5,Decreased by (29)% QoQ.,Increased by 22% YoY.,949.0,,,Decreased by (15)% YoY.,4568.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Expenses,6,Decreased by (5)% QoQ.,Increased by 37% YoY.,1155.0,,,Increased by 9% YoY.,4869.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+NCLs,7,Change is not meaningful (NM) QoQ.,Decreased by (26)% YoY.,71.0,,,Increased by 59% YoY.,169.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+ACL Build (Release) and Other,8,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,114.0,,,Change is not meaningful (NM) YoY.,-334.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Credit Costs,9,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,185.0,,,Change is not meaningful (NM) YoY.,-165.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+EBT,10,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,-391.0,,,Change is not meaningful (NM) YoY.,-136.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Net Income,11,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,-322.0,,,Change is not meaningful (NM) YoY.,-48.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Allocated Average TCE,1,,,21.0,,,,21.0,,Billion USD,15,Financial Results,Q4_2023,2024-01-12
+ROTCE,2,,,-6.0,,,,-0.2,,%,15,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,3,"Increased by 3,100 bps QoQ.","Increased by 1,300 bps YoY.",122.0,,,"Increased by 2,400 bps YoY.",107.0,,%,15,Financial Results,Q4_2023,2024-01-12
+Average Loans,4,,Decreased by (9)% YoY.,87.0,,,Decreased by (8)% YoY.,90.0,,Billion USD,15,Financial Results,Q4_2023,2024-01-12
+EOP Loans,5,Increased by 1% QoQ.,Decreased by (7)% YoY.,85.0,,,Decreased by (7)% YoY.,85.0,,Billion USD,15,Financial Results,Q4_2023,2024-01-12
+NCL Rate,6,Increased by 19 bps QoQ.,Decreased by (8) bps YoY.,0.32,,,Increased by 8 bps YoY.,0.19,,%,15,Financial Results,Q4_2023,2024-01-12
+Memo: Net Interest Income,7,Decreased by (1)% QoQ.,Increased by 2% YoY.,537.0,,,Increased by 2% YoY.,2094.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Memo: Non-Interest Revenue,8,Decreased by (49)% QoQ.,Increased by 65% YoY.,412.0,,,Decreased by (26)% YoY.,2474.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Advisory,1,,Increased by 11% YoY from $258MM in 4Q22.,286.0,299.0,258.0,Decreased by (24)% YoY.,1017.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Equity Underwriting,2,,Decreased by (17)% YoY from $132MM in 4Q22.,110.0,123.0,132.0,Decreased by (19)% YoY.,500.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Debt Underwriting,3,,Increased by 43% YoY from $217MM in 4Q22.,310.0,272.0,217.0,Increased by 9% YoY.,1196.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Investment Banking fees,4,,Increased by 16% YoY from $607MM in 4Q22.,706.0,694.0,607.0,Decreased by (11)% YoY.,2713.0,,MM USD,15,Financial Results,Q4_2023,2024-01-12
+Private Bank,1,Decreased by (12)% QoQ.,Decreased by (10)% YoY.,542.0,,,Decreased by (17)% YoY.,2332.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Wealth at Work,2,Decreased by (10)% QoQ.,Increased by 8% YoY.,211.0,,,Increased by 18% YoY.,862.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Citigold,3,Decreased by (9)% QoQ.,Decreased by (1)% YoY.,918.0,,,,3897.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Total Revenues,4,Decreased by (10)% QoQ.,Decreased by (3)% YoY.,1671.0,,,Decreased by (5)% YoY.,7091.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Expenses,5,Decreased by (4)% QoQ.,Increased by 4% YoY.,1647.0,,,Increased by 10% YoY.,6644.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+NCLs,6,Increased by 29% QoQ.,Decreased by (45)% YoY.,31.0,,,Decreased by (5)% YoY.,98.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+ACL Build (Release) and Other,7,Decreased by (4)% QoQ.,Increased by 76% YoY.,-27.0,,,Change is not meaningful (NM) YoY.,-100.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Credit Costs,8,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,4.0,,,Change is not meaningful (NM) YoY.,-2.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+EBT,9,Decreased by (86)% QoQ.,Decreased by (90)% YoY.,20.0,,,Decreased by (59)% YoY.,449.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Net Income,10,Decreased by (96)% QoQ.,Decreased by (97)% YoY.,5.0,,,Decreased by (64)% YoY.,346.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Allocated Average TCE,1,,,13.0,,,,13.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+ROTCE,2,,,0.1,,,,2.6,,%,16,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,3,Increased by 700 bps QoQ.,Increased by 700 bps YoY.,99.0,,,"Increased by 1,300 bps YoY.",94.0,,%,16,Financial Results,Q4_2023,2024-01-12
+Average Loans,4,,,150.0,,,,150.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+EOP Loans,5,Increased by 1% QoQ.,Increased by 2% YoY.,152.0,,,Increased by 2% YoY.,152.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+Average Deposits,6,,Decreased by (2)% YoY.,312.0,,,Decreased by (1)% YoY.,316.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+EOP Deposits,7,Increased by 5% QoQ.,Decreased by (1)% YoY.,323.0,,,Decreased by (1)% YoY.,323.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+Estimated Client Investment Assets,8,Increased by 6% QoQ.,Increased by 12% YoY.,498.0,,,Increased by 12% YoY.,498.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+Client Balances,9,Increased by 5% QoQ.,Increased by 6% YoY.,973.0,,,Increased by 6% YoY.,973.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+Estimated Net New Assets,10,Change is not meaningful (NM) QoQ.,Increased by 33% YoY.,16.0,,,Increased by 75% YoY.,21.0,,Billion USD,16,Financial Results,Q4_2023,2024-01-12
+Memo: Net Interest Income,11,Decreased by (12)% QoQ.,Decreased by (10)% YoY.,1044.0,,,Decreased by (6)% YoY.,4460.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Memo: Non-Interest Revenue,12,Decreased by (7)% QoQ.,Increased by 13% YoY.,627.0,,,Decreased by (3)% YoY.,2631.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Private Bank,1,,Decreased by (10)% YoY from $599MM in 4Q22.,542.0,617.0,599.0,Decreased by (17)% YoY.,2332.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Wealth at Work,2,,Increased by 8% YoY from $195MM in 4Q22.,211.0,234.0,195.0,Increased by 18% YoY.,862.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Citigold,3,,Decreased by (1)% YoY from $929MM in 4Q22.,918.0,1004.0,929.0,,3897.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Total Wealth Revenues,4,,"Decreased by (3)% YoY from $1,723MM in 4Q22.",1671.0,1855.0,1723.0,Decreased by (5)% YoY.,7091.0,,MM USD,16,Financial Results,Q4_2023,2024-01-12
+Branded Cards,1,Increased by 3% QoQ.,Increased by 10% YoY.,2620.0,,,Increased by 11% YoY.,9988.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Retail Services,2,Decreased by (5)% QoQ.,Increased by 15% YoY.,1636.0,,,Increased by 21% YoY.,6617.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Retail Banking,3,Increased by 5% QoQ.,Increased by 15% YoY.,684.0,,,Increased by 6% YoY.,2582.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Total Revenues,4,Decreased by (12)% QoQ.,Increased by 12% YoY.,4940.0,,,Increased by 14% YoY.,19187.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Expenses,5,Increased by 5% QoQ.,Decreased by (1)% YoY.,2594.0,,,Increased by 3% YoY.,10102.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+NCLs,6,Increased by 19% QoQ.,Increased by 88% YoY.,1599.0,,,Increased by 79% YoY.,5234.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+ACL Build (Release) and Other,7,Change is not meaningful (NM) QoQ.,Decreased by (45)% YoY.,475.0,,,Change is not meaningful (NM) YoY.,1473.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Credit Costs,8,Increased by 42% QoQ.,Increased by 20% YoY.,2074.0,,,Increased by 95% YoY.,6707.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+EBT,9,Decreased by (72)% QoQ.,Change is not meaningful (NM) YoY.,272.0,,,Decreased by (35)% YoY.,2378.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Net Income,10,Decreased by (73)% QoQ.,Change is not meaningful (NM) YoY.,201.0,,,Decreased by (34)% YoY.,1820.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Allocated Average TCE,1,,,22.0,,,,22.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+ROTCE,2,,,3.6,,,,8.3,,%,17,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,3,Increased by 300 bps QoQ.,Decreased by (600) bps YoY.,53.0,,,Decreased by (500) bps YoY.,53.0,,%,17,Financial Results,Q4_2023,2024-01-12
+Average Loans,4,Increased by 3% QoQ.,Increased by 12% YoY.,202.0,,,Increased by 13% YoY.,193.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+EOP Loans,5,Increased by 5% QoQ.,Increased by 11% YoY.,209.0,,,Increased by 11% YoY.,209.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Average Deposits,6,Decreased by (5)% QoQ.,Decreased by (5)% YoY.,105.0,,,Decreased by (4)% YoY.,110.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+EOP Deposits,7,Decreased by (5)% QoQ.,Decreased by (8)% YoY.,103.0,,,Decreased by (8)% YoY.,103.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Active Mobile Users,8,Increased by 1% QoQ.,Increased by 10% YoY.,18.0,,,Increased by 10% YoY.,18.0,,Million,17,Financial Results,Q4_2023,2024-01-12
+Active Digital Users,9,Increased by 1% QoQ.,Increased by 6% YoY.,25.0,,,Increased by 6% YoY.,25.0,,Million,17,Financial Results,Q4_2023,2024-01-12
+NCL Rate,10,Increased by 42 bps QoQ.,Increased by 126 bps YoY.,3.14,,,Increased by 101 bps YoY.,2.72,,%,17,Financial Results,Q4_2023,2024-01-12
+Average Installment Loans,11,Increased by 5% QoQ.,Increased by 22% YoY.,6.0,,,Increased by 40% YoY.,6.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Memo: Net Interest Income,12,Increased by 1% QoQ.,Increased by 11% YoY.,5238.0,,,Increased by 12% YoY.,20150.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Memo: Non-Interest Revenue,13,Decreased by (16)% QoQ.,Increased by 9% YoY.,-298.0,,,Increased by 19% YoY.,-963.0,,MM USD,17,Financial Results,Q4_2023,2024-01-12
+Branded Cards: New Account Acquisitions,1,Decreased by (4)% QoQ.,Increased by 8% YoY.,1105.0,,,Increased by 9% YoY.,4546.0,,000s,17,Financial Results,Q4_2023,2024-01-12
+Branded Cards: Credit Card Spend Volume,2,Increased by 3% QoQ.,Increased by 3% YoY.,130.0,,,Increased by 5% YoY.,497.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Branded Cards: Average Loans,3,Increased by 3% QoQ.,Increased by 12% YoY.,107.0,,,Increased by 13% YoY.,102.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Branded Cards: NCL Rate,4,Increased by 34 bps QoQ.,Increased by 138 bps YoY.,3.06,,,Increased by 108 bps YoY.,2.62,,%,17,Financial Results,Q4_2023,2024-01-12
+Branded Cards: 90+ day Delinquency Rate,5,Increased by 15 bps QoQ.,Increased by 44 bps YoY.,1.07,,,Change is not meaningful (NM) YoY.,1.07,,%,17,Financial Results,Q4_2023,2024-01-12
+Retail Services: New Account Acquisitions,6,Increased by 22% QoQ.,Decreased by (7)% YoY.,2617.0,,,Decreased by (8)% YoY.,9138.0,,000s,17,Financial Results,Q4_2023,2024-01-12
+Retail Services: Credit Card Spend Volume,7,Increased by 12% QoQ.,Decreased by (4)% YoY.,26.0,,,Decreased by (4)% YoY.,95.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Retail Services: Average Loans,8,Increased by 3% QoQ.,Increased by 8% YoY.,52.0,,,Increased by 9% YoY.,50.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Retail Services: NCL Rate,9,Increased by 91 bps QoQ.,Increased by 214 bps YoY.,5.44,,,Increased by 190 bps YoY.,4.64,,%,17,Financial Results,Q4_2023,2024-01-12
+Retail Services: 90+ day Delinquency Rate,10,Increased by 24 bps QoQ.,Increased by 80 bps YoY.,2.36,,,Change is not meaningful (NM) YoY.,2.36,,%,17,Financial Results,Q4_2023,2024-01-12
+Retail Banking: EOP Digital Deposits,11,Flat at 0% QoQ.,Increased by 14% YoY.,28.0,,,Increased by 14% YoY.,28.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Retail Banking: USPB Branches,12,Decreased by (1)% QoQ.,Decreased by (1)% YoY.,647.0,,,Decreased by (1)% YoY.,647.0,,count,17,Financial Results,Q4_2023,2024-01-12
+Retail Banking: Mortgage Originations,13,Decreased by (28)% QoQ.,Increased by 4% YoY.,3.0,,,Increased by 3% YoY.,15.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Retail Banking: Average Mortgage Loans,14,Increased by 3% QoQ.,Increased by 18% YoY.,39.0,,,Increased by 16% YoY.,37.0,,Billion USD,17,Financial Results,Q4_2023,2024-01-12
+Legacy Franchises,1,Decreased by (5)% QoQ.,Decreased by (7)% YoY.,1710.0,,,Decreased by (4)% YoY.,7198.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Corporate / Other,2,Decreased by (22)% QoQ.,Decreased by (47)% YoY.,322.0,,,Increased by 42% YoY.,2165.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Total Revenues,3,Decreased by (8)% QoQ.,Decreased by (17)% YoY.,2032.0,,,Increased by 4% YoY.,9363.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Expenses,4,Change is not meaningful (NM) QoQ.,Increased by 92% YoY.,4466.0,,,Increased by 22% YoY.,11117.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+NCLs,5,Decreased by (1)% QoQ.,Increased by 27% YoY.,236.0,,,Increased by 13% YoY.,870.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+ACL Build (Release) and Other,6,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,223.0,,,Change is not meaningful (NM) YoY.,456.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Credit Costs,7,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,459.0,,,Change is not meaningful (NM) YoY.,1326.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+EBT,8,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,-2893.0,,,Change is not meaningful (NM) YoY.,-3080.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Net Income,9,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,-2254.0,,,Change is not meaningful (NM) YoY.,-2107.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Legacy Franchises Average Allocated TCE,1,,,10.0,,,,10.0,,Billion USD,18,Financial Results,Q4_2023,2024-01-12
+Corporate / Other Average Allocated TCE,2,,,22.0,,,,21.0,,Billion USD,18,Financial Results,Q4_2023,2024-01-12
+Allocated Average TCE,3,,,32.0,,,,31.0,,Billion USD,18,Financial Results,Q4_2023,2024-01-12
+Efficiency Ratio,4,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,220.0,,,"Increased by 1,700 bps YoY.",119.0,,%,18,Financial Results,Q4_2023,2024-01-12
+Legacy Franchises Revenues,5,Decreased by (5)% QoQ.,Decreased by (7)% YoY.,1710.0,,,Decreased by (4)% YoY.,7198.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Legacy Franchises Expenses,6,Decreased by (2)% QoQ.,Decreased by (7)% YoY.,1624.0,,,Decreased by (5)% YoY.,6636.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Corporate / Other Revenues,7,Decreased by (22)% QoQ.,Decreased by (47)% YoY.,322.0,,,Increased by 42% YoY.,2165.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Corporate / Other Expenses,8,Change is not meaningful (NM) QoQ.,Change is not meaningful (NM) YoY.,2842.0,,,Change is not meaningful (NM) YoY.,4481.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Memo: Net Interest Income,9,Decreased by (12)% QoQ.,Decreased by (29)% YoY.,1586.0,,,Increased by 1% YoY.,7733.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Memo: Non-Interest Revenue,10,Increased by 8% QoQ.,Change is not meaningful (NM) YoY.,446.0,,,Increased by 23% YoY.,1630.0,,MM USD,18,Financial Results,Q4_2023,2024-01-12
+Status: Closed Exit Markets,1,,,,,,,2.3,2.9,Billion USD Revenue,18,Financial Results,Q4_2023,2024-01-12
+Status: Mexico Consumer / SBMM,2,,,,,,,5.7,4.6,Billion USD Revenue,18,Financial Results,Q4_2023,2024-01-12
+Status: Wind-Downs / Sale / Other,3,,,,,,,0.6,0.8,Billion USD Revenue,18,Financial Results,Q4_2023,2024-01-12
+Status: Legacy Franchises,4,,,,,,,8.5,8.3,Billion USD Revenue,18,Financial Results,Q4_2023,2024-01-12
+Status: Divestiture-related Impacts,5,,,,,,,1.3,0.9,Billion USD Revenue,18,Financial Results,Q4_2023,2024-01-12
+Status: Legacy Franchises ex-divestitures,6,,,,,,,7.2,7.5,Billion USD Revenue,18,Financial Results,Q4_2023,2024-01-12
+TTS: Average Deposits,1,,,,,,"Achieved +1% CAGR, compared to a target of Mid Single-Digits CAGR.",1.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+TTS: USD Clearing Volumes,2,,,,,,"Achieved +4% CAGR, compared to a target of High Single-Digits CAGR.",4.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+TTS: Cross-Border Transaction Value,3,,,,,,"Achieved +13% CAGR, compared to a target of High Single-Digits CAGR.",13.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+TTS: Wallet Share – Large Corporate clients,4,,,,,,"Achieved 10.0% (~+70bps vs. 2021), meeting the target of +50-75bps of Share Gains.",10.0,,%,29,Financial Results,Q4_2023,2024-01-12
+Securities Services: Assets Under Custody / Assets Under Administration,5,,,,,,"Achieved +3% CAGR, compared to a target of Mid Single-Digits CAGR.",3.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+Securities Services: EOP Deposits,6,,,,,,"Achieved (5)% CAGR, compared to a target of Mid Single-Digits CAGR.",-5.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+Securities Services: Wallet Share,7,,,,,,"Achieved 8.7% (~+130bps vs. 2021), progressing towards the target of Target Share Gains.",8.7,,%,29,Financial Results,Q4_2023,2024-01-12
+Wealth: EBT Margin %,8,,,,,,"Achieved 6% (~(25) pts vs. 2021), below the target of >20%.",6.0,,%,29,Financial Results,Q4_2023,2024-01-12
+Wealth: Client Investment Assets,9,,,,,,"Achieved (1)% CAGR, compared to a target of High Single-Digits CAGR.",-1.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+Wealth: Net New Assets (% of Total Client Balances),10,,,,,,"Achieved 2% (+1% vs. 2022), compared to a target of Mid Single-Digits.",2.0,,%,29,Financial Results,Q4_2023,2024-01-12
+Banking: M&A Wallet Share,11,,,,,,"Achieved 3.7% (~(40)bps vs. 2021), compared to a target of Mid Single-Digits.",3.7,,%,29,Financial Results,Q4_2023,2024-01-12
+Banking: ECM Wallet Share,12,,,,,,"Achieved 3.6% (~(180)bps vs. 2021), compared to a target of Mid Single-Digits.",3.6,,%,29,Financial Results,Q4_2023,2024-01-12
+Banking: DCM Wallet Share,13,,,,,,"Achieved 5.0% (~+10bps vs. 2021), compared to a target of Mid Single-Digits.",5.0,,%,29,Financial Results,Q4_2023,2024-01-12
+Markets: Revenue / RWA,14,,,,,,"Achieved 5.3% (~+100bps vs. 2021), below the target of 5.5%.",5.3,,%,29,Financial Results,Q4_2023,2024-01-12
+Markets: Fixed Income Market Share,15,,,,,,"Achieved 9.3% YTD (~+40bps vs. 2021), progressing towards the Target Share Gains.",9.3,,% YTD,29,Financial Results,Q4_2023,2024-01-12
+Markets: Equities Market Share,16,,,,,,"Achieved 5.4% YTD (~(50)bps vs. 2021), progressing towards the Target Share Gains.",5.4,,% YTD,29,Financial Results,Q4_2023,2024-01-12
+U.S. Personal Banking: EOP Card Loans,17,,,,,,"Achieved +11% CAGR, compared to a target of High Single-Digits CAGR.",11.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12
+U.S. Personal Banking: EOP Deposits,18,,,,,,"Achieved (1)% CAGR, compared to a target of High Single-Digits CAGR.",-1.0,,% CAGR,29,Financial Results,Q4_2023,2024-01-12

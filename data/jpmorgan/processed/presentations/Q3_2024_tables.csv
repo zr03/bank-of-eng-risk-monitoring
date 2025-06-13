@@ -1,0 +1,97 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Net interest income,1,Increased by $0.7B from $22.8B in 2Q24.,Increased by $0.7B from $22.8B in 3Q23.,23.5,22.8,22.8,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Noninterest revenue,2,Decreased by $8.3B from $28.1B in 2Q24.,Increased by $2.0B from $17.8B in 3Q23.,19.8,28.1,17.8,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Managed revenue,3,Decreased by $7.7B from $51.0B in 2Q24.,Increased by $2.6B from $40.7B in 3Q23.,43.3,51.0,40.7,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Expense,4,Decreased by $1.1B from $23.7B in 2Q24.,Increased by $0.8B from $21.8B in 3Q23.,22.6,23.7,21.8,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Credit costs,5,Increased by $0.1B from $3.0B in 2Q24.,Increased by $1.7B from $1.4B in 3Q23.,3.1,3.0,1.4,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Net income,6,Decreased by $5.3B from $18.2B in 2Q24.,Decreased by $0.3B from $13.2B in 3Q23.,12.9,18.2,13.2,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Net income applicable to common stockholders,7,Decreased by $5.2B from $17.7B in 2Q24.,Decreased by $0.1B from $12.6B in 3Q23.,12.5,17.7,12.6,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+EPS - diluted,8,Decreased by $1.75 from $6.12 in 2Q24.,Increased by $0.04 from $4.33 in 3Q23.,4.37,6.12,4.33,,,,USD,2,Financial Results,Q3_2024,2024-10-11
+ROE,9,Decreased from 23% in 2Q24.,Decreased from 18% in 3Q23.,16.0,23.0,18.0,,,,%,2,Financial Results,Q3_2024,2024-10-11
+ROTCE,10,Decreased from 28% in 2Q24.,Decreased from 22% in 3Q23.,19.0,28.0,22.0,,,,%,2,Financial Results,Q3_2024,2024-10-11
+Overhead ratio – managed,11,Increased from 47% in 2Q24.,Decreased from 53% in 3Q23.,52.0,47.0,53.0,,,,%,2,Financial Results,Q3_2024,2024-10-11
+Net charge-offs,1,Decreased from $2.2B in 2Q24.,Increased from $1.5B in 3Q23.,2.1,2.2,1.5,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Reserve build/(release),2,Increased from $0.8B in 2Q24.,Increased from a release of ($0.1B) in 3Q23.,1.0,0.8,-0.1,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Credit costs,3,Remained flat with $3.1B in 2Q24.,Increased from $1.4B in 3Q23.,3.1,3.1,1.4,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+CCB ROE,1,,,29.0,,,,,,%,2,Financial Results,Q3_2024,2024-10-11
+CCB O/H ratio,2,,,54.0,,,,,,%,2,Financial Results,Q3_2024,2024-10-11
+CIB ROE,3,,,17.0,,,,,,%,2,Financial Results,Q3_2024,2024-10-11
+CIB O/H ratio,4,,,51.0,,,,,,%,2,Financial Results,Q3_2024,2024-10-11
+AWM ROE,5,,,34.0,,,,,,%,2,Financial Results,Q3_2024,2024-10-11
+AWM O/H ratio,6,,,67.0,,,,,,%,2,Financial Results,Q3_2024,2024-10-11
+NII excluding Markets,1,Increased by $0.5B from $22.9B in 2Q24.,Increased by $0.3B from $23.1B in 3Q23.,23.4,22.9,23.1,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+NIR excluding Markets,2,Decreased by $7.5B from $20.2B in 2Q24.,Increased by $1.8B from $10.9B in 3Q23.,12.7,20.2,10.9,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Markets revenue,3,Decreased by $0.6B from $7.8B in 2Q24.,Increased by $0.5B from $6.7B in 3Q23.,7.2,7.8,6.7,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Managed revenue,4,Decreased by $7.7B from $51.0B in 2Q24.,Increased by $2.6B from $40.7B in 3Q23.,43.3,51.0,40.7,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Adjusted expense,5,Decreased by $1.1B from $23.4B in 2Q24.,Increased by $1.2B from $21.1B in 3Q23.,22.3,23.4,21.1,,,,$B,2,Financial Results,Q3_2024,2024-10-11
+Adjusted overhead ratio,6,Increased from 46% in 2Q24.,Decreased from 52% in 3Q23.,51.0,46.0,52.0,,,,%,2,Financial Results,Q3_2024,2024-10-11
+CET1 capital,1,Increased from $267B in 2Q24.,Increased from $242B in 3Q23.,273.0,267.0,242.0,,,,$B,3,Financial Results,Q3_2024,2024-10-11
+CET1 capital ratio – Standardized,2,Remained flat at 15.3% from 2Q24.,Increased from 14.3% in 3Q23.,15.3,15.3,14.3,,,,%,3,Financial Results,Q3_2024,2024-10-11
+CET1 capital ratio - Advanced,3,Remained flat at 15.5% from 2Q24.,Increased from 14.5% in 3Q23.,15.5,15.5,14.5,,,,%,3,Financial Results,Q3_2024,2024-10-11
+Basel III Standardized RWA,4,"Increased from $1,743B in 2Q24.","Increased from $1,692B in 3Q23.",1784.0,1743.0,1692.0,,,,$B,3,Financial Results,Q3_2024,2024-10-11
+Firm SLR,1,Decreased from 6.1% in 2Q24.,Remained flat at 6.0% from 3Q23.,6.0,6.1,6.0,,,,%,3,Financial Results,Q3_2024,2024-10-11
+Firm LCR,1,Increased from 112% in 2Q24.,Increased from 112% in 3Q23.,114.0,112.0,112.0,,,,%,3,Financial Results,Q3_2024,2024-10-11
+Bank LCR,2,Decreased from 125% in 2Q24.,Decreased from 123% in 3Q23.,121.0,125.0,123.0,,,,%,3,Financial Results,Q3_2024,2024-10-11
+Total excess HQLA,3,Decreased from $275B in 2Q24.,Increased from $252B in 3Q23.,272.0,275.0,252.0,,,,$B,3,Financial Results,Q3_2024,2024-10-11
+HQLA and unencumbered marketable securities,4,"Increased from $1,464B in 2Q24.","Increased from $1,386B in 3Q23.",1477.0,1464.0,1386.0,,,,$B,3,Financial Results,Q3_2024,2024-10-11
+Total assets (EOP),1,"Increased from $4,143B in 2Q24.","Increased from $3,898B in 3Q23.",4210.0,4143.0,3898.0,,,,$B,3,Financial Results,Q3_2024,2024-10-11
+Deposits (average),2,"Increased from $2,371B in 2Q24.","Increased from $2,356B in 3Q23.",2383.0,2371.0,2356.0,,,,$B,3,Financial Results,Q3_2024,2024-10-11
+Tangible book value per share,3,Increased from $92.77 in 2Q24.,Increased from $82.04 in 3Q23.,96.42,92.77,82.04,,,,USD,3,Financial Results,Q3_2024,2024-10-11
+Revenue,1,"Increased by $90M from $17,701M in 2Q24.","Decreased by $571M from $18,362M in 3Q23.",17791.0,17701.0,18362.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Banking & Wealth Management Revenue,2,"Decreased by $285M from $10,375M in 2Q24.","Decreased by $1,255M from $11,345M in 3Q23.",10090.0,10375.0,11345.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Home Lending Revenue,3,"Decreased by $24M from $1,319M in 2Q24.","Increased by $43M from $1,252M in 3Q23.",1295.0,1319.0,1252.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Card Services & Auto Revenue,4,"Increased by $399M from $6,007M in 2Q24.","Increased by $641M from $5,765M in 3Q23.",6406.0,6007.0,5765.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Expense,5,"Increased by $161M from $9,425M in 2Q24.","Increased by $481M from $9,105M in 3Q23.",9586.0,9425.0,9105.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Credit costs,6,"Increased by $152M from $2,643M in 2Q24.","Increased by $1,349M from $1,446M in 3Q23.",2795.0,2643.0,1446.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Net charge-offs (NCOs),7,"Decreased by $145M from $2,064M in 2Q24.","Increased by $520M from $1,399M in 3Q23.",1919.0,2064.0,1399.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Change in allowance,8,Increased by $297M from $579M in 2Q24.,Increased by $829M from $47M in 3Q23.,876.0,579.0,47.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Net income,9,"Decreased by $164M from $4,210M in 2Q24.","Decreased by $1,849M from $5,895M in 3Q23.",4046.0,4210.0,5895.0,,,,$MM,4,Financial Results,Q3_2024,2024-10-11
+Average equity,1,Remained flat at $54.5B in 2Q24.,Decreased from $55.5B in 3Q23.,54.5,54.5,55.5,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+ROE,2,Decreased from 30% in 2Q24.,Decreased from 41% in 3Q23.,29.0,30.0,41.0,,,,%,4,Financial Results,Q3_2024,2024-10-11
+Overhead ratio,3,Increased from 53% in 2Q24.,Increased from 50% in 3Q23.,54.0,53.0,50.0,,,,%,4,Financial Results,Q3_2024,2024-10-11
+Average loans,4,Increased from $571.7B in 2Q24.,Increased from $564.3B in 3Q23.,572.5,571.7,564.3,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Average deposits,5,"Decreased from $1,073.5B in 2Q24.","Decreased from $1,143.5B in 3Q23.",1053.7,1073.5,1143.5,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Active mobile customers,6,Increased from 55.6M in 2Q24.,Increased from 53.2M in 3Q23.,57.0,55.6,53.2,,,,millions,4,Financial Results,Q3_2024,2024-10-11
+Debit & credit card sales volume,7,Decreased from $453.7B in 2Q24.,Increased from $426.3B in 3Q23.,453.4,453.7,426.3,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Business Banking average loans,1,Remained flat at $19.5B in 2Q24.,Remained flat at $19.5B in 3Q23.,19.5,19.5,19.5,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Client investment assets (EOP),2,"Increased from $1,013.7B in 2Q24.",Increased from $882.3B in 3Q23.,1067.9,1013.7,882.3,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Home Lending average loans,3,Decreased from $254.4B in 2Q24.,Decreased from $264.0B in 3Q23.,250.6,254.4,264.0,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Card Services average loans,4,Increased from $210.1B in 2Q24.,Increased from $195.2B in 3Q23.,217.3,210.1,195.2,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Card Services net charge-off rate,5,Decreased from 3.50% in 2Q24.,Increased from 2.49% in 3Q23.,3.24,3.5,2.49,,,,%,4,Financial Results,Q3_2024,2024-10-11
+Card Services sales volume,6,Remained flat at $316.6B in 2Q24.,Increased from $296.2B in 3Q23.,316.6,316.6,296.2,,,,$B,4,Financial Results,Q3_2024,2024-10-11
+Revenue,1,"Decreased by $902M from $17,917M in 2Q24.","Increased by $1,254M from $15,761M in 3Q23.",17015.0,17917.0,15761.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Total Banking & Payments,2,"Decreased by $304M from $8,950M in 2Q24.","Increased by $653M from $7,993M in 3Q23.",8646.0,8950.0,7993.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Total Markets & Securities Services,3,"Decreased by $598M from $8,967M in 2Q24.","Increased by $601M from $7,768M in 3Q23.",8369.0,8967.0,7768.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Expense,4,"Decreased by $415M from $9,166M in 2Q24.","Decreased by $67M from $8,818M in 3Q23.",8751.0,9166.0,8818.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Credit costs,5,Decreased by $68M from $384M in 2Q24.,Increased by $411M from ($95M) in 3Q23.,316.0,384.0,-95.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Net income,6,"Decreased by $206M from $5,897M in 2Q24.","Increased by $664M from $5,027M in 3Q23.",5691.0,5897.0,5027.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Average equity,1,Remained flat at $132.0B in 2Q24.,Decreased from $138.0B in 3Q23.,132.0,132.0,138.0,,,,$B,5,Financial Results,Q3_2024,2024-10-11
+ROE,2,Remained flat at 17% in 2Q24.,Increased from 14% in 3Q23.,17.0,17.0,14.0,,,,%,5,Financial Results,Q3_2024,2024-10-11
+Overhead ratio,3,Remained flat at 51% in 2Q24.,Decreased from 56% in 3Q23.,51.0,51.0,56.0,,,,%,5,Financial Results,Q3_2024,2024-10-11
+IB fees,4,"Decreased from $2,356M in 2Q24.","Increased from $1,729M in 3Q23.",2267.0,2356.0,1729.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Average Banking & Payments loans,5,Decreased from $351.4B in 2Q24.,Decreased from $354.6B in 3Q23.,348.4,351.4,354.6,,,,$B,5,Financial Results,Q3_2024,2024-10-11
+Average client deposits,6,Increased from $936.7B in 2Q24.,Increased from $900.3B in 3Q23.,966.0,936.7,900.3,,,,$B,5,Financial Results,Q3_2024,2024-10-11
+Assets under custody,7,Increased from $34.0T in 2Q24.,Increased from $29.7T in 3Q23.,35.8,34.0,29.7,,,,$T,5,Financial Results,Q3_2024,2024-10-11
+Net charge-off/(recovery) rate,8,Decreased from 0.14% in 2Q24.,Increased from 0.08% in 3Q23.,0.13,0.14,0.08,,,,%,5,Financial Results,Q3_2024,2024-10-11
+Banking & Payments revenue,1,"Decreased by $304M from $8,950M in 2Q24.","Increased by $653M from $7,993M in 3Q23.",8646.0,8950.0,7993.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Global Corporate & Investment Banking revenue,2,"Decreased by $2M from $6,141M in 2Q24.","Increased by $670M from $5,469M in 3Q23.",6139.0,6141.0,5469.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Commercial Banking revenue,3,"Increased by $31M from $2,860M in 2Q24.","Increased by $17M from $2,874M in 3Q23.",2891.0,2860.0,2874.0,,,,$MM,5,Financial Results,Q3_2024,2024-10-11
+Revenue,1,"Increased by $187M from $5,252M in 2Q24.","Increased by $434M from $5,005M in 3Q23.",5439.0,5252.0,5005.0,,,,$MM,6,Financial Results,Q3_2024,2024-10-11
+Asset Management Revenue,2,"Increased by $88M from $2,437M in 2Q24.","Increased by $361M from $2,164M in 3Q23.",2525.0,2437.0,2164.0,,,,$MM,6,Financial Results,Q3_2024,2024-10-11
+Global Private Bank Revenue,3,"Increased by $99M from $2,815M in 2Q24.","Increased by $73M from $2,841M in 3Q23.",2914.0,2815.0,2841.0,,,,$MM,6,Financial Results,Q3_2024,2024-10-11
+Expense,4,"Increased by $96M from $3,543M in 2Q24.","Increased by $501M from $3,138M in 3Q23.",3639.0,3543.0,3138.0,,,,$MM,6,Financial Results,Q3_2024,2024-10-11
+Credit costs,5,Decreased by $16M from $20M in 2Q24.,Increased by $17M from ($13M) in 3Q23.,4.0,20.0,-13.0,,,,$MM,6,Financial Results,Q3_2024,2024-10-11
+Net income,6,"Increased by $88M from $1,263M in 2Q24.","Decreased by $66M from $1,417M in 3Q23.",1351.0,1263.0,1417.0,,,,$MM,6,Financial Results,Q3_2024,2024-10-11
+Average equity,1,Remained flat at $15.5B in 2Q24.,Decreased from $17.0B in 3Q23.,15.5,15.5,17.0,,,,$B,6,Financial Results,Q3_2024,2024-10-11
+ROE,2,Increased from 32% in 2Q24.,Increased from 32% in 3Q23.,34.0,32.0,32.0,,,,%,6,Financial Results,Q3_2024,2024-10-11
+Pretax margin,3,Increased from 32% in 2Q24.,Decreased from 38% in 3Q23.,33.0,32.0,38.0,,,,%,6,Financial Results,Q3_2024,2024-10-11
+Assets under management ('AUM'),4,"Increased from $3,682B in 2Q24.","Increased from $3,186B in 3Q23.",3904.0,3682.0,3186.0,,,,$B,6,Financial Results,Q3_2024,2024-10-11
+Client assets,5,"Increased from $5,387B in 2Q24.","Increased from $4,644B in 3Q23.",5721.0,5387.0,4644.0,,,,$B,6,Financial Results,Q3_2024,2024-10-11
+Average loans,6,Increased from $224.1B in 2Q24.,Increased from $223.8B in 3Q23.,229.3,224.1,223.8,,,,$B,6,Financial Results,Q3_2024,2024-10-11
+Average deposits,7,Increased from $227.4B in 2Q24.,Increased from $202.0B in 3Q23.,236.5,227.4,202.0,,,,$B,6,Financial Results,Q3_2024,2024-10-11
+Revenue,1,"Decreased by $7,052M from $10,122M in 2Q24.","Increased by $1,512M from $1,558M in 3Q23.",3070.0,10122.0,1558.0,,,,$MM,7,Financial Results,Q3_2024,2024-10-11
+Net interest income,2,"Increased by $551M from $2,364M in 2Q24.","Increased by $932M from $1,983M in 3Q23.",2915.0,2364.0,1983.0,,,,$MM,7,Financial Results,Q3_2024,2024-10-11
+Noninterest revenue,3,"Decreased by $7,603M from $7,758M in 2Q24.",Increased by $580M from ($425M) in 3Q23.,155.0,7758.0,-425.0,,,,$MM,7,Financial Results,Q3_2024,2024-10-11
+Expense,4,"Decreased by $990M from $1,579M in 2Q24.",Decreased by $107M from $696M in 3Q23.,589.0,1579.0,696.0,,,,$MM,7,Financial Results,Q3_2024,2024-10-11
+Credit costs,5,Decreased by $9M from $5M in 2Q24.,Decreased by $50M from $46M in 3Q23.,-4.0,5.0,46.0,,,,$MM,7,Financial Results,Q3_2024,2024-10-11
+Net income/(loss),6,"Decreased by $4,969M from $6,779M in 2Q24.",Increased by $998M from $812M in 3Q23.,1810.0,6779.0,812.0,,,,$MM,7,Financial Results,Q3_2024,2024-10-11

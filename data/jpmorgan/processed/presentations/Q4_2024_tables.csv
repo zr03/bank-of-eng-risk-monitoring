@@ -1,0 +1,90 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Net interest income,1,Net interest income decreased by $0.1B from the preceding quarter.,Net interest income decreased by $0.7B from the same quarter in the prior year.,23.5,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Noninterest revenue,2,Noninterest revenue increased by $0.5B from the preceding quarter.,Noninterest revenue increased by $4.5B from the same quarter in the prior year.,20.3,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Managed revenue,3,Managed revenue increased by $0.4B from the preceding quarter.,Managed revenue increased by $3.8B from the same quarter in the prior year.,43.7,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Expense,4,Expense increased by $0.2B from the preceding quarter.,Expense decreased by $1.7B from the same quarter in the prior year.,22.8,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Credit costs,5,Credit costs decreased by $0.5B from the preceding quarter.,Credit costs decreased by $0.1B from the same quarter in the prior year.,2.6,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Net income,6,Net income increased by $1.1B from the preceding quarter.,Net income increased by $4.7B from the same quarter in the prior year.,14.0,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Net income applicable to common stockholders,7,Net income applicable to common stockholders increased by $1.1B from the preceding quarter.,Net income applicable to common stockholders increased by $4.8B from the same quarter in the prior year.,13.7,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+EPS - diluted,8,EPS - diluted increased by $0.44 from the preceding quarter.,EPS - diluted increased by $1.77 from the same quarter in the prior year.,4.81,,,,,,USD,4,Financial Results,Q4_2024,2025-01-15
+ROE,9,ROE increased by 1 percentage point from 16% in the preceding quarter.,ROE increased by 5 percentage points from 12% in the same quarter of the prior year.,17.0,16.0,12.0,,,,%,4,Financial Results,Q4_2024,2025-01-15
+ROTCE,10,ROTCE increased by 2 percentage points from 19% in the preceding quarter.,ROTCE increased by 6 percentage points from 15% in the same quarter of the prior year.,21.0,19.0,15.0,,,,%,4,Financial Results,Q4_2024,2025-01-15
+Overhead ratio – managed,11,The managed overhead ratio was flat compared to the preceding quarter.,The managed overhead ratio decreased by 9 percentage points from 61% in the same quarter of the prior year.,52.0,52.0,61.0,,,,%,4,Financial Results,Q4_2024,2025-01-15
+NII excluding Markets,12,NII excluding Markets decreased by $0.4B from the preceding quarter.,NII excluding Markets decreased by $0.5B from the same quarter in the prior year.,23.0,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+NIR excluding Markets,13,NIR excluding Markets increased by $1.0B from the preceding quarter.,NIR excluding Markets increased by $3.1B from the same quarter in the prior year.,13.7,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Markets revenue,14,Markets revenue decreased by $0.1B from the preceding quarter.,Markets revenue increased by $1.2B from the same quarter in the prior year.,7.0,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Managed revenue (Memo),15,Managed revenue increased by $0.4B from the preceding quarter.,Managed revenue increased by $3.8B from the same quarter in the prior year.,43.7,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Adjusted expense,16,Adjusted expense increased by $0.2B from the preceding quarter.,Adjusted expense decreased by $1.8B from the same quarter in the prior year.,22.5,,,,,,$B,4,Financial Results,Q4_2024,2025-01-15
+Adjusted overhead ratio,17,The adjusted overhead ratio increased by 1 percentage point from 51% in the preceding quarter.,The adjusted overhead ratio decreased by 9 percentage points from 61% in the same quarter of the prior year.,52.0,51.0,61.0,,,,%,4,Financial Results,Q4_2024,2025-01-15
+Net interest income,1,,,,,,Net interest income increased by $3.3B from the preceding year.,93.1,89.7,$B,5,Financial Results,Q4_2024,2025-01-15
+Noninterest revenue,2,,,,,,Noninterest revenue increased by $14.9B from the preceding year.,87.5,72.6,$B,5,Financial Results,Q4_2024,2025-01-15
+Managed revenue,3,,,,,,Managed revenue increased by $18.2B from the preceding year.,180.6,162.4,$B,5,Financial Results,Q4_2024,2025-01-15
+Expense,4,,,,,,Expense increased by $4.6B from the preceding year.,91.8,87.2,$B,5,Financial Results,Q4_2024,2025-01-15
+Credit costs,5,,,,,,Credit costs increased by $1.4B from the preceding year.,10.7,9.3,$B,5,Financial Results,Q4_2024,2025-01-15
+Net income,6,,,,,,Net income increased by $8.9B from the preceding year.,58.5,49.6,$B,5,Financial Results,Q4_2024,2025-01-15
+Net income applicable to common stockholders,7,,,,,,Net income applicable to common stockholders increased by $9.1B from the preceding year.,56.9,47.8,$B,5,Financial Results,Q4_2024,2025-01-15
+EPS - diluted,8,,,,,,EPS - diluted increased by $3.52 from the preceding year.,19.75,16.23,USD,5,Financial Results,Q4_2024,2025-01-15
+ROE,9,,,,,,ROE increased by 1 percentage point from the preceding year.,18.0,17.0,%,5,Financial Results,Q4_2024,2025-01-15
+ROTCE,10,,,,,,ROTCE increased by 1 percentage point from the preceding year.,22.0,21.0,%,5,Financial Results,Q4_2024,2025-01-15
+Overhead ratio – managed,11,,,,,,The managed overhead ratio decreased by 3 percentage points from the preceding year.,51.0,54.0,%,5,Financial Results,Q4_2024,2025-01-15
+NII excluding Markets,12,,,,,,NII excluding Markets increased by $2.4B from the preceding year.,92.4,90.0,$B,5,Financial Results,Q4_2024,2025-01-15
+NIR excluding Markets,13,,,,,,NIR excluding Markets increased by $13.8B from the preceding year.,58.2,44.4,$B,5,Financial Results,Q4_2024,2025-01-15
+Markets revenue,14,,,,,,Markets revenue increased by $2.0B from the preceding year.,30.0,28.0,$B,5,Financial Results,Q4_2024,2025-01-15
+Managed revenue (Memo),15,,,,,,Managed revenue increased by $18.2B from the preceding year.,180.6,162.4,$B,5,Financial Results,Q4_2024,2025-01-15
+Adjusted expense,16,,,,,,Adjusted expense increased by $5.3B from the preceding year.,91.1,85.7,$B,5,Financial Results,Q4_2024,2025-01-15
+Adjusted overhead ratio,17,,,,,,The adjusted overhead ratio decreased by 3 percentage points from the preceding year.,50.0,53.0,%,5,Financial Results,Q4_2024,2025-01-15
+CET1 capital,1,,,276.0,273.0,251.0,,,,$B,6,Financial Results,Q4_2024,2025-01-15
+CET1 capital ratio - Standardized,2,,,15.7,15.3,15.0,,,,%,6,Financial Results,Q4_2024,2025-01-15
+CET1 capital ratio - Advanced,3,,,15.8,15.5,15.0,,,,%,6,Financial Results,Q4_2024,2025-01-15
+Basel III Standardized RWA,4,,,1759.0,1783.0,1672.0,,,,$B,6,Financial Results,Q4_2024,2025-01-15
+Firm SLR,5,,,6.1,6.0,6.1,,,,%,6,Financial Results,Q4_2024,2025-01-15
+Firm LCR,6,,,113.0,114.0,113.0,,,,%,6,Financial Results,Q4_2024,2025-01-15
+Bank LCR,7,,,124.0,121.0,129.0,,,,%,6,Financial Results,Q4_2024,2025-01-15
+Total excess HQLA,8,,,291.0,272.0,309.0,,,,$B,6,Financial Results,Q4_2024,2025-01-15
+HQLA and unencumbered marketable securities,9,,,1428.0,1477.0,1447.0,,,,$B,6,Financial Results,Q4_2024,2025-01-15
+Total assets (EOP),10,,,4003.0,4210.0,3875.0,,,,$B,6,Financial Results,Q4_2024,2025-01-15
+Deposits (average),11,,,2417.0,2383.0,2372.0,,,,$B,6,Financial Results,Q4_2024,2025-01-15
+Tangible book value per share,12,,,97.3,96.42,86.08,,,,USD,6,Financial Results,Q4_2024,2025-01-15
+Revenue,1,Revenue increased by $571mm from the preceding quarter.,Revenue increased by $265mm from the same quarter last year.,18362.0,,,,,,$MM,7,Financial Results,Q4_2024,2025-01-15
+Expense,2,Expense increased by $142mm from the preceding quarter.,Expense increased by $392mm from the same quarter last year.,9728.0,,,,,,$MM,7,Financial Results,Q4_2024,2025-01-15
+Credit costs,3,Credit costs decreased by $172mm from the preceding quarter.,Credit costs increased by $434mm from the same quarter last year.,2623.0,,,,,,$MM,7,Financial Results,Q4_2024,2025-01-15
+Net income,4,Net income increased by $470mm from the preceding quarter.,Net income decreased by $272mm from the same quarter last year.,4516.0,,,,,,$MM,7,Financial Results,Q4_2024,2025-01-15
+Average equity,1,,,54.5,54.5,55.5,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+ROE,2,,,32.0,29.0,33.0,,,,%,7,Financial Results,Q4_2024,2025-01-15
+Overhead ratio,3,,,53.0,54.0,52.0,,,,%,7,Financial Results,Q4_2024,2025-01-15
+Average loans,4,,,577.6,572.5,571.2,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Average deposits,5,,,1050.6,1053.7,1092.4,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Active mobile customers,6,,,57.8,57.0,53.8,,,,millions,7,Financial Results,Q4_2024,2025-01-15
+Debit & credit card sales volume,7,,,477.6,453.4,441.0,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Business Banking average loans,1,,,19.5,19.5,19.5,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Client investment assets (EOP),2,,,1087.6,1067.9,951.1,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Home Lending Average loans,3,,,247.4,250.6,261.4,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Card Services average loans,4,,,224.3,217.3,202.7,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Card Services sales volume,5,,,335.1,316.6,307.2,,,,$B,7,Financial Results,Q4_2024,2025-01-15
+Revenue,1,,,17598.0,,,Revenue increased by $583mm from the preceding quarter.,,,$MM,8,Financial Results,Q4_2024,2025-01-15
+Expense,2,,,8712.0,,,Expense decreased by $39mm from the preceding quarter.,,,$MM,8,Financial Results,Q4_2024,2025-01-15
+Credit costs,3,,,61.0,,,Credit costs decreased by $255mm from the preceding quarter.,,,$MM,8,Financial Results,Q4_2024,2025-01-15
+Net income,4,,,6636.0,,,Net income increased by $945mm from the preceding quarter.,,,$MM,8,Financial Results,Q4_2024,2025-01-15
+Average equity,1,,,132.0,132.0,138.0,,,,$B,8,Financial Results,Q4_2024,2025-01-15
+ROE,2,,,19.0,17.0,11.0,,,,%,8,Financial Results,Q4_2024,2025-01-15
+Overhead ratio,3,,,50.0,51.0,55.0,,,,%,8,Financial Results,Q4_2024,2025-01-15
+IB fees,4,,,2479.0,2267.0,1667.0,,,,$MM,8,Financial Results,Q4_2024,2025-01-15
+Average Banking & Payments loans,5,,,345.0,348.4,352.8,,,,$B,8,Financial Results,Q4_2024,2025-01-15
+Average client deposits,6,,,1011.6,966.0,928.6,,,,$B,8,Financial Results,Q4_2024,2025-01-15
+Assets under custody,7,,,35.3,35.8,32.4,,,,$T,8,Financial Results,Q4_2024,2025-01-15
+Net charge-off/(recovery) rate,8,,,0.25,0.13,0.21,,,,%,8,Financial Results,Q4_2024,2025-01-15
+Revenue,1,Revenue increased by $339mm from the preceding quarter.,Revenue increased by $683mm from the same quarter last year.,5778.0,,,,,,$MM,9,Financial Results,Q4_2024,2025-01-15
+Expense,2,Expense increased by $133mm from the preceding quarter.,Expense increased by $384mm from the same quarter last year.,3772.0,,,,,,$MM,9,Financial Results,Q4_2024,2025-01-15
+Credit costs,3,Credit costs decreased by $39mm from the preceding quarter.,Credit costs increased by $34mm from the same quarter last year.,-35.0,,,,,,$MM,9,Financial Results,Q4_2024,2025-01-15
+Net income,4,Net income increased by $166mm from the preceding quarter.,Net income increased by $300mm from the same quarter last year.,1517.0,,,,,,$MM,9,Financial Results,Q4_2024,2025-01-15
+Average equity,1,,,15.5,15.5,17.0,,,,$B,9,Financial Results,Q4_2024,2025-01-15
+ROE,2,,,38.0,34.0,28.0,,,,%,9,Financial Results,Q4_2024,2025-01-15
+Pretax margin,3,,,35.0,33.0,34.0,,,,%,9,Financial Results,Q4_2024,2025-01-15
+Assets under management ('AUM'),4,,,4045.0,3904.0,3422.0,,,,$B,9,Financial Results,Q4_2024,2025-01-15
+Client assets,5,,,5932.0,5721.0,5012.0,,,,$B,9,Financial Results,Q4_2024,2025-01-15
+Average loans,6,,,233.8,229.3,227.0,,,,$B,9,Financial Results,Q4_2024,2025-01-15
+Average deposits,7,,,248.8,236.5,226.6,,,,$B,9,Financial Results,Q4_2024,2025-01-15
+Revenue,1,"Revenue decreased by $1,070mm from the preceding quarter.",Revenue increased by $223mm from the same quarter last year.,2000.0,,,,,,$MM,10,Financial Results,Q4_2024,2025-01-15
+Expense,2,Expense decreased by $39mm from the preceding quarter.,"Expense decreased by $3,043mm from the same quarter last year.",550.0,,,,,,$MM,10,Financial Results,Q4_2024,2025-01-15
+Credit costs,3,Credit costs decreased by $14mm from the preceding quarter.,Credit costs increased by $16mm from the same quarter last year.,-18.0,,,,,,$MM,10,Financial Results,Q4_2024,2025-01-15
+Net income/(loss),4,Net income decreased by $474mm from the preceding quarter.,"Net income decreased by $2,211mm from the same quarter last year.",1336.0,,,,,,$MM,10,Financial Results,Q4_2024,2025-01-15
