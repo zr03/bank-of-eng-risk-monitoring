@@ -3,3 +3,7 @@
 
 # Ignore cpython
 .cpython
+__pycache__
+
+# Ignore any folder starting with ss (superseded)
+ss*
