@@ -7,3 +7,7 @@ __pycache__
 
 # Ignore any folder starting with ss (superseded)
 ss*
+
+# Ignore any subfolders in any directory called transcripts or presentations
+**/transcripts/*/
+**/presentations/*/
