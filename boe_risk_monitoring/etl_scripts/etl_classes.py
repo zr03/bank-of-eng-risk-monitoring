@@ -21,7 +21,13 @@ from boe_risk_monitoring.llms.document_analyser_llm import DocumentAnalyserLLM
 import boe_risk_monitoring.config as config
 
 DATA_FOLDER = config.DATA_FOLDER
+AGGREGATED_DATA_FOLDER_NAME = config.AGGREGATED_DATA_FOLDER_NAME
 PERMISSIBLE_DOC_TYPES = ['transcripts', 'presentations_text', 'presentations_graphs', 'presentations_tables']
+BANK_NAME_MAPPING = {
+	"citigroup": "Citigroup",
+	"jpmorgan": "JPMorgan",
+	"bankofamerica": "Bank of America",
+}
 
 class TranscriptChunk(BaseModel):
 	text: str
@@ -562,38 +568,41 @@ class DataAggregationETL(BaseETL):
 		Extracts transcripts and presentations data from the data directory.
 		Returns a nested dictionary with banks and document type as keys and associated lists of dataframes as their values.
 		"""
-		bank_dirs = [d for d in self.data_dir_path.iterdir() if d.is_dir()]
+		bank_dirs = [bank_dir for bank_dir in self.data_dir_path.iterdir() if bank_dir.is_dir() and bank_dir.name != AGGREGATED_DATA_FOLDER_NAME]
 		all_files = defaultdict(lambda: defaultdict(list))  # Nested dictionary to hold dataframes
 		for bank_dir in bank_dirs:
 			transcripts_dir = bank_dir / "processed" / "transcripts"
 			presentations_dir = bank_dir / "processed" / "presentations"
 			# get all transcript parquet files
 			transcript_files = list(transcripts_dir.glob("[Q1-4]*.parquet"))
-			presentation_text_files = list(presentations_dir.glob("[Q1-4]_text.parquet"))
-			presentation_graph_files = list(presentations_dir.glob("[Q1-4]_graphs.parquet"))
-			presentation_table_files = list(presentations_dir.glob("[Q1-4]_tables.parquet"))
+			presentation_text_files = list(presentations_dir.glob("[Q1-4]*_text.parquet"))
+			presentation_graph_files = list(presentations_dir.glob("[Q1-4]*_graphs.parquet"))
+			presentation_table_files = list(presentations_dir.glob("[Q1-4]*_tables.parquet"))
 			# Store the dataframes in the nested dictionary
 			bank_name = bank_dir.name
+			bank_clean_name = BANK_NAME_MAPPING[bank_name]
 			for file in transcript_files:
 				df = pd.read_parquet(file)
-				df['bank'] = bank_name  # Add bank name column
+				df['bank'] = bank_clean_name  # Add bank name column
 				df['document_type'] = 'transcript'
-				all_files[bank_name]['transcripts'].append(df)
+				all_files[bank_clean_name]['transcripts'].append(df)
 			for file in presentation_text_files:
 				df = pd.read_parquet(file)
-				df['bank'] = bank_name
+				df['bank'] = bank_clean_name
 				df['document_type'] = 'presentation'
-				all_files[bank_name]['presentations_text'].append(df)
+				all_files[bank_clean_name]['presentations_text'].append(df)
 			for file in presentation_graph_files:
 				df = pd.read_parquet(file)
-				df['bank'] = bank_name
+				df['bank'] = bank_clean_name
 				df['document_type'] = 'presentation'
-				all_files[bank_name]['presentations_graphs'].append(df)
+				all_files[bank_clean_name]['presentations_graphs'].append(df)
 			for file in presentation_table_files:
 				df = pd.read_parquet(file)
-				df['bank'] = bank_name
+				df['bank'] = bank_clean_name
 				df['document_type'] = 'presentation'
-				all_files[bank_name]['presentations_tables'].append(df)
+				all_files[bank_clean_name]['presentations_tables'].append(df)
+
+		return all_files
 
 	def transform(self, raw_data):
 		"""
@@ -603,10 +612,10 @@ class DataAggregationETL(BaseETL):
 		if not isinstance(raw_data, dict):
 			raise TypeError("Raw data must be a nested dictionary with banks and document types")
 
-		transcipts_df = pd.DataFrame()
-		presentations_text_df = pd.DataFrame()
-		presentations_graphs_df = pd.DataFrame()
-		presentations_tables_df = pd.DataFrame()
+		transcripts_df = pd.DataFrame()
+		presentation_text_df = pd.DataFrame()
+		presentation_graphs_df = pd.DataFrame()
+		presentation_tables_df = pd.DataFrame()
 
 		for bank in raw_data.keys():
 			for doc_type in raw_data[bank].keys():
@@ -617,23 +626,128 @@ class DataAggregationETL(BaseETL):
 				# Concatenate all dataframes for the document type
 				df = pd.concat(raw_data[bank][doc_type], ignore_index=True)
 				if doc_type == 'transcripts':
-					transcipts_df = pd.concat([transcipts_df, df], ignore_index=True)
+					transcripts_df = pd.concat([transcripts_df, df], ignore_index=True)
+					transcripts_df['source'] = transcripts_df['speaker'] + " (" + transcripts_df['role'] + ")\n" + transcripts_df['bank'] + ", " + transcripts_df['reporting_period'].str.replace("_", ", ") + " Earnings Call Transcript, Page " + transcripts_df['page'].astype(str)
 				elif doc_type == 'presentations_text':
-					presentations_text_df = pd.concat([presentations_text_df, df], ignore_index=True)
+					presentation_text_df = pd.concat([presentation_text_df, df], ignore_index=True)
+					presentation_text_df['source'] = "Slide Text\n" + presentation_text_df['bank'] + ", "+ presentation_text_df['reporting_period'].str.replace("_", ", ") + ", Earnings Call Presentation, Slide " +  transcripts_df['page'].astype(str)
 				elif doc_type == 'presentations_graphs':
-					presentations_graphs_df = pd.concat([presentations_graphs_df, df], ignore_index=True)
+					presentation_graphs_df = pd.concat([presentation_graphs_df, df], ignore_index=True)
+					presentation_graphs_df['source'] = "Graph (" + presentation_graphs_df['caption'] + ")\n" + presentation_graphs_df['bank'] + ", " + presentation_graphs_df['reporting_period'].str.replace("_", ", ") + ", Earnings Call Presentation, Slide " + presentation_graphs_df['page'].astype(str)
 				elif doc_type == 'presentations_tables':
-					presentations_tables_df = pd.concat([presentations_tables_df, df], ignore_index=True)
+					presentation_tables_df = pd.concat([presentation_tables_df, df], ignore_index=True)
+					presentation_tables_df['source'] = "Table Row (" + presentation_tables_df['row_heading'] + ")\n" + presentation_tables_df['bank'] + ", " + presentation_tables_df['reporting_period'].str.replace("_", ", ") + ", Earnings Call Presentation, Slide " + presentation_tables_df['page'].astype(str)
+
 
 		# Now we'll create a specific dataframe which summarise all text components of the various documents
 
+		# Transcripts
+		transcripts_df2 = transcripts_df.copy()
+		transcripts_df2 = transcripts_df2.rename(columns={'date_of_call': 'date_of_earnings_call'})
+
+		# Presentation text
+		presentation_text_df2 = presentation_text_df.copy()
+		presentation_text_df2 = presentation_text_df2.rename(columns={'date_of_presentation': 'date_of_earnings_call'})
+
+		# Presentation graphs
+		presentation_graphs_df2 = presentation_graphs_df.copy()
+		presentation_graphs_df2['trend_summary'] = presentation_graphs_df2['caption'] + ": " + presentation_graphs_df2['trend_summary']
+		presentation_graphs_df2.drop(columns=['caption'], inplace=True)
+		presentation_graphs_df2 = presentation_graphs_df2.rename(columns={
+			'date_of_presentation': 'date_of_earnings_call',
+			"trend_summary": "text",
+			"comparison_scope": "fiscal_period_ref",
+			}
+		)
+
+		# Presentation tables
+		presentation_tables_df2 = presentation_tables_df.copy()
+		# Drop columns we don't need
+		presentation_tables_df2.drop(columns=[
+			'row_number',
+			'current_quarter_value',
+			'preceding_quarter_value',
+			'prev_year_same_quarter_value',
+			'current_year_value',
+			'preceding_year_value',
+			'unit'
+			], inplace=True)
+
+		# ['row_headings', 'page', 'section', 'reporting_period', 'date_of_presentation', 'bank', 'document_type', 'source']
+		value_vars = ['preceding_quarter_trend_summary', 'year_on_year_quarter_trend_summary', 'preceding_year_trend_summary']
+		id_vars = [col for col in presentation_tables_df2.columns if col not in value_vars]
+
+		presentation_tables_df2 = presentation_tables_df2.melt(id_vars=id_vars, value_vars=value_vars, var_name="text_scope", value_name="text")
+		presentation_tables_df2.dropna(subset=['text'], inplace=True)  # Remove rows with empty text
+		presentation_tables_df2["text_scope"] = presentation_tables_df2['text_scope'].replace(
+			{
+				'preceding_quarter_trend_summary': 'preceding quarter trend',
+				'year_on_year_quarter_trend_summary': 'year-on-year quarter trend',
+				'preceding_year_trend_summary': 'preceding year trend',
+			}
+		)
 
 
-	def transform(self):
-		pass
+		# Combine the row heading and text scope into the text column
+		presentation_tables_df2['text'] = presentation_tables_df2['row_heading'] + ", " + presentation_tables_df2['text_scope'] + ": " + presentation_tables_df2['text']
 
-	def load(self):
-		pass
+		# Create the fiscal period reference for consistency
+		presentation_tables_df2['fiscal_period_ref'] = presentation_tables_df2['text_scope'].apply(
+			lambda x: 'quarter' if 'quarter' in x else 'year'
+		)
+
+		# Drop the now redundant columns
+		presentation_tables_df2.drop(columns=['row_heading', 'text_scope'], inplace=True)
+
+		# Reorder the columns
+		cols_in_order = [col for col in presentation_tables_df2.columns if col != 'text' and col != 'fiscal_period_ref']
+		presentation_tables_df2 = presentation_tables_df2[['text', 'fiscal_period_ref'] + cols_in_order]
+		presentation_tables_df2 = presentation_tables_df2.rename(columns={'date_of_presentation': 'date_of_earnings_call'})
+
+		all_text_df = pd.concat([transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2], ignore_index=True)
+
+		all_text_df['fiscal_period_ref'] = all_text_df['fiscal_period_ref'].astype('string')
+		all_text_df['date_of_earnings_call'] = pd.to_datetime(all_text_df['date_of_earnings_call']).dt.date
+
+		results_dict = {
+			'transcripts': transcripts_df,
+			'presentation_text': presentation_text_df,
+			'presentation_graphs': presentation_graphs_df,
+			'presentation_tables': presentation_tables_df,
+			'all_text': all_text_df,
+		}
+
+		return results_dict
+
+
+	def load(self, transformed_data, output_dir_path):
+		if not isinstance(transformed_data, dict):
+			raise TypeError("Transformed data must be a dictionary with document types as keys and their associated dataframes as values.")
+
+		file_names = list(transformed_data.keys())
+		file_data = list(transformed_data.values())
+
+		if not all([isinstance(x, str) for x in file_names]):
+			raise TypeError("Keys in dictionary must all be strings representing file names")
+
+		if not all([isinstance(x, pd.DataFrame) for x in file_data]):
+			raise TypeError("Values in dictionary must all be dataframes representing data to be saved")
+
+		if not isinstance(output_dir_path, str):
+			raise TypeError("Output directory path must be a string.")
+		output_dir_path = Path(output_dir_path)
+		# Make the directory if it does not exist already
+		output_dir_path.mkdir(parents=True, exist_ok=True)
+		self.output_dir_path = output_dir_path
+
+		# Save each dataframe to parquet files
+		for doc_type, df in transformed_data.items():
+			file_name_csv = Path(doc_type + ".csv")
+			file_name_parquet = Path(doc_type + ".parquet")
+			full_path_csv = output_dir_path / file_name_csv
+			full_path_parquet = output_dir_path / file_name_parquet
+			df.to_csv(full_path_csv, index=False)
+			df.to_parquet(full_path_parquet)
 
 class SupplementaryDataETL(BaseETL):
 	pass
@@ -706,3 +820,10 @@ if __name__ == "__main__":
 
 	# Extract data
 	all_files = data_aggregation_etl.extract()
+
+	# Transform data
+	aggregated_data_dict = data_aggregation_etl.transform(raw_data=all_files)
+
+	# Load data
+	output_dir_path = os.path.join(DATA_FOLDER, "aggregated")
+	data_aggregation_etl.load(transformed_data=aggregated_data_dict, output_dir_path=output_dir_path)

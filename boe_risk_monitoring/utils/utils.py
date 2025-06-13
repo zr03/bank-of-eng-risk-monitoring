@@ -4,10 +4,11 @@ import boe_risk_monitoring.config as config
 
 DATA_FOLDER = config.DATA_FOLDER
 PERMISSIBLE_INPUT_FILE_TYPES = ["transcripts", "presentations"]
+AGGREGATED_DATA_FOLDER_NAME = config.AGGREGATED_DATA_FOLDER_NAME
 
 def get_bank_dirs(data_dir=DATA_FOLDER):
 	data_dir = Path(data_dir)
-	bank_dirs = [bank_dir for bank_dir in data_dir.iterdir() if bank_dir.is_dir()]
+	bank_dirs = [bank_dir for bank_dir in data_dir.iterdir() if bank_dir.is_dir() and bank_dir.name != AGGREGATED_DATA_FOLDER_NAME]
 	return bank_dirs
 
 
