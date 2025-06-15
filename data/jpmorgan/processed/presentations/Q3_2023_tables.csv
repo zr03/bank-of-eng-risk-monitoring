@@ -1,0 +1,79 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Net investment securities losses in Corporate,1,,,-669.0,,,,,,$MM,2,Financial Results,Q3_2023,2023-10-13
+Firmwide legal expense,2,,,-665.0,,,,,,$MM,2,Financial Results,Q3_2023,2023-10-13
+Net interest income,1,"Excluding FR impact, Net Interest Income increased by $0.4B compared to 2Q23.","Excluding FR impact, Net Interest Income increased by $3.8B compared to 3Q22.",22.9,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Noninterest revenue,2,"Excluding FR impact, Noninterest revenue decreased by $0.3B compared to 2Q23.","Excluding FR impact, Noninterest revenue increased by $1.2B compared to 3Q22.",17.8,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Managed revenue,3,"Excluding FR impact, Managed revenue increased by $0.1B compared to 2Q23.","Excluding FR impact, Managed revenue increased by $5.0B compared to 3Q22.",40.7,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Expense,4,"Excluding FR impact, Expense increased by $0.7B compared to 2Q23.","Excluding FR impact, Expense increased by $1.7B compared to 3Q22.",21.8,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Credit costs,5,"Excluding FR impact, Credit costs decreased by $0.3B compared to 2Q23.","Excluding FR impact, Credit costs decreased by $0.1B compared to 3Q22.",1.4,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Net income,6,"Excluding FR impact, Net income was flat compared to 2Q23.","Excluding FR impact, Net income increased by $2.3B compared to 3Q22.",13.2,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Net income applicable to common stockholders,7,"Excluding FR impact, Net income applicable to common stockholders was flat compared to 2Q23.","Excluding FR impact, Net income applicable to common stockholders increased by $2.4B compared to 3Q22.",12.7,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+EPS - diluted,8,"Excluding FR impact, EPS increased by $0.02 compared to 2Q23.","Excluding FR impact, EPS increased by $0.85 compared to 3Q22.",4.33,,,,,,USD,3,Financial Results,Q3_2023,2023-10-13
+ROE,9,Increased by 1 percentage point from 17% in 2Q23.,Increased by 3 percentage points from 15% in 3Q22.,18.0,17.0,15.0,,,,%,3,Financial Results,Q3_2023,2023-10-13
+ROTCE,10,Increased by 1 percentage point from 21% in 2Q23.,Increased by 4 percentage points from 18% in 3Q22.,22.0,21.0,18.0,,,,%,3,Financial Results,Q3_2023,2023-10-13
+Overhead ratio – managed,11,Remained flat at 53% compared to 2Q23.,Decreased by 4 percentage points from 57% in 3Q22.,53.0,53.0,57.0,,,,%,3,Financial Results,Q3_2023,2023-10-13
+NII excluding Markets,12,"Excluding FR impact, NII excluding Markets increased by $0.2B compared to 2Q23.","Excluding FR impact, NII excluding Markets increased by $4.8B compared to 3Q22.",23.2,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+NIR excluding Markets,13,"Excluding FR impact, NIR excluding Markets increased by $0.3B compared to 2Q23.","Excluding FR impact, NIR excluding Markets increased by $0.4B compared to 3Q22.",10.9,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Markets revenue,14,Decreased by $0.4B compared to 2Q23.,Decreased by $0.2B compared to 3Q22.,6.6,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Adjusted expense,15,"Excluding FR impact, Adjusted expense increased by $0.4B compared to 2Q23.","Excluding FR impact, Adjusted expense increased by $1.1B compared to 3Q22.",21.1,,,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Adjusted overhead ratio,16,Remained flat at 52% compared to 2Q23.,Decreased by 5 percentage points from 57% in 3Q22.,52.0,52.0,57.0,,,,%,3,Financial Results,Q3_2023,2023-10-13
+Net charge-offs,1,Increased by $0.1B from $1.4B in 2Q23.,Increased by $0.8B from $0.7B in 3Q22.,1.5,1.4,0.7,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Reserve build/(release),2,Decreased significantly from a $1.5B build in 2Q23 to a $0.1B release in 3Q23.,Decreased significantly from a $0.8B build in 3Q22 to a $0.1B release in 3Q23.,-0.1,1.5,0.8,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+Credit costs,3,Decreased by $1.5B from $2.9B in 2Q23.,Decreased by $0.1B from $1.5B in 3Q22.,1.4,2.9,1.5,,,,$B,3,Financial Results,Q3_2023,2023-10-13
+CET1 capital,1,Increased by $6B from $236B in 2Q23.,Increased by $32B from $210B in 3Q22.,242.0,236.0,210.0,,,,$B,4,Financial Results,Q3_2023,2023-10-13
+CET1 capital ratio - Standardized,2,Increased by 0.5 percentage points from 13.8% in 2Q23.,Increased by 1.8 percentage points from 12.5% in 3Q22.,14.3,13.8,12.5,,,,%,4,Financial Results,Q3_2023,2023-10-13
+CET1 capital ratio - Advanced,3,Increased by 0.6 percentage points from 13.9% in 2Q23.,Increased by 1.5 percentage points from 13.0% in 3Q22.,14.5,13.9,13.0,,,,%,4,Financial Results,Q3_2023,2023-10-13
+Basel III Standardized RWA,4,"Decreased by $14B from $1,707B in 2Q23.","Increased by $15B from $1,678B in 3Q22.",1693.0,1707.0,1678.0,,,,$B,4,Financial Results,Q3_2023,2023-10-13
+Firm SLR,5,Increased by 0.2 percentage points from 5.8% in 2Q23.,Increased by 0.7 percentage points from 5.3% in 3Q22.,6.0,5.8,5.3,,,,%,4,Financial Results,Q3_2023,2023-10-13
+Firm LCR,6,Remained flat at 112% from 2Q23.,Decreased by 1 percentage point from 113% in 3Q22.,112.0,112.0,113.0,,,,%,4,Financial Results,Q3_2023,2023-10-13
+Bank LCR,7,Decreased by 6 percentage points from 129% in 2Q23.,Decreased by 42 percentage points from 165% in 3Q22.,123.0,129.0,165.0,,,,%,4,Financial Results,Q3_2023,2023-10-13
+Total excess HQLA,8,Decreased by $44B from $296B in 2Q23.,Decreased by $279B from $531B in 3Q22.,252.0,296.0,531.0,,,,$B,4,Financial Results,Q3_2023,2023-10-13
+HQLA and unencumbered marketable securities,9,"Decreased by $25B from $1,411B in 2Q23.","Decreased by $94B from $1,480B in 3Q22.",1386.0,1411.0,1480.0,,,,$B,4,Financial Results,Q3_2023,2023-10-13
+Total assets (EOP),10,"Increased by $30B from $3,868B in 2Q23.","Increased by $124B from $3,774B in 3Q22.",3898.0,3868.0,3774.0,,,,$B,4,Financial Results,Q3_2023,2023-10-13
+Deposits (average),11,"Decreased by $31B from $2,387B in 2Q23.","Decreased by $89B from $2,445B in 3Q22.",2356.0,2387.0,2445.0,,,,$B,4,Financial Results,Q3_2023,2023-10-13
+Tangible book value per share,12,Increased by $2.14 from $79.90 in 2Q23.,Increased by $12.14 from $69.90 in 3Q22.,82.04,79.9,69.9,,,,USD,4,Financial Results,Q3_2023,2023-10-13
+Revenue,1,"Excluding FR impact, revenue increased by $605MM from 2Q23.","Excluding FR impact, revenue increased by $2,726MM from 3Q22.",18362.0,,,,,,$MM,7,Financial Results,Q3_2023,2023-10-13
+Expense,2,"Excluding FR impact, expense increased by $246MM from 2Q23.","Excluding FR impact, expense increased by $539MM from 3Q22.",9105.0,,,,,,$MM,7,Financial Results,Q3_2023,2023-10-13
+Credit costs,3,"Excluding FR impact, credit costs decreased by $6MM from 2Q23.","Excluding FR impact, credit costs increased by $919MM from 3Q22.",1446.0,,,,,,$MM,7,Financial Results,Q3_2023,2023-10-13
+Net income,4,"Excluding FR impact, net income increased by $294MM from 2Q23.","Excluding FR impact, net income increased by $963MM from 3Q22.",5895.0,,,,,,$MM,7,Financial Results,Q3_2023,2023-10-13
+Average equity,1,"Excluding FR impact, average equity was flat at $52.0B compared to 2Q23.","Excluding FR impact, average equity increased by $2.0B from $50.0B in 3Q22.",55.5,,,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+ROE,2,"Excluding FR impact, ROE increased by 2 percentage points from 38% in 2Q23.","Excluding FR impact, ROE increased by 6 percentage points from 34% in 3Q22.",41.0,,,,,,%,7,Financial Results,Q3_2023,2023-10-13
+Overhead ratio,3,"Excluding FR impact, the overhead ratio was flat at 50% compared to 2Q23.","Excluding FR impact, the overhead ratio decreased by 6 percentage points from 56% in 3Q22.",50.0,,,,,,,7,Financial Results,Q3_2023,2023-10-13
+Average loans,4,"Excluding FR impact, average loans increased by $11.6B from $458.4B in 2Q23.","Excluding FR impact, average loans increased by $27.3B from $442.7B in 3Q22.",564.3,,,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Average deposits,5,"Excluding FR impact, average deposits decreased by $33.3B from $1,110.1B in 2Q23.","Excluding FR impact, average deposits decreased by $97.4B from $1,174.2B in 3Q22.",1143.5,,,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Active mobile customers,6,Increased by 1.2 million from 52.0 million in 2Q23.,Increased by 4.3 million from 48.9 million in 3Q22.,53.2,52.0,48.9,,,,millions,7,Financial Results,Q3_2023,2023-10-13
+Debit & credit card sales volume,7,"Excluding FR impact, sales volume increased by $2.2B from $423.6B in 2Q23.","Excluding FR impact, sales volume increased by $30.0B from $395.8B in 3Q22.",426.3,,,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Business Banking average loans,1,Decreased by $0.1B from $19.6B in 2Q23.,Decreased by $1.8B from $21.3B in 3Q22.,19.5,19.6,21.3,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Client investment assets (EOP),2,"Excluding FR impact, client investment assets were nearly flat, decreasing by $0.3B from $742.0B in 2Q23.","Excluding FR impact, client investment assets increased by $126.7B from $615.0B in 3Q22.",882.3,,,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Card Services average loans,3,Increased by $8.2B from $187.0B in 2Q23.,Increased by $27.1B from $168.1B in 3Q22.,195.2,187.0,168.1,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Card Services sales volume,4,Increased by $2.2B from $294.0B in 2Q23.,Increased by $23.9B from $272.3B in 3Q22.,296.2,294.0,272.3,,,,$B,7,Financial Results,Q3_2023,2023-10-13
+Revenue,1,Decreased by $789MM from 2Q23.,Decreased by $195MM from 3Q22.,11730.0,12519.0,11925.0,,,,$MM,8,Financial Results,Q3_2023,2023-10-13
+Expense,2,Increased by $549MM from 2Q23.,Increased by $761MM from 3Q22.,7443.0,6894.0,6682.0,,,,$MM,8,Financial Results,Q3_2023,2023-10-13
+Credit costs,3,Net benefit decreased by $223MM from 2Q23.,Net benefit decreased by $698MM from 3Q22.,-185.0,38.0,513.0,,,,$MM,8,Financial Results,Q3_2023,2023-10-13
+Net income,4,"Decreased by $1,000MM from 2Q23.",Decreased by $430MM from 3Q22.,3092.0,4092.0,3522.0,,,,$MM,8,Financial Results,Q3_2023,2023-10-13
+Equity,1,Remained flat at $108.0B from 2Q23.,Increased by $5.0B from $103.0B in 3Q22.,108.0,108.0,103.0,,,,$B,8,Financial Results,Q3_2023,2023-10-13
+ROE,2,Decreased by 4 percentage points from 15% in 2Q23.,Decreased by 2 percentage points from 13% in 3Q22.,11.0,15.0,13.0,,,,%,8,Financial Results,Q3_2023,2023-10-13
+Average loans,3,Increased by $5.6B from $227.3B in 2Q23.,Increased by $11.3B from $221.6B in 3Q22.,232.9,227.3,221.6,,,,$B,8,Financial Results,Q3_2023,2023-10-13
+Average client deposits,4,Decreased by $9.4B from $647.5B in 2Q23.,Decreased by $31.1B from $669.2B in 3Q22.,638.1,647.5,669.2,,,,$B,8,Financial Results,Q3_2023,2023-10-13
+Assets under custody,5,Decreased by $0.7T from $30.4T in 2Q23.,Increased by $2.5T from $27.2T in 3Q22.,29.7,30.4,27.2,,,,$T,8,Financial Results,Q3_2023,2023-10-13
+Revenue,1,"Excluding FR impact, revenue decreased by $145MM from 2Q23.","Excluding FR impact, revenue increased by $617MM from 3Q22.",4031.0,,,,,,$MM,9,Financial Results,Q3_2023,2023-10-13
+Expense,2,"Excluding FR impact, expense increased by $57MM from 2Q23.","Excluding FR impact, expense increased by $177MM from 3Q22.",1375.0,,,,,,$MM,9,Financial Results,Q3_2023,2023-10-13
+Credit costs,3,"Excluding FR impact, credit costs decreased by $425MM from 2Q23.","Excluding FR impact, credit costs decreased by $554MM from 3Q22.",90.0,,,,,,$MM,9,Financial Results,Q3_2023,2023-10-13
+Net income,4,"Excluding FR impact, net income increased by $156MM from 2Q23.","Excluding FR impact, net income increased by $744MM from 3Q22.",1935.0,,,,,,$MM,9,Financial Results,Q3_2023,2023-10-13
+Average equity,1,"Excluding FR impact, average equity was flat at $28.5B compared to 2Q23.","Excluding FR impact, average equity increased by $3.5B from $25.0B in 3Q22.",30.0,,,,,,$B,9,Financial Results,Q3_2023,2023-10-13
+ROE,2,"Excluding FR impact, ROE increased by 2 percentage points from 21% in 2Q23.","Excluding FR impact, ROE increased by 9 percentage points from 14% in 3Q22.",25.0,,,,,,%,9,Financial Results,Q3_2023,2023-10-13
+Average loans,3,"Excluding FR impact, average loans increased by $1.8B from $242.2B in 2Q23.","Excluding FR impact, average loans increased by $14.9B from $229.1B in 3Q22.",283.0,,,,,,$B,9,Financial Results,Q3_2023,2023-10-13
+Average client deposits,4,Decreased by $13.1B from $275.2B in 2Q23.,Decreased by $19.2B from $281.3B in 3Q22.,262.1,275.2,281.3,,,,$B,9,Financial Results,Q3_2023,2023-10-13
+Revenue,1,"Excluding FR impact, revenue decreased by $71MM from 2Q23.","Excluding FR impact, revenue increased by $30MM from 3Q22.",5005.0,,,,,,$MM,10,Financial Results,Q3_2023,2023-10-13
+Expense,2,"Excluding FR impact, expense decreased by $42MM from 2Q23.","Excluding FR impact, expense increased by $93MM from 3Q22.",3138.0,,,,,,$MM,10,Financial Results,Q3_2023,2023-10-13
+Credit costs,3,"Excluding FR impact, credit costs decreased by $19MM from 2Q23.","Excluding FR impact, credit costs decreased by $120MM from 3Q22.",-13.0,,,,,,$MM,10,Financial Results,Q3_2023,2023-10-13
+Net income,4,"Excluding FR impact, net income decreased by $32MM from 2Q23.","Excluding FR impact, net income decreased by $144MM from 3Q22.",1417.0,,,,,,$MM,10,Financial Results,Q3_2023,2023-10-13
+Average equity,1,"Excluding FR impact, average equity was flat at $16.0B compared to 2Q23.","Excluding FR impact, average equity decreased by $1.0B from $17.0B in 3Q22.",17.0,,,,,,$B,10,Financial Results,Q3_2023,2023-10-13
+ROE,2,"Excluding FR impact, ROE decreased by 1 percentage point from 27% in 2Q23.","Excluding FR impact, ROE decreased by 2 percentage points from 28% in 3Q22.",32.0,,,,,,%,10,Financial Results,Q3_2023,2023-10-13
+Assets under management ('AUM'),3,Decreased by $0.002T from $3.188T in 2Q23.,Increased by $0.570T from $2.616T in 3Q22.,3.186,3.188,2.616,,,,$T,10,Financial Results,Q3_2023,2023-10-13
+Average loans,4,"Excluding FR impact, average loans increased by $1.0B from $209.8B in 2Q23.","Excluding FR impact, average loans decreased by $5.9B from $216.7B in 3Q22.",223.8,,,,,,$B,10,Financial Results,Q3_2023,2023-10-13
+Average deposits,5,Decreased by $9.9B from $211.9B in 2Q23.,Decreased by $51.0B from $253.0B in 3Q22.,202.0,211.9,253.0,,,,$B,10,Financial Results,Q3_2023,2023-10-13
+Revenue,1,"Excluding FR impact, revenue increased by $495MM from 2Q23.","Excluding FR impact, revenue increased by $1,782MM from 3Q22.",1558.0,,,,,,$MM,11,Financial Results,Q3_2023,2023-10-13
+Expense,2,"Excluding FR impact, expense decreased by $134MM from 2Q23.","Excluding FR impact, expense increased by $151MM from 3Q22.",696.0,,,,,,$MM,11,Financial Results,Q3_2023,2023-10-13
+Credit costs,3,Decreased by $289MM from 2Q23.,Decreased by $67MM from 3Q22.,46.0,335.0,113.0,,,,$MM,11,Financial Results,Q3_2023,2023-10-13
+Net income/(loss),4,"Excluding FR impact, net income increased by $572MM from 2Q23.","Excluding FR impact, net income increased by $1,205MM from 3Q22.",812.0,,,,,,$MM,11,Financial Results,Q3_2023,2023-10-13

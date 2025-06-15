@@ -1,0 +1,67 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Net Interest Income,1,Increased by 3% from the preceding quarter.,Decreased by 1% from the same quarter last year.,,,,Decreased by 1% from the previous year.,54095.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+Non-Interest Revenue,2,Decreased by 16% from the preceding quarter.,Increased by 62% from the same quarter last year.,,,,Increased by 15% from the previous year.,27044.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+Total Revenues,3,Decreased by 4% from the preceding quarter.,Decreased by 12% from the same quarter last year.,,,,Increased by 3% from the previous year.,81139.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+Expenses,4,,Decreased by 18% from the same quarter last year.,,,,Decreased by 4% from the previous year.,53984.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+Credit Costs,7,Decreased by 3% from the preceding quarter.,Decreased by 27% from the same quarter last year.,,,,Increased by 10% from the previous year.,10109.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+EBT,8,Decreased by 13% from the preceding quarter.,Increased by 281% from the same quarter last year.,,,,Increased by 32% from the previous year.,17046.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+Net Income,10,Decreased by 12% from the preceding quarter.,,,,,Increased by 37% from the previous year.,12682.0,,$ in MM,7,Financial Results,Q4_2024,2025-01-15
+Diluted EPS,12,Decreased by 11% from the preceding quarter.,,,,,Increased by 47% from the previous year.,5.94,,USD,7,Financial Results,Q4_2024,2025-01-15
+RoTCE(4),15,,,6.1,,,,7.0,,%,7,Financial Results,Q4_2024,2025-01-15
+CET1 Capital,1,,,155.0,158.0,154.0,,,,$ in B,10,Financial Results,Q4_2024,2025-01-15
+CET1 Capital Ratio - Standardized,3,,,13.6,13.7,13.4,,,,%,10,Financial Results,Q4_2024,2025-01-15
+Liquidity Coverage Ratio,7,,,116.0,117.0,116.0,,,,%,10,Financial Results,Q4_2024,2025-01-15
+AFS Securities (Duration: ~2 Years),8,,,227.0,234.0,257.0,,,,$ in B,10,Financial Results,Q4_2024,2025-01-15
+HTM Securities (Duration: ~3 Years),9,,,242.0,248.0,254.0,,,,$ in B,10,Financial Results,Q4_2024,2025-01-15
+Total Revenues,7,Increased by 3% from the preceding quarter.,Increased by 15% from the same quarter last year.,,,,Increased by 9% from the previous year.,19649.0,,$ in MM,11,Financial Results,Q4_2024,2025-01-15
+Net Income,12,Increased by 13% from the preceding quarter.,Increased by 138% from the same quarter last year.,,,,Increased by 40% from the previous year.,6483.0,,$ in MM,11,Financial Results,Q4_2024,2025-01-15
+RoTCE(3),2,,,29.9,,,,26.0,,%,11,Financial Results,Q4_2024,2025-01-15
+Total Revenues,5,Decreased by 5% from the preceding quarter.,Increased by 36% from the same quarter last year.,,,,Increased by 6% from the previous year.,19836.0,,$ in MM,12,Financial Results,Q4_2024,2025-01-15
+Net Income,10,Decreased by 6% from the preceding quarter.,,,,,Increased by 27% from the previous year.,4930.0,,$ in MM,12,Financial Results,Q4_2024,2025-01-15
+RoTCE(3),2,,,7.4,,,,9.1,,%,12,Financial Results,Q4_2024,2025-01-15
+Total Markets Revenues,3,"Total Markets Revenues decreased by 5% from 4,817 in 3Q24 to 4,576 in 4Q24.","Total Markets Revenues increased by 36% from 3,366 in 4Q23 to 4,576 in 4Q24.",4576.0,4817.0,3366.0,Total Markets Revenues for the full year 2024 increased by 6%.,19836.0,,$ in MM,12,Financial Results,Q4_2024,2025-01-15
+Total Revenues,5,Decreased by 22% from the preceding quarter.,Increased by 27% from the same quarter last year.,,,,Increased by 32% from the previous year.,6201.0,,$ in MM,13,Financial Results,Q4_2024,2025-01-15
+Net Income,10,Increased by 50% from the preceding quarter.,,,,,,1524.0,,$ in MM,13,Financial Results,Q4_2024,2025-01-15
+RoTCE(4),2,,,6.5,,,,7.0,,%,13,Financial Results,Q4_2024,2025-01-15
+Investment Banking fees,5,Decreased by 5% from 999 in 3Q24.,Increased by 35% from 706 in 4Q23.,951.0,999.0,706.0,Increased by 42% from the previous year.,3857.0,,$ in MM,13,Financial Results,Q4_2024,2025-01-15
+Total Revenues,4,,Increased by 20% from the same quarter last year.,,,,Increased by 7% from the previous year.,7512.0,,$ in MM,14,Financial Results,Q4_2024,2025-01-15
+Net Income,9,Increased by 18% from the preceding quarter.,,,,,Increased by 139% from the previous year.,1002.0,,$ in MM,14,Financial Results,Q4_2024,2025-01-15
+RoTCE(3),2,,,10.1,,,,7.6,,%,14,Financial Results,Q4_2024,2025-01-15
+Total Wealth Revenues,4,,"Increased by 20% from 1,664 in 4Q23.",2003.0,2002.0,1664.0,Increased by 7% from the previous year.,7512.0,,$ in MM,14,Financial Results,Q4_2024,2025-01-15
+Total Revenues,4,Increased by 4% from the preceding quarter.,Increased by 6% from the same quarter last year.,,,,Increased by 6% from the previous year.,20374.0,,$ in MM,15,Financial Results,Q4_2024,2025-01-15
+Net Income,9,Decreased by 25% from the preceding quarter.,Increased by 95% from the same quarter last year.,,,,Decreased by 24% from the previous year.,1382.0,,$ in MM,15,Financial Results,Q4_2024,2025-01-15
+RoTCE(3),2,,,6.2,,,,5.5,,%,15,Financial Results,Q4_2024,2025-01-15
+Branded Cards Credit Card Spend Volume,1,Increased by 5% from the preceding quarter.,Increased by 5% from the same quarter last year.,,,,Increased by 4% from the previous year.,516.0,,$ in B,15,Financial Results,Q4_2024,2025-01-15
+Retail Services Credit Card Spend Volume,5,Increased by 16% from the preceding quarter.,Decreased by 3% from the same quarter last year.,,,,Decreased by 5% from the previous year.,91.0,,$ in B,15,Financial Results,Q4_2024,2025-01-15
+Total Revenues,3,Decreased by 26% from the preceding quarter.,Decreased by 34% from the same quarter last year.,,,,Decreased by 20% from the previous year.,7541.0,,$ in MM,16,Financial Results,Q4_2024,2025-01-15
+Net Income,8,Decreased by 122% from the preceding quarter.,Increased by 53% from the same quarter last year.,,,,Decreased by 14% from the previous year.,-2432.0,,$ in MM,16,Financial Results,Q4_2024,2025-01-15
+Legacy Franchises ex-divestitures Revenue,1,,,,,,,6.9,7.3,$ in B,16,Financial Results,Q4_2024,2025-01-15
+Legacy Franchises ex-divestitures Expenses,2,,,,,,,6.0,6.8,$ in B,16,Financial Results,Q4_2024,2025-01-15
+TTS - Average Deposits,1,,,,,,"Achieved +1% CAGR, below the Mid Single-Digits CAGR target.",,,CAGR %,26,Financial Results,Q4_2024,2025-01-15
+Securities Services - Wallet Share,7,,,,,,"Achieved 10.2% wallet share, an increase of ~+250bps vs. 2021, meeting the Target Share Gains goal.",,,%,26,Financial Results,Q4_2024,2025-01-15
+Wealth - EBT Margin %,8,,,,,,"Achieved 17% EBT margin, a decrease of ~(17) pts vs. 2021, below the >20% target.",,,%,26,Financial Results,Q4_2024,2025-01-15
+Wealth - Net New Investment Assets (% of Total Client Investment Assets),10,,,,,,"Achieved 8.5%, an increase of ~+170 bps vs. 2023, within the Mid Single-Digits target range.",,,%,26,Financial Results,Q4_2024,2025-01-15
+U.S. Personal Banking - EOP Card Loans,16,,,,,,"Achieved +9% CAGR, meeting the High Single-Digits CAGR target.",,,CAGR %,26,Financial Results,Q4_2024,2025-01-15
+U.S. Personal Banking - EOP Deposits,17,,,,,,"Experienced a (9)% CAGR, below the High Single-Digits CAGR target.",,,CAGR %,26,Financial Results,Q4_2024,2025-01-15
+EOP Card Loans,1,,,171.0,164.0,165.0,,,,$ in B,28,Financial Results,Q4_2024,2025-01-15
+ACLL / EOP Loans,5,,,7.9,8.2,7.7,,,,%,28,Financial Results,Q4_2024,2025-01-15
+EOP Corporate Loans,1,,,301.0,300.0,300.0,,,,$ in B,28,Financial Results,Q4_2024,2025-01-15
+ACLL / EOP Loans,5,,,0.9,0.9,0.9,,,,%,28,Financial Results,Q4_2024,2025-01-15
+Tangible Book Value Per Share (TCE / CSO),6,,,89.34,89.67,86.19,,,,USD,33,Financial Results,Q4_2024,2025-01-15
+RoTCE,6,,,6.1,,-5.1,,7.0,4.9,%,33,Financial Results,Q4_2024,2025-01-15
+Total Citigroup Average TCE,7,,,168.6,168.3,165.2,,,,$ in B,33,Financial Results,Q4_2024,2025-01-15
+Services RoTCE,1,,,29.9,,,,26.0,,%,33,Financial Results,Q4_2024,2025-01-15
+Markets RoTCE,2,,,7.4,,,,9.1,,%,33,Financial Results,Q4_2024,2025-01-15
+Banking RoTCE,3,,,6.5,,,,7.0,,%,33,Financial Results,Q4_2024,2025-01-15
+Wealth RoTCE,4,,,10.1,,,,7.6,,%,33,Financial Results,Q4_2024,2025-01-15
+USPB RoTCE,5,,,6.2,,,,5.5,,%,33,Financial Results,Q4_2024,2025-01-15
+Citigroup RoTCE,8,,,6.1,,,,7.0,,%,33,Financial Results,Q4_2024,2025-01-15
+Total Citigroup - Total Revenues - as Reported,2,,,19581.0,20315.0,17440.0,,,,$ in MM,34,Footnotes,Q4_2024,2025-01-15
+Total Citigroup - Total revenues - Ex-FX,4,,,19581.0,20018.0,16597.0,,,,$ in MM,34,Footnotes,Q4_2024,2025-01-15
+Legacy Franchises - Mexico Revenues as reported,2,,,1435.0,1526.0,1460.0,,,,$ in MM,34,Footnotes,Q4_2024,2025-01-15
+Legacy Franchises - Mexico Revenues - Ex-FX,4,,,1435.0,1458.0,1297.0,,,,$ in MM,34,Footnotes,Q4_2024,2025-01-15
+Total Citigroup Revenues - As Reported,1,,,19581.0,20315.0,17440.0,,81139.0,78462.0,$ in MM,35,Footnotes,Q4_2024,2025-01-15
+Total Citigroup Revenues - Excluding Divestiture-Related Impacts,3,,,19577.0,20314.0,17502.0,,81113.0,77116.0,$ in MM,35,Footnotes,Q4_2024,2025-01-15
+Total Citigroup NII Ex-Markets,6,,,11877.0,11957.0,11837.0,,47090.0,47667.0,$ in MM,35,Footnotes,Q4_2024,2025-01-15
+Total Citigroup NIR Ex-Markets and Divestiture Related Impacts,11,,,3124.0,3540.0,2299.0,,14187.0,10800.0,$ in MM,35,Footnotes,Q4_2024,2025-01-15
+Total Citigroup Operating Expenses - Excluding Divestiture Impacts & FDIC Special Assessment,15,,,13156.0,13239.0,14184.0,,53463.0,54288.0,$ in MM,35,Footnotes,Q4_2024,2025-01-15

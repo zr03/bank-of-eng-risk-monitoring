@@ -1,0 +1,159 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Revenues,1,,Revenues increased by 3% year-over-year.,21.6,,,,,,billion USD,4,Financial Results,Q1_2025,2025-04-15
+Net Income,2,,Net Income increased by 21% year-over-year.,4.1,,,,,,billion USD,4,Financial Results,Q1_2025,2025-04-15
+EPS,3,,EPS increased by 24% year-over-year.,1.96,,,,,,USD,4,Financial Results,Q1_2025,2025-04-15
+RoTCE,4,,RoTCE increased from 7.6% in 1Q24 to 9.1% in 1Q25.,9.1,,7.6,,,,%,4,Financial Results,Q1_2025,2025-04-15
+CET1 Capital Ratio,5,,CET1 Capital Ratio slightly decreased from 13.5% in 1Q24 to 13.4% in 1Q25.,13.4,,13.5,,,,%,4,Financial Results,Q1_2025,2025-04-15
+Tangible Book Value Per Share,6,,Tangible Book Value Per Share increased by 6% year-over-year.,91.52,,,,,,USD,4,Financial Results,Q1_2025,2025-04-15
+Net Interest Income,1,Increased by 2% from the preceding quarter.,Increased by 4% from the same quarter last year.,14012.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Non-Interest Revenue,2,Increased by 32% from the preceding quarter.,Increased by 1% from the same quarter last year.,7584.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Total Revenues,3,Increased by 11% from the preceding quarter.,Increased by 3% from the same quarter last year.,21596.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Expenses,4,Increased by 3% from the preceding quarter.,Decreased by 5% from the same quarter last year.,13425.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+NCLs,5,Increased by 10% from the preceding quarter.,Increased by 7% from the same quarter last year.,2459.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+ACL Build and Other,6,Decreased by 25% from the preceding quarter.,Increased by 326% from the same quarter last year.,264.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Credit Costs,7,Increased by 5% from the preceding quarter.,Increased by 15% from the same quarter last year.,2723.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+EBT,8,Increased by 43% from the preceding quarter.,Increased by 20% from the same quarter last year.,5448.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Income Taxes,9,Increased by 47% from the preceding quarter.,Increased by 18% from the same quarter last year.,1340.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Net Income,10,Increased by 42% from the preceding quarter.,Increased by 21% from the same quarter last year.,4064.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Net Income to Common,11,Increased by 46% from the preceding quarter.,Increased by 23% from the same quarter last year.,3768.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+Diluted EPS,12,Increased by 46% from the preceding quarter.,Increased by 24% from the same quarter last year.,1.96,,,,,,USD,6,Financial Results,Q1_2025,2025-04-15
+Efficiency Ratio (Δ in bps),13,Improved by 490 bps from the preceding quarter.,Improved by 490 bps from the same quarter last year.,62.0,,,,,,%,6,Financial Results,Q1_2025,2025-04-15
+ROCE,14,,,8.0,,,,,,%,6,Financial Results,Q1_2025,2025-04-15
+RoTCE (Δ in bps),15,Improved by 300 bps from the preceding quarter.,Improved by 150 bps from the same quarter last year.,9.1,,,,,,%,6,Financial Results,Q1_2025,2025-04-15
+CET1 Capital Ratio,16,,,13.4,,,,,,%,6,Financial Results,Q1_2025,2025-04-15
+NII ex-Markets,17,Increased by 1% from the preceding quarter.,Increased by 2% from the same quarter last year.,11999.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+NIR ex-Markets,18,Increased by 20% from the preceding quarter.,Decreased by 6% from the same quarter last year.,3611.0,,,,,,MM USD,6,Financial Results,Q1_2025,2025-04-15
+EOP Credit Card Loans,1,Decreased from $171B in 4Q24.,Increased from $159B in 1Q24.,163.0,171.0,159.0,,,,B USD,8,Financial Results,Q1_2025,2025-04-15
+NCLs,2,Increased from $1.8B in 4Q24.,Increased from $1.8B in 1Q24.,1.9,1.8,1.8,,,,B USD,8,Financial Results,Q1_2025,2025-04-15
+% of Average Loans,3,Increased from 4.4% in 4Q24.,Increased from 4.5% in 1Q24.,4.7,4.4,4.5,,,,%,8,Financial Results,Q1_2025,2025-04-15
+90+ Days Past Due (DPD) %,4,Remained stable at 1.6% from 4Q24.,Remained stable at 1.6% from 1Q24.,1.6,1.6,1.6,,,,%,8,Financial Results,Q1_2025,2025-04-15
+ACLL / EOP Loans,5,Increased from 7.9% in 4Q24.,Remained stable at 8.2% from 1Q24.,8.2,7.9,8.2,,,,%,8,Financial Results,Q1_2025,2025-04-15
+EOP Corporate Loans,1,Increased from $301B in 4Q24.,Increased from $293B in 1Q24.,316.0,301.0,293.0,,,,B USD,8,Financial Results,Q1_2025,2025-04-15
+NCLs,2,Increased from $0.1B in 4Q24.,Remained stable at $0.2B from 1Q24.,0.2,0.1,0.2,,,,B USD,8,Financial Results,Q1_2025,2025-04-15
+% of Average Loans,3,Increased from 0.1% in 4Q24.,Remained stable at 0.2% from 1Q24.,0.2,0.1,0.2,,,,%,8,Financial Results,Q1_2025,2025-04-15
+NALs,4,Remained stable at $1.4B from 4Q24.,Decreased from $1.5B in 1Q24.,1.4,1.4,1.5,,,,B USD,8,Financial Results,Q1_2025,2025-04-15
+% of Loans,5,Decreased from 0.5% in 4Q24.,Decreased from 0.5% in 1Q24.,0.4,0.5,0.5,,,,%,8,Financial Results,Q1_2025,2025-04-15
+ACLL / EOP Loans,6,Remained stable at 0.9% from 4Q24.,Decreased from 1.0% in 1Q24.,0.9,0.9,1.0,,,,%,8,Financial Results,Q1_2025,2025-04-15
+CET1 Capital,1,Increased slightly from $155B in 4Q24.,Increased from $153B in 1Q24.,156.0,155.0,153.0,,,,B USD,9,Financial Results,Q1_2025,2025-04-15
+Standardized RWA,2,"Increased from $1,140B in 4Q24.","Increased from $1,139B in 1Q24.",1159.0,1140.0,1139.0,,,,B USD,9,Financial Results,Q1_2025,2025-04-15
+CET1 Capital Ratio - Standardized,3,Decreased from 13.6% in 4Q24.,Decreased from 13.5% in 1Q24.,13.4,13.6,13.5,,,,%,9,Financial Results,Q1_2025,2025-04-15
+Advanced RWA,4,"Increased from $1,280B in 4Q24.","Increased from $1,281B in 1Q24.",1309.0,1280.0,1281.0,,,,B USD,9,Financial Results,Q1_2025,2025-04-15
+CET1 Capital Ratio - Advanced,5,Decreased from 12.1% in 4Q24.,Decreased from 12.0% in 1Q24.,11.9,12.1,12.0,,,,%,9,Financial Results,Q1_2025,2025-04-15
+Supplementary Leverage Ratio,6,Remained stable at 5.8% from 4Q24.,Remained stable at 5.8% from 1Q24.,5.8,5.8,5.8,,,,%,9,Financial Results,Q1_2025,2025-04-15
+Liquidity Coverage Ratio,7,Increased from 116% in 4Q24.,Remained stable at 117% from 1Q24.,117.0,116.0,117.0,,,,%,9,Financial Results,Q1_2025,2025-04-15
+AFS Securities (Duration: ~2 Years),8,Decreased from $227B in 4Q24.,Decreased from $255B in 1Q24.,225.0,227.0,255.0,,,,B USD,9,Financial Results,Q1_2025,2025-04-15
+HTM Securities (Duration: ~3 Years),9,Decreased from $242B in 4Q24.,Decreased from $252B in 1Q24.,220.0,242.0,252.0,,,,B USD,9,Financial Results,Q1_2025,2025-04-15
+Total Revenues,1,Decreased by 5% QoQ.,Increased by 3% YoY.,4889.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+Expenses,2,Decreased by 1% QoQ.,Decreased by 3% YoY.,2584.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+Credit Costs,3,Decreased by 54% QoQ.,Decreased by 20% YoY.,51.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+EBT,4,Decreased by 8% QoQ.,Increased by 11% YoY.,2254.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+Net Income,5,Decreased by 15% QoQ.,Increased by 7% YoY.,1595.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+Allocated Average TCE,1,Decreased by 1% QoQ.,Decreased by 1% YoY.,25.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+RoTCE,2,,,26.2,,,,,,%,10,Financial Results,Q1_2025,2025-04-15
+Efficiency Ratio (Δ in bps),3,Worsened by 300 bps QoQ.,Improved by 300 bps YoY.,53.0,,,,,,%,10,Financial Results,Q1_2025,2025-04-15
+Average Loans,4,,Increased by 6% YoY.,87.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+EOP Loans,5,Increased by 11% QoQ.,Increased by 22% YoY.,98.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Average Deposits,6,Decreased by 2% QoQ.,Increased by 2% YoY.,826.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+EOP Deposits,7,Increased by 3% QoQ.,Increased by 6% YoY.,833.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Net Interest Income,8,Increased by 2% QoQ.,Increased by 5% YoY.,3498.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+Non-Interest Revenue,9,Decreased by 19% QoQ.,Decreased by 4% YoY.,1391.0,,,,,,MM USD,10,Financial Results,Q1_2025,2025-04-15
+Treasury and Trade Solutions - Average Loans,1,Increased by 1% QoQ.,Increased by 6% YoY.,86.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Treasury and Trade Solutions - Average Deposits,2,Decreased by 2% QoQ.,Increased by 1% YoY.,690.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Treasury and Trade Solutions - Cross Border Transaction Value,3,Decreased by 6% QoQ.,Increased by 5% YoY.,95.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Treasury and Trade Solutions - U.S. Dollar Clearing Volume,4,Decreased by 3% QoQ.,Increased by 8% YoY.,43.0,,,,,,#MM,10,Financial Results,Q1_2025,2025-04-15
+Treasury and Trade Solutions - Commercial Card Spend Volume,5,Decreased by 1% QoQ.,Increased by 2% YoY.,17.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Securities Services - Average Deposits,6,Increased by 1% QoQ.,Increased by 10% YoY.,136.0,,,,,,B USD,10,Financial Results,Q1_2025,2025-04-15
+Securities Services - AUC/AUA,7,Increased by 3% QoQ.,Increased by 9% YoY.,26.0,,,,,,T USD,10,Financial Results,Q1_2025,2025-04-15
+Total Revenues,1,Increased by 31% from preceding quarter.,Increased by 12% from same quarter last year.,5986.0,,,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Expenses,2,Increased by 9% from preceding quarter.,Increased by 2% from same quarter last year.,3468.0,,,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Credit Costs,3,Increased by 50% from preceding quarter.,Increased by 1% from same quarter last year.,201.0,,,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+EBT,4,Increased by 83% from preceding quarter.,Increased by 31% from same quarter last year.,2317.0,,,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Net Income,5,Increased by 77% from preceding quarter.,Increased by 27% from same quarter last year.,1782.0,,,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Allocated Average TCE,1,Decreased by 7% QoQ.,Decreased by 7% YoY.,50.0,,,,,,B USD,11,Financial Results,Q1_2025,2025-04-15
+RoTCE,2,,,14.3,,,,,,%,11,Financial Results,Q1_2025,2025-04-15
+Efficiency Ratio (Δ in bps),3,"Improved by 1,100 bps QoQ.",Improved by 500 bps YoY.,58.0,,,,,,%,11,Financial Results,Q1_2025,2025-04-15
+Average Trading Account Assets,4,Increased by 6% QoQ.,Increased by 17% YoY.,476.0,,,,,,B USD,11,Financial Results,Q1_2025,2025-04-15
+Average Total Assets,5,Increased by 6% QoQ.,Increased by 7% YoY.,1121.0,,,,,,B USD,11,Financial Results,Q1_2025,2025-04-15
+Average Loans,6,Increased by 5% QoQ.,Increased by 7% YoY.,128.0,,,,,,B USD,11,Financial Results,Q1_2025,2025-04-15
+Average VaR ($ in MM) (99% confidence level),7,,Decreased by 23% YoY.,118.0,,,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Fixed Income markets,1,"Increased by 29% from $3,478M in 4Q24.","Increased by 8% from $4,130M in 1Q24.",4477.0,3478.0,4130.0,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Equity markets,2,"Increased by 37% from $1,098M in 4Q24.","Increased by 23% from $1,227M in 1Q24.",1509.0,1098.0,1227.0,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Total Markets Revenues,3,"Increased by 31% from $4,576M in 4Q24.","Increased by 12% from $5,357M in 1Q24.",5986.0,4576.0,5357.0,,,,MM USD,11,Financial Results,Q1_2025,2025-04-15
+Total Revenues,1,Increased by 57% from preceding quarter.,Increased by 12% from same quarter last year.,1952.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Expenses,2,Decreased by 2% from preceding quarter.,Decreased by 12% from same quarter last year.,1034.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Credit Costs,3,NM,NM,214.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+EBT,4,Increased by 64% from preceding quarter.,Increased by 3% from same quarter last year.,704.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Net Income,5,Increased by 53% from preceding quarter.,Increased by 4% from same quarter last year.,543.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Allocated Average TCE,1,Decreased by 6% QoQ.,Decreased by 6% YoY.,21.0,,,,,,B USD,12,Financial Results,Q1_2025,2025-04-15
+RoTCE,2,,,10.7,,,,,,%,12,Financial Results,Q1_2025,2025-04-15
+Efficiency Ratio (Δ in bps),3,"Improved by 3,200 bps QoQ.","Improved by 1,500 bps YoY.",53.0,,,,,,%,12,Financial Results,Q1_2025,2025-04-15
+Average Loans,4,Decreased by 2% QoQ.,Decreased by 8% YoY.,82.0,,,,,,B USD,12,Financial Results,Q1_2025,2025-04-15
+EOP Loans,5,Decreased by 1% QoQ.,Decreased by 7% YoY.,81.0,,,,,,B USD,12,Financial Results,Q1_2025,2025-04-15
+NCL Rate (Δ in bps),6,Increased by 14 bps QoQ.,Decreased by 13 bps YoY.,0.17,,,,,,%,12,Financial Results,Q1_2025,2025-04-15
+Net Interest Income,7,Decreased by 6% QoQ.,Decreased by 16% YoY.,491.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Non-Interest Revenue,8,Increased by 103% QoQ.,Increased by 27% YoY.,1461.0,,,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Advisory,1,Increased by 20% from $353M in 4Q24.,Increased by 84% from $230M in 1Q24.,424.0,353.0,230.0,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Equity Underwriting,2,Decreased by 41% from $214M in 4Q24.,Decreased by 26% from $171M in 1Q24.,127.0,214.0,171.0,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Debt Underwriting,3,Increased by 44% from $384M in 4Q24.,Decreased by 3% from $571M in 1Q24.,553.0,384.0,571.0,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Investment Banking fees,4,Increased by 16% from $951M in 4Q24.,Increased by 14% from $972M in 1Q24.,1104.0,951.0,972.0,,,,MM USD,12,Financial Results,Q1_2025,2025-04-15
+Total Revenues,1,Increased by 5% QoQ.,Increased by 24% YoY.,2096.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+Expenses,2,Increased by 5% QoQ.,Flat YoY.,1639.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+Credit Costs,3,Increased by 390% QoQ.,NM,98.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+EBT,4,Decreased by 13% QoQ.,Increased by 62% YoY.,359.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+Net Income,5,Decreased by 15% QoQ.,Increased by 62% YoY.,284.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+Allocated Average TCE,1,Decreased by 7% QoQ.,Decreased by 7% YoY.,12.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+RoTCE,2,,,9.4,,,,,,%,13,Financial Results,Q1_2025,2025-04-15
+Efficiency Ratio (Δ in bps),3,,"Improved by 1,900 bps YoY.",78.0,,,,,,%,13,Financial Results,Q1_2025,2025-04-15
+Average Loans,4,Decreased by 1% QoQ.,Decreased by 2% YoY.,147.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+Average Deposits,5,Decreased by 2% QoQ.,Decreased by 2% YoY.,310.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+Client Investment Assets,6,Increased by 1% QoQ.,Increased by 16% YoY.,595.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+EOP Loans,7,,Decreased by 1% YoY.,147.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+EOP Deposits,8,Decreased by 1% QoQ.,Decreased by 4% YoY.,309.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+Client Balances,9,,Increased by 7% YoY.,1051.0,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+NNIA (excludes USPB transfers),10,Increased by 6% QoQ.,Increased by 489% YoY.,16.5,,,,,,B USD,13,Financial Results,Q1_2025,2025-04-15
+Net Interest Income,11,Increased by 2% QoQ.,Increased by 30% YoY.,1274.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+Non-Interest Revenue,12,Increased by 10% QoQ.,Increased by 16% YoY.,822.0,,,,,,MM USD,13,Financial Results,Q1_2025,2025-04-15
+Total Revenues,1,Increased by 2% QoQ.,Increased by 2% YoY.,5228.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+Expenses,2,Decreased by 1% QoQ.,Flat YoY.,2442.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+Credit Costs,3,Decreased by 17% QoQ.,Decreased by 18% YoY.,1811.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+EBT,4,Increased by 89% QoQ.,Increased by 114% YoY.,975.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+Net Income,5,Increased by 90% QoQ.,Increased by 115% YoY.,745.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+Allocated Average TCE,1,Decreased by 7% QoQ.,Decreased by 7% YoY.,23.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+RoTCE,2,,,12.9,,,,,,%,14,Financial Results,Q1_2025,2025-04-15
+Efficiency Ratio (Δ in bps),3,Improved by 100 bps QoQ.,Improved by 100 bps YoY.,47.0,,,,,,%,14,Financial Results,Q1_2025,2025-04-15
+Average Loans,4,,Increased by 6% YoY.,216.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+EOP Loans,5,Decreased by 3% QoQ.,Increased by 5% YoY.,215.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Average Deposits,6,Increased by 3% QoQ.,Decreased by 11% YoY.,89.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+EOP Deposits,7,Increased by 3% QoQ.,Decreased by 7% YoY.,92.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Active Mobile Users (MM),8,Increased by 2% QoQ.,Increased by 8% YoY.,20.0,,,,,,MM,14,Financial Results,Q1_2025,2025-04-15
+Active Digital Users (MM),9,Increased by 2% QoQ.,Increased by 5% YoY.,26.0,,,,,,MM,14,Financial Results,Q1_2025,2025-04-15
+NCL Rate (Δ in bps),10,Increased by 18 bps QoQ.,Increased by 5 bps YoY.,3.72,,,,,,%,14,Financial Results,Q1_2025,2025-04-15
+Average Installment Loans,11,Decreased by 2% QoQ.,Increased by 5% YoY.,6.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Net Interest Income,12,Increased by 1% QoQ.,Increased by 6% YoY.,5541.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+Non-Interest Revenue,13,Increased by 5% QoQ.,Decreased by 168% YoY.,-313.0,,,,,,MM USD,14,Financial Results,Q1_2025,2025-04-15
+Branded Cards - Credit Card Spend Volume,1,Decreased by 8% QoQ.,Increased by 3% YoY.,125.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Branded Cards - Credit Card Average Loans,2,,Increased by 5% YoY.,113.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Retail Services - Credit Card Spend Volume,3,Decreased by 25% QoQ.,Decreased by 5% YoY.,19.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Retail Services - Credit Card Average Loans,4,Decreased by 1% QoQ.,Decreased by 1% YoY.,51.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Retail Banking - EOP Digital Deposits,5,Increased by 4% QoQ.,Flat YoY.,28.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Retail Banking - USPB Branches (#),6,,,644.0,,,,,,#,14,Financial Results,Q1_2025,2025-04-15
+Retail Banking - Mortgage Originations,7,Decreased by 33% QoQ.,Decreased by 10% YoY.,3.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Retail Banking - Average Mortgage Loans,8,Increased by 2% QoQ.,Increased by 15% YoY.,47.0,,,,,,B USD,14,Financial Results,Q1_2025,2025-04-15
+Total Revenues,1,Increased by 8% QoQ.,Decreased by 39% YoY.,1445.0,,,,,,MM USD,15,Financial Results,Q1_2025,2025-04-15
+Expenses,2,Increased by 3% QoQ.,Decreased by 17% YoY.,2224.0,,,,,,MM USD,15,Financial Results,Q1_2025,2025-04-15
+Credit Costs,3,Decreased by 10% QoQ.,Increased by 93% YoY.,359.0,,,,,,MM USD,15,Financial Results,Q1_2025,2025-04-15
+EBT,4,Increased by 7% QoQ.,Decreased by 130% YoY.,-1138.0,,,,,,MM USD,15,Financial Results,Q1_2025,2025-04-15
+Net Income,5,Increased by 19% QoQ.,Decreased by 82% YoY.,-870.0,,,,,,MM USD,15,Financial Results,Q1_2025,2025-04-15
+Legacy Franchises Exits Contribution - Closed Exit Markets Revenue,1,,,0.0,,0.3,,,,B USD,15,Financial Results,Q1_2025,2025-04-15
+Legacy Franchises Exits Contribution - Closed Exit Markets Expenses,2,,,0.1,,0.5,,,,B USD,15,Financial Results,Q1_2025,2025-04-15
+Legacy Franchises Exits Contribution - Mexico Consumer / SBMM Revenue,3,,,1.5,,6.1,,,,B USD,15,Financial Results,Q1_2025,2025-04-15
+Legacy Franchises Exits Contribution - Mexico Consumer / SBMM Expenses,4,,,1.1,,4.4,,,,B USD,15,Financial Results,Q1_2025,2025-04-15
+Legacy Franchises Exits Contribution - Legacy Franchises ex-divestitures Revenue,5,,,1.6,,6.8,,,,B USD,15,Financial Results,Q1_2025,2025-04-15
+Legacy Franchises Exits Contribution - Legacy Franchises ex-divestitures Expenses,6,,,1.3,,6.0,,,,B USD,15,Financial Results,Q1_2025,2025-04-15
+Reported Revenues (Pre),1,,,21694.0,19581.0,21104.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15
+Reported Revenues (Post),2,,,21596.0,19465.0,21016.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15
+Reported Revenues (Delta),3,,,-98.0,-116.0,-88.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15
+Reported Operating Expenses (Pre),4,,,13523.0,13186.0,14195.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15
+Reported Operating Expenses (Post),5,,,13425.0,13070.0,14107.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15
+Reported Operating Expenses (Delta),6,,,-98.0,-116.0,-88.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15
+Net Income (Delta),7,,,0.0,0.0,0.0,,,,mm USD,22,Footnotes,Q1_2025,2025-04-15

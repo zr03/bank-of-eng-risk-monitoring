@@ -1,0 +1,203 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Revenues,1,,Decreased by 1% vs 2Q22.,19.4,,,,,,billion USD,2,Financial Results,Q2_2023,2023-07-14
+Net Income,2,,Decreased by 36% vs 2Q22.,2.9,,,,,,billion USD,2,Financial Results,Q2_2023,2023-07-14
+EPS,3,,Decreased by 39% vs 2Q22.,1.33,,,,,,USD,2,Financial Results,Q2_2023,2023-07-14
+RoTCE,4,,Decreased from 11.2% in 2Q22.,6.4,,11.2,,,,%,2,Financial Results,Q2_2023,2023-07-14
+CET1 Capital Ratio,5,,Increased from 12.0% in 2Q22.,13.3,,12.0,,,,%,2,Financial Results,Q2_2023,2023-07-14
+Tangible Book Value Per Share,6,,Increased by 6% vs 2Q22.,85.34,,,,,,USD,2,Financial Results,Q2_2023,2023-07-14
+Net Interest Income,1,Increased by 4% from 1Q23.,Increased by 16% from 2Q22.,13900.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Non-Interest Revenue,2,Decreased by 32% from 1Q23.,Decreased by 28% from 2Q22.,5536.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Total Revenues,3,Decreased by 9% from 1Q23.,Decreased by 1% from 2Q22.,19436.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Expenses,4,Increased by 2% from 1Q23.,Increased by 9% from 2Q22.,13570.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+NCLs,5,Increased by 16% from 1Q23.,Increased by 77% from 2Q22.,1504.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+ACL Build and Other,6,Decreased by 52% from 1Q23.,Decreased by 25% from 2Q22.,320.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Credit Costs,7,Decreased by 8% from 1Q23.,Increased by 43% from 2Q22.,1824.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+EBT,8,Decreased by 35% from 1Q23.,Decreased by 32% from 2Q22.,4042.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Income Taxes,9,Decreased by 29% from 1Q23.,Decreased by 8% from 2Q22.,1090.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Net Income,10,Decreased by 37% from 1Q23.,Decreased by 36% from 2Q22.,2915.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Net Income to Common,11,Decreased by 39% from 1Q23.,Decreased by 39% from 2Q22.,2627.0,,,,,,MM USD,4,Financial Results,Q2_2023,2023-07-14
+Diluted EPS,12,Decreased by 39% from 1Q23.,Decreased by 39% from 2Q22.,1.33,,,,,,USD,4,Financial Results,Q2_2023,2023-07-14
+Efficiency Ratio (Δ in bps),13,,,70.0,,,,,,%,4,Financial Results,Q2_2023,2023-07-14
+ROE,14,,,5.6,,,,,,%,4,Financial Results,Q2_2023,2023-07-14
+RoTCE,15,,,6.4,,,,,,%,4,Financial Results,Q2_2023,2023-07-14
+CET1 Capital Ratio,16,,,13.3,,,,,,%,4,Financial Results,Q2_2023,2023-07-14
+US Cards NCLs ($B),1,,NCLs decreased from $1.4B in CECL Day 1 to $1.2B in 2Q23.,1.2,,1.4,,,,B USD,7,Financial Results,Q2_2023,2023-07-14
+US Cards % of Avg Loans,2,,Decreased from 3.8% on CECL Day 1 to 3.1% in 2Q23.,3.1,,3.8,,,,%,7,Financial Results,Q2_2023,2023-07-14
+US Cards 90+ DPD,3,,Decreased from 1.3% on CECL Day 1 to 1.1% in 2Q23.,1.1,,1.3,,,,%,7,Financial Results,Q2_2023,2023-07-14
+US Cards ACLL / Funded Loans,4,,Increased from 7.5% on CECL Day 1 to 7.9% in 2Q23.,7.9,,7.5,,,,%,7,Financial Results,Q2_2023,2023-07-14
+Corporate NCLs ($B),1,,NCLs decreased from $0.1B on CECL Day 1 to $0.0B in 2Q23.,0.0,,0.1,,,,B USD,7,Financial Results,Q2_2023,2023-07-14
+Corporate % of Avg Loans,2,,"Value for 2Q23 is Not Meaningful (NM), compared to 0.1% on CECL Day 1.",,,0.1,,,,%,7,Financial Results,Q2_2023,2023-07-14
+Corporate NALs % of Loans,3,,Decreased from 0.7% on CECL Day 1 to 0.4% in 2Q23.,0.4,,0.7,,,,%,7,Financial Results,Q2_2023,2023-07-14
+Corporate ACLL / Funded Loans,4,,Increased from 0.6% on CECL Day 1 to 0.9% in 2Q23.,0.9,,0.6,,,,%,7,Financial Results,Q2_2023,2023-07-14
+CET1 Capital,1,Remained flat at $154B.,Increased from $145B in 2Q22.,154.0,154.0,145.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+Standardized RWA,2,"Increased from $1,144B in 1Q23.","Decreased from $1,212B in 2Q22.",1156.0,1144.0,1212.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+CET1 Capital Ratio - Standardized,3,Decreased from 13.4% in 1Q23.,Increased from 12.0% in 2Q22.,13.3,13.4,12.0,,,,%,8,Financial Results,Q2_2023,2023-07-14
+Advanced RWA,4,"Decreased from $1,252B in 1Q23.","Remained flat at $1,233B.",1233.0,1252.0,1233.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+CET1 Capital Ratio - Advanced,5,Increased from 12.3% in 1Q23.,Increased from 11.8% in 2Q22.,12.5,12.3,11.8,,,,%,8,Financial Results,Q2_2023,2023-07-14
+Supplementary Leverage Ratio,1,Remained flat at 6.0%.,Increased from 5.7% in 2Q22.,6.0,6.0,5.7,,,,%,8,Financial Results,Q2_2023,2023-07-14
+Liquidity Coverage Ratio,1,Decreased from 120% in 1Q23.,Increased from 115% in 2Q22.,119.0,120.0,115.0,,,,%,8,Financial Results,Q2_2023,2023-07-14
+Average HQLA,2,Remained flat at $584B.,Increased from $531B in 2Q22.,584.0,584.0,531.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+Total Available Liquidity Resources,3,"Decreased from $1,033B in 1Q23.",Increased from $964B in 2Q22.,993.0,1033.0,964.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+Total Loss Absorbing Capacity,4,Decreased from $340B in 1Q23.,Increased from $329B in 2Q22.,338.0,340.0,329.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+AFS Securities (Duration: ~2 Years),1,Decreased from $240B in 1Q23.,Decreased from $238B in 2Q22.,237.0,240.0,238.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+HTM Securities (Duration: ~4 Years),2,Decreased from $264B in 1Q23.,Decreased from $268B in 2Q22.,262.0,264.0,268.0,,,,B USD,8,Financial Results,Q2_2023,2023-07-14
+Tangible Book Value Per Share,3,Increased from $84.21 in 1Q23.,Increased from $80.25 in 2Q22.,85.34,84.21,80.25,,,,USD,8,Financial Results,Q2_2023,2023-07-14
+Net Interest Income,1,Increased by 12% vs 1Q23.,Increased by 24% vs 2Q22.,5623.0,,,,,,MM USD,10,Financial Results,Q2_2023,2023-07-14
+Non-Interest Revenue,2,Decreased by 22% vs 1Q23.,Decreased by 30% vs 2Q22.,4818.0,,,,,,MM USD,10,Financial Results,Q2_2023,2023-07-14
+Total Revenues,3,Decreased by 7% vs 1Q23.,Decreased by 9% vs 2Q22.,10441.0,,,,,,MM USD,10,Financial Results,Q2_2023,2023-07-14
+Expenses,4,Increased by 4% vs 1Q23.,Increased by 13% vs 2Q22.,7286.0,,,,,,MM USD,10,Financial Results,Q2_2023,2023-07-14
+EBT,5,Decreased by 29% vs 1Q23.,Decreased by 40% vs 2Q22.,3097.0,,,,,,MM USD,10,Financial Results,Q2_2023,2023-07-14
+Net Income,6,Decreased by 33% vs 1Q23.,Decreased by 45% vs 2Q22.,2190.0,,,,,,MM USD,10,Financial Results,Q2_2023,2023-07-14
+Allocated Average TCE,1,,,96.0,,,,,,B USD,10,Financial Results,Q2_2023,2023-07-14
+RoTCE,2,,,9.2,,,,,,%,10,Financial Results,Q2_2023,2023-07-14
+Efficiency Ratio,3,,,70.0,,,,,,%,10,Financial Results,Q2_2023,2023-07-14
+Average Loans,4,Decreased by 2% vs 1Q23.,Decreased by 6% vs 2Q22.,278.0,,,,,,B USD,10,Financial Results,Q2_2023,2023-07-14
+Average Deposits,5,Decreased by 2% vs 1Q23.,Increased by 1% vs 2Q22.,837.0,,,,,,B USD,10,Financial Results,Q2_2023,2023-07-14
+EOP Loans,6,Decreased by 1% vs 1Q23.,Decreased by 6% vs 2Q22.,278.0,,,,,,B USD,10,Financial Results,Q2_2023,2023-07-14
+EOP Deposits,7,Remained flat vs 1Q23.,Decreased by 1% vs 2Q22.,818.0,,,,,,B USD,10,Financial Results,Q2_2023,2023-07-14
+Corporate Clients,1,Increased by 1% vs 1Q23.,,4584.0,,,,,,,10,Financial Results,Q2_2023,2023-07-14
+Financial Institution & Investor Clients,2,,Decreased by 1% vs 2Q22.,4698.0,,,,,,,10,Financial Results,Q2_2023,2023-07-14
+Commercial Clients,3,Increased by 3% vs 1Q23.,Increased by 7% vs 2Q22.,14408.0,,,,,,,10,Financial Results,Q2_2023,2023-07-14
+Total ICG Clients,4,Increased by 2% vs 1Q23.,Increased by 4% vs 2Q22.,23690.0,,,,,,,10,Financial Results,Q2_2023,2023-07-14
+Treasury and Trade Solutions Revenues,1,Increased 3% from 1Q23.,Increased 15% from 2Q22.,3510.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Securities Services Revenues,2,Increased 8% from 1Q23.,Increased 15% from 2Q22.,1145.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Total Services Revenues,3,Increased 4% from 1Q23.,Increased 15% from 2Q22.,4655.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Fixed Income Markets,4,Decreased 21% from 1Q23.,Decreased 13% from 2Q22.,3529.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Equity Markets,5,Decreased 5% from 1Q23.,Decreased 10% from 2Q22.,1090.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Total Markets Revenues,6,Decreased 18% from 1Q23.,Decreased 13% from 2Q22.,4619.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Investment Banking,7,Decreased 21% from 1Q23.,Decreased 24% from 2Q22.,612.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Corporate Lending,8,Increased 5% from 1Q23.,Decreased 20% from 2Q22.,621.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+Total Banking Revenues,9,Decreased 10% from 1Q23.,Decreased 22% from 2Q22.,1233.0,,,,,,MM USD,11,Financial Results,Q2_2023,2023-07-14
+TTS Average Loans,1,Increased 1% from 1Q23.,Decreased 6% from 2Q22.,79.0,,,,,,B USD,11,Financial Results,Q2_2023,2023-07-14
+TTS Average Deposits,2,Decreased 2% from 1Q23.,Increased 2% from 2Q22.,688.0,,,,,,B USD,11,Financial Results,Q2_2023,2023-07-14
+Securities Services AUC/AUA,3,Increased 3% from 1Q23.,Increased 11% from 2Q22.,24.0,,,,,,T USD,11,Financial Results,Q2_2023,2023-07-14
+Banking Average Loans,4,Decreased 3% from 1Q23.,Decreased 7% from 2Q22.,185.0,,,,,,B USD,11,Financial Results,Q2_2023,2023-07-14
+Net Interest Income,1,,Increased 7% vs 2Q22.,5963.0,,,,,,MM USD,12,Financial Results,Q2_2023,2023-07-14
+Non-Interest Revenue,2,Decreased 16% vs 1Q23.,Decreased 6% vs 2Q22.,432.0,,,,,,MM USD,12,Financial Results,Q2_2023,2023-07-14
+Total Revenues,3,Decreased 1% vs 1Q23.,Increased 6% vs 2Q22.,6395.0,,,,,,MM USD,12,Financial Results,Q2_2023,2023-07-14
+Expenses,4,Decreased 1% vs 1Q23.,Increased 5% vs 2Q22.,4204.0,,,,,,MM USD,12,Financial Results,Q2_2023,2023-07-14
+Credit Costs,5,Decreased 1% vs 1Q23.,Increased 17% vs 2Q22.,1579.0,,,,,,MM USD,12,Financial Results,Q2_2023,2023-07-14
+Net Income,6,Increased 1% vs 1Q23.,Decreased 11% vs 2Q22.,494.0,,,,,,MM USD,12,Financial Results,Q2_2023,2023-07-14
+Allocated Average TCE,1,,,36.0,,,,,,B USD,12,Financial Results,Q2_2023,2023-07-14
+RoTCE,2,,,5.5,,,,,,%,12,Financial Results,Q2_2023,2023-07-14
+Average Loans,3,Increased 2% vs 1Q23.,Increased 7% vs 2Q22.,339.0,,,,,,B USD,12,Financial Results,Q2_2023,2023-07-14
+Average Deposits,4,Decreased 1% vs 1Q23.,Decreased 1% vs 2Q22.,431.0,,,,,,B USD,12,Financial Results,Q2_2023,2023-07-14
+US Personal Banking Branches,5,,Decreased 1% vs 2Q22.,653.0,,,,,,count,12,Financial Results,Q2_2023,2023-07-14
+US Installment Lending,6,Increased 4% vs 1Q23.,Increased 41% vs 2Q22.,6.0,,,,,,B USD,12,Financial Results,Q2_2023,2023-07-14
+Active Digital Users,7,Increased 1% vs 1Q23.,Increased 7% vs 2Q22.,26.0,,,,,,MM,12,Financial Results,Q2_2023,2023-07-14
+Active Mobile Users,8,Increased 2% vs 1Q23.,Increased 10% vs 2Q22.,19.0,,,,,,MM,12,Financial Results,Q2_2023,2023-07-14
+Branded Cards,1,Decreased 5% from 1Q23.,Increased 8% from 2Q22.,2352.0,,,,,,MM USD,13,Financial Results,Q2_2023,2023-07-14
+Retail Services,2,Increased 2% from 1Q23.,Increased 27% from 2Q22.,1646.0,,,,,,MM USD,13,Financial Results,Q2_2023,2023-07-14
+Retail Banking,3,Decreased 3% from 1Q23.,Decreased 9% from 2Q22.,594.0,,,,,,MM USD,13,Financial Results,Q2_2023,2023-07-14
+US Personal Banking Revenues,4,Decreased 2% from 1Q23.,Increased 11% from 2Q22.,4592.0,,,,,,MM USD,13,Financial Results,Q2_2023,2023-07-14
+Global Wealth Management Revenues,5,Increased 3% from 1Q23.,Decreased 5% from 2Q22.,1803.0,,,,,,MM USD,13,Financial Results,Q2_2023,2023-07-14
+Branded Cards New Account Acquisitions,1,Decreased 3% from 1Q23.,Increased 6% from 2Q22.,1131.0,,,,,,in 000s,13,Financial Results,Q2_2023,2023-07-14
+Retail Services New Account Acquisitions,2,Increased 21% from 1Q23.,Decreased 9% from 2Q22.,2393.0,,,,,,in 000s,13,Financial Results,Q2_2023,2023-07-14
+Retail Banking Average Loans,3,Increased 6% from 1Q23.,Increased 17% from 2Q22.,40.0,,,,,,B USD,13,Financial Results,Q2_2023,2023-07-14
+Global Wealth Management Client Assets,4,Increased 1% from 1Q23.,Increased 5% from 2Q22.,764.0,,,,,,B USD,13,Financial Results,Q2_2023,2023-07-14
+Total Revenues,1,Decreased 33% from 1Q23.,Decreased 1% from 2Q22.,1923.0,,,,,,MM USD,14,Financial Results,Q2_2023,2023-07-14
+Expenses,2,Increased 1% from 1Q23.,Decreased 2% from 2Q22.,1778.0,,,,,,MM USD,14,Financial Results,Q2_2023,2023-07-14
+Credit Costs,3,Decreased 13% from 1Q23.,,300.0,,,,,,MM USD,14,Financial Results,Q2_2023,2023-07-14
+Net Income (Loss),4,,,-125.0,,,,,,MM USD,14,Financial Results,Q2_2023,2023-07-14
+Allocated Average TCE,1,,,13.0,,,,,,B USD,14,Financial Results,Q2_2023,2023-07-14
+Average Loans,2,Decreased 3% from 1Q23.,Decreased 14% from 2Q22.,37.0,,,,,,B USD,14,Financial Results,Q2_2023,2023-07-14
+Average Deposits,3,Increased 2% from 1Q23.,Remained flat from 2Q22.,51.0,,,,,,B USD,14,Financial Results,Q2_2023,2023-07-14
+Net Interest Income,1,Decreased by 12% from 1Q23.,,969.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+Non-Interest Revenue,2,Decreased by 60% from 1Q23.,Decreased by 100% from 2Q22.,-292.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+Total Revenues,3,Decreased by 26% from 1Q23.,,677.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+Expenses,4,Decreased by 3% from 1Q23.,Increased by 89% from 2Q22.,302.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+Credit Costs,5,,,-113.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+EBT,6,Decreased by 1% from 1Q23.,,488.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+Net Income,7,Increased by 40% from 1Q23.,,356.0,,,,,,MM USD,15,Financial Results,Q2_2023,2023-07-14
+Allocated Average TCE ($ in B),8,,,19.0,,,,,,B USD,15,Financial Results,Q2_2023,2023-07-14
+ICG Net Interest Income,1,,Increased 28% YoY.,10.7,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+ICG Revenues,2,,Decreased 4% YoY.,21.7,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+ICG Expenses,3,,Increased 8% YoY.,14.3,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+PBWM Net Interest Income,4,,Increased 9% YoY.,11.9,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+PBWM Revenues,5,,Increased 8% YoY.,12.8,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+PBWM Expenses,6,,Increased 7% YoY.,8.5,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises Revenues,7,,Increased 24% YoY.,4.8,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises Expenses,8,,Decreased 14% YoY.,3.5,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Net Interest Income,9,,Increased 19% YoY.,27.2,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Revenues,10,,Increased 5% YoY.,40.9,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Expenses,11,,Increased 5% YoY.,26.9,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total EBT,12,,Decreased 9% YoY.,10.2,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Net Income to common,13,,Decreased 17% YoY.,7.0,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Average Loans,14,,,654.0,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Average Deposits,15,,Increased 2% YoY.,1351.0,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total Allocated Average TCE,16,,,162.0,,,,,,B USD,19,Financial Results,Q2_2023,2023-07-14
+Total RoTCE,17,,,8.7,,,,,,%,19,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises Revenue,1,Decreased from $2.9B in 1Q23.,Decreased from $8.5B in 2022.,1.9,2.9,8.5,,,,B USD,20,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises Expenses,2,Remained flat at $1.8B compared to 1Q23.,Decreased from $7.8B in 2022.,1.8,1.8,7.8,,,,B USD,20,Financial Results,Q2_2023,2023-07-14
+Divestiture-related Impacts Revenue,3,Decreased from $1.0B in 1Q23.,Decreased from $0.9B in 2022.,0.0,1.0,0.9,,,,B USD,20,Financial Results,Q2_2023,2023-07-14
+Divestiture-related Impacts Expenses,4,Remained flat at $0.1B compared to 1Q23.,Decreased from $0.7B in 2022.,0.1,0.1,0.7,,,,B USD,20,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises ex-divestitures Revenue,5,Increased from $1.8B in 1Q23.,Decreased from $7.6B in 2022.,1.9,1.8,7.6,,,,B USD,20,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises ex-divestitures Expenses,6,Remained flat at $1.7B compared to 1Q23.,Decreased from $7.1B in 2022.,1.7,1.7,7.1,,,,B USD,20,Financial Results,Q2_2023,2023-07-14
+Branded Cards EOP Loans,1,,,103.0,97.1,91.6,,,,B USD,22,Financial Results,Q2_2023,2023-07-14
+Retail Services EOP Loans,1,,,50.0,48.4,45.8,,,,B USD,22,Financial Results,Q2_2023,2023-07-14
+Available Cash,1,,,227.0,,,,,,B USD,26,Financial Results,Q2_2023,2023-07-14
+US Sovereign,2,,,211.0,,,,,,B USD,26,Financial Results,Q2_2023,2023-07-14
+US Agency / Agency MBS,3,,,59.0,,,,,,B USD,26,Financial Results,Q2_2023,2023-07-14
+Foreign Government Debt,4,,,92.0,,,,,,B USD,26,Financial Results,Q2_2023,2023-07-14
+Other Investment Grade,5,,,2.0,,,,,,B USD,26,Financial Results,Q2_2023,2023-07-14
+1Q23 CET1 Capital Ratio,1,,,13.4,,,,,,%,27,Financial Results,Q2_2023,2023-07-14
+Impact of Net Income,2,,,25.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Preferred Stock Dividends,3,,,-3.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Common Share Dividends & Repurchases,4,,,-18.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Deferred Tax Adjustment,5,,,-5.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Unrealized AFS Gains / (Losses),6,,,1.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Other,7,,,5.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Change in RWA Balance,8,,,-15.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+2Q23 CET1 Capital Ratio,9,,,13.3,,,,,,%,27,Financial Results,Q2_2023,2023-07-14
+2Q22 CET1 Capital Ratio,1,,,12.0,,,,,,%,27,Financial Results,Q2_2023,2023-07-14
+Impact of Net Income,2,,,111.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Preferred Stock Dividends,3,,,-9.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Common Share Dividends & Repurchases,4,,,-41.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Deferred Tax Adjustment,5,,,-9.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Unrealized AFS Gains / (Losses),6,,,11.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of FX Translation,7,,,-4.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of CECL Transition Provision,8,,,-7.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Other,9,,,25.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+Impact of Change in RWA Balance,10,,,67.0,,,,,,bps,27,Financial Results,Q2_2023,2023-07-14
+2Q23 CET1 Capital Ratio,11,,,13.3,,,,,,%,27,Financial Results,Q2_2023,2023-07-14
+Common Stockholders' Equity,1,,,188474.0,188050.0,180019.0,,,,MM USD,28,Financial Results,Q2_2023,2023-07-14
+Less: Goodwill,2,,,19998.0,19882.0,19597.0,,,,MM USD,28,Financial Results,Q2_2023,2023-07-14
+Tangible Common Equity (TCE),3,,,164335.0,163948.0,155415.0,,,,MM USD,28,Financial Results,Q2_2023,2023-07-14
+Common Shares Outstanding (CSO),4,,,1925.7,1946.8,1936.7,,,,MM,28,Financial Results,Q2_2023,2023-07-14
+Tangible Book Value Per Share (TCE / CSO),5,,,85.34,84.21,80.25,,,,USD,28,Financial Results,Q2_2023,2023-07-14
+Citigroup Net Income,1,,,2915.0,,,,,,MM USD,28,Financial Results,Q2_2023,2023-07-14
+Net Income Available to Common Shareholders,2,,,2627.0,,,,,,MM USD,28,Financial Results,Q2_2023,2023-07-14
+Average TCE,3,,,164142.0,,,,,,MM USD,28,Financial Results,Q2_2023,2023-07-14
+RoTCE,4,,,6.4,,,,,,%,28,Financial Results,Q2_2023,2023-07-14
+ICG RoTCE,1,,,9.2,,,,,,%,28,Financial Results,Q2_2023,2023-07-14
+PBWM RoTCE,2,,,5.5,,,,,,%,28,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises RoTCE,3,,,-3.9,,,,,,%,28,Financial Results,Q2_2023,2023-07-14
+Corp. / Other RoTCE,4,,,1.4,,,,,,%,28,Financial Results,Q2_2023,2023-07-14
+Citigroup RoTCE,5,,,6.4,,,,,,%,28,Financial Results,Q2_2023,2023-07-14
+Total Revenues - as Reported,1,Decreased 9% vs 1Q23,Decreased 1% vs 2Q22,19436.0,21447.0,19638.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+Total revenues - Ex-FX,2,Decreased 9% vs 1Q23,Decreased 0% vs 2Q22,19436.0,21429.0,19501.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+TTS Revenues - as reported,1,Increased 3% vs 1Q23,Increased 15% vs 2Q22,3510.0,3411.0,3056.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+TTS Revenues - Ex-FX,2,Increased 4% vs 1Q23,Increased 20% vs 2Q22,3510.0,3359.0,2921.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+PBWM Total Average Loans - as reported,1,Increased 2% vs 1Q23,Increased 7% vs 2Q22,339.0,333.0,317.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+Mexico Revenues - as reported,1,Increased 10% vs 1Q23,Increased 22% vs 2Q22,1449.0,1322.0,1184.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+Mexico Revenues - Ex-FX,2,Increased 6% vs 1Q23,Increased 10% vs 2Q22,1449.0,1367.0,1315.0,,,,MM USD,29,Financial Results,Q2_2023,2023-07-14
+Total Citigroup Revenues - As Reported,1,,,19436.0,21447.0,19638.0,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+"Total Citigroup Revenues, Excluding Divestiture Impacts",2,,,19442.0,20429.0,19560.0,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+Total Citigroup Operating Expenses - As Reported,3,,,13570.0,13289.0,12393.0,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+"Total Citigroup Operating Expenses, Excluding Divestiture Impacts",4,,,13491.0,13216.0,12421.0,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+Total Citigroup Net Income - As Reported,5,,,2915.0,,,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+"Total Citigroup Net Income, Excluding Divestiture Impacts",6,,,3007.0,,,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+Citigroup RoTCE - As Reported,7,,,6.4,,,,,,%,30,Financial Results,Q2_2023,2023-07-14
+"Citigroup RoTCE, Excluding Divestiture Impacts",8,,,6.6,,,,,,%,30,Financial Results,Q2_2023,2023-07-14
+Citigroup Diluted EPS - As Reported,9,,,1.33,,,,,,USD,30,Financial Results,Q2_2023,2023-07-14
+"Citigroup Diluted EPS, Excluding Divestiture Impact",10,,,1.37,,,,,,USD,30,Financial Results,Q2_2023,2023-07-14
+Citigroup EBT (Ex-Divestiture),1,,,4115.0,,,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+Citigroup Taxes (Ex-Divestiture),2,,,1071.0,,,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+Citigroup Income from Continuing Operations (Ex-Divestiture),3,,,3044.0,,,,,,MM USD,30,Financial Results,Q2_2023,2023-07-14
+Citigroup Effective Tax Rate (Ex-Divestiture),4,,,26.0,,,,,,%,30,Financial Results,Q2_2023,2023-07-14
+Total Banking Revenues - As Reported,1,Remained relatively flat from 1Q23.,Decreased 44% from 2Q22.,1167.0,1165.0,2077.0,,,,MM USD,31,Financial Results,Q2_2023,2023-07-14
+Total Banking Revenues - Excluding Gain/(loss) on loan hedges,2,Decreased 10% from 1Q23.,Decreased 22% from 2Q22.,1233.0,1364.0,1583.0,,,,MM USD,31,Financial Results,Q2_2023,2023-07-14
+Banking Corporate Lending Revenues - As Reported,3,Increased 42% from 1Q23.,Decreased 56% from 2Q22.,555.0,391.0,1272.0,,,,MM USD,31,Financial Results,Q2_2023,2023-07-14
+Banking Corporate Lending Revenues - Excluding Gain/(loss) on loan hedges,4,Increased 5% from 1Q23.,Decreased 20% from 2Q22.,621.0,590.0,778.0,,,,MM USD,31,Financial Results,Q2_2023,2023-07-14
+Legacy Franchises Operating Expenses - As Reported,1,Increased 1% from 1Q23.,Decreased 2% from 2Q22.,1778.0,1752.0,1814.0,,,,MM USD,31,Financial Results,Q2_2023,2023-07-14
+"Legacy Franchises Operating Expenses, Excluding Divestiture Impacts",2,Increased 1% from 1Q23.,Decreased 8% from 2Q22.,1699.0,1679.0,1842.0,,,,MM USD,31,Financial Results,Q2_2023,2023-07-14

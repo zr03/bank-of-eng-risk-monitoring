@@ -1,0 +1,168 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Revenues,1,,Revenues increased by 1% YoY.,20.3,,,,,,billion USD,4,Financial Results,Q3_2024,2024-10-15
+Net Income,2,,Net Income decreased by 9% YoY.,3.2,,,,,,billion USD,4,Financial Results,Q3_2024,2024-10-15
+EPS,3,,EPS decreased by 7% YoY.,1.51,,,,,,USD,4,Financial Results,Q3_2024,2024-10-15
+RoTCE,4,,RoTCE decreased from 7.7% in 3Q23 to 7.0% in 3Q24.,7.0,,7.7,,,,%,4,Financial Results,Q3_2024,2024-10-15
+CET1 Capital Ratio,5,,CET1 Capital Ratio increased slightly from 13.6% in 3Q23 to 13.7% in 3Q24.,13.7,,13.6,,,,%,4,Financial Results,Q3_2024,2024-10-15
+Tangible Book Value Per Share,6,,Tangible Book Value Per Share increased by 3% YoY.,89.67,,,,,,USD,4,Financial Results,Q3_2024,2024-10-15
+Net Interest Income,1,Net Interest Income decreased by 1% from the preceding quarter.,Net Interest Income decreased by 3% from the same quarter last year.,13362.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Non-Interest Revenue,2,Non-Interest Revenue increased by 5% from the preceding quarter.,Non-Interest Revenue increased by 10% from the same quarter last year.,6953.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Total Revenues,3,Total Revenues increased by 1% from the preceding quarter.,Total Revenues increased by 1% from the same quarter last year.,20315.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Expenses,4,Expenses decreased by 1% from the preceding quarter.,Expenses decreased by 2% from the same quarter last year.,13250.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+NCLs,5,NCLs decreased by 5% from the preceding quarter.,NCLs increased by 33% from the same quarter last year.,2172.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+ACL Build and Other,6,,,503.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Credit Costs,7,Credit Costs increased by 8% from the preceding quarter.,Credit Costs increased by 45% from the same quarter last year.,2675.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+EBT,8,EBT increased by 2% from the preceding quarter.,EBT decreased by 8% from the same quarter last year.,4390.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Income Taxes,9,Income Taxes increased by 7% from the preceding quarter.,Income Taxes decreased by 7% from the same quarter last year.,1116.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Net Income,10,Net Income increased by 1% from the preceding quarter.,Net Income decreased by 9% from the same quarter last year.,3238.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Net Income to Common,11,Net Income to Common decreased by 1% from the preceding quarter.,Net Income to Common decreased by 8% from the same quarter last year.,2925.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+Diluted EPS,12,Diluted EPS decreased by 1% from the preceding quarter.,Diluted EPS decreased by 7% from the same quarter last year.,1.51,,,,,,USD,5,Financial Results,Q3_2024,2024-10-15
+Efficiency Ratio,13,Efficiency Ratio improved by 110 bps from the preceding quarter.,Efficiency Ratio improved by 190 bps from the same quarter last year.,65.0,,,,,,%,5,Financial Results,Q3_2024,2024-10-15
+ROE,14,,,6.2,,,,,,%,5,Financial Results,Q3_2024,2024-10-15
+ROTCE,15,,,7.0,,,,,,%,5,Financial Results,Q3_2024,2024-10-15
+CET1 Capital Ratio,16,,,13.7,,,,,,%,5,Financial Results,Q3_2024,2024-10-15
+NII ex-Markets,17,NII ex-Markets increased by 4% from the preceding quarter.,NII ex-Markets decreased by 1% from the same quarter last year.,11957.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+NIR ex-Markets,18,NIR ex-Markets decreased by 2% from the preceding quarter.,NIR ex-Markets increased by 9% from the same quarter last year.,3541.0,,,,,,MM USD,5,Financial Results,Q3_2024,2024-10-15
+EOP Card Loans,1,EOP Card Loans remained flat at $164B compared to the preceding quarter.,EOP Card Loans increased from $156B in the same quarter last year.,164.0,164.0,156.0,,,,B USD,8,Financial Results,Q3_2024,2024-10-15
+NCLs,2,NCLs decreased from $1.9B in the preceding quarter.,NCLs increased from $1.3B in the same quarter last year.,1.8,1.9,1.3,,,,B USD,8,Financial Results,Q3_2024,2024-10-15
+% of Average Loans,3,The percentage of average loans as NCLs decreased from 4.7% in the preceding quarter.,The percentage of average loans as NCLs increased from 3.3% in the same quarter last year.,4.4,4.7,3.3,,,,%,8,Financial Results,Q3_2024,2024-10-15
+90+ Days Past Due (DPD),4,90+ DPD remained flat at 1.5% compared to the preceding quarter.,90+ DPD increased from 1.3% in the same quarter last year.,1.5,1.5,1.3,,,,%,8,Financial Results,Q3_2024,2024-10-15
+ACLL / EOP Loans,5,ACLL / EOP Loans increased slightly from 8.1% in the preceding quarter.,ACLL / EOP Loans increased from 7.8% in the same quarter last year.,8.2,8.1,7.8,,,,%,8,Financial Results,Q3_2024,2024-10-15
+EOP Corporate Loans,1,EOP Corporate Loans decreased slightly from $302B in the preceding quarter.,EOP Corporate Loans increased from $289B in the same quarter last year.,300.0,302.0,289.0,,,,B USD,8,Financial Results,Q3_2024,2024-10-15
+NCLs,2,NCLs remained flat at $0.1B compared to the preceding quarter and the same quarter last year.,NCLs remained flat at $0.1B compared to the preceding quarter and the same quarter last year.,0.1,0.1,0.1,,,,B USD,8,Financial Results,Q3_2024,2024-10-15
+% of Average Loans,3,The percentage of average loans as NCLs remained flat at 0.1% compared to the preceding quarter and the same quarter last year.,The percentage of average loans as NCLs remained flat at 0.1% compared to the preceding quarter and the same quarter last year.,0.1,0.1,0.1,,,,%,8,Financial Results,Q3_2024,2024-10-15
+NALs,4,NALs decreased from $1.0B in the preceding quarter.,NALs decreased significantly from $2.0B in the same quarter last year.,0.9,1.0,2.0,,,,B USD,8,Financial Results,Q3_2024,2024-10-15
+% of Loans,5,The percentage of loans as NALs remained flat at 0.3% compared to the preceding quarter.,The percentage of loans as NALs decreased from 0.7% in the same quarter last year.,0.3,0.3,0.7,,,,%,8,Financial Results,Q3_2024,2024-10-15
+ACLL / EOP Loans,6,ACLL / EOP Loans increased from 0.8% in the preceding quarter.,ACLL / EOP Loans decreased from 1.0% in the same quarter last year.,0.9,0.8,1.0,,,,%,8,Financial Results,Q3_2024,2024-10-15
+CET1 Capital,1,,,158.0,154.0,156.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+Standardized RWA,2,,,1153.0,1136.0,1149.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+CET1 Capital Ratio - Standardized,3,,,13.7,13.6,13.6,,,,%,9,Financial Results,Q3_2024,2024-10-15
+Advanced RWA,4,,,1297.0,1269.0,1250.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+CET1 Capital Ratio - Advanced,5,,,12.2,12.2,12.5,,,,%,9,Financial Results,Q3_2024,2024-10-15
+Supplementary Leverage Ratio,1,,,5.8,5.9,6.0,,,,%,9,Financial Results,Q3_2024,2024-10-15
+Liquidity Coverage Ratio,1,,,117.0,117.0,117.0,,,,%,9,Financial Results,Q3_2024,2024-10-15
+Average HQLA,2,,,551.0,542.0,569.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+Total Available Liquidity Resources,3,,,959.0,899.0,937.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+AFS Securities (Duration: ~2 Years),1,,,234.0,249.0,242.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+HTM Securities (Duration: ~3 Years),2,,,248.0,251.0,259.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+Tangible Book Value Per Share,3,,,89.67,87.53,86.9,,,,USD,9,Financial Results,Q3_2024,2024-10-15
+Corporate Deposits (EOP),4,,,840.0,807.0,784.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+Consumer Deposits (EOP),5,,,401.0,404.0,411.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+All Other Deposits (EOP),6,,,69.0,67.0,78.0,,,,B USD,9,Financial Results,Q3_2024,2024-10-15
+Net Interest Income (TTS),1,Net Interest Income for Treasury and Trade Solutions increased by 4% from the preceding quarter.,Net Interest Income for Treasury and Trade Solutions decreased by 5% from the same quarter last year.,2731.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Non-Interest Revenue (TTS),2,Non-Interest Revenue for Treasury and Trade Solutions increased by 13% from the preceding quarter.,Non-Interest Revenue for Treasury and Trade Solutions increased by 41% from the same quarter last year.,909.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Treasury and Trade Solutions,3,Treasury and Trade Solutions total revenue increased by 6% from the preceding quarter.,Treasury and Trade Solutions total revenue increased by 4% from the same quarter last year.,3640.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Net Interest Income (Securities Services),4,Net Interest Income for Securities Services increased by 18% from the preceding quarter.,Net Interest Income for Securities Services increased by 23% from the same quarter last year.,704.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Non-Interest Revenue (Securities Services),5,Non-Interest Revenue for Securities Services increased by 5% from the preceding quarter.,Non-Interest Revenue for Securities Services increased by 24% from the same quarter last year.,684.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Securities Services,6,Securities Services total revenue increased by 11% from the preceding quarter.,Securities Services total revenue increased by 24% from the same quarter last year.,1388.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Total Revenues,7,Total Revenues for Services increased by 7% from the preceding quarter.,Total Revenues for Services increased by 8% from the same quarter last year.,5028.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Expenses,8,Expenses for Services decreased by 5% from the preceding quarter.,Expenses for Services increased by 3% from the same quarter last year.,2588.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+NCLs,9,,NCLs for Services decreased by 48% from the same quarter last year.,14.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Credit Costs,10,,Credit Costs for Services increased by 34% from the same quarter last year.,127.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+EBT,11,EBT for Services increased by 17% from the preceding quarter.,EBT for Services increased by 14% from the same quarter last year.,2313.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Net Income,12,Net Income for Services increased by 12% from the preceding quarter.,Net Income for Services increased by 23% from the same quarter last year.,1651.0,,,,,,MM USD,11,Financial Results,Q3_2024,2024-10-15
+Allocated Average TCE,1,,Allocated Average TCE increased by 8% from the same quarter last year.,25.0,,,,,,B USD,11,Financial Results,Q3_2024,2024-10-15
+RoTCE,2,,,26.4,,,,,,%,11,Financial Results,Q3_2024,2024-10-15
+Efficiency Ratio,3,Efficiency Ratio improved by 700 bps from the preceding quarter.,Efficiency Ratio improved by 300 bps from the same quarter last year.,51.0,,,,,,%,11,Financial Results,Q3_2024,2024-10-15
+Average Loans,4,Average Loans increased by 6% from the preceding quarter.,Average Loans increased by 5% from the same quarter last year.,87.0,,,,,,B USD,11,Financial Results,Q3_2024,2024-10-15
+EOP Loans,5,,EOP Loans increased by 6% from the same quarter last year.,89.0,,,,,,B USD,11,Financial Results,Q3_2024,2024-10-15
+Average Deposits,6,Average Deposits increased by 3% from the preceding quarter.,Average Deposits increased by 4% from the same quarter last year.,825.0,,,,,,B USD,11,Financial Results,Q3_2024,2024-10-15
+EOP Deposits,7,EOP Deposits increased by 5% from the preceding quarter.,EOP Deposits increased by 9% from the same quarter last year.,826.0,,,,,,B USD,11,Financial Results,Q3_2024,2024-10-15
+Rates and Currencies,1,,Rates and Currencies revenue decreased by 10% from the same quarter last year.,2465.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Spread Products / Other Fixed Income,2,Spread Products / Other Fixed Income revenue increased by 1% from the preceding quarter.,Spread Products / Other Fixed Income revenue increased by 5% from the same quarter last year.,1113.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Fixed Income markets,3,,Fixed Income markets revenue decreased by 6% from the same quarter last year.,3578.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Equity markets,4,Equity markets revenue decreased by 19% from the preceding quarter.,Equity markets revenue increased by 32% from the same quarter last year.,1239.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Total Revenues,5,Total Revenues decreased by 5% from the preceding quarter.,Total Revenues increased by 1% from the same quarter last year.,4817.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Expenses,6,Expenses increased by 1% from the preceding quarter.,Expenses increased by 1% from the same quarter last year.,3339.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+NCLs,7,NCLs decreased by 64% from the preceding quarter.,,24.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Credit Costs,8,,Credit Costs decreased by 13% from the same quarter last year.,141.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+EBT,9,EBT decreased by 25% from the preceding quarter.,EBT increased by 5% from the same quarter last year.,1337.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Net Income,10,Net Income decreased by 26% from the preceding quarter.,Net Income increased by 2% from the same quarter last year.,1072.0,,,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Total Markets Revenues,1,"Total Markets Revenues decreased by 5% from $5,086MM in 2Q24.","Total Markets Revenues increased by 1% from $4,748MM in 3Q23.",4817.0,5086.0,4748.0,,,,MM USD,12,Financial Results,Q3_2024,2024-10-15
+Investment Banking,1,Investment Banking revenue increased by 9% QoQ.,Investment Banking revenue increased by 31% YoY.,934.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Corporate Lending (ex-gain/(loss)),2,Corporate Lending revenue decreased by 3% QoQ.,Corporate Lending revenue increased by 5% YoY.,742.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Gain/(loss) on loan hedges,3,,Gain/(loss) on loan hedges decreased by 68% YoY.,-79.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Corporate Lending (incl. gain/(loss)),4,Corporate Lending revenue (incl. hedges) decreased by 14% QoQ.,Corporate Lending revenue (incl. hedges) was flat YoY.,663.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Total Revenues,5,Total Revenues decreased by 2% QoQ.,Total Revenues increased by 16% YoY.,1597.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Expenses,6,Expenses decreased by 1% QoQ.,Expenses decreased by 9% YoY.,1116.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+NCLs,7,NCLs decreased by 10% QoQ.,NCLs increased by 24% YoY.,36.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Credit Costs,8,,,177.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+EBT,9,EBT decreased by 42% QoQ.,EBT increased by 49% YoY.,304.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Net Income,10,Net Income decreased by 41% QoQ.,Net Income increased by 53% YoY.,238.0,,,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Investment Banking fees,1,Investment Banking fees increased by 7% from $935MM in 2Q24.,Investment Banking fees increased by 44% from $694MM in 3Q23.,999.0,935.0,694.0,,,,MM USD,13,Financial Results,Q3_2024,2024-10-15
+Total Wealth Revenues,1,"Total Wealth Revenues increased 10% from $1,814MM in 2Q24.","Total Wealth Revenues increased 9% from $1,831MM in 3Q23.",2002.0,1814.0,1831.0,,,,MM USD,14,Financial Results,Q3_2024,2024-10-15
+Branded Cards,1,Branded Cards revenue increased by 8% from the preceding quarter.,Branded Cards revenue increased by 8% from the same quarter last year.,2731.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Retail Services,2,Retail Services revenue decreased by 2% from the preceding quarter.,Retail Services revenue decreased by 1% from the same quarter last year.,1715.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Retail Banking,3,Retail Banking revenue decreased by 6% from the preceding quarter.,Retail Banking revenue decreased by 8% from the same quarter last year.,599.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Total Revenues,4,Total Revenues increased by 3% from the preceding quarter.,Total Revenues increased by 3% from the same quarter last year.,5045.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Expenses,5,Expenses increased by 1% from the preceding quarter.,Expenses decreased by 1% from the same quarter last year.,2457.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+NCLs,6,NCLs decreased by 3% from the preceding quarter.,NCLs increased by 39% from the same quarter last year.,1864.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Credit Costs,7,Credit Costs decreased by 18% from the preceding quarter.,Credit Costs increased by 31% from the same quarter last year.,1909.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+EBT,8,,EBT decreased by 31% from the same quarter last year.,679.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Net Income,9,,Net Income decreased by 31% from the same quarter last year.,522.0,,,,,,MM USD,15,Financial Results,Q3_2024,2024-10-15
+Credit Card Spend Volume (Branded Cards),1,Branded Cards spend volume decreased by 2% QoQ.,Branded Cards spend volume increased by 3% YoY.,129.0,,,,,,B USD,15,Financial Results,Q3_2024,2024-10-15
+Average Loans (Branded Cards),2,Branded Cards average loans increased by 2% QoQ.,Branded Cards average loans increased by 8% YoY.,111.0,,,,,,B USD,15,Financial Results,Q3_2024,2024-10-15
+Credit Card Spend Volume (Retail Services),3,Retail Services spend volume decreased by 8% QoQ.,Retail Services spend volume decreased by 7% YoY.,22.0,,,,,,B USD,15,Financial Results,Q3_2024,2024-10-15
+Average Loans (Retail Services),4,,Retail Services average loans increased by 2% YoY.,51.0,,,,,,B USD,15,Financial Results,Q3_2024,2024-10-15
+Legacy Franchises (managed basis),1,Legacy Franchises revenue increased by 1% from the preceding quarter.,Legacy Franchises revenue decreased by 6% from the same quarter last year.,1739.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+Corporate / Other,2,Corporate / Other revenue decreased by 66% from the preceding quarter.,Corporate / Other revenue decreased by 78% from the same quarter last year.,86.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+Total Revenues,3,Total Revenues decreased by 8% from the preceding quarter.,Total Revenues decreased by 18% from the same quarter last year.,1825.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+Expenses,4,Expenses decreased by 2% from the preceding quarter.,Expenses decreased by 5% from the same quarter last year.,2082.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+NCLs,5,NCLs decreased by 3% from the preceding quarter.,NCLs decreased by 12% from the same quarter last year.,208.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+Credit Costs,6,Credit Costs increased by 19% from the preceding quarter.,Credit Costs increased by 45% from the same quarter last year.,289.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+EBT,7,EBT loss increased by 45% from the preceding quarter.,,-546.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+Net Income,8,Net loss increased by 20% from the preceding quarter.,,-483.0,,,,,,MM USD,16,Financial Results,Q3_2024,2024-10-15
+Legacy Franchises ex-divestitures,1,,,1.7,,7.3,,,,B USD,16,Financial Results,Q3_2024,2024-10-15
+Net Interest Income,1,,"Total Net Interest Income decreased by 2% YoY to $40,362M.",40362.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+Non-Interest Revenue,2,,"Total Non-Interest Revenue increased by 6% YoY to $21,196M.",21196.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+Total Revenues,3,,"Total Revenues increased by 1% YoY to $61,558M.",61558.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+Expenses,4,,"Total Expenses increased by 1% YoY to $40,798M.",40798.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+Credit Costs,5,,"Total Credit Costs increased by 33% YoY to $7,516M.",7516.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+EBT,6,,"Total EBT decreased by 12% YoY to $13,244M.",13244.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+Net Income,7,,"Total Net Income decreased by 11% YoY to $9,826M.",9826.0,,,,,,millions USD,24,Financial Results,Q3_2024,2024-10-15
+Average Loans,8,,Total Average Loans increased by 4% YoY to $682B.,682.0,,,,,,B USD,24,Financial Results,Q3_2024,2024-10-15
+Average Deposits,9,,"Total Average Deposits decreased by 2% YoY to $1,316B.",1316.0,,,,,,B USD,24,Financial Results,Q3_2024,2024-10-15
+Allocated Average TCE,10,,Total Allocated Average TCE increased by 2% YoY to $166B.,166.0,,,,,,B USD,24,Financial Results,Q3_2024,2024-10-15
+ROTCE,11,,Total ROTCE decreased by 110 bps YoY.,7.2,,,,,,%,24,Financial Results,Q3_2024,2024-10-15
+Common Stockholders' Equity,1,,,192733.0,190210.0,190008.0,,,,MM USD,25,Financial Results,Q3_2024,2024-10-15
+Goodwill,2,,,19691.0,19704.0,19829.0,,,,MM USD,25,Financial Results,Q3_2024,2024-10-15
+Intangible Assets (other than MSRs),3,,,3438.0,3517.0,3811.0,,,,MM USD,25,Financial Results,Q3_2024,2024-10-15
+Tangible Common Equity (TCE),4,,,169588.0,166989.0,166319.0,,,,MM USD,25,Financial Results,Q3_2024,2024-10-15
+Common Shares Outstanding (CSO),5,,,1891.3,1907.8,1913.9,,,,MM,25,Financial Results,Q3_2024,2024-10-15
+Tangible Book Value Per Share (TCE / CSO),6,,,89.67,87.53,86.9,,,,USD,25,Financial Results,Q3_2024,2024-10-15
+RoTCE by Segment - Services,1,,,26.4,,,,,,%,25,Financial Results,Q3_2024,2024-10-15
+RoTCE by Segment - Markets,2,,,7.9,,,,,,%,25,Financial Results,Q3_2024,2024-10-15
+RoTCE by Segment - Banking,3,,,4.3,,,,,,%,25,Financial Results,Q3_2024,2024-10-15
+RoTCE by Segment - Wealth,4,,,8.5,,,,,,%,25,Financial Results,Q3_2024,2024-10-15
+RoTCE by Segment - USPB,5,,,8.2,,,,,,%,25,Financial Results,Q3_2024,2024-10-15
+RoTCE by Segment - Citigroup,6,,,7.0,,,,,,%,25,Financial Results,Q3_2024,2024-10-15
+Total Revenues - as Reported,1,Total Revenues as reported increased by 1% QoQ.,Total Revenues as reported increased by 1% YoY.,20315.0,20139.0,20139.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Total revenues - Ex-FX,2,Total revenues Ex-FX increased by 2% QoQ.,Total revenues Ex-FX increased by 4% YoY.,20315.0,20002.0,19484.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Total operating expenses - as reported,3,Total operating expenses as reported decreased by 1% QoQ.,Total operating expenses as reported decreased by 2% YoY.,13250.0,13353.0,13511.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Total operating expenses - Ex-FX,4,Total operating expenses Ex-FX decreased by 1% QoQ.,Total operating expenses Ex-FX decreased by 1% YoY.,13250.0,13320.0,13385.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Mexico Revenues - as reported,1,Mexico Revenues as reported decreased by 7% QoQ.,Mexico Revenues as reported were flat YoY.,1526.0,1640.0,1527.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Mexico Revenues - Ex-FX,2,Mexico Revenues Ex-FX increased by 1% QoQ.,Mexico Revenues Ex-FX increased by 10% YoY.,1526.0,1512.0,1391.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Mexico Expenses - as reported,3,Mexico Expenses as reported decreased by 7% QoQ.,Mexico Expenses as reported decreased by 3% YoY.,1047.0,1124.0,1084.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Mexico Expenses - Ex-FX,4,Mexico Expenses Ex-FX increased by 2% QoQ.,Mexico Expenses Ex-FX increased by 7% YoY.,1047.0,1029.0,977.0,,,,MM USD,26,Financial Results,Q3_2024,2024-10-15
+Total Citigroup Revenues - As Reported,1,Total Citigroup Revenues increased by 1% QoQ.,Total Citigroup Revenues increased by 1% YoY.,20315.0,20139.0,20139.0,,,,MM USD,27,Financial Results,Q3_2024,2024-10-15
+Total Citigroup Revenues - Excluding Divestiture-Related Impacts,2,Total Citigroup Revenues excluding divestitures increased by 1% QoQ.,Total Citigroup Revenues excluding divestitures increased by 3% YoY.,20314.0,20106.0,19743.0,,,,MM USD,27,Financial Results,Q3_2024,2024-10-15
+"Total Citigroup Operating Expenses, Excluding Divestiture Impacts & FDIC Special Assessment",3,Total Citigroup Operating Expenses excluding divestitures & FDIC assessment was flat QoQ.,Total Citigroup Operating Expenses excluding divestitures & FDIC assessment decreased by 1% YoY.,13239.0,13234.0,13397.0,,,,MM USD,27,Financial Results,Q3_2024,2024-10-15
+"Total Citigroup Operating Expenses, Excluding FDIC Special Assessment & Civil Money Penalties",4,Total Citigroup Operating Expenses excluding FDIC assessment & civil money penalties increased by 1% QoQ.,Total Citigroup Operating Expenses excluding FDIC assessment & civil money penalties decreased by 2% YoY.,13306.0,13183.0,13511.0,,,,MM USD,27,Financial Results,Q3_2024,2024-10-15
+Total Services Non-Interest Revenues (NIR) - As Reported,1,NIR as reported increased by 9% QoQ.,NIR as reported increased by 33% YoY.,1593.0,1455.0,1196.0,,,,MM USD,28,Financial Results,Q3_2024,2024-10-15
+Total Services Non-Interest Revenues (NIR) - Excluding Argentine Peso Devaluation,2,NIR excluding Argentine Peso Devaluation increased by 9% QoQ.,NIR excluding Argentine Peso Devaluation increased by 11% YoY.,1635.0,1501.0,1469.0,,,,MM USD,28,Financial Results,Q3_2024,2024-10-15
+Banking Corporate Lending Revenues - As Reported,1,Revenues as reported decreased by 14% QoQ.,Revenues as reported were flat YoY.,663.0,774.0,662.0,,,,MM USD,28,Financial Results,Q3_2024,2024-10-15
+Banking Corporate Lending Revenues - Excluding Gain/(loss) on loan hedges,2,Revenues excluding gain/loss on loan hedges decreased by 3% QoQ.,Revenues excluding gain/loss on loan hedges increased by 5% YoY.,742.0,765.0,709.0,,,,MM USD,28,Financial Results,Q3_2024,2024-10-15
+Legacy Franchises (Managed Basis),1,Legacy Franchises revenues increased by 1% from the preceding quarter.,Legacy Franchises revenues decreased by 6% from the same quarter last year.,1739.0,1727.0,1841.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Corporate / Other,2,Corporate / Other revenues decreased by 66% from the preceding quarter.,Corporate / Other revenues decreased by 78% from the same quarter last year.,86.0,253.0,397.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Total revenues,3,Total revenues decreased by 8% from the preceding quarter.,Total revenues decreased by 18% from the same quarter last year.,1825.0,1980.0,2238.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Total operating expenses,4,Total operating expenses decreased by 2% from the preceding quarter.,Total operating expenses decreased by 5% from the same quarter last year.,2082.0,2114.0,2192.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Net credit losses,5,Net credit losses decreased by 3% from the preceding quarter.,Net credit losses decreased by 12% from the same quarter last year.,208.0,214.0,237.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Net ACL build / (release),6,,,48.0,-4.0,-30.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Other provisions,7,,,33.0,33.0,-8.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Total cost of credit,8,Total cost of credit increased by 19% from the preceding quarter.,Total cost of credit increased by 45% from the same quarter last year.,289.0,243.0,199.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+EBT,9,EBT loss increased by 45% from the preceding quarter.,,-546.0,-377.0,-153.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+Net income (loss),10,Net loss increased by 20% from the preceding quarter.,,-483.0,-402.0,-101.0,,,,millions USD,29,Financial Results,Q3_2024,2024-10-15
+"All Other Revenues, Managed Basis",1,Revenues on a managed basis decreased by 8% QoQ.,Revenues on a managed basis decreased by 18% YoY.,1825.0,1980.0,2238.0,,,,MM USD,30,Financial Results,Q3_2024,2024-10-15
+"All Other Revenues, (U.S. GAAP)",2,Revenues on a U.S. GAAP basis decreased by 9% QoQ.,Revenues on a U.S. GAAP basis decreased by 31% YoY.,1826.0,2013.0,2634.0,,,,MM USD,30,Financial Results,Q3_2024,2024-10-15
+"All Other Net Income (Loss), Managed Basis",3,Net loss on a managed basis widened by 20% QoQ.,,-483.0,-402.0,-101.0,,,,MM USD,30,Financial Results,Q3_2024,2024-10-15
+"All Other Net Income (Loss), (U.S. GAAP)",4,Net loss on a U.S. GAAP basis widened by 22% QoQ.,,-528.0,-434.0,113.0,,,,MM USD,30,Financial Results,Q3_2024,2024-10-15
