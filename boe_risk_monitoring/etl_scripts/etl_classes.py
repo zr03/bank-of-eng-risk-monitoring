@@ -16,7 +16,7 @@ import pandas as pd
 # from langchain_core.messages.utils import count_tokens_approximately
 # import tiktoken
 
-from boe_risk_monitoring.llms.chunking_llm import ChunkingLLM
+from boe_risk_monitoring.llms.processing_llms import ChunkingLLM
 from boe_risk_monitoring.llms.document_analyser_llm import DocumentAnalyserLLM
 import boe_risk_monitoring.config as config
 

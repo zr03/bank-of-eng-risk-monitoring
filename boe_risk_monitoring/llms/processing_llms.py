@@ -5,7 +5,7 @@ import math
 from openai import OpenAI
 from google import genai
 
-from boe_risk_monitoring.llms.base_llm import BaseLLM, SUPPORTED_LLMS_DICT
+from boe_risk_monitoring.llms.base_llm import BaseLLM
 
 class ChunkingLLM(BaseLLM):
 	def __init__(self, chunking_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
@@ -42,16 +42,8 @@ class ChunkingLLM(BaseLLM):
 			raise ValueError(f"Unsupported backend: {self.backend}")
 
 
+class TopicLabellingLLM(ChunkingLLM):
+    """Identical to ChunkingLLM but uses `topic_labelling_prompt` for clarity."""
+    def __init__(self, topic_labelling_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
+        super().__init__(chunking_prompt=topic_labelling_prompt, response_schema=response_schema, backend=backend, model_name=model_name, temperature=temperature)
 
-
-	# def fetch_metadata(self, text, metadata_schema=None):
-	# 	if not metadata_schema:
-	# 		metadata_schema = self.metadata_schema
-	# 	prompt = self._make_doc_metadata_prompt(text)
-	# 	return self.invoke(prompt, metadata_schema)
-
-	# def chunk_transcript(self, text, chunks_schema=None):
-	# 	if not chunks_schema:
-	# 		chunks_schema = self.chunks_schema
-	# 	prompt = self._make_chunk_prompt(text)
-	# 	return self.invoke(prompt, chunks_schema)
