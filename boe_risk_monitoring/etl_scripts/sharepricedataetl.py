@@ -182,5 +182,5 @@ etl.plot_time_series()
 etl.export_to_csv("citigroup_prices.csv")
 
 # This step was necessary to download in Colab
-from google.colab import files
-files.download("citigroup_prices.csv")
+# from google.colab import files
+# files.download("citigroup_prices.csv")
