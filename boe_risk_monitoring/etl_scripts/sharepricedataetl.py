@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 """
 ### 2. Final Class Version - The Winner! ###
 
-This includes Global Banking Index
+Includes Global Banking Index:
 
 **Why Choose the KBW Nasdaq Global Bank Index (^GBKX)?**
 
