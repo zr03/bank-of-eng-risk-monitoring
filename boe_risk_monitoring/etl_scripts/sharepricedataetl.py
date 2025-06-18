@@ -11,224 +11,12 @@ import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 
-"""# 1. Intitial Class Versions
-
-**A.**This class takes any ticker (company code name) and gives you a csv and plots the time series.
 """
+### 2. Final Class Version - The Winner! ###
 
-# This class takes any ticker name (abbreviated code name) and extracts, transforms and saves as csv, as well as plots the time series.
-## It does not spell out the full Bank name or Currency .info for Yahoo doesn't work on Colab as it blocks Google. Will work when running the code locally (alterative code addressing this is below)
-
-class SharePriceDataETL:
-    def __init__(self, ticker, start_date, end_date):
-        self.ticker = ticker
-        self.start_date = start_date
-        self.end_date = end_date
-        self.data = None  # will store the extracted data
-
-    def extract(self):
-        print(f"Extracting data for {self.ticker} from {self.start_date} to {self.end_date}...")
-        self.data = yf.download(self.ticker, start=self.start_date, end=self.end_date)
-
-    def transform(self):
-        if self.data is not None and not self.data.empty:
-            print("Transforming data...")
-            self.data.reset_index(inplace=True)
-            self.data = self.data[["Date", "Close"]]           # keep only Date and Close
-            self.data["Bank"] = self.ticker                    # add Bank column
-            self.data = self.data[["Bank", "Date", "Close"]]   # reorder columns
-        else:
-            print("No data to transform. Run extract() first or check if data is empty.")
-
-    def save_to_csv(self, filename):
-        if self.data is not None and not self.data.empty:
-            print(f"Saving data to {filename}...")
-            self.data.to_csv(filename, index=False)
-        else:
-            print("No data to save. Run extract() and transform() first.")
-
-    def export_to_csv(self, filename):
-        """Convenience method: Extracts, transforms, and saves to CSV."""
-        self.extract()
-        self.transform()
-        self.save_to_csv(filename)
-
-    def plot_time_series(self):
-        self.extract()
-        self.transform()
-
-        if self.data is not None and not self.data.empty:
-            print(f"Plotting time series for {self.ticker}...")
-            plt.figure(figsize=(10, 5))
-            plt.plot(self.data["Date"], self.data["Close"], label=self.ticker)
-            plt.title(f"{self.ticker} Share Price Over Time")
-            plt.xlabel("Date")
-            plt.ylabel("Close Price")
-            plt.grid(True)
-            plt.legend()
-            plt.tight_layout()
-            plt.show()
-        else:
-            print("No data available to plot.")
-
-# Example how to run it with seprate functions (for debugging): Citigroup (has ticker C)
-
-# Create and run the ETL for Citigroup
-etl = SharePriceDataETL("C", "2023-01-01", "2023-12-31")
-etl.extract()
-etl.transform()
-etl.save_to_csv("citigroup_prices.csv")
-
-# Hot to use it on several banks at once
-
-tickers = ["HSBC", "JPM", "BARC.L"]  # Add more G-SIBs as needed
-
-for ticker in tickers:
-    etl = SharePriceDataETL(ticker, "2023-01-01", "2023-12-31")
-    #etl.extract()
-    #etl.transform()
-    #etl.save_to_csv(f"{ticker}_prices.csv")
-    #etl.plot_time_series()
-    etl.export_to_csv(f"{ticker}_prices.csv")
-
-# For SEB (ticker: "SEB-A.ST"): A random Swedish Bank
-etl_seb = SharePriceDataETL("SEB-A.ST", "2023-01-01", "2023-12-31")
-
-# Plot the time series
-etl_seb.plot_time_series()
-
-# Extract, transform, and save to CSV
-etl_seb.export_to_csv("seb_prices.csv")
-
-from google.colab import files
-files.download("seb_prices.csv")
-
-# For Citigroup (ticker: "C")
-etl = SharePriceDataETL("C", "2023-01-01", "2023-12-31")
-
-# Option 1: Just plot the time series
-etl.plot_time_series()
-
-# Extract, transform, and save to CSV
-etl.export_to_csv("citigroup_prices.csv")
-
-from google.colab import files # This step won't be necessary when run locally
-files.download("citigroup_prices.csv")
-
-"""**B.** This does the same as A but uses .info to include currency and full bank name. Since Yahoo blocks Google, running the .info to retrieve metadata doesn't work, making it necessary to have fallbacks. It will work if run locally or on GitHub.
-
-If metadata works well, it will be as efficient as the code above - able to take on any random company. If not, it will limit the metadata retrieval to the fallbacks only.
-"""
-
-class SharePriceDataETL:
-    def __init__(self, ticker, start_date, end_date):
-        self.ticker = ticker
-        self.start_date = start_date
-        self.end_date = end_date
-        self.data = None
-        self.currency = None
-        self.bank_name = None
-
-    def extract(self):
-        print(f"Extracting data for {self.ticker} from {self.start_date} to {self.end_date}...")
-        self.data = yf.download(self.ticker, start=self.start_date, end=self.end_date)
-
-        if self.currency is None or self.bank_name is None:
-            try:
-                ticker_info = yf.Ticker(self.ticker).info
-                self.currency = ticker_info.get("currency", None)
-                self.bank_name = ticker_info.get("longName", self.ticker)
-            except Exception as e:
-                print(f"⚠️ Could not retrieve metadata for {self.ticker}: {e}") # Yahoo blocks Google. Retrieval doesn't work on Colab.
-                self.currency = None
-                self.bank_name = None
-
-        # Fallbacks if info lookup failed
-        if self.currency is None:
-            fallback_currencies = {
-                "JPM": "USD",
-                "BAC": "USD",
-                "HSBC": "GBP",
-                "C": "USD",
-                "BARC.L": "GBP",
-                "GS": "USD",
-                "UBS": "CHF",
-                "SAN": "EUR",
-                "MS": "USD",
-            }
-            self.currency = fallback_currencies.get(self.ticker, "Unknown")
-
-        if self.bank_name is None:
-            fallback_names = {
-                "JPM": "JPMorgan Chase",
-                "BAC": "Bank of America",
-                "HSBC": "HSBC Holdings",
-                "C": "Citigroup",
-                "BARC.L": "Barclays",
-                "GS": "Goldman Sachs",
-                "UBS": "UBS",
-                "SAN": "Santander",
-                "MS": "Morgan Stanley",
-            }
-            self.bank_name = fallback_names.get(self.ticker, self.ticker)
-
-    def transform(self):
-        if self.data is not None and not self.data.empty:
-            print("Transforming data...")
-            self.data.reset_index(inplace=True)
-            self.data = self.data[["Date", "Close"]]
-            self.data["Bank"] = self.bank_name
-            self.data["Currency"] = self.currency
-            self.data = self.data[["Bank", "Date", "Close", "Currency"]]
-        else:
-            print("No data to transform. Run extract() first or check if data is empty.")
-
-    def save_to_csv(self, filename):
-        if self.data is not None and not self.data.empty:
-            print(f"Saving data to {filename}...")
-            self.data.to_csv(filename, index=False)
-        else:
-            print("No data to save. Run extract() and transform() first.")
-
-    def export_to_csv(self, filename):
-        """Convenience method: Extracts, transforms, and saves to CSV."""
-        self.extract()
-        self.transform()
-        self.save_to_csv(filename)
-
-    def plot_time_series(self):
-        self.extract()
-        self.transform()
-
-        if self.data is not None and not self.data.empty:
-            print(f"Plotting time series for {self.bank_name}...")
-            plt.figure(figsize=(10, 5))
-            plt.plot(self.data["Date"], self.data["Close"], label=self.bank_name)
-            plt.title(f"{self.bank_name} - Share Price Over Time")
-            plt.xlabel("Date")
-            plt.ylabel(f"Close Price ({self.currency} per share)")
-            plt.grid(True)
-            plt.legend()
-            plt.tight_layout()
-            plt.show()
-        else:
-            print("No data available to plot.")
-
-etl = SharePriceDataETL("C", "2023-01-01", "2023-12-31")
-etl.plot_time_series()
-#etl.export_to_csv("citigroup_prices.csv")  # CSV now includes a 'Currency' column
-
-etl.export_to_csv("citigroup_prices.csv")  # CSV now includes a 'Currency' column
-
-from google.colab import files
-files.download("citigroup_prices.csv")
-
-"""# 2. Final Class Version - The Winner!
-
-**C.** Including Global Banking Index
+This includes Global Banking Index
 
 **Why Choose the KBW Nasdaq Global Bank Index (^GBKX)?**
-
 
 KBW Nasdaq Global Bank Index (^GBKX) was selected as the benchmark for this analysis because it is specifically designed to track the performance of the world's globally systemically important banks (G-SIBs) — the exact institutions we are analyzing.
 
@@ -386,11 +174,13 @@ class SharePriceDataETL:
         else:
             print("No data available to plot.")
 
+# To plot
 etl = SharePriceDataETL("C", "2023-01-01", "2023-12-31")
 etl.plot_time_series()
-#etl.export_to_csv("citigroup_prices.csv")
 
+# To download CSV
 etl.export_to_csv("citigroup_prices.csv")
 
+# This step was necessary to download in Colab
 from google.colab import files
 files.download("citigroup_prices.csv")
