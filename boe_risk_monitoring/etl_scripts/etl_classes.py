@@ -749,8 +749,250 @@ class DataAggregationETL(BaseETL):
 			df.to_csv(full_path_csv, index=False)
 			df.to_parquet(full_path_parquet)
 
+
+import pandas as pd
+
 class SupplementaryDataETL(BaseETL):
-	pass
+
+    def __init__(self, *args, **kwargs):
+        
+        self.file_list = {'jpmorgan': ["1Q21_Earnings_Supplement.xlsx","2Q21_Earnings_Supplement.xlsx",
+                                       "3Q21_Earnings_Supplement.xlsx","4Q21_Earnings_Supplement.xlsx",
+                                       "1q22-earnings-supplement.xlsx","2Q22-Earnings-Supplement.xlsx",
+                                       "3Q22_Earnings_Supplement.xlsx","4q22-earnings-supplement-xls.xlsx",
+                                       "1q23-earnings-supplement.xlsx","2q23-earnings-supplement.xlsx",
+                                       "3q23-earnings-supplement.xlsx","4q23-earnings-supplement.xlsx",
+                                       "1Q24_Earnings_Supplement.xlsx","2q24-earnings-supplement.xlsx",
+                                       "3q24-earnings-supplement.xlsx","4q24-earnings-supplement.xlsx",
+                                       "1q25-earnings-supplement.xlsx" ],
+                          'bankofamerica': ["1Q21_Financial_Report.xlsx","2Q21_Financial_Report.xlsx",
+                                            "3Q21_Financial_Report.xlsx","4Q21_Financial_Report.xlsx",
+                                            "1Q22_Financial_Report.xlsx","2Q22_Financial_Report.xlsx",
+                                            "3Q22_Financial_Report.xlsx","4Q22_Financial_Report.xlsx",
+                                            "1Q23_Financial_Report.xlsx","2Q23_Financial_Report.xlsx",
+                                            "3Q23_Financial_Report.xlsx","4Q23_Financial_Report.xlsx",
+                                            "1Q24_Financial_Report.xlsx","2Q24_Financial_Report.xlsx",
+                                            "3Q24_Financial_Report.xlsx","4Q24_Financial_Report.xlsx",
+                                            "1Q25_Financial_Report.xlsx"],
+                          'citigroup': "2025fqtr1hstr.xlsx"}
+        self.sheet_name = { 'jpmorgan': 'Page 2',
+                            'bankofamerica': ['Consolidated Statement of Incom',
+                                             'Consolidated Balance Sheet'],
+                            'citigroup':'Summary'}
+        self.bank = kwargs.pop("bank", None)
+        self.extract_output = {'jpmorgan': None,
+                               'bankofamerica': None,
+                               'citigroup': None}
+        self.transform_output = {'jpmorgan': None,
+                               'bankofamerica': None,
+                               'citigroup': None}
+        super().__init__(*args, **kwargs)
+
+    def extract(self, *args, **kwargs):
+      """
+      Extract data from the source.
+      """
+      if self.bank is None:
+        # run all extracts
+        self._extract_jpmorgan(*args, **kwargs)
+        self._extract_bankofamerica(*args, **kwargs)
+        self._extract_citigroup(*args, **kwargs)
+      elif self.bank == "jpmorgan":
+        return self._extract_jpmorgan(*args, **kwargs)
+      elif self.bank == "bankofamerica":
+        return self._extract_bankofamerica(*args, **kwargs)
+      elif self.bank == "citigroup":
+        return self._extract_citigroup(*args, **kwargs)
+
+    def _extract_jpmorgan(self, *args, **kwargs):
+
+      """
+      Extract data from the source.
+      """
+
+      df_list = []
+      quarters=[]
+      for item in self.file_list['jpmorgan']:
+        df_page2 = pd.read_excel(item, sheet_name=self.sheet_name['jpmorgan'], header=None, usecols="B:F", skiprows=6)
+        header_rows = df_page2.iloc[1:4, 1:5]
+        col_header = header_rows.fillna(method='ffill', axis=1).apply(lambda row: ' '.join(row.dropna().astype(str)), axis=1)
+        quarter_label = df_page2.iloc[0, 4]
+        final_columns = ['Quarters'] + [f"{quarter_label} - {h}" for h in col_header]
+        line_items = df_page2.iloc[2:39, 0:3].apply(lambda row: ' '.join(row.dropna().astype(str)).strip(), axis=1)
+        data_values = df_page2.iloc[2:39, 4]
+        data_values_cleaned = data_values.replace(r'\((.*?)\)', r'-\1', regex=True).astype(str).str.replace(',', '').str.replace('$', '', regex=False).str.replace('%', '', regex=False).str.strip()
+        data_values_numeric = pd.to_numeric(data_values_cleaned, errors='coerce')
+        df_list.append(data_values_numeric)
+        quarters.append(final_columns[1][:4])
+      
+      self.extract_output['jpmorgan'] = {'df_list': df_list,
+                                         'quarters': quarters,
+                                         'line_items': line_items}
+
+    def _extract_bankofamerica_single(self, file_list, sheet_name):
+      df_list = []
+      quarters=[]
+      for item in file_list:
+        df_page2 = pd.read_excel(item, sheet_name=sheet_name, header=None, usecols="A:B", skiprows=2)
+        
+        
+        quarter_label = item[0:4]
+        
+        line_items = df_page2.iloc[1:, 0]
+        data_values = df_page2.iloc[1:, 1]
+        data_values_cleaned = data_values.replace(r'\((.*?)\)', r'-\1', regex=True).astype(str).str.replace(',', '').str.replace('$', '', regex=False).str.replace('%', '', regex=False).str.strip()
+        data_values_numeric = pd.to_numeric(data_values_cleaned, errors='coerce')
+        df_list.append(data_values_numeric)
+        quarters.append(quarter_label)
+
+      lista=pd.DataFrame(df_list)
+      lista.columns=line_items
+
+      #lista.rename(columns=mapper)
+      lista.index=quarters
+      df_results=lista.dropna(axis=1)
+      df_results.head()
+      return df_results
+    def _extract_bankofamerica(self, *args, **kwargs):
+      """
+      Extract data from the source.
+      """
+      df_results = []
+      for sheet in self.sheet_name['bankofamerica']:
+        df_results.append( 
+            self._extract_bankofamerica_single(self.file_list['bankofamerica'], sheet)
+        )
+      self.extract_output['bankofamerica'] = df_results
+    def _extract_citigroup(self, *args, **kwargs):
+      """
+      Extract data from the source.
+      """
+      file_path = self.file_list['citigroup']
+      df_raw = pd.read_excel(file_path, sheet_name=self.sheet_name['citigroup'], header=None)
+
+      # Combine columns A–D (indices 0–3) for full row labels
+      label_col = (
+          df_raw[0]
+          .combine_first(df_raw[1])
+          .combine_first(df_raw[2])
+          .combine_first(df_raw[3])
+          .iloc[9:66]
+          .astype(str)
+          .str.strip()
+      )
+
+      # Extract time labels from rows 7 and 8 (index 6 and 7)
+      data_cols = list(range(3, df_raw.shape[1], 2))
+      quarters = df_raw.iloc[6, data_cols].astype(str).str.strip()
+      years = df_raw.iloc[7, data_cols].astype(str).str.strip()
+      time_labels = [f"{q} {y}" for q, y in zip(quarters, years)]
+
+      # Extract data block and label it
+      data_block = df_raw.iloc[9:66, data_cols]
+      data_block.index = label_col
+      data_block.columns = time_labels
+      df = data_block.T
+
+      # Clean number formatting
+      def clean_number(x):
+          if isinstance(x, str):
+              x = x.replace(',', '').strip()
+              if x.startswith('(') and x.endswith(')'):
+                  x = '-' + x.strip('()')
+          return pd.to_numeric(x, errors='coerce')
+
+      df = df.applymap(clean_number)
+
+      # Drop fully empty rows/columns
+      df = df.dropna(how='all', axis=0).dropna(how='all', axis=1)
+
+      self.extract_output['citigroup'] = df
+
+
+
+    def transform(self, *args, **kwargs):
+      """
+      transform data from the extracted data.
+      """
+      if self.bank is None:
+        # transform all
+        self._transform_jpmorgan(*args, **kwargs)
+        self._transform_bankofamerica(*args, **kwargs)
+        self._transform_citigroup(*args, **kwargs)
+      elif self.bank == "jpmorgan":
+        return self._transform_jpmorgan(*args, **kwargs)
+      elif self.bank == "bankofamerica":
+        return self._transform_bankofamerica(*args, **kwargs)
+      elif self.bank == "citigroup":
+        return self._transform_citigroup(*args, **kwargs)
+
+    def _transform_jpmorgan(self, *args, **kwargs):
+      """
+      Transform the extracted data.
+      """
+      df_list = self.extract_output['jpmorgan']['df_list']
+      quarters = self.extract_output['jpmorgan']['quarters']
+      line_items = self.extract_output['jpmorgan']['line_items']
+      
+      lista=pd.DataFrame(df_list)
+      lista.columns=line_items
+      lista.index=quarters
+      df_results=lista.dropna(axis=1)
+      df_results.head()
+      self.transform_output['jpmorgan']=df_results
+    
+    def _transform_bankofamerica(self, *args, **kwargs):
+      """
+      Transform the extracted data.
+      """
+      self.transform_output['bankofamerica'] = \
+              pd.concat(self.extract_output['bankofamerica'],axis=1)
+    
+    def _transform_citigroup(self, *args, **kwargs):
+      """
+      Transform the extracted data.
+      """
+      self.transform_output['citigroup'] = self.extract_output['citigroup']
+
+    def load(self, *args, **kwargs):
+      """
+      Save transformed data.
+      """
+      if self.bank is None:
+        # save all
+        # self._load_jpmorgan(*args, **kwargs)
+        # self._load_bankofamerica(*args, **kwargs)
+        # self._load_citigroup(*args, **kwargs)
+        self._load('jpmorgan')
+        self._load('bankofamerica')
+        self._load('citigroup')
+      elif self.bank == "jpmorgan":
+        # return self._load_jpmorgan(*args, **kwargs)
+        self._load('jpmorgan')
+      elif self.bank == "bankofamerica":
+        # return self._load_bankofamerica(*args, **kwargs)
+        self._load('bankofamerica')
+      elif self.bank == "citigroup":
+        # return self._load_citigroup(*args, **kwargs)
+        self._load('citigroup')
+
+
+    def _load_jpmorgan(self, *args, **kwargs):
+      """
+      Load the transformed data into the target system.
+      """
+      df_results = self.transform_output['jpmorgan']
+
+      df_results.to_csv("jpmorgan_cleaned_summary.csv", index=True)
+      df_results.to_excel("jpmorgan_cleaned_summary.xlsx", index=True)
+
+    def _load(self, bank):
+      df_results = self.transform_output[bank]
+
+      df_results.to_csv(f"{bank}_cleaned_summary.csv", index=True)
+      df_results.to_excel(f"{bank}_cleaned_summary.xlsx", index=True)
+	    
+
 
 class SharePriceDataETL(BaseETL):
 	"""This class provides methods to extract share price data from Yahoo Finance API for a given company
