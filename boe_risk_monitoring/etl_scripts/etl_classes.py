@@ -938,7 +938,23 @@ class SupplementaryDataETL(BaseETL):
       lista.columns=line_items
       lista.index=quarters
       df_results=lista.dropna(axis=1)
-      df_results.head()
+      mapper={"Total net revenue":"Total revenues, net of interest expense(1)","Total noninterest expense": "Total operating expenses",
+        "Provision for credit losses": "Provisions for credit losses and for benefits and claims ",
+          "NET INCOME":"jpmorgan's net income",
+          "Net income: Basic":"Earning per share basic", "Diluted ":"Earning per share diluted",
+        "Average shares: Basic":"Average shares basic","Diluted  ":"Average shares diluted",
+          "Common shares at period-end":"Common shares outstanding, at period end","Return on common equity (“ROE”)":" Return on average common equity",
+        "Return on tangible common equity (“ROTCE”) (a)":"Return on average tangible common equity (RoTCE)(6)",
+          "Return on assets":"Return on average assets"}
+      df_results=df_results.rename(columns=mapper)
+      new_column_names = list(df_results.columns)
+      new_column_names[5] = 'Total net revenue managed basis'  # Rename the first 'NET INCOME'
+      new_column_names[6] = 'Total noninterest expense  managed basis' # Rename the second 'NET INCOME'
+      new_column_names[7] = 'Pre-provision profit (a) managed basis'  # Rename the first 'NET INCOME'
+      new_column_names[8] = 'Provision for credit losses managed basis' # Rename the second 'NET INCOME'
+      new_column_names[9] = 'NET INCOME managed basis'
+      df_results.columns = new_column_names    
+      #df_results.head()
       self.transform_output['jpmorgan']=df_results
     
     def _transform_bankofamerica(self, *args, **kwargs):
