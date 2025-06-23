@@ -1,6 +1,7 @@
 Term,Definition
 1H,First Half
 ACL,Allowance for Credit Losses
+ACLs,Allowance for Credit Losses
 ACLL,Allowance for Credit Losses on Loans
 AFS,Available for Sale
 AI,Artificial Intelligence
@@ -68,6 +69,7 @@ NAL,Non-Accrual Loan
 NAM,North America
 NCC,National Clearing Counterparty
 NCL,Net Credit Loss
+NCLs,Net Credit Losses
 NDF,Non-Deliverable Forward
 NII,Net Interest Income
 Nil,Net Interest Income

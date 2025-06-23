@@ -47,3 +47,12 @@ class TopicLabellingLLM(ChunkingLLM):
     def __init__(self, topic_labelling_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
         super().__init__(chunking_prompt=topic_labelling_prompt, response_schema=response_schema, backend=backend, model_name=model_name, temperature=temperature)
 
+class QuestionAnswerTaggingLLM(ChunkingLLM):
+	"""Identical to ChunkingLLM but uses `q_and_a_tagging_prompt` for clarity."""
+	def __init__(self, q_and_a_tagging_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
+		super().__init__(chunking_prompt=q_and_a_tagging_prompt, response_schema=response_schema, backend=backend, model_name=model_name, temperature=temperature)
+
+class EvasivenessTaggingLLM(ChunkingLLM):
+	"""Identical to ChunkingLLM but uses `evasiveness_tagging_prompt` for clarity."""
+	def __init__(self, evasiveness_tagging_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
+		super().__init__(chunking_prompt=evasiveness_tagging_prompt, response_schema=response_schema, backend=backend, model_name=model_name, temperature=temperature)
