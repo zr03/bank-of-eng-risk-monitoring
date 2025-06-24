@@ -11,17 +11,39 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python=">=3.11"
+python=">=3.11,<4.0"
+pandas = "^2.3.0"
+numpy = "<=2.2"
+pydantic=">=2.11"
+python-dotenv=">=1.1"
+accelerate = "^1.7.0"
+pinecone = "^7.2.0"
+
+[tool.poetry.group.dev.dependencies]
 aiohttp=">=3.12"
 google-genai=">=1.19"
 openai=">=1.84"
-pydantic=">=2.11"
 pymupdf=">=1.26"
-python-dotenv=">=1.1"
-pandas = "^2.3.0"
 langchain-core = "^0.3.64"
 tiktoken = "^0.9.0"
 pyarrow = "^20.0.0"
+ipykernel = "^6.29.5"
+matplotlib = "^3.10.3"
+seaborn = "^0.13.2"
+transformers = "^4.52.4"
+nltk = "^3.9.1"
+numba = "^0.61.2"
+llvmlite = "^0.44.0"
+bertopic = "^0.17.0"
+torch = { version = "^2.7.1", source = "pytorch-cu118" }
+ipywidgets = "^8.1.7"
+nbformat = ">=4.2.0"
+yfinance = "^0.2.63"
+
+[[tool.poetry.source]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
 
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.8"
