@@ -16,7 +16,7 @@ import pymupdf
 import pandas as pd
 import yfinance as yf
 from pinecone import Pinecone, ServerlessSpec
-import torch
+# import torch
 from sentence_transformers import SentenceTransformer
 
 
@@ -767,14 +767,11 @@ class DataAggregationETL(BaseETL):
             df.to_csv(full_path_csv, index=False)
             df.to_parquet(full_path_parquet)
 
-
-import pandas as pd
-
 class SupplementaryDataETL(BaseETL):
 
     def __init__(self, *args, **kwargs):
 
-        self.file_list = {'jpmorgan': ["1Q21_Earnings_Supplement.xlsx","2Q21_Earnings_Supplement.xlsx",
+        filenames_dict = {'jpmorgan': ["1Q21_Earnings_Supplement.xlsx","2Q21_Earnings_Supplement.xlsx",
                                        "3Q21_Earnings_Supplement.xlsx","4Q21_Earnings_Supplement.xlsx",
                                        "1q22-earnings-supplement.xlsx","2Q22-Earnings-Supplement.xlsx",
                                        "3Q22_Earnings_Supplement.xlsx","4q22-earnings-supplement-xls.xlsx",
@@ -792,7 +789,18 @@ class SupplementaryDataETL(BaseETL):
                                             "1Q24_Financial_Report.xlsx","2Q24_Financial_Report.xlsx",
                                             "3Q24_Financial_Report.xlsx","4Q24_Financial_Report.xlsx",
                                             "1Q25_Financial_Report.xlsx"],
-                          'citigroup': "2025fqtr1hstr.xlsx"}
+                          'citigroup': ["2025fqtr1hstr.xlsx"]}
+        fpaths_dict = defaultdict(list)
+        for bank, fname_list in filenames_dict.items():
+            for fname in fname_list:
+                fpath = os.path.join(DATA_FOLDER, bank, "raw_docs", "supplementary_data", fname)
+                if os.path.exists(fpath):
+                    fpaths_dict[bank].append(fpath)
+                else:
+                    raise FileNotFoundError(f"File not found: {fpath}")
+
+        self.fpaths_dict = fpaths_dict
+
         self.sheet_name = { 'jpmorgan': 'Page 2',
                             'bankofamerica': ['Consolidated Statement of Incom',
                                              'Consolidated Balance Sheet'],
@@ -816,11 +824,11 @@ class SupplementaryDataETL(BaseETL):
         self._extract_bankofamerica(*args, **kwargs)
         self._extract_citigroup(*args, **kwargs)
       elif self.bank == "jpmorgan":
-        return self._extract_jpmorgan(*args, **kwargs)
+        self._extract_jpmorgan(*args, **kwargs)
       elif self.bank == "bankofamerica":
-        return self._extract_bankofamerica(*args, **kwargs)
+        self._extract_bankofamerica(*args, **kwargs)
       elif self.bank == "citigroup":
-        return self._extract_citigroup(*args, **kwargs)
+        self._extract_citigroup(*args, **kwargs)
 
     def _extract_jpmorgan(self, *args, **kwargs):
 
@@ -830,7 +838,7 @@ class SupplementaryDataETL(BaseETL):
 
       df_list = []
       quarters=[]
-      for item in self.file_list['jpmorgan']:
+      for item in self.fpaths_dict['jpmorgan']:
         df_page2 = pd.read_excel(item, sheet_name=self.sheet_name['jpmorgan'], header=None, usecols="B:F", skiprows=6)
         header_rows = df_page2.iloc[1:4, 1:5]
         col_header = header_rows.fillna(method='ffill', axis=1).apply(lambda row: ' '.join(row.dropna().astype(str)), axis=1)
@@ -878,14 +886,14 @@ class SupplementaryDataETL(BaseETL):
       df_results = []
       for sheet in self.sheet_name['bankofamerica']:
         df_results.append(
-            self._extract_bankofamerica_single(self.file_list['bankofamerica'], sheet)
+            self._extract_bankofamerica_single(self.fpaths_dict['bankofamerica'], sheet)
         )
       self.extract_output['bankofamerica'] = df_results
     def _extract_citigroup(self, *args, **kwargs):
       """
       Extract data from the source.
       """
-      file_path = self.file_list['citigroup']
+      file_path = self.fpaths_dict['citigroup'][0]
       df_raw = pd.read_excel(file_path, sheet_name=self.sheet_name['citigroup'], header=None)
 
       # Combine columns A–D (indices 0–3) for full row labels
@@ -994,37 +1002,24 @@ class SupplementaryDataETL(BaseETL):
       """
       if self.bank is None:
         # save all
-        # self._load_jpmorgan(*args, **kwargs)
-        # self._load_bankofamerica(*args, **kwargs)
-        # self._load_citigroup(*args, **kwargs)
         self._load('jpmorgan')
         self._load('bankofamerica')
         self._load('citigroup')
       elif self.bank == "jpmorgan":
-        # return self._load_jpmorgan(*args, **kwargs)
         self._load('jpmorgan')
       elif self.bank == "bankofamerica":
-        # return self._load_bankofamerica(*args, **kwargs)
         self._load('bankofamerica')
       elif self.bank == "citigroup":
-        # return self._load_citigroup(*args, **kwargs)
         self._load('citigroup')
-
-
-    def _load_jpmorgan(self, *args, **kwargs):
-      """
-      Load the transformed data into the target system.
-      """
-      df_results = self.transform_output['jpmorgan']
-
-      df_results.to_csv("jpmorgan_cleaned_summary.csv", index=True)
-      df_results.to_excel("jpmorgan_cleaned_summary.xlsx", index=True)
 
     def _load(self, bank):
       df_results = self.transform_output[bank]
 
-      df_results.to_csv(f"{bank}_cleaned_summary.csv", index=True)
-      df_results.to_excel(f"{bank}_cleaned_summary.xlsx", index=True)
+      output_dir_path = os.path.join(DATA_FOLDER, bank, "processed", "supplementary_data")
+      os.makedirs(output_dir_path, exist_ok=True)
+
+      df_results.to_csv(os.path.join(output_dir_path, f"{bank}_metrics.csv"), index=True)
+    #   df_results.to_parquet(os.path.join(output_dir_path, f"{bank}_metrics.parquet"))
 
 
 
@@ -1411,29 +1406,36 @@ if __name__ == "__main__":
     # output_fpath = os.path.join(DATA_FOLDER, bank_name, "processed", "share_price_history", "share_price_history.csv")
     # share_price_etl.export_to_csv(fpath=output_fpath)
 
-    # Instantiate the VectorDBETL class
-    input_parquet_path = os.path.join(DATA_FOLDER, "aggregated", "all_text.parquet")
-    vector_db_etl = VectorDBETL(
-        input_parquet_path=input_parquet_path,
-        vector_db_provider="pinecone",
-        index_name="boe-text-embeddings"
-    )
-    # Extract data
-    raw_data = vector_db_etl.extract()
+    # # Instantiate the VectorDBETL class
+    # input_parquet_path = os.path.join(DATA_FOLDER, "aggregated", "all_text.parquet")
+    # vector_db_etl = VectorDBETL(
+    #     input_parquet_path=input_parquet_path,
+    #     vector_db_provider="pinecone",
+    #     index_name="boe-text-embeddings"
+    # )
+    # # Extract data
+    # raw_data = vector_db_etl.extract()
 
-    # Transform data
-    raw_data['date_of_earnings_call'] = pd.to_datetime(raw_data['date_of_earnings_call']).dt.strftime('%Y-%m-%d')
-    raw_data[['speaker','role']] = raw_data[['speaker','role']].fillna('')  # Fill NaN values in speaker and role columns with empty strings
-    col_to_embed_name = "text"
-    embedding_model_name = "mukaj/fin-mpnet-base"
-    embedding_model = SentenceTransformer(embedding_model_name)
-    vectors = vector_db_etl.transform(
-        raw_data=raw_data,
-        col_to_embed_name=col_to_embed_name,
-        embedding_model=embedding_model
-    )
-    # Load data
-    vector_db_etl.load(vectors)
+    # # Transform data
+    # raw_data['date_of_earnings_call'] = pd.to_datetime(raw_data['date_of_earnings_call']).dt.strftime('%Y-%m-%d')
+    # raw_data[['speaker','role']] = raw_data[['speaker','role']].fillna('')  # Fill NaN values in speaker and role columns with empty strings
+    # col_to_embed_name = "text"
+    # embedding_model_name = "mukaj/fin-mpnet-base"
+    # embedding_model = SentenceTransformer(embedding_model_name)
+    # vectors = vector_db_etl.transform(
+    #     raw_data=raw_data,
+    #     col_to_embed_name=col_to_embed_name,
+    #     embedding_model=embedding_model
+    # )
+    # # Load data
+    # vector_db_etl.load(vectors)
 
-
+    # Instantiate the SupplementaryDataETL class
+    supplementary_data_etl = SupplementaryDataETL()
+    # Extract data for all banks
+    supplementary_data_etl.extract()
+    # Transform data for all banks
+    supplementary_data_etl.transform()
+    # Load data for all banks
+    supplementary_data_etl.load()
 
