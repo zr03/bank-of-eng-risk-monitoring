@@ -15,3 +15,5 @@ TICKER_MAPPING = {
     "jpmorgan": "JPM",
     "bankofamerica": "BAC",
 }
+
+PERMISSIBLE_VECTOR_DB_PROVIDERS = ["pinecone"]

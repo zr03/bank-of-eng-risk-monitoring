@@ -9,13 +9,16 @@ from pathlib import Path
 from typing import List, Literal, Optional
 import datetime
 from collections import defaultdict
+from tqdm import tqdm
 
 from pydantic import BaseModel, Field
 import pymupdf
 import pandas as pd
-# from langchain_core.messages.utils import count_tokens_approximately
-# import tiktoken
 import yfinance as yf
+from pinecone import Pinecone, ServerlessSpec
+import torch
+from sentence_transformers import SentenceTransformer
+
 
 from boe_risk_monitoring.llms.processing_llms import ChunkingLLM
 from boe_risk_monitoring.llms.document_analyser_llm import DocumentAnalyserLLM
@@ -27,6 +30,7 @@ SHARE_PRICE_HISTORY_START_DATE = config.SHARE_PRICE_HISTORY_START_DATE
 PERMISSIBLE_BANK_NAMES = config.PERMISSIBLE_BANK_NAMES
 BANK_NAME_MAPPING = config.BANK_NAME_MAPPING
 TICKER_MAPPING = config.TICKER_MAPPING
+PERMISSIBLE_VECTOR_DB_PROVIDERS = config.PERMISSIBLE_VECTOR_DB_PROVIDERS
 PERMISSIBLE_DOC_TYPES = ['transcripts', 'presentations_text', 'presentations_graphs', 'presentations_tables']
 
 class TranscriptChunk(BaseModel):
@@ -172,7 +176,7 @@ class TranscriptETL(BaseETL):
         input_pdf_path = Path(input_pdf_path)
         if not input_pdf_path.exists():
             raise FileNotFoundError(f"Input PDF file does not exist: {input_pdf_path}")
-        self.input_pdf_path = Path(input_pdf_path)
+        self.input_pdf_path = input_pdf_path
 
         self.llm_model = None
         self.output_dir_path = None
@@ -330,7 +334,7 @@ class PresentationETL(BaseETL):
         input_pdf_path = Path(input_pdf_path)
         if not input_pdf_path.exists():
             raise FileNotFoundError(f"Input PDF file does not exist: {input_pdf_path}")
-        self.input_pdf_path = Path(input_pdf_path)
+        self.input_pdf_path = input_pdf_path
 
         self.llm_model = None
         self.output_dir_path = None
@@ -638,6 +642,17 @@ class DataAggregationETL(BaseETL):
                     presentation_tables_df = pd.concat([presentation_tables_df, df], ignore_index=True)
                     presentation_tables_df['source'] = "Table Row (" + presentation_tables_df['row_heading'] + ")\n" + presentation_tables_df['bank'] + ", " + presentation_tables_df['reporting_period'].str.replace("_", ", ") + ", Earnings Call Presentation, Slide " + presentation_tables_df['page'].astype(str)
 
+        # Convert the date columns to string format
+        transcripts_df['date_of_call'] = pd.to_datetime(transcripts_df['date_of_call']).dt.strftime('%Y-%m-%d')
+        presentation_text_df['date_of_presentation'] = pd.to_datetime(presentation_text_df['date_of_presentation']).dt.strftime('%Y-%m-%d')
+        presentation_graphs_df['date_of_presentation'] = pd.to_datetime(presentation_graphs_df['date_of_presentation']).dt.strftime('%Y-%m-%d')
+        presentation_tables_df['date_of_presentation'] = pd.to_datetime(presentation_tables_df['date_of_presentation']).dt.strftime('%Y-%m-%d')
+
+        # Replace null values in speaker and role columns with empty string
+        fillna_cols = ['speaker', 'role']
+        presentation_text_df[fillna_cols] = presentation_text_df[fillna_cols].fillna('')
+        presentation_graphs_df[fillna_cols] = presentation_graphs_df[fillna_cols].fillna('')
+        presentation_tables_df[fillna_cols] = presentation_tables_df[fillna_cols].fillna('')
 
         # Now we'll create a specific dataframe which summarise all text components of the various documents
 
@@ -704,7 +719,10 @@ class DataAggregationETL(BaseETL):
         presentation_tables_df2 = presentation_tables_df2[['text', 'fiscal_period_ref'] + cols_in_order]
         presentation_tables_df2 = presentation_tables_df2.rename(columns={'date_of_presentation': 'date_of_earnings_call'})
 
-        all_text_df = pd.concat([transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2], ignore_index=True)
+
+        # Collect dfs to concatenate
+        dfs_to_concat = [transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2]
+        all_text_df = pd.concat(dfs_to_concat, ignore_index=True)
 
         all_text_df['fiscal_period_ref'] = all_text_df['fiscal_period_ref'].astype('string')
         all_text_df['date_of_earnings_call'] = pd.to_datetime(all_text_df['date_of_earnings_call']).dt.date
@@ -863,14 +881,14 @@ class SharePriceDataETL:
 
             # Top chart: bank share price
             axes[0].plot(self.data["Date"], self.data["Close"], label=self.bank_name)
-            axes[0].set_title(f"{self.bank_name} – Share Price Over Time")
+            axes[0].set_title(f"{self.bank_name} - Share Price Over Time")
             axes[0].set_ylabel(f"Close Price ({self.currency} per share)")
             axes[0].grid(True)
             axes[0].legend()
 
             # Bottom chart: index
             axes[1].plot(self.data["Date"], self.data["GlobalBankIndex"], label="KBW Nasdaq Global Bank Index", color="orange")
-            axes[1].set_title("KBW Nasdaq Global Bank Index Over Time")
+            axes[1].set_title("KBW Nasdaq Global Bank Index Over Time")
             axes[1].set_ylabel("Index Value (Equally Weighted)")
             axes[1].set_xlabel("Date")
             axes[1].grid(True)
@@ -885,7 +903,174 @@ class SharePriceDataETL:
 class VectorDBETL(BaseETL):
     """This class provides methods to extract data from NLP outputs and store embeddings in a vector DB along with associated metadata.
     """
-    pass
+    def __init__(self, input_parquet_path, vector_db_provider, index_name):
+        # Check if input paths are valid
+        if not isinstance(input_parquet_path, str):
+            raise TypeError("Input path must be a string.")
+        if not input_parquet_path.endswith('.parquet'):
+            raise ValueError("Input path must be a Parquet file.")
+        input_parquet_path = Path(input_parquet_path)
+        if not input_parquet_path.exists():
+            raise FileNotFoundError(f"Input Parquet file does not exist: {input_parquet_path}")
+        self.input_parquet_path = input_parquet_path
+
+        if vector_db_provider not in PERMISSIBLE_VECTOR_DB_PROVIDERS:
+            raise NotImplementedError(f"Unsupported vector DB provider: {vector_db_provider}. Supported providers are {PERMISSIBLE_VECTOR_DB_PROVIDERS}.")
+        self.vector_db_provider = vector_db_provider
+
+        if not isinstance(index_name, str):
+            raise TypeError("Index name must be a string.")
+        self.index_name = index_name
+        # Placeholder for the embedding dimension
+        self.embedding_dim = None
+
+    def extract(self):
+        """
+        Extracts data from the input Parquet file.
+        Returns a DataFrame containing the data.
+        """
+        print(f"Extracting data from {self.input_parquet_path}...")
+        df = pd.read_parquet(self.input_parquet_path)
+        return df
+
+    def transform(self, raw_data, col_to_embed_name, embedding_model):
+        """
+        Transforms the extracted data by generating embeddings for the specified column. Any other columns in the raw data are retained as metadata.
+        Returns a DataFrame with embeddings and associated metadata.
+        """
+        if not isinstance(raw_data, pd.DataFrame):
+            raise TypeError("Raw data must be a Pandas DataFrame.")
+        if col_to_embed_name not in raw_data.columns:
+            raise ValueError(f"Column to embed '{col_to_embed_name}' not found in the raw data.")
+        if not isinstance(embedding_model, SentenceTransformer):
+            raise TypeError("Embedding model must be an instance of HuggingFace's SentenceTransformer.")
+
+        # Store the embedding model instance
+        self.embedding_dim = embedding_model.get_sentence_embedding_dimension()
+
+        if not torch.cuda.is_available():
+            print("CUDA is not available. Please ensure you have a compatible GPU and PyTorch installed with CUDA support. Running on CPU - this may be slow.")
+
+        # Generate embeddings for the specified column, extract metadata and build vectors object for upsert
+        print(f"Generating embeddings from column {col_to_embed_name}")
+        text_embeddings_arr = embedding_model.encode(raw_data[col_to_embed_name].tolist())
+        text_embeddings_list = text_embeddings_arr.tolist()  # Convert numpy array to list
+        embeddings_idx_list = raw_data.index.astype(str).tolist()
+        metadata_df = raw_data.drop(columns=[col_to_embed_name])
+        if metadata_df.empty:
+            metadata_dicts_list = []
+        else:
+            metadata_dicts_list = metadata_df.to_dict(orient='records')
+        # Build vectors object for upsert
+        vectors = self.build_vectors_object(embeddings_idx_list, text_embeddings_list, metadata_dicts_list)
+
+        return vectors
+
+
+
+    def load(self, transformed_data):
+        if not isinstance(transformed_data, list) or len(transformed_data) == 0:
+            raise TypeError("Transformed data must be a list of dictionaries each with 'id', 'values' and optionally 'metadata' keys to upsert into the vector DB.")
+        for item in transformed_data:
+            if not isinstance(item, dict):
+                raise TypeError("Each item in transformed data must be a dictionary.")
+            keys_list_set = set(item.keys())
+            mandatory_keys_set = set(['id', 'values'])
+            allowed_keys_set = mandatory_keys_set.union({'metadata'})
+            # Check if 'id' and 'values' keys are present
+            if not mandatory_keys_set.issubset(keys_list_set):
+                raise ValueError("Each item in transformed data must contain 'id' and 'values' keys.")
+            # Check if any other keys are present
+            if not keys_list_set.issubset(allowed_keys_set):
+                raise ValueError(f"Each item in transformed data can only contain keys {allowed_keys_set}. Found keys: {keys_list_set}.")
+
+        if not self.embedding_dim:
+            # Infer embedding model from the transformed data
+            # Get first item to determine the embedding dimension
+            self.embedding_dim = len(transformed_data[0]['values'])
+
+
+        print("Initializing vector DB index")
+        if self.vector_db_provider == "pinecone":
+            api_key = os.getenv("PINECONE_API_KEY")
+            if not api_key:
+                raise ValueError("PINECONE_API_KEY required in env file")
+            vector_db = Pinecone(api_key=api_key)
+            # Check existing indices
+            existing_indices = [idx.name for idx in vector_db.list_indexes()]
+            if self.index_name in existing_indices:
+                print(f"{self.index_name} already exists. Deleting and recreating...")
+                vector_db.delete_index(self.index_name)
+            vector_db.create_index(
+                name=self.index_name,
+                dimension=self.embedding_dim,
+                metric="cosine",
+                spec=ServerlessSpec(cloud="aws", region="us-east-1")
+            )
+            # Connect to the index
+            db_idx = vector_db.Index(self.index_name)
+
+            # Upsert the data in batches
+            print("Upserting data into Pinecone index...")
+            self.batch_upsert(db_idx, transformed_data, batch_size=100)
+
+        else:
+            raise NotImplementedError(f"Vector DB provider {self.vector_db_provider} is not implemented yet.")
+
+
+    @staticmethod
+    def build_vectors_object(embeddings_idx_list, text_embeddings_list, metadata_dicts_list=[]):
+        """
+        Builds a list of vectors to be upserted into the vector DB.
+        Each vector is a dictionary with 'id', 'values', and 'metadata'.
+        """
+        if not isinstance(embeddings_idx_list, list) or not isinstance(text_embeddings_list, list) or not isinstance(metadata_dicts_list, list):
+            raise TypeError("All inputs must be lists.")
+
+        if len(embeddings_idx_list) != len(text_embeddings_list):
+            raise ValueError("Embeddings list must have the same length as index list.")
+
+        if metadata_dicts_list:
+            if len(metadata_dicts_list) != len(embeddings_idx_list):
+                raise ValueError("Metadata list must have the same length as index and embeddings lists.")
+
+        vectors = []
+        if metadata_dicts_list:
+            for idx, embedding, metadata in zip(embeddings_idx_list, text_embeddings_list, metadata_dicts_list):
+                if not isinstance(metadata, dict):
+                    raise TypeError("Metadata must be a dictionary.")
+                if not isinstance(embedding, list):
+                    raise TypeError("Embedding must be a list.")
+                vector = {
+                    "id": idx,
+                    "values": embedding,
+                    "metadata": metadata
+                }
+                vectors.append(vector)
+        else:
+            for idx, embedding in zip(embeddings_idx_list, text_embeddings_list):
+                if not isinstance(embedding, list):
+                    raise TypeError("Embedding must be a list.")
+                vector = {
+                    "id": idx,
+                    "values": embedding,
+                }
+                vectors.append(vector)
+        return vectors
+
+    @staticmethod
+    def batch_upsert(index, vectors, batch_size=100):
+        for i in tqdm(range(0, len(vectors), batch_size), desc="Upserting to Pinecone"):
+            batch = vectors[i:i + batch_size]
+            response = index.upsert(batch)
+            upserted_count = response.get("upserted_count", 0)
+            if upserted_count != len(batch):
+                print(f"Warning: Only {upserted_count}/{len(batch)} vectors upserted.(Batch start_idx: {i})")
+
+
+
+
+
 
 
 
@@ -953,19 +1138,44 @@ if __name__ == "__main__":
     # output_dir_path = os.path.join(DATA_FOLDER, "aggregated")
     # data_aggregation_etl.load(transformed_data=aggregated_data_dict, output_dir_path=output_dir_path)
 
-    # Instantiate the SharePriceDataETL class
-    bank_name = "bankofamerica"
-    ticker = TICKER_MAPPING[bank_name]
-    today = datetime.datetime.now().date().strftime("%Y-%m-%d")
-    share_price_etl = SharePriceDataETL(
-        ticker=ticker,
-        bank_name=bank_name,
-        start_date=SHARE_PRICE_HISTORY_START_DATE,
-        end_date=today,
-    )
+    # # Instantiate the SharePriceDataETL class
+    # bank_name = "bankofamerica"
+    # ticker = TICKER_MAPPING[bank_name]
+    # today = datetime.datetime.now().date().strftime("%Y-%m-%d")
+    # share_price_etl = SharePriceDataETL(
+    #     ticker=ticker,
+    #     bank_name=bank_name,
+    #     start_date=SHARE_PRICE_HISTORY_START_DATE,
+    #     end_date=today,
+    # )
 
-    # Run the convenience method to extract, transform, and load data
-    output_fpath = os.path.join(DATA_FOLDER, bank_name, "processed", "share_price_history", "share_price_history.csv")
-    share_price_etl.export_to_csv(fpath=output_fpath)
+    # # Run the convenience method to extract, transform, and load data
+    # output_fpath = os.path.join(DATA_FOLDER, bank_name, "processed", "share_price_history", "share_price_history.csv")
+    # share_price_etl.export_to_csv(fpath=output_fpath)
+
+    # Instantiate the VectorDBETL class
+    input_parquet_path = os.path.join(DATA_FOLDER, "aggregated", "all_text.parquet")
+    vector_db_etl = VectorDBETL(
+        input_parquet_path=input_parquet_path,
+        vector_db_provider="pinecone",
+        index_name="boe-text-embeddings"
+    )
+    # Extract data
+    raw_data = vector_db_etl.extract()
+
+    # Transform data
+    raw_data['date_of_earnings_call'] = pd.to_datetime(raw_data['date_of_earnings_call']).dt.strftime('%Y-%m-%d')
+    raw_data[['speaker','role']] = raw_data[['speaker','role']].fillna('')  # Fill NaN values in speaker and role columns with empty strings
+    col_to_embed_name = "text"
+    embedding_model_name = "mukaj/fin-mpnet-base"
+    embedding_model = SentenceTransformer(embedding_model_name)
+    vectors = vector_db_etl.transform(
+        raw_data=raw_data,
+        col_to_embed_name=col_to_embed_name,
+        embedding_model=embedding_model
+    )
+    # Load data
+    vector_db_etl.load(vectors)
+
 
 
