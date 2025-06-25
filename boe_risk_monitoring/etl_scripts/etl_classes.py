@@ -390,7 +390,9 @@ class PresentationETL(BaseETL):
         )
 
         # Run the analysis
+        print("Invoking LLM for document analysis...")
         analysis_results = self.llm_model.invoke()
+        print("LLM analysis completed.")
         text_df, graphs_df, tables_df = self.unpack_analysis_results(analysis_results)
 
         # Combine into single dictionary with keys as file name suffixes
@@ -1137,7 +1139,7 @@ class FinancialNewsETL(BaseETL):
         # Run the analysis
         print("Invoking LLM for document analysis...")
         analysis_results = self.llm_model.invoke()
-        print("Unpacking analysis results...")
+        print("LLM analysis completed.")
         text_df, graphs_df = self.unpack_analysis_results(analysis_results)
 
         print("Reformatting output dataframes...")
@@ -1166,6 +1168,12 @@ class FinancialNewsETL(BaseETL):
 
         if not isinstance(output_dir_path, str):
             raise TypeError("Output directory path must be a string.")
+
+        # Drop any file names where the associated dataframe is empty
+        file_names = [file_name for file_name in file_names if not transformed_data[file_name].empty]
+
+        if not file_names:
+            print(f"{self.file_name} has no bank-specific data to save. Skipping load step.")
 
         output_dir_path = Path(output_dir_path)
         # Make the directory if it does not exist already
@@ -1266,7 +1274,7 @@ class FinancialNewsETL(BaseETL):
     @staticmethod
     def clean_output_df(df):
         """
-        Reformats the output dataframe to ensure it has the correct columns and data types.
+        Cleans the output dataframe to ensure it has the correct columns and data types.
         """
         # Drop generic statements which don't mention specific banks
         df = df.dropna(subset=['banks_referenced'])
@@ -1280,9 +1288,14 @@ class FinancialNewsETL(BaseETL):
         # Drop text chunks that only reference "other" banks and none of our banks of interest
         excl_bool = df['banks_referenced'].apply(lambda x: len(x) == 1 and x[0] == "other")
         df = df[~excl_bool]
+
+        # Early return if no valid data left
+        if df.empty:
+            return df
+
         # Add is_comparative columns if multiple banks from those we are interested in are mentioned
         df['is_comparative'] = df['banks_referenced'].apply(lambda x: sum([bank in x for bank in PERMISSIBLE_BANK_NAMES]) > 1)
-        
+
         # Now we'll create duplicate rows for each bank mentioned in the text chunk
         df = df.explode('banks_referenced')
 
@@ -1403,8 +1416,8 @@ if __name__ == "__main__":
 
     start = time.time()
     # Instantiate the FinancialNewsETL class
-    fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
-    # fname="2025_04_04_stocks_blogexcerpt_Trump tariffs day 3 as it happened_ S&P 500 sheds $5.4tn in 2 days; China announces 34% retaliatory levies on US.pdf"
+    # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
+    fname="2025_04_04_stocks_blogexcerpt_Trump tariffs day 3 as it happened_ S&P 500 sheds $5.4tn in 2 days; China announces 34% retaliatory levies on US.pdf"
     input_pdf_path = os.path.join(DATA_FOLDER, "news_all_banks", "raw_docs", "allbanks_mixed_comparative", fname)
 
     financial_news_etl = FinancialNewsETL(
