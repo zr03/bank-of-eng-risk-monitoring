@@ -1,0 +1,13 @@
+period,strongBuy,buy,hold,sell,strongSell,Bank
+0m,6,10,6,0,0,Citigroup
+-1m,6,10,6,0,0,Citigroup
+-2m,7,10,4,0,0,Citigroup
+-3m,6,9,5,0,0,Citigroup
+0m,7,8,9,1,0,JPMorgan Chase
+-1m,7,8,9,0,1,JPMorgan Chase
+-2m,7,7,9,0,1,JPMorgan Chase
+-3m,7,7,8,0,1,JPMorgan Chase
+0m,7,15,2,0,0,Bank of America
+-1m,7,15,3,0,0,Bank of America
+-2m,8,14,1,0,0,Bank of America
+-3m,7,12,3,0,0,Bank of America
