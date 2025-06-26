@@ -9,6 +9,13 @@
 	font-display: block;
 }
 
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-Regular.woff2') format('woff2'),
+		url('OpenSans-Regular.woff') format('woff');
+	font-display: block;
+}
+
 /* Do we need to specify margin-left here? */
 body {
 	padding-top: 50px;
@@ -99,9 +106,10 @@ body {
 }
 
 .app-header-subtitle {
-	font-family: 'Open Sans';
+	/* font-family: 'Open Sans'; */
+	font-family: 'Monoton', cursive !important;
 	font-size: 23.5px;
-	margin-top: -0.5em;
+	margin-top: 0em;
 	margin-bottom: 10px;
 	/* position: absolute;
 	top: 5px;
@@ -530,7 +538,7 @@ div.bar-graph-control-div .export-button {
 }
 
 #bank-dropdown-comp, #bank-dropdown-flex {
-	width: 150px;
+	width: 400px;
 	margin-left: 5px
 }
 
@@ -566,7 +574,7 @@ div.bar-graph-control-div .export-button {
 
 #date-slider-comp,
 #date-slider-dip, #date-slider-flex {
-	width: 600px;
+	width: 400px;
 	margin-left: 5px;
 }
 

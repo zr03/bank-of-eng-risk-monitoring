@@ -24,7 +24,6 @@ TOPIC_RELEVANCE_FPATH = config.TOPIC_RELEVANCE_FPATH
 TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH = config.TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH
 RISK_CATEGORY_MAPPING_FPATH = config.RISK_CATEGORY_MAPPING_FPATH
 COLOURS_LIST = px.colors.qualitative.Pastel
-ALL_BANKS = ['Citigroup', 'JP Morgan Chase', 'Bank of America']
 
 def read_insights_data():
     df_topic_relevance = pd.read_parquet(TOPIC_RELEVANCE_FPATH)
@@ -59,10 +58,12 @@ def generate_multiline_chart(df, x_data_col, y_data_cols, x_title, y_title, plot
         )
 
     fig.update_layout(
-        title=plot_title,
+        # title=plot_title,
         xaxis=dict(title=x_title),
         yaxis=dict(title=y_title),
     )
+
+    fig.update_layout(title_text=plot_title, title_x=0.5)
 
     fig.update_layout(
         legend=dict(
@@ -77,21 +78,33 @@ def generate_multiline_chart(df, x_data_col, y_data_cols, x_title, y_title, plot
 
 def generate_layout():
 
-    df_topic_relevance, _, _ = read_insights_data()
+    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping = read_insights_data()
+
+    # Get the list of banks from the topic relevance data
+    all_banks_list = sorted(df_topic_relevance['bank'].unique().tolist())
+
+    # Get the quarters from the topic relevance data and set up the slider
     quarters = df_topic_relevance['reporting_period'].unique().tolist()
-    print(quarters)
+    slider_values = sorted(quarters)
+    slider_indices = list(range(len(quarters)))
+    slider_marks = {i: {'label': j, 'style': {'transform': 'rotate(30deg)', 'padding-right': '0px'}}
+             for i, j in zip(slider_indices, slider_values)}
+    max_value = len(slider_indices) - 1
 
     time_data_dict = {}
-    # time_data_dict['mark_indices'] = mark_indices
-    # time_data_dict['mark_values'] = mark_values
+    time_data_dict['slider_indices'] = slider_indices
+    time_data_dict['slider_values'] = slider_values
 
     time_store = dcc.Store(id="time-data", data=time_data_dict)
+
+    # Get risk categories
+    risk_categories_list = sorted(df_risk_category_mapping['risk_category'].unique().tolist())
 
     page_layout = html.Div(
         children=[
             html.Div(
                 className="card",
-                id='carD-summary',
+                id='card-summary',
                 children=[
                     html.Div(
                         children=[
@@ -132,34 +145,32 @@ def generate_layout():
                                     ),
                                     dcc.Dropdown(
                                         id='bank-dropdown-comp',
-                                        options=ALL_BANKS,
-                                        value=ALL_BANKS,
+                                        options=all_banks_list,
+                                        value=all_banks_list,
                                         multi=True,
                                         clearable=False,
                                     ),
                                 ]
                             ),
-                            # html.Div(
-                            #     className="control-slider",
-                            #     children=[
-                            #         html.Label(
-                            #             className="control-label",
-                            #             children="Date range:",
-                            #             htmlFor='date-slider-comp'
-                            #         ),
-                            #         # Consider persisting values
-                            #         dcc.RangeSlider(
-                            #             id='date-slider-comp',
-                            #             className='date-slider',
-                            #             max=total_days,
-                            #             # value=[str(datetime.date(2021, 4, 1)),
-                            #             #    str(datetime.date(2021, 4, 1))],
-                            #             # step=datetime.timedelta(days=1),
-                            #             step=1,
-                            #             marks=marks,
-                            #         ),
-                            #     ]
-                            # ),
+                            html.Div(
+                                className="control-slider",
+                                children=[
+                                    html.Label(
+                                        className="control-label",
+                                        children="Date range:",
+                                        htmlFor='date-slider-comp'
+                                    ),
+                                    # Consider persisting values
+                                    dcc.RangeSlider(
+                                        id='date-slider-comp',
+                                        className='date-slider',
+                                        max=max_value,
+                                        step=1,
+                                        marks=slider_marks,
+                                        value=[0, max_value],
+                                    ),
+                                ]
+                            ),
                         ],
                     )
 
@@ -176,11 +187,22 @@ def generate_layout():
                                 children=[
                                     html.H4(
                                         className="card-header",
-                                        children="Trending Risk Factors"
+                                        children="Sentiment Trends"
                                     ),
                                     html.P(
                                         className="explanation",
                                         children="The chart below shows how net sentiment across different risk categories has been evolving over recent quarters."
+                                    ),
+                                    html.Label(
+                                        className="control-label",
+                                        children="Risk category:",
+                                        htmlFor='risk-category-dropdown'
+                                    ),
+                                    dcc.Dropdown(
+                                        id='risk-category-dropdown',
+                                        options=risk_categories_list,
+                                        value=risk_categories_list[0],
+                                        clearable=False,
                                     ),
                                     dcc.Graph(
                                         # className='graphic',
@@ -247,27 +269,36 @@ def layout():
     return generate_layout()
 
 
-# @callback(
-#     Output(component_id='line-fig-sentiment', component_property='figure'),
-#     Input(component_id='bank-dropdown-comp', component_property='value'),
-#     Input(component_id='date-slider-comp', component_property='value'),
-
-#     prevent_initial_call=True,
-#     # background=True
-# )
-def update_agg_figs(banks, date_range_indices):
+@callback(
+    Output(component_id='line-fig-sentiment', component_property='figure'),
+    Input(component_id='bank-dropdown-comp', component_property='value'),
+    Input(component_id='date-slider-comp', component_property='value'),
+    Input(component_id='risk-category-dropdown', component_property='value'),
+    State(component_id='time-data', component_property='data'),
+    # prevent_initial_call=True,
+    # background=True
+)
+def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     # Read in the curtailment data
     df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping = read_insights_data()
 
     # Filter the data based on the selected bank(s)
-    df_topic_relevance_weighted_sentiment = df_topic_relevance_weighted_sentiment[df_topic_relevance_weighted_sentiment['bank'].isin(banks)].copy()
+    df_topic_relevance_weighted_sentiment = df_topic_relevance_weighted_sentiment[df_topic_relevance_weighted_sentiment['bank'].isin(banks)]
+
+    # Filter the data based on the selected date range
+    all_quarters = time_data['slider_values']
+    start_idx = date_range_indices[0]
+    end_idx = date_range_indices[1]
+    quarters_selected = all_quarters[start_idx:end_idx + 1]
+    df_topic_relevance_weighted_sentiment = df_topic_relevance_weighted_sentiment[df_topic_relevance_weighted_sentiment['reporting_period'].isin(quarters_selected)]
+
 
     # Get risk category and subtopic column sets
     risk_category_cols = df_risk_category_mapping['risk_category'].unique().tolist()
     subtopic_cols = df_risk_category_mapping['subtopic'].unique().tolist()
 
     # Aggregate by bank and reporting period
-    df_all_text_topics_relevance_sentiment_quarter_agg = df_all_text_topics_relevance_sentiment.groupby(
+    df_all_text_topics_relevance_sentiment_quarter_agg = df_topic_relevance_weighted_sentiment.groupby(
         ['bank', 'reporting_period']
     )[subtopic_cols + risk_category_cols].sum().reset_index()
 
@@ -289,8 +320,7 @@ def update_agg_figs(banks, date_range_indices):
     df_topics_relevance_sentiment_quarter_plotting.reset_index(inplace=True)
 
     # Generate a multiline chart for the topic relevance scores
-    risk_category = "Interest Rate Risk" #TODO: make this dynamic using a dropdown
-    cols_to_plot = [col for col in risk_category_cols if risk_category in col]
+    cols_to_plot = [col for col in df_topics_relevance_sentiment_quarter_plotting.columns if col.startswith(risk_category)]
     legend_labels = [col.split(",")[-1].strip() for col in cols_to_plot]
 
     # Generate the multiline chart

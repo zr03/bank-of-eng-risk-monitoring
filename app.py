@@ -135,7 +135,7 @@ sidebar = html.Nav(
                                                 html.Img(
                                                     className="laep_icon_svg",
                                                     id="laep_icon",
-                                                    title="Local Area Energy Planning"
+                                                    title="LLM Leaderboard"
                                                 ),
                                                 # html.Span(
                                                 #     className="caret"
@@ -191,7 +191,7 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
     if APP_ENV=="dev":
-        app.run(host="0.0.0.0", debug=True,use_reloader=True, threaded=False)
+        app.run(host="localhost", debug=True,use_reloader=True, threaded=False)
     else:
         app.run(debug=False, threaded=False)
 
