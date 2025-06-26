@@ -16,7 +16,6 @@ pandas = "^2.3.0"
 numpy = "<=2.2"
 pydantic=">=2.11"
 python-dotenv=">=1.1"
-accelerate = "^1.7.0"
 pinecone = "^7.2.0"
 
 [tool.poetry.group.dev.dependencies]
@@ -39,6 +38,13 @@ torch = { version = "^2.7.1", source = "pytorch-cu118" }
 ipywidgets = "^8.1.7"
 nbformat = ">=4.2.0"
 yfinance = "^0.2.63"
+accelerate = "^1.7.0"
+openpyxl = "^3.1.5"
+
+[tool.poetry.group.app.dependencies]
+dash = "^3.0.4"
+celery = "^5.5.3"
+dash-bootstrap-components = "^2.0.3"
 
 [[tool.poetry.source]]
 name = "pytorch-cu118"
