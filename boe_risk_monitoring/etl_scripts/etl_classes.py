@@ -767,8 +767,8 @@ class DataAggregationETL(BaseETL):
             df.to_csv(full_path_csv, index=False)
             df.to_parquet(full_path_parquet)
 
-class SupplementaryDataETL(BaseETL):
 
+class SupplementaryDataETL(BaseETL):
     def __init__(self, *args, **kwargs):
 
         filenames_dict = {'jpmorgan': ["1Q21_Earnings_Supplement.xlsx","2Q21_Earnings_Supplement.xlsx",
@@ -790,6 +790,9 @@ class SupplementaryDataETL(BaseETL):
                                             "3Q24_Financial_Report.xlsx","4Q24_Financial_Report.xlsx",
                                             "1Q25_Financial_Report.xlsx"],
                           'citigroup': ["2025fqtr1hstr.xlsx"]}
+
+        self.bankofamerica_supp = 'bankofamerica_more_metrics.xlsx'
+        
         fpaths_dict = defaultdict(list)
         for bank, fname_list in filenames_dict.items():
             for fname in fname_list:
@@ -801,7 +804,7 @@ class SupplementaryDataETL(BaseETL):
 
         self.fpaths_dict = fpaths_dict
 
-        self.sheet_name = { 'jpmorgan': 'Page 2',
+        self.sheet_name = { 'jpmorgan': ['Page 2','Page 5'],
                             'bankofamerica': ['Consolidated Statement of Incom',
                                              'Consolidated Balance Sheet'],
                             'citigroup':'Summary'}
@@ -812,6 +815,26 @@ class SupplementaryDataETL(BaseETL):
         self.transform_output = {'jpmorgan': None,
                                'bankofamerica': None,
                                'citigroup': None}
+
+        new_column_names = [0]*15
+        new_column_names[0] = 'Noninterest Expense (millions of dollars)'
+        new_column_names[1] = 'Provision for Credit Losses (millions of dollars)'
+        new_column_names[2] = 'Net income (millions of dollars)'
+        new_column_names[3] = 'Common Equity Tier 1 (CET1) Capital ratio (%)'
+        new_column_names[4] = 'Tier 1 Capital ratio ratio (%)'
+        new_column_names[5] = 'Total Capital ratio (%)'
+        new_column_names[6] = 'Supplementary Leverage ratio (SLR) (%)'
+        new_column_names[7] = 'Return on average assets, ROA (%)'
+        new_column_names[8] = 'Return on average common equity (%)'
+
+        new_column_names[9]='Return on average tangible common equity (RoTCE) (%)'
+        new_column_names[10]='Efficiency ratio(%)'
+        new_column_names[11]='Total loans (billions of dollars)'
+        new_column_names[12]='Total deposits (billions of dollars)'
+        new_column_names[13]='Book value per share (dollars)'
+        new_column_names[14]='Tangible book value per share (dollars)' 
+
+        self.new_column_names = new_column_names                     
         super().__init__(*args, **kwargs)
 
     def extract(self, *args, **kwargs):
@@ -830,7 +853,7 @@ class SupplementaryDataETL(BaseETL):
       elif self.bank == "citigroup":
         self._extract_citigroup(*args, **kwargs)
 
-    def _extract_jpmorgan(self, *args, **kwargs):
+    def _extract_jpmorgan_single(self, file_list, sheet_name):
 
       """
       Extract data from the source.
@@ -850,10 +873,23 @@ class SupplementaryDataETL(BaseETL):
         data_values_numeric = pd.to_numeric(data_values_cleaned, errors='coerce')
         df_list.append(data_values_numeric)
         quarters.append(final_columns[1][:4])
+      lista = pd.DataFrame(df_list)
+      lista.columns = line_items
+      lista.index = quarters
+      df_results = lista.dropna(axis=1)
+      return df_results
 
-      self.extract_output['jpmorgan'] = {'df_list': df_list,
-                                         'quarters': quarters,
-                                         'line_items': line_items}
+    def _extract_jpmorgan(self, *args, **kwargs):
+      """
+      Extract data from the source.
+      """
+      df_results = {}
+      for sheet in self.sheet_name['jpmorgan']:
+        df_results[sheet] =\
+            self._extract_jpmorgan_single(self.fpaths_dict['jpmorgan'], sheet)
+        
+      self.extract_output['jpmorgan'] = df_results
+      
 
     def _extract_bankofamerica_single(self, file_list, sheet_name):
       df_list = []
@@ -883,11 +919,11 @@ class SupplementaryDataETL(BaseETL):
       """
       Extract data from the source.
       """
-      df_results = []
+      df_results = {}
       for sheet in self.sheet_name['bankofamerica']:
-        df_results.append(
+        df_results[sheet] =\
             self._extract_bankofamerica_single(self.fpaths_dict['bankofamerica'], sheet)
-        )
+        
       self.extract_output['bankofamerica'] = df_results
     def _extract_citigroup(self, *args, **kwargs):
       """
@@ -912,6 +948,9 @@ class SupplementaryDataETL(BaseETL):
       quarters = df_raw.iloc[6, data_cols].astype(str).str.strip()
       years = df_raw.iloc[7, data_cols].astype(str).str.strip()
       time_labels = [f"{q} {y}" for q, y in zip(quarters, years)]
+      time_labels2=[]
+      for i in range(len(time_labels)):
+          time_labels2.append(time_labels[i][0:2]+time_labels[i][-2:])
 
       # Extract data block and label it
       data_block = df_raw.iloc[9:66, data_cols]
@@ -931,6 +970,7 @@ class SupplementaryDataETL(BaseETL):
 
       # Drop fully empty rows/columns
       df = df.dropna(how='all', axis=0).dropna(how='all', axis=1)
+      df=df.drop(index=['Ye21','Ye22','Ye23','Ye24'])
 
       self.extract_output['citigroup'] = df
 
@@ -956,45 +996,43 @@ class SupplementaryDataETL(BaseETL):
       """
       Transform the extracted data.
       """
-      df_list = self.extract_output['jpmorgan']['df_list']
-      quarters = self.extract_output['jpmorgan']['quarters']
-      line_items = self.extract_output['jpmorgan']['line_items']
-
-      lista=pd.DataFrame(df_list)
-      lista.columns=line_items
-      lista.index=quarters
-      df_results=lista.dropna(axis=1)
-      mapper={"Total net revenue":"Total revenues, net of interest expense(1)","Total noninterest expense": "Total operating expenses",
-        "Provision for credit losses": "Provisions for credit losses and for benefits and claims ",
-          "NET INCOME":"jpmorgan's net income",
-          "Net income: Basic":"Earning per share basic", "Diluted ":"Earning per share diluted",
-        "Average shares: Basic":"Average shares basic","Diluted  ":"Average shares diluted",
-          "Common shares at period-end":"Common shares outstanding, at period end","Return on common equity (“ROE”)":" Return on average common equity",
-        "Return on tangible common equity (“ROTCE”) (a)":"Return on average tangible common equity (RoTCE)(6)",
-          "Return on assets":"Return on average assets"}
-      df_results=df_results.rename(columns=mapper)
-      new_column_names = list(df_results.columns)
-      new_column_names[5] = 'Total net revenue managed basis'  # Rename the first 'NET INCOME'
-      new_column_names[6] = 'Total noninterest expense  managed basis' # Rename the second 'NET INCOME'
-      new_column_names[7] = 'Pre-provision profit (a) managed basis'  # Rename the first 'NET INCOME'
-      new_column_names[8] = 'Provision for credit losses managed basis' # Rename the second 'NET INCOME'
-      new_column_names[9] = 'NET INCOME managed basis'
-      df_results.columns = new_column_names
+      df_results = self.extract_output['jpmorgan']['Page 2']
+      df_results5 = self.extract_output['jpmorgan']['Page 5']
+      efficiency_ratio = df_results.iloc[:,1]/df_results.iloc[:,0]
+      df2 = pd.DataFrame()
+      df2 = df_results.iloc[:,[1,3,4,22,23,24,26,21,19,20]]
+      df2['Efficiency ratio'] = efficiency_ratio
+      df2['Loan'] = df_results5.iloc[:, 9].values.flatten() / 1000
+      df2['deposit'] = df_results5.iloc[:, 17].values.flatten() / 1000
+      df2['Book value per share'] = df_results.iloc[:, 16].values.flatten()
+      df2['Tangible book value per share'] = df_results.iloc[:, 17].values.flatten()
+      df2.columns = self.new_column_names
       #df_results.head()
-      self.transform_output['jpmorgan']=df_results
+      self.transform_output['jpmorgan']=df2
 
     def _transform_bankofamerica(self, *args, **kwargs):
       """
       Transform the extracted data.
       """
-      self.transform_output['bankofamerica'] = \
-              pd.concat(self.extract_output['bankofamerica'],axis=1)
+      df_more_metrics = pd.read_excel(self.bankofamerica_supp)
+      df_more_metrics.set_index('Quarters',inplace=True)
+      df_results = self.extract_output['bankofamerica']['Consolidated Statement of Incom']
+                                             
+      df_results_balance = self.extract_output['bankofamerica']['Consolidated Balance Sheet']
+      df2 = pd.DataFrame()
+      df2 = df_results.iloc[:,[16,8,19]].join(df_more_metrics.iloc[:,[0,1,2,3,4,5,6,7]]).join(df_results_balance.iloc[:,[9,22]]/1000).join(df_more_metrics.iloc[:,[8,9]])
+      
+      df2.columns = self.new_column_names
+      self.transform_output['bankofamerica'] = df2
+              
 
     def _transform_citigroup(self, *args, **kwargs):
       """
       Transform the extracted data.
       """
-      self.transform_output['citigroup'] = self.extract_output['citigroup']
+      self.transform_output['citigroup'] = self.extract_output['citigroup'].iloc[:,[1,6,13,24,25,26,27,28,29,31,33,36,37,39, 40 ]]
+      df2 = self.transform_output['citigroup']
+      df2.columns = self.new_column_names
 
     def load(self, *args, **kwargs):
       """
