@@ -17,6 +17,10 @@ numpy = "<=2.2"
 pydantic=">=2.11"
 python-dotenv=">=1.1"
 pinecone = "^7.2.0"
+pyarrow = "^20.0.0"
+
+[tool.poetry.group.dev]
+optional = true
 
 [tool.poetry.group.dev.dependencies]
 aiohttp=">=3.12"
@@ -25,7 +29,6 @@ openai=">=1.84"
 pymupdf=">=1.26"
 langchain-core = "^0.3.64"
 tiktoken = "^0.9.0"
-pyarrow = "^20.0.0"
 ipykernel = "^6.29.5"
 matplotlib = "^3.10.3"
 seaborn = "^0.13.2"
@@ -40,6 +43,9 @@ nbformat = ">=4.2.0"
 yfinance = "^0.2.63"
 accelerate = "^1.7.0"
 openpyxl = "^3.1.5"
+
+[tool.poetry.group.app]
+optional = true
 
 [tool.poetry.group.app.dependencies]
 dash = "^3.0.4"
