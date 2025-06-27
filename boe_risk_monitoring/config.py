@@ -1,6 +1,7 @@
 import os
 
 DATA_FOLDER = "data"
+NEWS_FOLDER_PATH = os.path.join(DATA_FOLDER, "news_all_banks")
 AGGREGATED_DATA_FOLDER_NAME = "aggregated"
 SHARE_PRICE_HISTORY_START_DATE = "2022-01-01"
 PERMISSIBLE_BANK_NAMES = ["citigroup", "jpmorgan", "bankofamerica"] # These match the folder names in the data directory

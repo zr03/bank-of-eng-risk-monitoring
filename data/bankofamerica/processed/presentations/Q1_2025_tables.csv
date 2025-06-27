@@ -1,0 +1,183 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Transactions - Credit / Debit,1,,,77.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+$ volume - Credit / Debit,2,,,21.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+Transactions - ACH / Wire,3,,,11.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+$ volume - ACH / Wire,4,,,45.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+Transactions - P2P / P2B,5,,,7.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+$ volume - P2P / P2B,6,,,16.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+Transactions - Cash / Check,7,,,4.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+$ volume - Cash / Check,8,,,17.0,,,,,,%,4,Financial Results,Q1_2025,2025-04-15
+"Total revenue, net of interest expense",1,Increased by $2.0B (8%) from 4Q24.,Increased by $1.5B (6%) from 1Q24.,27.4,25.3,25.8,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Provision for credit losses,2,Flat compared to 4Q24.,Increased by $0.2B (12%) from 1Q24.,1.5,1.5,1.3,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Net charge-offs,3,Flat compared to 4Q24.,Flat compared to 1Q24.,1.5,1.5,1.5,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Reserve build (release),4,,Increased by $0.2B from a release of $0.2B in 1Q24.,,,-0.2,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Noninterest expense,5,Increased by $1.0B (6%) from 4Q24.,Increased by $0.5B (3%) from 1Q24.,17.8,16.8,17.2,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Pretax income,6,Increased by $1.0B (14%) from 4Q24.,Increased by $0.9B (12%) from 1Q24.,8.1,7.1,7.3,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+"Pretax, pre-provision income",7,Increased by $1.0B (12%) from 4Q24.,Increased by $1.0B (12%) from 1Q24.,9.6,8.6,8.6,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Income tax expense,8,Increased by $0.3B (63%) from 4Q24.,Increased by $0.1B (22%) from 1Q24.,0.7,0.4,0.6,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Net income,9,Increased by $0.7B (11%) from 4Q24.,Increased by $0.7B (11%) from 1Q24.,7.4,6.7,6.7,,,,$B,5,Financial Results,Q1_2025,2025-04-15
+Diluted earnings per share,10,Increased by $0.08 (10%) from 4Q24.,Increased by $0.14 (18%) from 1Q24.,0.9,0.82,0.76,,,,$ per share,5,Financial Results,Q1_2025,2025-04-15
+Average diluted common shares,11,Decreased by 73 million (-1%) from 4Q24.,Decreased by 261 million (-3%) from 1Q24.,7771.0,7844.0,8031.0,,,,millions,5,Financial Results,Q1_2025,2025-04-15
+Return on average assets,1,,,0.89,0.8,0.83,,,,%,5,Financial Results,Q1_2025,2025-04-15
+Return on average common shareholders' equity,2,,,10.4,9.4,9.4,,,,%,5,Financial Results,Q1_2025,2025-04-15
+Return on average tangible common shareholders' equity,3,,,13.9,12.6,12.7,,,,%,5,Financial Results,Q1_2025,2025-04-15
+Efficiency ratio,4,,,65.0,66.0,67.0,,,,%,5,Financial Results,Q1_2025,2025-04-15
+Total assets,1,,,3349.0,3262.0,3274.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Total loans and leases,2,,,1111.0,1096.0,1049.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Cash and cash equivalents,3,,,274.0,290.0,313.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Total debt securities,4,,,939.0,917.0,910.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Carried at fair value,5,,,389.0,359.0,323.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+"Held-to-maturity, at cost",6,,,551.0,559.0,587.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Total deposits,1,,,1990.0,1965.0,1946.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Long-term debt,2,,,304.0,283.0,296.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Global Liquidity Sources (average),3,,,942.0,953.0,909.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Common equity tier 1 capital,1,,,201.0,201.0,197.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Standardized approach - Risk-weighted assets (RWA),2,,,1712.0,1696.0,1658.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Standardized approach - CET1 ratio,3,,,11.8,11.9,11.9,,,,%,7,Financial Results,Q1_2025,2025-04-15
+Advanced approaches - Risk-weighted assets,4,,,1516.0,1490.0,1463.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Advanced approaches - CET1 ratio,5,,,13.3,13.5,13.4,,,,%,7,Financial Results,Q1_2025,2025-04-15
+Supplementary Leverage Ratio,6,,,5.7,5.9,6.0,,,,%,7,Financial Results,Q1_2025,2025-04-15
+Common shareholders' equity,1,,,275.0,272.0,265.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Common equity ratio,2,,,8.2,8.4,8.1,,,,%,7,Financial Results,Q1_2025,2025-04-15
+Tangible common shareholders' equity,3,,,205.0,202.0,195.0,,,,$B,7,Financial Results,Q1_2025,2025-04-15
+Tangible common equity ratio,4,,,6.3,6.3,6.1,,,,%,7,Financial Results,Q1_2025,2025-04-15
+Book value per common share,1,,,36.39,35.79,33.71,,,,USD,7,Financial Results,Q1_2025,2025-04-15
+Tangible book value per common share,2,,,27.12,26.58,24.79,,,,USD,7,Financial Results,Q1_2025,2025-04-15
+Common shares outstanding,3,,,7.56,7.61,7.87,,,,billions,7,Financial Results,Q1_2025,2025-04-15
+Provision,1,,,1100.0,1083.0,959.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Nonperforming loans and leases,2,,,2613.0,2647.0,2697.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+% of loans and leases,3,,,0.56,0.57,0.59,,,,%,15,Financial Results,Q1_2025,2025-04-15
+Consumer 30+ days performing past due,4,,,4441.0,4592.0,4206.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Fully-insured,5,,,460.0,488.0,476.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Non fully-insured,6,,,3981.0,4104.0,3730.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Consumer 90+ days performing past due,7,,,1569.0,1631.0,1531.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Allowance for loans and leases,8,,,8552.0,8570.0,8476.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+% of loans and leases,9,,,1.83,1.84,1.87,,,,%,15,Financial Results,Q1_2025,2025-04-15
+# times annualized NCOs,10,,,1.88,1.95,2.05,,,,x,15,Financial Results,Q1_2025,2025-04-15
+Provision,1,,,380.0,370.0,360.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Reservable criticized utilized exposure,2,,,27652.0,26495.0,24529.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+Nonperforming loans and leases,3,,,3470.0,3328.0,3186.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+% of loans and leases,4,,,0.54,0.53,0.54,,,,%,15,Financial Results,Q1_2025,2025-04-15
+Allowance for loans and leases,5,,,4704.0,4670.0,4737.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+% of loans and leases,6,,,0.74,0.75,0.8,,,,%,15,Financial Results,Q1_2025,2025-04-15
+Commercial excl. small business NCOs,7,,,200.0,236.0,362.0,,,,$MM,15,Financial Results,Q1_2025,2025-04-15
+% of loans and leases,8,,,0.13,0.16,0.26,,,,%,15,Financial Results,Q1_2025,2025-04-15
+"Total revenue, net of interest expense",1,Decreased by $153MM from 4Q24.,Increased by $327MM from 1Q24.,10493.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Provision for credit losses,2,Increased by $38MM from 4Q24.,Increased by $142MM from 1Q24.,1292.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Noninterest expense,3,Increased by $195MM from 4Q24.,Increased by $351MM from 1Q24.,5826.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Pretax income,4,Decreased by $386MM from 4Q24.,Decreased by $166MM from 1Q24.,3375.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+"Pretax, pre-provision income",5,Decreased by $348MM from 4Q24.,Decreased by $24MM from 1Q24.,4667.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Income tax expense,6,Decreased by $96MM from 4Q24.,Decreased by $41MM from 1Q24.,844.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Net income,7,Decreased by $290MM from 4Q24.,Decreased by $125MM from 1Q24.,2531.0,,,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Average deposits,1,,,947.6,942.3,952.5,,,,$B,16,Financial Results,Q1_2025,2025-04-15
+Rate paid on deposits,2,,,0.61,0.64,0.55,,,,%,16,Financial Results,Q1_2025,2025-04-15
+Cost of deposits,3,,,1.54,1.49,1.43,,,,%,16,Financial Results,Q1_2025,2025-04-15
+Average loans and leases,4,,,315.0,316.1,313.0,,,,$B,16,Financial Results,Q1_2025,2025-04-15
+Net charge-off ratio,5,,,1.62,1.57,1.47,,,,%,16,Financial Results,Q1_2025,2025-04-15
+Net charge-offs,6,,,1262.0,1246.0,1144.0,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Reserve build,7,,,30.0,8.0,6.0,,,,$MM,16,Financial Results,Q1_2025,2025-04-15
+Consumer investment assets,8,,,497.7,517.8,456.4,,,,$B,16,Financial Results,Q1_2025,2025-04-15
+Active mobile banking users,9,,,40.5,40.0,38.5,,,,MM,16,Financial Results,Q1_2025,2025-04-15
+% Consumer sales through digital channels,10,,,65.0,61.0,50.0,,,,%,16,Financial Results,Q1_2025,2025-04-15
+Number of financial centers,11,,,3681.0,3700.0,3804.0,,,,,16,Financial Results,Q1_2025,2025-04-15
+Combined credit / debit purchase volumes,12,,,228.4,240.9,219.4,,,,$B,16,Financial Results,Q1_2025,2025-04-15
+Total consumer credit card risk-adjusted margin,13,,,6.68,7.12,6.81,,,,%,16,Financial Results,Q1_2025,2025-04-15
+Return on average allocated capital,14,,,23.0,26.0,25.0,,,,%,16,Financial Results,Q1_2025,2025-04-15
+Allocated capital,15,,,44.0,43.3,43.3,,,,$B,16,Financial Results,Q1_2025,2025-04-15
+Efficiency ratio,16,,,56.0,53.0,54.0,,,,%,16,Financial Results,Q1_2025,2025-04-15
+"Total revenue, net of interest expense",1,Increased by $14MM from 4Q24.,Increased by $425MM from 1Q24.,6016.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Provision (benefit) for credit losses,2,Increased by $11MM from 4Q24.,Decreased by $27MM from 1Q24.,14.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Noninterest expense,3,Increased by $221MM from 4Q24.,Increased by $395MM from 1Q24.,4659.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Pretax income,4,Decreased by $218MM from 4Q24.,Increased by $3MM from 1Q24.,1343.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+"Pretax, pre-provision income",5,Decreased by $207MM from 4Q24.,Increased by $30MM from 1Q24.,1357.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Income tax expense,6,Decreased by $54MM from 4Q24.,Increased by $1MM from 1Q24.,336.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Net income,7,Decreased by $164MM from 4Q24.,Increased by $2MM from 1Q24.,1007.0,,,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Average deposits,1,,,286.4,285.0,297.4,,,,$B,17,Financial Results,Q1_2025,2025-04-15
+Rate paid on deposits,2,,,2.5,2.75,2.89,,,,%,17,Financial Results,Q1_2025,2025-04-15
+Average loans and leases,3,,,232.3,228.8,218.6,,,,$B,17,Financial Results,Q1_2025,2025-04-15
+Net charge-off ratio,4,,,0.02,0.02,0.03,,,,%,17,Financial Results,Q1_2025,2025-04-15
+Net charge-offs,5,,,9.0,10.0,17.0,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+Reserve build (release),6,,,5.0,-7.0,-30.0,,,,$MM,17,Financial Results,Q1_2025,2025-04-15
+AUM flows,7,,,24.0,22.5,24.7,,,,$B,17,Financial Results,Q1_2025,2025-04-15
+Pretax margin,8,,,22.0,26.0,24.0,,,,%,17,Financial Results,Q1_2025,2025-04-15
+Return on average allocated capital,9,,,21.0,25.0,22.0,,,,%,17,Financial Results,Q1_2025,2025-04-15
+Allocated capital,10,,,19.8,18.5,18.5,,,,$B,17,Financial Results,Q1_2025,2025-04-15
+"Total revenue, net of interest expense",1,Decreased by $114MM from 4Q24.,Decreased by $3MM from 1Q24.,5977.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Provision for credit losses,2,Decreased by $36MM from 4Q24.,Decreased by $75MM from 1Q24.,154.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Noninterest expense,3,Increased by $233MM from 4Q24.,Increased by $172MM from 1Q24.,3184.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Pretax income,4,Decreased by $311MM from 4Q24.,Decreased by $100MM from 1Q24.,2639.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+"Pretax, pre-provision income",5,Decreased by $347MM from 4Q24.,Decreased by $175MM from 1Q24.,2793.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Income tax expense,6,Decreased by $85MM from 4Q24.,Decreased by $27MM from 1Q24.,726.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Net income,7,Decreased by $226MM from 4Q24.,Decreased by $73MM from 1Q24.,1913.0,,,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Total Corporation IB fees (excl. self-led),1,,,1523.0,1654.0,1568.0,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Global Banking IB fees,2,,,847.0,985.0,850.0,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Business Lending revenue,3,,,2097.0,2347.0,2404.0,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Global Transaction Services revenue,4,,,2680.0,2698.0,2666.0,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Average deposits,1,,,575.2,582.0,525.7,,,,$B,18,Financial Results,Q1_2025,2025-04-15
+Average loans and leases,2,,,378.7,375.3,373.6,,,,$B,18,Financial Results,Q1_2025,2025-04-15
+Net charge-off ratio,3,,,0.2,0.23,0.38,,,,%,18,Financial Results,Q1_2025,2025-04-15
+Net charge-offs,4,,,187.0,220.0,350.0,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Reserve build (release),5,,,-33.0,-30.0,-121.0,,,,$MM,18,Financial Results,Q1_2025,2025-04-15
+Return on average allocated capital,6,,,15.0,17.0,16.0,,,,%,18,Financial Results,Q1_2025,2025-04-15
+Allocated capital,7,,,50.8,49.3,49.3,,,,$B,18,Financial Results,Q1_2025,2025-04-15
+Efficiency ratio,8,,,53.0,48.0,50.0,,,,%,18,Financial Results,Q1_2025,2025-04-15
+"Total revenue, net of interest expense",1,"Increased by $1,744MM from 4Q24.",Increased by $701MM from 1Q24.,6584.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Net DVA,2,Decreased by $19MM from 4Q24's $38MM.,Decreased by $85MM from 1Q24's $104MM.,19.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Total revenue (excl. net DVA),3,"Increased by $1,706MM from 4Q24.",Increased by $597MM from 1Q24.,6565.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Provision (benefit) for credit losses,4,Increased by $18MM from 4Q24.,Decreased by $36MM from 1Q24's $64MM.,28.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Noninterest expense,5,Increased by $306MM from 4Q24.,Increased by $319MM from 1Q24.,3811.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Pretax income,6,"Increased by $1,420MM from 4Q24.",Increased by $318MM from 1Q24.,2745.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+"Pretax, pre-provision income",7,"Increased by $1,438MM from 4Q24.",Increased by $382MM from 1Q24.,2773.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Income tax expense,8,Increased by $412MM from 4Q24.,Increased by $92MM from 1Q24.,796.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Net income,9,"Increased by $1,008MM from 4Q24.",Increased by $226MM from 1Q24.,1949.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Net income (excl. net DVA),10,Increased by $980MM from 4Q24.,Increased by $147MM from 1Q24.,1935.0,,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Sales and trading revenue,1,,,5664.0,4106.0,5092.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Sales and trading revenue (excl. net DVA),2,,,5645.0,4125.0,5177.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+FICC (excl. net DVA),3,,,3463.0,2482.0,3307.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Equities (excl. net DVA),4,,,2182.0,1643.0,1870.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Global Markets IB fees,5,,,681.0,639.0,708.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Average total assets,1,,,969.3,918.7,895.4,,,,$B,19,Financial Results,Q1_2025,2025-04-15
+Average trading-related assets,2,,,668.2,620.9,629.8,,,,$B,19,Financial Results,Q1_2025,2025-04-15
+Average 99% VaR,3,,,91.0,68.0,64.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Average loans and leases,4,,,159.6,152.4,133.8,,,,$B,19,Financial Results,Q1_2025,2025-04-15
+Net charge-offs,5,,,6.0,2.0,,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Reserve build (release),6,,,22.0,8.0,-36.0,,,,$MM,19,Financial Results,Q1_2025,2025-04-15
+Return on average allocated capital,7,,,16.0,8.0,15.0,,,,%,19,Financial Results,Q1_2025,2025-04-15
+Allocated capital,8,,,49.0,45.5,45.5,,,,$B,19,Financial Results,Q1_2025,2025-04-15
+Efficiency ratio,9,,,58.0,72.0,59.0,,,,%,19,Financial Results,Q1_2025,2025-04-15
+"Total revenue, net of interest expense",1,Loss increased by $519MM from 4Q24.,Loss increased by $85MM from 1Q24.,-1559.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+Provision (benefit) for credit losses,2,Benefit decreased by $3MM from 4Q24.,Benefit increased by $3MM from 1Q24.,-8.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+Noninterest expense,3,Increased by $28MM from 4Q24.,Decreased by $704MM from 1Q24.,290.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+Pretax income (loss),4,Loss worsened by $494MM from 4Q24.,Loss improved by $786MM from 1Q24.,-1841.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+"Pretax, pre-provision income (loss)",5,Loss worsened by $491MM from 4Q24.,Loss improved by $789MM from 1Q24.,-1849.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+Income tax expense (benefit),6,Benefit increased by $91MM from 4Q24.,Benefit increased by $94MM from 1Q24.,-1837.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+Net income (loss),7,Loss worsened by $403MM from 4Q24.,Loss improved by $692MM from 1Q24.,-4.0,,,,,,$MM,20,Financial Results,Q1_2025,2025-04-15
+Total loans and leases,1,,,1111.0,,,,,,$B,22,Financial Results,Q1_2025,2025-04-15
+Consumer,2,,,468.0,,,,,,$B,22,Financial Results,Q1_2025,2025-04-15
+Consumer credit card % FICO <660,3,,,12.0,,,,,,%,22,Financial Results,Q1_2025,2025-04-15
+Home equity,4,,,26.0,,,,,,$B,22,Financial Results,Q1_2025,2025-04-15
+GWIM loans % of total loans,5,,,21.0,,,,,,%,22,Financial Results,Q1_2025,2025-04-15
+Total Commercial % Non-U.S. commercial,6,,,22.0,,,,,,%,22,Financial Results,Q1_2025,2025-04-15
+Commercial real estate % CRE construction,7,,,15.0,,,,,,%,22,Financial Results,Q1_2025,2025-04-15
+Nonperforming loans,8,,,0.55,,,,,,%,22,Financial Results,Q1_2025,2025-04-15
+NCOs,9,,,1.5,,,,,,$B,22,Financial Results,Q1_2025,2025-04-15
+Nine-quarter stressed net credit losses,10,,,5.5,,,,,,%,22,Financial Results,Q1_2025,2025-04-15
+Tangible common shareholders' equity,11,,,205.0,,,,,,$B,22,Financial Results,Q1_2025,2025-04-15
+Global Liquidity Sources,12,,,942.0,,,,,,$B,22,Financial Results,Q1_2025,2025-04-15
+Ending balance ($B),1,,,468.0,,,,,,$B,23,Financial Results,Q1_2025,2025-04-15
+NCO ratio (%),2,,,0.98,,,,,,%,23,Financial Results,Q1_2025,2025-04-15
+30 days performing past due ($B),3,,,4.4,,,,,,$B,23,Financial Results,Q1_2025,2025-04-15
+% of loans,4,,,0.95,,,,,,%,23,Financial Results,Q1_2025,2025-04-15
+90 days performing past due ($B),5,,,1.6,,,,,,$B,23,Financial Results,Q1_2025,2025-04-15
+% of loans,6,,,0.34,,,,,,%,23,Financial Results,Q1_2025,2025-04-15
+Allowance as % of loans,7,,,1.83,,,,,,%,23,Financial Results,Q1_2025,2025-04-15
+Average FICO,8,,,,,,,,,,23,Financial Results,Q1_2025,2025-04-15
+% FICO < 660,9,,,,,,,,,,23,Financial Results,Q1_2025,2025-04-15
+Loan-to-value,10,,,,,,,,,,23,Financial Results,Q1_2025,2025-04-15
+Debt-to-income,11,,,,,,,,,,23,Financial Results,Q1_2025,2025-04-15
+Consumer Banking,1,,,4667.0,5015.0,4691.0,,,,$ millions,32,Glossary,Q1_2025,2025-04-15
+Global Wealth & Investment Management,2,,,1357.0,1564.0,1327.0,,,,$ millions,32,Glossary,Q1_2025,2025-04-15
+Global Banking,3,,,2793.0,3140.0,2968.0,,,,$ millions,32,Glossary,Q1_2025,2025-04-15
+Global Markets,4,,,2773.0,1335.0,2391.0,,,,$ millions,32,Glossary,Q1_2025,2025-04-15
+All Other,5,,,-1849.0,-2340.0,-2638.0,,,,$ millions,32,Glossary,Q1_2025,2025-04-15
+Total Corporation,6,,,9596.0,8560.0,8581.0,,,,$ millions,32,Glossary,Q1_2025,2025-04-15

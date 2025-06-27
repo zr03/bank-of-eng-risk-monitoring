@@ -1,0 +1,178 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+"Total revenue, net of interest expense",1,Decreased by $0.4B (2%) from the preceding quarter.,Increased by $0.2B (1%) from the same quarter last year.,25.4,25.8,25.2,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Provision for credit losses,2,Increased by $0.2B (14%) from the preceding quarter.,Increased by $0.4B (34%) from the same quarter last year.,1.5,1.3,1.1,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Net charge-offs,3,Remained flat from the preceding quarter.,Increased by $0.7B (76%) from the same quarter last year.,1.5,1.5,0.9,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Reserve build (release),4,Increased by $0.2B from a release in the preceding quarter.,Decreased by $0.3B from a build in the same quarter last year.,,-0.2,0.3,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,5,Decreased by $0.9B (5%) from the preceding quarter.,Increased by $0.3B (2%) from the same quarter last year.,16.3,17.2,16.0,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Pretax income,6,Increased by $0.3B (4%) from the preceding quarter.,Decreased by $0.5B (6%) from the same quarter last year.,7.6,7.3,8.0,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+"Pretax, pre-provision income",7,Increased by $0.5B (6%) from the preceding quarter.,Decreased by $0.1B (1%) from the same quarter last year.,9.1,8.6,9.2,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Income tax expense,8,Increased by $0.1B (13%) from the preceding quarter.,Increased by $0.1B (6%) from the same quarter last year.,0.7,0.6,0.6,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Net income,9,Increased by $0.2B (3%) from the preceding quarter.,Decreased by $0.5B (7%) from the same quarter last year.,6.9,6.7,7.4,,,,$B,2,Financial Results,Q2_2024,2024-07-16
+Diluted earnings per share,10,Increased by $0.07 (9%) from the preceding quarter.,Decreased by $0.05 (6%) from the same quarter last year.,0.83,0.76,0.88,,,,$ per share,2,Financial Results,Q2_2024,2024-07-16
+Average diluted common shares (in millions),11,Decreased by 71 million (1%) from the preceding quarter.,Decreased by 120 million (1%) from the same quarter last year.,7961.0,8031.0,8081.0,,,,millions,2,Financial Results,Q2_2024,2024-07-16
+Return on average assets,1,,,0.85,0.83,0.94,,,,%,2,Financial Results,Q2_2024,2024-07-16
+Return on average common shareholders' equity,2,,,10.0,9.4,11.2,,,,%,2,Financial Results,Q2_2024,2024-07-16
+Return on average tangible common shareholders' equity,3,,,13.6,12.7,15.5,,,,%,2,Financial Results,Q2_2024,2024-07-16
+Efficiency ratio,4,,,64.0,67.0,64.0,,,,%,2,Financial Results,Q2_2024,2024-07-16
+Total assets,1,,,3258.0,3274.0,3123.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Total loans and leases,2,,,1057.0,1049.0,1051.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Cash and cash equivalents,3,,,321.0,313.0,374.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Total debt securities,4,,,878.0,910.0,756.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Total deposits,1,,,1910.0,1946.0,1877.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Long-term debt,2,,,290.0,296.0,286.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Global Liquidity Sources (average),3,,,909.0,909.0,867.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Common shareholders' equity,1,,,267.0,265.0,255.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Common equity ratio,2,,,8.2,8.1,8.2,,,,%,7,Financial Results,Q2_2024,2024-07-16
+Tangible common shareholders' equity,3,,,197.0,195.0,185.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Tangible common equity ratio,4,,,6.2,6.1,6.1,,,,%,7,Financial Results,Q2_2024,2024-07-16
+Book value per common share,1,,,34.39,33.71,32.05,,,,USD,7,Financial Results,Q2_2024,2024-07-16
+Tangible book value per common share,2,,,25.37,24.79,23.23,,,,USD,7,Financial Results,Q2_2024,2024-07-16
+Common shares outstanding,3,,,7.77,7.87,7.95,,,,billions,7,Financial Results,Q2_2024,2024-07-16
+Common equity tier 1 capital,1,,,198.0,197.0,190.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Standardized approach Risk-weighted assets (RWA),2,,,1662.0,1658.0,1639.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Standardized approach CET1 ratio,3,,,11.9,11.9,11.6,,,,%,7,Financial Results,Q2_2024,2024-07-16
+Advanced approaches Risk-weighted assets,4,,,1469.0,1463.0,1436.0,,,,$B,7,Financial Results,Q2_2024,2024-07-16
+Advanced approaches CET1 ratio,5,,,13.5,13.4,13.2,,,,%,7,Financial Results,Q2_2024,2024-07-16
+Supplementary Leverage Ratio,6,,,6.0,6.0,6.0,,,,%,7,Financial Results,Q2_2024,2024-07-16
+Provision,1,,,1094.0,959.0,1100.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Nonperforming loans and leases,2,,,2671.0,2697.0,2729.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+% of loans and leases,3,,,0.58,0.59,0.6,,,,%,13,Financial Results,Q2_2024,2024-07-16
+Consumer 30+ days performing past due,4,,,4346.0,4206.0,3603.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Fully-insured,5,,,466.0,476.0,525.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Non fully-insured,6,,,3880.0,3730.0,3078.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Consumer 90+ days performing past due,7,,,1474.0,1531.0,1185.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Allowance for loans and leases,8,,,8514.0,8476.0,7750.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+% of loans and leases,9,,,1.86,1.87,1.7,,,,%,13,Financial Results,Q2_2024,2024-07-16
+# times annualized NCOs,10,,,2.0,2.05,2.68,,,,x,13,Financial Results,Q2_2024,2024-07-16
+Provision,1,,,414.0,360.0,25.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Reservable criticized utilized exposure,2,,,24761.0,24529.0,21469.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+Nonperforming loans and leases,3,,,2802.0,3186.0,1397.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+% of loans and leases,4,,,0.47,0.54,0.24,,,,%,13,Financial Results,Q2_2024,2024-07-16
+Allowance for loans and leases,5,,,4724.0,4737.0,5200.0,,,,$MM,13,Financial Results,Q2_2024,2024-07-16
+% of loans and leases,6,,,0.79,0.8,0.88,,,,%,13,Financial Results,Q2_2024,2024-07-16
+"Total revenue, net of interest expense",1,Increased by $40MM from the preceding quarter.,Decreased by $318MM from the same quarter last year.,10206.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Provision for credit losses,2,Increased by $131MM from the preceding quarter.,Increased by $14MM from the same quarter last year.,1281.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,3,Decreased by $11MM from the preceding quarter.,Increased by $11MM from the same quarter last year.,5464.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Pretax income,4,Decreased by $80MM from the preceding quarter.,Decreased by $343MM from the same quarter last year.,3461.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+"Pretax, pre-provision income",5,Increased by $51MM from the preceding quarter.,Decreased by $329MM from the same quarter last year.,4742.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Income tax expense,6,Decreased by $19MM from the preceding quarter.,Decreased by $85MM from the same quarter last year.,866.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Net income,7,Decreased by $61MM from the preceding quarter.,Decreased by $258MM from the same quarter last year.,2595.0,,,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Average deposits,1,,,949.2,952.5,1006.3,,,,$B,14,Financial Results,Q2_2024,2024-07-16
+Rate paid on deposits,2,,,0.6,0.55,0.22,,,,%,14,Financial Results,Q2_2024,2024-07-16
+Cost of deposits,3,,,1.44,1.43,1.37,,,,,14,Financial Results,Q2_2024,2024-07-16
+Average loans and leases,4,,,312.3,313.0,306.7,,,,$B,14,Financial Results,Q2_2024,2024-07-16
+Net charge-off ratio,5,,,1.53,1.47,1.07,,,,%,14,Financial Results,Q2_2024,2024-07-16
+Net charge-offs ($MM),6,,,1188.0,1144.0,819.0,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Reserve build ($MM),7,,,93.0,6.0,448.0,,,,$MM,14,Financial Results,Q2_2024,2024-07-16
+Consumer investment assets,8,,,476.1,456.4,386.8,,,,$B,14,Financial Results,Q2_2024,2024-07-16
+Active mobile banking users (MM),9,,,39.0,38.5,37.3,,,,MM,14,Financial Results,Q2_2024,2024-07-16
+% Consumer sales through digital channels,10,,,53.0,50.0,51.0,,,,%,14,Financial Results,Q2_2024,2024-07-16
+Number of financial centers,11,,,3786.0,3804.0,3887.0,,,,,14,Financial Results,Q2_2024,2024-07-16
+Combined credit / debit purchase volumes,12,,,233.6,219.4,226.1,,,,$B,14,Financial Results,Q2_2024,2024-07-16
+Total consumer credit card risk-adjusted margin,13,,,6.75,6.81,7.83,,,,%,14,Financial Results,Q2_2024,2024-07-16
+Return on average allocated capital,14,,,24.0,25.0,27.0,,,,%,14,Financial Results,Q2_2024,2024-07-16
+Allocated capital,15,,,43.3,43.3,42.0,,,,$B,14,Financial Results,Q2_2024,2024-07-16
+Efficiency ratio,16,,,54.0,54.0,52.0,,,,%,14,Financial Results,Q2_2024,2024-07-16
+"Total revenue, net of interest expense",1,Decreased by $17MM from the preceding quarter.,Increased by $332MM from the same quarter last year.,5574.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Provision (benefit) for credit losses,2,Decreased by $20MM from the preceding quarter.,Increased from a benefit of $6MM in the same quarter last year.,7.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,3,Decreased by $65MM from the preceding quarter.,Increased by $274MM from the same quarter last year.,4199.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Pretax income,4,Increased by $28MM from the preceding quarter.,Increased by $64MM from the same quarter last year.,1368.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+"Pretax, pre-provision income",5,Increased by $48MM from the preceding quarter.,Increased by $58MM from the same quarter last year.,1375.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Income tax expense,6,Increased by $7MM from the preceding quarter.,Increased by $16MM from the same quarter last year.,342.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Net income,7,Increased by $21MM from the preceding quarter.,Increased by $48MM from the same quarter last year.,1026.0,,,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Average deposits,1,,,287.7,297.4,295.4,,,,$B,15,Financial Results,Q2_2024,2024-07-16
+Rate paid on deposits,2,,,3.14,2.89,2.35,,,,%,15,Financial Results,Q2_2024,2024-07-16
+Average loans and leases,3,,,222.8,218.6,218.6,,,,$B,15,Financial Results,Q2_2024,2024-07-16
+Net charge-off ratio,4,,,0.02,0.03,0.01,,,,%,15,Financial Results,Q2_2024,2024-07-16
+Net charge-offs ($MM),5,,,11.0,17.0,3.0,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+Reserve build (release) ($MM),6,,,-4.0,-30.0,10.0,,,,$MM,15,Financial Results,Q2_2024,2024-07-16
+AUM flows,7,,,10.8,24.7,14.3,,,,$B,15,Financial Results,Q2_2024,2024-07-16
+Pretax margin,8,,,25.0,24.0,25.0,,,,%,15,Financial Results,Q2_2024,2024-07-16
+Return on average allocated capital,9,,,22.0,22.0,21.0,,,,%,15,Financial Results,Q2_2024,2024-07-16
+Allocated capital,10,,,18.5,18.5,18.5,,,,$B,15,Financial Results,Q2_2024,2024-07-16
+"Total revenue, net of interest expense",1,Increased by $73MM from the preceding quarter.,Decreased by $409MM from the same quarter last year.,6053.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Provision for credit losses,2,Increased by $6MM from the preceding quarter.,Increased by $226MM from the same quarter last year.,235.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,3,Decreased by $113MM from the preceding quarter.,Increased by $80MM from the same quarter last year.,2899.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Pretax income,4,Increased by $180MM from the preceding quarter.,Decreased by $715MM from the same quarter last year.,2919.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+"Pretax, pre-provision income",5,Increased by $186MM from the preceding quarter.,Decreased by $489MM from the same quarter last year.,3154.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Income tax expense,6,Increased by $50MM from the preceding quarter.,Decreased from a benefit of $178MM in the same quarter last year.,803.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Net income,7,Increased by $130MM from the preceding quarter.,Decreased from a loss of $537MM in the same quarter last year.,2116.0,,,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Total Corporation IB fees (excl. self-led),1,,,1561.0,1568.0,1212.0,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Global Banking IB fees,2,,,835.0,850.0,718.0,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Business Lending revenue,3,,,2565.0,2404.0,2692.0,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Global Transaction Services revenue,4,,,2561.0,2666.0,2923.0,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Average deposits,1,,,525.4,525.7,497.5,,,,$B,16,Financial Results,Q2_2024,2024-07-16
+Average loans and leases,2,,,372.7,373.6,383.1,,,,$B,16,Financial Results,Q2_2024,2024-07-16
+Net charge-off ratio,3,,,0.38,0.38,0.06,,,,%,16,Financial Results,Q2_2024,2024-07-16
+Net charge-offs ($MM),4,,,346.0,350.0,59.0,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Reserve build (release) ($MM),5,,,-111.0,-121.0,-50.0,,,,$MM,16,Financial Results,Q2_2024,2024-07-16
+Return on average allocated capital,6,,,17.0,16.0,22.0,,,,%,16,Financial Results,Q2_2024,2024-07-16
+Allocated capital,7,,,49.3,49.3,49.3,,,,$B,16,Financial Results,Q2_2024,2024-07-16
+Efficiency ratio,8,,,48.0,50.0,44.0,,,,%,16,Financial Results,Q2_2024,2024-07-16
+"Total revenue, net of interest expense",1,Decreased by $424MM from the preceding quarter.,Increased by $588MM from the same quarter last year.,5459.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Net DVA,2,Decreased from a gain of $84MM in the preceding quarter.,Decreased from a gain of $101MM in the same quarter last year.,-1.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Total revenue (excl. net DVA),3,Decreased by $508MM from the preceding quarter.,Increased by $487MM from the same quarter last year.,5460.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Provision (benefit) for credit losses,4,Decreased from a provision of $23MM in the preceding quarter to a benefit.,Changed from a benefit of $9MM in the same quarter last year.,-13.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,5,Decreased by $6MM from the preceding quarter.,Increased by $137MM from the same quarter last year.,3486.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Pretax income,6,Decreased by $441MM from the preceding quarter.,Increased by $460MM from the same quarter last year.,1986.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+"Pretax, pre-provision income",7,Decreased by $418MM from the preceding quarter.,Increased by $451MM from the same quarter last year.,1973.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Income tax expense,8,Decreased by $128MM from the preceding quarter.,Increased by $156MM from the same quarter last year.,576.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Net income,9,Decreased by $313MM from the preceding quarter.,Increased by $304MM from the same quarter last year.,1410.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Net income (excl. net DVA),10,Decreased by $377MM from the preceding quarter.,Increased by $227MM from the same quarter last year.,1411.0,,,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Sales and trading revenue,1,,,4679.0,5092.0,4285.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Sales and trading revenue (excl. net DVA),2,,,4680.0,5177.0,4387.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+FICC (excl. net DVA),3,,,2737.0,3307.0,2764.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Equities (excl. net DVA),4,,,1943.0,1870.0,1623.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Global Markets IB fees,5,,,719.0,708.0,503.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Average total assets,1,,,908.5,895.4,877.5,,,,$B,17,Financial Results,Q2_2024,2024-07-16
+Average trading-related assets,2,,,639.8,629.8,621.1,,,,$B,17,Financial Results,Q2_2024,2024-07-16
+Average 99% VaR ($MM),3,,,90.0,80.0,76.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Average loans and leases,4,,,135.1,133.8,128.5,,,,$B,17,Financial Results,Q2_2024,2024-07-16
+Net charge-offs ($MM),5,,,2.0,,5.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Reserve build (release) ($MM),6,,,-15.0,-36.0,-9.0,,,,$MM,17,Financial Results,Q2_2024,2024-07-16
+Return on average allocated capital,7,,,13.0,15.0,10.0,,,,%,17,Financial Results,Q2_2024,2024-07-16
+Allocated capital,8,,,45.5,45.5,45.5,,,,$B,17,Financial Results,Q2_2024,2024-07-16
+Efficiency ratio,9,,,64.0,59.0,69.0,,,,%,17,Financial Results,Q2_2024,2024-07-16
+"Total revenue, net of interest expense",1,Loss decreased by $111MM from the preceding quarter.,Increased loss from a gain of $12MM in the same quarter last year.,-1755.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+Provision (benefit) for credit losses,2,Changed from a provision of $9MM in the preceding quarter to a benefit.,Decreased from a provision of $158MM in the same quarter last year.,-2.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,3,Decreased by $733MM from the preceding quarter.,Increased from a benefit of $231MM in the same quarter last year.,261.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+Pretax income (loss),4,Loss increased from a gain of $613MM in the preceding quarter.,Increased loss from a gain of $85MM in the same quarter last year.,-2014.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+"Pretax, pre-provision income (loss)",5,Loss increased from a gain of $622MM in the preceding quarter.,Increased loss from a gain of $243MM in the same quarter last year.,-2016.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+Income tax (benefit),6,Changed from an expense of $167MM in the preceding quarter to a benefit.,Increased benefit from an expense of $153MM in the same quarter last year.,-1764.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+Net income (loss),7,Loss increased from a gain of $446MM in the preceding quarter.,Increased loss from a loss of $68MM in the same quarter last year.,-250.0,,,,,,$MM,18,Financial Results,Q2_2024,2024-07-16
+Average outstandings ($B),1,,,99.0,99.8,94.4,,,,$B,25,Financial Results,Q2_2024,2024-07-16
+NCO ratio,2,,,3.88,3.62,2.6,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Risk-adjusted margin,3,,,6.75,6.81,7.83,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average line FICO,4,,,777.0,777.0,773.0,,,,,25,Financial Results,Q2_2024,2024-07-16
+Digitally-enabled sales,5,,,72.0,71.0,70.0,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average outstandings ($B),1,,,55.7,55.9,54.7,,,,$B,25,Financial Results,Q2_2024,2024-07-16
+NCO ratio,2,,,0.4,0.51,0.18,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average booked FICO,3,,,802.0,801.0,795.0,,,,,25,Financial Results,Q2_2024,2024-07-16
+Digitally-enabled sales,4,,,89.0,89.0,84.0,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average outstandings ($B),1,,,115.2,115.5,117.1,,,,$B,25,Financial Results,Q2_2024,2024-07-16
+NCO ratio,2,,,0.01,0.01,0.02,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average FICO,3,,,775.0,772.0,771.0,,,,,25,Financial Results,Q2_2024,2024-07-16
+Average booked loan-to-value (LTV),4,,,72.0,73.0,73.0,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Digitally-enabled sales,5,,,79.0,77.0,81.0,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average outstandings ($B),1,,,21.4,21.3,21.2,,,,$B,25,Financial Results,Q2_2024,2024-07-16
+NCO ratio,2,,,-0.06,-0.04,-0.05,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Average FICO,3,,,793.0,791.0,790.0,,,,,25,Financial Results,Q2_2024,2024-07-16
+Average booked combined LTV,4,,,55.0,55.0,58.0,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Digitally-enabled sales,5,,,53.0,53.0,62.0,,,,%,25,Financial Results,Q2_2024,2024-07-16
+Noninterest expense,1,,,,17.2,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+Income before income taxes,2,,,,7.3,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+"Pretax, pre-provision income",3,,,,8.6,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+Income tax expense (benefit),4,,,,0.6,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+Net income,5,,,,6.7,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+Net income applicable to common shareholders,6,,,,6.1,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+Diluted earnings per share,7,,,,0.76,,,,,$ billions,32,Footnotes,Q2_2024,2024-07-16
+Return on average assets,1,,,,0.83,,,,,%,32,Footnotes,Q2_2024,2024-07-16
+Return on average common shareholders' equity,2,,,,9.4,,,,,%,32,Footnotes,Q2_2024,2024-07-16
+Return on average tangible common shareholders' equity,3,,,,12.7,,,,,%,32,Footnotes,Q2_2024,2024-07-16
+Efficiency ratio,4,,,,67.0,,,,,%,32,Footnotes,Q2_2024,2024-07-16
+Consumer Banking,1,,,4742.0,4691.0,5071.0,,,,$ Millions,33,Footnotes,Q2_2024,2024-07-16
+Global Wealth & Investment Management,2,,,1375.0,1327.0,1317.0,,,,$ Millions,33,Footnotes,Q2_2024,2024-07-16
+Global Banking,3,,,3154.0,2968.0,3643.0,,,,$ Millions,33,Footnotes,Q2_2024,2024-07-16
+Global Markets,4,,,1973.0,2391.0,1522.0,,,,$ Millions,33,Footnotes,Q2_2024,2024-07-16
+All Other,5,,,-2016.0,-2638.0,-2259.0,,,,$ Millions,33,Footnotes,Q2_2024,2024-07-16
+Total Corporation,6,,,9068.0,8581.0,9159.0,,,,$ Millions,33,Footnotes,Q2_2024,2024-07-16

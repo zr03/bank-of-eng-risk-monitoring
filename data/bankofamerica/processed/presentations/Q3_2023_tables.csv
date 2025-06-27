@@ -1,0 +1,176 @@
+row_heading,row_number,preceding_quarter_trend_summary,year_on_year_quarter_trend_summary,current_quarter_value,preceding_quarter_value,prev_year_same_quarter_value,preceding_year_trend_summary,current_year_value,preceding_year_value,unit,page,section,reporting_period,date_of_presentation
+Revenue (%),1,Decreased by 8 percentage points from 11% in 2Q23.,Decreased by 5 percentage points from 8% in 3Q22.,3.0,11.0,8.0,,,,%,6,Financial Results,Q3_2023,2023-10-17
+Expense (%),2,Decreased by 2 percentage points from 5% in 2Q23.,Decreased by 3 percentage points from 6% in 3Q22.,3.0,5.0,6.0,,,,%,6,Financial Results,Q3_2023,2023-10-17
+"Total Revenue, net of interest expense",1,Remained flat compared to $25.2B in 2Q23.,"Increased by $0.7B, or 3%, from $24.5B in 3Q22.",25.2,25.2,24.5,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Provision for credit losses,2,"Increased by $0.1B, or 10%, from $1.1B in 2Q23.","Increased by $0.3B, or 37%, from $0.9B in 3Q22.",1.2,1.1,0.9,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Net charge-offs,3,"Increased by $0.1B, or 7%, from $0.9B in 2Q23.","Increased by $0.4B, or 79%, from $0.5B in 3Q22.",0.9,0.9,0.5,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Reserve build (release),4,Remained flat compared to $0.3B in 2Q23.,"Decreased by $0.1B, or 20%, from a build of $0.4B in 3Q22.",0.3,0.3,0.4,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Noninterest expense,5,"Decreased by $0.2B, or 1%, from $16.0B in 2Q23.","Increased by $0.5B, or 3%, from $15.3B in 3Q22.",15.8,16.0,15.3,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Pretax income,6,"Increased by $0.1B, or 1%, from $8.0B in 2Q23.","Decreased by $0.2B, or 2%, from $8.3B in 3Q22.",8.1,8.0,8.3,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+"Pretax, pre-provision income",7,"Increased by $0.2B, or 2%, from $9.2B in 2Q23.","Increased by $0.1B, or 1%, from $9.2B in 3Q22.",9.3,9.2,9.2,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Income tax expense,8,"Decreased by $0.3B, or 53%, from $0.6B in 2Q23.","Decreased by $0.9B, or 76%, from $1.2B in 3Q22.",0.3,0.6,1.2,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Net income,9,"Increased by $0.4B, or 5%, from $7.4B in 2Q23.","Increased by $0.7B, or 10%, from $7.1B in 3Q22.",7.8,7.4,7.1,,,,$B,10,Financial Results,Q3_2023,2023-10-17
+Diluted earnings per share,10,"Increased by $0.02, or 2%, from $0.88 in 2Q23.","Increased by $0.09, or 11%, from $0.81 in 3Q22.",0.9,0.88,0.81,,,,USD,10,Financial Results,Q3_2023,2023-10-17
+Average diluted common shares (in millions),11,"Decreased by 5 million from 8,081 million in 2Q23.","Decreased by 85 million, or 1%, from 8,161 million in 3Q22.",8076.0,8081.0,8161.0,,,,millions,10,Financial Results,Q3_2023,2023-10-17
+Return on average assets,1,,,0.99,0.94,0.9,,,,%,10,Financial Results,Q3_2023,2023-10-17
+Return on average common shareholders' equity,2,,,11.2,11.2,10.8,,,,%,10,Financial Results,Q3_2023,2023-10-17
+Return on average tangible common shareholders' equity,3,,,15.5,15.5,15.2,,,,%,10,Financial Results,Q3_2023,2023-10-17
+Efficiency ratio,4,,,63.0,64.0,62.0,,,,%,10,Financial Results,Q3_2023,2023-10-17
+Total assets,1,,,3153.0,3123.0,3073.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Total loans and leases,2,,,1049.0,1051.0,1032.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Cash and cash equivalents,3,,,352.0,374.0,205.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Total debt securities,4,,,779.0,756.0,880.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Total deposits,1,,,1885.0,1877.0,1938.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Long-term debt,2,,,290.0,286.0,269.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Global Liquidity Sources (average),3,,,859.0,867.0,941.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Common shareholders' equity,1,,,259.0,255.0,240.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Common equity ratio,2,,,8.2,8.2,7.8,,,,%,11,Financial Results,Q3_2023,2023-10-17
+Tangible common shareholders' equity,3,,,189.0,185.0,170.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Tangible common equity ratio,4,,,6.1,6.1,5.7,,,,%,11,Financial Results,Q3_2023,2023-10-17
+Book value per common share,1,,,32.65,32.05,29.96,,,,USD,11,Financial Results,Q3_2023,2023-10-17
+Tangible book value per common share,2,,,23.79,23.23,21.21,,,,USD,11,Financial Results,Q3_2023,2023-10-17
+Common shares outstanding (in billions),3,,,7.92,7.95,8.02,,,,billions,11,Financial Results,Q3_2023,2023-10-17
+Common equity tier 1 capital,1,,,194.0,190.0,176.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+Risk-weighted assets (RWA),2,"Decreased from $1,639B in 2Q23.","Increased from $1,599B in 3Q22.",1634.0,1639.0,1599.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+CET1 ratio,3,Increased from 11.6% in 2Q23.,Increased from 11.0% in 3Q22.,11.9,11.6,11.0,,,,%,11,Financial Results,Q3_2023,2023-10-17
+Risk-weighted assets,4,"Increased from $1,436B in 2Q23.","Increased from $1,391B in 3Q22.",1442.0,1436.0,1391.0,,,,$B,11,Financial Results,Q3_2023,2023-10-17
+CET1 ratio,5,Increased from 13.2% in 2Q23.,Increased from 12.6% in 3Q22.,13.5,13.2,12.6,,,,%,11,Financial Results,Q3_2023,2023-10-17
+Supplementary Leverage Ratio,6,Increased from 6.0% in 2Q23.,Increased from 5.8% in 3Q22.,6.2,6.0,5.8,,,,%,11,Financial Results,Q3_2023,2023-10-17
+Provision,1,,,1218.0,1100.0,722.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Nonperforming loans and leases,2,,,2792.0,2729.0,2760.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+% of loans and leases,3,,,0.61,0.6,0.61,,,,%,18,Financial Results,Q3_2023,2023-10-17
+Consumer 30+ days performing past due,4,,,3975.0,3603.0,2949.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Fully-insured,5,,,523.0,525.0,672.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Non fully-insured,6,,,3452.0,3078.0,2277.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Consumer 90+ days performing past due,7,,,1282.0,1185.0,1001.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Allowance for loans and leases,8,,,8167.0,7750.0,6880.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+% of loans and leases,9,,,1.78,1.7,1.53,,,,%,18,Financial Results,Q3_2023,2023-10-17
+# times annualized NCOs,10,,,2.56,2.68,3.77,,,,x,18,Financial Results,Q3_2023,2023-10-17
+Provision,1,,,16.0,25.0,176.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Reservable criticized utilized exposure,2,,,23722.0,21469.0,17659.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+Nonperforming loans and leases,3,,,2041.0,1397.0,1223.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+% of loans and leases,4,,,0.35,0.24,0.21,,,,%,18,Financial Results,Q3_2023,2023-10-17
+Allowance for loans and leases,5,,,5120.0,5200.0,5422.0,,,,$MM,18,Financial Results,Q3_2023,2023-10-17
+% of loans and leases,6,,,0.87,0.88,0.94,,,,%,18,Financial Results,Q3_2023,2023-10-17
+"Total revenue, net of interest expense",1,Decreased by $52MM from 2Q23.,Increased by $568MM from 3Q22.,10472.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Provision (benefit) for credit losses,2,Increased by $130MM from 2Q23.,Increased by $659MM from 3Q22.,1397.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Noninterest expense,3,Decreased by $197MM from 2Q23.,Increased by $159MM from 3Q22.,5256.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Pretax income,4,Increased by $15MM from 2Q23.,Decreased by $250MM from 3Q22.,3819.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+"Pretax, pre-provision income",5,Increased by $145MM from 2Q23.,Increased by $409MM from 3Q22.,5216.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Income tax expense,6,Increased by $4MM from 2Q23.,Decreased by $42MM from 3Q22.,955.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Net income,7,Increased by $11MM from 2Q23.,Decreased by $208MM from 3Q22.,2864.0,,,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Average deposits,1,,,980.1,1006.3,1069.1,,,,$B,19,Financial Results,Q3_2023,2023-10-17
+Rate paid on deposits,2,,,0.34,0.22,0.03,,,,%,19,Financial Results,Q3_2023,2023-10-17
+Cost of deposits,3,,,1.32,1.37,1.17,,,,%,19,Financial Results,Q3_2023,2023-10-17
+Average loans and leases,4,,,310.8,306.7,295.2,,,,$B,19,Financial Results,Q3_2023,2023-10-17
+Net charge-off ratio,5,,,1.16,1.07,0.69,,,,%,19,Financial Results,Q3_2023,2023-10-17
+Net charge-offs ($MM),6,,,911.0,819.0,512.0,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Reserve build (release) ($MM),7,,,486.0,448.0,226.0,,,,$MM,19,Financial Results,Q3_2023,2023-10-17
+Consumer investment assets,8,,,387.5,386.8,302.4,,,,$B,19,Financial Results,Q3_2023,2023-10-17
+Active mobile banking users (MM),9,,,37.5,37.3,34.9,,,,MM,19,Financial Results,Q3_2023,2023-10-17
+% Consumer sales through digital channels,10,,,46.0,51.0,48.0,,,,%,19,Financial Results,Q3_2023,2023-10-17
+Number of financial centers,11,,,3862.0,3887.0,3932.0,,,,,19,Financial Results,Q3_2023,2023-10-17
+Combined credit / debit purchase volumes,12,,,225.3,226.1,218.2,,,,$B,19,Financial Results,Q3_2023,2023-10-17
+Total consumer credit card risk-adjusted margin,13,,,7.7,7.83,10.07,,,,%,19,Financial Results,Q3_2023,2023-10-17
+Return on average allocated capital,14,,,27.0,27.0,30.0,,,,%,19,Financial Results,Q3_2023,2023-10-17
+Allocated capital,15,,,42.0,42.0,40.0,,,,$B,19,Financial Results,Q3_2023,2023-10-17
+Efficiency ratio,16,,,50.0,52.0,51.0,,,,%,19,Financial Results,Q3_2023,2023-10-17
+"Total revenue, net of interest expense",1,Increased by $79MM from 2Q23.,Decreased by $108MM from 3Q22.,5321.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Provision (benefit) for credit losses,2,"Decreased by $19MM from 2Q23, indicating a larger benefit.","Decreased by $43MM from 3Q22, indicating a smaller benefit.",-6.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Noninterest expense,3,Increased by $25MM from 2Q23.,Increased by $134MM from 3Q22.,3950.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Pretax income,4,Increased by $73MM from 2Q23.,Decreased by $199MM from 3Q22.,1377.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+"Pretax, pre-provision income",5,Increased by $54MM from 2Q23.,Decreased by $242MM from 3Q22.,1371.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Income tax expense,6,Increased by $18MM from 2Q23.,Decreased by $42MM from 3Q22.,344.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Net income,7,Increased by $55MM from 2Q23.,Decreased by $157MM from 3Q22.,1033.0,,,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Average deposits,1,,,291.8,295.4,339.5,,,,$B,20,Financial Results,Q3_2023,2023-10-17
+Rate paid on deposits,2,,,2.69,2.35,0.57,,,,%,20,Financial Results,Q3_2023,2023-10-17
+Average loans and leases,3,,,218.6,218.6,223.7,,,,$B,20,Financial Results,Q3_2023,2023-10-17
+Net charge-off ratio,4,,,0.01,0.01,0.01,,,,%,20,Financial Results,Q3_2023,2023-10-17
+Net charge-offs ($MM),5,,,4.0,3.0,5.0,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+Reserve build (release) ($MM),6,,,-10.0,10.0,32.0,,,,$MM,20,Financial Results,Q3_2023,2023-10-17
+AUM flows,7,,,14.2,14.3,4.1,,,,$B,20,Financial Results,Q3_2023,2023-10-17
+Pretax margin,8,,,26.0,25.0,29.0,,,,%,20,Financial Results,Q3_2023,2023-10-17
+Return on average allocated capital,9,,,22.0,21.0,27.0,,,,%,20,Financial Results,Q3_2023,2023-10-17
+Allocated capital,10,,,18.5,18.5,17.5,,,,$B,20,Financial Results,Q3_2023,2023-10-17
+"Total revenue, net of interest expense",1,Decreased by $259MM from 2Q23.,Increased by $612MM from 3Q22.,6203.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Provision (benefit) for credit losses,2,"Benefit decreased by $128MM from a benefit of $128MM in 2Q23, but remained a benefit.","Benefit decreased by $289MM from a benefit of $289MM in 3Q22, but remained a benefit.",-119.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Noninterest expense,3,Decreased by $15MM from 2Q23.,Increased by $153MM from 3Q22.,2804.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Pretax income,4,Decreased by $116MM from 2Q23.,Increased by $748MM from 3Q22.,3518.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+"Pretax, pre-provision income",5,Decreased by $244MM from 2Q23.,Increased by $459MM from 3Q22.,3399.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Income tax expense,6,Decreased by $31MM from 2Q23.,Increased by $216MM from 3Q22.,950.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Net income,7,Decreased by $85MM from 2Q23.,Increased by $532MM from 3Q22.,2568.0,,,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Total Corporation IB fees (excl. self-led),1,,,1188.0,1212.0,1167.0,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Global Banking IB fees,2,,,743.0,718.0,726.0,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Business Lending revenue,3,,,2623.0,2692.0,2079.0,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Global Transaction Services revenue,4,,,2769.0,2923.0,2803.0,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Average deposits,1,,,504.4,497.5,495.2,,,,$B,21,Financial Results,Q3_2023,2023-10-17
+Average loans and leases,2,,,376.2,383.1,384.3,,,,$B,21,Financial Results,Q3_2023,2023-10-17
+Net charge-off ratio,3,,,0.02,0.06,0.03,,,,%,21,Financial Results,Q3_2023,2023-10-17
+Net charge-offs ($MM),4,,,20.0,59.0,26.0,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Reserve build (release) ($MM),5,,,-139.0,-50.0,144.0,,,,$MM,21,Financial Results,Q3_2023,2023-10-17
+Return on average allocated capital,6,,,21.0,22.0,18.0,,,,%,21,Financial Results,Q3_2023,2023-10-17
+Allocated capital,7,,,49.3,49.3,44.5,,,,$B,21,Financial Results,Q3_2023,2023-10-17
+Efficiency ratio,8,,,45.0,44.0,47.0,,,,%,21,Financial Results,Q3_2023,2023-10-17
+"Total revenue, net of interest expense",1,Increased by $71MM from 2Q23.,Increased by $459MM from 3Q22.,4942.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Net DVA,2,Decreased by $86MM from 2Q23.,Decreased by $2MM from 3Q22.,-16.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Total revenue (excl. net DVA),3,Decreased by $15MM from 2Q23.,Increased by $461MM from 3Q22.,4958.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Provision (benefit) for credit losses,4,Increased by $10MM from a benefit of $10MM in 2Q23.,Increased from a benefit of $25MM in 3Q22.,-14.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Noninterest expense,5,Decreased by $114MM from 2Q23.,Increased by $212MM from 3Q22.,3235.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Pretax income,6,Increased by $195MM from 2Q23.,Increased by $272MM from 3Q22.,1721.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+"Pretax, pre-provision income",7,Increased by $185MM from 2Q23.,Increased by $247MM from 3Q22.,1707.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Income tax expense,8,Increased by $53MM from 2Q23.,Increased by $89MM from 3Q22.,473.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Net income,9,Increased by $142MM from 2Q23.,Increased by $183MM from 3Q22.,1248.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Net income (excl. net DVA),10,Increased by $76MM from 2Q23.,Increased by $184MM from 3Q22.,1260.0,,,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Sales and trading revenue,1,,,4405.0,4285.0,4092.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Sales and trading revenue (excl. net DVA),2,,,4421.0,4387.0,4106.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+FICC (excl. net DVA),3,,,2723.0,2764.0,2567.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Equities (excl. net DVA),4,,,1698.0,1623.0,1539.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Global Markets IB fees,5,,,463.0,503.0,430.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Average total assets,1,,,863.7,877.5,847.9,,,,$B,22,Financial Results,Q3_2023,2023-10-17
+Average trading-related assets,2,,,609.7,621.1,592.4,,,,$B,22,Financial Results,Q3_2023,2023-10-17
+Average 99% VaR ($MM),3,,,69.0,76.0,117.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Average loans and leases,4,,,131.3,128.5,120.4,,,,$B,22,Financial Results,Q3_2023,2023-10-17
+Net charge-offs ($MM),5,,,13.0,5.0,-1.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Reserve build (release) ($MM),6,,,-27.0,-9.0,12.0,,,,$MM,22,Financial Results,Q3_2023,2023-10-17
+Return on average allocated capital,7,,,11.0,10.0,10.0,,,,%,22,Financial Results,Q3_2023,2023-10-17
+Allocated capital,8,,,45.5,45.5,42.5,,,,$B,22,Financial Results,Q3_2023,2023-10-17
+Efficiency ratio,9,,,65.0,69.0,67.0,,,,%,22,Financial Results,Q3_2023,2023-10-17
+"Total revenue, net of interest expense",1,Increased by $149MM from 2Q23.,Decreased by $819MM from 3Q22.,-1618.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+Provision (benefit) for credit losses,2,Increased by $136MM from 2Q23.,Decreased by $34MM from 3Q22.,-24.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+Noninterest expense,3,Increased by $101MM from 2Q23.,Decreased by $123MM from 3Q22.,593.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+Pretax income (loss),4,Loss widened by $88MM from 2Q23.,Loss widened by $730MM from 3Q22.,-2187.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+"Pretax, pre-provision income",5,Increased by $48MM from 2Q23.,Loss widened by $696MM from 3Q22.,-2211.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+Income tax (benefit),6,Benefit increased by $359MM from 2Q23.,"Benefit increased by $1,100MM from 3Q22.",-2276.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+Net income (loss),7,Increased by $271MM from 2Q23.,Increased by $370MM from 3Q22.,89.0,,,,,,$MM,23,Financial Results,Q3_2023,2023-10-17
+Average outstandings ($B),1,,,98.0,94.4,85.0,,,,$B,27,Financial Results,Q3_2023,2023-10-17
+NCO ratio,2,,,2.72,2.6,1.53,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Risk-adjusted margin,3,,,7.7,7.83,10.07,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Average line FICO,4,,,774.0,773.0,770.0,,,,,27,Financial Results,Q3_2023,2023-10-17
+Average outstandings ($B),1,,,55.2,54.7,52.0,,,,$B,27,Financial Results,Q3_2023,2023-10-17
+NCO ratio,2,,,0.2,0.18,0.07,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Average booked FICO,3,,,796.0,795.0,789.0,,,,,27,Financial Results,Q3_2023,2023-10-17
+Average outstandings ($B),1,,,116.8,117.1,118.2,,,,$B,27,Financial Results,Q3_2023,2023-10-17
+NCO ratio,2,,,0.03,0.02,0.01,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Average FICO,3,,,772.0,771.0,768.0,,,,,27,Financial Results,Q3_2023,2023-10-17
+Average booked loan-to-value (LTV),4,,,72.0,73.0,72.0,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Average outstandings ($B),1,,,21.1,21.2,21.9,,,,$B,27,Financial Results,Q3_2023,2023-10-17
+NCO ratio,2,,,-0.04,-0.05,-0.04,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Average FICO,3,,,787.0,790.0,792.0,,,,,27,Financial Results,Q3_2023,2023-10-17
+Average booked combined LTV,4,,,58.0,58.0,58.0,,,,%,27,Financial Results,Q3_2023,2023-10-17
+Total loans and leases,1,,,1049.0,,1003.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+% consumer,2,,,44.0,,67.0,,,,%,35,Financial Results,Q3_2023,2023-10-17
+Consumer credit card,3,,,100.0,,161.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+Home equity,4,,,26.0,,154.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+GWIM loans,5,,,219.0,,100.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+Commercial real estate,6,,,73.0,,69.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+Nonperforming loans,7,,,0.46,,3.75,,,,%,35,Financial Results,Q3_2023,2023-10-17
+NCOs,8,,,931.0,,11000.0,,,,million USD,35,Financial Results,Q3_2023,2023-10-17
+Nine-quarter stressed net credit losses,9,,,5.1,,10.0,,,,%,35,Financial Results,Q3_2023,2023-10-17
+Tangible common shareholders' equity,10,,,189.0,,112.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+Global Liquidity Sources,11,,,859.0,,214.0,,,,$B,35,Financial Results,Q3_2023,2023-10-17
+Consumer Banking,1,"Pretax, pre-provision income increased from $5,071MM in 2Q23.","Pretax, pre-provision income increased from $4,807MM in 3Q22.",5216.0,5071.0,4807.0,,,,$ Millions,39,Footnotes,Q3_2023,2023-10-17
+Global Wealth & Investment Management,2,"Pretax, pre-provision income increased from $1,317MM in 2Q23.","Pretax, pre-provision income decreased from $1,613MM in 3Q22.",1371.0,1317.0,1613.0,,,,$ Millions,39,Footnotes,Q3_2023,2023-10-17
+Global Banking,3,"Pretax, pre-provision income decreased from $3,643MM in 2Q23.","Pretax, pre-provision income increased from $2,940MM in 3Q22.",3399.0,3643.0,2940.0,,,,$ Millions,39,Footnotes,Q3_2023,2023-10-17
+Global Markets,4,"Pretax, pre-provision income increased from $1,522MM in 2Q23.","Pretax, pre-provision income increased from $1,460MM in 3Q22.",1707.0,1522.0,1460.0,,,,$ Millions,39,Footnotes,Q3_2023,2023-10-17
+All Other,5,"Pretax, pre-provision income loss narrowed from ($2,259MM) in 2Q23.","Pretax, pre-provision income loss widened from ($1,515MM) in 3Q22.",-2211.0,-2259.0,-1515.0,,,,$ Millions,39,Footnotes,Q3_2023,2023-10-17
+Total Corporation,6,"Pretax, pre-provision income increased from $9,159MM in 2Q23.","Pretax, pre-provision income increased from $9,199MM in 3Q22.",9329.0,9159.0,9199.0,,,,$ Millions,39,Footnotes,Q3_2023,2023-10-17
