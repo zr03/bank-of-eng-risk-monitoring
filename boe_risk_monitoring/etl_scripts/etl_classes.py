@@ -1216,7 +1216,7 @@ class FinancialNewsETL(BaseETL):
             "- banks_referenced: a list of banks mentioned in the chunk (return None if no banks are mentioned, or a single-item list if only one bank is mentioned). Only include banks that are explicitly compared or whose performance is discussed in the chunk. List each bank mentioned **once only**. Map aliases (e.g., 'Citi' --> 'citigroup') as needed.\n"
             "2. graphs: For each graph on the slide (e.g., line or bar charts), return:\n"
             "- caption: a short descriptive title.\n"
-            "- trend summary: a brief explanation of key trends or insights for the plotted variables. If the graph compares peers, make sure to summarise the comparison\n"
+            f"- trend summary: a brief explanation of key trends or insights for the plotted variables. If the graph compares peers, make sure to summarise the comparison. When relevant, **focus on comparing these banks**: {', '.join(BANK_NAME_MAPPING.values())}\n"
             # "- is_peer_comparison: a boolean indicating if the graph compares the performance of bank peers.\n"
             "- banks_referenced: a list of banks referenced in the graph (return None if no banks are referenced, or a single-item list if only one bank is referenced). Only include banks that are explicitly compared or whose performance is discussed in the chunk. List each bank mentioned **once only**. Map aliases (e.g., 'Citi' --> 'citigroup') as needed."
         )
@@ -1278,6 +1278,10 @@ class FinancialNewsETL(BaseETL):
         """
         Cleans the output dataframe to ensure it has the correct columns and data types.
         """
+        # Check if the dataframe is empty
+        if df.empty:
+            print("Warning: The dataframe is empty. Returning an empty dataframe.")
+            return df
         # Drop generic statements which don't mention specific banks
         df = df.dropna(subset=['banks_referenced'])
         # Check that all remaining entries in banks_referenced are lists
@@ -1342,25 +1346,25 @@ if __name__ == "__main__":
     #     output_dir_path=output_dir_path,
     #     )
 
-    # Instantiate the PresentationETL class
-    input_pdf_path = os.path.join("data", "bankofamerica", "raw_docs", "presentations", "Q3_2024_presentation.pdf")
-    presentation_etl = PresentationETL(
-    	input_pdf_path=input_pdf_path,
-    	is_q4_presentation=True,
-    )
+    # # Instantiate the PresentationETL class
+    # input_pdf_path = os.path.join("data", "bankofamerica", "raw_docs", "presentations", "Q1_2023_presentation.pdf")
+    # presentation_etl = PresentationETL(
+    # 	input_pdf_path=input_pdf_path,
+    # 	is_q4_presentation=False,
+    # )
 
-    # Run the transform method (no need to run extract method for presentations)
-    analysis_results_dict = presentation_etl.transform(
-    	llm_backend="gemini",
-    	llm_model_name="gemini-2.5-pro-preview-06-05",
-    )
+    # # Run the transform method (no need to run extract method for presentations)
+    # analysis_results_dict = presentation_etl.transform(
+    # 	llm_backend="gemini",
+    # 	llm_model_name="gemini-2.5-pro-preview-06-05",
+    # )
 
-    # Run the load method
-    output_dir_path = os.path.join("data", "bankofamerica", "processed", "presentations")
-    presentation_etl.load(
-    	transformed_data=analysis_results_dict,
-    	output_dir_path=output_dir_path,
-    )
+    # # Run the load method
+    # output_dir_path = os.path.join("data", "bankofamerica", "processed", "presentations")
+    # presentation_etl.load(
+    # 	transformed_data=analysis_results_dict,
+    # 	output_dir_path=output_dir_path,
+    # )
 
     # # Instantiate the DataAggregationETL class
     # data_aggregation_etl = DataAggregationETL(
@@ -1416,29 +1420,29 @@ if __name__ == "__main__":
     # # Load data
     # vector_db_etl.load(vectors)
 
-    # start = time.time()
-    # # Instantiate the FinancialNewsETL class
-    # # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
-    # fname="2025_04_04_stocks_blogexcerpt_Trump tariffs day 3 as it happened_ S&P 500 sheds $5.4tn in 2 days; China announces 34% retaliatory levies on US.pdf"
-    # input_pdf_path = os.path.join(DATA_FOLDER, "news_all_banks", "raw_docs", "allbanks_mixed_comparative", fname)
+    start = time.time()
+    # Instantiate the FinancialNewsETL class
+    # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
+    fname="2025_05_20_JPMorgan London trader unfairly dismissed despite spoofing.pdf"
+    input_pdf_path = os.path.join(DATA_FOLDER, "news_all_banks", "raw_docs", "jpmorgan_news", fname)
 
-    # financial_news_etl = FinancialNewsETL(
-    #     input_pdf_path=input_pdf_path,
-    # )
-    # # Run the transform method
-    # analysis_results_dict = financial_news_etl.transform(
-    #     llm_backend="gemini",
-    #     llm_model_name="gemini-2.5-pro-preview-06-05",
-    # )
+    financial_news_etl = FinancialNewsETL(
+        input_pdf_path=input_pdf_path,
+    )
+    # Run the transform method
+    analysis_results_dict = financial_news_etl.transform(
+        llm_backend="gemini",
+        llm_model_name="gemini-2.5-pro-preview-06-05",
+    )
 
-    # # Run the load method
-    # output_dir_path = os.path.join(DATA_FOLDER, "news_all_banks", "processed")
-    # financial_news_etl.load(
-    #     transformed_data=analysis_results_dict,
-    #     output_dir_path=output_dir_path,
-    # )
-    # elapsed_time = time.time() - start
-    # print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
+    # Run the load method
+    output_dir_path = os.path.join(DATA_FOLDER, "news_all_banks", "processed")
+    financial_news_etl.load(
+        transformed_data=analysis_results_dict,
+        output_dir_path=output_dir_path,
+    )
+    elapsed_time = time.time() - start
+    print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
 
 
 

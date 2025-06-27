@@ -5,6 +5,7 @@ import boe_risk_monitoring.config as config
 DATA_FOLDER = config.DATA_FOLDER
 PERMISSIBLE_INPUT_FILE_TYPES = ["transcripts", "presentations"]
 AGGREGATED_DATA_FOLDER_NAME = config.AGGREGATED_DATA_FOLDER_NAME
+NEWS_FOLDER_PATH = config.NEWS_FOLDER_PATH
 
 def get_bank_dirs(data_dir=DATA_FOLDER):
 	data_dir = Path(data_dir)
@@ -59,3 +60,45 @@ def construct_input_output_file_paths(data_dir=DATA_FOLDER, input_file_type="tra
 		raise ValueError("Something went wrong! Mismatch between number of input files and output directories. Check your input directories.")
 
 	return input_fpaths, output_dirs_expanded
+
+def construct_input_output_file_paths_news(news_dir_path=NEWS_FOLDER_PATH, skip_if_output_exists=False):
+	# Get the raw docs directory
+	news_raw_docs_dir = Path(news_dir_path, "raw_docs")
+	if not news_raw_docs_dir.exists():
+		raise FileNotFoundError(f"The raw docs directory {news_raw_docs_dir} does not exist. Please check the path.")
+	# Get the news subfolder paths
+	news_subdirs = [item for item in Path(news_raw_docs_dir).iterdir() if item.is_dir()]
+	if not news_subdirs:
+		raise FileNotFoundError(f"No subdirectories found in {news_raw_docs_dir}. Please check the path or ensure there are subdirectories with news articles in pdf format.")
+
+	# Create the output directory if it does not exist
+	output_dir = Path(news_dir_path, "processed")
+	# Store whether the output directory already exists
+	output_dir_exists = output_dir.exists()
+
+	input_fpaths = []
+	for news_subdir in news_subdirs:
+		# Get all pdf files in the subdirectory
+		pdf_files = list(news_subdir.glob("*.pdf"))
+		if not pdf_files:
+			print(f"No pdf files found in {news_subdir}. Skipping.")
+			continue
+		for pdf_file in pdf_files:
+			if skip_if_output_exists and output_dir_exists: # We only check for existing output files if the output directory exists
+				# Check if the corresponding output file already exists
+				fname = pdf_file.stem
+				# Check if we have any files in the output directory that have the same stem
+				output_file_exists = any([(output_obj.is_file() and output_obj.stem.startswith(fname)) for output_obj in output_dir.iterdir()])
+				if output_file_exists:
+					print(f"Skipping {pdf_file} as output already exists in {output_dir}.")
+					continue
+			input_fpaths.append(str(pdf_file))  # Convert to string for downstream compatibility
+
+	# Create the output directory if it does not exist
+	if not output_dir_exists:
+		print(f"Creating output directory {output_dir}.")
+		output_dir.mkdir(parents=True)
+	output_dir_str = str(output_dir)  # Convert to string for downstream compatibility
+	output_dirs = [output_dir_str] * len(input_fpaths)  # All outputs go to the same output directory
+
+	return input_fpaths, output_dirs
