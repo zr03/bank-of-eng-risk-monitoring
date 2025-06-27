@@ -5,7 +5,7 @@ from boe_risk_monitoring.etl_scripts.etl_classes import FinancialNewsETL
 from boe_risk_monitoring.utils.utils import construct_input_output_file_paths_news
 import boe_risk_monitoring.config as config
 
-NEWS_FOLDER_PATH = config.NEWS_FOLDER_PATH
+NEWS_DATA_FOLDER_PATH = config.NEWS_DATA_FOLDER_PATH
 
 def process_news_article(input_pdf_path, output_dir_path, llm_backend="gemini", llm_model_name="gemini-2.5-pro-preview-06-05"):
 
@@ -33,7 +33,7 @@ def process_news_article(input_pdf_path, output_dir_path, llm_backend="gemini", 
 
 if __name__ == "__main__":
 	# Get the input and output file paths
-	input_pdf_paths, output_dirs = construct_input_output_file_paths_news(news_dir_path=NEWS_FOLDER_PATH, skip_if_output_exists=True)
+	input_pdf_paths, output_dirs = construct_input_output_file_paths_news(news_dir_path=NEWS_DATA_FOLDER_PATH, skip_if_output_exists=True)
 	print(f"Found {len(input_pdf_paths)} news article files to process.")
 
 	# input_pdf_paths = input_pdf_paths[:2]  # Limit to first 10 files for testing
