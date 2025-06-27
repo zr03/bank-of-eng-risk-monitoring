@@ -245,7 +245,9 @@ class TranscriptETL(BaseETL):
 
         # Use an LLM to perform contextual chunking
         if max(pre_chunks_req_context_window, pre_chunks_req_max_output) == 0:
+            print("Invoking LLM for chunking...")
             chunked_transcript = self.llm_model.invoke()
+            print("LLM chunking completed.")
             n_chunks = len(chunked_transcript.doc)
             chunk_dicts = [dict(chunked_transcript.doc[i]) for i in range(n_chunks)]
             chunks_df = pd.DataFrame(chunk_dicts)
@@ -1315,7 +1317,7 @@ class FinancialNewsETL(BaseETL):
 
 if __name__ == "__main__":
     # # Instantiate the TranscriptETL class
-    # input_pdf_path = os.path.join("data", "jpmorgan", "raw_docs", "transcripts", "Q3_2024.pdf")
+    # input_pdf_path = os.path.join("data", "bankofamerica", "raw_docs", "transcripts", "Q2_2023.pdf")
 
     # transcript_etl = TranscriptETL(
     # 	input_pdf_path=input_pdf_path,
@@ -1334,31 +1336,31 @@ if __name__ == "__main__":
     #     )
 
     # # Run the load method
-    # output_dir_path = os.path.join("data", "jpmorgan", "processed", "transcripts")
+    # output_dir_path = os.path.join("data", "bankofamerica", "processed", "transcripts")
     # transcript_etl.load(
     #     transformed_data=chunks_df,
     #     output_dir_path=output_dir_path,
     #     )
 
-    # # Instantiate the PresentationETL class
-    # input_pdf_path = os.path.join("data", "citigroup", "raw_docs", "presentations", "Q4_2024_presentation.pdf")
-    # presentation_etl = PresentationETL(
-    # 	input_pdf_path=input_pdf_path,
-    # 	is_q4_presentation=True,
-    # )
+    # Instantiate the PresentationETL class
+    input_pdf_path = os.path.join("data", "bankofamerica", "raw_docs", "presentations", "Q3_2024_presentation.pdf")
+    presentation_etl = PresentationETL(
+    	input_pdf_path=input_pdf_path,
+    	is_q4_presentation=True,
+    )
 
-    # # Run the transform method (no need to run extract method for presentations)
-    # analysis_results_dict = presentation_etl.transform(
-    # 	llm_backend="gemini",
-    # 	llm_model_name="gemini-2.5-pro-preview-06-05",
-    # )
+    # Run the transform method (no need to run extract method for presentations)
+    analysis_results_dict = presentation_etl.transform(
+    	llm_backend="gemini",
+    	llm_model_name="gemini-2.5-pro-preview-06-05",
+    )
 
-    # # Run the load method
-    # output_dir_path = os.path.join("data", "citigroup", "processed", "presentations")
-    # presentation_etl.load(
-    # 	transformed_data=analysis_results_dict,
-    # 	output_dir_path=output_dir_path,
-    # )
+    # Run the load method
+    output_dir_path = os.path.join("data", "bankofamerica", "processed", "presentations")
+    presentation_etl.load(
+    	transformed_data=analysis_results_dict,
+    	output_dir_path=output_dir_path,
+    )
 
     # # Instantiate the DataAggregationETL class
     # data_aggregation_etl = DataAggregationETL(
@@ -1414,29 +1416,29 @@ if __name__ == "__main__":
     # # Load data
     # vector_db_etl.load(vectors)
 
-    start = time.time()
-    # Instantiate the FinancialNewsETL class
-    # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
-    fname="2025_04_04_stocks_blogexcerpt_Trump tariffs day 3 as it happened_ S&P 500 sheds $5.4tn in 2 days; China announces 34% retaliatory levies on US.pdf"
-    input_pdf_path = os.path.join(DATA_FOLDER, "news_all_banks", "raw_docs", "allbanks_mixed_comparative", fname)
+    # start = time.time()
+    # # Instantiate the FinancialNewsETL class
+    # # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
+    # fname="2025_04_04_stocks_blogexcerpt_Trump tariffs day 3 as it happened_ S&P 500 sheds $5.4tn in 2 days; China announces 34% retaliatory levies on US.pdf"
+    # input_pdf_path = os.path.join(DATA_FOLDER, "news_all_banks", "raw_docs", "allbanks_mixed_comparative", fname)
 
-    financial_news_etl = FinancialNewsETL(
-        input_pdf_path=input_pdf_path,
-    )
-    # Run the transform method
-    analysis_results_dict = financial_news_etl.transform(
-        llm_backend="gemini",
-        llm_model_name="gemini-2.5-pro-preview-06-05",
-    )
+    # financial_news_etl = FinancialNewsETL(
+    #     input_pdf_path=input_pdf_path,
+    # )
+    # # Run the transform method
+    # analysis_results_dict = financial_news_etl.transform(
+    #     llm_backend="gemini",
+    #     llm_model_name="gemini-2.5-pro-preview-06-05",
+    # )
 
-    # Run the load method
-    output_dir_path = os.path.join(DATA_FOLDER, "news_all_banks", "processed")
-    financial_news_etl.load(
-        transformed_data=analysis_results_dict,
-        output_dir_path=output_dir_path,
-    )
-    elapsed_time = time.time() - start
-    print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
+    # # Run the load method
+    # output_dir_path = os.path.join(DATA_FOLDER, "news_all_banks", "processed")
+    # financial_news_etl.load(
+    #     transformed_data=analysis_results_dict,
+    #     output_dir_path=output_dir_path,
+    # )
+    # elapsed_time = time.time() - start
+    # print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
 
 
 
