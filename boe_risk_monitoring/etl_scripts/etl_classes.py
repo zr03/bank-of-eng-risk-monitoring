@@ -814,39 +814,45 @@ class DataAggregationETL(BaseETL):
         earnings_call_dates_df['date_of_call_dt'] = pd.to_datetime(earnings_call_dates_df['date_of_call'])
         # Add a 1 week buffer to the earnings call dates (to account for the fact that news articles are often published after the earnings call)
         earnings_call_dates_df['date_of_call_dt'] += pd.Timedelta(weeks=1)
-        # Sort the earnings call dates by bank and date
-        earnings_call_dates_df = earnings_call_dates_df.sort_values(by=['bank', 'date_of_call_dt']).reset_index(drop=True)
-        # Initialize a list to hold the mapped reporting periods
-        mapped_reporting_periods = []
-        for index, row in news_publication_dates_df.iterrows():
-            bank = BANK_NAME_MAPPING[row['bank']] # Get the clean bank name
-            pub_date = row['publication_date_dt']
-            # Filter the earnings call dates for the same bank
-            earnings_call_dates_bank_df = earnings_call_dates_df[earnings_call_dates_df['bank'] == bank].copy().reset_index(drop=True)
-            boundary_idx = (earnings_call_dates_bank_df['date_of_call_dt'] > pub_date).idxmax()  # Find the first earnings call date after the publication date
-            mapped_reporting_period = earnings_call_dates_bank_df.loc[boundary_idx, 'reporting_period']
-            mapped_reporting_periods.append(mapped_reporting_period)
 
-        news_publication_dates_df['reporting_period'] = mapped_reporting_periods
+        # Map the publication dates to reporting periods
+        news_publication_dates_df = self.map_news_to_reporting_periods(news_publication_dates_df, earnings_call_dates_df)
+
         # Merge the mapped reporting periods back into the news text dataframe
         news_text_df2 = news_text_df2.merge(news_publication_dates_df[['bank', 'publication_date', 'reporting_period']], on=['bank', 'publication_date'], how='left')
-
-
 
         # News graphs
         news_graphs_df2 = news_graphs_df.copy()
         news_graphs_df2['trend_summary'] = news_graphs_df2['caption'] + ": " + news_graphs_df2['trend_summary']
-        news_graphs_df2.drop(columns=['caption'], inplace=True)
+        news_graphs_df2.drop(columns=['caption', 'article_title'], inplace=True)
         news_graphs_df2 = news_graphs_df2.rename(columns={"trend_summary": "text"})
+        # TODO: Refactor below
+        # We'll map the news data to particular fiscal periods e.g. Q1_2025 based on the earnings call dates
+        # We'll use the period between earnings calls with a 1 week shift to determine the fiscal period to map the news to
+        news_publication_dates_df = news_graphs_df2[['bank','publication_date']].copy()
+        news_publication_dates_df = news_publication_dates_df.drop_duplicates().reset_index(drop=True)
+        # Convert publication_date to datetime
+        news_publication_dates_df['publication_date_dt'] = pd.to_datetime(news_publication_dates_df['publication_date'])
+
+        # Map the publication dates to reporting periods
+        news_publication_dates_df = self.map_news_to_reporting_periods(news_publication_dates_df, earnings_call_dates_df)
+
+        # Merge the mapped reporting periods back into the news graphs dataframe
+        news_graphs_df2 = news_graphs_df2.merge(news_publication_dates_df[['bank', 'publication_date', 'reporting_period']], on=['bank', 'publication_date'], how='left')
 
         # Collect dfs to concatenate
-        dfs_to_concat = [transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2]
+        dfs_to_concat = [transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2,
+                         news_text_df2, news_graphs_df2]
         all_text_df = pd.concat(dfs_to_concat, ignore_index=True)
 
         all_text_df['fiscal_period_ref'] = all_text_df['fiscal_period_ref'].astype('string')
         # Replace null values in source and role columns with empty string (for vector database compatibility)
-        fillna_cols = ['source', 'role']
+        fillna_cols = ['fiscal_period_ref', 'source', 'role', 'page', 'section']
+        # First cast the fillna_cols to string type
+        all_text_df[fillna_cols] = all_text_df[fillna_cols].astype(str)
+        # Then fillna with empty string
         all_text_df[fillna_cols] = all_text_df[fillna_cols].fillna('')
+        # Ensure publication_date is in string format
         all_text_df['publication_date'] = pd.to_datetime(all_text_df['publication_date']).dt.strftime('%Y-%m-%d')
 
         results_dict = {
@@ -854,6 +860,8 @@ class DataAggregationETL(BaseETL):
             'presentation_text': presentation_text_df,
             'presentation_graphs': presentation_graphs_df,
             'presentation_tables': presentation_tables_df,
+            'news_text': news_text_df,
+            'news_graphs': news_graphs_df,
             'all_text': all_text_df,
         }
 
@@ -888,6 +896,33 @@ class DataAggregationETL(BaseETL):
             full_path_parquet = output_dir_path / file_name_parquet
             df.to_csv(full_path_csv, index=False)
             df.to_parquet(full_path_parquet)
+
+    @staticmethod
+    def map_news_to_reporting_periods(news_publication_dates_df, earnings_call_dates_df):
+            """
+            Maps each news publication date to the appropriate reporting period based on earnings call dates.
+            Returns a DataFrame with an added 'reporting_period' column.
+            """
+            # Make a copy of the earnings call dates DataFrame to avoid modifying the original
+            earnings_call_dates_df2 = earnings_call_dates_df.copy()
+            # Sort the earnings call dates by bank and date
+            earnings_call_dates_df2 = earnings_call_dates_df2.sort_values(by=['bank', 'date_of_call_dt']).reset_index(drop=True)
+            mapped_reporting_periods = []
+            for _, row in news_publication_dates_df.iterrows():
+                bank = BANK_NAME_MAPPING[row['bank']]
+                pub_date = row['publication_date_dt']
+                earnings_call_dates_bank_df = earnings_call_dates_df2[earnings_call_dates_df2['bank'] == bank].copy().reset_index(drop=True)
+                gt_pub_date_bool_srs = (earnings_call_dates_bank_df['date_of_call_dt'] > pub_date)
+                if not gt_pub_date_bool_srs.any():
+                    mapped_reporting_period = earnings_call_dates_bank_df['reporting_period'].iloc[-1]
+                    mapped_reporting_periods.append(mapped_reporting_period)
+                    continue
+                boundary_idx = (earnings_call_dates_bank_df['date_of_call_dt'] > pub_date).idxmax()
+                mapped_reporting_period = earnings_call_dates_bank_df.loc[boundary_idx, 'reporting_period']
+                mapped_reporting_periods.append(mapped_reporting_period)
+            news_publication_dates_df = news_publication_dates_df.copy()
+            news_publication_dates_df['reporting_period'] = mapped_reporting_periods
+            return news_publication_dates_df
 
 class SupplementaryDataETL(BaseETL):
     pass
@@ -1407,10 +1442,6 @@ class FinancialNewsETL(BaseETL):
         df.reset_index(drop=True, inplace=True)
 
         return df
-
-
-
-
 
 
 
