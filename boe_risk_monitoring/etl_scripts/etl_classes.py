@@ -647,10 +647,12 @@ class DataAggregationETL(BaseETL):
         news_graph_files = list(news_processed_dir.glob("*_graphs.parquet"))
         for file in news_text_files:
             df = pd.read_parquet(file)
+            df['banks_referenced'] = df['banks_referenced'].replace(BANK_NAME_MAPPING)
             df['document_type'] = 'news'
             all_files['news']['news_text'].append(df)
         for file in news_graph_files:
             df = pd.read_parquet(file)
+            df['banks_referenced'] = df['banks_referenced'].replace(BANK_NAME_MAPPING)
             df['document_type'] = 'news'
             all_files['news']['news_graphs'].append(df)
 
@@ -847,11 +849,9 @@ class DataAggregationETL(BaseETL):
 
         all_text_df['fiscal_period_ref'] = all_text_df['fiscal_period_ref'].astype('string')
         # Replace null values in source and role columns with empty string (for vector database compatibility)
-        fillna_cols = ['fiscal_period_ref', 'source', 'role', 'page', 'section']
-        # First cast the fillna_cols to string type
-        all_text_df[fillna_cols] = all_text_df[fillna_cols].astype(str)
-        # Then fillna with empty string
-        all_text_df[fillna_cols] = all_text_df[fillna_cols].fillna('')
+        fillna_cols = ['fiscal_period_ref', 'role', 'page', 'section']
+        # Fill NAs and cast the to string type
+        all_text_df[fillna_cols] = all_text_df[fillna_cols].fillna('').astype(str)
         # Ensure publication_date is in string format
         all_text_df['publication_date'] = pd.to_datetime(all_text_df['publication_date']).dt.strftime('%Y-%m-%d')
 
@@ -909,7 +909,7 @@ class DataAggregationETL(BaseETL):
             earnings_call_dates_df2 = earnings_call_dates_df2.sort_values(by=['bank', 'date_of_call_dt']).reset_index(drop=True)
             mapped_reporting_periods = []
             for _, row in news_publication_dates_df.iterrows():
-                bank = BANK_NAME_MAPPING[row['bank']]
+                bank = row['bank']
                 pub_date = row['publication_date_dt']
                 earnings_call_dates_bank_df = earnings_call_dates_df2[earnings_call_dates_df2['bank'] == bank].copy().reset_index(drop=True)
                 gt_pub_date_bool_srs = (earnings_call_dates_bank_df['date_of_call_dt'] > pub_date)
