@@ -11,7 +11,7 @@ from dash.exceptions import PreventUpdate
 import datetime
 from dateutil.relativedelta import relativedelta
 import pytz
-
+import matplotlib.colors as mcolors
 import app_config as config
 
 dash.register_page(__name__,
@@ -24,16 +24,42 @@ TOPIC_RELEVANCE_FPATH = config.TOPIC_RELEVANCE_FPATH
 TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH = config.TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH
 RISK_CATEGORY_MAPPING_FPATH = config.RISK_CATEGORY_MAPPING_FPATH
 COLOURS_LIST = px.colors.qualitative.Pastel
+Q_A_ANALYSIS = config.Q_A_ANALYSIS_FPATH
 
 def read_insights_data():
     df_topic_relevance = pd.read_parquet(TOPIC_RELEVANCE_FPATH)
     df_topic_relevance_weighted_sentiment = pd.read_parquet(TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH)
     df_risk_category_mapping = pd.read_parquet(RISK_CATEGORY_MAPPING_FPATH)
+    df_q_a_analysis = pd.read_parquet(Q_A_ANALYSIS)
 
-    return df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping
+    return df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping, df_q_a_analysis
 
 def read_summary_data():
     pass
+
+def get_neutral_pastel_palette(n):
+    safe_hex_colors = [
+        "#aec6cf", "#cfcfc4", "#fdfd96", "#b39eb5", "#ffb347",
+        "#dda0dd", "#b0e0e6", "#cdb5cd", "#fab57a", "#d1cfe2",
+        "#e6e6fa", "#f5deb3", "#ccccff", "#e0bbE4", "#f7cac9"
+    ]
+    return safe_hex_colors[:n]
+
+def sentiment_text_color(score):
+    if score >= 0.05:
+        return 'green'
+    elif score <= -0.05:
+        return 'red'
+    else:
+        return 'black'
+
+quarter_month_map = {'Q1': '03-31', 'Q2': '06-30', 'Q3': '09-30', 'Q4': '12-31'}
+def quarter_to_date(qr):
+    try:
+        q, y = qr.split('_')
+        return pd.to_datetime(f"{y}-{quarter_month_map.get(q, '12-31')}")
+    except:
+        return pd.NaT
 
 def generate_multiline_chart(df, x_data_col, y_data_cols, x_title, y_title, plot_title=None, marker_colors=COLOURS_LIST, marker_size=1, line_colors=COLOURS_LIST, line_legend_labels=None):
 
@@ -76,9 +102,95 @@ def generate_multiline_chart(df, x_data_col, y_data_cols, x_title, y_title, plot
     )
     return fig
 
+@callback(
+    Output("topic-proportion-graph", "figure"),
+    Output("topic-bank-dropdown", "options"),
+    Output("topic-bank-dropdown", "value"),
+    Input("topic-bank-dropdown", "value")
+)
+def update_topic_proportion(bank_selected):
+    _, _, _, df = read_insights_data()
+
+    # Dropdown options
+    bank_options = sorted(df["bank"].dropna().unique())
+    default_bank = bank_selected or bank_options[0]
+
+    df = df[df["bank"] == default_bank]
+    df["date_of_call"] = df["reporting_period"].apply(quarter_to_date)
+    df["quarter"] = df["reporting_period"]
+    df = df.dropna(subset=["quarter", "final_topic"])
+
+    period_order = (
+        df.groupby("quarter")["date_of_call"]
+        .min()
+        .sort_values()
+        .index.tolist()
+    )
+
+    topic_summary = (
+        df.groupby(["quarter", "final_topic"])
+        .agg(count=("final_topic", "size"), avg_sentiment=("sentiment", "mean"))
+        .reset_index()
+    )
+
+    topic_summary["total"] = topic_summary.groupby("quarter")["count"].transform("sum")
+    topic_summary["proportion"] = topic_summary["count"] / topic_summary["total"]
+    topic_summary["quarter"] = pd.Categorical(topic_summary["quarter"], categories=period_order, ordered=True)
+
+    pivot_df = topic_summary.pivot(index="quarter", columns="final_topic", values="proportion").fillna(0)
+    sentiment_lookup = topic_summary.set_index(["quarter", "final_topic"])["avg_sentiment"]
+
+    topics = list(pivot_df.columns)
+    pastel_colors = get_neutral_pastel_palette(len(topics))
+    topic_color_map = dict(zip(topics, pastel_colors))
+
+    fig = go.Figure()
+    bottom = pd.Series(0, index=pivot_df.index)
+
+    for topic in topics:
+        heights = pivot_df[topic]
+        fig.add_trace(go.Bar(
+            x=pivot_df.index,
+            y=heights,
+            name=topic,
+            marker=dict(color=topic_color_map[topic]),
+            offsetgroup=0,
+            base=bottom,
+            hoverinfo="x+y+name",
+        ))
+
+        # Add sentiment annotations
+        for i, quarter in enumerate(pivot_df.index):
+            h = heights[quarter]
+            if h > 0.03:
+                sentiment = sentiment_lookup.get((quarter, topic), 0)
+                color = sentiment_text_color(sentiment)
+                fig.add_annotation(
+                    x=quarter,
+                    y=bottom[quarter] + h / 2,
+                    text=f"{sentiment:+.2f}",
+                    showarrow=False,
+                    font=dict(size=10, color=color)
+                )
+        bottom += heights
+
+    fig.update_layout(
+        barmode="stack",
+        title=f"{default_bank} – Topic Proportions per Quarter<br><sub>(Analyst question topic + Bank response sentiment)</sub>",
+        xaxis_title="Quarter",
+        yaxis_title="Proportion of Questions",
+        legend_title="Topics",
+        height=600,
+        margin=dict(t=80, b=60),
+    )
+
+    return fig, bank_options, default_bank
+
+
+
 def generate_layout():
 
-    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping = read_insights_data()
+    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping, df_qa = read_insights_data()
 
     # Get the list of banks from the topic relevance data
     all_banks_list = sorted(df_topic_relevance['bank'].unique().tolist())
@@ -99,6 +211,24 @@ def generate_layout():
 
     # Get risk categories
     risk_categories_list = sorted(df_risk_category_mapping['risk_category'].unique().tolist())
+
+    poetry_qa_card = html.Div(
+        className="card",
+        children=[
+            html.H4("Poetry Q&A Topics", className="card-header"),
+            html.P("Stacked topic proportions with sentiment annotations."),
+            dcc.Dropdown(
+                id="topic-bank-dropdown",  # 👈 This is the input
+                multi=False,
+                placeholder="Select a bank",
+            ),
+            dcc.Graph(
+                id="topic-proportion-graph",  # 👈 This is the output
+                config={"displayModeBar": False},
+            ),
+        ]
+    )
+
 
     page_layout = html.Div(
         children=[
@@ -257,6 +387,7 @@ def generate_layout():
                     )
                 ]
             ),
+            poetry_qa_card,
             time_store,
         ]
 
@@ -280,7 +411,7 @@ def layout():
 )
 def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     # Read in the curtailment data
-    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping = read_insights_data()
+    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping, _ = read_insights_data()
 
     # Filter the data based on the selected bank(s)
     df_topic_relevance_weighted_sentiment = df_topic_relevance_weighted_sentiment[df_topic_relevance_weighted_sentiment['bank'].isin(banks)]
@@ -336,3 +467,15 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     )
 
     return fig_topics_relevance_sentiment_quarter
+
+# Sample component for layout
+proportion_card = html.Div(
+    className="card",
+    children=[
+        html.H4("Topic Proportions per Quarter", className="card-header"),
+        html.P("Select a bank to view topic distribution and sentiment evolution over time."),
+        dcc.Dropdown(id="topic-bank-dropdown", multi=False),
+        dcc.Graph(id="topic-proportion-graph")
+    ]
+)
+

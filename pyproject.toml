@@ -38,7 +38,7 @@ nltk = "^3.9.1"
 numba = "^0.61.2"
 llvmlite = "^0.44.0"
 bertopic = "^0.17.0"
-torch = { version = "^2.7.1", source = "pytorch-cu118" }
+# torch = { version = "^2.7.1", source = "pytorch-cu118" }
 ipywidgets = "^8.1.7"
 nbformat = ">=4.2.0"
 yfinance = "^0.2.63"
