@@ -2,18 +2,18 @@ from pathlib import Path
 
 import boe_risk_monitoring.config as config
 
-DATA_FOLDER = config.DATA_FOLDER
+DATA_FOLDER_PATH = config.DATA_FOLDER_PATH
 PERMISSIBLE_INPUT_FILE_TYPES = ["transcripts", "presentations"]
-AGGREGATED_DATA_FOLDER_NAME = config.AGGREGATED_DATA_FOLDER_NAME
-NEWS_FOLDER_PATH = config.NEWS_FOLDER_PATH
+PERMISSIBLE_BANK_NAMES = config.PERMISSIBLE_BANK_NAMES
+NEWS_DATA_FOLDER_PATH = config.NEWS_DATA_FOLDER_PATH
 
-def get_bank_dirs(data_dir=DATA_FOLDER):
+def get_bank_dirs(data_dir=DATA_FOLDER_PATH):
 	data_dir = Path(data_dir)
-	bank_dirs = [bank_dir for bank_dir in data_dir.iterdir() if bank_dir.is_dir() and bank_dir.name != AGGREGATED_DATA_FOLDER_NAME]
+	bank_dirs = [bank_dir for bank_dir in data_dir.iterdir() if bank_dir.is_dir() and bank_dir.name in PERMISSIBLE_BANK_NAMES]
 	return bank_dirs
 
 
-def construct_input_output_file_paths(data_dir=DATA_FOLDER, input_file_type="transcripts", skip_if_output_exists=False):
+def construct_input_output_file_paths(data_dir=DATA_FOLDER_PATH, input_file_type="transcripts", skip_if_output_exists=False):
 	if input_file_type not in PERMISSIBLE_INPUT_FILE_TYPES:
 		raise ValueError(f"Input file type must be one of {PERMISSIBLE_INPUT_FILE_TYPES}. Got {input_file_type} instead.")
 	bank_dirs = get_bank_dirs(data_dir)
@@ -61,7 +61,7 @@ def construct_input_output_file_paths(data_dir=DATA_FOLDER, input_file_type="tra
 
 	return input_fpaths, output_dirs_expanded
 
-def construct_input_output_file_paths_news(news_dir_path=NEWS_FOLDER_PATH, skip_if_output_exists=False):
+def construct_input_output_file_paths_news(news_dir_path=NEWS_DATA_FOLDER_PATH, skip_if_output_exists=False):
 	# Get the raw docs directory
 	news_raw_docs_dir = Path(news_dir_path, "raw_docs")
 	if not news_raw_docs_dir.exists():

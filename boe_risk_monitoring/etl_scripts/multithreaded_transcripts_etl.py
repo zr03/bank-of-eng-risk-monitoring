@@ -5,7 +5,7 @@ from boe_risk_monitoring.etl_scripts.etl_classes import TranscriptETL
 from boe_risk_monitoring.utils.utils import construct_input_output_file_paths
 import boe_risk_monitoring.config as config
 
-DATA_FOLDER = config.DATA_FOLDER
+DATA_FOLDER_PATH = config.DATA_FOLDER_PATH
 
 def process_transcript(input_pdf_path, output_dir_path, llm_backend="gemini", llm_model_name="gemini-2.5-pro-preview-06-05"):
 	if not isinstance(input_pdf_path, str):
@@ -46,7 +46,7 @@ def process_transcript(input_pdf_path, output_dir_path, llm_backend="gemini", ll
 
 if __name__ == "__main__":
 	# Get the input and output file paths
-	input_pdf_paths, output_dirs = construct_input_output_file_paths(data_dir=DATA_FOLDER, input_file_type="transcripts", skip_if_output_exists=True)
+	input_pdf_paths, output_dirs = construct_input_output_file_paths(data_dir=DATA_FOLDER_PATH, input_file_type="transcripts", skip_if_output_exists=True)
 	print(f"Found {len(input_pdf_paths)} transcript files to process.")
 
 	# Create a ThreadPoolExecutor to process files concurrently

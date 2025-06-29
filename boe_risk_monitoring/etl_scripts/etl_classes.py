@@ -25,14 +25,16 @@ from boe_risk_monitoring.llms.processing_llms import ChunkingLLM
 from boe_risk_monitoring.llms.document_analyser_llm import DocumentAnalyserLLM
 import boe_risk_monitoring.config as config
 
-DATA_FOLDER = config.DATA_FOLDER
-AGGREGATED_DATA_FOLDER_NAME = config.AGGREGATED_DATA_FOLDER_NAME
+DATA_FOLDER_PATH = config.DATA_FOLDER_PATH
+AGGREGATED_DATA_FOLDER_PATH = config.AGGREGATED_DATA_FOLDER_PATH
+NEWS_DATA_FOLDER_PATH = config.NEWS_DATA_FOLDER_PATH
+
 SHARE_PRICE_HISTORY_START_DATE = config.SHARE_PRICE_HISTORY_START_DATE
 PERMISSIBLE_BANK_NAMES = config.PERMISSIBLE_BANK_NAMES
 BANK_NAME_MAPPING = config.BANK_NAME_MAPPING
 TICKER_MAPPING = config.TICKER_MAPPING
 PERMISSIBLE_VECTOR_DB_PROVIDERS = config.PERMISSIBLE_VECTOR_DB_PROVIDERS
-PERMISSIBLE_DOC_TYPES = ['transcripts', 'presentations_text', 'presentations_graphs', 'presentations_tables']
+PERMISSIBLE_DOC_TYPES = ['transcripts', 'presentations_text', 'presentations_graphs', 'presentations_tables', 'news_text', 'news_graphs']
 
 class TranscriptChunk(BaseModel):
     text: str
@@ -583,21 +585,27 @@ class PresentationETL(BaseETL):
 class DataAggregationETL(BaseETL):
     """This class provides methods to aggregate data from multiple ETL processes into single files ready for downstream analysis.
     """
-    def __init__(self, data_dir_path):
+    def __init__(self, data_dir_path, news_dir_path):
         # Check if input paths are valid
-        if not isinstance(data_dir_path, str):
-            raise TypeError("Data directory path must be a string.")
+        if not isinstance(data_dir_path, str) or not isinstance(news_dir_path, str):
+            raise TypeError("Data directory and news directory paths must be strings.")
         data_dir_path = Path(data_dir_path)
         if not data_dir_path.exists():
             raise FileNotFoundError(f"Data directory does not exist: {data_dir_path}")
         self.data_dir_path = data_dir_path
+        news_dir_path = Path(news_dir_path)
+        if not news_dir_path.exists():
+            raise FileNotFoundError(f"News directory does not exist: {news_dir_path}")
+        self.news_dir_path = news_dir_path
 
     def extract(self):
         """
-        Extracts transcripts and presentations data from the data directory.
+        Extracts transcripts, presentations and news data from the data directory.
         Returns a nested dictionary with banks and document type as keys and associated lists of dataframes as their values.
         """
-        bank_dirs = [bank_dir for bank_dir in self.data_dir_path.iterdir() if bank_dir.is_dir() and bank_dir.name != AGGREGATED_DATA_FOLDER_NAME]
+
+        # First let's focus on transcripts and presentations
+        bank_dirs = [bank_dir for bank_dir in self.data_dir_path.iterdir() if bank_dir.is_dir() and bank_dir.name in PERMISSIBLE_BANK_NAMES]
         all_files = defaultdict(lambda: defaultdict(list))  # Nested dictionary to hold dataframes
         for bank_dir in bank_dirs:
             transcripts_dir = bank_dir / "processed" / "transcripts"
@@ -631,6 +639,23 @@ class DataAggregationETL(BaseETL):
                 df['document_type'] = 'presentation'
                 all_files[bank_clean_name]['presentations_tables'].append(df)
 
+        # Now let's focus on news articles
+        news_processed_dir = self.news_dir_path / "processed"
+        if not news_processed_dir.exists():
+            raise FileNotFoundError(f"Processed news directory does not exist: {news_processed_dir}")
+        news_text_files = list(news_processed_dir.glob("*_text.parquet"))
+        news_graph_files = list(news_processed_dir.glob("*_graphs.parquet"))
+        for file in news_text_files:
+            df = pd.read_parquet(file)
+            df['banks_referenced'] = df['banks_referenced'].replace(BANK_NAME_MAPPING)
+            df['document_type'] = 'news'
+            all_files['news']['news_text'].append(df)
+        for file in news_graph_files:
+            df = pd.read_parquet(file)
+            df['banks_referenced'] = df['banks_referenced'].replace(BANK_NAME_MAPPING)
+            df['document_type'] = 'news'
+            all_files['news']['news_graphs'].append(df)
+
         return all_files
 
     def transform(self, raw_data):
@@ -645,8 +670,12 @@ class DataAggregationETL(BaseETL):
         presentation_text_df = pd.DataFrame()
         presentation_graphs_df = pd.DataFrame()
         presentation_tables_df = pd.DataFrame()
+        news_text_df = pd.DataFrame()
+        news_graphs_df = pd.DataFrame()
 
-        for bank in raw_data.keys():
+        clean_bank_names = [BANK_NAME_MAPPING[bank] for bank in PERMISSIBLE_BANK_NAMES]
+        # Check if all banks in raw_data are permissible
+        for bank in clean_bank_names:
             for doc_type in raw_data[bank].keys():
                 if doc_type not in PERMISSIBLE_DOC_TYPES:
                     raise ValueError(f"Unsupported document type: {doc_type}. Supported types are {PERMISSIBLE_DOC_TYPES}.")
@@ -667,6 +696,33 @@ class DataAggregationETL(BaseETL):
                     presentation_tables_df = pd.concat([presentation_tables_df, df], ignore_index=True)
                     presentation_tables_df['reference'] = "Table Row (" + presentation_tables_df['row_heading'] + ")\n" + presentation_tables_df['bank'] + ", " + presentation_tables_df['reporting_period'].str.replace("_", ", ") + ", Earnings Call Presentation, Slide " + presentation_tables_df['page'].astype(str)
 
+        for doc_type in raw_data['news'].keys():
+            if doc_type not in ['news_text', 'news_graphs']:
+                raise ValueError(f"Unsupported document type: {doc_type}. Supported types for news are ['news_text', 'news_graphs'].")
+            if not isinstance(raw_data['news'][doc_type], list):
+                raise TypeError(f"Data for news - {doc_type} must be a list of dataframes.")
+            # Concatenate all dataframes for the document type
+            df = pd.concat(raw_data['news'][doc_type], ignore_index=True)
+            if doc_type == 'news_text':
+                news_text_df = pd.concat([news_text_df, df], ignore_index=True)
+                news_text_df['reference'] = "News article by " + news_text_df['author'] + "\n" + "Title: " + news_text_df['article_title'] + ", published " + news_text_df['publication_date']
+            elif doc_type == 'news_graphs':
+                news_graphs_df = pd.concat([news_graphs_df, df], ignore_index=True)
+                news_graphs_df['reference'] = "News article by " + news_graphs_df['author'] + "\n" + "Title: " + news_graphs_df['article_title'] + ", published " + news_graphs_df['publication_date']
+
+
+        # Add some extra columns
+        transcripts_df['source_type'] = 'internal'
+        presentation_text_df['source_type'] = 'internal'
+        presentation_graphs_df['source_type'] = 'internal'
+        presentation_tables_df['source_type'] = 'internal'
+        news_text_df['source_type'] = 'external'
+        news_graphs_df['source_type'] = 'external'
+        transcripts_df['is_comparative'] = False
+        presentation_text_df['is_comparative'] = False
+        presentation_graphs_df['is_comparative'] = False
+        presentation_tables_df['is_comparative'] = False
+
         # Convert the date columns to string format
         transcripts_df['date_of_call'] = pd.to_datetime(transcripts_df['date_of_call']).dt.strftime('%Y-%m-%d')
         presentation_text_df['date_of_presentation'] = pd.to_datetime(presentation_text_df['date_of_presentation']).dt.strftime('%Y-%m-%d')
@@ -675,15 +731,14 @@ class DataAggregationETL(BaseETL):
 
         # Rename the 'speaker'/'author' columns to 'source'
         transcripts_df.rename(columns={'speaker': 'source'}, inplace=True)
+        news_text_df.rename(columns={'author': 'source'}, inplace=True)
+        news_graphs_df.rename(columns={'author': 'source'}, inplace=True)
 
-        # Replace null values in speaker and role columns with empty string
-        fillna_cols = ['source', 'role']
-        presentation_text_df[fillna_cols] = presentation_text_df[fillna_cols].fillna('')
-        presentation_graphs_df[fillna_cols] = presentation_graphs_df[fillna_cols].fillna('')
-        presentation_tables_df[fillna_cols] = presentation_tables_df[fillna_cols].fillna('')
+        # Rename the banks_referenced column to 'bank'
+        news_text_df.rename(columns={'banks_referenced': 'bank'}, inplace=True)
+        news_graphs_df.rename(columns={'banks_referenced': 'bank'}, inplace=True)
 
-        # Now we'll create a specific dataframe which summarise all text components of the various documents
-
+        # Now we'll create a specific dataframe which summarises all text components of the various documents
         # Transcripts
         transcripts_df2 = transcripts_df.copy()
         transcripts_df2 = transcripts_df2.rename(columns={'date_of_call': 'publication_date'})
@@ -746,12 +801,58 @@ class DataAggregationETL(BaseETL):
         presentation_tables_df2 = presentation_tables_df2[['text', 'fiscal_period_ref'] + cols_in_order]
         presentation_tables_df2 = presentation_tables_df2.rename(columns={'date_of_presentation': 'publication_date'})
 
+        # News text
+        news_text_df2 = news_text_df.copy()
+        news_text_df2.drop(columns="article_title", inplace=True)
+        # We'll map the news data to particular fiscal periods e.g. Q1_2025 based on the earnings call dates
+        # We'll use the period between earnings calls with a 1 week shift to determine the fiscal period to map the news to
+        news_publication_dates_df = news_text_df2[['bank','publication_date']].copy()
+        news_publication_dates_df = news_publication_dates_df.drop_duplicates().reset_index(drop=True)
+        # Convert publication_date to datetime
+        news_publication_dates_df['publication_date_dt'] = pd.to_datetime(news_publication_dates_df['publication_date'])
+        earnings_call_dates_df = transcripts_df[['bank', 'reporting_period', 'date_of_call']].copy()
+        earnings_call_dates_df = earnings_call_dates_df.drop_duplicates()
+        # Convert date_of_call to datetime
+        earnings_call_dates_df['date_of_call_dt'] = pd.to_datetime(earnings_call_dates_df['date_of_call'])
+        # Add a 1 week buffer to the earnings call dates (to account for the fact that news articles are often published after the earnings call)
+        earnings_call_dates_df['date_of_call_dt'] += pd.Timedelta(weeks=1)
+
+        # Map the publication dates to reporting periods
+        news_publication_dates_df = self.map_news_to_reporting_periods(news_publication_dates_df, earnings_call_dates_df)
+
+        # Merge the mapped reporting periods back into the news text dataframe
+        news_text_df2 = news_text_df2.merge(news_publication_dates_df[['bank', 'publication_date', 'reporting_period']], on=['bank', 'publication_date'], how='left')
+
+        # News graphs
+        news_graphs_df2 = news_graphs_df.copy()
+        news_graphs_df2['trend_summary'] = news_graphs_df2['caption'] + ": " + news_graphs_df2['trend_summary']
+        news_graphs_df2.drop(columns=['caption', 'article_title'], inplace=True)
+        news_graphs_df2 = news_graphs_df2.rename(columns={"trend_summary": "text"})
+        # TODO: Refactor below
+        # We'll map the news data to particular fiscal periods e.g. Q1_2025 based on the earnings call dates
+        # We'll use the period between earnings calls with a 1 week shift to determine the fiscal period to map the news to
+        news_publication_dates_df = news_graphs_df2[['bank','publication_date']].copy()
+        news_publication_dates_df = news_publication_dates_df.drop_duplicates().reset_index(drop=True)
+        # Convert publication_date to datetime
+        news_publication_dates_df['publication_date_dt'] = pd.to_datetime(news_publication_dates_df['publication_date'])
+
+        # Map the publication dates to reporting periods
+        news_publication_dates_df = self.map_news_to_reporting_periods(news_publication_dates_df, earnings_call_dates_df)
+
+        # Merge the mapped reporting periods back into the news graphs dataframe
+        news_graphs_df2 = news_graphs_df2.merge(news_publication_dates_df[['bank', 'publication_date', 'reporting_period']], on=['bank', 'publication_date'], how='left')
 
         # Collect dfs to concatenate
-        dfs_to_concat = [transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2]
+        dfs_to_concat = [transcripts_df2, presentation_text_df2, presentation_graphs_df2, presentation_tables_df2,
+                         news_text_df2, news_graphs_df2]
         all_text_df = pd.concat(dfs_to_concat, ignore_index=True)
 
         all_text_df['fiscal_period_ref'] = all_text_df['fiscal_period_ref'].astype('string')
+        # Replace null values in source and role columns with empty string (for vector database compatibility)
+        fillna_cols = ['fiscal_period_ref', 'role', 'page', 'section']
+        # Fill NAs and cast the to string type
+        all_text_df[fillna_cols] = all_text_df[fillna_cols].fillna('').astype(str)
+        # Ensure publication_date is in string format
         all_text_df['publication_date'] = pd.to_datetime(all_text_df['publication_date']).dt.strftime('%Y-%m-%d')
 
         results_dict = {
@@ -759,6 +860,8 @@ class DataAggregationETL(BaseETL):
             'presentation_text': presentation_text_df,
             'presentation_graphs': presentation_graphs_df,
             'presentation_tables': presentation_tables_df,
+            'news_text': news_text_df,
+            'news_graphs': news_graphs_df,
             'all_text': all_text_df,
         }
 
@@ -793,6 +896,33 @@ class DataAggregationETL(BaseETL):
             full_path_parquet = output_dir_path / file_name_parquet
             df.to_csv(full_path_csv, index=False)
             df.to_parquet(full_path_parquet)
+
+    @staticmethod
+    def map_news_to_reporting_periods(news_publication_dates_df, earnings_call_dates_df):
+            """
+            Maps each news publication date to the appropriate reporting period based on earnings call dates.
+            Returns a DataFrame with an added 'reporting_period' column.
+            """
+            # Make a copy of the earnings call dates DataFrame to avoid modifying the original
+            earnings_call_dates_df2 = earnings_call_dates_df.copy()
+            # Sort the earnings call dates by bank and date
+            earnings_call_dates_df2 = earnings_call_dates_df2.sort_values(by=['bank', 'date_of_call_dt']).reset_index(drop=True)
+            mapped_reporting_periods = []
+            for _, row in news_publication_dates_df.iterrows():
+                bank = row['bank']
+                pub_date = row['publication_date_dt']
+                earnings_call_dates_bank_df = earnings_call_dates_df2[earnings_call_dates_df2['bank'] == bank].copy().reset_index(drop=True)
+                gt_pub_date_bool_srs = (earnings_call_dates_bank_df['date_of_call_dt'] > pub_date)
+                if not gt_pub_date_bool_srs.any():
+                    mapped_reporting_period = earnings_call_dates_bank_df['reporting_period'].iloc[-1]
+                    mapped_reporting_periods.append(mapped_reporting_period)
+                    continue
+                boundary_idx = (earnings_call_dates_bank_df['date_of_call_dt'] > pub_date).idxmax()
+                mapped_reporting_period = earnings_call_dates_bank_df.loc[boundary_idx, 'reporting_period']
+                mapped_reporting_periods.append(mapped_reporting_period)
+            news_publication_dates_df = news_publication_dates_df.copy()
+            news_publication_dates_df['reporting_period'] = mapped_reporting_periods
+            return news_publication_dates_df
 
 class SupplementaryDataETL(BaseETL):
     pass
@@ -1315,10 +1445,6 @@ class FinancialNewsETL(BaseETL):
 
 
 
-
-
-
-
 if __name__ == "__main__":
     # # Instantiate the TranscriptETL class
     # input_pdf_path = os.path.join("data", "bankofamerica", "raw_docs", "transcripts", "Q2_2023.pdf")
@@ -1366,20 +1492,21 @@ if __name__ == "__main__":
     # 	output_dir_path=output_dir_path,
     # )
 
-    # # Instantiate the DataAggregationETL class
-    # data_aggregation_etl = DataAggregationETL(
-    # 	data_dir_path=DATA_FOLDER,
-    # )
+    # Instantiate the DataAggregationETL class
+    data_aggregation_etl = DataAggregationETL(
+    	data_dir_path=DATA_FOLDER_PATH,
+        news_dir_path=NEWS_DATA_FOLDER_PATH,
+    )
 
-    # # Extract data
-    # all_files = data_aggregation_etl.extract()
+    # Extract data
+    all_files = data_aggregation_etl.extract()
 
-    # # Transform data
-    # aggregated_data_dict = data_aggregation_etl.transform(raw_data=all_files)
+    # Transform data
+    aggregated_data_dict = data_aggregation_etl.transform(raw_data=all_files)
 
-    # # Load data
-    # output_dir_path = os.path.join(DATA_FOLDER, "aggregated")
-    # data_aggregation_etl.load(transformed_data=aggregated_data_dict, output_dir_path=output_dir_path)
+    # Load data
+    output_dir_path = AGGREGATED_DATA_FOLDER_PATH
+    data_aggregation_etl.load(transformed_data=aggregated_data_dict, output_dir_path=output_dir_path)
 
     # # Instantiate the SharePriceDataETL class
     # bank_name = "bankofamerica"
@@ -1393,11 +1520,11 @@ if __name__ == "__main__":
     # )
 
     # # Run the convenience method to extract, transform, and load data
-    # output_fpath = os.path.join(DATA_FOLDER, bank_name, "processed", "share_price_history", "share_price_history.csv")
+    # output_fpath = os.path.join(DATA_FOLDER_PATH, bank_name, "processed", "share_price_history", "share_price_history.csv")
     # share_price_etl.export_to_csv(fpath=output_fpath)
 
     # # Instantiate the VectorDBETL class
-    # input_parquet_path = os.path.join(DATA_FOLDER, "aggregated", "all_text.parquet")
+    # input_parquet_path = os.path.join(AGGREGATED_DATA_FOLDER_PATH, "all_text.parquet")
     # vector_db_etl = VectorDBETL(
     #     input_parquet_path=input_parquet_path,
     #     vector_db_provider="pinecone",
@@ -1420,29 +1547,29 @@ if __name__ == "__main__":
     # # Load data
     # vector_db_etl.load(vectors)
 
-    start = time.time()
-    # Instantiate the FinancialNewsETL class
-    # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
-    fname="2025_05_20_JPMorgan London trader unfairly dismissed despite spoofing.pdf"
-    input_pdf_path = os.path.join(DATA_FOLDER, "news_all_banks", "raw_docs", "jpmorgan_news", fname)
+    # start = time.time()
+    # # Instantiate the FinancialNewsETL class
+    # # fname = "2025_01_15_blog_US bank earnings as it happened_ Shares jump as investors cheer bumper results.pdf"
+    # fname="2025_05_20_JPMorgan London trader unfairly dismissed despite spoofing.pdf"
+    # input_pdf_path = os.path.join(NEWS_DATA_FOLDER_PATH, "raw_docs", "jpmorgan_news", fname)
 
-    financial_news_etl = FinancialNewsETL(
-        input_pdf_path=input_pdf_path,
-    )
-    # Run the transform method
-    analysis_results_dict = financial_news_etl.transform(
-        llm_backend="gemini",
-        llm_model_name="gemini-2.5-pro-preview-06-05",
-    )
+    # financial_news_etl = FinancialNewsETL(
+    #     input_pdf_path=input_pdf_path,
+    # )
+    # # Run the transform method
+    # analysis_results_dict = financial_news_etl.transform(
+    #     llm_backend="gemini",
+    #     llm_model_name="gemini-2.5-pro-preview-06-05",
+    # )
 
-    # Run the load method
-    output_dir_path = os.path.join(DATA_FOLDER, "news_all_banks", "processed")
-    financial_news_etl.load(
-        transformed_data=analysis_results_dict,
-        output_dir_path=output_dir_path,
-    )
-    elapsed_time = time.time() - start
-    print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
+    # # Run the load method
+    # output_dir_path = os.path.join(NEWS_DATA_FOLDER_PATH, "processed")
+    # financial_news_etl.load(
+    #     transformed_data=analysis_results_dict,
+    #     output_dir_path=output_dir_path,
+    # )
+    # elapsed_time = time.time() - start
+    # print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
 
 
 

@@ -5,7 +5,7 @@ from boe_risk_monitoring.etl_scripts.etl_classes import PresentationETL
 from boe_risk_monitoring.utils.utils import construct_input_output_file_paths
 import boe_risk_monitoring.config as config
 
-DATA_FOLDER = config.DATA_FOLDER
+DATA_FOLDER_PATH = config.DATA_FOLDER_PATH
 
 def process_presentation(input_pdf_path, output_dir_path, llm_backend="gemini", llm_model_name="gemini-2.5-pro-preview-06-05"):
 
@@ -42,7 +42,7 @@ def process_presentation(input_pdf_path, output_dir_path, llm_backend="gemini", 
 
 if __name__ == "__main__":
 	# Get the input and output file paths
-	input_pdf_paths, output_dirs = construct_input_output_file_paths(data_dir=DATA_FOLDER, input_file_type="presentations", skip_if_output_exists=True)
+	input_pdf_paths, output_dirs = construct_input_output_file_paths(data_dir=DATA_FOLDER_PATH, input_file_type="presentations", skip_if_output_exists=True)
 	print(f"Found {len(input_pdf_paths)} presentation files to process.")
 
 
