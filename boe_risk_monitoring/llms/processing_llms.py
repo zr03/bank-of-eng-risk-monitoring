@@ -41,7 +41,10 @@ class ChunkingLLM(BaseLLM):
 		else:
 			raise ValueError(f"Unsupported backend: {self.backend}")
 
-
+class SentimentAnalysisLLM(ChunkingLLM):
+	"""Identical to ChunkingLLM but uses `sentiment_analysis_prompt` for clarity."""
+	def __init__(self, sentiment_analysis_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
+		super().__init__(chunking_prompt=sentiment_analysis_prompt, response_schema=response_schema, backend=backend, model_name=model_name, temperature=temperature)
 class TopicLabellingLLM(ChunkingLLM):
     """Identical to ChunkingLLM but uses `topic_labelling_prompt` for clarity."""
     def __init__(self, topic_labelling_prompt, response_schema, backend="openai", model_name="gpt-4.1", temperature=0.3):
