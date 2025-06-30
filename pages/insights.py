@@ -787,7 +787,7 @@ def generate_layout():
             html.Div(
                 style={"display": "flex", "gap": "1rem"},
                 children=[
-                    html.Div(sentiment_card, style={"flex": "1"}),
+                    html.Div(sentiment_card, style={"flex": "1.2"}),
                     html.Div(peer_comparison_card, style={"flex": "1"}),
                 ]
             ),
