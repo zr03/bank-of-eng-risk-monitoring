@@ -6,11 +6,11 @@ Risk monitoring tool for Global Systemically Important Banks developed for the B
 
 2. Activate the environment with 'conda activate boe'
 
-3. No install poetry which we use to manage dependencies in this project. You have two options. If you want a global install of poetry on your machine then follow step a) below. If you want to install poetry within your conda environment, follow step b) below.
+3. Now install poetry which we use to manage dependencies in this project. You have two options. If you want a global install of poetry on your machine then follow step a) below. If you want to install poetry within your conda environment, follow step b) below.
 
 a) Follow the instructions here to set up poetry on your machine. Make sure to add Poetry to PATH as per the instructions so you can call poetry form the command line
 https://python-poetry.org/docs/#installing-with-the-official-installer
-b) Run pip install poetry
+b) Run pip install poetry AND pip install poetry-plugin-export.
 
 4. Clone/pull down the latest version of the repository.
 
