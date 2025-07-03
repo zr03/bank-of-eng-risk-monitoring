@@ -31,6 +31,7 @@ DIA,Deposit Insurance Agency
 DM,Developed Markets
 DPD,Days Past Due
 DTA,Deferred Tax Assets
+DVA,Debit Valuation Adjustment
 EBT,Earnings before Tax
 ECM,Equity Capital Markets
 EM,Emerging Markets
@@ -90,6 +91,7 @@ RoTCE,Return on Average Tangible Common Equity
 RWA,Risk-Weighted Assets
 SBMM,Small Business and Middle Market
 SEC,U.S. Securities & Exchange Commission
+SLR,Supplementary Leverage Ratio
 SMaRT,"Surveillance, Monitoring, and"
 SS,Securities Services
 TBVPS,Tangible Book Value per Share
