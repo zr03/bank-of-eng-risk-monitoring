@@ -20,19 +20,17 @@ dash.register_page(__name__,
                    title='G-SIB Risk Insights',
                    description='Risk insights for G-SIBs',)
 
-TOPIC_RELEVANCE_FPATH = config.TOPIC_RELEVANCE_FPATH
-TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH = config.TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH
-RISK_CATEGORY_MAPPING_FPATH = config.RISK_CATEGORY_MAPPING_FPATH
+TOPIC_RELEVANCE_Q_AGG_NORM_FPATH = config.TOPIC_RELEVANCE_Q_AGG_NORM_FPATH
+TOPIC_SENTIMENT_Q_AGG_NORM_FPATH = config.TOPIC_SENTIMENT_Q_AGG_NORM_FPATH
 COLOURS_LIST = px.colors.qualitative.Pastel
 Q_A_ANALYSIS = config.Q_A_ANALYSIS_FPATH
 
 def read_insights_data():
-    df_topic_relevance = pd.read_parquet(TOPIC_RELEVANCE_FPATH)
-    df_topic_relevance_weighted_sentiment = pd.read_parquet(TOPIC_RELEVANCE_WEIGHTED_SENTIMENT_FPATH)
-    df_risk_category_mapping = pd.read_parquet(RISK_CATEGORY_MAPPING_FPATH)
+    df_topic_relevance_agg_norm = pd.read_parquet(TOPIC_RELEVANCE_Q_AGG_NORM_FPATH)
+    df_topic_sentiment_agg_norm = pd.read_parquet(TOPIC_SENTIMENT_Q_AGG_NORM_FPATH)
     df_q_a_analysis = pd.read_parquet(Q_A_ANALYSIS)
 
-    return df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping, df_q_a_analysis
+    return df_topic_relevance_agg_norm, df_topic_sentiment_agg_norm, df_q_a_analysis
 
 def read_summary_data():
     pass
@@ -109,7 +107,7 @@ def generate_multiline_chart(df, x_data_col, y_data_cols, x_title, y_title, plot
     Input("topic-bank-dropdown", "value")
 )
 def update_topic_proportion(bank_selected):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
 
     # Dropdown options
     bank_options = sorted(df["bank"].dropna().unique())
@@ -190,13 +188,13 @@ def update_topic_proportion(bank_selected):
 
 def generate_layout():
 
-    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping, df_qa = read_insights_data()
+    df_topic_relevance_agg_norm, df_topic_sentiment_agg_norm, df_qa = read_insights_data()
 
     # Get the list of banks from the topic relevance data
-    all_banks_list = sorted(df_topic_relevance['bank'].unique().tolist())
+    all_banks_list = sorted(df_topic_relevance_agg_norm['bank'].unique().tolist())
 
     # Get the quarters from the topic relevance data and set up the slider
-    quarters = df_topic_relevance['reporting_period'].unique().tolist()
+    quarters = df_topic_relevance_agg_norm['reporting_period'].unique().tolist()
     slider_values = sorted(quarters)
     slider_indices = list(range(len(quarters)))
     slider_marks = {i: {'label': j, 'style': {'transform': 'rotate(30deg)', 'padding-right': '0px'}}
@@ -210,12 +208,12 @@ def generate_layout():
     time_store = dcc.Store(id="time-data", data=time_data_dict)
 
     # Get risk categories
-    risk_categories_list = sorted(df_risk_category_mapping['risk_category'].unique().tolist())
+    risk_categories_list = sorted(df_topic_relevance_agg_norm['risk_category'].unique().tolist())
 
     poetry_qa_card = html.Div(
         className="card",
         children=[
-            html.H4("Poetry Q&A Topics", className="card-header"),
+            html.H4("Q&A Topics", className="card-header"),
             html.P("Stacked topic proportions with sentiment annotations."),
             dcc.Dropdown(
                 id="topic-bank-dropdown",  # 👈 This is the input
@@ -411,54 +409,47 @@ def layout():
 )
 def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     # Read in the curtailment data
-    df_topic_relevance, df_topic_relevance_weighted_sentiment, df_risk_category_mapping, _ = read_insights_data()
+    df_topic_relevance_agg_norm, df_topic_sentiment_agg_norm, _ = read_insights_data()
 
     # Filter the data based on the selected bank(s)
-    df_topic_relevance_weighted_sentiment = df_topic_relevance_weighted_sentiment[df_topic_relevance_weighted_sentiment['bank'].isin(banks)]
+    df_topic_sentiment_agg_norm = df_topic_sentiment_agg_norm[df_topic_sentiment_agg_norm['bank'].isin(banks)]
 
     # Filter the data based on the selected date range
     all_quarters = time_data['slider_values']
     start_idx = date_range_indices[0]
     end_idx = date_range_indices[1]
     quarters_selected = all_quarters[start_idx:end_idx + 1]
-    df_topic_relevance_weighted_sentiment = df_topic_relevance_weighted_sentiment[df_topic_relevance_weighted_sentiment['reporting_period'].isin(quarters_selected)]
+    df_topic_sentiment_agg_norm = df_topic_sentiment_agg_norm[df_topic_sentiment_agg_norm['reporting_period'].isin(quarters_selected)]
 
 
-    # Get risk category and subtopic column sets
-    risk_category_cols = df_risk_category_mapping['risk_category'].unique().tolist()
-    subtopic_cols = df_risk_category_mapping['subtopic'].unique().tolist()
+    # # Get risk category and subtopic column sets
+    # risk_categories = df_topic_sentiment_agg_norm['risk_category'].unique().tolist()
+    # first_subtopic_col = df_topic_sentiment_agg_norm.columns.get_loc('sentiment_score') + 1
+    # subtopic_cols = df_risk_category_mapping.columns[first_subtopic_col:-1].tolist()
 
-    # Aggregate by bank and reporting period
-    df_all_text_topics_relevance_sentiment_quarter_agg = df_topic_relevance_weighted_sentiment.groupby(
-        ['bank', 'reporting_period']
-    )[subtopic_cols + risk_category_cols].sum().reset_index()
-
-    # Normalize the net sentiment scores
-    df_all_text_topics_relevance_sentiment_quarter_agg_norm = df_all_text_topics_relevance_sentiment_quarter_agg.copy()
-    df_all_text_topics_relevance_sentiment_quarter_agg_norm[subtopic_cols] = df_all_text_topics_relevance_sentiment_quarter_agg_norm[subtopic_cols].div(
-        df_all_text_topics_relevance_sentiment_quarter_agg_norm[subtopic_cols].abs().mean(axis=1), axis=0
-    )
-    df_all_text_topics_relevance_sentiment_quarter_agg_norm[risk_category_cols] = df_all_text_topics_relevance_sentiment_quarter_agg_norm[risk_category_cols].div(
-        df_all_text_topics_relevance_sentiment_quarter_agg_norm[risk_category_cols].abs().mean(axis=1), axis=0
-    )
-
-    # Reshape data for plotting
-    df_topics_relevance_sentiment_quarter_plotting = df_all_text_topics_relevance_sentiment_quarter_agg_norm.pivot(
+    source_type = "internal" # TODO: make this dynamic
+    sel_bool = ((df_topic_sentiment_agg_norm['source_type'] == source_type) & (df_topic_sentiment_agg_norm['risk_category'] == risk_category))
+    df_topics_sentiment_quarter_plotting = df_topic_sentiment_agg_norm[sel_bool].copy()
+    df_topics_sentiment_quarter_plotting.drop(columns=['risk_category', 'source_type'], inplace=True)
+    df_topics_sentiment_quarter_plotting.rename(columns={"sentiment_score": f"Risk Sentiment: {risk_category}"}, inplace=True)
+    df_topics_sentiment_quarter_plotting = df_topics_sentiment_quarter_plotting.pivot(
         columns='bank',
         index='reporting_period',
     )
-    df_topics_relevance_sentiment_quarter_plotting.columns = [', '.join(col).strip() for col in df_topics_relevance_sentiment_quarter_plotting.columns.values]
-    df_topics_relevance_sentiment_quarter_plotting.reset_index(inplace=True)
+    df_topics_sentiment_quarter_plotting.columns = [', '.join(col).strip() for col in df_topics_sentiment_quarter_plotting.columns.values]
+    df_topics_sentiment_quarter_plotting.reset_index(inplace=True)
 
     # Generate a multiline chart for the topic relevance scores
-    cols_to_plot = [col for col in df_topics_relevance_sentiment_quarter_plotting.columns if col.startswith(risk_category)]
-    legend_labels = [col.split(",")[-1].strip() for col in cols_to_plot]
+    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith("Risk Sentiment")]
+    topic_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col not in ['reporting_period'] + risk_category_cols]
+    # cols_to_plot = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith(risk_category)]
+    legend_labels = [col.split(",")[-1].strip() for col in risk_category_cols]
 
     # Generate the multiline chart
-    fig_topics_relevance_sentiment_quarter = generate_multiline_chart(
-        df=df_topics_relevance_sentiment_quarter_plotting,
+    fig_topics_sentiment_quarter = generate_multiline_chart(
+        df=df_topics_sentiment_quarter_plotting,
         x_data_col='reporting_period',
-        y_data_cols=cols_to_plot,
+        y_data_cols=risk_category_cols,
         x_title='Reporting Period',
         y_title='Net Sentiment Score (Normalized)',
         plot_title=f"Quarterly Net Sentiment Scores: {risk_category}",
@@ -466,7 +457,7 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
         line_legend_labels=legend_labels,
     )
 
-    return fig_topics_relevance_sentiment_quarter
+    return fig_topics_sentiment_quarter
 
 # Sample component for layout
 proportion_card = html.Div(
