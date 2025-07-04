@@ -102,3 +102,9 @@ def construct_input_output_file_paths_news(news_dir_path=NEWS_DATA_FOLDER_PATH, 
 	output_dirs = [output_dir_str] * len(input_fpaths)  # All outputs go to the same output directory
 
 	return input_fpaths, output_dirs
+
+
+def reformat_reporting_period(period_srs):
+    # Reformat reporting_period
+    reporting_period_split_srs = period_srs.str.split("_")
+    return reporting_period_split_srs.str.get(1).astype(str) + reporting_period_split_srs.str.get(0)

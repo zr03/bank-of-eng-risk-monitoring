@@ -24,10 +24,12 @@ from pinecone import Pinecone, ServerlessSpec
 from boe_risk_monitoring.llms.processing_llms import ChunkingLLM
 from boe_risk_monitoring.llms.document_analyser_llm import DocumentAnalyserLLM
 import boe_risk_monitoring.config as config
+from boe_risk_monitoring.utils.utils import reformat_reporting_period
 
 DATA_FOLDER_PATH = config.DATA_FOLDER_PATH
 AGGREGATED_DATA_FOLDER_PATH = config.AGGREGATED_DATA_FOLDER_PATH
 NEWS_DATA_FOLDER_PATH = config.NEWS_DATA_FOLDER_PATH
+APP_DATA_FOLDER_PATH = config.APP_DATA_FOLDER_PATH
 
 SHARE_PRICE_HISTORY_START_DATE = config.SHARE_PRICE_HISTORY_START_DATE
 PERMISSIBLE_BANK_NAMES = config.PERMISSIBLE_BANK_NAMES
@@ -582,8 +584,8 @@ class PresentationETL(BaseETL):
 
         return text_df, graphs_df, tables_df
 
-class DataAggregationETL(BaseETL):
-    """This class provides methods to aggregate data from multiple ETL processes into single files ready for downstream analysis.
+class NLPInputDataAggregationETL(BaseETL):
+    """This class provides methods to aggregate data from multiple ETL processes into single files ready for NLP analysis.
     """
     def __init__(self, data_dir_path, news_dir_path):
         # Check if input paths are valid
@@ -1443,6 +1445,182 @@ class FinancialNewsETL(BaseETL):
 
         return df
 
+class FinancialMetricsAggregationETL(BaseETL):
+    """
+    This class provides methods to aggregate financial metrics data from multiple sources into a single dataframe.
+    It is designed to be used after NLPInputDataAggregationETL has already been run (as it requires knowledge of the dates of earnings calls from transcripts).
+    """
+    def __init__(self, data_dir_path, transcripts_parquet_path):
+        # Check if input path is valid
+        if not isinstance(data_dir_path, str):
+            raise TypeError("Data directory path must be a string.")
+        data_dir_path = Path(data_dir_path)
+        if not data_dir_path.exists():
+            raise FileNotFoundError(f"Data directory does not exist: {data_dir_path}")
+        self.data_dir_path = data_dir_path
+        # Check if transcripts parquet file is valid
+        if not isinstance(transcripts_parquet_path, str) or not transcripts_parquet_path.endswith('.parquet'):
+            raise TypeError("Transcripts path must be a string. It must point to a Parquet file.")
+        transcripts_parquet_path = Path(transcripts_parquet_path)
+        if not transcripts_parquet_path.exists():
+            raise FileNotFoundError(f"Transcripts parquet file does not exist: {transcripts_parquet_path}")
+        self.transcripts_parquet_path = transcripts_parquet_path
+
+        # We'll check that the files we expect exist.
+        bank_dirs = [bank_dir for bank_dir in self.data_dir_path.iterdir() if bank_dir.is_dir() and bank_dir.name in PERMISSIBLE_BANK_NAMES]
+        all_files = defaultdict(lambda: defaultdict(dict))
+        # Iterate through each bank directory
+        for bank_dir in bank_dirs:
+            # Get the name of the bank
+            bank_name = bank_dir.name
+            metrics_fpath = bank_dir / "processed" / "supplementary_data" / f"{bank_name}_cleaned_summary.xlsx"
+            share_price_history_fpath = bank_dir / "processed" / "share_price_history" / "share_price_history.csv"
+            if not metrics_fpath.exists():
+                raise FileNotFoundError(f"Metrics file does not exist for {bank_name}: {metrics_fpath}")
+            all_files[bank_name]["metrics"]["fpath"] = metrics_fpath
+            if not share_price_history_fpath.exists():
+                raise FileNotFoundError(f"Share price history file does not exist for {bank_name}: {share_price_history_fpath}")
+            all_files[bank_name]["share_prices"]["fpath"] = share_price_history_fpath
+
+        self.all_files = all_files
+
+
+
+
+    def extract(self):
+        """
+        Extracts financial metrics data from the data directory.
+        Returns a dictionary with keys as file names and values as DataFrames.
+        """
+        # First let's get the financial metrics and share price history files from the data directory.
+        all_files = self.all_files
+        for bank in all_files.keys():
+            metrics_fpath = all_files[bank]["metrics"]["fpath"]
+            share_price_history_fpath = all_files[bank]["share_prices"]["fpath"]
+            df_metrics = pd.read_excel(metrics_fpath)
+            df_metrics.columns = ["reporting_period"] + list(df_metrics.columns[1:])
+            # Ensure reporting_period is in the right format
+            split_srs = df_metrics['reporting_period'].str.split("Q")
+            df_metrics['reporting_period'] = (split_srs.str.get(1).astype(int)+2000).astype(str) + "Q" + split_srs.str.get(0)
+            df_share_price_history = pd.read_csv(share_price_history_fpath)
+            df_share_price_history['Date'] = pd.to_datetime(df_share_price_history['Date']).dt.date
+            all_files[bank]["metrics"]["data"] = df_metrics
+            all_files[bank]["share_prices"]["data"] = df_share_price_history
+
+        # Now let's get the earnings calls dates from the transcripts parquet file - this is an aggregated file so we will disaggregate to individul banks before storing in the dictionary.
+        transcripts_df = pd.read_parquet(self.transcripts_parquet_path)
+        # Ensure the transcripts DataFrame has the necessary columns
+        expected_cols = ["reporting_period", "date_of_call", "bank"]
+        if not all(col in transcripts_df.columns for col in expected_cols):
+            raise ValueError(f"Transcripts parquet file must contain all of the following columns: {expected_cols}.")
+        transcripts_df = transcripts_df[expected_cols]
+        # Deduplicate
+        transcripts_df = transcripts_df.drop_duplicates().reset_index(drop=True)
+        # Convert date_of_call to datetime
+        transcripts_df['date_of_call'] = pd.to_datetime(transcripts_df['date_of_call']).dt.date
+        # Reformat reporting_period
+        transcripts_df['reporting_period'] = reformat_reporting_period(transcripts_df['reporting_period'])
+        # reporting_period_split_srs = transcripts_df['reporting_period'].str.split("_")
+        # transcripts_df['reporting_period'] = reporting_period_split_srs.str.get(1).astype(str) + reporting_period_split_srs.str.get(0)
+        for bank in all_files.keys():
+            bank_name_clean = BANK_NAME_MAPPING[bank]
+            # Filter the transcripts DataFrame for the current bank
+            bank_transcripts_df = transcripts_df[transcripts_df['bank'] == bank_name_clean].copy()
+            bank_transcripts_df.reset_index(drop=True, inplace=True)
+            bank_transcripts_df = bank_transcripts_df.drop(columns=['bank'])
+            if bank_transcripts_df.empty:
+                raise ValueError(f"No transcripts data found for {bank}.")
+            # Store the earnings call dates in the all_files dictionary
+            all_files[bank]["earnings_calls_dates"]["data"] = bank_transcripts_df
+
+        return all_files
+
+    def transform(self, raw_data):
+        """
+        Transforms the extracted data by aggregating financial metrics.
+        Returns a DataFrame with aggregated financial metrics.
+        """
+        # Check if raw_data is a dictionary with the expected structure
+        if not isinstance(raw_data, dict):
+            raise TypeError("Raw data must be a dictionary")
+
+        # Check we have all the keys we need
+        if not all(isinstance(bank_data, dict) and 'metrics' in bank_data and 'share_prices' in bank_data and 'earnings_calls_dates' in bank_data for bank_data in raw_data.values()):
+            raise ValueError("Each bank's data must contain 'metrics', 'share_prices' and 'earnings_calls_dates' keys.")
+
+        # Check for data keys and that the data is a DataFrame
+        for bank in raw_data.keys():
+            for data_type in ['metrics', 'share_prices', 'earnings_calls_dates']:
+                if 'data' not in raw_data[bank][data_type]:
+                    raise ValueError(f"Data for {bank} does not contain '{data_type}' data.")
+                if not isinstance(raw_data[bank][data_type]['data'], pd.DataFrame):
+                    raise TypeError(f"Data for {bank} under '{data_type}' must be a Pandas DataFrame.")
+
+
+        metrics_dfs = []
+        market_reaction_dfs = []
+        for bank in raw_data:
+            bank_clean_name = BANK_NAME_MAPPING[bank]
+            # For the metrics data we simply concatenate
+            metrics_df = raw_data[bank]["metrics"]["data"].copy()
+            bank_clean_name = BANK_NAME_MAPPING[bank]
+            metrics_df.insert(0, 'bank', bank_clean_name)  # Add bank name as first column
+            metrics_dfs.append(metrics_df)
+
+            # For share price reaction, we need to combine the share price history with the earnings call dates.
+            share_price_df = raw_data[bank]["share_prices"]["data"].copy()
+            earnings_calls_df = raw_data[bank]["earnings_calls_dates"]["data"].copy()
+            share_prices_before = []
+            share_prices_after = []
+            for call_date in earnings_calls_df['date_of_call']:
+                # Get the index of this day in the share price DataFrame
+                earnings_call_idx = share_price_df[share_price_df['Date'] == call_date].index[0]
+                # Get the share price 2 days before and after the earnings call
+                share_prices_before.append(share_price_df.loc[earnings_call_idx-2, ['Close', 'GlobalBankIndex']].tolist())
+                share_prices_after.append(share_price_df.loc[earnings_call_idx+2, ['Close', 'GlobalBankIndex']].tolist())
+
+            earnings_calls_df[['share_price_before', 'index_before']] = share_prices_before
+            earnings_calls_df[['share_price_after', 'index_after']] = share_prices_after
+            earnings_calls_df['share_price_pct_change'] = (earnings_calls_df['share_price_after'] / earnings_calls_df['share_price_before'] - 1)*100
+            earnings_calls_df['index_pct_change'] = (earnings_calls_df['index_after'] / earnings_calls_df['index_before'] - 1)*100
+            earnings_calls_df['share_price_pct_change_relative_to_index'] = earnings_calls_df['share_price_pct_change'] - earnings_calls_df['index_pct_change']
+            earnings_calls_df.insert(0, 'bank', bank_clean_name)
+            keep_cols = ["bank", "reporting_period", "share_price_pct_change", "share_price_pct_change_relative_to_index"]
+            earnings_calls_df = earnings_calls_df[keep_cols]
+            market_reaction_dfs.append(earnings_calls_df)
+
+
+
+        metrics_df = pd.concat(metrics_dfs, ignore_index=True)
+        market_reaction_df = pd.concat(market_reaction_dfs, ignore_index=True)
+
+        # Merge the two DataFrames on 'bank' and 'reporting_period'
+        all_metrics_df = pd.merge(
+            market_reaction_df, metrics_df,
+            on=['bank', 'reporting_period'],
+            how='left'
+        )
+        all_metrics_df.sort_values(by=['bank', 'reporting_period'], inplace=True)
+
+        return all_metrics_df
+
+    def load(self, transformed_data, output_dir_path):
+        """Saves the transformed data to csv and parquet files in the app data folder."""
+        if not isinstance(transformed_data, pd.DataFrame):
+            raise TypeError("Transformed data must be a Pandas DataFrame.")
+        if transformed_data.empty:
+            raise ValueError("Transformed data is empty. Nothing to save.")
+        if not isinstance(output_dir_path, str):
+            raise TypeError("Output directory path must be a string.")
+        output_dir_path = Path(output_dir_path)
+        # Make the directory if it does not exist already
+        output_dir_path.mkdir(parents=True, exist_ok=True)
+
+        # Save the DataFrame to cav and parquet
+        output_file_path_csv = output_dir_path / "financial_metrics.csv"
+        output_file_path_parquet = output_dir_path / "financial_metrics.parquet"
+        transformed_data.to_csv(output_file_path_csv, index=False)
+        transformed_data.to_parquet(output_file_path_parquet, index=False)
 
 
 if __name__ == "__main__":
@@ -1492,21 +1670,21 @@ if __name__ == "__main__":
     # 	output_dir_path=output_dir_path,
     # )
 
-    # Instantiate the DataAggregationETL class
-    data_aggregation_etl = DataAggregationETL(
-    	data_dir_path=DATA_FOLDER_PATH,
-        news_dir_path=NEWS_DATA_FOLDER_PATH,
-    )
+    # # Instantiate the NLPInputDataAggregationETL class
+    # data_aggregation_etl = NLPInputDataAggregationETL(
+    # 	data_dir_path=DATA_FOLDER_PATH,
+    #     news_dir_path=NEWS_DATA_FOLDER_PATH,
+    # )
 
-    # Extract data
-    all_files = data_aggregation_etl.extract()
+    # # Extract data
+    # all_files = data_aggregation_etl.extract()
 
-    # Transform data
-    aggregated_data_dict = data_aggregation_etl.transform(raw_data=all_files)
+    # # Transform data
+    # aggregated_data_dict = data_aggregation_etl.transform(raw_data=all_files)
 
-    # Load data
-    output_dir_path = AGGREGATED_DATA_FOLDER_PATH
-    data_aggregation_etl.load(transformed_data=aggregated_data_dict, output_dir_path=output_dir_path)
+    # # Load data
+    # output_dir_path = AGGREGATED_DATA_FOLDER_PATH
+    # data_aggregation_etl.load(transformed_data=aggregated_data_dict, output_dir_path=output_dir_path)
 
     # # Instantiate the SharePriceDataETL class
     # bank_name = "bankofamerica"
@@ -1570,6 +1748,24 @@ if __name__ == "__main__":
     # )
     # elapsed_time = time.time() - start
     # print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
+
+    # Instantiate the FinancialMetricsAggregationETL class
+    data_dir_path = DATA_FOLDER_PATH
+    transcripts_parquet_path = os.path.join(AGGREGATED_DATA_FOLDER_PATH, "transcripts.parquet")
+    financial_metrics_etl = FinancialMetricsAggregationETL(
+        data_dir_path=data_dir_path,
+        transcripts_parquet_path=transcripts_parquet_path,
+    )
+    # Extract data
+    raw_data = financial_metrics_etl.extract()
+
+    # Transform data
+    transformed_data = financial_metrics_etl.transform(raw_data=raw_data)
+
+    # Load data
+    output_dir_path = APP_DATA_FOLDER_PATH
+    financial_metrics_etl.load(transformed_data=transformed_data, output_dir_path=output_dir_path)
+
 
 
 
