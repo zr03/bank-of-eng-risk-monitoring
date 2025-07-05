@@ -11,9 +11,11 @@ import datetime
 from collections import defaultdict
 from tqdm import tqdm
 import time
+import sqlite3
 
 from pydantic import BaseModel, Field
 import pymupdf
+import numpy as np
 import pandas as pd
 import yfinance as yf
 from pinecone import Pinecone, ServerlessSpec
@@ -1592,6 +1594,12 @@ class FinancialMetricsAggregationETL(BaseETL):
 
 
         metrics_df = pd.concat(metrics_dfs, ignore_index=True)
+
+        # We'll add LDR ratio to the metrics DataFrame as it is a better measure of risk than total loans by itself
+        metrics_df['LDR ratio (%)'] = metrics_df['Total loans (billions of dollars)'] / metrics_df['Total deposits (billions of dollars)'] * 100
+        # We'll drop the Total loans column as somewhat redundant now, we'll keep total deposits as it is a useful measure of liquidity risk by itself
+        metrics_df.drop(columns=['Total loans (billions of dollars)'], inplace=True, errors='ignore')
+
         market_reaction_df = pd.concat(market_reaction_dfs, ignore_index=True)
 
         # Merge the two DataFrames on 'bank' and 'reporting_period'
@@ -1621,6 +1629,405 @@ class FinancialMetricsAggregationETL(BaseETL):
         output_file_path_parquet = output_dir_path / "financial_metrics.parquet"
         transformed_data.to_csv(output_file_path_csv, index=False)
         transformed_data.to_parquet(output_file_path_parquet, index=False)
+
+class SQLDatabaseETL(BaseETL):
+    """
+    This class provides methods to extract financial metrics and sentiment data and store it in a SQL database.
+    """
+    raw_metrics_schema_dict = {
+        "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+        "bank": "TEXT NOT NULL",
+        "quarter": "TEXT NOT NULL",
+        "category_type": "TEXT NOT NULL", # Risk or topic
+        "category": "TEXT NOT NULL",  # Risk or topic name
+        "metric_name": "TEXT NOT NULL", # E.g. sentiment
+        "metric_value": "REAL NOT NULL",
+        "rank": "INTEGER",
+
+    }
+
+    metric_trends_schema_dict = {
+        "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+        "bank": "TEXT NOT NULL",
+        "category_type": "TEXT NOT NULL",  # Risk or topic
+        "category": "TEXT NOT NULL",  # Risk or topic name
+        "metric_name": "TEXT NOT NULL",
+        "trend_horizon": "TEXT NOT NULL",
+        "slope": "REAL NOT NULL",
+        "status": "TEXT NOT NULL",  # E.g. "improving", "deteriorating", "stable"
+        "volatility": "REAL NOT NULL",
+        "slope_rank": "INTEGER",
+        "volatility_rank": "INTEGER",
+    }
+
+    # Mapping of metric names to their display names, risk categories and rank direction (False means higher has a lower rank i.e. is better)
+    metric_name_mapping = {
+        "share_price_pct_change": ["Earnings Call Share Price Change (%)", "General", False],
+        "share_price_pct_change_relative_to_index": ["Earnings Call Share Price Change Relative to Global Index (%)", "General", False],
+        "Noninterest Expense (millions of dollars)": ["Noninterest Expense (millions of dollars)", "Operational Risk", True],
+        "Provision for Credit Losses (millions of dollars)": ["Provision for Credit Losses (millions of dollars)", "Asset Quality and Credit Risk", True],
+        "Net income (millions of dollars)": ["Net Income (millions of dollars)", "Profitability", False],
+        "Common Equity Tier 1 (CET1) Capital Ratio (%)": ["CET1 (%)", "Capital Adequacy", False],
+        "Tier 1 Capital ratio ratio (%)": ["Tier 1 Ratio (%)", "Capital Adequacy", False],
+        "Total Capital ratio (%)": ["TCR (%)", "Capital Adequacy", False],
+        "Supplementary Leverage ratio (SLR) (%)": ["SLR (%)", "Capital Adequacy", False],
+        "Return on average assets, ROA (%)": ["ROA (%)", "Profitability", False],
+        "Return on average common equity (%)": ["ROCE (%)", "Profitability", False],
+        "Return on average tangible common equity (RoTCE) (%)": ["RoTCE (%)", "Profitability", False],
+        "Efficiency ratio(%)": ["Efficiency Ratio (%)", "Operational Risk", True],
+        # "Total loans (billions of dollars)": ["Total Loans (billions of dollars)", "Asset Quality and Credit Risk", True],
+        "LDR ratio (%)": ["LDR Ratio (%)", "Liquidity Risk", True],
+        "Total deposits (billions of dollars)": ["Total Deposits (billions of dollars)", "Liquidity Risk", False],
+        "Book value per share (dollars)": ["Book Value per Share ($)", "Strategic and Business Model Risk", False],
+        "Tangible book value per share (dollars)": ["Tangible Book Value per Share ($)", "Strategic and Business Model Risk", False],
+    }
+
+    trend_periods_mapping = {
+        'Short-term': 2,  # 2 quarters for short term
+        'Medium-term': 4,  # 4 quarters for medium term
+        'Long-term': 8  # 8 quarters for long term
+    }
+
+    def __init__(self, sql_db_fpath):
+        # Check if db_url is a valid string
+        if not isinstance(sql_db_fpath, str):
+            raise TypeError("Database path must be a string.")
+        if not sql_db_fpath.endswith('.db'):
+            raise ValueError("Database path must point to a .db file.")
+        sql_db_fpath = Path(sql_db_fpath)
+        self.sql_db_fpath = sql_db_fpath
+        # Create the directory if it does not exist
+        sql_db_fpath.parent.mkdir(parents=True, exist_ok=True)
+        if not sql_db_fpath.exists():
+            print(f"Database file does not exist: {sql_db_fpath}. Creating a new database.")
+        self.create_table("raw_metrics", SQLDatabaseETL.raw_metrics_schema_dict, unique_columns=['bank', 'quarter', 'category', 'metric_name'])
+        self.create_table("metric_trends", SQLDatabaseETL.metric_trends_schema_dict, unique_columns=['bank', 'category', 'metric_name', 'trend_horizon'])
+
+    def extract(self, sentiment_data_fpath, topic_relevance_data_fpath, metrics_data_fpath):
+        """
+        Extracts data from the specified files and returns a dictionary with the data.
+        """
+        if not isinstance(sentiment_data_fpath, str) or not sentiment_data_fpath.endswith('.parquet'):
+            raise TypeError("Sentiment data file path must be a string pointing to a .parquet file.")
+        if not isinstance(topic_relevance_data_fpath, str) or not topic_relevance_data_fpath.endswith('.parquet'):
+            raise TypeError("Topic relevance data file path must be a string pointing to a .parquet file.")
+        if not isinstance(metrics_data_fpath, str) or not metrics_data_fpath.endswith('.parquet'):
+            raise TypeError("Metrics data file path must be a string pointing to a .parquet file.")
+
+        sentiment_data_fpath = Path(sentiment_data_fpath)
+        topic_relevance_data_fpath = Path(topic_relevance_data_fpath)
+        metrics_data_fpath = Path(metrics_data_fpath)
+        if not sentiment_data_fpath.exists():
+            raise FileNotFoundError(f"Sentiment data file does not exist: {sentiment_data_fpath}. Make sure you have run the relevane ETL steps before this one.")
+        if not topic_relevance_data_fpath.exists():
+            raise FileNotFoundError(f"Topic relevance data file does not exist: {topic_relevance_data_fpath}. Make sure you have run the relevane ETL steps before this one.")
+        if not metrics_data_fpath.exists():
+            raise FileNotFoundError(f"Metrics data file does not exist: {metrics_data_fpath}. Make sure you have run the relevane ETL steps before this one.")
+
+        sentiment_df = pd.read_parquet(sentiment_data_fpath)
+        topic_relevance_df = pd.read_parquet(topic_relevance_data_fpath)
+        metrics_df = pd.read_parquet(metrics_data_fpath)
+
+        return {
+            "sentiment": sentiment_df,
+            "topic_relevance": topic_relevance_df,
+            "metrics": metrics_df
+        }
+
+
+
+    def transform(self, raw_data):
+        """Reshape and aggregate the sentiment, topic relevance and metrics data, including calculating trends."""
+
+        # Let's start with the topic relevance data
+        df_topic_relevance = raw_data['topic_relevance'].copy()
+        df_topic_relevance = df_topic_relevance[df_topic_relevance['bank'] != "All"]
+        df_topic_relevance = df_topic_relevance[df_topic_relevance['source_type'] != "all"]
+        first_topic_col_idx = df_topic_relevance.columns.get_loc("risk_proportion") + 1
+        topic_cols = df_topic_relevance.columns[first_topic_col_idx:-1].tolist()
+        top_topics = self.get_top_k_topics(
+            df_topic_relevance,
+            topic_cols=topic_cols,
+            top_k=20,
+            last_n_quarters=2  # Consider the last 2 quarters
+        )
+        df_topic_relevance.rename(columns={'reporting_period': 'quarter', 'risk_category': 'category', 'risk_proportion': 'metric_value'}, inplace=True)
+        keep_cols = ['bank', 'quarter', 'category', 'metric_value', 'source_type'] + top_topics
+        df_topic_relevance_risk = df_topic_relevance[keep_cols]
+        df_topic_relevance_topics = df_topic_relevance[[col for col in keep_cols if col not in ['category', 'metric_value']]].copy()
+        df_topic_relevance_risk.drop(columns=top_topics, inplace=True)
+        df_topic_relevance_risk['category_type'] = "Risk"
+        df_topic_relevance_topics['category_type'] = "Topic"
+        # Reshape the topics data
+        df_topic_relevance_topics = df_topic_relevance_topics.melt(
+            id_vars=['bank', 'quarter', 'source_type', 'category_type'],
+            var_name='category',
+            value_name='metric_value'
+        )
+        # Combine the risk and topics data
+        df_topic_relevance_combined = pd.concat([df_topic_relevance_risk, df_topic_relevance_topics], ignore_index=True)
+        df_topic_relevance_combined['metric_name'] = "Topic Prevalence - " + df_topic_relevance_combined['source_type'].str.capitalize()
+        # Reorder the columns
+        df_topic_relevance_combined = df_topic_relevance_combined[['bank', 'quarter', 'category_type', 'category', 'metric_name', 'metric_value', 'source_type']]
+        df_topic_relevance_combined.drop(columns=['source_type'], inplace=True)
+        # Add rank column - for topic prevalence we want higher values to have lower ranks
+        #  TODO: NaNs should be handled upstream
+        df_topic_relevance_combined['metric_value'] = df_topic_relevance_combined['metric_value'].fillna(0)  # Fill NaN values with 0 for ranking
+        df_topic_relevance_combined['rank'] = df_topic_relevance_combined.groupby(['quarter', 'category', 'metric_name'])['metric_value'].rank(method='min', ascending=False).astype(int)
+
+
+        # Now let's look at the sentiment data
+        df_sentiment = raw_data['sentiment'].copy()
+        df_sentiment = df_sentiment[df_sentiment['bank'] != "All"]
+        df_sentiment = df_sentiment[df_sentiment['source_type'] != "all"]
+        df_sentiment.rename(columns={'reporting_period': 'quarter', 'risk_category': 'category', 'sentiment_score': 'metric_value'}, inplace=True)
+        keep_cols = ['bank', 'quarter', 'category', 'metric_value', 'source_type'] + top_topics
+        df_sentiment_risk = df_sentiment[keep_cols]
+        df_sentiment_topics = df_sentiment[[col for col in keep_cols if col not in ['category', 'metric_value']]].copy()
+        df_sentiment_risk.drop(columns=top_topics, inplace=True)
+        df_sentiment_risk['category_type'] = "Risk"
+        df_sentiment_topics['category_type'] = "Topic"
+        # Reshape the topics data
+        df_sentiment_topics = df_sentiment_topics.melt(
+            id_vars=['bank', 'quarter', 'source_type', 'category_type'],
+            var_name='category',
+            value_name='metric_value'
+        )
+        # Combine the risk and topics data
+        df_sentiment_combined = pd.concat([df_sentiment_risk, df_sentiment_topics], ignore_index=True)
+        df_sentiment_combined['metric_name'] = "Sentiment - " + df_sentiment_combined['source_type'].str.capitalize()
+        # Reorder the columns
+        df_sentiment_combined = df_sentiment_combined[['bank', 'quarter', 'category_type', 'category', 'metric_name', 'metric_value', 'source_type']]
+        df_sentiment_combined.drop(columns=['source_type'], inplace=True)
+        # Add rank column - for sentiment we want higher values to have lower ranks
+        # TODO: check zero sentiment values and potential for NaNs upstream
+        df_sentiment_combined['rank'] = df_sentiment_combined.groupby(['quarter', 'category', 'metric_name'])['metric_value'].rank(method='min', ascending=False).astype(int)
+
+        # Now let's look at the financial metrics data
+        df_metrics = raw_data['metrics'].copy()
+        df_metrics['category_type'] = "Risk"
+        df_metrics.rename(columns={'reporting_period': 'quarter'}, inplace=True)
+        # Get the clean names and categories for the metrics
+        clean_name_mapping = {k: v[0] for k, v in SQLDatabaseETL.metric_name_mapping.items()}
+        risk_category_mapping = {k: v[1] for k, v in SQLDatabaseETL.metric_name_mapping.items()}
+        rank_direction_mapping = {k: v[2] for k, v in SQLDatabaseETL.metric_name_mapping.items()}
+        # Reshape the metrics data
+        df_metrics = df_metrics.melt(
+            id_vars=['bank', 'quarter', 'category_type'],
+            var_name='metric_name',
+            value_name='metric_value'
+        )
+        # Use the mapping to get the risk categories
+        df_metrics['category'] = df_metrics['metric_name'].map(risk_category_mapping)
+        # Reorder the columns
+        df_metrics = df_metrics[['bank', 'quarter', 'category_type', 'category', 'metric_name', 'metric_value']]
+        # Add rank column - for financial metrics we want higher values to have lower ranks if rank_direction is True, otherwise higher values have higher ranks
+        # First split the dataframe into two based on the rank direction
+        metrics_higher_better = [k for k in rank_direction_mapping.keys() if rank_direction_mapping[k] is False]
+        metrics_lower_better = [k for k in rank_direction_mapping.keys() if k not in metrics_higher_better]
+        df_metrics_higher_better = df_metrics[df_metrics['metric_name'].isin(metrics_higher_better)].copy()
+        df_metrics_lower_better = df_metrics[df_metrics['metric_name'].isin(metrics_lower_better)].copy()
+        df_metrics_higher_better['rank'] = df_metrics_higher_better.groupby(['quarter', 'category', 'metric_name'])['metric_value'].rank(method='min', ascending=False).astype(int)
+        df_metrics_lower_better['rank'] = df_metrics_lower_better.groupby(['quarter', 'category', 'metric_name'])['metric_value'].rank(method='min', ascending=True).astype(int)
+        # Concatenate the two dataframes back together
+        df_metrics = pd.concat([df_metrics_higher_better, df_metrics_lower_better], ignore_index=True)
+        # Sort the dataframe by bank, quarter and metric_name
+        df_metrics.sort_values(by=['bank', 'quarter', 'metric_name'], inplace=True)
+
+        # Concatenate the topic relevance, sentiment and metrics dataframes
+        df_raw_metrics = pd.concat([df_topic_relevance_combined, df_sentiment_combined, df_metrics], ignore_index=True)
+
+        # Now let's calculate the trends
+        # Add Sentiment - Internal, Sentiment - External, Topic Prevalence - Internal and Topic Prevalence - External to rank_direction_mapping and metrics_higher_better lists
+        rank_direction_mapping.update({
+            "Sentiment - Internal": False,
+            "Sentiment - External": False,
+            "Topic Prevalence - Internal": False,
+            "Topic Prevalence - External": False
+        })
+        metrics_higher_better.extend([
+            "Sentiment - Internal",
+            "Sentiment - External",
+            "Topic Prevalence - Internal",
+            "Topic Prevalence - External"
+        ])
+        df_metric_trends = df_raw_metrics.groupby(['bank', 'category', 'metric_name']).apply(self.calculate_trends, rank_direction_mapping, SQLDatabaseETL.trend_periods_mapping).reset_index(drop=True)
+
+        # Add ranks for the trends
+        # First split the dataframe into two based on the rank direction
+        df_increasing_trend_better = df_metric_trends[df_metric_trends['metric_name'].isin(metrics_higher_better)].copy()
+        df_decreasing_trend_better = df_metric_trends[df_metric_trends['metric_name'].isin(metrics_lower_better)].copy()
+        df_increasing_trend_better['slope_rank'] = df_increasing_trend_better.groupby(['category', 'metric_name', 'trend_horizon'])['slope'].rank(method='min', ascending=False).astype(int)
+        df_decreasing_trend_better['slope_rank'] = df_decreasing_trend_better.groupby(['category', 'metric_name', 'trend_horizon'])['slope'].rank(method='min', ascending=True).astype(int)
+        # Concatenate the two dataframes back together
+        df_metric_trends = pd.concat([df_increasing_trend_better, df_decreasing_trend_better], ignore_index=True)
+        # Add volatility rank - for volatility we want lower values to have lower ranks
+        df_metric_trends['volatility_rank'] = df_metric_trends.groupby(['category', 'metric_name', 'trend_horizon'])['volatility'].rank(method='min', ascending=True).astype(int)
+        # Sort the trends dataframe by bank, metric_name and trend_horizon
+        df_metric_trends.sort_values(by=['bank', 'category', 'metric_name', 'trend_horizon'], inplace=True)
+
+        # Finally map the metric names to their clean names
+        df_raw_metrics['metric_name'] = df_raw_metrics['metric_name'].replace(clean_name_mapping)
+        df_metric_trends['metric_name'] = df_metric_trends['metric_name'].replace(clean_name_mapping)
+
+        return {
+            "raw_metrics": df_raw_metrics,
+            "metric_trends": df_metric_trends,
+        }
+
+    def load(self, transformed_data):
+        """
+        Loads the transformed data into the SQL database.
+        """
+
+        if not isinstance(transformed_data, dict):
+            raise TypeError("Transformed data must be a dictionary with keys 'raw_metrics' and 'metric_trends'.")
+        if 'raw_metrics' not in transformed_data or 'metric_trends' not in transformed_data:
+            raise ValueError("Transformed data must contain 'raw_metrics' and 'metric_trends' keys.")
+
+        raw_metrics_df = transformed_data['raw_metrics']
+        metric_trends_df = transformed_data['metric_trends']
+
+        if not isinstance(raw_metrics_df, pd.DataFrame) or not isinstance(metric_trends_df, pd.DataFrame):
+            raise TypeError("Transformed data must contain Pandas DataFrames for 'raw_metrics' and 'metric_trends'.")
+
+        if raw_metrics_df.empty or metric_trends_df.empty:
+            raise ValueError("Transformed data cannot be empty.")
+
+        # Insert the raw metrics data into the raw_metrics table
+        self.upsert_data(raw_metrics_df, "raw_metrics", match_columns=['bank', 'quarter', 'category', 'metric_name'])
+        # Insert the metric trends data into the metric_trends table
+        self.upsert_data(metric_trends_df, "metric_trends", match_columns=['bank', 'category', 'metric_name', 'trend_horizon'])
+
+
+
+    def create_table(self, table_name, columns, unique_columns=None):
+        """
+        Creates a table in the SQL database with the specified name and columns.
+        """
+        if not isinstance(table_name, str):
+            raise TypeError("Table name must be a string.")
+        if not isinstance(columns, dict):
+            raise TypeError("Columns must be a dictionary with column names as keys and data types as values.")
+        if not columns:
+            raise ValueError("Columns dictionary cannot be empty.")
+        unique_clause = ''
+        if unique_columns:
+            unique_cols_str = ', '.join(unique_columns)
+            unique_clause = f", UNIQUE({unique_cols_str})"
+
+        with sqlite3.connect(self.sql_db_fpath) as conn:
+            cursor = conn.cursor()
+            columns_str = ', '.join([f"{col} {dtype}" for col, dtype in columns.items()])
+            cursor.execute(f"CREATE TABLE IF NOT EXISTS {table_name} ({columns_str}{unique_clause})")
+            conn.commit()
+
+    def upsert_data(self, df, table_name, match_columns):
+        """
+        Upserts data into the specified table in the SQL database.
+        The kwargs should match the columns of the table.
+        """
+        if not isinstance(table_name, str):
+            raise TypeError("Table name must be a string.")
+        if df.empty:
+            raise ValueError("No data provided to upsert.")
+
+        match_columns = list(match_columns)
+        insert_columns = df.columns.tolist()
+        if not set(match_columns).issubset(set(insert_columns)):
+            raise ValueError(f"Match columns {match_columns} must be a subset of the table columns {insert_columns}.")
+
+        if not len(insert_columns) > len(match_columns):
+            raise ValueError("At least one column must be specified for updating, in addition to the match columns.")
+
+        match_columns_str = ', '.join(match_columns)
+        insert_columns_str = ', '.join(insert_columns)
+        placeholders = ', '.join(['?'] * len(insert_columns))
+        update_columns = [col for col in insert_columns if col not in match_columns]
+        data_values = df[insert_columns].values.tolist()
+
+        query_template = f"""
+            INSERT INTO {table_name} ({insert_columns_str})
+            VALUES ({placeholders})
+            ON CONFLICT({match_columns_str}) DO UPDATE SET
+                {', '.join([f"{col} = excluded.{col}" for col in update_columns])}
+        """
+        try:
+            with sqlite3.connect(self.sql_db_fpath) as conn:
+                cursor = conn.cursor()
+                # executemany executes the same query template for each tuple in data_tuples
+                cursor.executemany(query_template, data_values)
+                conn.commit()
+            print(f"Data upserted successfully into {table_name}.")
+        except sqlite3.Error as e:
+            raise RuntimeError(f"An error occurred while upserting data into {table_name}: {e}")
+
+
+
+    @staticmethod
+    def get_top_k_topics(df, topic_cols, top_k, last_n_quarters=4):
+        """
+        Returns the top k topics considering all banks in the last n quarters and the risk category they predominately belong to over the same period.
+        """
+        if not isinstance(df, pd.DataFrame):
+            raise TypeError("Data must be a Pandas DataFrame.")
+        if not isinstance(topic_cols, list):
+            raise TypeError("Topic columns must be a list of column names.")
+        if not isinstance(top_k, int) or top_k <= 0:
+            raise ValueError("Top k must be a positive integer.")
+        if not isinstance(last_n_quarters, int) or last_n_quarters <= 0:
+            raise ValueError("Last n quarters must be a positive integer.")
+
+        # Get the last n quarters from the reporting_period column
+        quarters = df['reporting_period'].drop_duplicates().sort_values(ascending=False).head(last_n_quarters).tolist()
+        dff = df[df['reporting_period'].isin(quarters)].copy()
+
+        # We'll get the top topics based on the mean relevance score across all banks
+        top_topics = dff[topic_cols].mean().sort_values(ascending=False).head(top_k). index.tolist()
+
+        return top_topics
+
+    @staticmethod
+    def calculate_trends(df, rank_direction_mapping, trend_periods_dict):
+        # Ensure sorted by quarter with most recent quarter last
+        df = df.sort_values(by='quarter')
+        # Initialize a dictionary to store results
+        results = defaultdict(list)
+        for trend_horizon, n_quarters in trend_periods_dict.items():
+            results["bank"].append(df['bank'].iloc[0])
+            results["category_type"].append(df['category_type'].iloc[0])
+            results["category"].append(df['category'].iloc[0])
+            metric_name = df['metric_name'].iloc[0]
+            results["metric_name"].append(metric_name)
+            results["trend_horizon"].append(trend_horizon)
+            data = df['metric_value'].tail(n_quarters)
+            x = np.arange(len(data))
+            # Fit a linear regression model to the last n_quarters of data
+            if len(data) < 2:
+                slope = 0
+            else:
+                slope = np.polyfit(x, data, 1)[0]
+            results["slope"].append(slope)
+            # Get the status based on the slope, the starting and the rank direction
+            starting_value = data.iloc[0]
+            rank_direction = rank_direction_mapping[metric_name]
+            if abs(slope/starting_value) < 0.01:
+                status = "stable"
+            # If rank direction is True, decreasing trend is better, similarly if rank direction is False, increasing trend is better
+            elif (slope > 0 and rank_direction is False) or (slope < 0 and rank_direction is True):
+                status = "improving"
+            else:
+                status = "deteriorating"
+            results["status"].append(status)
+            if len(data) < 2:
+                volatility = 0
+            else:
+                volatility = data.std()
+            results["volatility"].append(volatility)
+
+        df_trends = pd.DataFrame(results)
+
+        return df_trends
 
 
 if __name__ == "__main__":
@@ -1749,25 +2156,42 @@ if __name__ == "__main__":
     # elapsed_time = time.time() - start
     # print(f"Elapsed time for FinancialNewsETL: {elapsed_time:.2f} seconds")
 
-    # Instantiate the FinancialMetricsAggregationETL class
-    data_dir_path = DATA_FOLDER_PATH
-    transcripts_parquet_path = os.path.join(AGGREGATED_DATA_FOLDER_PATH, "transcripts.parquet")
-    financial_metrics_etl = FinancialMetricsAggregationETL(
-        data_dir_path=data_dir_path,
-        transcripts_parquet_path=transcripts_parquet_path,
-    )
+    # # Instantiate the FinancialMetricsAggregationETL class
+    # data_dir_path = DATA_FOLDER_PATH
+    # transcripts_parquet_path = os.path.join(AGGREGATED_DATA_FOLDER_PATH, "transcripts.parquet")
+    # financial_metrics_etl = FinancialMetricsAggregationETL(
+    #     data_dir_path=data_dir_path,
+    #     transcripts_parquet_path=transcripts_parquet_path,
+    # )
+    # # Extract data
+    # raw_data = financial_metrics_etl.extract()
+
+    # # Transform data
+    # transformed_data = financial_metrics_etl.transform(raw_data=raw_data)
+
+    # # Load data
+    # output_dir_path = APP_DATA_FOLDER_PATH
+    # financial_metrics_etl.load(transformed_data=transformed_data, output_dir_path=output_dir_path)
+
+    # Instantiate the SQLDatabaseETL class
+    sql_db_fpath = os.path.join(APP_DATA_FOLDER_PATH, "metrics.db")
+    sql_db_etl = SQLDatabaseETL(sql_db_fpath)
+
     # Extract data
-    raw_data = financial_metrics_etl.extract()
+    sentiment_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_sentiment_quarter_agg_norm.parquet")
+    topic_relevance_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_quarter_agg_norm.parquet")
+    metrics_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "financial_metrics.parquet")
+    raw_data = sql_db_etl.extract(
+        sentiment_data_fpath=sentiment_data_fpath,
+        topic_relevance_data_fpath=topic_relevance_data_fpath,
+        metrics_data_fpath=metrics_data_fpath
+    )
 
     # Transform data
-    transformed_data = financial_metrics_etl.transform(raw_data=raw_data)
+    transformed_data = sql_db_etl.transform(raw_data=raw_data)
 
     # Load data
-    output_dir_path = APP_DATA_FOLDER_PATH
-    financial_metrics_etl.load(transformed_data=transformed_data, output_dir_path=output_dir_path)
-
-
-
+    sql_db_etl.load(transformed_data=transformed_data)
 
 
 
