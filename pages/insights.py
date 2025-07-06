@@ -210,8 +210,12 @@ def generate_layout():
     # Get risk categories
     risk_categories_list = sorted(df_topic_relevance_agg_norm['risk_category'].unique().tolist())
 
-    risk_categories_metric_list = ['Profitability','Efficiency and Expense Management',''
-    'Credit risk and Asset Quality','Capital Adequacy and Solvency', 'Liquidity','Valuation']
+    risk_categories_metric_list = ['Profitability',
+                                   'Efficiency and Expense Management',
+                                   'Credit risk and Asset Quality',
+                                   'Capital Adequacy and Solvency', 
+                                   'Liquidity',
+                                   'Valuation']
 
     poetry_qa_card = html.Div(
         className="card",
@@ -548,37 +552,45 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     Input(component_id='bank-dropdown-comp', component_property='value'),
     Input(component_id='date-slider-comp', component_property='value'),
     Input(component_id='risk-category-metric-dropdown', component_property='value'),
+    Input(component_id='risk-category-metric-dropdown', component_property='options'),
     State(component_id='time-data', component_property='data'),
     # prevent_initial_call=True,
     # background=True
 )
-def update_agg_figs_metric(banks, date_range_indices, risk_category, time_data):
+def update_agg_figs_metric(banks, date_range_indices, risk_category, risk_categories_metric_list, time_data):
     # Read in the curtailment data
     # Define mapping from risk category to related metric columns
+
     risk_category_metrics = {
-        "Profitability": [
+        # profitability
+        risk_categories_metric_list[0]: [
             "Net income (millions of dollars)",
             "Return on average assets, ROA (%)",
             "Return on average common equity (%)",
             "Return on average tangible common equity (RoTCE) (%)"
         ],
-        "Efficiency / Expense Management": [
+        # "Efficiency / Expense Management"
+        risk_categories_metric_list[1]: [
             "Noninterest Expense (millions of dollars)",
             "Efficiency ratio(%)"
         ],
-        "Asset Quality and Credit Risk": [
+        # "Asset Quality and Credit Risk"
+        risk_categories_metric_list[2]: [
             "Provision for Credit Losses (millions of dollars)"
         ],
-        "Capital Adequacy": [
+        # "Capital Adequacy"
+        risk_categories_metric_list[3]: [
             "Common Equity Tier 1 (CET1) Capital ratio (%)",
             "Tier 1 Capital ratio ratio (%)",
             "Total Capital ratio (%)",
             "Supplementary Leverage ratio (SLR) (%)"
         ],
-        "Liquidity / Balance Sheet Strength": [
+        # "Liquidity / Balance Sheet Strength"
+        risk_categories_metric_list[4]: [
             "Total deposits (billions of dollars)"
         ],
-        "Valuation / Shareholder Value": [
+        # "Valuation / Shareholder Value"
+        risk_categories_metric_list[5]: [
             "Book value per share (dollars)",
             "Tangible book value per share (dollars)"
         ]
@@ -620,107 +632,110 @@ def update_agg_figs_metric(banks, date_range_indices, risk_category, time_data):
     import plotly.express as px
 
     # Filter for Profitability
-    profit_df = merged_df[merged_df["risk_category"] == "Profitability"]
+    if risk_category in [risk_categories_metric_list[0], risk_categories_metric_list[3]]:
+        print (f"Risk category {risk_category}")
+        profit_df = merged_df[merged_df["risk_category"] == risk_category]
 
-    # Get unique metrics
-    metrics = profit_df["metric_name"].unique()
-
-    # Create 2x2 subplot grid with secondary y-axes
-    fig = make_subplots(
-        rows=2, cols=2,
-        subplot_titles=metrics,
-        specs=[[{"secondary_y": True}, {"secondary_y": True}],
-            [{"secondary_y": True}, {"secondary_y": True}]],
-        shared_xaxes=True,
-        vertical_spacing=0.1,
-        horizontal_spacing=0.1
-    )
-
-    # Define colors
-    metric_color = "blue"
-    sentiment_color = "red"
-
-    # Plot each metric in its respective subplot
-    for i, metric in enumerate(metrics):
-        row = (i // 2) + 1
-        col = (i % 2) + 1
-        
-        # Filter data for current metric
-        temp = profit_df[profit_df["metric_name"] == metric]
-        
-        # Add sentiment score line (primary y-axis)
-        fig.add_trace(
-            go.Scatter(
-                x=temp["reporting_period"],
-                y=temp["sentiment_score"],
-                mode='lines+markers',
-                name=f'Sentiment - {metric}',
-                line=dict(color=sentiment_color),
-                marker=dict(color=sentiment_color),
-                showlegend=False
-            ),
-            row=row, col=col,
-            secondary_y=False
-        )
-        
-        # Add metric value line (secondary y-axis)
-        fig.add_trace(
-            go.Scatter(
-                x=temp["reporting_period"],
-                y=temp["metric_value"],
-                mode='lines+markers',
-                name=f'Metric - {metric}',
-                line=dict(color=metric_color),
-                marker=dict(color=metric_color),
-                showlegend=False
-            ),
-            row=row, col=col,
-            secondary_y=True
+        # Get unique metrics
+        metrics = profit_df["metric_name"].unique()
+        print(f"Metric: {metrics}")
+        # Create 2x2 subplot grid with secondary y-axes
+        fig = make_subplots(
+            rows=2, cols=2,
+            subplot_titles=metrics,
+            specs=[[{"secondary_y": True}, {"secondary_y": True}],
+                [{"secondary_y": True}, {"secondary_y": True}]],
+            shared_xaxes=True,
+            vertical_spacing=0.1,
+            horizontal_spacing=0.1
         )
 
-    # Update y-axis labels and colors
-    for i in range(len(metrics)):
-        row = (i // 2) + 1
-        col = (i % 2) + 1
-        
-        # Primary y-axis (sentiment score)
-        fig.update_yaxes(
-            title_text="Sentiment Score",
-            title_font=dict(color=sentiment_color),
-            tickfont=dict(color=sentiment_color),
-            row=row, col=col,
-            secondary_y=False
+        # Define colors
+        metric_color = "blue"
+        sentiment_color = "red"
+
+        # Plot each metric in its respective subplot
+        for i, metric in enumerate(metrics):
+            row = (i // 2) + 1
+            col = (i % 2) + 1
+            
+            # Filter data for current metric
+            temp = profit_df[profit_df["metric_name"] == metric]
+            # print (temp)
+            
+            # Add sentiment score line (primary y-axis)
+            fig.add_trace(
+                go.Scatter(
+                    x=temp["reporting_period"],
+                    y=temp["sentiment_score"],
+                    mode='lines+markers',
+                    name=f'Sentiment - {metric}',
+                    line=dict(color=sentiment_color),
+                    marker=dict(color=sentiment_color),
+                    showlegend=False
+                ),
+                row=row, col=col,
+                secondary_y=False
+            )
+            
+            # Add metric value line (secondary y-axis)
+            fig.add_trace(
+                go.Scatter(
+                    x=temp["reporting_period"],
+                    y=temp["metric_value"],
+                    mode='lines+markers',
+                    name=f'Metric - {metric}',
+                    line=dict(color=metric_color),
+                    marker=dict(color=metric_color),
+                    showlegend=False
+                ),
+                row=row, col=col,
+                secondary_y=True
+            )
+
+        # Update y-axis labels and colors
+        for i in range(len(metrics)):
+            row = (i // 2) + 1
+            col = (i % 2) + 1
+            
+            # Primary y-axis (sentiment score)
+            fig.update_yaxes(
+                title_text="Sentiment Score",
+                title_font=dict(color=sentiment_color),
+                tickfont=dict(color=sentiment_color),
+                row=row, col=col,
+                secondary_y=False
+            )
+            
+            # Secondary y-axis (metric value)
+            fig.update_yaxes(
+                title_text="Metric Value",
+                title_font=dict(color=metric_color),
+                tickfont=dict(color=metric_color),
+                row=row, col=col,
+                secondary_y=True
+            )
+
+        # Update x-axis labels
+        fig.update_xaxes(title_text="Quarter")
+
+        # Update layout
+        fig.update_layout(
+            title={
+                'text': f"{risk_category}: Sentiment Score vs Financial Metrics",
+                'x': 0.5,
+                'xanchor': 'center',
+                'font': {'size': 16}
+            },
+            height=600,
+            width=1000,
+            showlegend=False,
+            template="plotly_white"  # Similar to seaborn's whitegrid style
         )
-        
-        # Secondary y-axis (metric value)
-        fig.update_yaxes(
-            title_text="Metric Value",
-            title_font=dict(color=metric_color),
-            tickfont=dict(color=metric_color),
-            row=row, col=col,
-            secondary_y=True
-        )
 
-    # Update x-axis labels
-    fig.update_xaxes(title_text="Quarter")
-
-    # Update layout
-    fig.update_layout(
-        title={
-            'text': "Profitability: Sentiment Score vs Financial Metrics",
-            'x': 0.5,
-            'xanchor': 'center',
-            'font': {'size': 16}
-        },
-        height=600,
-        width=1000,
-        showlegend=False,
-        template="plotly_white"  # Similar to seaborn's whitegrid style
-    )
-
-    # Add grid lines to match seaborn's whitegrid style
-    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
-    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
+        # Add grid lines to match seaborn's whitegrid style
+        fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
+        fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
 
     # fig.show()
     return fig
