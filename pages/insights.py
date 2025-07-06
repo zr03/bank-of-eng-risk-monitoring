@@ -210,6 +210,9 @@ def generate_layout():
     # Get risk categories
     risk_categories_list = sorted(df_topic_relevance_agg_norm['risk_category'].unique().tolist())
 
+    risk_categories_metrics_list = ['Profitability','Efficiency and Expense Management',''
+    'Credit risk and Asset Quality','Capital Adequacy and Solvency', 'Liquidity','Valuation']
+
     poetry_qa_card = html.Div(
         className="card",
         children=[
@@ -341,6 +344,7 @@ def generate_layout():
 
                         ]
                     ),
+                    
                     html.Div(
                         className="card data-card",
                         id='right-card-curt',
@@ -378,6 +382,86 @@ def generate_layout():
                                 ]
 
                             ),
+
+
+
+                        ]
+                    ),
+                    html.Div(
+                className="card-group flex-div2",
+                children=[
+                    html.Div(
+                        className="card",
+                        id='left-card-curt',
+                        children=[
+                            html.Div(
+                                children=[
+                                    html.H4(
+                                        className="card-header",
+                                        children="Metrics "
+                                    ),
+                                    html.P(
+                                        className="explanation",
+                                        children="The chart below shows how net sentiment across different risk categories has been evolving over recent quarters."
+                                    ),
+                                    html.Label(
+                                        className="control-label",
+                                        children="Risk category:",
+                                        htmlFor='risk-category-metric-dropdown'
+                                    ),
+                                    dcc.Dropdown(
+                                        id='risk-category-metric-dropdown',
+                                        options=risk_categories_metrics_list,
+                                        value=risk_categories_metrics_list[0],
+                                        clearable=False,
+                                    ),
+                                    dcc.Graph(
+                                        # className='graphic',
+                                        id='line-fig-metrics',
+                                    ),
+                                ]
+                            ),
+
+                        ]
+                    ),
+                    
+                    # html.Div(
+                    #     className="card data-card",
+                    #     id='right-card-curt',
+                    #     children=[
+                    #         html.Div(
+                    #             children=[
+                    #                 html.Div(
+                    #                     children=[
+                    #                         html.H4(
+                    #                             children="Data Summary",
+                    #                             className="data-card-heading",
+                    #                             id="sentiment-eff-heading",
+                    #                         ),
+                    #                         html.H4(
+                    #                             className="data-card-value",
+                    #                             id="sentiment-eff",
+                    #                         )
+                    #                     ]
+                    #                 ),
+                    #                 html.Br(),
+                    #                 html.Div(
+                    #                     children=[
+                    #                         html.H4(
+                    #                             className="data-card-heading",
+                    #                             id="sentiment-bank-heading",
+                    #                         ),
+                    #                         html.H4(
+                    #                             className="data-card-value",
+                    #                             id="sentiment-bank",
+                    #                         )
+                    #                     ]
+                    #                 ),
+
+
+                    #             ]
+
+                    #         ),
 
 
 
