@@ -201,7 +201,7 @@ def update_topic_proportion(bank_selected):
     Input("sentiment-topic-dropdown", "value")
 )
 def q_a_sentiment(bank_selected, topic_selected):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
 
     # Get dropdown options
     bank_options = sorted(df["bank"].dropna().unique())
@@ -260,7 +260,7 @@ def q_a_sentiment(bank_selected, topic_selected):
     Input("kl-topic-quarter-dropdown", "value")
 )
 def update_kl_topic_summary_cards(bank_selected, quarter_selected):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
     if not bank_selected or not quarter_selected:
         return []
 
@@ -316,7 +316,7 @@ def update_kl_topic_summary_cards(bank_selected, quarter_selected):
     Input("kl-divergence-graph", "figure")  # dummy input to trigger once
 )
 def populate_kl_topic_bank_dropdown(_):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
 
     bank_options = sorted(df["bank"].dropna().unique())
     if not bank_options:
@@ -330,7 +330,7 @@ def populate_kl_topic_bank_dropdown(_):
     Input("kl-topic-bank-dropdown", "value")
 )
 def populate_kl_quarter_dropdown(bank_selected):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
 
     if not bank_selected:
         return [], None
@@ -357,7 +357,7 @@ def populate_kl_quarter_dropdown(bank_selected):
     Input("kl-bank-dropdown", "value")
 )
 def update_kl_drift(selected_banks):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
 
     bank_options = sorted(df["bank"].dropna().unique())
     default_banks = selected_banks or bank_options[:5]  # default to showing first 5 banks
@@ -426,7 +426,7 @@ def update_kl_drift(selected_banks):
     Input("kl-divergence-graph", "figure")  # dummy input to trigger on load
 )
 def update_peer_heatmap(_):
-    _, _, _, df = read_insights_data()
+    _, _, df = read_insights_data()
 
     # Build bank-topic sentiment pivot table
     pivot = df.groupby(["bank", "final_topic"])["sentiment"].mean().unstack()
@@ -573,7 +573,7 @@ def generate_layout():
                     dcc.Dropdown(id="kl-topic-quarter-dropdown", placeholder="Select a quarter", style={"flex": "1"}),
                 ]
             ),
-            
+
             # Summary cards for ↑ ↓ →
             html.Div(
                 id="kl-topic-summary-cards",
@@ -586,7 +586,7 @@ def generate_layout():
         ]
     )
 
-    
+
     kl_drift_card = html.Div(
         className="card",
         children=[
