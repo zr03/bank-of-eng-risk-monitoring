@@ -18,6 +18,7 @@ pydantic=">=2.11"
 python-dotenv=">=1.1"
 pinecone = "^7.2.0"
 pyarrow = "^20.0.0"
+matplotlib = "^3.10.3"
 
 
 [tool.poetry.group.dev]
@@ -31,7 +32,6 @@ pymupdf=">=1.26"
 langchain-core = "^0.3.64"
 tiktoken = "^0.9.0"
 ipykernel = "^6.29.5"
-matplotlib = "^3.10.3"
 seaborn = "^0.13.2"
 transformers = "^4.52.4"
 nltk = "^3.9.1"

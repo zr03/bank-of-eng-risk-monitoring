@@ -22,6 +22,11 @@ SUPPORTED_LLMS_DICT = {
             "max_output": 32768,
             "pdf_input": True,
         },
+        "gpt-4.1-mini": {
+            "context_window": 1047576,
+            "max_output": 32768,
+            "pdf_input": True,
+        }
 
     },
     "gemini": {
