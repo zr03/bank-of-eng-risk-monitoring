@@ -15,6 +15,7 @@ from dateutil.relativedelta import relativedelta
 import pytz
 import matplotlib.colors as mcolors
 import app_config as config
+import numpy as np
 
 dash.register_page(__name__,
                    path='/',
@@ -52,6 +53,12 @@ def sentiment_text_color(score):
         return 'red'
     else:
         return 'black'
+
+SENTIMENT_COLOR_MAP = {
+    "positive": "green",
+    "neutral": "black",
+    "negative": "red",
+}
 
 quarter_month_map = {'Q1': '03-31', 'Q2': '06-30', 'Q3': '09-30', 'Q4': '12-31'}
 def quarter_to_date(qr):
@@ -186,6 +193,269 @@ def update_topic_proportion(bank_selected):
 
     return fig, bank_options, default_bank
 
+@callback(
+    Output("sentiment-distribution", "figure"),
+    Output("sentiment-bank-dropdown", "options"),
+    Output("sentiment-bank-dropdown", "value"),
+    Output("sentiment-topic-dropdown", "options"),
+    Output("sentiment-topic-dropdown", "value"),
+    Input("sentiment-bank-dropdown", "value"),
+    Input("sentiment-topic-dropdown", "value")
+)
+def q_a_sentiment(bank_selected, topic_selected):
+    _, _, df = read_insights_data()
+
+    # Get dropdown options
+    bank_options = sorted(df["bank"].dropna().unique())
+    default_bank = bank_selected or bank_options[0]
+
+    df = df[df["bank"] == default_bank]
+
+    topic_options = sorted(df["final_topic"].dropna().unique())
+    default_topic = topic_selected or topic_options[0]
+
+    df = df[df["final_topic"] == default_topic]
+
+    if df.empty:
+        return go.Figure(), bank_options, default_bank, topic_options, default_topic
+
+    df["quarter"] = df["reporting_period"]
+
+    sentiment_trend = (
+        df.groupby("quarter")["sentiment_label"]
+        .value_counts()
+        .unstack(fill_value=0)
+        .sort_index()
+    )
+
+    fig = go.Figure()
+    colors = px.colors.diverging.Portland
+    sentiment_labels = list(sentiment_trend.columns)
+
+    for label in sentiment_labels:
+        color = SENTIMENT_COLOR_MAP.get(label.lower(), "gray")  # fallback if unknown
+        fig.add_trace(go.Bar(
+            x=sentiment_trend.index,
+            y=sentiment_trend[label],
+            name=label.capitalize(),  # nicer formatting
+            marker=dict(color=color),
+            showlegend=True
+        ))
+
+
+    fig.update_layout(
+        barmode="stack",
+        title=f"Sentiment Over Time – {default_bank} – Topic: {default_topic}",
+        xaxis_title="Reporting Period",
+        yaxis_title="Count",
+        legend_title="Sentiment",
+        height=500,
+        showlegend=True,
+        margin=dict(t=60, b=60)
+    )
+
+    return fig, bank_options, default_bank, topic_options, default_topic
+
+@callback(
+    Output("kl-topic-summary-cards", "children"),
+    Input("kl-topic-bank-dropdown", "value"),
+    Input("kl-topic-quarter-dropdown", "value")
+)
+def update_kl_topic_summary_cards(bank_selected, quarter_selected):
+    _, _, df = read_insights_data()
+    if not bank_selected or not quarter_selected:
+        return []
+
+    df = df[df["bank"] == bank_selected]
+
+    pivot = df.groupby(['reporting_period', 'final_topic']).size().unstack(fill_value=0)
+    pivot_prop = pivot.div(pivot.sum(axis=1), axis=0).sort_index()
+
+    quarters = pivot_prop.index.tolist()
+    if quarter_selected not in quarters or quarters.index(quarter_selected) == 0:
+        return []
+
+    prev = pivot_prop.loc[quarters[quarters.index(quarter_selected) - 1]]
+    curr = pivot_prop.loc[quarter_selected]
+    diff = (curr - prev).sort_values(ascending=False)
+
+    # Categorize
+    top_up = diff[diff > 0].nlargest(3)
+    top_down = diff[diff < 0].nsmallest(3)
+    near_zero = diff[diff.abs() < 0.005].abs().sort_values().head(3).index
+    near_zero = diff.loc[near_zero]
+
+
+    def make_card(title, items, color):
+        return html.Div(
+            style={
+                "background": color,
+                "padding": "1rem",
+                "borderRadius": "8px",
+                "flex": "1",
+                "color": "white",
+                "minHeight": "130px"
+            },
+            children=[
+                html.H5(title, style={"marginBottom": "0.5rem"}),
+                *[
+                    html.Div(f"{'↑' if val > 0 else '↓' if val < 0 else '→'} {topic}: {val:+.2%}",
+                             style={"fontFamily": "monospace"})
+                    for topic, val in items.items()
+                ]
+            ]
+        )
+
+    return [
+        make_card("↑ Top Increases", top_up, "#28a745"),
+        make_card("↓ Top Decreases", top_down, "#dc3545"),
+        make_card("→ No Change", near_zero, "#6c757d"),
+    ]
+
+@callback(
+    Output("kl-topic-bank-dropdown", "options"),
+    Output("kl-topic-bank-dropdown", "value"),
+    Input("kl-divergence-graph", "figure")  # dummy input to trigger once
+)
+def populate_kl_topic_bank_dropdown(_):
+    _, _, df = read_insights_data()
+
+    bank_options = sorted(df["bank"].dropna().unique())
+    if not bank_options:
+        return [], None
+
+    return [{"label": b, "value": b} for b in bank_options], bank_options[0]
+
+@callback(
+    Output("kl-topic-quarter-dropdown", "options"),
+    Output("kl-topic-quarter-dropdown", "value"),
+    Input("kl-topic-bank-dropdown", "value")
+)
+def populate_kl_quarter_dropdown(bank_selected):
+    _, _, df = read_insights_data()
+
+    if not bank_selected:
+        return [], None
+
+    # Filter for selected bank
+    df = df[df["bank"] == bank_selected]
+
+    # Get quarters where the bank has meaningful topic data
+    pivot = df.groupby(['reporting_period', 'final_topic']).size().unstack(fill_value=0)
+    pivot = pivot[pivot.sum(axis=1) > 0]  # only keep quarters with topic data
+
+    quarter_list = list(pivot.index)
+
+    if len(quarter_list) < 2:
+        return [], None
+
+    # Skip the first quarter (no previous to compare)
+    return [{"label": q, "value": q} for q in quarter_list[1:]], quarter_list[-1]
+
+@callback(
+    Output("kl-divergence-graph", "figure"),
+    Output("kl-bank-dropdown", "options"),
+    Output("kl-bank-dropdown", "value"),
+    Input("kl-bank-dropdown", "value")
+)
+def update_kl_drift(selected_banks):
+    _, _, df = read_insights_data()
+
+    bank_options = sorted(df["bank"].dropna().unique())
+    default_banks = selected_banks or bank_options[:5]  # default to showing first 5 banks
+
+    kl_results = []
+
+    for bank, bank_df in df.groupby('bank'):
+        if bank not in default_banks:
+            continue
+
+        pivot = bank_df.groupby(['reporting_period', 'final_topic']).size().unstack(fill_value=0)
+        pivot_prop = pivot.div(pivot.sum(axis=1), axis=0)
+
+        if len(pivot_prop) < 2:
+            continue
+
+        for i in range(1, len(pivot_prop)):
+            prev_dist = pivot_prop.iloc[i - 1]
+            curr_dist = pivot_prop.iloc[i]
+            kl_val = np.sum(prev_dist * np.log((prev_dist + 1e-10) / (curr_dist + 1e-10)))
+            kl_results.append({
+                'bank': bank,
+                'quarter': pivot_prop.index[i],
+                'KL Divergence': kl_val
+            })
+
+    kl_df = pd.DataFrame(kl_results)
+
+    # Convert and sort quarters
+    def quarter_to_date(qr):
+        try:
+            q, y = qr.split('_')
+            month = {'Q1': '03-31', 'Q2': '06-30', 'Q3': '09-30', 'Q4': '12-31'}[q]
+            return pd.to_datetime(f"{y}-{month}")
+        except:
+            return pd.NaT
+
+    kl_df['quarter_date'] = kl_df['quarter'].apply(quarter_to_date)
+    kl_df = kl_df.dropna(subset=['quarter_date'])
+    kl_df = kl_df.sort_values('quarter_date')
+
+    # Plot
+    fig = go.Figure()
+    for bank in kl_df['bank'].unique():
+        bank_df = kl_df[kl_df['bank'] == bank]
+        fig.add_trace(go.Bar(
+            x=bank_df['quarter'],
+            y=bank_df['KL Divergence'],
+            name=bank
+        ))
+
+    fig.update_layout(
+        barmode="group",
+        title="Topic Distribution Drift Over Time by Bank (KL Divergence)",
+        xaxis_title="Quarter",
+        yaxis_title="KL Divergence",
+        legend_title="Bank",
+        height=500,
+        margin=dict(t=60, b=60)
+    )
+
+    return fig, bank_options, default_banks
+
+@callback(
+    Output("peer-sentiment-heatmap", "figure"),
+    Input("kl-divergence-graph", "figure")  # dummy input to trigger on load
+)
+def update_peer_heatmap(_):
+    _, _, df = read_insights_data()
+
+    # Build bank-topic sentiment pivot table
+    pivot = df.groupby(["bank", "final_topic"])["sentiment"].mean().unstack()
+
+    if pivot.empty:
+        return go.Figure()
+
+    fig = go.Figure(data=go.Heatmap(
+        z=pivot.values,
+        x=pivot.columns,
+        y=pivot.index,
+        colorscale='RdYlGn',
+        zmid=0,
+        colorbar=dict(title="Avg Sentiment"),
+        hovertemplate="Bank: %{y}<br>Topic: %{x}<br>Avg Sentiment: %{z:.2f}<extra></extra>",
+    ))
+
+    fig.update_layout(
+        title="Average Sentiment per Topic by Bank",
+        xaxis_title="Topic",
+        yaxis_title="Bank",
+        height=500,
+        margin=dict(t=60, l=100, r=40, b=100)
+    )
+
+    return fig
+
 
 
 def generate_layout():
@@ -220,7 +490,10 @@ def generate_layout():
                                    'Liquidity Risk',
                                    'Strategic and Business Model Risk']
 
-    poetry_qa_card = html.Div(
+    #Get source types
+    source_type_list = sorted(df_topic_sentiment_agg_norm['source_type'].unique().tolist())
+
+    qa_topics_card = html.Div(
         className="card",
         children=[
             html.H4("Q&A Topics", className="card-header"),
@@ -236,6 +509,132 @@ def generate_layout():
             ),
         ]
     )
+
+    sentiment_card = html.Div(
+        className="card",
+        children=[
+            html.H4("Q&A Sentiment Distribution", className="card-header"),
+            html.P("Stacked sentiment distribution of analyst Q&A over time."),
+            dcc.Dropdown(
+                id="sentiment-bank-dropdown",
+                placeholder="Select a bank",
+                multi=False,
+            ),
+            dcc.Dropdown(
+                id="sentiment-topic-dropdown",
+                placeholder="Select a topic",
+                multi=False,
+            ),
+            dcc.Graph(id="sentiment-distribution"),
+        ]
+    )
+
+
+    kl_summary_cards = html.Div(
+        id="kl-topic-summary-cards",
+        className="card-group flex-div3",  # Adjust your layout class if needed
+        style={"display": "flex", "gap": "1rem", "margin-top": "20px"},
+        children=[]  # We'll fill these in via callback
+    )
+    kl_drilldown_card = html.Div(
+        className="card",
+        children=[
+            html.H4("KL Topic Change Drilldown", className="card-header"),
+            html.P("Topic shifts vs. previous quarter. Arrows show increase (↑), decrease (↓), or no change (→)."),
+            html.Div(
+                style={"display": "flex", "gap": "1rem", "marginBottom": "1rem"},
+                children=[
+                    dcc.Dropdown(id="kl-topic-bank-dropdown", placeholder="Select a bank", style={"flex": "1"}),
+                    dcc.Dropdown(id="kl-topic-quarter-dropdown", placeholder="Select a quarter", style={"flex": "1"}),
+                ]
+            ),
+            html.Div(
+                id="kl-topic-summary-cards",
+                className="card-group flex-div3",
+                style={"display": "flex", "gap": "1rem", "marginBottom": "1rem"}
+            ),
+            html.Div(id="kl-topic-drift-list", style={"padding": "10px"})
+        ]
+    )
+
+    kl_combined_card = html.Div(
+        className="card",
+        children=[
+            html.H4("Topic Drift and Change Analysis", className="card-header"),
+            html.P("KL divergence tracks overall topic drift. Below it, explore the top topic increases, decreases, and stable ones per quarter."),
+
+
+            # KL Divergence chart
+            dcc.Dropdown(
+                id="kl-bank-dropdown",
+                placeholder="Select banks to display",
+                multi=True,
+                style={"marginBottom": "1rem"},
+            ),
+            dcc.Graph(id="kl-divergence-graph"),
+
+            html.Ul([
+                html.Li("KL < 1: Stable topic distribution"),
+                html.Li("1 ≤ KL ≤ 3: Moderate shift in focus"),
+                html.Li("KL > 3: Major change in topical priorities")
+            ], style={"marginBottom": "2rem"}),
+
+            html.Div(
+                style={"display": "flex", "gap": "1rem", "marginBottom": "1rem"},
+                children=[
+                    dcc.Dropdown(id="kl-topic-bank-dropdown", placeholder="Select a bank", style={"flex": "1"}),
+                    dcc.Dropdown(id="kl-topic-quarter-dropdown", placeholder="Select a quarter", style={"flex": "1"}),
+                ]
+            ),
+
+            # Summary cards for ↑ ↓ →
+            html.Div(
+                id="kl-topic-summary-cards",
+                className="card-group flex-div3",
+                style={"display": "flex", "gap": "1rem", "marginBottom": "1rem"}
+            ),
+
+            # Optional drilldown list
+            html.Div(id="kl-topic-drift-list", style={"padding": "10px"})
+        ]
+    )
+
+
+    kl_drift_card = html.Div(
+        className="card",
+        children=[
+            html.H4("Topic Drift (KL Divergence)", className="card-header"),
+            html.P("KL divergence measures the shift in topic distributions between consecutive quarters. Larger values suggest a bank’s focus or concern areas changed significantly."),
+            dcc.Dropdown(
+                id="kl-bank-dropdown",
+                placeholder="Select banks to display",
+                multi=True,
+            ),
+            dcc.Graph(id="kl-divergence-graph"),
+            html.Ul([
+                html.Li("KL < 1: Stable topic distribution"),
+                html.Li("1 ≤ KL ≤ 3: Moderate shift in focus"),
+                html.Li("KL > 3: Major change in topical priorities")
+            ])
+
+        ]
+    )
+
+    peer_comparison_card = html.Div(
+        className="card",
+        children=[
+            html.H4("Peer Comparison: Average Sentiment by Topic", className="card-header"),
+            html.P("Compare banks by average sentiment across topics."),
+            dcc.Graph(id="peer-sentiment-heatmap")
+        ]
+    )
+
+
+
+
+
+
+
 
 
     page_layout = html.Div(
@@ -342,6 +741,17 @@ def generate_layout():
                                         value=risk_categories_list[0],
                                         clearable=False,
                                     ),
+                                    html.Label(
+                                        className="control-label2",
+                                        children="Source Type:",
+                                        htmlFor='source-type-dropdown'
+                                    ),
+                                    dcc.Dropdown(
+                                        id='source-type-dropdown',
+                                        options=source_type_list,
+                                        value = source_type_list[0],
+                                        clearable = False
+                                    ),
                                     dcc.Graph(
                                         # className='graphic',
                                         id='line-fig-sentiment',
@@ -437,8 +847,16 @@ def generate_layout():
                     ),
                 ]
             ),
-            poetry_qa_card,
-            time_store,
+            qa_topics_card,
+            html.Div(
+                style={"display": "flex", "gap": "1rem"},
+                children=[
+                    html.Div(sentiment_card, style={"flex": "1.2"}),
+                    html.Div(peer_comparison_card, style={"flex": "1"}),
+                ]
+            ),
+            kl_combined_card,
+                time_store,
         ]
 
     )
@@ -455,11 +873,12 @@ def layout():
     Input(component_id='bank-dropdown-comp', component_property='value'),
     Input(component_id='date-slider-comp', component_property='value'),
     Input(component_id='risk-category-dropdown', component_property='value'),
+    Input(component_id='source-type-dropdown', component_property='value'),
     State(component_id='time-data', component_property='data'),
     # prevent_initial_call=True,
     # background=True
 )
-def update_agg_figs(banks, date_range_indices, risk_category, time_data):
+def update_agg_figs(banks, date_range_indices, risk_category, source_types, time_data):
     # Read in the curtailment data
     _, df_topic_sentiment_agg_norm, _ = read_insights_data()
 
@@ -478,24 +897,37 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     # risk_categories = df_topic_sentiment_agg_norm['risk_category'].unique().tolist()
     # first_subtopic_col = df_topic_sentiment_agg_norm.columns.get_loc('sentiment_score') + 1
     # subtopic_cols = df_risk_category_mapping.columns[first_subtopic_col:-1].tolist()
+    if isinstance(source_types, str):
+        source_types = [source_types]
+    if "all" in source_types:
+        sel_bool = df_topic_sentiment_agg_norm['risk_category'] == risk_category
+    else:
+        sel_bool = (
+            df_topic_sentiment_agg_norm['source_type'].isin(source_types) &
+            (df_topic_sentiment_agg_norm['risk_category'] == risk_category)
+        )
 
-    source_type = "internal" # TODO: make this dynamic
-    sel_bool = ((df_topic_sentiment_agg_norm['source_type'] == source_type) & (df_topic_sentiment_agg_norm['risk_category'] == risk_category))
+
     df_topics_sentiment_quarter_plotting = df_topic_sentiment_agg_norm[sel_bool].copy()
-    df_topics_sentiment_quarter_plotting.drop(columns=['risk_category', 'source_type'], inplace=True)
-    df_topics_sentiment_quarter_plotting.rename(columns={"sentiment_score": f"Risk Sentiment: {risk_category}"}, inplace=True)
-    df_topics_sentiment_quarter_plotting = df_topics_sentiment_quarter_plotting.pivot(
-        columns='bank',
-        index='reporting_period',
-    )
-    df_topics_sentiment_quarter_plotting.columns = [', '.join(col).strip() for col in df_topics_sentiment_quarter_plotting.columns.values]
-    df_topics_sentiment_quarter_plotting.reset_index(inplace=True)
+    sentiment_col_name = "sentiment_score"
 
-    # Generate a multiline chart for the topic relevance scores
-    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith("Risk Sentiment")]
+    df_topics_sentiment_quarter_plotting = df_topics_sentiment_quarter_plotting.pivot_table(
+        values=sentiment_col_name,
+        index='reporting_period',
+        columns='bank',
+        aggfunc='mean'
+    ).reset_index()
+
+    # Identify columns to plot: all banks (everything except 'reporting_period')
+    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col != 'reporting_period']
+    legend_labels = risk_category_cols  # Bank names
+
+    # Optional: this isn't used but keeping it if needed later
     topic_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col not in ['reporting_period'] + risk_category_cols]
-    # cols_to_plot = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith(risk_category)]
-    legend_labels = [col.split(",")[-1].strip() for col in risk_category_cols]
+
+
+    print("Final DataFrame shape:", df_topics_sentiment_quarter_plotting.shape)
+    print("Final columns:", df_topics_sentiment_quarter_plotting.columns.tolist())
 
     # Generate the multiline chart
     fig_topics_sentiment_quarter = generate_multiline_chart(
