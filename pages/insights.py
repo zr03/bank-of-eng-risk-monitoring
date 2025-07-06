@@ -441,6 +441,8 @@ def update_agg_figs(banks, date_range_indices, risk_category, source_types, time
     # risk_categories = df_topic_sentiment_agg_norm['risk_category'].unique().tolist()
     # first_subtopic_col = df_topic_sentiment_agg_norm.columns.get_loc('sentiment_score') + 1
     # subtopic_cols = df_risk_category_mapping.columns[first_subtopic_col:-1].tolist()
+    if isinstance(source_types, str):
+        source_types = [source_types]
     if "all" in source_types:
         sel_bool = df_topic_sentiment_agg_norm['risk_category'] == risk_category
     else:
@@ -451,22 +453,25 @@ def update_agg_figs(banks, date_range_indices, risk_category, source_types, time
 
 
     df_topics_sentiment_quarter_plotting = df_topic_sentiment_agg_norm[sel_bool].copy()
-    df_topics_sentiment_quarter_plotting.drop(columns=['risk_category', 'source_type'], inplace=True)
-    df_topics_sentiment_quarter_plotting.rename(columns={"sentiment_score": f"Risk Sentiment: {risk_category}"}, inplace=True)
+    sentiment_col_name = "sentiment_score"
+
     df_topics_sentiment_quarter_plotting = df_topics_sentiment_quarter_plotting.pivot_table(
-        values=f"Risk Sentiment: {risk_category}",
+        values=sentiment_col_name,
         index='reporting_period',
         columns='bank',
-        aggfunc='mean'  # or 'median' or 'sum' depending on your preference
+        aggfunc='mean'
     ).reset_index()
-    df_topics_sentiment_quarter_plotting.columns = [', '.join(col).strip() for col in df_topics_sentiment_quarter_plotting.columns.values]
-    df_topics_sentiment_quarter_plotting.reset_index(inplace=True)
 
-    # Generate a multiline chart for the topic relevance scores
-    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith("Risk Sentiment")]
+    # Identify columns to plot: all banks (everything except 'reporting_period')
+    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col != 'reporting_period']
+    legend_labels = risk_category_cols  # Bank names
+
+    # Optional: this isn't used but keeping it if needed later
     topic_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col not in ['reporting_period'] + risk_category_cols]
-    # cols_to_plot = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith(risk_category)]
-    legend_labels = [col.split(",")[-1].strip() for col in risk_category_cols]
+
+
+    print("Final DataFrame shape:", df_topics_sentiment_quarter_plotting.shape)
+    print("Final columns:", df_topics_sentiment_quarter_plotting.columns.tolist())
 
     # Generate the multiline chart
     fig_topics_sentiment_quarter = generate_multiline_chart(
