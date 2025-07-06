@@ -1,4 +1,5 @@
 from typing import List
+import math
 import dash
 from dash import dcc, html, callback, Output, Input, State, ctx, dash_table
 import dash_bootstrap_components as dbc
@@ -6,6 +7,7 @@ from dash.dash_table.Format import Format, Scheme
 from dash.dash_table import FormatTemplate
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import pandas as pd
 from dash.exceptions import PreventUpdate
 import datetime
@@ -192,6 +194,7 @@ def generate_layout():
 
     # Get the list of banks from the topic relevance data
     all_banks_list = sorted(df_topic_relevance_agg_norm['bank'].unique().tolist())
+    all_banks_list2 = [bank for bank in all_banks_list if bank != 'All']
 
     # Get the quarters from the topic relevance data and set up the slider
     quarters = df_topic_relevance_agg_norm['reporting_period'].unique().tolist()
@@ -211,11 +214,11 @@ def generate_layout():
     risk_categories_list = sorted(df_topic_relevance_agg_norm['risk_category'].unique().tolist())
 
     risk_categories_metric_list = ['Profitability',
-                                   'Efficiency and Expense Management',
-                                   'Credit risk and Asset Quality',
-                                   'Capital Adequacy and Solvency', 
-                                   'Liquidity',
-                                   'Valuation']
+                                   'Operational Risk',
+                                   'Asset Quality and Credit Risk',
+                                   'Capital Adequacy',
+                                   'Liquidity Risk',
+                                   'Strategic and Business Model Risk']
 
     poetry_qa_card = html.Div(
         className="card",
@@ -348,7 +351,7 @@ def generate_layout():
 
                         ]
                     ),
-                    
+
                     html.Div(
                         className="card data-card",
                         id='right-card-curt',
@@ -381,96 +384,57 @@ def generate_layout():
                                             )
                                         ]
                                     ),
-
-
-                                ]
-
-                            ),
-
-
-
-                        ]
-                    ),
-                    html.Div(
-                className="card-group flex-div2",
-                children=[
-                    html.Div(
-                        className="card",
-                        id='left-card-curt',
-                        children=[
-                            html.Div(
-                                children=[
-                                    html.H4(
-                                        className="card-header",
-                                        children="Metrics "
-                                    ),
-                                    html.P(
-                                        className="explanation",
-                                        children="The chart below shows how net sentiment across different risk categories has been evolving over recent quarters."
-                                    ),
-                                    html.Label(
-                                        className="control-label",
-                                        children="Risk category:",
-                                        htmlFor='risk-category-metric-dropdown'
-                                    ),
-                                    dcc.Dropdown(
-                                        id='risk-category-metric-dropdown',
-                                        options=risk_categories_metric_list,
-                                        value=risk_categories_metric_list[0],
-                                        clearable=False,
-                                    ),
-                                    dcc.Graph(
-                                        # className='graphic',
-                                        id='line-fig-metrics',
-                                    ),
                                 ]
                             ),
-
-                        ]
-                    ),
-                    
-                    # html.Div(
-                    #     className="card data-card",
-                    #     id='right-card-curt',
-                    #     children=[
-                    #         html.Div(
-                    #             children=[
-                    #                 html.Div(
-                    #                     children=[
-                    #                         html.H4(
-                    #                             children="Data Summary",
-                    #                             className="data-card-heading",
-                    #                             id="sentiment-eff-heading",
-                    #                         ),
-                    #                         html.H4(
-                    #                             className="data-card-value",
-                    #                             id="sentiment-eff",
-                    #                         )
-                    #                     ]
-                    #                 ),
-                    #                 html.Br(),
-                    #                 html.Div(
-                    #                     children=[
-                    #                         html.H4(
-                    #                             className="data-card-heading",
-                    #                             id="sentiment-bank-heading",
-                    #                         ),
-                    #                         html.H4(
-                    #                             className="data-card-value",
-                    #                             id="sentiment-bank",
-                    #                         )
-                    #                     ]
-                    #                 ),
-
-
-                    #             ]
-
-                    #         ),
-
-
-
                         ]
                     )
+                ]
+            ),
+
+            html.Div(
+                className="card",
+                # id='left-card-curt',
+                children=[
+                    html.Div(
+                        children=[
+                            html.H4(
+                                className="card-header",
+                                children="Metrics "
+                            ),
+                            html.P(
+                                className="explanation",
+                                children="The chart below shows how net sentiment across different risk categories has been evolving over recent quarters."
+                            ),
+                            html.Label(
+                                className="control-label",
+                                children="Bank:",
+                                htmlFor='bank-dropdown-comp2'
+                            ),
+                            dcc.Dropdown(
+                                id='bank-dropdown-comp2',
+                                options=all_banks_list2,
+                                value=all_banks_list2[0],
+                                # multi=True,
+                                clearable=False,
+                            ),
+                            html.Label(
+                                className="control-label",
+                                children="Risk category:",
+                                htmlFor='risk-category-metric-dropdown'
+                            ),
+
+                            dcc.Dropdown(
+                                id='risk-category-metric-dropdown',
+                                options=risk_categories_metric_list,
+                                value=risk_categories_metric_list[0],
+                                clearable=False,
+                            ),
+                            dcc.Graph(
+                                # className='graphic',
+                                id='line-fig-metrics',
+                            ),
+                        ]
+                    ),
                 ]
             ),
             poetry_qa_card,
@@ -497,7 +461,7 @@ def layout():
 )
 def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     # Read in the curtailment data
-    df_topic_relevance_agg_norm, df_topic_sentiment_agg_norm, _ = read_insights_data()
+    _, df_topic_sentiment_agg_norm, _ = read_insights_data()
 
     # Filter the data based on the selected bank(s)
     df_topic_sentiment_agg_norm = df_topic_sentiment_agg_norm[df_topic_sentiment_agg_norm['bank'].isin(banks)]
@@ -549,15 +513,15 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
 
 @callback(
     Output(component_id='line-fig-metrics', component_property='figure'),
-    Input(component_id='bank-dropdown-comp', component_property='value'),
-    Input(component_id='date-slider-comp', component_property='value'),
+    Input(component_id='bank-dropdown-comp2', component_property='value'),
+    # Input(component_id='date-slider-comp', component_property='value'),
     Input(component_id='risk-category-metric-dropdown', component_property='value'),
-    Input(component_id='risk-category-metric-dropdown', component_property='options'),
+    State(component_id='risk-category-metric-dropdown', component_property='options'),
     State(component_id='time-data', component_property='data'),
     # prevent_initial_call=True,
     # background=True
 )
-def update_agg_figs_metric(banks, date_range_indices, risk_category, risk_categories_metric_list, time_data):
+def update_agg_figs_metric(bank, risk_category, risk_categories_metric_list, time_data):
     # Read in the curtailment data
     # Define mapping from risk category to related metric columns
 
@@ -587,7 +551,8 @@ def update_agg_figs_metric(banks, date_range_indices, risk_category, risk_catego
         ],
         # "Liquidity / Balance Sheet Strength"
         risk_categories_metric_list[4]: [
-            "Total deposits (billions of dollars)"
+            "Total deposits (billions of dollars)",
+            "LDR ratio (%)"
         ],
         # "Valuation / Shareholder Value"
         risk_categories_metric_list[5]: [
@@ -602,140 +567,151 @@ def update_agg_figs_metric(banks, date_range_indices, risk_category, risk_catego
     metrics_df["reporting_period"] = metrics_df["reporting_period"].str.strip()
     sentiment_df["reporting_period"] = sentiment_df["reporting_period"].str.strip()
 
+    metrics_df = metrics_df[metrics_df["bank"] == bank]
+    sentiment_df = sentiment_df[sentiment_df["bank"] == bank]
+    sentiment_df = sentiment_df[sentiment_df["source_type"] == "internal"]
+
     # Now prepare the long-format data for plotting
     merged_data = []
 
     for category, metrics in risk_category_metrics.items():
+        if category != risk_category:
+            continue
         for metric in metrics:
             for period in sentiment_df["reporting_period"].unique():
-                sentiment_row = sentiment_df[
-                    (sentiment_df["risk_category"] == category) & 
+                # for bank in sentiment_df["bank"].unique():
+                    sentiment_row = sentiment_df[
+                    (sentiment_df["risk_category"] == category) &
                     (sentiment_df["reporting_period"] == period)
                 ]
-                metric_row = metrics_df[metrics_df["reporting_period"] == period]
+                    metric_row = metrics_df[metrics_df["reporting_period"] == period]
 
-                if not sentiment_row.empty and not metric_row.empty:
-                    avg_metric_value = metric_row[metric].mean()
-                    sentiment_score = sentiment_row["sentiment_score"].values[0]
-                    merged_data.append({
-                        "reporting_period": period,
-                        "risk_category": category,
-                        "metric_name": metric,
-                        "metric_value": avg_metric_value,
-                        "sentiment_score": sentiment_score
-                    })
+                    if not sentiment_row.empty and not metric_row.empty:
+                        avg_metric_value = metric_row[metric].values[0]
+                        sentiment_score = sentiment_row["sentiment_score"].values[0]
+                        merged_data.append({
+                            "reporting_period": period,
+                            "risk_category": category,
+                            "metric_name": metric,
+                            "metric_value": avg_metric_value,
+                            "sentiment_score": sentiment_score,
+                            "bank": bank
+                        })
 
     merged_df = pd.DataFrame(merged_data)
-    merged_df.head()
-    import plotly.graph_objects as go
-    from plotly.subplots import make_subplots
-    import plotly.express as px
+
 
     # Filter for Profitability
-    if risk_category in [risk_categories_metric_list[0], risk_categories_metric_list[3]]:
-        print (f"Risk category {risk_category}")
-        profit_df = merged_df[merged_df["risk_category"] == risk_category]
+    # if risk_category in [risk_categories_metric_list[0], risk_categories_metric_list[3]]:
+    print (f"Risk category {risk_category}")
+    # profit_df = merged_df[merged_df["risk_category"] == risk_category]
+    profit_df = merged_df.copy()
 
-        # Get unique metrics
-        metrics = profit_df["metric_name"].unique()
-        print(f"Metric: {metrics}")
-        # Create 2x2 subplot grid with secondary y-axes
-        fig = make_subplots(
-            rows=2, cols=2,
-            subplot_titles=metrics,
-            specs=[[{"secondary_y": True}, {"secondary_y": True}],
-                [{"secondary_y": True}, {"secondary_y": True}]],
-            shared_xaxes=True,
-            vertical_spacing=0.1,
-            horizontal_spacing=0.1
+    # Get unique metrics
+    metrics = profit_df["metric_name"].unique()
+    print(f"Metric: {metrics}")
+    # Create 2x2 subplot grid with secondary y-axes
+    nrows = math.ceil(len(metrics) / 2)
+    ncols=2
+    specs = []
+    for _ in range(nrows):
+        row = [{"secondary_y": True} for _ in range(ncols)]
+        specs.append(row)
+    fig = make_subplots(
+        rows=nrows, cols=ncols,
+        subplot_titles=metrics,
+        specs=specs,
+        shared_xaxes=True,
+        vertical_spacing=0.2,
+        horizontal_spacing=0.2
+    )
+
+    # Define colors
+    metric_color = "blue"
+    sentiment_color = "red"
+
+    # Plot each metric in its respective subplot
+    for i, metric in enumerate(metrics):
+        row = (i // 2) + 1
+        col = (i % 2) + 1
+
+        # Filter data for current metric
+        temp = profit_df[profit_df["metric_name"] == metric]
+        # print (temp)
+
+        # Add sentiment score line (primary y-axis)
+        fig.add_trace(
+            go.Scatter(
+                x=temp["reporting_period"],
+                y=temp["sentiment_score"],
+                mode='lines+markers',
+                name=f'Sentiment - {metric}',
+                line=dict(color=sentiment_color),
+                marker=dict(color=sentiment_color),
+                showlegend=False
+            ),
+            row=row, col=col,
+            secondary_y=False
         )
 
-        # Define colors
-        metric_color = "blue"
-        sentiment_color = "red"
-
-        # Plot each metric in its respective subplot
-        for i, metric in enumerate(metrics):
-            row = (i // 2) + 1
-            col = (i % 2) + 1
-            
-            # Filter data for current metric
-            temp = profit_df[profit_df["metric_name"] == metric]
-            # print (temp)
-            
-            # Add sentiment score line (primary y-axis)
-            fig.add_trace(
-                go.Scatter(
-                    x=temp["reporting_period"],
-                    y=temp["sentiment_score"],
-                    mode='lines+markers',
-                    name=f'Sentiment - {metric}',
-                    line=dict(color=sentiment_color),
-                    marker=dict(color=sentiment_color),
-                    showlegend=False
-                ),
-                row=row, col=col,
-                secondary_y=False
-            )
-            
-            # Add metric value line (secondary y-axis)
-            fig.add_trace(
-                go.Scatter(
-                    x=temp["reporting_period"],
-                    y=temp["metric_value"],
-                    mode='lines+markers',
-                    name=f'Metric - {metric}',
-                    line=dict(color=metric_color),
-                    marker=dict(color=metric_color),
-                    showlegend=False
-                ),
-                row=row, col=col,
-                secondary_y=True
-            )
-
-        # Update y-axis labels and colors
-        for i in range(len(metrics)):
-            row = (i // 2) + 1
-            col = (i % 2) + 1
-            
-            # Primary y-axis (sentiment score)
-            fig.update_yaxes(
-                title_text="Sentiment Score",
-                title_font=dict(color=sentiment_color),
-                tickfont=dict(color=sentiment_color),
-                row=row, col=col,
-                secondary_y=False
-            )
-            
-            # Secondary y-axis (metric value)
-            fig.update_yaxes(
-                title_text="Metric Value",
-                title_font=dict(color=metric_color),
-                tickfont=dict(color=metric_color),
-                row=row, col=col,
-                secondary_y=True
-            )
-
-        # Update x-axis labels
-        fig.update_xaxes(title_text="Quarter")
-
-        # Update layout
-        fig.update_layout(
-            title={
-                'text': f"{risk_category}: Sentiment Score vs Financial Metrics",
-                'x': 0.5,
-                'xanchor': 'center',
-                'font': {'size': 16}
-            },
-            height=600,
-            width=1000,
-            showlegend=False,
-            template="plotly_white"  # Similar to seaborn's whitegrid style
+        # Add metric value line (secondary y-axis)
+        fig.add_trace(
+            go.Scatter(
+                x=temp["reporting_period"],
+                y=temp["metric_value"],
+                mode='lines+markers',
+                name=f'Metric - {metric}',
+                line=dict(color=metric_color),
+                marker=dict(color=metric_color),
+                showlegend=False
+            ),
+            row=row, col=col,
+            secondary_y=True
         )
 
-        # Add grid lines to match seaborn's whitegrid style
-        fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
-        fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
+    # Update y-axis labels and colors
+    for i in range(len(metrics)):
+        row = (i // 2) + 1
+        col = (i % 2) + 1
+
+        # Primary y-axis (sentiment score)
+        fig.update_yaxes(
+            title_text="Sentiment Score",
+            title_font=dict(color=sentiment_color),
+            tickfont=dict(color=sentiment_color),
+            row=row, col=col,
+            secondary_y=False
+        )
+
+        # Secondary y-axis (metric value)
+        fig.update_yaxes(
+            title_text="Metric Value",
+            title_font=dict(color=metric_color),
+            tickfont=dict(color=metric_color),
+            row=row, col=col,
+            secondary_y=True
+        )
+
+    # Update x-axis labels
+    fig.update_xaxes(title_text="Quarter")
+
+    # Update layout
+    fig.update_layout(
+        title={
+            'text': f"{risk_category}: Sentiment Score vs Financial Metrics",
+            'x': 0.5,
+            'xanchor': 'center',
+            'font': {'size': 16}
+        },
+        height=600,
+        # width=1000,
+        showlegend=False,
+        template="plotly_white"  # Similar to seaborn's whitegrid style
+    )
+
+    # Add grid lines to match seaborn's whitegrid style
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
 
     # fig.show()
     return fig
