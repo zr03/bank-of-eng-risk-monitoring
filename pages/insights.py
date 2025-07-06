@@ -480,6 +480,9 @@ def generate_layout():
     # Get risk categories
     risk_categories_list = sorted(df_topic_relevance_agg_norm['risk_category'].unique().tolist())
 
+    #Get source types
+    source_type_list = sorted(df_topic_sentiment_agg_norm['source_type'].unique().tolist())
+
     qa_topics_card = html.Div(
         className="card",
         children=[
@@ -728,6 +731,17 @@ def generate_layout():
                                         value=risk_categories_list[0],
                                         clearable=False,
                                     ),
+                                    html.Label(
+                                        className="control-label2",
+                                        children="Source Type:",
+                                        htmlFor='source-type-dropdown'
+                                    ),
+                                    dcc.Dropdown(
+                                        id='source-type-dropdown',
+                                        options=source_type_list,
+                                        value = source_type_list[0],
+                                        clearable = False
+                                    ),
                                     dcc.Graph(
                                         # className='graphic',
                                         id='line-fig-sentiment',
@@ -807,11 +821,12 @@ def layout():
     Input(component_id='bank-dropdown-comp', component_property='value'),
     Input(component_id='date-slider-comp', component_property='value'),
     Input(component_id='risk-category-dropdown', component_property='value'),
+    Input(component_id='source-type-dropdown', component_property='value'),
     State(component_id='time-data', component_property='data'),
     # prevent_initial_call=True,
     # background=True
 )
-def update_agg_figs(banks, date_range_indices, risk_category, time_data):
+def update_agg_figs(banks, date_range_indices, risk_category, source_types, time_data):
     # Read in the curtailment data
     df_topic_relevance_agg_norm, df_topic_sentiment_agg_norm, _ = read_insights_data()
 
@@ -830,24 +845,37 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     # risk_categories = df_topic_sentiment_agg_norm['risk_category'].unique().tolist()
     # first_subtopic_col = df_topic_sentiment_agg_norm.columns.get_loc('sentiment_score') + 1
     # subtopic_cols = df_risk_category_mapping.columns[first_subtopic_col:-1].tolist()
+    if isinstance(source_types, str):
+        source_types = [source_types]
+    if "all" in source_types:
+        sel_bool = df_topic_sentiment_agg_norm['risk_category'] == risk_category
+    else:
+        sel_bool = (
+            df_topic_sentiment_agg_norm['source_type'].isin(source_types) &
+            (df_topic_sentiment_agg_norm['risk_category'] == risk_category)
+        )
 
-    source_type = "internal" # TODO: make this dynamic
-    sel_bool = ((df_topic_sentiment_agg_norm['source_type'] == source_type) & (df_topic_sentiment_agg_norm['risk_category'] == risk_category))
+
     df_topics_sentiment_quarter_plotting = df_topic_sentiment_agg_norm[sel_bool].copy()
-    df_topics_sentiment_quarter_plotting.drop(columns=['risk_category', 'source_type'], inplace=True)
-    df_topics_sentiment_quarter_plotting.rename(columns={"sentiment_score": f"Risk Sentiment: {risk_category}"}, inplace=True)
-    df_topics_sentiment_quarter_plotting = df_topics_sentiment_quarter_plotting.pivot(
-        columns='bank',
-        index='reporting_period',
-    )
-    df_topics_sentiment_quarter_plotting.columns = [', '.join(col).strip() for col in df_topics_sentiment_quarter_plotting.columns.values]
-    df_topics_sentiment_quarter_plotting.reset_index(inplace=True)
+    sentiment_col_name = "sentiment_score"
 
-    # Generate a multiline chart for the topic relevance scores
-    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith("Risk Sentiment")]
+    df_topics_sentiment_quarter_plotting = df_topics_sentiment_quarter_plotting.pivot_table(
+        values=sentiment_col_name,
+        index='reporting_period',
+        columns='bank',
+        aggfunc='mean'
+    ).reset_index()
+
+    # Identify columns to plot: all banks (everything except 'reporting_period')
+    risk_category_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col != 'reporting_period']
+    legend_labels = risk_category_cols  # Bank names
+
+    # Optional: this isn't used but keeping it if needed later
     topic_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col not in ['reporting_period'] + risk_category_cols]
-    # cols_to_plot = [col for col in df_topics_sentiment_quarter_plotting.columns if col.startswith(risk_category)]
-    legend_labels = [col.split(",")[-1].strip() for col in risk_category_cols]
+
+
+    print("Final DataFrame shape:", df_topics_sentiment_quarter_plotting.shape)
+    print("Final columns:", df_topics_sentiment_quarter_plotting.columns.tolist())
 
     # Generate the multiline chart
     fig_topics_sentiment_quarter = generate_multiline_chart(
