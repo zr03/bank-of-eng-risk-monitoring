@@ -210,7 +210,7 @@ def generate_layout():
     # Get risk categories
     risk_categories_list = sorted(df_topic_relevance_agg_norm['risk_category'].unique().tolist())
 
-    risk_categories_metrics_list = ['Profitability','Efficiency and Expense Management',''
+    risk_categories_metric_list = ['Profitability','Efficiency and Expense Management',''
     'Credit risk and Asset Quality','Capital Adequacy and Solvency', 'Liquidity','Valuation']
 
     poetry_qa_card = html.Div(
@@ -411,8 +411,8 @@ def generate_layout():
                                     ),
                                     dcc.Dropdown(
                                         id='risk-category-metric-dropdown',
-                                        options=risk_categories_metrics_list,
-                                        value=risk_categories_metrics_list[0],
+                                        options=risk_categories_metric_list,
+                                        value=risk_categories_metric_list[0],
                                         clearable=False,
                                     ),
                                     dcc.Graph(
@@ -542,6 +542,116 @@ def update_agg_figs(banks, date_range_indices, risk_category, time_data):
     )
 
     return fig_topics_sentiment_quarter
+
+@callback(
+    Output(component_id='line-fig-metrics', component_property='figure'),
+    Input(component_id='bank-dropdown-comp', component_property='value'),
+    Input(component_id='date-slider-comp', component_property='value'),
+    Input(component_id='risk-category-metric-dropdown', component_property='value'),
+    State(component_id='time-data', component_property='data'),
+    # prevent_initial_call=True,
+    # background=True
+)
+def update_agg_figs_metric(banks, date_range_indices, risk_category, time_data):
+    # Read in the curtailment data
+    # Define mapping from risk category to related metric columns
+    risk_category_metrics = {
+        "Profitability": [
+            "Net income (millions of dollars)",
+            "Return on average assets, ROA (%)",
+            "Return on average common equity (%)",
+            "Return on average tangible common equity (RoTCE) (%)"
+        ],
+        "Efficiency / Expense Management": [
+            "Noninterest Expense (millions of dollars)",
+            "Efficiency ratio(%)"
+        ],
+        "Asset Quality and Credit Risk": [
+            "Provision for Credit Losses (millions of dollars)"
+        ],
+        "Capital Adequacy": [
+            "Common Equity Tier 1 (CET1) Capital ratio (%)",
+            "Tier 1 Capital ratio ratio (%)",
+            "Total Capital ratio (%)",
+            "Supplementary Leverage ratio (SLR) (%)"
+        ],
+        "Liquidity / Balance Sheet Strength": [
+            "Total deposits (billions of dollars)"
+        ],
+        "Valuation / Shareholder Value": [
+            "Book value per share (dollars)",
+            "Tangible book value per share (dollars)"
+        ]
+    }
+
+    # Standardize period format in both datasets for merging
+    metrics_df = pd.read_parquet(config.BANK_METRICS_PATH)
+    sentiment_df = pd.read_parquet(config.SENTIMENT_SCORE_PATH)
+    metrics_df["reporting_period"] = metrics_df["reporting_period"].str.strip()
+    sentiment_df["reporting_period"] = sentiment_df["reporting_period"].str.strip()
+
+    # Now prepare the long-format data for plotting
+    merged_data = []
+
+    for category, metrics in risk_category_metrics.items():
+        for metric in metrics:
+            for period in sentiment_df["reporting_period"].unique():
+                sentiment_row = sentiment_df[
+                    (sentiment_df["risk_category"] == category) & 
+                    (sentiment_df["reporting_period"] == period)
+                ]
+                metric_row = metrics_df[metrics_df["reporting_period"] == period]
+
+                if not sentiment_row.empty and not metric_row.empty:
+                    avg_metric_value = metric_row[metric].mean()
+                    sentiment_score = sentiment_row["sentiment_score"].values[0]
+                    merged_data.append({
+                        "reporting_period": period,
+                        "risk_category": category,
+                        "metric_name": metric,
+                        "metric_value": avg_metric_value,
+                        "sentiment_score": sentiment_score
+                    })
+
+    merged_df = pd.DataFrame(merged_data)
+    merged_df.head()
+    import plotly.graph_objects as go
+    from plotly.subplots import make_subplots
+    import numpy as np
+
+    # Sample data (same as above)
+    x = np.linspace(0, 10, 100)
+    y1 = np.sin(x)
+    y2 = np.cos(x)
+    y3 = np.tan(x)
+    y4 = np.exp(-x/5)
+
+    # Create 2x2 subplot grid
+    fig = make_subplots(
+        rows=2, cols=2,
+        subplot_titles=('Sine Wave', 'Cosine Wave', 'Tangent Wave', 'Exponential Decay')
+    )
+
+    # Add traces to each subplot
+    fig.add_trace(go.Scatter(x=x, y=y1, mode='lines', name='sin(x)'), row=1, col=1)
+    fig.add_trace(go.Scatter(x=x, y=y2, mode='lines', name='cos(x)'), row=1, col=1)
+    fig.add_trace(go.Scatter(x=x, y=y3, mode='lines', name='tan(x)'), row=2, col=1)
+    fig.add_trace(go.Scatter(x=x, y=y4, mode='lines', name='exp(-x/5)'), row=2, col=2)
+
+    # Update layout
+    fig.update_layout(
+        height=600,
+        width=900,
+        title_text="4 Subplots with Plotly",
+        showlegend=False
+    )
+
+    # Update x and y axis labels
+    fig.update_xaxes(title_text="X")
+    fig.update_yaxes(title_text="Y")
+
+    # fig.show()
+    return fig
 
 # Sample component for layout
 proportion_card = html.Div(
