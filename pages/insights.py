@@ -617,38 +617,110 @@ def update_agg_figs_metric(banks, date_range_indices, risk_category, time_data):
     merged_df.head()
     import plotly.graph_objects as go
     from plotly.subplots import make_subplots
-    import numpy as np
+    import plotly.express as px
 
-    # Sample data (same as above)
-    x = np.linspace(0, 10, 100)
-    y1 = np.sin(x)
-    y2 = np.cos(x)
-    y3 = np.tan(x)
-    y4 = np.exp(-x/5)
+    # Filter for Profitability
+    profit_df = merged_df[merged_df["risk_category"] == "Profitability"]
 
-    # Create 2x2 subplot grid
+    # Get unique metrics
+    metrics = profit_df["metric_name"].unique()
+
+    # Create 2x2 subplot grid with secondary y-axes
     fig = make_subplots(
         rows=2, cols=2,
-        subplot_titles=('Sine Wave', 'Cosine Wave', 'Tangent Wave', 'Exponential Decay')
+        subplot_titles=metrics,
+        specs=[[{"secondary_y": True}, {"secondary_y": True}],
+            [{"secondary_y": True}, {"secondary_y": True}]],
+        shared_xaxes=True,
+        vertical_spacing=0.1,
+        horizontal_spacing=0.1
     )
 
-    # Add traces to each subplot
-    fig.add_trace(go.Scatter(x=x, y=y1, mode='lines', name='sin(x)'), row=1, col=1)
-    fig.add_trace(go.Scatter(x=x, y=y2, mode='lines', name='cos(x)'), row=1, col=1)
-    fig.add_trace(go.Scatter(x=x, y=y3, mode='lines', name='tan(x)'), row=2, col=1)
-    fig.add_trace(go.Scatter(x=x, y=y4, mode='lines', name='exp(-x/5)'), row=2, col=2)
+    # Define colors
+    metric_color = "blue"
+    sentiment_color = "red"
+
+    # Plot each metric in its respective subplot
+    for i, metric in enumerate(metrics):
+        row = (i // 2) + 1
+        col = (i % 2) + 1
+        
+        # Filter data for current metric
+        temp = profit_df[profit_df["metric_name"] == metric]
+        
+        # Add sentiment score line (primary y-axis)
+        fig.add_trace(
+            go.Scatter(
+                x=temp["reporting_period"],
+                y=temp["sentiment_score"],
+                mode='lines+markers',
+                name=f'Sentiment - {metric}',
+                line=dict(color=sentiment_color),
+                marker=dict(color=sentiment_color),
+                showlegend=False
+            ),
+            row=row, col=col,
+            secondary_y=False
+        )
+        
+        # Add metric value line (secondary y-axis)
+        fig.add_trace(
+            go.Scatter(
+                x=temp["reporting_period"],
+                y=temp["metric_value"],
+                mode='lines+markers',
+                name=f'Metric - {metric}',
+                line=dict(color=metric_color),
+                marker=dict(color=metric_color),
+                showlegend=False
+            ),
+            row=row, col=col,
+            secondary_y=True
+        )
+
+    # Update y-axis labels and colors
+    for i in range(len(metrics)):
+        row = (i // 2) + 1
+        col = (i % 2) + 1
+        
+        # Primary y-axis (sentiment score)
+        fig.update_yaxes(
+            title_text="Sentiment Score",
+            title_font=dict(color=sentiment_color),
+            tickfont=dict(color=sentiment_color),
+            row=row, col=col,
+            secondary_y=False
+        )
+        
+        # Secondary y-axis (metric value)
+        fig.update_yaxes(
+            title_text="Metric Value",
+            title_font=dict(color=metric_color),
+            tickfont=dict(color=metric_color),
+            row=row, col=col,
+            secondary_y=True
+        )
+
+    # Update x-axis labels
+    fig.update_xaxes(title_text="Quarter")
 
     # Update layout
     fig.update_layout(
+        title={
+            'text': "Profitability: Sentiment Score vs Financial Metrics",
+            'x': 0.5,
+            'xanchor': 'center',
+            'font': {'size': 16}
+        },
         height=600,
-        width=900,
-        title_text="4 Subplots with Plotly",
-        showlegend=False
+        width=1000,
+        showlegend=False,
+        template="plotly_white"  # Similar to seaborn's whitegrid style
     )
 
-    # Update x and y axis labels
-    fig.update_xaxes(title_text="X")
-    fig.update_yaxes(title_text="Y")
+    # Add grid lines to match seaborn's whitegrid style
+    fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
+    fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
 
     # fig.show()
     return fig
