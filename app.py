@@ -126,7 +126,7 @@ sidebar = html.Nav(
                                     className="dropdown",
                                     children=[
                                         html.A(
-                                            href=path_prefix+'leaderboard',
+                                            href=path_prefix+'chat',
                                             className="dropdown-toggle",
                                             # **{"data-toggle": "dropdown",
                                             #    "aria-haspopup": "true"},
@@ -135,7 +135,7 @@ sidebar = html.Nav(
                                                 html.Img(
                                                     className="laep_icon_svg",
                                                     id="laep_icon",
-                                                    title="LLM Leaderboard"
+                                                    title="Chat"
                                                 ),
                                                 # html.Span(
                                                 #     className="caret"
