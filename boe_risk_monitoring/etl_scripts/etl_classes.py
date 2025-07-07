@@ -19,8 +19,8 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 from pinecone import Pinecone, ServerlessSpec
-# import torch
-# from sentence_transformers import SentenceTransformer
+import torch
+from sentence_transformers import SentenceTransformer
 
 
 from boe_risk_monitoring.llms.processing_llms import ChunkingLLM
@@ -1086,13 +1086,16 @@ class VectorDBETL(BaseETL):
         # Placeholder for the embedding dimension
         self.embedding_dim = None
 
-    def extract(self):
+    def extract(self, usecols=None):
         """
         Extracts data from the input Parquet file.
         Returns a DataFrame containing the data.
         """
         print(f"Extracting data from {self.input_parquet_path}...")
-        df = pd.read_parquet(self.input_parquet_path)
+        if not usecols:
+            df = pd.read_parquet(self.input_parquet_path)
+        else:
+            df = pd.read_parquet(self.input_parquet_path, columns=usecols)
         return df
 
     def transform(self, raw_data, col_to_embed_name, embedding_model):
@@ -2108,29 +2111,43 @@ if __name__ == "__main__":
     # output_fpath = os.path.join(DATA_FOLDER_PATH, bank_name, "processed", "share_price_history", "share_price_history.csv")
     # share_price_etl.export_to_csv(fpath=output_fpath)
 
-    # # Instantiate the VectorDBETL class
-    # input_parquet_path = os.path.join(AGGREGATED_DATA_FOLDER_PATH, "all_text.parquet")
-    # vector_db_etl = VectorDBETL(
-    #     input_parquet_path=input_parquet_path,
-    #     vector_db_provider="pinecone",
-    #     index_name="boe-text-embeddings"
-    # )
-    # # Extract data
-    # raw_data = vector_db_etl.extract()
+    # Instantiate the VectorDBETL class
+    input_parquet_path = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_sentiment_norm.parquet")
+    keep_cols = [
+        "text",
+        "source",
+        "role",
+        "section",
+        "reporting_period",
+        "publication_date",
+        "bank",
+        "document_type",
+        "reference",
+        "source_type",
+        "is_comparative",
+        "sentiment_score",
+    ]
 
-    # # Transform data
-    # raw_data['date_of_earnings_call'] = pd.to_datetime(raw_data['date_of_earnings_call']).dt.strftime('%Y-%m-%d')
-    # raw_data[['speaker','role']] = raw_data[['speaker','role']].fillna('')  # Fill NaN values in speaker and role columns with empty strings
-    # col_to_embed_name = "text"
-    # embedding_model_name = "mukaj/fin-mpnet-base"
-    # embedding_model = SentenceTransformer(embedding_model_name)
-    # vectors = vector_db_etl.transform(
-    #     raw_data=raw_data,
-    #     col_to_embed_name=col_to_embed_name,
-    #     embedding_model=embedding_model
-    # )
-    # # Load data
-    # vector_db_etl.load(vectors)
+    vector_db_etl = VectorDBETL(
+        input_parquet_path=input_parquet_path,
+        vector_db_provider="pinecone",
+        index_name="boe-text-embeddings"
+    )
+    # Extract data
+    raw_data = vector_db_etl.extract(usecols=keep_cols)
+
+    # Transform data
+    raw_data[['source','role','section']] = raw_data[['source','role','section']].fillna('')  # Fill NaN values in speaker and role columns with empty strings
+    col_to_embed_name = "text"
+    embedding_model_name = "mukaj/fin-mpnet-base"
+    embedding_model = SentenceTransformer(embedding_model_name)
+    vectors = vector_db_etl.transform(
+        raw_data=raw_data,
+        col_to_embed_name=col_to_embed_name,
+        embedding_model=embedding_model
+    )
+    # Load data
+    vector_db_etl.load(vectors)
 
     # start = time.time()
     # # Instantiate the FinancialNewsETL class
@@ -2173,19 +2190,19 @@ if __name__ == "__main__":
     # output_dir_path = APP_DATA_FOLDER_PATH
     # financial_metrics_etl.load(transformed_data=transformed_data, output_dir_path=output_dir_path)
 
-    # Instantiate the SQLDatabaseETL class
-    sql_db_fpath = os.path.join(APP_DATA_FOLDER_PATH, "metrics.db")
-    sql_db_etl = SQLDatabaseETL(sql_db_fpath)
+    # # Instantiate the SQLDatabaseETL class
+    # sql_db_fpath = os.path.join(APP_DATA_FOLDER_PATH, "metrics.db")
+    # sql_db_etl = SQLDatabaseETL(sql_db_fpath)
 
-    # Extract data
-    sentiment_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_sentiment_quarter_agg_norm.parquet")
-    topic_relevance_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_quarter_agg_norm.parquet")
-    metrics_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "financial_metrics.parquet")
-    raw_data = sql_db_etl.extract(
-        sentiment_data_fpath=sentiment_data_fpath,
-        topic_relevance_data_fpath=topic_relevance_data_fpath,
-        metrics_data_fpath=metrics_data_fpath
-    )
+    # # Extract data
+    # sentiment_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_sentiment_quarter_agg_norm.parquet")
+    # topic_relevance_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "multi_topic_modelling_with_relevance_quarter_agg_norm.parquet")
+    # metrics_data_fpath = os.path.join(APP_DATA_FOLDER_PATH, "financial_metrics.parquet")
+    # raw_data = sql_db_etl.extract(
+    #     sentiment_data_fpath=sentiment_data_fpath,
+    #     topic_relevance_data_fpath=topic_relevance_data_fpath,
+    #     metrics_data_fpath=metrics_data_fpath
+    # )
 
     # Transform data
     transformed_data = sql_db_etl.transform(raw_data=raw_data)
