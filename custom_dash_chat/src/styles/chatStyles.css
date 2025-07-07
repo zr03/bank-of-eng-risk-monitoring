@@ -163,12 +163,12 @@
     cursor: pointer;
 }
 
-.dropdown {
+.clearDropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdownMenu {
+.clearDropdownMenu {
     position: absolute;
     background-color: white;
     width: 100px;
@@ -176,7 +176,7 @@
     z-index: 1000;
 }
 
-.dropdownItem {
+.clearDropdownItem {
     padding: 8px 12px;
     background: none;
     border: none;
@@ -185,7 +185,7 @@
     cursor: pointer;
 }
 
-.dropdownItem:hover {
+.clearDropdownItem:hover {
     background-color: #f1f1f1;
 }
 

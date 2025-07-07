@@ -191,7 +191,7 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
     if APP_ENV=="dev":
-        app.run(host="localhost", debug=True,use_reloader=True, threaded=False)
+        app.run(host="localhost", debug=True, use_reloader=True)
     else:
-        app.run(debug=False, threaded=False)
+        app.run(debug=False)
 

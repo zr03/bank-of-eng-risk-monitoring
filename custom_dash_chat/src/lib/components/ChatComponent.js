@@ -249,13 +249,13 @@ const ChatComponent = ({
         <div className={`chat-container ${className}`} style={{ ...styleChatContainer, ...containerStyle }}>
             {persistence && (
                 <div className="actionBtnContainer" ref={dropdownRef}>
-                    <div className="dropdown">
+                    <div className="clearDropdown">
                         <button className="dotsButton" onClick={() => setDropdownOpen(!dropdownOpen)} aria-label="clear">
                             <EllipsisVertical size={24} />
                         </button>
                         {dropdownOpen && (
-                            <div className="dropdownMenu">
-                                <button onClick={handleClearChat} className="dropdownItem">
+                            <div className="clearDropdownMenu">
+                                <button onClick={handleClearChat} className="clearDropdownItem">
                                     Clear chat
                                 </button>
                             </div>
