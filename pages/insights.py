@@ -639,27 +639,27 @@ def generate_layout():
 
     page_layout = html.Div(
         children=[
-            html.Div(
-                className="card",
-                id='card-summary',
-                children=[
-                    html.Div(
-                        children=[
-                            html.H4(
-                                className="card-header",
-                                children="Executive Summary"
-                            ),
-                            html.P(
-                                className="explanation",
-                                children="The table below provides a summary of trending risk factors across the G-SIBs."
-                            ),
-                            html.Br(),
+            # html.Div(
+            #     className="card",
+            #     id='card-summary',
+            #     children=[
+            #         html.Div(
+            #             children=[
+            #                 html.H4(
+            #                     className="card-header",
+            #                     children="Executive Summary"
+            #                 ),
+            #                 html.P(
+            #                     className="explanation",
+            #                     children="The table below provides a summary of trending risk factors across the G-SIBs."
+            #                 ),
+            #                 html.Br(),
 
-                        ]
-                    ),
+            #             ]
+            #         ),
 
-                ]
-            ),
+            #     ]
+            # ),
             html.Div(
                 className="card card-controls",
                 id="curt-card-controls",
@@ -762,42 +762,42 @@ def generate_layout():
                         ]
                     ),
 
-                    html.Div(
-                        className="card data-card",
-                        id='right-card-curt',
-                        children=[
-                            html.Div(
-                                children=[
-                                    html.Div(
-                                        children=[
-                                            html.H4(
-                                                children="Data Summary",
-                                                className="data-card-heading",
-                                                id="sentiment-eff-heading",
-                                            ),
-                                            html.H4(
-                                                className="data-card-value",
-                                                id="sentiment-eff",
-                                            )
-                                        ]
-                                    ),
-                                    html.Br(),
-                                    html.Div(
-                                        children=[
-                                            html.H4(
-                                                className="data-card-heading",
-                                                id="sentiment-bank-heading",
-                                            ),
-                                            html.H4(
-                                                className="data-card-value",
-                                                id="sentiment-bank",
-                                            )
-                                        ]
-                                    ),
-                                ]
-                            ),
-                        ]
-                    )
+                    # html.Div(
+                    #     className="card data-card",
+                    #     id='right-card-curt',
+                    #     children=[
+                    #         html.Div(
+                    #             children=[
+                    #                 html.Div(
+                    #                     children=[
+                    #                         html.H4(
+                    #                             children="Data Summary",
+                    #                             className="data-card-heading",
+                    #                             id="sentiment-eff-heading",
+                    #                         ),
+                    #                         html.H4(
+                    #                             className="data-card-value",
+                    #                             id="sentiment-eff",
+                    #                         )
+                    #                     ]
+                    #                 ),
+                    #                 html.Br(),
+                    #                 html.Div(
+                    #                     children=[
+                    #                         html.H4(
+                    #                             className="data-card-heading",
+                    #                             id="sentiment-bank-heading",
+                    #                         ),
+                    #                         html.H4(
+                    #                             className="data-card-value",
+                    #                             id="sentiment-bank",
+                    #                         )
+                    #                     ]
+                    #                 ),
+                    #             ]
+                    #         ),
+                    #     ]
+                    # )
                 ]
             ),
 
@@ -926,8 +926,8 @@ def update_agg_figs(banks, date_range_indices, risk_category, source_types, time
     topic_cols = [col for col in df_topics_sentiment_quarter_plotting.columns if col not in ['reporting_period'] + risk_category_cols]
 
 
-    print("Final DataFrame shape:", df_topics_sentiment_quarter_plotting.shape)
-    print("Final columns:", df_topics_sentiment_quarter_plotting.columns.tolist())
+    # print("Final DataFrame shape:", df_topics_sentiment_quarter_plotting.shape)
+    # print("Final columns:", df_topics_sentiment_quarter_plotting.columns.tolist())
 
     # Generate the multiline chart
     fig_topics_sentiment_quarter = generate_multiline_chart(
@@ -1035,13 +1035,13 @@ def update_agg_figs_metric(bank, risk_category, risk_categories_metric_list, tim
 
     # Filter for Profitability
     # if risk_category in [risk_categories_metric_list[0], risk_categories_metric_list[3]]:
-    print (f"Risk category {risk_category}")
+    # print (f"Risk category {risk_category}")
     # profit_df = merged_df[merged_df["risk_category"] == risk_category]
     profit_df = merged_df.copy()
 
     # Get unique metrics
     metrics = profit_df["metric_name"].unique()
-    print(f"Metric: {metrics}")
+    # print(f"Metric: {metrics}")
     # Create 2x2 subplot grid with secondary y-axes
     nrows = math.ceil(len(metrics) / 2)
     ncols=2

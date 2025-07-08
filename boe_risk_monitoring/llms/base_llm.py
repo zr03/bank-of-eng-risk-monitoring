@@ -50,7 +50,7 @@ SUPPORTED_LLMS_DICT = {
 
 
 class BaseLLM:
-    def __init__(self, backend="openai", model_name="gpt-4o", temperature=0.3):
+    def __init__(self, backend="openai", model_name="gpt-4o"):
         if backend not in SUPPORTED_LLMS_DICT:
             raise ValueError(f"Unsupported backend. Supported backends: {SUPPORTED_LLMS_DICT.keys()}")
         if model_name not in SUPPORTED_LLMS_DICT[backend]:
@@ -58,7 +58,6 @@ class BaseLLM:
                 f"Unsupported model. Supported models for backend {backend}: {list(SUPPORTED_LLMS_DICT[backend].keys())}")
         self.backend = backend
         self.model_name = model_name
-        self.temperature = temperature
         self.context_window = SUPPORTED_LLMS_DICT[backend][model_name]['context_window']
         self.max_output = SUPPORTED_LLMS_DICT[backend][model_name]['max_output']
 
@@ -83,7 +82,6 @@ class BaseLLM:
             resp = client.responses.create(
                 model=self.model_name,
                 input=prompt,
-                temperature=self.temperature,
             )
             return resp.output_text
 
@@ -104,7 +102,6 @@ class BaseLLM:
             resp = await client.responses.create(
                 model=self.model_name,
                 input=prompt,
-                temperature=self.temperature,
             )
             return resp.output_text
 

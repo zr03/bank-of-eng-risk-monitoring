@@ -57,7 +57,7 @@ header = html.Div(
         html.Div(id='script-container'),
         html.H1(
             className="app-header-title",
-            children='RADAR',
+            children='FinSights',
         ),
         html.H3(
             className="app-header-subtitle",
@@ -72,7 +72,7 @@ header_nav = html.Div(
     children=[
         html.H1(
             className="app-header-title-nav",
-            children='RADAR',
+            children='FinSights',
         ),
     ]
 )
