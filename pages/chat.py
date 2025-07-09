@@ -1,5 +1,6 @@
 import time
 import os
+# import asyncio
 
 from dotenv import load_dotenv
 import dash
@@ -10,6 +11,8 @@ from flask_socketio import SocketIO, emit
 from openai import OpenAI
 from openai.types.responses.response_text_delta_event import ResponseTextDeltaEvent
 from dash_chat import ChatComponent
+
+from agents.agent_system import build_graph
 
 load_dotenv()
 
@@ -24,7 +27,6 @@ dash.register_page(__name__,
 
 app = dash.get_app()
 socketio = SocketIO(app.server)
-
 
 # @socketio.on("connect")
 # def on_connect():
@@ -128,24 +130,31 @@ def store_chat(new_message, existing_messages, user_updates):
     State("socketio", "socketId"),
     prevent_initial_call=True,
 )
-def stream_response(user_updates, chat_history, socket_id):
+async def stream_response(user_updates, chat_history, socket_id):
     if not chat_history:
         return no_update
 
     latest_message = chat_history[-1]
     if latest_message["role"] != "user": # This condition should always be False and we move on
         return no_update
-    # Collect full response from the LLM
-    llm_response = []
-    for event in stream_llm_response(latest_message["content"]):
-        if isinstance(event, ResponseTextDeltaEvent):
-            token = event.delta
-            emit("stream", token, namespace="/", to=socket_id)
-            time.sleep(0.03)  # Simulate delay for streaming effect
-            llm_response.append(token)
 
-    print(''.join(llm_response))
-    bot_response = {"role": "assistant", "content": ''.join(llm_response)}
+    graph = build_graph()
+    initial_state = {
+        "user_query": latest_message["content"],
+        "agents_to_run": [],
+        "retrieved_docs": None,
+        "final_answer": None,
+    }
+    full_response = ""
+    async for output in graph.astream(
+        initial_state,
+        stream_mode="custom"
+    ):
+        emit("stream", output, namespace="/", to=socket_id)
+        full_response += output
+        time.sleep(0.03)
+
+    bot_response = {"role": "assistant", "content": full_response}
 
     return chat_history + [bot_response] # Update the server side chat history with the bot response
 

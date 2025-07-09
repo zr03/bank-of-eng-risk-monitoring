@@ -21,6 +21,7 @@ pyarrow = "^20.0.0"
 matplotlib = "^3.10.3"
 openai=">=1.84"
 transformers = "^4.52.4"
+dash = {extras = ["async"], version = "^3.1.1"}
 
 
 [tool.poetry.group.dev]
@@ -50,7 +51,6 @@ openpyxl = "^3.1.5"
 optional = true
 
 [tool.poetry.group.app.dependencies]
-dash = "^3.0.4"
 celery = "^5.5.3"
 dash-bootstrap-components = "^2.0.3"
 dash-mantine-components = "^2.1.0"

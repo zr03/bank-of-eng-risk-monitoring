@@ -13,7 +13,7 @@ from openai.types.responses.response_text_delta_event import ResponseTextDeltaEv
 
 from sentence_transformers import SentenceTransformer
 
-from llms import BaseLLM, OrchestratorLLM, VectorDBSearchLLM
+from agents.llms import BaseLLM, OrchestratorLLM, VectorDBSearchLLM
 
 vector_db_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_idx_name = os.getenv("PINECONE_INDEX_NAME")
@@ -161,13 +161,22 @@ async def retrieve_statements(state: GraphState):
 async def summariser(state: GraphState):
     """Summarise the retrieved documents."""
 
-    documents_text = "\n".join(doc["text"] + "\n" + "Source: " + doc["reference"] for doc in state["retrieved_docs"])
-    summariser_llm = BaseLLM(
-        prompt=_make_summarisation_prompt(documents_text),
-        backend="openai",
-        model_name="gpt-4.1-mini",
-        stream=True
-    )
+    if not state.get("retrieved_docs"):
+        summariser_llm = BaseLLM(
+            prompt=f"You are an expert financial analyst who analyses risk factors of bank firms. Provide a generic response based on the user's query. {state['user_query']}, explain your role and guide them to ask a relevant question. Do not mention anything outside the scope of your role as a financial analyst.",
+            backend="openai",
+            model_name="gpt-4.1-mini",
+            stream=True
+        )
+    else:
+        documents_text = "\n".join(doc["text"] + "\n" + "Source: " + doc["reference"] for doc in state["retrieved_docs"])
+        summariser_llm = BaseLLM(
+            prompt=_make_summarisation_prompt(documents_text),
+            backend="openai",
+            model_name="gpt-4.1-mini",
+            stream=True
+        )
+
     stream_response = await summariser_llm.ainvoke()
 
     # Initialize stream writer and full response
@@ -179,7 +188,7 @@ async def summariser(state: GraphState):
             token = event.delta
             stream_writer(token)  # Write token to stream
             full_response += token
-    return {"final_answer": full_response}
+    return {"final_answer": "".join(full_response)}
 
 
 def decide_next_node(state: GraphState):
@@ -204,23 +213,29 @@ def build_graph():
     # Transitions
     graph.set_entry_point("orchestrator")
     graph.set_finish_point("summariser")
-
-    return graph
-
-async def run_graph(graph):
     compiled_graph = graph.compile()
+    return compiled_graph
 
-    async for output in compiled_graph.astream(
-        {
-            "user_query": "What has JPMorgan been saying about its liquidity in its earnings documents?",
-            "agents_to_run": [],
-            "retrieved_docs": None,
-            "final_answer": None,
-        },
+
+async def stream_graph(graph, user_query):
+    initial_state = {
+        "user_query": user_query,
+        "agents_to_run": [],
+        "retrieved_docs": None,
+        "final_answer": None,
+    }
+    async for output in graph.astream(
+        initial_state,
         stream_mode="custom"
     ):
         print(output, end="", flush=True)
 
+def run_graph(user_query):
+    # Create the graph
+    graph = build_graph()
+
+    # Run the graph with a sample input
+    asyncio.run(stream_graph(graph, user_query))
 
 if __name__ == "__main__":
     # res = vector_db_search.invoke(
@@ -228,7 +243,6 @@ if __name__ == "__main__":
     #         "input":VectorSearchInput(query="What has JPMorgan said about it's liquidity?", bank="JPMorgan", source_type="internal", reporting_period="2025Q1"), "top_k":5
     #     }
     # )
-
-    graph = build_graph()
-    asyncio.run(run_graph(graph))
+    user_query = "What has JPMorgan been saying about its liquidity in its earnings documents?"
+    run_graph(user_query)
 

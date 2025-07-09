@@ -2,9 +2,11 @@ import os
 import datetime
 
 import dash
-from dash import CeleryManager, DiskcacheManager
+# from dash import CeleryManager, DiskcacheManager
 from dash import html, dcc
-from celery import Celery
+# from celery import Celery
+
+import agents
 
 APP_ENV = os.environ.get("DASH_APP_NAME", "dev")
 print(f"IMPORTANT: App is running in the {APP_ENV} environment.")
@@ -191,7 +193,7 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
     if APP_ENV=="dev":
-        app.run(host="localhost", debug=True, use_reloader=True)
+        app.run(host="localhost", debug=True)
     else:
         app.run(debug=False)
 

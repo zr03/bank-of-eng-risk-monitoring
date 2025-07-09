@@ -1,19 +1,10 @@
-from typing import List
 import math
 import dash
 from dash import dcc, html, callback, Output, Input, State, ctx, dash_table
-import dash_bootstrap_components as dbc
-from dash.dash_table.Format import Format, Scheme
-from dash.dash_table import FormatTemplate
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
-from dash.exceptions import PreventUpdate
-import datetime
-from dateutil.relativedelta import relativedelta
-import pytz
-import matplotlib.colors as mcolors
 import app_config as config
 import numpy as np
 
