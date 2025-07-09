@@ -2,9 +2,11 @@ import os
 import datetime
 
 import dash
-from dash import CeleryManager, DiskcacheManager
+# from dash import CeleryManager, DiskcacheManager
 from dash import html, dcc
-from celery import Celery
+# from celery import Celery
+
+import agents
 
 APP_ENV = os.environ.get("DASH_APP_NAME", "dev")
 print(f"IMPORTANT: App is running in the {APP_ENV} environment.")
@@ -57,7 +59,7 @@ header = html.Div(
         html.Div(id='script-container'),
         html.H1(
             className="app-header-title",
-            children='RADAR',
+            children='FinSights',
         ),
         html.H3(
             className="app-header-subtitle",
@@ -72,7 +74,7 @@ header_nav = html.Div(
     children=[
         html.H1(
             className="app-header-title-nav",
-            children='RADAR',
+            children='FinSights',
         ),
     ]
 )
@@ -191,7 +193,7 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
     if APP_ENV=="dev":
-        app.run(host="localhost", debug=True,use_reloader=True, threaded=False)
+        app.run(host="localhost", debug=True)
     else:
-        app.run(debug=False, threaded=False)
+        app.run(debug=False)
 

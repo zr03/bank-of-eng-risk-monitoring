@@ -16,6 +16,48 @@
 	font-display: block;
 }
 
+#chat-card > div.chat-container > div.chat-input > div > textarea {
+	color: black;
+}
+
+.message-input-field:focus {
+	box-shadow: none;
+}
+
+.message-input-field {
+	border-start-start-radius: inherit;
+  	border-top-right-radius: inherit;
+	box-shadow: none;
+	font-size: 14px;
+}
+
+#chat-card > div.chat-container > div.chat-input > div > div > button.message-input-button {
+	color: black
+}
+
+#chat-card > div.chat-container > div.chat-input > div > div > button.file-upload-button {
+	color: black;
+}
+
+#chat-card > div.chat-container > div.chat-messages > div.chat-bubble > div > p {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+#chat-card > div.chat-container > div.chat-messages > div.chat-bubble {
+	font-size: 14px;
+}
+
+#chat-card > div.chat-container > div.chat-messages > div > div > p {
+	text-align: left;
+}
+
+#chat-card > div.chat-container > div.chat-messages > div.chat-bubble.assistant {
+	max-width: 100%;
+	margin-left: 0px;
+	margin-right:0px;
+	margin-bottom:10px;
+}
+
 /* Do we need to specify margin-left here? */
 body {
 	padding-top: 50px;
