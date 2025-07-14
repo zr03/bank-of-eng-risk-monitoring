@@ -27,6 +27,8 @@ To install core dependencies plus one of the optional group (e.g. say you only n
 
 NOTE: If you chose to install poetry locally in your environment (option 3b above), you may need to call poetry through python in which case you replace all instances of `poetry` in the commands above with `python -m poetry`.
 
+7. To run the app, you will need to install the custom_dash_chat repo into your environment too (this isn't available as a poetry install yet). To do this navigate into the top level of the custom_dash_chat folder and run `pip install -e .`
+
 # Adding dependencies
 To add a dependency to the core group simply run: poetry add 'package name'
 To add a dependency to one of the custom groups run e.g.: poetry add 'package name' --group dev
