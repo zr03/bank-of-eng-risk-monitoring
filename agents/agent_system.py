@@ -1,9 +1,6 @@
 import os
 import asyncio
-from typing import Annotated, Literal, List, Optional
-from typing_extensions import TypedDict
 
-from pydantic import BaseModel, Field
 from pinecone import Pinecone
 from langgraph.graph import StateGraph, START, END
 from langgraph.config import get_stream_writer
@@ -14,6 +11,8 @@ from openai.types.responses.response_text_delta_event import ResponseTextDeltaEv
 from sentence_transformers import SentenceTransformer
 
 from agents.llms import BaseLLM, OrchestratorLLM, VectorDBSearchLLM
+from agents.schemas import GraphState, OrchestrationPlan, VectorSearchInput, Doc
+
 
 vector_db_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_idx_name = os.getenv("PINECONE_INDEX_NAME")
@@ -24,29 +23,6 @@ pc = Pinecone(api_key=vector_db_api_key)
 index = pc.Index(pinecone_idx_name)
 
 
-class OrchestrationPlan(BaseModel):
-    vector_db_retrieval_needed: bool
-    metrics_db_retrieval_needed: bool
-
-class Doc(TypedDict):
-    text: str
-    reference: str
-
-class GraphState(TypedDict):
-    user_query: str
-    agents_to_run: List[Literal['vector_db_search', 'metrics_db_search']]
-    retrieved_docs: Optional[List[Doc]]
-    final_answer: Optional[str]
-
-class VectorSearchInput(BaseModel):
-    query: str = Field(..., description="User search query")
-    role: Optional[Literal['CEO', 'CFO', 'Analyst']] = Field(None, description="Filter by source, e.g. 'CEO'")
-    reporting_period: Optional[Literal["2023Q1", "2023Q2", "2023Q3", "2023Q4", "2024Q1", "2024Q2", "2024Q3", "2024Q4", "2025Q1"]] = Field(None, description="Filter by reporting period")
-    bank: Optional[Literal["Citigroup", "Bank of America", "JPMorgan"]] = Field(None, description="Filter by bank name")
-    # document_type: Optional[Literal["transcript", "presentation", "news"]] = Field(None, description="Filter by document type")
-    source_type: Optional[Literal["internal", "external"]] = Field(None, description="'internal' to filter for sources originating from the bank itself e.g. transcripts, 'external' for news sources")
-    is_comparative: bool = Field(False, description="whether the text compares banks")
-    sentiment_score: Optional[Literal[-1, 0, 1]] = Field(None, description="Filter by sentiment of the text, -1 for negative, 0 for neutral, 1 for positive")
 
 def construct_metadata_filter_expr(search_schema: VectorSearchInput) -> dict:
     """Construct a filter expression for the vector database query."""

@@ -6,3 +6,4 @@ TOPIC_SENTIMENT_Q_AGG_NORM_FPATH = os.path.join(DATA_FOLDER, "multi_topic_modell
 Q_A_ANALYSIS_FPATH = os.path.join(DATA_FOLDER, "data_qa_pairs.parquet")
 SENTIMENT_SCORE_PATH=os.path.join(DATA_FOLDER,"multi_topic_modelling_with_relevance_sentiment_quarter_agg_norm.parquet")
 BANK_METRICS_PATH=os.path.join(DATA_FOLDER,"financial_metrics.parquet")
+DB_PATH = os.path.join(DATA_FOLDER, "metrics.db")
