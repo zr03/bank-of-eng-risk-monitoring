@@ -16,6 +16,8 @@
 	font-display: block;
 }
 
+#_dash-global-error-container > div > div.dash-debug-menu__outer.dash-debug-menu__outer--collapsed { display: none !important; }
+
 #chat-card > div.chat-container > div.chat-input > div > textarea {
 	color: black;
 }
